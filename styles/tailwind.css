@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&display=swap");
+
+@tailwind base;
+@layer base {
+  html {
+    @apply font-Poppins;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+@tailwind components;
+@tailwind utilities;
