@@ -3,9 +3,17 @@
 @tailwind base;
 @layer base {
   html {
-    @apply font-Poppins;
+    @apply font-Poppins text-neutral-dark-500;
     -webkit-tap-highlight-color: transparent;
   }
 }
 @tailwind components;
+@layer components {
+  .login-divider {
+    @apply relative my-5 h-[1px] w-full bg-grey-200 before:absolute before:left-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:bg-white before:px-0.5 before:text-grey-400 before:content-['or'];
+  }
+  .login-submit {
+    @apply bg-grey-300 text-white;
+  }
+}
 @tailwind utilities;
