@@ -702,6 +702,14 @@ html{
   isolation: auto;
 }
 
+.order-1{
+  order: 1;
+}
+
+.order-2{
+  order: 2;
+}
+
 .float-right{
   float: right;
 }
@@ -761,6 +769,10 @@ html{
 
 .mt-4{
   margin-top: 1rem;
+}
+
+.mt-5{
+  margin-top: 1.25rem;
 }
 
 .box-border{
@@ -2053,6 +2065,16 @@ html{
   padding-bottom: 0.75rem;
 }
 
+.px-20{
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .pl-5{
   padding-left: 1.25rem;
 }
@@ -2618,6 +2640,38 @@ html{
 @media (min-width: 640px){
   .sm\:underline{
     text-decoration-line: underline;
+  }
+}
+
+@media (min-width: 768px){
+  .md\:order-1{
+    order: 1;
+  }
+
+  .md\:order-2{
+    order: 2;
+  }
+
+  .md\:mt-9{
+    margin-top: 2.25rem;
+  }
+
+  .md\:block{
+    display: block;
+  }
+
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:pl-5{
+    padding-left: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
