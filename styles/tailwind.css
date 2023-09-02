@@ -3,7 +3,7 @@
 @tailwind base;
 @layer base {
   html {
-    @apply font-Poppins text-neutral-dark-500;
+    @apply bg-grey-200 font-Poppins text-neutral-dark-500;
     -webkit-tap-highlight-color: transparent;
   }
 }
@@ -17,6 +17,9 @@
   }
   .form-input.error {
     @apply border-warning border;
+  }
+  .btn-secondary {
+    @apply flex items-center justify-center rounded-xl border border-branding-secondary bg-branding-secondary px-6 py-2.5 text-base font-semibold text-white transition duration-75 hover:bg-transparent hover:text-branding-secondary;
   }
 }
 @tailwind utilities;

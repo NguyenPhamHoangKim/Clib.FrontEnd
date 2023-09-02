@@ -11,9 +11,10 @@ module.exports = {
         branding: {
           DEFAULT: "#1A75FF",
           secondary: "#0ABFAC",
+          tertiary: "#01579B",
         },
-        light: {
-          blue: "#EBF7FC",
+        bg: {
+          DEFAULT: "#EBF7FC",
         },
         grey: {
           100: "#F7F7F7",
@@ -30,6 +31,13 @@ module.exports = {
         Poppins: ["Poppins", ...defaultTheme.fontFamily.sans],
         Inter: ["Inter", ...defaultTheme.fontFamily.sans],
       },
+    },
+    container: {
+      center: true,
+    },
+    fontSize: {
+      base: ["16px", "24px"],
+      24: ["24px", "28px"],
     },
   },
   plugins: [],
