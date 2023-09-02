@@ -24,6 +24,7 @@ module.exports = {
         "neutral-dark": {
           500: "#2C2F33",
         },
+        warning: "#EF5350",
       },
       fontFamily: {
         Poppins: ["Poppins", ...defaultTheme.fontFamily.sans],

@@ -15,5 +15,8 @@
   .login-submit {
     @apply bg-grey-300 text-white;
   }
+  .form-input.error {
+    @apply border-warning border;
+  }
 }
 @tailwind utilities;

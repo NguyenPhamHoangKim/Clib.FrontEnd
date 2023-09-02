@@ -611,6 +611,18 @@ html{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.form-input.error{
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(239 83 80 / var(--tw-border-opacity));
+}
+
+.form-input.\!error{
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(239 83 80 / var(--tw-border-opacity));
+}
+
 .sr-only{
   position: absolute;
   width: 1px;
@@ -702,14 +714,6 @@ html{
   isolation: auto;
 }
 
-.order-1{
-  order: 1;
-}
-
-.order-2{
-  order: 2;
-}
-
 .float-right{
   float: right;
 }
@@ -759,20 +763,16 @@ html{
   margin-top: 0.75rem;
 }
 
-.mt-6{
-  margin-top: 1.5rem;
-}
-
-.mt-9{
-  margin-top: 2.25rem;
-}
-
 .mt-4{
   margin-top: 1rem;
 }
 
 .mt-5{
   margin-top: 1.25rem;
+}
+
+.mt-6{
+  margin-top: 1.5rem;
 }
 
 .box-border{
@@ -894,17 +894,13 @@ html{
   height: 5rem;
 }
 
-.h-\[640px\]{
-  height: 640px;
+.h-fit{
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .h-full{
   height: 100%;
-}
-
-.h-fit{
-  height: -moz-fit-content;
-  height: fit-content;
 }
 
 .max-h-full{
@@ -929,11 +925,6 @@ html{
 
 .w-full{
   width: 100%;
-}
-
-.w-fit{
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
 .max-w-full{
@@ -1275,10 +1266,6 @@ html{
 
 .grid-flow-col-dense{
   grid-auto-flow: column dense;
-}
-
-.grid-cols-2{
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row{
@@ -2060,23 +2047,14 @@ html{
   padding-right: 1rem;
 }
 
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.px-20{
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
 .py-10{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
 
-.pl-5{
-  padding-left: 1.25rem;
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .pr-10{
@@ -2229,6 +2207,10 @@ html{
   line-height: 1.5rem;
 }
 
+.leading-5{
+  line-height: 1.25rem;
+}
+
 .text-\[\#336699\]\/\[\.35\]{
   color: rgb(51 102 153 / .35);
 }
@@ -2241,6 +2223,11 @@ html{
 .text-grey-400{
   --tw-text-opacity: 1;
   color: rgb(82 97 107 / var(--tw-text-opacity));
+}
+
+.text-warning{
+  --tw-text-opacity: 1;
+  color: rgb(239 83 80 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -2644,14 +2631,6 @@ html{
 }
 
 @media (min-width: 768px){
-  .md\:order-1{
-    order: 1;
-  }
-
-  .md\:order-2{
-    order: 2;
-  }
-
   .md\:mt-9{
     margin-top: 2.25rem;
   }
@@ -2666,12 +2645,6 @@ html{
 
   .md\:pl-5{
     padding-left: 1.25rem;
-  }
-}
-
-@media (min-width: 1024px){
-  .lg\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
