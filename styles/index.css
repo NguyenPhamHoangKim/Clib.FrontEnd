@@ -927,6 +927,10 @@ html{
   width: 100%;
 }
 
+.w-\[1000px\]{
+  width: 1000px;
+}
+
 .max-w-full{
   max-width: 100%;
 }
