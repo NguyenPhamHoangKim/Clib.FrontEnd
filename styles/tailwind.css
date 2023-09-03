@@ -96,6 +96,19 @@
   @apply right-3;
 }
 
+.new-video-swiper .swiper-new-video-navigation {
+  @apply absolute top-1/2 z-10 -translate-y-1/2 rounded-full bg-white p-2.5 shadow-[0px_4px_30px_0px_rgba(0,0,0,0.16)];
+}
+.new-video-swiper .swiper-new-video-navigation.swiper-button-disabled {
+  @apply hidden;
+}
+.new-video-swiper .swiper-new-video-prev {
+  @apply left-3;
+}
+.new-video-swiper .swiper-new-video-next {
+  @apply right-3;
+}
+
 .lang-footer-item {
   @apply text-14 text-grey-300 transition-colors duration-75 hover:text-grey-400;
 }

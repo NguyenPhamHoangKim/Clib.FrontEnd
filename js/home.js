@@ -52,3 +52,12 @@ new Swiper(".albums-swiper", {
     prevEl: ".swiper-albums-prev",
   },
 });
+
+new Swiper(".new-video-swiper", {
+  slidesPerView: 4.5,
+  spaceBetween: 16,
+  navigation: {
+    nextEl: ".swiper-new-video-next",
+    prevEl: ".swiper-new-video-prev",
+  },
+});
