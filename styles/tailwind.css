@@ -35,6 +35,9 @@
   @apply scrollbar:!w-1.5 scrollbar:bg-transparent scrollbar-track:!rounded scrollbar-track:!bg-white scrollbar-thumb:!rounded scrollbar-thumb:!bg-grey-300;
 }
 
+.hot-tab-vid.active {
+  @apply border-b-grey-400 text-grey-400;
+}
 .hot-tab.active {
   @apply border-b-grey-400 text-grey-400;
 }
@@ -52,6 +55,12 @@
 }
 .hot-item:hover .hot-item--more {
   @apply flex;
+}
+.hot-item .hot-item--love {
+  @apply opacity-0 transition-opacity duration-75;
+}
+.hot-item:hover .hot-item--love {
+  @apply opacity-100;
 }
 
 .banner-swiper .swiper-pagination-bullet {

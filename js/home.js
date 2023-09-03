@@ -4,6 +4,12 @@ $(".hot-tab").each((_, el) => {
     $(el).addClass("active");
   });
 });
+$(".hot-tab-vid").each((_, el) => {
+  $(el).click(() => {
+    $(".hot-tab-vid.active").removeClass("active");
+    $(el).addClass("active");
+  });
+});
 
 $(".hot-item").each(function (_, el) {
   const hotItemLove = $(el).find(".hot-item--love img");

@@ -493,7 +493,7 @@
           <div class="flex items-center p-4">
             <div class="mr-4 flex items-center gap-2 text-20 font-semibold">
               <img src="/assets/svgs/hot.svg" alt="" />
-              Artist 30
+              Hot trending 30
             </div>
             <div class="flex items-center gap-3">
               <button
@@ -1693,7 +1693,7 @@
       </div>
       <div class="mt-4 grid gap-6 xl:grid-cols-[1.1fr,2fr,1.1fr]">
         <div class="flex h-[732px] flex-col rounded-xl bg-white">
-          <div class="relative p-4 text-20 font-semibold">Artist 30</div>
+          <div class="relative p-4 text-20 font-semibold">Creator 30</div>
           <ul
             class="scrollbar-custom flex flex-1 flex-col overflow-y-auto overflow-x-hidden px-2 pb-2"
           >
@@ -2093,21 +2093,21 @@
           <div class="flex items-center p-4">
             <div class="mr-4 flex items-center gap-2 text-20 font-semibold">
               <img src="/assets/svgs/hot.svg" alt="" />
-              Artist 30
+              Hot trending 30
             </div>
             <div class="flex items-center gap-3">
               <button
-                class="hot-tab active border-b-2 border-b-transparent text-14 font-semibold leading-5 text-grey-300"
+                class="hot-tab-vid active border-b-2 border-b-transparent text-14 font-semibold leading-5 text-grey-300"
               >
                 Today
               </button>
               <button
-                class="hot-tab border-b-2 border-b-transparent text-14 font-semibold leading-5 text-grey-300"
+                class="hot-tab-vid border-b-2 border-b-transparent text-14 font-semibold leading-5 text-grey-300"
               >
                 Week
               </button>
               <button
-                class="hot-tab border-b-2 border-b-transparent text-14 font-semibold leading-5 text-grey-300"
+                class="hot-tab-vid border-b-2 border-b-transparent text-14 font-semibold leading-5 text-grey-300"
               >
                 Month
               </button>
@@ -2128,24 +2128,42 @@
                     <span class="text-12 font-semibold">1</span>
                     <img src="/assets/svgs/up.svg" alt="" />
                   </div>
-                  <img
-                    class="mr-3 aspect-square w-16 rounded-lg object-cover"
-                    src="/assets/images/artists/2.png"
-                    loading="lazy"
-                    alt="Son Tung M-TP"
-                  />
-                  <div>
-                    <div class="text-base font-semibold">Run now</div>
-                    <div class="mt-1 text-14 text-grey-400">Son Tung M-TP</div>
+                  <div class="relative mr-3 h-20 w-[142px]">
+                    <img
+                      class="mr-3 aspect-square h-full w-full rounded-lg object-cover"
+                      src="/assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt="Vlogging as a career in 2022"
+                    />
+                    <span
+                      class="text-12 absolute bottom-1.5 right-2.5 text-white"
+                      >03:20</span
+                    >
+                  </div>
+                  <div class="mr-2">
+                    <div class="text-base font-semibold">
+                      Vlogging as a career in 2022
+                    </div>
+                    <div class="mt-1 text-14 text-grey-400">Nancy Jaiswal</div>
+                    <div class="mt-1 flex items-center">
+                      <div
+                        class="mr-3 flex items-center gap-1 text-14 text-grey-400"
+                      >
+                        <img src="/assets/svgs/views.svg" alt="" />
+                        150K views
+                      </div>
+                      <div
+                        class="flex items-center gap-1 text-14 text-grey-400"
+                      >
+                        <img src="/assets/svgs/clock.svg" alt="" />
+                        1 days ago
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="hot-item--duration">01:10</div>
-                <div class="hot-item--more">
-                  <button class="hot-item--love">
-                    <img class="" src="/assets/svgs/heart-outline.svg" alt="" />
-                  </button>
-                  <img src="/assets/svgs/more.svg" alt="" />
-                </div>
+                <button class="hot-item--love self-start">
+                  <img class="" src="/assets/svgs/heart-outline.svg" alt="" />
+                </button>
               </a>
             </li>
             <li>
@@ -2160,24 +2178,42 @@
                     <span class="text-12 font-semibold">1</span>
                     <img src="/assets/svgs/down.svg" alt="" />
                   </div>
-                  <img
-                    class="mr-3 aspect-square w-16 rounded-lg object-cover"
-                    src="/assets/images/artists/2.png"
-                    loading="lazy"
-                    alt="Son Tung M-TP"
-                  />
-                  <div>
-                    <div class="text-base font-semibold">Run now</div>
-                    <div class="mt-1 text-14 text-grey-400">Son Tung M-TP</div>
+                  <div class="relative mr-3 h-20 w-[142px]">
+                    <img
+                      class="mr-3 aspect-square h-full w-full rounded-lg object-cover"
+                      src="/assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt="Vlogging as a career in 2022"
+                    />
+                    <span
+                      class="text-12 absolute bottom-1.5 right-2.5 text-white"
+                      >03:20</span
+                    >
+                  </div>
+                  <div class="mr-2">
+                    <div class="text-base font-semibold">
+                      Vlogging as a career in 2022
+                    </div>
+                    <div class="mt-1 text-14 text-grey-400">Nancy Jaiswal</div>
+                    <div class="mt-1 flex items-center">
+                      <div
+                        class="mr-3 flex items-center gap-1 text-14 text-grey-400"
+                      >
+                        <img src="/assets/svgs/views.svg" alt="" />
+                        150K views
+                      </div>
+                      <div
+                        class="flex items-center gap-1 text-14 text-grey-400"
+                      >
+                        <img src="/assets/svgs/clock.svg" alt="" />
+                        1 days ago
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="hot-item--duration">01:10</div>
-                <div class="hot-item--more">
-                  <button class="hot-item--love">
-                    <img class="" src="/assets/svgs/heart-outline.svg" alt="" />
-                  </button>
-                  <img src="/assets/svgs/more.svg" alt="" />
-                </div>
+                <button class="hot-item--love self-start">
+                  <img class="" src="/assets/svgs/heart-outline.svg" alt="" />
+                </button>
               </a>
             </li>
             <li>
@@ -2190,26 +2226,44 @@
                   </div>
                   <div class="mr-3 flex flex-col items-center">
                     <span class="text-12 font-semibold">1</span>
-                    <img src="/assets/svgs/up.svg" alt="" />
+                    <img src="/assets/svgs/down.svg" alt="" />
                   </div>
-                  <img
-                    class="mr-3 aspect-square w-16 rounded-lg object-cover"
-                    src="/assets/images/artists/2.png"
-                    loading="lazy"
-                    alt="Son Tung M-TP"
-                  />
-                  <div>
-                    <div class="text-base font-semibold">Run now</div>
-                    <div class="mt-1 text-14 text-grey-400">Son Tung M-TP</div>
+                  <div class="relative mr-3 h-20 w-[142px]">
+                    <img
+                      class="mr-3 aspect-square h-full w-full rounded-lg object-cover"
+                      src="/assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt="Vlogging as a career in 2022"
+                    />
+                    <span
+                      class="text-12 absolute bottom-1.5 right-2.5 text-white"
+                      >03:20</span
+                    >
+                  </div>
+                  <div class="mr-2">
+                    <div class="text-base font-semibold">
+                      Vlogging as a career in 2022
+                    </div>
+                    <div class="mt-1 text-14 text-grey-400">Nancy Jaiswal</div>
+                    <div class="mt-1 flex items-center">
+                      <div
+                        class="mr-3 flex items-center gap-1 text-14 text-grey-400"
+                      >
+                        <img src="/assets/svgs/views.svg" alt="" />
+                        150K views
+                      </div>
+                      <div
+                        class="flex items-center gap-1 text-14 text-grey-400"
+                      >
+                        <img src="/assets/svgs/clock.svg" alt="" />
+                        1 days ago
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="hot-item--duration">01:10</div>
-                <div class="hot-item--more">
-                  <button class="hot-item--love">
-                    <img class="" src="/assets/svgs/heart-outline.svg" alt="" />
-                  </button>
-                  <img src="/assets/svgs/more.svg" alt="" />
-                </div>
+                <button class="hot-item--love self-start">
+                  <img class="" src="/assets/svgs/heart-outline.svg" alt="" />
+                </button>
               </a>
             </li>
             <li>
@@ -2224,24 +2278,42 @@
                     <span class="text-12 font-semibold">-</span>
                     <img src="/assets/svgs/stand.svg" alt="" />
                   </div>
-                  <img
-                    class="mr-3 aspect-square w-16 rounded-lg object-cover"
-                    src="/assets/images/artists/2.png"
-                    loading="lazy"
-                    alt="Son Tung M-TP"
-                  />
-                  <div>
-                    <div class="text-base font-semibold">Run now</div>
-                    <div class="mt-1 text-14 text-grey-400">Son Tung M-TP</div>
+                  <div class="relative mr-3 h-20 w-[142px]">
+                    <img
+                      class="mr-3 aspect-square h-full w-full rounded-lg object-cover"
+                      src="/assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt="Vlogging as a career in 2022"
+                    />
+                    <span
+                      class="text-12 absolute bottom-1.5 right-2.5 text-white"
+                      >03:20</span
+                    >
+                  </div>
+                  <div class="mr-2">
+                    <div class="text-base font-semibold">
+                      Vlogging as a career in 2022
+                    </div>
+                    <div class="mt-1 text-14 text-grey-400">Nancy Jaiswal</div>
+                    <div class="mt-1 flex items-center">
+                      <div
+                        class="mr-3 flex items-center gap-1 text-14 text-grey-400"
+                      >
+                        <img src="/assets/svgs/views.svg" alt="" />
+                        150K views
+                      </div>
+                      <div
+                        class="flex items-center gap-1 text-14 text-grey-400"
+                      >
+                        <img src="/assets/svgs/clock.svg" alt="" />
+                        1 days ago
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="hot-item--duration">01:10</div>
-                <div class="hot-item--more">
-                  <button class="hot-item--love">
-                    <img class="" src="/assets/svgs/heart-outline.svg" alt="" />
-                  </button>
-                  <img src="/assets/svgs/more.svg" alt="" />
-                </div>
+                <button class="hot-item--love self-start">
+                  <img class="" src="/assets/svgs/heart-outline.svg" alt="" />
+                </button>
               </a>
             </li>
             <li>
@@ -2256,24 +2328,42 @@
                     <span class="text-12 font-semibold">-</span>
                     <img src="/assets/svgs/stand.svg" alt="" />
                   </div>
-                  <img
-                    class="mr-3 aspect-square w-16 rounded-lg object-cover"
-                    src="/assets/images/artists/2.png"
-                    loading="lazy"
-                    alt="Son Tung M-TP"
-                  />
-                  <div>
-                    <div class="text-base font-semibold">Run now</div>
-                    <div class="mt-1 text-14 text-grey-400">Son Tung M-TP</div>
+                  <div class="relative mr-3 h-20 w-[142px]">
+                    <img
+                      class="mr-3 aspect-square h-full w-full rounded-lg object-cover"
+                      src="/assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt="Vlogging as a career in 2022"
+                    />
+                    <span
+                      class="text-12 absolute bottom-1.5 right-2.5 text-white"
+                      >03:20</span
+                    >
+                  </div>
+                  <div class="mr-2">
+                    <div class="text-base font-semibold">
+                      Vlogging as a career in 2022
+                    </div>
+                    <div class="mt-1 text-14 text-grey-400">Nancy Jaiswal</div>
+                    <div class="mt-1 flex items-center">
+                      <div
+                        class="mr-3 flex items-center gap-1 text-14 text-grey-400"
+                      >
+                        <img src="/assets/svgs/views.svg" alt="" />
+                        150K views
+                      </div>
+                      <div
+                        class="flex items-center gap-1 text-14 text-grey-400"
+                      >
+                        <img src="/assets/svgs/clock.svg" alt="" />
+                        1 days ago
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="hot-item--duration">01:10</div>
-                <div class="hot-item--more">
-                  <button class="hot-item--love">
-                    <img class="" src="/assets/svgs/heart-outline.svg" alt="" />
-                  </button>
-                  <img src="/assets/svgs/more.svg" alt="" />
-                </div>
+                <button class="hot-item--love self-start">
+                  <img class="" src="/assets/svgs/heart-outline.svg" alt="" />
+                </button>
               </a>
             </li>
             <li>
@@ -2286,26 +2376,44 @@
                   </div>
                   <div class="mr-3 flex flex-col items-center">
                     <span class="text-12 font-semibold">1</span>
-                    <img src="/assets/svgs/down.svg" alt="" />
+                    <img src="/assets/svgs/up.svg" alt="" />
                   </div>
-                  <img
-                    class="mr-3 aspect-square w-16 rounded-lg object-cover"
-                    src="/assets/images/artists/2.png"
-                    loading="lazy"
-                    alt="Son Tung M-TP"
-                  />
-                  <div>
-                    <div class="text-base font-semibold">Run now</div>
-                    <div class="mt-1 text-14 text-grey-400">Son Tung M-TP</div>
+                  <div class="relative mr-3 h-20 w-[142px]">
+                    <img
+                      class="mr-3 aspect-square h-full w-full rounded-lg object-cover"
+                      src="/assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt="Vlogging as a career in 2022"
+                    />
+                    <span
+                      class="text-12 absolute bottom-1.5 right-2.5 text-white"
+                      >03:20</span
+                    >
+                  </div>
+                  <div class="mr-2">
+                    <div class="text-base font-semibold">
+                      Vlogging as a career in 2022
+                    </div>
+                    <div class="mt-1 text-14 text-grey-400">Nancy Jaiswal</div>
+                    <div class="mt-1 flex items-center">
+                      <div
+                        class="mr-3 flex items-center gap-1 text-14 text-grey-400"
+                      >
+                        <img src="/assets/svgs/views.svg" alt="" />
+                        150K views
+                      </div>
+                      <div
+                        class="flex items-center gap-1 text-14 text-grey-400"
+                      >
+                        <img src="/assets/svgs/clock.svg" alt="" />
+                        1 days ago
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="hot-item--duration">01:10</div>
-                <div class="hot-item--more">
-                  <button class="hot-item--love">
-                    <img class="" src="/assets/svgs/heart-outline.svg" alt="" />
-                  </button>
-                  <img src="/assets/svgs/more.svg" alt="" />
-                </div>
+                <button class="hot-item--love self-start">
+                  <img class="" src="/assets/svgs/heart-outline.svg" alt="" />
+                </button>
               </a>
             </li>
             <li>
@@ -2317,27 +2425,45 @@
                     7
                   </div>
                   <div class="mr-3 flex flex-col items-center">
-                    <span class="text-12 font-semibold">1</span>
-                    <img src="/assets/svgs/up.svg" alt="" />
+                    <span class="text-12 font-semibold">2</span>
+                    <img src="/assets/svgs/down.svg" alt="" />
                   </div>
-                  <img
-                    class="mr-3 aspect-square w-16 rounded-lg object-cover"
-                    src="/assets/images/artists/2.png"
-                    loading="lazy"
-                    alt="Son Tung M-TP"
-                  />
-                  <div>
-                    <div class="text-base font-semibold">Run now</div>
-                    <div class="mt-1 text-14 text-grey-400">Son Tung M-TP</div>
+                  <div class="relative mr-3 h-20 w-[142px]">
+                    <img
+                      class="mr-3 aspect-square h-full w-full rounded-lg object-cover"
+                      src="/assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt="Vlogging as a career in 2022"
+                    />
+                    <span
+                      class="text-12 absolute bottom-1.5 right-2.5 text-white"
+                      >03:20</span
+                    >
+                  </div>
+                  <div class="mr-2">
+                    <div class="text-base font-semibold">
+                      Vlogging as a career in 2022
+                    </div>
+                    <div class="mt-1 text-14 text-grey-400">Nancy Jaiswal</div>
+                    <div class="mt-1 flex items-center">
+                      <div
+                        class="mr-3 flex items-center gap-1 text-14 text-grey-400"
+                      >
+                        <img src="/assets/svgs/views.svg" alt="" />
+                        150K views
+                      </div>
+                      <div
+                        class="flex items-center gap-1 text-14 text-grey-400"
+                      >
+                        <img src="/assets/svgs/clock.svg" alt="" />
+                        1 days ago
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="hot-item--duration">01:10</div>
-                <div class="hot-item--more">
-                  <button class="hot-item--love">
-                    <img class="" src="/assets/svgs/heart-outline.svg" alt="" />
-                  </button>
-                  <img src="/assets/svgs/more.svg" alt="" />
-                </div>
+                <button class="hot-item--love self-start">
+                  <img class="" src="/assets/svgs/heart-outline.svg" alt="" />
+                </button>
               </a>
             </li>
             <li>
@@ -2349,27 +2475,45 @@
                     8
                   </div>
                   <div class="mr-3 flex flex-col items-center">
-                    <span class="text-12 font-semibold">-</span>
-                    <img src="/assets/svgs/stand.svg" alt="" />
+                    <span class="text-12 font-semibold">2</span>
+                    <img src="/assets/svgs/down.svg" alt="" />
                   </div>
-                  <img
-                    class="mr-3 aspect-square w-16 rounded-lg object-cover"
-                    src="/assets/images/artists/2.png"
-                    loading="lazy"
-                    alt="Son Tung M-TP"
-                  />
-                  <div>
-                    <div class="text-base font-semibold">Run now</div>
-                    <div class="mt-1 text-14 text-grey-400">Son Tung M-TP</div>
+                  <div class="relative mr-3 h-20 w-[142px]">
+                    <img
+                      class="mr-3 aspect-square h-full w-full rounded-lg object-cover"
+                      src="/assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt="Vlogging as a career in 2022"
+                    />
+                    <span
+                      class="text-12 absolute bottom-1.5 right-2.5 text-white"
+                      >03:20</span
+                    >
+                  </div>
+                  <div class="mr-2">
+                    <div class="text-base font-semibold">
+                      Vlogging as a career in 2022
+                    </div>
+                    <div class="mt-1 text-14 text-grey-400">Nancy Jaiswal</div>
+                    <div class="mt-1 flex items-center">
+                      <div
+                        class="mr-3 flex items-center gap-1 text-14 text-grey-400"
+                      >
+                        <img src="/assets/svgs/views.svg" alt="" />
+                        150K views
+                      </div>
+                      <div
+                        class="flex items-center gap-1 text-14 text-grey-400"
+                      >
+                        <img src="/assets/svgs/clock.svg" alt="" />
+                        1 days ago
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="hot-item--duration">01:10</div>
-                <div class="hot-item--more">
-                  <button class="hot-item--love">
-                    <img class="" src="/assets/svgs/heart-outline.svg" alt="" />
-                  </button>
-                  <img src="/assets/svgs/more.svg" alt="" />
-                </div>
+                <button class="hot-item--love self-start">
+                  <img class="" src="/assets/svgs/heart-outline.svg" alt="" />
+                </button>
               </a>
             </li>
             <li>
@@ -2381,27 +2525,45 @@
                     9
                   </div>
                   <div class="mr-3 flex flex-col items-center">
-                    <span class="text-12 font-semibold">1</span>
-                    <img src="/assets/svgs/down.svg" alt="" />
+                    <span class="text-12 font-semibold">-</span>
+                    <img src="/assets/svgs/stand.svg" alt="" />
                   </div>
-                  <img
-                    class="mr-3 aspect-square w-16 rounded-lg object-cover"
-                    src="/assets/images/artists/2.png"
-                    loading="lazy"
-                    alt="Son Tung M-TP"
-                  />
-                  <div>
-                    <div class="text-base font-semibold">Run now</div>
-                    <div class="mt-1 text-14 text-grey-400">Son Tung M-TP</div>
+                  <div class="relative mr-3 h-20 w-[142px]">
+                    <img
+                      class="mr-3 aspect-square h-full w-full rounded-lg object-cover"
+                      src="/assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt="Vlogging as a career in 2022"
+                    />
+                    <span
+                      class="text-12 absolute bottom-1.5 right-2.5 text-white"
+                      >03:20</span
+                    >
+                  </div>
+                  <div class="mr-2">
+                    <div class="text-base font-semibold">
+                      Vlogging as a career in 2022
+                    </div>
+                    <div class="mt-1 text-14 text-grey-400">Nancy Jaiswal</div>
+                    <div class="mt-1 flex items-center">
+                      <div
+                        class="mr-3 flex items-center gap-1 text-14 text-grey-400"
+                      >
+                        <img src="/assets/svgs/views.svg" alt="" />
+                        150K views
+                      </div>
+                      <div
+                        class="flex items-center gap-1 text-14 text-grey-400"
+                      >
+                        <img src="/assets/svgs/clock.svg" alt="" />
+                        1 days ago
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="hot-item--duration">01:10</div>
-                <div class="hot-item--more">
-                  <button class="hot-item--love">
-                    <img class="" src="/assets/svgs/heart-outline.svg" alt="" />
-                  </button>
-                  <img src="/assets/svgs/more.svg" alt="" />
-                </div>
+                <button class="hot-item--love self-start">
+                  <img class="" src="/assets/svgs/heart-outline.svg" alt="" />
+                </button>
               </a>
             </li>
             <li>
@@ -2413,27 +2575,45 @@
                     10
                   </div>
                   <div class="mr-3 flex flex-col items-center">
-                    <span class="text-12 font-semibold">-</span>
-                    <img src="/assets/svgs/stand.svg" alt="" />
+                    <span class="text-12 font-semibold">1</span>
+                    <img src="/assets/svgs/up.svg" alt="" />
                   </div>
-                  <img
-                    class="mr-3 aspect-square w-16 rounded-lg object-cover"
-                    src="/assets/images/artists/2.png"
-                    loading="lazy"
-                    alt="Son Tung M-TP"
-                  />
-                  <div>
-                    <div class="text-base font-semibold">Run now</div>
-                    <div class="mt-1 text-14 text-grey-400">Son Tung M-TP</div>
+                  <div class="relative mr-3 h-20 w-[142px]">
+                    <img
+                      class="mr-3 aspect-square h-full w-full rounded-lg object-cover"
+                      src="/assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt="Vlogging as a career in 2022"
+                    />
+                    <span
+                      class="text-12 absolute bottom-1.5 right-2.5 text-white"
+                      >03:20</span
+                    >
+                  </div>
+                  <div class="mr-2">
+                    <div class="text-base font-semibold">
+                      Vlogging as a career in 2022
+                    </div>
+                    <div class="mt-1 text-14 text-grey-400">Nancy Jaiswal</div>
+                    <div class="mt-1 flex items-center">
+                      <div
+                        class="mr-3 flex items-center gap-1 text-14 text-grey-400"
+                      >
+                        <img src="/assets/svgs/views.svg" alt="" />
+                        150K views
+                      </div>
+                      <div
+                        class="flex items-center gap-1 text-14 text-grey-400"
+                      >
+                        <img src="/assets/svgs/clock.svg" alt="" />
+                        1 days ago
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="hot-item--duration">01:10</div>
-                <div class="hot-item--more">
-                  <button class="hot-item--love">
-                    <img class="" src="/assets/svgs/heart-outline.svg" alt="" />
-                  </button>
-                  <img src="/assets/svgs/more.svg" alt="" />
-                </div>
+                <button class="hot-item--love self-start">
+                  <img class="" src="/assets/svgs/heart-outline.svg" alt="" />
+                </button>
               </a>
             </li>
             <li>
@@ -2448,126 +2628,48 @@
                     <span class="text-12 font-semibold">1</span>
                     <img src="/assets/svgs/up.svg" alt="" />
                   </div>
-                  <img
-                    class="mr-3 aspect-square w-16 rounded-lg object-cover"
-                    src="/assets/images/artists/2.png"
-                    loading="lazy"
-                    alt="Son Tung M-TP"
-                  />
-                  <div>
-                    <div class="text-base font-semibold">Run now</div>
-                    <div class="mt-1 text-14 text-grey-400">Son Tung M-TP</div>
+                  <div class="relative mr-3 h-20 w-[142px]">
+                    <img
+                      class="mr-3 aspect-square h-full w-full rounded-lg object-cover"
+                      src="/assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt="Vlogging as a career in 2022"
+                    />
+                    <span
+                      class="text-12 absolute bottom-1.5 right-2.5 text-white"
+                      >03:20</span
+                    >
+                  </div>
+                  <div class="mr-2">
+                    <div class="text-base font-semibold">
+                      Vlogging as a career in 2022
+                    </div>
+                    <div class="mt-1 text-14 text-grey-400">Nancy Jaiswal</div>
+                    <div class="mt-1 flex items-center">
+                      <div
+                        class="mr-3 flex items-center gap-1 text-14 text-grey-400"
+                      >
+                        <img src="/assets/svgs/views.svg" alt="" />
+                        150K views
+                      </div>
+                      <div
+                        class="flex items-center gap-1 text-14 text-grey-400"
+                      >
+                        <img src="/assets/svgs/clock.svg" alt="" />
+                        1 days ago
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="hot-item--duration">01:10</div>
-                <div class="hot-item--more">
-                  <button class="hot-item--love">
-                    <img class="" src="/assets/svgs/heart-outline.svg" alt="" />
-                  </button>
-                  <img src="/assets/svgs/more.svg" alt="" />
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="hot-item">
-                <div class="flex items-center">
-                  <div
-                    class="mr-1 w-6 text-center text-18 font-semibold text-grey-400"
-                  >
-                    12
-                  </div>
-                  <div class="mr-3 flex flex-col items-center">
-                    <span class="text-12 font-semibold">1</span>
-                    <img src="/assets/svgs/up.svg" alt="" />
-                  </div>
-                  <img
-                    class="mr-3 aspect-square w-16 rounded-lg object-cover"
-                    src="/assets/images/artists/2.png"
-                    loading="lazy"
-                    alt="Son Tung M-TP"
-                  />
-                  <div>
-                    <div class="text-base font-semibold">Run now</div>
-                    <div class="mt-1 text-14 text-grey-400">Son Tung M-TP</div>
-                  </div>
-                </div>
-                <div class="hot-item--duration">01:10</div>
-                <div class="hot-item--more">
-                  <button class="hot-item--love">
-                    <img class="" src="/assets/svgs/heart-outline.svg" alt="" />
-                  </button>
-                  <img src="/assets/svgs/more.svg" alt="" />
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="hot-item">
-                <div class="flex items-center">
-                  <div
-                    class="mr-1 w-6 text-center text-18 font-semibold text-grey-400"
-                  >
-                    13
-                  </div>
-                  <div class="mr-3 flex flex-col items-center">
-                    <span class="text-12 font-semibold">1</span>
-                    <img src="/assets/svgs/up.svg" alt="" />
-                  </div>
-                  <img
-                    class="mr-3 aspect-square w-16 rounded-lg object-cover"
-                    src="/assets/images/artists/2.png"
-                    loading="lazy"
-                    alt="Son Tung M-TP"
-                  />
-                  <div>
-                    <div class="text-base font-semibold">Run now</div>
-                    <div class="mt-1 text-14 text-grey-400">Son Tung M-TP</div>
-                  </div>
-                </div>
-                <div class="hot-item--duration">01:10</div>
-                <div class="hot-item--more">
-                  <button class="hot-item--love">
-                    <img class="" src="/assets/svgs/heart-outline.svg" alt="" />
-                  </button>
-                  <img src="/assets/svgs/more.svg" alt="" />
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="hot-item">
-                <div class="flex items-center">
-                  <div
-                    class="mr-1 w-6 text-center text-18 font-semibold text-grey-400"
-                  >
-                    14
-                  </div>
-                  <div class="mr-3 flex flex-col items-center">
-                    <span class="text-12 font-semibold">1</span>
-                    <img src="/assets/svgs/up.svg" alt="" />
-                  </div>
-                  <img
-                    class="mr-3 aspect-square w-16 rounded-lg object-cover"
-                    src="/assets/images/artists/2.png"
-                    loading="lazy"
-                    alt="Son Tung M-TP"
-                  />
-                  <div>
-                    <div class="text-base font-semibold">Run now</div>
-                    <div class="mt-1 text-14 text-grey-400">Son Tung M-TP</div>
-                  </div>
-                </div>
-                <div class="hot-item--duration">01:10</div>
-                <div class="hot-item--more">
-                  <button class="hot-item--love">
-                    <img class="" src="/assets/svgs/heart-outline.svg" alt="" />
-                  </button>
-                  <img src="/assets/svgs/more.svg" alt="" />
-                </div>
+                <button class="hot-item--love self-start">
+                  <img class="" src="/assets/svgs/heart-outline.svg" alt="" />
+                </button>
               </a>
             </li>
           </ul>
         </div>
         <div class="flex h-[732px] flex-col rounded-xl bg-white">
-          <div class="relative p-4 text-20 font-semibold">Composer 30</div>
+          <div class="relative p-4 text-20 font-semibold">Creator 30</div>
           <ul
             class="scrollbar-custom flex flex-1 flex-col overflow-y-auto overflow-x-hidden px-2 pb-2"
           >
