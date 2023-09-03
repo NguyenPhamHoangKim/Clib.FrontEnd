@@ -8,18 +8,43 @@
   }
 }
 @tailwind components;
-@layer components {
-  .login-divider {
-    @apply relative my-5 h-[1px] w-full bg-grey-200 before:absolute before:left-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:bg-white before:px-0.5 before:text-grey-400 before:content-['or'];
-  }
-  .login-submit {
-    @apply bg-grey-300 text-white;
-  }
-  .form-input.error {
-    @apply border-warning border;
-  }
-  .btn-secondary {
-    @apply flex items-center justify-center rounded-xl border border-branding-secondary bg-branding-secondary px-6 py-2.5 text-base font-semibold text-white transition duration-75 hover:bg-transparent hover:text-branding-secondary;
-  }
-}
 @tailwind utilities;
+
+.login-divider {
+  @apply relative my-5 h-[1px] w-full bg-grey-200 before:absolute before:left-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:bg-white before:px-0.5 before:text-grey-400 before:content-['or'];
+}
+.login-submit {
+  @apply bg-grey-300 text-white;
+}
+.form-input.error {
+  @apply border border-warning;
+}
+.btn-secondary {
+  @apply flex items-center justify-center rounded-xl border border-branding-secondary bg-branding-secondary px-6 py-2.5 text-base font-semibold text-white transition duration-75 hover:bg-transparent hover:text-branding-secondary;
+}
+.dot {
+  @apply inline-block h-0.5 w-0.5 rounded-full bg-grey-400;
+}
+
+.scrollbar-custom {
+  @apply scrollbar:!w-1.5 scrollbar:bg-transparent scrollbar-track:!rounded scrollbar-track:!bg-white scrollbar-thumb:!rounded scrollbar-thumb:!bg-grey-300;
+}
+
+.hot-tab.active {
+  @apply border-b-grey-400 text-grey-400;
+}
+.hot-item {
+  @apply flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg;
+}
+.hot-item--duration {
+  @apply text-right text-14 text-grey-400;
+}
+.hot-item:hover .hot-item--duration {
+  @apply hidden;
+}
+.hot-item--more {
+  @apply hidden items-center gap-x-3;
+}
+.hot-item:hover .hot-item--more {
+  @apply flex;
+}

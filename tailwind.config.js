@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-
+const plugin = require("tailwindcss/plugin");
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
@@ -34,11 +34,36 @@ module.exports = {
     },
     container: {
       center: true,
+      padding: {
+        DEFAULT: "16px",
+        xl: "0",
+      },
+      screens: {
+        sm: "680px",
+        md: "768px",
+        lg: "960px",
+        xl: "1160px",
+        "2xl": "1496px",
+      },
     },
     fontSize: {
       base: ["16px", "24px"],
+      12: ["12px", "16px"],
+      14: ["14px", "20px"],
+      18: ["18px", "24px"],
+      20: ["20px", "24px"],
       24: ["24px", "28px"],
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addVariant }) {
+      addVariant(
+        "supports-scrollbars",
+        "@supports selector(::-webkit-scrollbar)",
+      );
+      addVariant("scrollbar", "&::-webkit-scrollbar");
+      addVariant("scrollbar-track", "&::-webkit-scrollbar-track");
+      addVariant("scrollbar-thumb", "&::-webkit-scrollbar-thumb");
+    }),
+  ],
 };
