@@ -585,6 +585,25 @@ html{
   }
 }
 
+@layer {
+  .dot{
+    display: inline-block;
+    height: 0.125rem;
+    width: 0.125rem;
+    border-radius: 9999px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(82 97 107 / var(--tw-bg-opacity));
+  }
+
+  .footer-divider{
+    display: block;
+    height: 1rem;
+    width: 1px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(161 171 178 / var(--tw-bg-opacity));
+  }
+}
+
 .sr-only{
   position: absolute;
   width: 1px;
@@ -781,6 +800,26 @@ html{
 
 .mt-9{
   margin-top: 2.25rem;
+}
+
+.mt-\[100px\]{
+  margin-top: 100px;
+}
+
+.mr-6{
+  margin-right: 1.5rem;
+}
+
+.-mb-1{
+  margin-bottom: -0.25rem;
+}
+
+.-mb-0{
+  margin-bottom: -0px;
+}
+
+.-mb-0\.5{
+  margin-bottom: -0.125rem;
 }
 
 .box-border{
@@ -1986,6 +2025,11 @@ html{
   border-bottom-color: transparent;
 }
 
+.border-t-grey-400{
+  --tw-border-opacity: 1;
+  border-top-color: rgb(82 97 107 / var(--tw-border-opacity));
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\]{
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
@@ -2177,8 +2221,16 @@ html{
   padding-bottom: 0.5rem;
 }
 
+.pb-6{
+  padding-bottom: 1.5rem;
+}
+
 .pr-10{
   padding-right: 2.5rem;
+}
+
+.pt-4{
+  padding-top: 1rem;
 }
 
 .text-left{
@@ -2784,15 +2836,6 @@ html{
   color: rgb(10 191 172 / var(--tw-text-opacity));
 }
 
-.dot{
-  display: inline-block;
-  height: 0.125rem;
-  width: 0.125rem;
-  border-radius: 9999px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(82 97 107 / var(--tw-bg-opacity));
-}
-
 .scrollbar-custom::-webkit-scrollbar{
   width: 0.375rem !important;
   background-color: transparent;
@@ -2919,6 +2962,26 @@ html{
 
 .albums-swiper .swiper-albums-next{
   right: 0.75rem;
+}
+
+.lang-footer-item{
+  font-size: 14px;
+  line-height: 20px;
+  --tw-text-opacity: 1;
+  color: rgb(161 171 178 / var(--tw-text-opacity));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 75ms;
+}
+
+.lang-footer-item:hover{
+  --tw-text-opacity: 1;
+  color: rgb(82 97 107 / var(--tw-text-opacity));
+}
+
+.lang-footer-item.active{
+  --tw-text-opacity: 1;
+  color: rgb(82 97 107 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px){

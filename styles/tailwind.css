@@ -8,6 +8,14 @@
   }
 }
 @tailwind components;
+@layer {
+  .dot {
+    @apply inline-block h-0.5 w-0.5 rounded-full bg-grey-400;
+  }
+  .footer-divider {
+    @apply block h-4 w-[1px] bg-grey-300;
+  }
+}
 @tailwind utilities;
 
 .login-divider {
@@ -21,9 +29,6 @@
 }
 .btn-secondary {
   @apply flex items-center justify-center rounded-xl border border-branding-secondary bg-branding-secondary px-6 py-2.5 text-base font-semibold text-white transition duration-75 hover:bg-transparent hover:text-branding-secondary;
-}
-.dot {
-  @apply inline-block h-0.5 w-0.5 rounded-full bg-grey-400;
 }
 
 .scrollbar-custom {
@@ -80,4 +85,11 @@
 }
 .albums-swiper .swiper-albums-next {
   @apply right-3;
+}
+
+.lang-footer-item {
+  @apply text-14 text-grey-300 transition-colors duration-75 hover:text-grey-400;
+}
+.lang-footer-item.active {
+  @apply text-grey-400;
 }
