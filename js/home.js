@@ -37,3 +37,12 @@ new Swiper(".song-swiper", {
     prevEl: ".swiper-song-prev",
   },
 });
+
+new Swiper(".albums-swiper", {
+  slidesPerView: 6.5,
+  spaceBetween: 16,
+  navigation: {
+    nextEl: ".swiper-albums-next",
+    prevEl: ".swiper-albums-prev",
+  },
+});
