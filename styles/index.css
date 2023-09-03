@@ -767,6 +767,10 @@ html{
   margin-top: 1.5rem;
 }
 
+.mt-8{
+  margin-top: 2rem;
+}
+
 .mt-9{
   margin-top: 2.25rem;
 }
@@ -1513,10 +1517,6 @@ html{
   gap: 35px;
 }
 
-.gap-y-2{
-  row-gap: 0.5rem;
-}
-
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -2113,16 +2113,16 @@ html{
   padding: 0.25rem;
 }
 
+.p-2{
+  padding: 0.5rem;
+}
+
 .p-3{
   padding: 0.75rem;
 }
 
 .p-4{
   padding: 1rem;
-}
-
-.p-2{
-  padding: 0.5rem;
 }
 
 .px-2{
@@ -2155,16 +2155,12 @@ html{
   padding-bottom: 0.75rem;
 }
 
-.pb-4{
-  padding-bottom: 1rem;
+.pb-2{
+  padding-bottom: 0.5rem;
 }
 
 .pr-10{
   padding-right: 2.5rem;
-}
-
-.pb-2{
-  padding-bottom: 0.5rem;
 }
 
 .text-left{
@@ -2842,6 +2838,17 @@ html{
   display: flex;
 }
 
+.banner-swiper .swiper-pagination-bullet{
+  --tw-bg-opacity: 1;
+  background-color: rgb(235 238 240 / var(--tw-bg-opacity));
+  opacity: 1;
+}
+
+.banner-swiper .swiper-pagination-bullet.swiper-pagination-bullet-active{
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 117 255 / var(--tw-bg-opacity));
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
@@ -2894,14 +2901,14 @@ html{
   color: rgb(161 171 178 / var(--tw-text-opacity));
 }
 
-.hover\:bg-branding-tertiary:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(1 87 155 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-bg:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(235 247 252 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-branding-tertiary:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 87 155 / var(--tw-bg-opacity));
 }
 
 .hover\:font-bold:hover{

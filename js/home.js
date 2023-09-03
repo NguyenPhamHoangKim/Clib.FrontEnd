@@ -17,3 +17,9 @@ $(".hot-item").each(function (_, el) {
     );
   });
 });
+
+const bannerSwiper = new Swiper(".banner-swiper", {
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});

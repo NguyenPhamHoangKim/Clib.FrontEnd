@@ -48,3 +48,10 @@
 .hot-item:hover .hot-item--more {
   @apply flex;
 }
+
+.banner-swiper .swiper-pagination-bullet {
+  @apply bg-grey-200 opacity-100;
+}
+.banner-swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  @apply bg-branding;
+}
