@@ -18,8 +18,22 @@ $(".hot-item").each(function (_, el) {
   });
 });
 
-const bannerSwiper = new Swiper(".banner-swiper", {
+new Swiper(".banner-swiper", {
+  speed: 600,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: ".swiper-pagination",
+  },
+});
+
+new Swiper(".song-swiper", {
+  slidesPerView: 6.5,
+  spaceBetween: 16,
+  navigation: {
+    nextEl: ".swiper-song-next",
+    prevEl: ".swiper-song-prev",
   },
 });
