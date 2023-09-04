@@ -115,3 +115,11 @@
 .lang-footer-item.active {
   @apply text-grey-400;
 }
+
+a.swiper-slide img {
+  @apply transition-transform duration-700;
+}
+
+a.swiper-slide:not(.video-item):hover img {
+  @apply scale-125;
+}
