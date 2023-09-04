@@ -3522,6 +3522,10 @@ a.swiper-slide:not(.video-item):hover img{
     margin-top: 180px;
   }
 
+  .md\:mt-8{
+    margin-top: 2rem;
+  }
+
   .md\:block{
     display: block;
   }
