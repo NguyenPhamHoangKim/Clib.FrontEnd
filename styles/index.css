@@ -593,9 +593,9 @@ body{
   }
 }
 
-@media (min-width: 1496px){
+@media (min-width: 1320px){
   .container{
-    max-width: 1496px;
+    max-width: 1320px;
   }
 }
 
@@ -798,6 +798,11 @@ body{
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
+}
+
+.mx-2{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .-mb-0{
@@ -1074,6 +1079,10 @@ body{
 
 .w-full{
   width: 100%;
+}
+
+.w-10{
+  width: 2.5rem;
 }
 
 .max-w-full{
@@ -1442,6 +1451,10 @@ body{
 
 .grid-cols-\[312px\2c 312px\]{
   grid-template-columns: 312px 312px;
+}
+
+.grid-cols-\[300px\2c 300px\]{
+  grid-template-columns: 300px 300px;
 }
 
 .flex-row{
@@ -2348,6 +2361,11 @@ body{
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .pb-2{
@@ -3340,9 +3358,9 @@ a.swiper-slide:not(.video-item):hover img{
     }
   }
 
-  @media (min-width: 1496px){
+  @media (min-width: 1320px){
     .sm\:container{
-      max-width: 1496px;
+      max-width: 1320px;
     }
   }
 }
@@ -3382,9 +3400,9 @@ a.swiper-slide:not(.video-item):hover img{
     }
   }
 
-  @media (min-width: 1496px){
+  @media (min-width: 1320px){
     .md\:container{
-      max-width: 1496px;
+      max-width: 1320px;
     }
   }
 }
@@ -3412,6 +3430,11 @@ a.swiper-slide:not(.video-item):hover img{
 .hover\:bg-branding-tertiary:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(1 87 155 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-branding-secondary:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(10 191 172 / var(--tw-bg-opacity));
 }
 
 .hover\:font-bold:hover{
@@ -3514,16 +3537,16 @@ a.swiper-slide:not(.video-item):hover img{
     margin-right: 0.75rem;
   }
 
+  .md\:mt-8{
+    margin-top: 2rem;
+  }
+
   .md\:mt-9{
     margin-top: 2.25rem;
   }
 
   .md\:mt-\[180px\]{
     margin-top: 180px;
-  }
-
-  .md\:mt-8{
-    margin-top: 2rem;
   }
 
   .md\:block{
@@ -3556,6 +3579,10 @@ a.swiper-slide:not(.video-item):hover img{
 
   .md\:w-\[142px\]{
     width: 142px;
+  }
+
+  .md\:w-7{
+    width: 1.75rem;
   }
 
   .md\:min-w-\[260px\]{
@@ -3658,5 +3685,11 @@ a.swiper-slide:not(.video-item):hover img{
 @media (min-width: 1280px){
   .xl\:grid-cols-\[1\.1fr\2c 2fr\2c 1\.1fr\]{
     grid-template-columns: 1.1fr 2fr 1.1fr;
+  }
+}
+
+@media (min-width: 1536px){
+  .\32xl\:gap-6{
+    gap: 1.5rem;
   }
 }

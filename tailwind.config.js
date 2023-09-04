@@ -43,7 +43,7 @@ module.exports = {
         md: "768px",
         lg: "960px",
         xl: "1160px",
-        "2xl": "1496px",
+        "2xl": "1320px",
       },
     },
     fontSize: {
