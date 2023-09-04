@@ -151,3 +151,16 @@ a.swiper-slide:not(.video-item):hover img {
 .header-link:not(:last-child) a {
   @apply border-b border-b-grey-200;
 }
+
+.mixed-link .mixed-link--duration {
+  @apply block;
+}
+.mixed-link:hover .mixed-link--duration {
+  @apply hidden;
+}
+.mixed-link .mixed-link--more {
+  @apply hidden items-center gap-3;
+}
+.mixed-link:hover .mixed-link--more {
+  @apply flex;
+}
