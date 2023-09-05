@@ -194,3 +194,9 @@ a.swiper-slide:not(.video-item):hover img {
 .mixed-link:hover .mixed-link--more {
   @apply flex;
 }
+.topic-item img {
+  @apply transition-transform duration-700;
+}
+.topic-item:hover img {
+  @apply scale-125;
+}

@@ -790,6 +790,10 @@ body{
   inset: -0.25rem;
 }
 
+.inset-0{
+  inset: 0px;
+}
+
 .bottom-1{
   bottom: 0.25rem;
 }
@@ -852,6 +856,10 @@ body{
 
 .z-10{
   z-index: 10;
+}
+
+.z-\[1\]{
+  z-index: 1;
 }
 
 .z-\[999\]{
@@ -954,6 +962,10 @@ body{
   margin-top: 0.25rem;
 }
 
+.mt-1\.5{
+  margin-top: 0.375rem;
+}
+
 .mt-2{
   margin-top: 0.5rem;
 }
@@ -992,10 +1004,6 @@ body{
 
 .mt-\[30px\]{
   margin-top: 30px;
-}
-
-.mt-1\.5{
-  margin-top: 0.375rem;
 }
 
 .box-border{
@@ -1153,16 +1161,16 @@ body{
   height: 100%;
 }
 
+.max-h-\[220px\]{
+  max-height: 220px;
+}
+
 .max-h-\[256px\]{
   max-height: 256px;
 }
 
 .max-h-full{
   max-height: 100%;
-}
-
-.max-h-\[220px\]{
-  max-height: 220px;
 }
 
 .min-h-\[120px\]{
@@ -1226,16 +1234,12 @@ body{
   max-width: 180px;
 }
 
-.max-w-full{
-  max-width: 100%;
-}
-
-.max-w-\[250px\]{
-  max-width: 250px;
-}
-
 .max-w-\[220px\]{
   max-width: 220px;
+}
+
+.max-w-full{
+  max-width: 100%;
 }
 
 .flex-1{
@@ -1827,8 +1831,17 @@ body{
        column-gap: 0.5rem;
 }
 
+.gap-x-3{
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+}
+
 .gap-y-3{
   row-gap: 0.75rem;
+}
+
+.gap-y-\[13px\]{
+  row-gap: 13px;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
@@ -2328,6 +2341,10 @@ body{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[linear-gradient\(180deg\2c rgba\(0\2c 0\2c 0\2c 0\.00\)_37\%\2c rgba\(0\2c 0\2c 0\2c 0\.80\)_100\%\)\]{
+  background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 37%,rgba(0,0,0,0.80) 100%);
+}
+
 .bg-\[url\(\'\/assets\/images\/login-bg\.jpg\'\)\]{
   background-image: url('/assets/images/login-bg.jpg');
 }
@@ -2450,6 +2467,11 @@ body{
      object-fit: scale-down;
 }
 
+.object-center{
+  -o-object-position: center;
+     object-position: center;
+}
+
 .p-0{
   padding: 0px;
 }
@@ -2543,14 +2565,6 @@ body{
 
 .pt-4{
   padding-top: 1rem;
-}
-
-.pl-3{
-  padding-left: 0.75rem;
-}
-
-.pr-3{
-  padding-right: 0.75rem;
 }
 
 .text-left{
@@ -3479,6 +3493,18 @@ a.swiper-slide:not(.video-item):hover img{
 
 .mixed-link:hover .mixed-link--more{
   display: flex;
+}
+
+.topic-item img{
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 700ms;
+}
+
+.topic-item:hover img{
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @media (min-width: 640px){
