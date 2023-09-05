@@ -33,6 +33,9 @@
   .btn-outline {
     @apply block w-[100px] rounded-xl border border-branding py-2 text-14 font-semibold text-branding transition-colors duration-75 hover:bg-branding hover:text-white;
   }
+  .overlay {
+    @apply fixed inset-0 z-[9999] bg-black/60;
+  }
 }
 @tailwind utilities;
 
@@ -168,7 +171,7 @@ a.swiper-slide:not(.video-item):hover img {
 }
 
 .header-tab-modal {
-  @apply fixed inset-0 z-[9999] hidden bg-black/60;
+  @apply hidden;
 }
 .header-tab-modal.active {
   @apply block;
@@ -223,7 +226,16 @@ a.swiper-slide:not(.video-item):hover img {
 .ms-popup {
   @apply absolute left-1/2 top-[calc(100%+4px)] z-20 hidden w-[400px] -translate-x-1/2 rounded-xl bg-white shadow-[0px_2px_20px_0px_rgba(0,0,0,0.08)];
 }
-
 .ms-popup.active {
   @apply block;
+}
+
+.add-playlist-modal {
+  @apply flex items-center justify-center;
+}
+.add-playlist-modal.active {
+  @apply flex;
+}
+.add-playlist-modal--inner {
+  @apply relative w-[640px] max-w-full rounded-xl bg-white px-6 py-4;
 }

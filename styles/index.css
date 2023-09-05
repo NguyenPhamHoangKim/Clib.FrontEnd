@@ -762,6 +762,13 @@ body{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.overlay{
+  position: fixed;
+  inset: 0px;
+  z-index: 9999;
+  background-color: rgb(0 0 0 / 0.6);
+}
+
 .sr-only{
   position: absolute;
   width: 1px;
@@ -887,6 +894,10 @@ body{
 
 .top-1\/2{
   top: 50%;
+}
+
+.top-3{
+  top: 0.75rem;
 }
 
 .isolate{
@@ -1218,6 +1229,10 @@ body{
 
 .h-full{
   height: 100%;
+}
+
+.h-12{
+  height: 3rem;
 }
 
 .max-h-\[220px\]{
@@ -2676,6 +2691,11 @@ body{
   padding-bottom: 0.75rem;
 }
 
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .pb-2{
   padding-bottom: 0.5rem;
 }
@@ -3570,11 +3590,7 @@ a.swiper-slide:not(.video-item):hover img{
 }
 
 .header-tab-modal{
-  position: fixed;
-  inset: 0px;
-  z-index: 9999;
   display: none;
-  background-color: rgb(0 0 0 / 0.6);
 }
 
 .header-tab-modal.active{
@@ -3724,6 +3740,29 @@ a.swiper-slide:not(.video-item):hover img{
 
 .ms-popup.active{
   display: block;
+}
+
+.add-playlist-modal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-playlist-modal.active{
+  display: flex;
+}
+
+.add-playlist-modal--inner{
+  position: relative;
+  width: 640px;
+  max-width: 100%;
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 @media (min-width: 640px){
