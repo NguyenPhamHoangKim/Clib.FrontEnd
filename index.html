@@ -66,9 +66,204 @@
             <button class="">
               <img src="/assets/svgs/export-pc.svg" alt="" />
             </button>
-            <button class="">
-              <img src="/assets/svgs/messenger-pc.svg" alt="" />
-            </button>
+            <div
+              id="ms-wrapper"
+              class="relative flex items-center justify-center"
+            >
+              <button id="toggle-ms" class="toggle-ms">
+                <img
+                  class="ms-icon"
+                  src="/assets/svgs/messenger-pc.svg"
+                  alt=""
+                />
+              </button>
+              <div id="ms-popup" class="ms-popup">
+                <div class="flex items-center justify-between px-4 pb-2 pt-4">
+                  <span class="text-20 font-semibold">Message</span>
+                  <div class="flex items-center gap-2">
+                    <span class="text-14">New chat</span>
+                    <button class="rounded-xl bg-grey-200 p-1.5 duration-100">
+                      <img class="h-6 w-6" src="/assets/svgs/edit.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+                <div class="mt-2 px-4">
+                  <div
+                    class="flex items-center gap-2 rounded-xl bg-grey-100 p-3"
+                  >
+                    <img
+                      class="aspect-square w-5"
+                      src="/assets/svgs/search-people.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <input
+                      class="h-full flex-1 bg-transparent text-14 outline-none placeholder:text-grey-300"
+                      placeholder="Search people"
+                    />
+                  </div>
+                </div>
+                <ul class="mt-2 px-4">
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                    >
+                      <div class="mr-2 flex items-center gap-2">
+                        <img
+                          class="aspect-square w-10 rounded-lg object-cover"
+                          src="/assets/images/artists/1.png"
+                          loading="lazy"
+                          alt="Benny Andersson"
+                        />
+                        <div>
+                          <div class="line-clamp-1 text-14 font-semibold">
+                            Benny Andersson
+                          </div>
+                          <div class="line-clamp-1 text-14 font-semibold">
+                            aww
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex flex-col items-end gap-2.5">
+                        <div class="text-12 text-grey-400">3d</div>
+                        <span class="dot !h-3 !w-3 !bg-branding"></span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center justify-between border-r-4 border-r-branding bg-[linear-gradient(270deg,#F3FCFF_0%,rgba(243,252,255,0.00)_103.09%)] px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                    >
+                      <div class="mr-2 flex items-center gap-2">
+                        <img
+                          class="aspect-square w-10 rounded-lg object-cover"
+                          src="/assets/images/artists/1.png"
+                          loading="lazy"
+                          alt="Son Tung M-TP"
+                        />
+                        <div>
+                          <div
+                            class="line-clamp-1 flex items-center gap-1 text-14 font-semibold"
+                          >
+                            Son Tung M-TP
+                            <img src="/assets/svgs/verify.svg" alt="" />
+                          </div>
+                          <div class="line-clamp-1 text-14">
+                            Send a playlist
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex flex-col items-end gap-2.5">
+                        <div class="text-12 text-grey-400">3d</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                    >
+                      <div class="mr-2 flex items-center gap-2">
+                        <img
+                          class="aspect-square w-10 rounded-lg object-cover"
+                          src="/assets/images/artists/1.png"
+                          loading="lazy"
+                          alt="Donna Summer"
+                        />
+                        <div>
+                          <div class="line-clamp-1 text-14 font-semibold">
+                            Donna Summer
+                          </div>
+                          <div class="line-clamp-1 text-14">Hi</div>
+                        </div>
+                      </div>
+                      <div class="flex flex-col items-end gap-2.5">
+                        <div class="text-12 text-grey-400">3d</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                    >
+                      <div class="mr-2 flex items-center gap-2">
+                        <img
+                          class="aspect-square w-10 rounded-lg object-cover"
+                          src="/assets/images/artists/1.png"
+                          loading="lazy"
+                          alt="James"
+                        />
+                        <div>
+                          <div class="text-14 font-semibold">James</div>
+                          <div class="line-clamp-1 text-14">
+                            Wow, this is really epic
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex flex-col items-end gap-2.5">
+                        <div class="text-12 text-grey-400">3w</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                    >
+                      <div class="mr-2 flex items-center gap-2">
+                        <img
+                          class="aspect-square w-10 rounded-lg object-cover"
+                          src="/assets/images/artists/1.png"
+                          loading="lazy"
+                          alt="James"
+                        />
+                        <div>
+                          <div class="text-14 font-semibold">Roger Daltrey</div>
+                          <div class="line-clamp-1 text-14">woohoooo</div>
+                        </div>
+                      </div>
+                      <div class="flex flex-col items-end gap-2.5">
+                        <div class="text-12 text-grey-400">17/03/2023</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                    >
+                      <div class="mr-2 flex items-center gap-2">
+                        <img
+                          class="aspect-square w-10 rounded-lg object-cover"
+                          src="/assets/images/artists/1.png"
+                          loading="lazy"
+                          alt="James"
+                        />
+                        <div>
+                          <div class="text-14 font-semibold">Big Star</div>
+                          <div class="line-clamp-1 text-14">
+                            Haha that's terrifying 😂
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex flex-col items-end gap-2.5">
+                        <div class="text-12 text-grey-400">05/03/2023</div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <div class="mt-2 py-3 text-center">
+                  <a
+                    href="#"
+                    class="text-14 font-semibold text-grey-400 hover:text-branding-secondary hover:underline"
+                    >View all message</a
+                  >
+                </div>
+              </div>
+            </div>
             <div
               id="noti-wrapper"
               class="relative flex items-center justify-center"

@@ -33,10 +33,33 @@ const handleCloseNoti = function () {
   $("#noti-wrapper .noti-icon").attr("src", "/assets/svgs/notification-pc.svg");
 };
 
+const handleToggleMs = function () {
+  const $elem = $("#ms-wrapper .ms-icon");
+  $("#ms-popup").toggleClass("active");
+
+  $elem.attr(
+    "src",
+    $elem.attr("src") === "/assets/svgs/messenger-selected.svg"
+      ? "/assets/svgs/messenger-pc.svg"
+      : "/assets/svgs/messenger-selected.svg",
+  );
+};
+
+const handleCloseMs = function () {
+  $("#ms-popup").removeClass("active");
+  $("#ms-wrapper .ms-icon").attr("src", "/assets/svgs/messenger-pc.svg");
+};
+
 $("#toggle-notification").click(function () {
   handleToggleNoti();
 });
-
 checkClickOutside("noti-wrapper", function () {
   handleCloseNoti();
+});
+
+$("#toggle-ms").click(function () {
+  handleToggleMs();
+});
+checkClickOutside("ms-wrapper", function () {
+  handleCloseMs();
 });
