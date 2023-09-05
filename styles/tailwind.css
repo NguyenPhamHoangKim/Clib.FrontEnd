@@ -165,13 +165,13 @@ a.swiper-slide:not(.video-item):hover img {
 }
 
 .header-tab-modal {
-  @apply fixed inset-0 z-[9999] hidden bg-black/60 md:hidden;
+  @apply fixed inset-0 z-[9999] hidden bg-black/60;
 }
 .header-tab-modal.active {
-  @apply max-md:block;
+  @apply block;
 }
 .header-tab-modal--inner {
-  @apply flex min-h-screen w-[90%] flex-col bg-white p-4;
+  @apply flex min-h-screen w-[90%] max-w-[430px] flex-col bg-white p-4;
 }
 
 .header-link a {

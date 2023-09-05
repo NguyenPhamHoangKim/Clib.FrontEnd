@@ -13,7 +13,7 @@
   <body>
     <header class="fixed left-0 right-0 top-0 z-[999]">
       <div class="bg-white py-2.5 shadow-[0px_2px_10px_0px_rgba(0,0,0,0.04)]">
-        <div class="container flex items-center justify-between">
+        <div class="container relative flex items-center justify-between">
           <div class="flex items-center space-x-4">
             <button id="toggle-mobile-menu">
               <img src="/assets/svgs/menu.svg" alt="" />
@@ -28,14 +28,68 @@
               />
             </div>
           </div>
-          <div class="flex items-center space-x-4">
+
+          <a
+            href="/"
+            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden"
+          >
+            <img
+              class="aspect-square w-8"
+              src="/assets/svgs/logo-mb.svg"
+              alt=""
+            />
+          </a>
+          <!-- SIGNED IN MOBILE -->
+          <div class="flex items-center space-x-4 md:hidden">
+            <button class="rounded-lg bg-grey-100 p-1.5">
+              <img src="/assets/svgs/notification.svg" alt="" />
+            </button>
+            <button class="rounded-lg bg-grey-100 p-1.5">
+              <img src="/assets/svgs/messenger.svg" alt="" />
+            </button>
+          </div>
+          <!-- SIGNED IN -->
+
+          <!-- SIGNED IN PC-->
+          <div class="flex items-center space-x-4 max-md:hidden xl:space-x-6">
+            <button class="bg-grey-1 rounded-lg">
+              <img src="/assets/svgs/document.svg" alt="" />
+            </button>
+            <button class="">
+              <img src="/assets/svgs/sol.svg" alt="" />
+            </button>
+            <button class="">
+              <img src="/assets/svgs/export.svg" alt="" />
+            </button>
+            <button class="">
+              <img src="/assets/svgs/messenger.svg" alt="" />
+            </button>
+            <button class="">
+              <img src="/assets/svgs/notification.svg" alt="" />
+            </button>
+            <button class="">
+              <img src="/assets/svgs/wallet.svg" alt="" />
+            </button>
+            <div class="flex items-center gap-2">
+              <img
+                src="/assets/images/avatar1.jpg"
+                class="h-11 w-11 rounded-lg object-cover"
+                loading="lazy"
+                alt="Iberd"
+              />
+              <span>Iberd</span>
+            </div>
+          </div>
+          <!-- SIGNED IN -->
+
+          <!-- NOT SIGN IN <div class="flex items-center space-x-4">
             <button>
               <img src="/assets/svgs/export.svg" alt="" />
             </button>
             <a href="login.html" class="btn-secondary text-14 md:text-base"
               >Sign in</a
             >
-          </div>
+          </div> NOT SIGN IN -->
         </div>
       </div>
       <div
@@ -2662,7 +2716,9 @@
           <div
             class="swiper-slide flex max-h-[220px] gap-4 rounded-xl bg-white p-3"
           >
-            <div class="aspect-square max-w-[220px] overflow-hidden rounded-lg">
+            <div
+              class="aspect-square max-w-[220px] flex-shrink-0 overflow-hidden rounded-lg"
+            >
               <img
                 class="h-full w-full rounded-lg object-cover"
                 src="/assets/images/playlists/1-pc.png"
@@ -2788,7 +2844,9 @@
           <div
             class="swiper-slide flex max-h-[220px] gap-4 rounded-xl bg-white p-3"
           >
-            <div class="aspect-square max-w-[220px] overflow-hidden rounded-lg">
+            <div
+              class="aspect-square max-w-[220px] flex-shrink-0 overflow-hidden rounded-lg"
+            >
               <img
                 class="h-full w-full rounded-lg object-cover"
                 src="/assets/images/playlists/1-pc.png"
@@ -2914,7 +2972,9 @@
           <div
             class="swiper-slide flex max-h-[220px] gap-4 rounded-xl bg-white p-3"
           >
-            <div class="aspect-square max-w-[220px] overflow-hidden rounded-lg">
+            <div
+              class="aspect-square max-w-[220px] flex-shrink-0 overflow-hidden rounded-lg"
+            >
               <img
                 class="h-full w-full rounded-lg object-cover"
                 src="/assets/images/playlists/1-pc.png"
@@ -3040,7 +3100,9 @@
           <div
             class="swiper-slide flex max-h-[220px] gap-4 rounded-xl bg-white p-3"
           >
-            <div class="aspect-square max-w-[220px] overflow-hidden rounded-lg">
+            <div
+              class="aspect-square max-w-[220px] flex-shrink-0 overflow-hidden rounded-lg"
+            >
               <img
                 class="h-full w-full rounded-lg object-cover"
                 src="/assets/images/playlists/1-pc.png"
@@ -3166,7 +3228,9 @@
           <div
             class="swiper-slide flex max-h-[220px] gap-4 rounded-xl bg-white p-3"
           >
-            <div class="aspect-square max-w-[220px] overflow-hidden rounded-lg">
+            <div
+              class="aspect-square max-w-[220px] flex-shrink-0 overflow-hidden rounded-lg"
+            >
               <img
                 class="h-full w-full rounded-lg object-cover"
                 src="/assets/images/playlists/1-pc.png"
@@ -3292,7 +3356,9 @@
           <div
             class="swiper-slide flex max-h-[220px] gap-4 rounded-xl bg-white p-3"
           >
-            <div class="aspect-square max-w-[220px] overflow-hidden rounded-lg">
+            <div
+              class="aspect-square max-w-[220px] flex-shrink-0 overflow-hidden rounded-lg"
+            >
               <img
                 class="h-full w-full rounded-lg object-cover"
                 src="/assets/images/playlists/1-pc.png"
@@ -5481,7 +5547,7 @@
           >
             <img width="32" height="32" src="/assets/svgs/close.svg" alt="" />
           </button>
-          <div class="mt-4 flex items-center gap-3">
+          <div class="mt-4 flex items-center gap-3 md:hidden">
             <img
               class="rounded-2xl object-cover"
               width="64"
