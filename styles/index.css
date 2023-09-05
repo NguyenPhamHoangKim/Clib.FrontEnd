@@ -952,6 +952,11 @@ body{
   margin: 0.25rem;
 }
 
+.-mx-2{
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
 .mx-1{
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -1194,6 +1199,10 @@ body{
   height: 2.75rem;
 }
 
+.h-12{
+  height: 3rem;
+}
+
 .h-16{
   height: 4rem;
 }
@@ -1231,10 +1240,6 @@ body{
   height: 100%;
 }
 
-.h-12{
-  height: 3rem;
-}
-
 .max-h-\[220px\]{
   max-height: 220px;
 }
@@ -1245,6 +1250,10 @@ body{
 
 .max-h-full{
   max-height: 100%;
+}
+
+.max-h-\[600px\]{
+  max-height: 600px;
 }
 
 .min-h-\[120px\]{
@@ -2661,6 +2670,11 @@ body{
   padding-right: 1rem;
 }
 
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .py-0{
   padding-top: 0px;
   padding-bottom: 0px;
@@ -2689,11 +2703,6 @@ body{
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .pb-2{
@@ -3754,8 +3763,10 @@ a.swiper-slide:not(.video-item):hover img{
 
 .add-playlist-modal--inner{
   position: relative;
+  display: flex;
   width: 640px;
   max-width: 100%;
+  flex-direction: column;
   border-radius: 0.75rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -3763,6 +3774,7 @@ a.swiper-slide:not(.video-item):hover img{
   padding-right: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  padding-top: 0px;
 }
 
 @media (min-width: 640px){

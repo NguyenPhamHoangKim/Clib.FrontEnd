@@ -237,5 +237,5 @@ a.swiper-slide:not(.video-item):hover img {
   @apply flex;
 }
 .add-playlist-modal--inner {
-  @apply relative w-[640px] max-w-full rounded-xl bg-white px-6 py-4;
+  @apply relative flex w-[640px] max-w-full flex-col rounded-xl bg-white px-6 py-4 pt-0;
 }
