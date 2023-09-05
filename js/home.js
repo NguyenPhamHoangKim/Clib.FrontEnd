@@ -58,6 +58,29 @@ new Swiper(".song-swiper", {
   },
 });
 
+new Swiper(".artists-swiper", {
+  slidesPerView: 2.5,
+  spaceBetween: 12,
+  navigation: {
+    nextEl: ".swiper-artists-next",
+    prevEl: ".swiper-artists-prev",
+  },
+  breakpoints: {
+    480: {
+      slidesPerView: 3.5,
+      spaceBetween: 16,
+    },
+    680: {
+      slidesPerView: 4.5,
+      spaceBetween: 16,
+    },
+    1024: {
+      slidesPerView: 6.5,
+      spaceBetween: 16,
+    },
+  },
+});
+
 new Swiper(".albums-swiper", {
   slidesPerView: 2.5,
   spaceBetween: 12,
@@ -94,15 +117,11 @@ new Swiper(".new-video-swiper", {
       spaceBetween: 16,
     },
     680: {
-      slidesPerView: 3.5,
+      slidesPerView: 3.2,
       spaceBetween: 16,
     },
     1024: {
       slidesPerView: 4.5,
-      spaceBetween: 16,
-    },
-    1320: {
-      slidesPerView: 6.5,
       spaceBetween: 16,
     },
   },
