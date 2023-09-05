@@ -69,7 +69,10 @@
             <button class="">
               <img src="/assets/svgs/messenger-pc.svg" alt="" />
             </button>
-            <div class="relative flex items-center justify-center">
+            <div
+              id="noti-wrapper"
+              class="relative flex items-center justify-center"
+            >
               <button id="toggle-notification" class="">
                 <img
                   class="noti-icon"
@@ -80,7 +83,9 @@
               <div id="noti-popup" class="noti-popup">
                 <div class="flex items-center justify-between px-4 pb-2 pt-4">
                   <span class="text-20 font-semibold">Notification</span>
-                  <button>
+                  <button
+                    class="transition-transform duration-100 hover:rotate-180"
+                  >
                     <img
                       class="h-6 w-6"
                       src="/assets/svgs/setting.svg"

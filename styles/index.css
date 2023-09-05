@@ -3215,8 +3215,18 @@ body{
   transition-duration: 150ms;
 }
 
+.transition-transform{
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-75{
   transition-duration: 75ms;
+}
+
+.duration-100{
+  transition-duration: 100ms;
 }
 
 .ease-in{
@@ -3779,6 +3789,11 @@ a.swiper-slide:not(.video-item):hover img{
 .placeholder\:text-grey-300::placeholder{
   --tw-text-opacity: 1;
   color: rgb(161 171 178 / var(--tw-text-opacity));
+}
+
+.hover\:rotate-180:hover{
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:border-b-branding-secondary:hover{
