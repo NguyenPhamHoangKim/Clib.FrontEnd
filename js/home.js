@@ -45,11 +45,10 @@ new Swiper(".song-swiper", {
   breakpoints: {
     480: {
       slidesPerView: 3.5,
-      spaceBetween: 16,
     },
     680: {
       slidesPerView: 4.5,
-      spaceBetween: 16,
+      spaceBetween: 14,
     },
     1024: {
       slidesPerView: 6.5,
@@ -68,11 +67,10 @@ new Swiper(".artists-swiper", {
   breakpoints: {
     480: {
       slidesPerView: 3.5,
-      spaceBetween: 16,
     },
     680: {
       slidesPerView: 4.5,
-      spaceBetween: 16,
+      spaceBetween: 14,
     },
     1024: {
       slidesPerView: 6.5,
@@ -91,11 +89,10 @@ new Swiper(".albums-swiper", {
   breakpoints: {
     480: {
       slidesPerView: 3.5,
-      spaceBetween: 16,
     },
     680: {
       slidesPerView: 4.5,
-      spaceBetween: 16,
+      spaceBetween: 14,
     },
     1024: {
       slidesPerView: 6.5,
@@ -114,11 +111,10 @@ new Swiper(".new-video-swiper", {
   breakpoints: {
     480: {
       slidesPerView: 2.5,
-      spaceBetween: 16,
     },
     680: {
       slidesPerView: 3.2,
-      spaceBetween: 16,
+      spaceBetween: 14,
     },
     1024: {
       slidesPerView: 4.5,
