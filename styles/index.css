@@ -952,11 +952,6 @@ body{
   margin: 0.25rem;
 }
 
-.-mx-2{
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
-}
-
 .mx-1{
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -1215,8 +1210,16 @@ body{
   height: 5rem;
 }
 
+.h-4{
+  height: 1rem;
+}
+
 .h-6{
   height: 1.5rem;
+}
+
+.h-\[120px\]{
+  height: 120px;
 }
 
 .h-\[256px\]{
@@ -1248,12 +1251,12 @@ body{
   max-height: 256px;
 }
 
-.max-h-full{
-  max-height: 100%;
-}
-
 .max-h-\[600px\]{
   max-height: 600px;
+}
+
+.max-h-full{
+  max-height: 100%;
 }
 
 .min-h-\[120px\]{
@@ -1915,6 +1918,10 @@ body{
   gap: 0.25rem;
 }
 
+.gap-1\.5{
+  gap: 0.375rem;
+}
+
 .gap-2{
   gap: 0.5rem;
 }
@@ -1929,6 +1936,10 @@ body{
 
 .gap-4{
   gap: 1rem;
+}
+
+.gap-5{
+  gap: 1.25rem;
 }
 
 .gap-6{
@@ -2705,12 +2716,25 @@ body{
   padding-bottom: 0.75rem;
 }
 
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .pb-2{
   padding-bottom: 0.5rem;
 }
 
+.pb-4{
+  padding-bottom: 1rem;
+}
+
 .pb-6{
   padding-bottom: 1.5rem;
+}
+
+.pb-\[78px\]{
+  padding-bottom: 78px;
 }
 
 .pr-10{
@@ -3124,6 +3148,12 @@ body{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-\[0px_-4px_60px_0px_rgba\(0\2c 0\2c 0\2c 0\.06\)\]{
+  --tw-shadow: 0px -4px 60px 0px rgba(0,0,0,0.06);
+  --tw-shadow-colored: 0px -4px 60px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-\[0px_2px_10px_0px_rgba\(0\2c 0\2c 0\2c 0\.04\)\]{
   --tw-shadow: 0px 2px 10px 0px rgba(0,0,0,0.04);
   --tw-shadow-colored: 0px 2px 10px 0px var(--tw-shadow-color);
@@ -3260,6 +3290,10 @@ body{
 
 .duration-100{
   transition-duration: 100ms;
+}
+
+.duration-200{
+  transition-duration: 200ms;
 }
 
 .duration-75{
@@ -3752,9 +3786,10 @@ a.swiper-slide:not(.video-item):hover img{
 }
 
 .add-playlist-modal{
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
 }
 
 .add-playlist-modal.active{
@@ -3767,6 +3802,7 @@ a.swiper-slide:not(.video-item):hover img{
   width: 640px;
   max-width: 100%;
   flex-direction: column;
+  overflow: hidden;
   border-radius: 0.75rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -3775,6 +3811,41 @@ a.swiper-slide:not(.video-item):hover img{
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-top: 0px;
+}
+
+.add-playlist-btn{
+  height: 100%;
+  border-bottom-width: 4px;
+  border-bottom-color: transparent;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(161 171 178 / var(--tw-text-opacity));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 75ms;
+}
+
+.add-playlist-btn:hover{
+  --tw-text-opacity: 1;
+  color: rgb(10 191 172 / var(--tw-text-opacity));
+}
+
+.add-playlist-btn.active{
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(10 191 172 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(10 191 172 / var(--tw-text-opacity));
+}
+
+.add-playlist-show:not(.active){
+  display: none;
+}
+
+.create-playlist-btm:not(.active){
+  display: none;
 }
 
 @media (min-width: 640px){
@@ -3873,6 +3944,12 @@ a.swiper-slide:not(.video-item):hover img{
 
 .hover\:rotate-180:hover{
   --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-105:hover{
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -4085,6 +4162,11 @@ a.swiper-slide:not(.video-item):hover img{
   .md\:py-2\.5{
     padding-top: 0.625rem;
     padding-bottom: 0.625rem;
+  }
+
+  .md\:py-3{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 
   .md\:pl-5{

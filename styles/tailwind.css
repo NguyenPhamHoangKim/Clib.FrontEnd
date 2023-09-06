@@ -231,11 +231,24 @@ a.swiper-slide:not(.video-item):hover img {
 }
 
 .add-playlist-modal {
-  @apply flex items-center justify-center;
+  @apply hidden items-center justify-center p-4;
 }
 .add-playlist-modal.active {
   @apply flex;
 }
 .add-playlist-modal--inner {
-  @apply relative flex w-[640px] max-w-full flex-col rounded-xl bg-white px-6 py-4 pt-0;
+  @apply relative flex w-[640px] max-w-full flex-col overflow-hidden rounded-xl bg-white px-6 py-4 pt-0;
+}
+
+.add-playlist-btn {
+  @apply h-full border-b-4 border-b-transparent px-6 py-3 text-grey-300 transition-colors duration-75 hover:text-branding-secondary;
+}
+.add-playlist-btn.active {
+  @apply border-b-branding-secondary text-branding-secondary;
+}
+.add-playlist-show:not(.active) {
+  @apply hidden;
+}
+.create-playlist-btm:not(.active) {
+  @apply hidden;
 }

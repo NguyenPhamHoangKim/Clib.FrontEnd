@@ -63,3 +63,22 @@ $("#toggle-ms").click(function () {
 checkClickOutside("ms-wrapper", function () {
   handleCloseMs();
 });
+
+$(".add-playlist-btn").each(function (idx) {
+  $(this).click(function () {
+    $(".add-playlist-btn.active").removeClass("active");
+    $(".add-playlist-show.active").removeClass("active");
+    $(".add-playlist-show").eq(idx).addClass("active");
+    $(this).addClass("active");
+
+    if (idx === 1) {
+      $(".create-playlist-btm").addClass("active");
+    } else {
+      $(".create-playlist-btm").removeClass("active");
+    }
+  });
+});
+
+// $(".show-add-playlist-popup").click(function () {
+//   $(".add-playlist-modal").toggleClass("active");
+// });
