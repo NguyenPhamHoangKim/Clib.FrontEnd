@@ -22,13 +22,22 @@
     @apply bg-grey-300 text-white;
   }
   .btn-primary {
-    @apply flex items-center justify-center rounded-xl border border-branding bg-branding px-4 py-2.5 text-14 font-semibold text-white transition duration-75 hover:bg-transparent hover:text-branding md:py-2;
+    @apply flex items-center justify-center rounded-xl border border-branding bg-branding px-4 py-2.5 text-14 font-semibold text-white transition duration-75 md:py-2;
+  }
+  .btn-primary:not(:no-hover) {
+    @apply hover:bg-transparent hover:text-branding;
   }
   .btn-secondary {
     @apply flex items-center justify-center rounded-xl border border-branding-secondary bg-branding-secondary px-6 py-2.5 text-base font-semibold text-white transition duration-75 hover:bg-transparent hover:text-branding-secondary md:py-3;
   }
   .btn-tertiary {
-    @apply flex items-center justify-center rounded-xl border border-grey-200 bg-grey-200 px-6 py-2.5 text-base font-semibold transition duration-75 hover:bg-transparent md:py-3;
+    @apply flex items-center justify-center rounded-xl border border-branding bg-transparent px-6 py-2.5 text-base font-semibold text-branding transition duration-75  md:py-3;
+  }
+  .btn-tertiary:not(:no-hover) {
+    @apply hover:bg-branding hover:text-white;
+  }
+  .btn-fourth {
+    @apply flex items-center justify-center rounded-xl bg-grey-200 px-6 py-3 font-semibold;
   }
   .btn-outline {
     @apply block w-[100px] rounded-xl border border-branding py-2 text-14 font-semibold text-branding transition-colors duration-75 hover:bg-branding hover:text-white;
@@ -251,4 +260,10 @@ a.swiper-slide:not(.video-item):hover img {
 }
 .create-playlist-btm:not(.active) {
   @apply hidden;
+}
+.profile-nav {
+  @apply flex h-12 w-[180px] items-center justify-center gap-2 rounded-lg text-base font-semibold text-grey-300 hover:bg-branding hover:text-white;
+}
+.profile-nav.active {
+  @apply bg-branding text-white;
 }
