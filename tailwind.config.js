@@ -11,6 +11,7 @@ module.exports = {
           DEFAULT: "#1A75FF",
           secondary: "#0ABFAC",
           tertiary: "#01579B",
+          fourth: "#0ECAD5",
         },
         bg: {
           DEFAULT: "#EBF7FC",

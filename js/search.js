@@ -159,3 +159,23 @@ new Swiper(".digital-swiper", {
     },
   },
 });
+
+new Swiper(".services-swiper", {
+  slidesPerView: 1.5,
+  spaceBetween: 18,
+  navigation: {
+    nextEl: ".swiper-services-next",
+    prevEl: ".swiper-services-prev",
+  },
+  autoResize: false,
+  breakpoints: {
+    680: {
+      slidesPerView: 2,
+      spaceBetween: 24,
+    },
+    1024: {
+      slidesPerView: 2.8,
+      spaceBetween: 32,
+    },
+  },
+});
