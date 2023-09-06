@@ -79,6 +79,12 @@ $(".add-playlist-btn").each(function (idx) {
   });
 });
 
-// $(".show-add-playlist-popup").click(function () {
-//   $(".add-playlist-modal").toggleClass("active");
-// });
+$(".show-create-playlist-popup").each(function () {
+  $(this).click(function () {
+    $(".add-playlist-modal").addClass("active");
+  });
+});
+
+$("#close-add-playlist-modal").click(function () {
+  $(".add-playlist-modal").removeClass("active");
+});
