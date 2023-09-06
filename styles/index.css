@@ -1078,6 +1078,10 @@ body{
   margin-top: 30px;
 }
 
+.-mt-\[210px\]{
+  margin-top: -210px;
+}
+
 .box-border{
   box-sizing: border-box;
 }
