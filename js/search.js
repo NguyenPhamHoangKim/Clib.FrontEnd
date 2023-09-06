@@ -1,69 +1,22 @@
-$(".hot-tab").each((_, el) => {
-  $(el).click(() => {
-    $(".hot-tab.active").removeClass("active");
-    $(el).addClass("active");
-  });
-});
-$(".hot-tab-vid").each((_, el) => {
-  $(el).click(() => {
-    $(".hot-tab-vid.active").removeClass("active");
-    $(el).addClass("active");
+$(".profile-nav:not(.active)").each(function () {
+  $(this).mouseenter(function () {
+    const originalSrc = $(this).find("img").attr("src");
+    const newSrc = originalSrc.replace(".svg", "-selected.svg");
+    $(this).find("img").attr("src", newSrc);
   });
 });
 
-$(".hot-item").each(function (_, el) {
-  const hotItemLove = $(el).find(".hot-item--love img");
-  $(hotItemLove).click(function (e) {
-    e.preventDefault();
-    $(this).attr(
-      "src",
-      $(this).attr("src") === "/assets/svgs/heart.svg"
-        ? "/assets/svgs/heart-outline.svg"
-        : "/assets/svgs/heart.svg",
-    );
-  });
+$(".profile-nav:not(.active)").mouseleave(function () {
+  const originalSrc = $(this).find("img").attr("src");
+  const newSrc = originalSrc.replace("-selected.svg", ".svg");
+  $(this).find("img").attr("src", newSrc);
 });
-
-new Swiper(".banner-swiper", {
-  speed: 600,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
-
 new Swiper(".song-swiper", {
   slidesPerView: 2.5,
   spaceBetween: 12,
   navigation: {
     nextEl: ".swiper-song-next",
     prevEl: ".swiper-song-prev",
-  },
-  autoResize: false,
-  breakpoints: {
-    480: {
-      slidesPerView: 3.5,
-    },
-    680: {
-      slidesPerView: 4.5,
-      spaceBetween: 14,
-    },
-    1024: {
-      slidesPerView: 6.5,
-      spaceBetween: 16,
-    },
-  },
-});
-
-new Swiper(".artists-swiper", {
-  slidesPerView: 2.5,
-  spaceBetween: 12,
-  navigation: {
-    nextEl: ".swiper-artists-next",
-    prevEl: ".swiper-artists-prev",
   },
   autoResize: false,
   breakpoints: {
@@ -140,6 +93,29 @@ new Swiper(".new-video-swiper", {
   navigation: {
     nextEl: ".swiper-new-video-next",
     prevEl: ".swiper-new-video-prev",
+  },
+  autoResize: false,
+  breakpoints: {
+    480: {
+      slidesPerView: 2.5,
+    },
+    680: {
+      slidesPerView: 3.2,
+      spaceBetween: 14,
+    },
+    1024: {
+      slidesPerView: 4.5,
+      spaceBetween: 16,
+    },
+  },
+});
+
+new Swiper(".playlist-video-swiper", {
+  slidesPerView: 1.5,
+  spaceBetween: 12,
+  navigation: {
+    nextEl: ".swiper-playlist-video-next",
+    prevEl: ".swiper-playlist-video-prev",
   },
   autoResize: false,
   breakpoints: {
