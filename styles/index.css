@@ -1086,6 +1086,10 @@ body{
   margin-top: 30px;
 }
 
+.-ml-2{
+  margin-left: -0.5rem;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -1284,6 +1288,10 @@ body{
   height: 100%;
 }
 
+.max-h-\[194px\]{
+  max-height: 194px;
+}
+
 .max-h-\[220px\]{
   max-height: 220px;
 }
@@ -1306,6 +1314,10 @@ body{
 
 .min-h-screen{
   min-height: 100vh;
+}
+
+.min-h-\[100px\]{
+  min-height: 100px;
 }
 
 .\!w-0{
@@ -1379,6 +1391,34 @@ body{
 
 .w-full{
   width: 100%;
+}
+
+.w-\[140px\]{
+  width: 140px;
+}
+
+.w-\[110px\]{
+  width: 110px;
+}
+
+.w-9{
+  width: 2.25rem;
+}
+
+.w-3{
+  width: 0.75rem;
+}
+
+.w-14{
+  width: 3.5rem;
+}
+
+.w-2{
+  width: 0.5rem;
+}
+
+.w-2\.5{
+  width: 0.625rem;
 }
 
 .max-w-\[160px\]{
@@ -2755,6 +2795,10 @@ body{
   padding: 1rem;
 }
 
+.p-8{
+  padding: 2rem;
+}
+
 .px-1{
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -2935,6 +2979,11 @@ body{
 .text-24{
   font-size: 24px;
   line-height: 28px;
+}
+
+.text-32{
+  font-size: 32px;
+  line-height: 36px;
 }
 
 .text-base{
@@ -4285,12 +4334,28 @@ a.swiper-slide.digital-item:hover .digital-thumb{
 }
 
 @media not all and (min-width: 768px){
+  .max-md\:-ml-2{
+    margin-left: -0.5rem;
+  }
+
+  .max-md\:mr-3{
+    margin-right: 0.75rem;
+  }
+
+  .max-md\:mr-2{
+    margin-right: 0.5rem;
+  }
+
   .max-md\:hidden{
     display: none;
   }
 
   .max-md\:w-\[calc\(100vw-16px\)\]{
     width: calc(100vw - 16px);
+  }
+
+  .max-md\:items-center{
+    align-items: center;
   }
 
   .max-md\:justify-between{
@@ -4328,6 +4393,10 @@ a.swiper-slide.digital-item:hover .digital-thumb{
 }
 
 @media (min-width: 640px){
+  .sm\:w-16{
+    width: 4rem;
+  }
+
   .sm\:underline{
     text-decoration-line: underline;
   }
@@ -4390,6 +4459,10 @@ a.swiper-slide.digital-item:hover .digital-thumb{
     width: 142px;
   }
 
+  .md\:w-\[110px\]{
+    width: 110px;
+  }
+
   .md\:min-w-\[260px\]{
     min-width: 260px;
   }
@@ -4398,12 +4471,20 @@ a.swiper-slide.digital-item:hover .digital-thumb{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .md\:grid-cols-5{
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .md\:gap-8{
+    gap: 2rem;
+  }
+
+  .md\:gap-7{
+    gap: 1.75rem;
   }
 
   .md\:overflow-x-hidden{
@@ -4423,12 +4504,12 @@ a.swiper-slide.digital-item:hover .digital-thumb{
     background-color: rgb(247 247 247 / var(--tw-bg-opacity));
   }
 
-  .md\:p-4{
-    padding: 1rem;
-  }
-
   .md\:p-2{
     padding: 0.5rem;
+  }
+
+  .md\:p-4{
+    padding: 1rem;
   }
 
   .md\:px-2{
@@ -4451,12 +4532,25 @@ a.swiper-slide.digital-item:hover .digital-thumb{
     padding-bottom: 0.75rem;
   }
 
+  .md\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .md\:pb-0{
     padding-bottom: 0px;
   }
 
   .md\:pl-5{
     padding-left: 1.25rem;
+  }
+
+  .md\:pt-2{
+    padding-top: 0.5rem;
+  }
+
+  .md\:pb-2{
+    padding-bottom: 0.5rem;
   }
 
   .md\:text-14{
@@ -4499,8 +4593,8 @@ a.swiper-slide.digital-item:hover .digital-thumb{
     width: 116px;
   }
 
-  .lg\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .lg\:w-\[140px\]{
+    width: 140px;
   }
 
   .lg\:grid-cols-4{
@@ -4513,6 +4607,28 @@ a.swiper-slide.digital-item:hover .digital-thumb{
 
   .lg\:p-4{
     padding: 1rem;
+  }
+
+  .lg\:p-6{
+    padding: 1.5rem;
+  }
+
+  .lg\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .lg\:py-3{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .lg\:pt-4{
+    padding-top: 1rem;
+  }
+
+  .lg\:pb-4{
+    padding-bottom: 1rem;
   }
 
   .lg\:text-14{
@@ -4535,12 +4651,20 @@ a.swiper-slide.digital-item:hover .digital-thumb{
 }
 
 @media (min-width: 1280px){
-  .xl\:grid-cols-\[1\.1fr\2c 2fr\2c 1\.1fr\]{
-    grid-template-columns: 1.1fr 2fr 1.1fr;
+  .xl\:w-12{
+    width: 3rem;
   }
 
-  .xl\:grid-cols-4{
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  .xl\:w-4{
+    width: 1rem;
+  }
+
+  .xl\:w-6{
+    width: 1.5rem;
+  }
+
+  .xl\:grid-cols-\[1\.1fr\2c 2fr\2c 1\.1fr\]{
+    grid-template-columns: 1.1fr 2fr 1.1fr;
   }
 
   .xl\:gap-4{
@@ -4551,6 +4675,30 @@ a.swiper-slide.digital-item:hover .digital-thumb{
     --tw-space-x-reverse: 0;
     margin-right: calc(1.5rem * var(--tw-space-x-reverse));
     margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .xl\:p-8{
+    padding: 2rem;
+  }
+
+  .xl\:text-18{
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .xl\:text-base{
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .xl\:text-14{
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .xl\:text-32{
+    font-size: 32px;
+    line-height: 36px;
   }
 }
 
