@@ -340,3 +340,9 @@ a.swiper-slide.digital-item:hover .digital-thumb {
 .edit-profile--modal.show {
   @apply flex;
 }
+.reply-cmt-box {
+  @apply mt-2 hidden items-center gap-2;
+}
+.reply-cmt-box.show {
+  @apply flex;
+}

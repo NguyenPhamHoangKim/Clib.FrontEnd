@@ -46,3 +46,14 @@ $("#edit-profile--modal").click(function () {
 $("#edit-profile--inner").click(function (e) {
   e.stopPropagation();
 });
+
+$(".comment-gallery-item").each(function () {
+  const _this = $(this);
+
+  _this.find(".show-reply-box").click(function () {
+    $(".reply-cmt-box.show").removeClass("show");
+    _this.find(".reply-cmt-box").addClass("show");
+  });
+});
+
+gallery - img;
