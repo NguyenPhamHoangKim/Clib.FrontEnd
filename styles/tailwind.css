@@ -334,3 +334,9 @@ a.swiper-slide.digital-item:hover .digital-thumb {
 .save-edit-profile.show {
   @apply block;
 }
+.edit-profile--modal {
+  @apply hidden items-center justify-center p-4;
+}
+.edit-profile--modal.show {
+  @apply flex;
+}

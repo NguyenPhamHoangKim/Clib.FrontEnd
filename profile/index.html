@@ -28,10 +28,9 @@
           >
         </div> OTHER -->
         <div class="mt-4 flex items-center justify-end gap-3">
-          <a href="#" class="btn-fourth h-11 gap-1.5"
-            ><img src="../assets/svgs/edit-profile.svg" alt="" /> Edit
-            profile</a
-          >
+          <button id="show-edit-modal" href="#" class="btn-fourth h-11 gap-1.5">
+            <img src="../assets/svgs/edit-profile.svg" alt="" /> Edit profile
+          </button>
         </div>
         <div class="mx-auto -mt-[210px] flex flex-col items-center">
           <div
@@ -1373,11 +1372,11 @@
         </ul>
       </div>
     </footer>
-    <div
-      id="edit-profile--modal"
-      class="overlay flex items-center justify-center p-4"
-    >
-      <div class="p-6 rounded-xl bg-white w-[640px] max-w-full">
+    <div id="edit-profile--modal" class="edit-profile--modal overlay">
+      <div
+        id="edit-profile--inner"
+        class="p-6 rounded-xl bg-white w-[640px] max-w-full"
+      >
         <div class="text-24 font-semibold">Edit Profile</div>
         <div class="mt-4">
           <div class="relative">

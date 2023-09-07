@@ -4356,6 +4356,17 @@ a.swiper-slide.digital-item:hover .digital-thumb{
   display: block;
 }
 
+.edit-profile--modal{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.edit-profile--modal.show{
+  display: flex;
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;

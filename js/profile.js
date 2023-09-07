@@ -34,3 +34,15 @@ $(".edit-profile-group").each(function () {
     editProfileGroup.find("input, textarea").attr("disabled", "disabled");
   });
 });
+
+$("#show-edit-modal").click(function () {
+  $("#edit-profile--modal").addClass("show");
+});
+
+$("#edit-profile--modal").click(function () {
+  $(this).removeClass("show");
+});
+
+$("#edit-profile--inner").click(function (e) {
+  e.stopPropagation();
+});
