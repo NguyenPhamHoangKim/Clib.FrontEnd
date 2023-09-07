@@ -25,6 +25,9 @@ module.exports = {
         "neutral-dark": {
           500: "#2C2F33",
         },
+        light: {
+          "yellow-cream": "#FFFBEF",
+        },
         warning: "#EF5350",
       },
       fontFamily: {

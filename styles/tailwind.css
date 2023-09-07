@@ -24,7 +24,7 @@
   .btn-primary {
     @apply flex items-center justify-center rounded-xl border border-branding bg-branding px-4 py-2.5 text-14 font-semibold text-white transition duration-75 md:py-2;
   }
-  .btn-primary:not(:no-hover) {
+  .btn-primary:not(.no-hover) {
     @apply hover:bg-transparent hover:text-branding;
   }
   .btn-secondary {
@@ -261,7 +261,7 @@ a.swiper-slide.digital-item:hover .digital-thumb {
 }
 
 .menu-more {
-  @apply absolute right-0 top-[calc(100%+4px)] line-clamp-1 hidden min-w-[180px] flex-col overflow-visible rounded-xl bg-white p-2 text-base shadow-[0px_2px_20px_0px_rgba(0,0,0,0.08)] before:absolute before:right-0 before:top-0 before:aspect-square before:w-5 before:-translate-y-1/2 before:bg-transparent before:content-[''];
+  @apply absolute right-0 top-[calc(100%+4px)] line-clamp-1 hidden min-w-[180px] flex-col overflow-visible rounded-xl bg-white p-2 text-base shadow-[0px_2px_20px_0px_rgba(0,0,0,0.08)] before:absolute before:right-0 before:top-0 before:aspect-square before:w-8 before:-translate-y-1/2 before:bg-transparent before:content-[''];
 }
 
 .toggle-more-menu:hover .menu-more {
