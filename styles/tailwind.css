@@ -324,3 +324,13 @@ a.swiper-slide.digital-item:hover .digital-thumb {
 .btn-pag.active {
   @apply text-white bg-branding;
 }
+
+.edit-profile-group {
+  @apply grid grid-cols-[140px,1fr] items-center gap-3;
+}
+.save-edit-profile {
+  @apply hidden;
+}
+.save-edit-profile.show {
+  @apply block;
+}

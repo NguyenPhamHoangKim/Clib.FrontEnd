@@ -21,3 +21,16 @@ new Swiper(".song-swiper", {
   },
   autoResize: false,
 });
+
+$(".edit-profile-group").each(function () {
+  const editProfileGroup = $(this);
+  editProfileGroup.find(".profile-edit-btn").click(function () {
+    editProfileGroup.find(".save-edit-profile").addClass("show");
+    editProfileGroup.find("input, textarea").removeAttr("disabled");
+  });
+
+  editProfileGroup.find(".close-save-edit-profile").click(function () {
+    $(this).parent().parent().removeClass("show");
+    editProfileGroup.find("input, textarea").attr("disabled", "disabled");
+  });
+});

@@ -1373,6 +1373,285 @@
         </ul>
       </div>
     </footer>
+    <div
+      id="edit-profile--modal"
+      class="overlay flex items-center justify-center p-4"
+    >
+      <div class="p-6 rounded-xl bg-white w-[640px] max-w-full">
+        <div class="text-24 font-semibold">Edit Profile</div>
+        <div class="mt-4">
+          <div class="relative">
+            <img
+              class="h-[120px] w-full rounded-xl object-cover object-center"
+              src="../assets/images/profile/banner.jpg"
+              alt=""
+              loading="lazy"
+            />
+            <button
+              class="btn-fourth px-4 py-2 text-14 font-semibold absolute bottom-3 right-4"
+            >
+              <img
+                class="w-4 aspect-square"
+                src="../assets/svgs/replace.svg"
+                alt=""
+              />
+              Replace
+            </button>
+          </div>
+          <div
+            class="rounded-[32px] relative z-10 -mt-[96px] bg-white p-1 mx-auto w-fit shadow-[0px_2px_20px_0px_rgba(0,0,0,0.08)]"
+          >
+            <img
+              class="aspect-square w-[140px] object-cover object-center"
+              src="../assets/images/artists/1.png"
+              loading="lazy"
+              alt=""
+            />
+            <button
+              class="absolute right-0 bottom-0 z-20 translate-x-2 border border-grey-200 translate-y-2 p-2.5 rounded-full bg-white backdrop-blur-[10px]"
+            >
+              <img
+                class="w-4 aspect-square"
+                src="../assets/svgs/camera.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+        <div class="mt-6 flex flex-col gap-y-4">
+          <div class="edit-profile-group">
+            <label for="your-name" class="text-base font-semibold text-grey-400"
+              >Your name</label
+            >
+            <div>
+              <div class="relative">
+                <input
+                  class="px-4 py-2.5 pr-[84px] outline-none w-full bg-grey-100 rounded-xl text-base"
+                  type="text"
+                  disabled
+                  id="your-name"
+                  placeholder="Your name"
+                />
+                <div
+                  class="flex items-center gap-x-3 absolute top-1/2 right-4 -translate-y-1/2"
+                >
+                  <button>
+                    <img
+                      class="w-6 aspect-square"
+                      src="../assets/svgs/copy.svg"
+                      alt=""
+                    />
+                  </button>
+                  <button class="profile-edit-btn">
+                    <img
+                      class="w-6 aspect-square"
+                      src="../assets/svgs/edit-profile.svg"
+                      alt=""
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="save-edit-profile">
+                <div class="mt-3 flex items-center justify-end gap-3">
+                  <button class="btn-fourth h-8 close-save-edit-profile">
+                    Cancel
+                  </button>
+                  <button class="btn-primary h-8">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="edit-profile-group">
+            <label
+              for="profile-url"
+              class="text-base font-semibold text-grey-400"
+              >Profile URL</label
+            >
+            <div>
+              <div class="relative">
+                <input
+                  class="px-4 py-2.5 pr-[46px] outline-none w-full bg-grey-100 rounded-xl text-base"
+                  type="text"
+                  id="profile-url"
+                  disabled
+                  placeholder="Profile URL"
+                />
+                <div
+                  class="flex items-center gap-x-3 absolute top-1/2 right-4 -translate-y-1/2"
+                >
+                  <button class="profile-edit-btn">
+                    <img
+                      class="w-6 aspect-square"
+                      src="../assets/svgs/edit-profile.svg"
+                      alt=""
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="save-edit-profile">
+                <div class="mt-3 flex items-center justify-end gap-3">
+                  <button class="btn-fourth h-8 close-save-edit-profile">
+                    Cancel
+                  </button>
+                  <button class="btn-primary h-8">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full h-[1px] bg-grey-200"></div>
+          <div class="edit-profile-group !items-start">
+            <label for="bio" class="text-base font-semibold text-grey-400"
+              >Bio</label
+            >
+            <div>
+              <div class="relative">
+                <textarea
+                  disabled
+                  class="px-4 h-[104px] resize-none py-2.5 pr-[46px] outline-none w-full bg-grey-100 rounded-xl text-base"
+                  type="text"
+                  id="bio"
+                  placeholder="Bio"
+                ></textarea>
+                <button class="absolute top-4 right-4 profile-edit-btn">
+                  <img
+                    class="w-6 aspect-square"
+                    src="../assets/svgs/edit-profile.svg"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div class="save-edit-profile">
+                <div class="mt-1.5 text-base text-right text-grey-300">
+                  Maximum 100 characters
+                </div>
+                <div class="mt-3 flex items-center justify-end gap-3">
+                  <button class="btn-fourth h-8 close-save-edit-profile">
+                    Cancel
+                  </button>
+                  <button class="btn-primary h-8">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="edit-profile-group">
+            <label
+              for="phone-number"
+              class="text-base font-semibold text-grey-400"
+              >Phone number</label
+            >
+            <div>
+              <div
+                class="px-4 py-2.5 relative w-full bg-grey-100 rounded-xl text-base gap-2 flex items-center"
+              >
+                <img
+                  class="w-6 aspect-square"
+                  src="../assets/svgs/call.svg"
+                  alt=""
+                />
+                <input
+                  disabled
+                  class="bg-transparent outline-none flex-1"
+                  type="text"
+                  id="phone-number"
+                  placeholder="Phone number"
+                />
+                <button class="profile-edit-btn">
+                  <img
+                    class="w-6 aspect-square"
+                    src="../assets/svgs/edit-profile.svg"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div class="save-edit-profile">
+                <div class="mt-3 flex items-center justify-end gap-3">
+                  <button class="btn-fourth h-8 close-save-edit-profile">
+                    Cancel
+                  </button>
+                  <button class="btn-primary h-8">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="edit-profile-group">
+            <label for="email" class="text-base font-semibold text-grey-400"
+              >Email</label
+            >
+            <div>
+              <div
+                class="px-4 py-2.5 relative w-full bg-grey-100 rounded-xl text-base gap-2 flex items-center"
+              >
+                <img
+                  class="w-6 aspect-square"
+                  src="../assets/svgs/sms.svg"
+                  alt=""
+                />
+                <input
+                  disabled
+                  class="bg-transparent outline-none flex-1"
+                  type="email"
+                  id="email"
+                  placeholder="Email"
+                />
+                <button class="profile-edit-btn">
+                  <img
+                    class="w-6 aspect-square"
+                    src="../assets/svgs/edit-profile.svg"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div class="save-edit-profile">
+                <div class="mt-3 flex items-center justify-end gap-3">
+                  <button class="btn-fourth h-8 close-save-edit-profile">
+                    Cancel
+                  </button>
+                  <button class="btn-primary h-8">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="edit-profile-group">
+            <label for="website" class="text-base font-semibold text-grey-400"
+              >Website</label
+            >
+            <div>
+              <div
+                class="px-4 py-2.5 relative w-full bg-grey-100 rounded-xl text-base gap-2 flex items-center"
+              >
+                <img
+                  class="w-6 aspect-square"
+                  src="../assets/svgs/global-1.svg"
+                  alt=""
+                />
+                <input
+                  disabled
+                  class="bg-transparent outline-none flex-1"
+                  type="email"
+                  id="website"
+                  placeholder="Website"
+                />
+                <button class="profile-edit-btn">
+                  <img
+                    class="w-6 aspect-square"
+                    src="../assets/svgs/edit-profile.svg"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div class="save-edit-profile">
+                <div class="mt-3 flex items-center justify-end gap-3">
+                  <button class="btn-fourth h-8 close-save-edit-profile">
+                    Cancel
+                  </button>
+                  <button class="btn-primary h-8">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
