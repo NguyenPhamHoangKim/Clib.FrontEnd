@@ -47,13 +47,25 @@ $("#edit-profile--inner").click(function (e) {
   e.stopPropagation();
 });
 
+$(".gallery-img").each(function () {
+  $(this).click(function () {
+    $("#gallery-focus-image").toggleClass("show");
+  });
+});
+
+$("#close-focus-img").click(function () {
+  $("#gallery-focus-image").removeClass("show");
+});
+
 $(".comment-gallery-item").each(function () {
   const _this = $(this);
 
   _this.find(".show-reply-box").click(function () {
     $(".reply-cmt-box.show").removeClass("show");
-    _this.find(".reply-cmt-box").addClass("show");
+    const replyBox = $(this)
+      .closest(".cmt-box-right")
+      .parent()
+      .next(".reply-cmt-box");
+    replyBox.addClass("show");
   });
 });
-
-gallery - img;

@@ -84,7 +84,7 @@
               <img src="../assets/svgs/profile-info-selected.svg" alt="" />
               Info
             </a>
-            <a href="#" class="profile-nav">
+            <a href="/profile/music.html" class="profile-nav">
               <img src="../assets/svgs/profile-music.svg" alt="" />
               Music
             </a>
@@ -1660,11 +1660,11 @@
         </div>
       </div>
     </div>
-    <div id="gallery-focus-image" class="overlay h-full">
+    <div id="gallery-focus-image" class="gallery-focus-image overlay h-full">
       <div class="grid grid-cols-[2fr_1fr] h-full">
         <div class="px-6 py-4 bg-black">
           <div class="flex items-center justify-between">
-            <button>
+            <button id="close-focus-img">
               <svg
                 width="24"
                 height="24"
@@ -1737,77 +1737,79 @@
             </button>
           </div>
         </div>
-        <div class="bg-white px-4">
-          <div class="flex items-center py-4 justify-between">
-            <div class="flex items-center gap-2">
+        <div class="bg-white px-4 flex flex-col gap-y-3 h-full overflow-y-auto">
+          <div>
+            <div class="flex items-center py-4 justify-between">
+              <div class="flex items-center gap-2">
+                <img
+                  class="w-12 aspect-square rounded-lg"
+                  src="../assets/images/artists/2.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div>
+                  <div class="flex items-center gap-1 text-18 font-semibold">
+                    <span>IBerD</span>
+                    <img src="../assets/svgs/verify.svg" alt="" />
+                  </div>
+                  <div class="text-14 text-grey-400">5 days ago</div>
+                </div>
+              </div>
+              <div
+                class="hover:bg-bg toggle-more-menu p-1 cursor-pointer relative rounded-full duration-100 transition-colors"
+              >
+                <img
+                  class="w-4 lg:w-6 aspect-square"
+                  src="../assets/svgs/more.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <p class="mt-4 text-base text-grey-400">
+              A small gift from me to you on my special day !
+            </p>
+            <div
+              class="mt-4 py-3 border-y border-y-grey-200 grid text-grey-400 grid-cols-3 items-center"
+            >
+              <button class="flex items-center gap-2 text-base justify-center">
+                <img
+                  class="w-6 aspect-square"
+                  src="../assets/svgs/heart.svg"
+                  alt=""
+                />
+                200
+              </button>
+              <button class="flex items-center gap-2 text-base justify-center">
+                <img
+                  class="w-6 aspect-square"
+                  src="../assets/svgs/ms-comment.svg"
+                  alt=""
+                />
+                200
+              </button>
+              <button class="flex items-center gap-2 text-base justify-center">
+                <img
+                  class="w-6 aspect-square"
+                  src="../assets/svgs/repost.svg"
+                  alt=""
+                />
+                200
+              </button>
+            </div>
+            <div class="mt-3 flex items-center gap-3">
               <img
-                class="w-12 aspect-square rounded-lg"
-                src="../assets/images/artists/2.png"
+                class="w-11 aspect-square rounded-lg object-cover object-center"
+                src="../assets/images/artists/3.png"
                 loading="lazy"
                 alt=""
               />
-              <div>
-                <div class="flex items-center gap-1 text-18 font-semibold">
-                  <span>IBerD</span>
-                  <img src="../assets/svgs/verify.svg" alt="" />
-                </div>
-                <div class="text-14 text-grey-400">5 days ago</div>
-              </div>
-            </div>
-            <div
-              class="hover:bg-bg toggle-more-menu p-1 cursor-pointer relative rounded-full duration-100 transition-colors"
-            >
-              <img
-                class="w-4 lg:w-6 aspect-square"
-                src="../assets/svgs/more.svg"
-                alt=""
-              />
+              <textarea
+                class="px-3 h-11 py-2.5 bg-grey-100 rounded-xl outline-none flex-1 max-h-full text-base placeholder:text-grey-300 resize-none"
+                placeholder="What’s on in your mind...."
+              ></textarea>
             </div>
           </div>
-          <p class="mt-4 text-base text-grey-400">
-            A small gift from me to you on my special day !
-          </p>
-          <div
-            class="mt-4 py-3 border-y border-y-grey-200 grid text-grey-400 grid-cols-3 items-center"
-          >
-            <button class="flex items-center gap-2 text-base justify-center">
-              <img
-                class="w-6 aspect-square"
-                src="../assets/svgs/heart.svg"
-                alt=""
-              />
-              200
-            </button>
-            <button class="flex items-center gap-2 text-base justify-center">
-              <img
-                class="w-6 aspect-square"
-                src="../assets/svgs/ms-comment.svg"
-                alt=""
-              />
-              200
-            </button>
-            <button class="flex items-center gap-2 text-base justify-center">
-              <img
-                class="w-6 aspect-square"
-                src="../assets/svgs/repost.svg"
-                alt=""
-              />
-              200
-            </button>
-          </div>
-          <div class="mt-3 flex items-center gap-3">
-            <img
-              class="w-11 aspect-square rounded-lg object-cover object-center"
-              src="../assets/images/artists/3.png"
-              loading="lazy"
-              alt=""
-            />
-            <textarea
-              class="px-3 h-11 py-2.5 bg-grey-100 rounded-xl outline-none flex-1 max-h-full text-base placeholder:text-grey-300 resize-none"
-              placeholder="What’s on in your mind...."
-            ></textarea>
-          </div>
-          <ul class="mt-3">
+          <ul class="flex-1 h-full pb-4 overflow-x-hidden scrollbar-custom">
             <li class="flex items-start py-3 comment-gallery-item">
               <a href="#">
                 <img
@@ -1818,7 +1820,7 @@
               </a>
               <div class="flex-1">
                 <div class="flex flex-1 justify-between items-start">
-                  <div class="flex-1">
+                  <div class="flex-1 cmt-box-right">
                     <div class="flex items-center gap-x-2">
                       <a href="#" class="font-semibold text-base">Josh Bee</a>
                       <div class="dot w-1 h-1"></div>
@@ -1881,7 +1883,7 @@
               </a>
               <div class="flex-1">
                 <div class="flex flex-1 justify-between items-start">
-                  <div class="flex-1">
+                  <div class="flex-1 cmt-box-right">
                     <div class="flex items-center gap-x-2">
                       <a href="#" class="font-semibold text-base"
                         >David Vasseho</a
@@ -1948,7 +1950,7 @@
               </a>
               <div class="flex-1">
                 <div class="flex flex-1 justify-between items-start">
-                  <div class="flex-1">
+                  <div class="flex-1 cmt-box-right">
                     <div class="flex items-center gap-x-2">
                       <a href="#" class="font-semibold text-base"
                         >Euloge Fatoke</a
@@ -2016,20 +2018,19 @@
               </a>
               <div class="flex-1">
                 <div class="flex flex-1 justify-between items-start">
-                  <div class="flex-1">
+                  <div class="flex-1 cmt-box-right">
                     <div class="flex items-center gap-x-2">
                       <a href="#" class="font-semibold text-base"
-                        >Euloge Fatoke</a
+                        >Hippolyte Kiki</a
                       >
                       <div class="dot w-1 h-1"></div>
                       <span class="text-base text-grey-400">1 days ago</span>
                     </div>
                     <p class="text-base mt-1 text-grey-400">
-                      Flipping the cassette while reading/examining the fold-out
-                      cover 😁
+                      Still doing this man 💣
                     </p>
                     <div class="flex items-center font-semibold gap-4 mt-2">
-                      <button class="hover:underline">16 Likes</button>
+                      <button class="hover:underline">Like</button>
                       <button class="show-reply-box hover:underline">
                         Reply
                       </button>
@@ -2072,6 +2073,209 @@
                     </button>
                   </div>
                 </div>
+                <ul class="mt-2">
+                  <li class="py-2">
+                    <div class="flex items-start">
+                      <img
+                        class="rounded-lg flex-grow-0 flex-shrink-0 w-9 aspect-square mr-3"
+                        src="../assets/images/artists/3.png"
+                        alt=""
+                      />
+                      <div class="cmt-box-right">
+                        <div class="flex items-center gap-x-2">
+                          <a href="#" class="font-semibold text-base"
+                            >Hippolyte Kiki</a
+                          >
+                          <div class="dot w-1 h-1"></div>
+                          <span class="text-base text-grey-400"
+                            >1 days ago</span
+                          >
+                        </div>
+                        <p class="text-base mt-1 text-grey-400">
+                          Still doing this man 💣
+                        </p>
+                        <div class="flex items-center font-semibold gap-4 mt-2">
+                          <button class="hover:underline">Like</button>
+                          <button class="show-reply-box hover:underline">
+                            Reply
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="reply-cmt-box">
+                      <img
+                        class="w-9 aspect-square rounded-xl object-cover object-center"
+                        src="../assets/images/artists/3.png"
+                        loading="lazy"
+                        alt=""
+                      />
+                      <div
+                        class="flex h-12 items-center flex-1 p-3 bg-grey-100 rounded-xl"
+                      >
+                        <textarea
+                          class="h-full flex-1 w-full bg-transparent outline-none max-h-full text-base placeholder:text-grey-300 resize-none"
+                          placeholder="What’s on in your mind...."
+                        ></textarea>
+                        <button
+                          class="hover:scale-110 transition-transform duration-200"
+                        >
+                          <svg
+                            width="36"
+                            height="36"
+                            viewBox="0 0 36 36"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              width="36"
+                              height="36"
+                              rx="18"
+                              fill="#1A75FF"
+                            />
+                            <path
+                              d="M23.0586 15.0918L15.9252 11.5251C11.1336 9.12511 9.16689 11.0918 11.5669 15.8834L12.2919 17.3334C12.5002 17.7584 12.5002 18.2501 12.2919 18.6751L11.5669 20.1168C9.16689 24.9084 11.1252 26.8751 15.9252 24.4751L23.0586 20.9084C26.2586 19.3084 26.2586 16.6918 23.0586 15.0918ZM20.3669 18.6251H15.8669C15.5252 18.6251 15.2419 18.3418 15.2419 18.0001C15.2419 17.6584 15.5252 17.3751 15.8669 17.3751H20.3669C20.7086 17.3751 20.9919 17.6584 20.9919 18.0001C20.9919 18.3418 20.7086 18.6251 20.3669 18.6251Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-start">
+                      <img
+                        class="rounded-lg flex-grow-0 flex-shrink-0 w-9 aspect-square mr-3"
+                        src="../assets/images/artists/3.png"
+                        alt=""
+                      />
+                      <div class="cmt-box-right">
+                        <div class="flex items-center gap-x-2">
+                          <a href="#" class="font-semibold text-base"
+                            >Hippolyte Kiki</a
+                          >
+                          <div class="dot w-1 h-1"></div>
+                          <span class="text-base text-grey-400"
+                            >1 days ago</span
+                          >
+                        </div>
+                        <p class="text-base mt-1 text-grey-400">
+                          Still doing this man 💣
+                        </p>
+                        <div class="flex items-center font-semibold gap-4 mt-2">
+                          <button class="hover:underline">Like</button>
+                          <button class="show-reply-box hover:underline">
+                            Reply
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="reply-cmt-box">
+                      <img
+                        class="w-9 aspect-square rounded-xl object-cover object-center"
+                        src="../assets/images/artists/3.png"
+                        loading="lazy"
+                        alt=""
+                      />
+                      <div
+                        class="flex h-12 items-center flex-1 p-3 bg-grey-100 rounded-xl"
+                      >
+                        <textarea
+                          class="h-full flex-1 w-full bg-transparent outline-none max-h-full text-base placeholder:text-grey-300 resize-none"
+                          placeholder="What’s on in your mind...."
+                        ></textarea>
+                        <button
+                          class="hover:scale-110 transition-transform duration-200"
+                        >
+                          <svg
+                            width="36"
+                            height="36"
+                            viewBox="0 0 36 36"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              width="36"
+                              height="36"
+                              rx="18"
+                              fill="#1A75FF"
+                            />
+                            <path
+                              d="M23.0586 15.0918L15.9252 11.5251C11.1336 9.12511 9.16689 11.0918 11.5669 15.8834L12.2919 17.3334C12.5002 17.7584 12.5002 18.2501 12.2919 18.6751L11.5669 20.1168C9.16689 24.9084 11.1252 26.8751 15.9252 24.4751L23.0586 20.9084C26.2586 19.3084 26.2586 16.6918 23.0586 15.0918ZM20.3669 18.6251H15.8669C15.5252 18.6251 15.2419 18.3418 15.2419 18.0001C15.2419 17.6584 15.5252 17.3751 15.8669 17.3751H20.3669C20.7086 17.3751 20.9919 17.6584 20.9919 18.0001C20.9919 18.3418 20.7086 18.6251 20.3669 18.6251Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-start">
+                      <img
+                        class="rounded-lg flex-grow-0 flex-shrink-0 w-9 aspect-square mr-3"
+                        src="../assets/images/artists/3.png"
+                        alt=""
+                      />
+                      <div class="cmt-box-right">
+                        <div class="flex items-center gap-x-2">
+                          <a href="#" class="font-semibold text-base"
+                            >Hippolyte Kiki</a
+                          >
+                          <div class="dot w-1 h-1"></div>
+                          <span class="text-base text-grey-400"
+                            >1 days ago</span
+                          >
+                        </div>
+                        <p class="text-base mt-1 text-grey-400">
+                          Still doing this man 💣
+                        </p>
+                        <div class="flex items-center font-semibold gap-4 mt-2">
+                          <button class="hover:underline">Like</button>
+                          <button class="show-reply-box hover:underline">
+                            Reply
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="reply-cmt-box">
+                      <img
+                        class="w-9 aspect-square rounded-xl object-cover object-center"
+                        src="../assets/images/artists/3.png"
+                        loading="lazy"
+                        alt=""
+                      />
+                      <div
+                        class="flex h-12 items-center flex-1 p-3 bg-grey-100 rounded-xl"
+                      >
+                        <textarea
+                          class="h-full flex-1 w-full bg-transparent outline-none max-h-full text-base placeholder:text-grey-300 resize-none"
+                          placeholder="What’s on in your mind...."
+                        ></textarea>
+                        <button
+                          class="hover:scale-110 transition-transform duration-200"
+                        >
+                          <svg
+                            width="36"
+                            height="36"
+                            viewBox="0 0 36 36"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              width="36"
+                              height="36"
+                              rx="18"
+                              fill="#1A75FF"
+                            />
+                            <path
+                              d="M23.0586 15.0918L15.9252 11.5251C11.1336 9.12511 9.16689 11.0918 11.5669 15.8834L12.2919 17.3334C12.5002 17.7584 12.5002 18.2501 12.2919 18.6751L11.5669 20.1168C9.16689 24.9084 11.1252 26.8751 15.9252 24.4751L23.0586 20.9084C26.2586 19.3084 26.2586 16.6918 23.0586 15.0918ZM20.3669 18.6251H15.8669C15.5252 18.6251 15.2419 18.3418 15.2419 18.0001C15.2419 17.6584 15.5252 17.3751 15.8669 17.3751H20.3669C20.7086 17.3751 20.9919 17.6584 20.9919 18.0001C20.9919 18.3418 20.7086 18.6251 20.3669 18.6251Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>

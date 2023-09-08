@@ -42,9 +42,6 @@
   .btn-outline {
     @apply block w-[100px] rounded-xl border border-branding py-2 text-14 font-semibold text-branding transition-colors duration-75 hover:bg-branding hover:text-white;
   }
-  .overlay {
-    @apply fixed inset-0 z-[9999] bg-black/60;
-  }
 }
 @tailwind utilities;
 
@@ -345,4 +342,11 @@ a.swiper-slide.digital-item:hover .digital-thumb {
 }
 .reply-cmt-box.show {
   @apply flex;
+}
+
+.gallery-focus-image {
+  @apply hidden;
+}
+.gallery-focus-image.show {
+  @apply block;
 }

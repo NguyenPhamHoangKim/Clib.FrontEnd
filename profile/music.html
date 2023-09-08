@@ -1,0 +1,1100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clib - Profile</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="rounded-b-xl bg-white px-4 pb-3">
+        <img
+          class="h-[260px] w-full rounded-b-xl object-cover object-center"
+          src="../assets/images/profile/banner.jpg"
+          alt=""
+        />
+        <!-- OTHER <div class="mt-4 flex items-center justify-end gap-3">
+          <a href="#" class="btn-fourth h-11 gap-1.5"
+            ><img src="../assets/svgs/profile-ms.svg" alt="" /> Message</a
+          >
+          <a href="#" class="btn-primary no-hover h-11 gap-1.5">
+            <img src="../assets/svgs/profile-add.svg" alt="" />
+            Follow</a
+          >
+        </div> OTHER -->
+        <div class="mt-4 flex items-center justify-end gap-3">
+          <button id="show-edit-modal" href="#" class="btn-fourth h-11 gap-1.5">
+            <img src="../assets/svgs/edit-profile.svg" alt="" /> Edit profile
+          </button>
+        </div>
+        <div class="mx-auto -mt-[210px] flex flex-col items-center">
+          <div
+            class="rounded-[32px] bg-white p-1 shadow-[0px_2px_20px_0px_rgba(0,0,0,0.08)]"
+          >
+            <img
+              class="aspect-square w-[200px] object-cover object-center"
+              src="../assets/images/artists/1.png"
+              loading="lazy"
+              alt=""
+            />
+          </div>
+          <div
+            class="mt-4 flex items-center gap-1 whitespace-nowrap text-center text-24 font-semibold"
+          >
+            Son Tung M-TP
+            <svg
+              class="flex-shrink-0"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21.5599 10.7401L20.1999 9.16006C19.9399 8.86006 19.7299 8.30006 19.7299 7.90006V6.20006C19.7299 5.14006 18.8599 4.27006 17.7999 4.27006H16.0999C15.7099 4.27006 15.1399 4.06006 14.8399 3.80006L13.2599 2.44006C12.5699 1.85006 11.4399 1.85006 10.7399 2.44006L9.16988 3.81006C8.86988 4.06006 8.29988 4.27006 7.90988 4.27006H6.17988C5.11988 4.27006 4.24988 5.14006 4.24988 6.20006V7.91006C4.24988 8.30006 4.03988 8.86006 3.78988 9.16006L2.43988 10.7501C1.85988 11.4401 1.85988 12.5601 2.43988 13.2501L3.78988 14.8401C4.03988 15.1401 4.24988 15.7001 4.24988 16.0901V17.8001C4.24988 18.8601 5.11988 19.7301 6.17988 19.7301H7.90988C8.29988 19.7301 8.86988 19.9401 9.16988 20.2001L10.7499 21.5601C11.4399 22.1501 12.5699 22.1501 13.2699 21.5601L14.8499 20.2001C15.1499 19.9401 15.7099 19.7301 16.1099 19.7301H17.8099C18.8699 19.7301 19.7399 18.8601 19.7399 17.8001V16.1001C19.7399 15.7101 19.9499 15.1401 20.2099 14.8401L21.5699 13.2601C22.1499 12.5701 22.1499 11.4301 21.5599 10.7401ZM16.1599 10.1101L11.3299 14.9401C11.1899 15.0801 10.9999 15.1601 10.7999 15.1601C10.5999 15.1601 10.4099 15.0801 10.2699 14.9401L7.84988 12.5201C7.55988 12.2301 7.55988 11.7501 7.84988 11.4601C8.13988 11.1701 8.61988 11.1701 8.90988 11.4601L10.7999 13.3501L15.0999 9.05006C15.3899 8.76006 15.8699 8.76006 16.1599 9.05006C16.4499 9.34006 16.4499 9.82006 16.1599 10.1101Z"
+                fill="#1A75FF"
+              />
+            </svg>
+          </div>
+          <div class="mt-6 flex items-center justify-center gap-7">
+            <div class="flex flex-col items-center">
+              <span class="text-20 font-semibold">1280</span>
+              <span class="text-14 text-grey-400">Posts</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <span class="text-20 font-semibold">53K</span>
+              <span class="text-14 text-grey-400">Followers</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <span class="text-20 font-semibold">12,3K</span>
+              <span class="text-14 text-grey-400">Following</span>
+            </div>
+          </div>
+        </div>
+        <div class="relative mt-6">
+          <div
+            class="mx-auto flex w-fit items-center overflow-hidden rounded-xl bg-grey-100 p-1"
+          >
+            <a href="#" class="profile-nav">
+              <img src="../assets/svgs/profile-info.svg" alt="" />
+              Info
+            </a>
+            <a href="/profile/music.html" class="profile-nav active">
+              <img src="../assets/svgs/profile-music-selected.svg" alt="" />
+              Music
+            </a>
+            <a href="#" class="profile-nav">
+              <img src="../assets/svgs/profile-video.svg" alt="" />
+              Video
+            </a>
+            <a href="#" class="profile-nav">
+              <img src="../assets/svgs/profile-photos.svg" alt="" />
+              Photos
+            </a>
+            <a href="#" class="profile-nav">
+              <img src="../assets/svgs/profile-market.svg" alt="" />
+              Marketplace
+            </a>
+          </div>
+          <button
+            class="absolute right-0 top-0 h-12 max-h-full rounded-xl bg-grey-200 px-4 py-3 transition-transform duration-200 hover:scale-105"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 10C3.9 10 3 10.9 3 12C3 13.1 3.9 14 5 14C6.1 14 7 13.1 7 12C7 10.9 6.1 10 5 10Z"
+                fill="#52616B"
+              />
+              <path
+                d="M19 10C17.9 10 17 10.9 17 12C17 13.1 17.9 14 19 14C20.1 14 21 13.1 21 12C21 10.9 20.1 10 19 10Z"
+                fill="#52616B"
+              />
+              <path
+                d="M12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"
+                fill="#52616B"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div></div>
+    </div>
+    <footer
+      class="mt-[100px] border-t border-t-grey-400 pb-6 pt-4 max-md:hidden"
+    >
+      <div class="container flex items-center justify-between">
+        <div class="flex items-center">
+          <div class="-mb-0.5 mr-6 text-14 text-grey-400">
+            Copyright © 2023 Clib Music. All rights reserved.
+          </div>
+          <ul class="flex items-center gap-3">
+            <li>
+              <a href="#" class="text-14 text-grey-400">Privacy Policy</a>
+            </li>
+            <li>
+              <span class="footer-divider"></span>
+            </li>
+            <li>
+              <a href="#" class="text-14 text-grey-400">Terms of Use</a>
+            </li>
+            <li>
+              <span class="footer-divider"></span>
+            </li>
+            <li>
+              <a href="#" class="text-14 text-grey-400">Cookie Warning</a>
+            </li>
+            <li>
+              <span class="footer-divider"></span>
+            </li>
+            <li>
+              <a href="#" class="text-14 text-grey-400">Support</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="flex items-center gap-3">
+          <li>
+            <a href="#" class="lang-footer-item active">English</a>
+          </li>
+          <li>
+            <span class="footer-divider"></span>
+          </li>
+          <li>
+            <a href="#" class="lang-footer-item">Tiếng Việt</a>
+          </li>
+          <li>
+            <span class="footer-divider"></span>
+          </li>
+          <li>
+            <a href="#" class="lang-footer-item">简体中文</a>
+          </li>
+          <li>
+            <span class="footer-divider"></span>
+          </li>
+          <li>
+            <a href="#" class="lang-footer-item">한국어</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div id="edit-profile--modal" class="edit-profile--modal overlay">
+      <div
+        id="edit-profile--inner"
+        class="p-6 rounded-xl bg-white w-[640px] max-w-full"
+      >
+        <div class="text-24 font-semibold">Edit Profile</div>
+        <div class="mt-4">
+          <div class="relative">
+            <img
+              class="h-[120px] w-full rounded-xl object-cover object-center"
+              src="../assets/images/profile/banner.jpg"
+              alt=""
+              loading="lazy"
+            />
+            <button
+              class="btn-fourth px-4 py-2 text-14 font-semibold absolute bottom-3 right-4"
+            >
+              <img
+                class="w-4 aspect-square"
+                src="../assets/svgs/replace.svg"
+                alt=""
+              />
+              Replace
+            </button>
+          </div>
+          <div
+            class="rounded-[32px] relative z-10 -mt-[96px] bg-white p-1 mx-auto w-fit shadow-[0px_2px_20px_0px_rgba(0,0,0,0.08)]"
+          >
+            <img
+              class="aspect-square w-[140px] object-cover object-center"
+              src="../assets/images/artists/1.png"
+              loading="lazy"
+              alt=""
+            />
+            <button
+              class="absolute right-0 bottom-0 z-20 translate-x-2 border border-grey-200 translate-y-2 p-2.5 rounded-full bg-white backdrop-blur-[10px]"
+            >
+              <img
+                class="w-4 aspect-square"
+                src="../assets/svgs/camera.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+        <div class="mt-6 flex flex-col gap-y-4">
+          <div class="edit-profile-group">
+            <label for="your-name" class="text-base font-semibold text-grey-400"
+              >Your name</label
+            >
+            <div>
+              <div class="relative">
+                <input
+                  class="px-4 py-2.5 pr-[84px] outline-none w-full bg-grey-100 rounded-xl text-base"
+                  type="text"
+                  disabled
+                  id="your-name"
+                  placeholder="Your name"
+                />
+                <div
+                  class="flex items-center gap-x-3 absolute top-1/2 right-4 -translate-y-1/2"
+                >
+                  <button>
+                    <img
+                      class="w-6 aspect-square"
+                      src="../assets/svgs/copy.svg"
+                      alt=""
+                    />
+                  </button>
+                  <button class="profile-edit-btn">
+                    <img
+                      class="w-6 aspect-square"
+                      src="../assets/svgs/edit-profile.svg"
+                      alt=""
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="save-edit-profile">
+                <div class="mt-3 flex items-center justify-end gap-3">
+                  <button class="btn-fourth h-8 close-save-edit-profile">
+                    Cancel
+                  </button>
+                  <button class="btn-primary h-8">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="edit-profile-group">
+            <label
+              for="profile-url"
+              class="text-base font-semibold text-grey-400"
+              >Profile URL</label
+            >
+            <div>
+              <div class="relative">
+                <input
+                  class="px-4 py-2.5 pr-[46px] outline-none w-full bg-grey-100 rounded-xl text-base"
+                  type="text"
+                  id="profile-url"
+                  disabled
+                  placeholder="Profile URL"
+                />
+                <div
+                  class="flex items-center gap-x-3 absolute top-1/2 right-4 -translate-y-1/2"
+                >
+                  <button class="profile-edit-btn">
+                    <img
+                      class="w-6 aspect-square"
+                      src="../assets/svgs/edit-profile.svg"
+                      alt=""
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="save-edit-profile">
+                <div class="mt-3 flex items-center justify-end gap-3">
+                  <button class="btn-fourth h-8 close-save-edit-profile">
+                    Cancel
+                  </button>
+                  <button class="btn-primary h-8">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full h-[1px] bg-grey-200"></div>
+          <div class="edit-profile-group !items-start">
+            <label for="bio" class="text-base font-semibold text-grey-400"
+              >Bio</label
+            >
+            <div>
+              <div class="relative">
+                <textarea
+                  disabled
+                  class="px-4 h-[104px] resize-none py-2.5 pr-[46px] outline-none w-full bg-grey-100 rounded-xl text-base"
+                  type="text"
+                  id="bio"
+                  placeholder="Bio"
+                ></textarea>
+                <button class="absolute top-4 right-4 profile-edit-btn">
+                  <img
+                    class="w-6 aspect-square"
+                    src="../assets/svgs/edit-profile.svg"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div class="save-edit-profile">
+                <div class="mt-1.5 text-base text-right text-grey-300">
+                  Maximum 100 characters
+                </div>
+                <div class="mt-3 flex items-center justify-end gap-3">
+                  <button class="btn-fourth h-8 close-save-edit-profile">
+                    Cancel
+                  </button>
+                  <button class="btn-primary h-8">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="edit-profile-group">
+            <label
+              for="phone-number"
+              class="text-base font-semibold text-grey-400"
+              >Phone number</label
+            >
+            <div>
+              <div
+                class="px-4 py-2.5 relative w-full bg-grey-100 rounded-xl text-base gap-2 flex items-center"
+              >
+                <img
+                  class="w-6 aspect-square"
+                  src="../assets/svgs/call.svg"
+                  alt=""
+                />
+                <input
+                  disabled
+                  class="bg-transparent outline-none flex-1"
+                  type="text"
+                  id="phone-number"
+                  placeholder="Phone number"
+                />
+                <button class="profile-edit-btn">
+                  <img
+                    class="w-6 aspect-square"
+                    src="../assets/svgs/edit-profile.svg"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div class="save-edit-profile">
+                <div class="mt-3 flex items-center justify-end gap-3">
+                  <button class="btn-fourth h-8 close-save-edit-profile">
+                    Cancel
+                  </button>
+                  <button class="btn-primary h-8">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="edit-profile-group">
+            <label for="email" class="text-base font-semibold text-grey-400"
+              >Email</label
+            >
+            <div>
+              <div
+                class="px-4 py-2.5 relative w-full bg-grey-100 rounded-xl text-base gap-2 flex items-center"
+              >
+                <img
+                  class="w-6 aspect-square"
+                  src="../assets/svgs/sms.svg"
+                  alt=""
+                />
+                <input
+                  disabled
+                  class="bg-transparent outline-none flex-1"
+                  type="email"
+                  id="email"
+                  placeholder="Email"
+                />
+                <button class="profile-edit-btn">
+                  <img
+                    class="w-6 aspect-square"
+                    src="../assets/svgs/edit-profile.svg"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div class="save-edit-profile">
+                <div class="mt-3 flex items-center justify-end gap-3">
+                  <button class="btn-fourth h-8 close-save-edit-profile">
+                    Cancel
+                  </button>
+                  <button class="btn-primary h-8">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="edit-profile-group">
+            <label for="website" class="text-base font-semibold text-grey-400"
+              >Website</label
+            >
+            <div>
+              <div
+                class="px-4 py-2.5 relative w-full bg-grey-100 rounded-xl text-base gap-2 flex items-center"
+              >
+                <img
+                  class="w-6 aspect-square"
+                  src="../assets/svgs/global-1.svg"
+                  alt=""
+                />
+                <input
+                  disabled
+                  class="bg-transparent outline-none flex-1"
+                  type="email"
+                  id="website"
+                  placeholder="Website"
+                />
+                <button class="profile-edit-btn">
+                  <img
+                    class="w-6 aspect-square"
+                    src="../assets/svgs/edit-profile.svg"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div class="save-edit-profile">
+                <div class="mt-3 flex items-center justify-end gap-3">
+                  <button class="btn-fourth h-8 close-save-edit-profile">
+                    Cancel
+                  </button>
+                  <button class="btn-primary h-8">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="gallery-focus-image" class="gallery-focus-image overlay h-full">
+      <div class="grid grid-cols-[2fr_1fr] h-full">
+        <div class="px-6 py-4 bg-black">
+          <div class="flex items-center justify-between">
+            <button id="close-focus-img">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.00146 4L20.0015 20"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M4 20L20 4"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <div class="flex items-center gap-x-6">
+              <button>
+                <img
+                  class="w-6 aspect-square"
+                  src="../assets/svgs/zoom-in.svg"
+                  alt=""
+                />
+              </button>
+              <button>
+                <img
+                  class="w-6 aspect-square"
+                  src="../assets/svgs/frame.svg"
+                  alt=""
+                />
+              </button>
+              <button>
+                <img
+                  class="w-6 aspect-square"
+                  src="../assets/svgs/maximize.svg"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+          <div class="mt-[18px] relative">
+            <div class="px-16">
+              <img
+                class="w-full h-full object-cover rounded"
+                src="../assets/images/gallery.jpg"
+                loading=""
+                alt=""
+              />
+            </div>
+            <button
+              class="absolute right-0 top-1/2 -translate-y-1/2 z-10 p-1.5 aspect-square bg-white rounded-full"
+            >
+              <img src="../assets/svgs/arrow-next.svg" alt="" />
+            </button>
+            <button
+              class="absolute left-0 top-1/2 -translate-y-1/2 z-10 p-1.5 aspect-square bg-white rounded-full"
+            >
+              <img
+                class="rotate-180"
+                src="../assets/svgs/arrow-next.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+        <div class="bg-white px-4 flex flex-col gap-y-3 h-full overflow-y-auto">
+          <div>
+            <div class="flex items-center py-4 justify-between">
+              <div class="flex items-center gap-2">
+                <img
+                  class="w-12 aspect-square rounded-lg"
+                  src="../assets/images/artists/2.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div>
+                  <div class="flex items-center gap-1 text-18 font-semibold">
+                    <span>IBerD</span>
+                    <img src="../assets/svgs/verify.svg" alt="" />
+                  </div>
+                  <div class="text-14 text-grey-400">5 days ago</div>
+                </div>
+              </div>
+              <div
+                class="hover:bg-bg toggle-more-menu p-1 cursor-pointer relative rounded-full duration-100 transition-colors"
+              >
+                <img
+                  class="w-4 lg:w-6 aspect-square"
+                  src="../assets/svgs/more.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <p class="mt-4 text-base text-grey-400">
+              A small gift from me to you on my special day !
+            </p>
+            <div
+              class="mt-4 py-3 border-y border-y-grey-200 grid text-grey-400 grid-cols-3 items-center"
+            >
+              <button class="flex items-center gap-2 text-base justify-center">
+                <img
+                  class="w-6 aspect-square"
+                  src="../assets/svgs/heart.svg"
+                  alt=""
+                />
+                200
+              </button>
+              <button class="flex items-center gap-2 text-base justify-center">
+                <img
+                  class="w-6 aspect-square"
+                  src="../assets/svgs/ms-comment.svg"
+                  alt=""
+                />
+                200
+              </button>
+              <button class="flex items-center gap-2 text-base justify-center">
+                <img
+                  class="w-6 aspect-square"
+                  src="../assets/svgs/repost.svg"
+                  alt=""
+                />
+                200
+              </button>
+            </div>
+            <div class="mt-3 flex items-center gap-3">
+              <img
+                class="w-11 aspect-square rounded-lg object-cover object-center"
+                src="../assets/images/artists/3.png"
+                loading="lazy"
+                alt=""
+              />
+              <textarea
+                class="px-3 h-11 py-2.5 bg-grey-100 rounded-xl outline-none flex-1 max-h-full text-base placeholder:text-grey-300 resize-none"
+                placeholder="What’s on in your mind...."
+              ></textarea>
+            </div>
+          </div>
+          <ul class="flex-1 h-full pb-4 overflow-x-hidden scrollbar-custom">
+            <li class="flex items-start py-3 comment-gallery-item">
+              <a href="#">
+                <img
+                  class="rounded-lg w-12 aspect-square mr-3"
+                  src="../assets/images/artists/3.png"
+                  alt=""
+                />
+              </a>
+              <div class="flex-1">
+                <div class="flex flex-1 justify-between items-start">
+                  <div class="flex-1 cmt-box-right">
+                    <div class="flex items-center gap-x-2">
+                      <a href="#" class="font-semibold text-base">Josh Bee</a>
+                      <div class="dot w-1 h-1"></div>
+                      <span class="text-base text-grey-400">1 days ago</span>
+                    </div>
+                    <p class="text-base mt-1 text-grey-400">Soo great!!!</p>
+                    <div class="flex items-center font-semibold gap-4 mt-2">
+                      <button class="hover:underline">Like</button>
+                      <button class="show-reply-box hover:underline">
+                        Reply
+                      </button>
+                    </div>
+                  </div>
+                  <button>
+                    <img src="../assets/svgs/heart-outline.svg" alt="" />
+                  </button>
+                </div>
+                <div class="reply-cmt-box">
+                  <img
+                    class="w-9 aspect-square rounded-xl object-cover object-center"
+                    src="../assets/images/artists/3.png"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div
+                    class="flex h-12 items-center flex-1 p-3 bg-grey-100 rounded-xl"
+                  >
+                    <textarea
+                      class="h-full flex-1 w-full bg-transparent outline-none max-h-full text-base placeholder:text-grey-300 resize-none"
+                      placeholder="What’s on in your mind...."
+                    ></textarea>
+                    <button
+                      class="hover:scale-110 transition-transform duration-200"
+                    >
+                      <svg
+                        width="36"
+                        height="36"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect width="36" height="36" rx="18" fill="#1A75FF" />
+                        <path
+                          d="M23.0586 15.0918L15.9252 11.5251C11.1336 9.12511 9.16689 11.0918 11.5669 15.8834L12.2919 17.3334C12.5002 17.7584 12.5002 18.2501 12.2919 18.6751L11.5669 20.1168C9.16689 24.9084 11.1252 26.8751 15.9252 24.4751L23.0586 20.9084C26.2586 19.3084 26.2586 16.6918 23.0586 15.0918ZM20.3669 18.6251H15.8669C15.5252 18.6251 15.2419 18.3418 15.2419 18.0001C15.2419 17.6584 15.5252 17.3751 15.8669 17.3751H20.3669C20.7086 17.3751 20.9919 17.6584 20.9919 18.0001C20.9919 18.3418 20.7086 18.6251 20.3669 18.6251Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="flex items-start py-3 comment-gallery-item">
+              <a href="#">
+                <img
+                  class="rounded-lg w-12 aspect-square mr-3"
+                  src="../assets/images/artists/3.png"
+                  alt=""
+                />
+              </a>
+              <div class="flex-1">
+                <div class="flex flex-1 justify-between items-start">
+                  <div class="flex-1 cmt-box-right">
+                    <div class="flex items-center gap-x-2">
+                      <a href="#" class="font-semibold text-base"
+                        >David Vasseho</a
+                      >
+                      <div class="dot w-1 h-1"></div>
+                      <span class="text-base text-grey-400">1 days ago</span>
+                    </div>
+                    <p class="text-base mt-1 text-grey-400">
+                      Everyday I “just” listen to music👌🏿
+                    </p>
+                    <div class="flex items-center font-semibold gap-4 mt-2">
+                      <button class="hover:underline">72 Likes</button>
+                      <button class="show-reply-box hover:underline">
+                        Reply
+                      </button>
+                    </div>
+                  </div>
+                  <button>
+                    <img src="../assets/svgs/heart-outline.svg" alt="" />
+                  </button>
+                </div>
+                <div class="reply-cmt-box">
+                  <img
+                    class="w-9 aspect-square rounded-xl object-cover object-center"
+                    src="../assets/images/artists/3.png"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div
+                    class="flex h-12 items-center flex-1 p-3 bg-grey-100 rounded-xl"
+                  >
+                    <textarea
+                      class="h-full flex-1 w-full bg-transparent outline-none max-h-full text-base placeholder:text-grey-300 resize-none"
+                      placeholder="What’s on in your mind...."
+                    ></textarea>
+                    <button
+                      class="hover:scale-110 transition-transform duration-200"
+                    >
+                      <svg
+                        width="36"
+                        height="36"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect width="36" height="36" rx="18" fill="#1A75FF" />
+                        <path
+                          d="M23.0586 15.0918L15.9252 11.5251C11.1336 9.12511 9.16689 11.0918 11.5669 15.8834L12.2919 17.3334C12.5002 17.7584 12.5002 18.2501 12.2919 18.6751L11.5669 20.1168C9.16689 24.9084 11.1252 26.8751 15.9252 24.4751L23.0586 20.9084C26.2586 19.3084 26.2586 16.6918 23.0586 15.0918ZM20.3669 18.6251H15.8669C15.5252 18.6251 15.2419 18.3418 15.2419 18.0001C15.2419 17.6584 15.5252 17.3751 15.8669 17.3751H20.3669C20.7086 17.3751 20.9919 17.6584 20.9919 18.0001C20.9919 18.3418 20.7086 18.6251 20.3669 18.6251Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="flex items-start py-3 comment-gallery-item">
+              <a href="#">
+                <img
+                  class="rounded-lg w-12 aspect-square mr-3"
+                  src="../assets/images/artists/3.png"
+                  alt=""
+                />
+              </a>
+              <div class="flex-1">
+                <div class="flex flex-1 justify-between items-start">
+                  <div class="flex-1 cmt-box-right">
+                    <div class="flex items-center gap-x-2">
+                      <a href="#" class="font-semibold text-base"
+                        >Euloge Fatoke</a
+                      >
+                      <div class="dot w-1 h-1"></div>
+                      <span class="text-base text-grey-400">1 days ago</span>
+                    </div>
+                    <p class="text-base mt-1 text-grey-400">
+                      Flipping the cassette while reading/examining the fold-out
+                      cover 😁
+                    </p>
+                    <div class="flex items-center font-semibold gap-4 mt-2">
+                      <button class="hover:underline">16 Likes</button>
+                      <button class="show-reply-box hover:underline">
+                        Reply
+                      </button>
+                    </div>
+                  </div>
+                  <button>
+                    <img src="../assets/svgs/heart-outline.svg" alt="" />
+                  </button>
+                </div>
+                <div class="reply-cmt-box">
+                  <img
+                    class="w-9 aspect-square rounded-xl object-cover object-center"
+                    src="../assets/images/artists/3.png"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div
+                    class="flex h-12 items-center flex-1 p-3 bg-grey-100 rounded-xl"
+                  >
+                    <textarea
+                      class="h-full flex-1 w-full bg-transparent outline-none max-h-full text-base placeholder:text-grey-300 resize-none"
+                      placeholder="What’s on in your mind...."
+                    ></textarea>
+                    <button
+                      class="hover:scale-110 transition-transform duration-200"
+                    >
+                      <svg
+                        width="36"
+                        height="36"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect width="36" height="36" rx="18" fill="#1A75FF" />
+                        <path
+                          d="M23.0586 15.0918L15.9252 11.5251C11.1336 9.12511 9.16689 11.0918 11.5669 15.8834L12.2919 17.3334C12.5002 17.7584 12.5002 18.2501 12.2919 18.6751L11.5669 20.1168C9.16689 24.9084 11.1252 26.8751 15.9252 24.4751L23.0586 20.9084C26.2586 19.3084 26.2586 16.6918 23.0586 15.0918ZM20.3669 18.6251H15.8669C15.5252 18.6251 15.2419 18.3418 15.2419 18.0001C15.2419 17.6584 15.5252 17.3751 15.8669 17.3751H20.3669C20.7086 17.3751 20.9919 17.6584 20.9919 18.0001C20.9919 18.3418 20.7086 18.6251 20.3669 18.6251Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="flex items-start py-3 comment-gallery-item">
+              <a href="#">
+                <img
+                  class="rounded-lg w-12 aspect-square mr-3"
+                  src="../assets/images/artists/3.png"
+                  alt=""
+                />
+              </a>
+              <div class="flex-1">
+                <div class="flex flex-1 justify-between items-start">
+                  <div class="flex-1 cmt-box-right">
+                    <div class="flex items-center gap-x-2">
+                      <a href="#" class="font-semibold text-base"
+                        >Hippolyte Kiki</a
+                      >
+                      <div class="dot w-1 h-1"></div>
+                      <span class="text-base text-grey-400">1 days ago</span>
+                    </div>
+                    <p class="text-base mt-1 text-grey-400">
+                      Still doing this man 💣
+                    </p>
+                    <div class="flex items-center font-semibold gap-4 mt-2">
+                      <button class="hover:underline">Like</button>
+                      <button class="show-reply-box hover:underline">
+                        Reply
+                      </button>
+                    </div>
+                  </div>
+                  <button>
+                    <img src="../assets/svgs/heart-outline.svg" alt="" />
+                  </button>
+                </div>
+                <div class="reply-cmt-box">
+                  <img
+                    class="w-9 aspect-square rounded-xl object-cover object-center"
+                    src="../assets/images/artists/3.png"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div
+                    class="flex h-12 items-center flex-1 p-3 bg-grey-100 rounded-xl"
+                  >
+                    <textarea
+                      class="h-full flex-1 w-full bg-transparent outline-none max-h-full text-base placeholder:text-grey-300 resize-none"
+                      placeholder="What’s on in your mind...."
+                    ></textarea>
+                    <button
+                      class="hover:scale-110 transition-transform duration-200"
+                    >
+                      <svg
+                        width="36"
+                        height="36"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect width="36" height="36" rx="18" fill="#1A75FF" />
+                        <path
+                          d="M23.0586 15.0918L15.9252 11.5251C11.1336 9.12511 9.16689 11.0918 11.5669 15.8834L12.2919 17.3334C12.5002 17.7584 12.5002 18.2501 12.2919 18.6751L11.5669 20.1168C9.16689 24.9084 11.1252 26.8751 15.9252 24.4751L23.0586 20.9084C26.2586 19.3084 26.2586 16.6918 23.0586 15.0918ZM20.3669 18.6251H15.8669C15.5252 18.6251 15.2419 18.3418 15.2419 18.0001C15.2419 17.6584 15.5252 17.3751 15.8669 17.3751H20.3669C20.7086 17.3751 20.9919 17.6584 20.9919 18.0001C20.9919 18.3418 20.7086 18.6251 20.3669 18.6251Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <ul class="mt-2">
+                  <li class="py-2">
+                    <div class="flex items-start">
+                      <img
+                        class="rounded-lg flex-grow-0 flex-shrink-0 w-9 aspect-square mr-3"
+                        src="../assets/images/artists/3.png"
+                        alt=""
+                      />
+                      <div class="cmt-box-right">
+                        <div class="flex items-center gap-x-2">
+                          <a href="#" class="font-semibold text-base"
+                            >Hippolyte Kiki</a
+                          >
+                          <div class="dot w-1 h-1"></div>
+                          <span class="text-base text-grey-400"
+                            >1 days ago</span
+                          >
+                        </div>
+                        <p class="text-base mt-1 text-grey-400">
+                          Still doing this man 💣
+                        </p>
+                        <div class="flex items-center font-semibold gap-4 mt-2">
+                          <button class="hover:underline">Like</button>
+                          <button class="show-reply-box hover:underline">
+                            Reply
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="reply-cmt-box">
+                      <img
+                        class="w-9 aspect-square rounded-xl object-cover object-center"
+                        src="../assets/images/artists/3.png"
+                        loading="lazy"
+                        alt=""
+                      />
+                      <div
+                        class="flex h-12 items-center flex-1 p-3 bg-grey-100 rounded-xl"
+                      >
+                        <textarea
+                          class="h-full flex-1 w-full bg-transparent outline-none max-h-full text-base placeholder:text-grey-300 resize-none"
+                          placeholder="What’s on in your mind...."
+                        ></textarea>
+                        <button
+                          class="hover:scale-110 transition-transform duration-200"
+                        >
+                          <svg
+                            width="36"
+                            height="36"
+                            viewBox="0 0 36 36"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              width="36"
+                              height="36"
+                              rx="18"
+                              fill="#1A75FF"
+                            />
+                            <path
+                              d="M23.0586 15.0918L15.9252 11.5251C11.1336 9.12511 9.16689 11.0918 11.5669 15.8834L12.2919 17.3334C12.5002 17.7584 12.5002 18.2501 12.2919 18.6751L11.5669 20.1168C9.16689 24.9084 11.1252 26.8751 15.9252 24.4751L23.0586 20.9084C26.2586 19.3084 26.2586 16.6918 23.0586 15.0918ZM20.3669 18.6251H15.8669C15.5252 18.6251 15.2419 18.3418 15.2419 18.0001C15.2419 17.6584 15.5252 17.3751 15.8669 17.3751H20.3669C20.7086 17.3751 20.9919 17.6584 20.9919 18.0001C20.9919 18.3418 20.7086 18.6251 20.3669 18.6251Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-start">
+                      <img
+                        class="rounded-lg flex-grow-0 flex-shrink-0 w-9 aspect-square mr-3"
+                        src="../assets/images/artists/3.png"
+                        alt=""
+                      />
+                      <div class="cmt-box-right">
+                        <div class="flex items-center gap-x-2">
+                          <a href="#" class="font-semibold text-base"
+                            >Hippolyte Kiki</a
+                          >
+                          <div class="dot w-1 h-1"></div>
+                          <span class="text-base text-grey-400"
+                            >1 days ago</span
+                          >
+                        </div>
+                        <p class="text-base mt-1 text-grey-400">
+                          Still doing this man 💣
+                        </p>
+                        <div class="flex items-center font-semibold gap-4 mt-2">
+                          <button class="hover:underline">Like</button>
+                          <button class="show-reply-box hover:underline">
+                            Reply
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="reply-cmt-box">
+                      <img
+                        class="w-9 aspect-square rounded-xl object-cover object-center"
+                        src="../assets/images/artists/3.png"
+                        loading="lazy"
+                        alt=""
+                      />
+                      <div
+                        class="flex h-12 items-center flex-1 p-3 bg-grey-100 rounded-xl"
+                      >
+                        <textarea
+                          class="h-full flex-1 w-full bg-transparent outline-none max-h-full text-base placeholder:text-grey-300 resize-none"
+                          placeholder="What’s on in your mind...."
+                        ></textarea>
+                        <button
+                          class="hover:scale-110 transition-transform duration-200"
+                        >
+                          <svg
+                            width="36"
+                            height="36"
+                            viewBox="0 0 36 36"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              width="36"
+                              height="36"
+                              rx="18"
+                              fill="#1A75FF"
+                            />
+                            <path
+                              d="M23.0586 15.0918L15.9252 11.5251C11.1336 9.12511 9.16689 11.0918 11.5669 15.8834L12.2919 17.3334C12.5002 17.7584 12.5002 18.2501 12.2919 18.6751L11.5669 20.1168C9.16689 24.9084 11.1252 26.8751 15.9252 24.4751L23.0586 20.9084C26.2586 19.3084 26.2586 16.6918 23.0586 15.0918ZM20.3669 18.6251H15.8669C15.5252 18.6251 15.2419 18.3418 15.2419 18.0001C15.2419 17.6584 15.5252 17.3751 15.8669 17.3751H20.3669C20.7086 17.3751 20.9919 17.6584 20.9919 18.0001C20.9919 18.3418 20.7086 18.6251 20.3669 18.6251Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-start">
+                      <img
+                        class="rounded-lg flex-grow-0 flex-shrink-0 w-9 aspect-square mr-3"
+                        src="../assets/images/artists/3.png"
+                        alt=""
+                      />
+                      <div class="cmt-box-right">
+                        <div class="flex items-center gap-x-2">
+                          <a href="#" class="font-semibold text-base"
+                            >Hippolyte Kiki</a
+                          >
+                          <div class="dot w-1 h-1"></div>
+                          <span class="text-base text-grey-400"
+                            >1 days ago</span
+                          >
+                        </div>
+                        <p class="text-base mt-1 text-grey-400">
+                          Still doing this man 💣
+                        </p>
+                        <div class="flex items-center font-semibold gap-4 mt-2">
+                          <button class="hover:underline">Like</button>
+                          <button class="show-reply-box hover:underline">
+                            Reply
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="reply-cmt-box">
+                      <img
+                        class="w-9 aspect-square rounded-xl object-cover object-center"
+                        src="../assets/images/artists/3.png"
+                        loading="lazy"
+                        alt=""
+                      />
+                      <div
+                        class="flex h-12 items-center flex-1 p-3 bg-grey-100 rounded-xl"
+                      >
+                        <textarea
+                          class="h-full flex-1 w-full bg-transparent outline-none max-h-full text-base placeholder:text-grey-300 resize-none"
+                          placeholder="What’s on in your mind...."
+                        ></textarea>
+                        <button
+                          class="hover:scale-110 transition-transform duration-200"
+                        >
+                          <svg
+                            width="36"
+                            height="36"
+                            viewBox="0 0 36 36"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              width="36"
+                              height="36"
+                              rx="18"
+                              fill="#1A75FF"
+                            />
+                            <path
+                              d="M23.0586 15.0918L15.9252 11.5251C11.1336 9.12511 9.16689 11.0918 11.5669 15.8834L12.2919 17.3334C12.5002 17.7584 12.5002 18.2501 12.2919 18.6751L11.5669 20.1168C9.16689 24.9084 11.1252 26.8751 15.9252 24.4751L23.0586 20.9084C26.2586 19.3084 26.2586 16.6918 23.0586 15.0918ZM20.3669 18.6251H15.8669C15.5252 18.6251 15.2419 18.3418 15.2419 18.0001C15.2419 17.6584 15.5252 17.3751 15.8669 17.3751H20.3669C20.7086 17.3751 20.9919 17.6584 20.9919 18.0001C20.9919 18.3418 20.7086 18.6251 20.3669 18.6251Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="../js/index.js"></script>
+  <script src="../js/profile.js"></script>
+</html>
