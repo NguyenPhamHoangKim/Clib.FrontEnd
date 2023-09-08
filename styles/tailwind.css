@@ -258,7 +258,7 @@ a.swiper-slide.digital-item:hover .digital-thumb {
 }
 
 .menu-more {
-  @apply absolute right-0 top-[calc(100%+4px)] line-clamp-1 hidden min-w-[180px] flex-col overflow-visible rounded-xl bg-white p-2 text-base shadow-[0px_2px_20px_0px_rgba(0,0,0,0.08)] before:absolute before:right-0 before:top-0 before:aspect-square before:w-8 before:-translate-y-1/2 before:bg-transparent before:content-[''];
+  @apply absolute right-0 z-10 top-[calc(100%+4px)] line-clamp-1 hidden min-w-[180px] flex-col overflow-visible rounded-xl bg-white p-2 text-base shadow-[0px_2px_20px_0px_rgba(0,0,0,0.08)] before:absolute before:right-0 before:top-0 before:aspect-square before:w-8 before:-translate-y-1/2 before:bg-transparent before:content-[''];
 }
 
 .toggle-more-menu:hover .menu-more {
@@ -348,5 +348,13 @@ a.swiper-slide.digital-item:hover .digital-thumb {
   @apply hidden;
 }
 .gallery-focus-image.show {
+  @apply block;
+}
+
+.playlist-video-item:hover .playlist-video-item--index {
+  @apply hidden;
+}
+
+.playlist-video-item:hover .playlist-video-item--play {
   @apply block;
 }

@@ -145,3 +145,26 @@ new Swiper(".playlists-pc-swiper", {
     },
   },
 });
+
+new Swiper(".new-video-swiper", {
+  slidesPerView: 1.5,
+  spaceBetween: 12,
+  navigation: {
+    nextEl: ".swiper-new-video-next",
+    prevEl: ".swiper-new-video-prev",
+  },
+  autoResize: false,
+  breakpoints: {
+    480: {
+      slidesPerView: 2.5,
+    },
+    680: {
+      slidesPerView: 3.2,
+      spaceBetween: 14,
+    },
+    1024: {
+      slidesPerView: 4.5,
+      spaceBetween: 16,
+    },
+  },
+});
