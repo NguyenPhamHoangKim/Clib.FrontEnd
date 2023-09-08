@@ -69,3 +69,79 @@ $(".comment-gallery-item").each(function () {
     replyBox.addClass("show");
   });
 });
+
+new Swiper(".song-swiper", {
+  slidesPerView: 2.5,
+  spaceBetween: 12,
+  navigation: {
+    nextEl: ".swiper-song-next",
+    prevEl: ".swiper-song-prev",
+  },
+  autoResize: false,
+  breakpoints: {
+    480: {
+      slidesPerView: 3.5,
+    },
+    680: {
+      slidesPerView: 4.5,
+      spaceBetween: 14,
+    },
+    1024: {
+      slidesPerView: 6.5,
+      spaceBetween: 16,
+    },
+  },
+});
+
+new Swiper(".albums-swiper", {
+  slidesPerView: 2.5,
+  spaceBetween: 12,
+  navigation: {
+    nextEl: ".swiper-albums-next",
+    prevEl: ".swiper-albums-prev",
+  },
+  autoResize: false,
+  breakpoints: {
+    480: {
+      slidesPerView: 3.5,
+    },
+    680: {
+      slidesPerView: 4.5,
+      spaceBetween: 14,
+    },
+    1024: {
+      slidesPerView: 6.5,
+      spaceBetween: 16,
+    },
+  },
+});
+
+new Swiper(".playlists-mb-swiper", {
+  slidesPerView: 2.5,
+  spaceBetween: 12,
+  autoResize: false,
+  breakpoints: {
+    480: {
+      slidesPerView: 3.5,
+    },
+    768: {
+      slidesPerView: 4.5,
+      spaceBetween: 14,
+    },
+  },
+});
+
+new Swiper(".playlists-pc-swiper", {
+  slidesPerView: 2.4,
+  spaceBetween: 16,
+  autoResize: false,
+  navigation: {
+    nextEl: ".swiper-playlists-pc-next",
+    prevEl: ".swiper-playlists-pc-prev",
+  },
+  breakpoints: {
+    1320: {
+      spaceBetween: 24,
+    },
+  },
+});
