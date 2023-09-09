@@ -70,6 +70,12 @@
 .hot-item {
   @apply flex items-center justify-between rounded-lg p-1 transition-colors duration-75 hover:bg-bg md:p-2;
 }
+.hot-item .hot-item-play {
+  @apply absolute flex opacity-0 duration-75 z-10 transition-opacity items-center justify-center inset-0 bg-black/40;
+}
+.hot-item:hover .hot-item-play {
+  @apply opacity-100;
+}
 .hot-item--duration {
   @apply text-right text-14 text-grey-400;
 }
@@ -357,4 +363,34 @@ a.swiper-slide.digital-item:hover .digital-thumb {
 
 .playlist-video-item:hover .playlist-video-item--play {
   @apply block;
+}
+
+.music-player {
+  @apply fixed bottom-8 right-8 z-50;
+}
+
+.music-player.minimize .player-medium-title {
+  @apply hidden;
+}
+.music-player .player-mini-title {
+  @apply hidden items-center justify-between gap-4;
+}
+
+.music-player.minimize .player-mini-title {
+  @apply flex;
+}
+.music-player .player-next-up {
+  @apply mt-2 pt-2 border-t border-t-grey-200 text-14 text-grey-400 hidden items-center gap-x-2;
+}
+.music-player.minimize .player-next-up {
+  @apply flex;
+}
+.music-player .medium-player {
+  @apply hidden;
+}
+.music-player.minimize .medium-player {
+  @apply block;
+}
+.music-player.minimize .mini-player {
+  @apply hidden;
 }

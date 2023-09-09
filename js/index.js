@@ -88,3 +88,10 @@ $(".show-create-playlist-popup").each(function () {
 $("#close-add-playlist-modal").click(function () {
   $(".add-playlist-modal").removeClass("active");
 });
+$(".hot-item-play").each(function () {
+  $(this).click(function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    console.log("Clicked on hot-item-play");
+  });
+});
