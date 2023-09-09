@@ -95,3 +95,24 @@ $(".hot-item-play").each(function () {
     console.log("Clicked on hot-item-play");
   });
 });
+
+$("#mini-player").click(function () {
+  var musicPlayer = $("#music-player");
+  if (musicPlayer.hasClass("med") || musicPlayer.hasClass("max")) {
+    musicPlayer.removeClass("med max").addClass("min");
+  }
+});
+
+$("#medium-player").click(function () {
+  var musicPlayer = $("#music-player");
+  if (musicPlayer.hasClass("min") || musicPlayer.hasClass("max")) {
+    musicPlayer.removeClass("min max").addClass("med");
+  }
+});
+
+$("#max-player").click(function () {
+  var musicPlayer = $("#music-player");
+  if (musicPlayer.hasClass("min") || musicPlayer.hasClass("med")) {
+    musicPlayer.removeClass("min med").addClass("max");
+  }
+});
