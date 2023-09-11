@@ -48,7 +48,9 @@
 .container.fluid {
   @apply max-md:!pl-4 max-md:!pr-0;
 }
-
+.overlay {
+  @apply fixed inset-0 bg-black/60 z-[99999];
+}
 .login-divider {
   @apply relative my-5 h-[1px] w-full bg-grey-200 before:absolute before:left-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:bg-white before:px-0.5 before:text-grey-400 before:content-['or'];
 }
@@ -366,7 +368,10 @@ a.swiper-slide.digital-item:hover .digital-thumb {
 }
 
 .music-player {
-  @apply fixed bottom-8 right-8 z-50;
+  @apply fixed hidden bottom-8 right-8 z-50;
+}
+.music-player.show {
+  @apply block;
 }
 
 .music-player.min .player-medium-title {
@@ -399,7 +404,14 @@ a.swiper-slide.digital-item:hover .digital-thumb {
 .music-player.min .max-player {
   @apply !block;
 }
-.music-player.max .mini-player,
-.music-player.max .medium-player {
+
+.music-player-large .mini-player,
+.music-player-large .medium-player {
   @apply block;
+}
+.music-player-large {
+  @apply hidden items-center justify-center;
+}
+.music-player-large.show {
+  @apply flex;
 }

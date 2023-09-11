@@ -1,8 +1,18 @@
-function checkClickOutside(elementId, callback) {
+function checkClickOutside(elementId, callback, openClass) {
   $(document).on("click", function (event) {
     const targetElement = event.target;
     const containerElement = $("#" + elementId);
-    if (containerElement.has(targetElement).length === 0) {
+    const openClassElement = $("." + openClass);
+
+    if (!openClass) {
+      if (containerElement.has(targetElement).length === 0) {
+        callback();
+      }
+    }
+    if (
+      containerElement.has(targetElement).length === 0 &&
+      openClassElement.has(targetElement).length === 0
+    ) {
       callback();
     }
   });
@@ -92,27 +102,66 @@ $(".hot-item-play").each(function () {
   $(this).click(function (event) {
     event.preventDefault();
     event.stopPropagation();
-    console.log("Clicked on hot-item-play");
   });
 });
 
-$("#mini-player").click(function () {
-  var musicPlayer = $("#music-player");
-  if (musicPlayer.hasClass("med") || musicPlayer.hasClass("max")) {
+const musicPlayer = $("#music-player");
+
+const handleShowMusicPlayer = function () {
+  musicPlayer.addClass("show");
+};
+const handleCloseMusicPlayer = function () {
+  musicPlayer.removeClass("show");
+};
+
+const handleShowMusicPlayerLarge = function () {
+  $("#music-player-large").addClass("show");
+};
+const handleCloseMusicPlayerLarge = function () {
+  $("#music-player-large").removeClass("show");
+};
+
+$(".mini-player").each(function () {
+  $(this).click(function () {
+    if ($(this).hasClass("large")) {
+      handleCloseMusicPlayerLarge();
+    }
+    handleShowMusicPlayer();
     musicPlayer.removeClass("med max").addClass("min");
-  }
+  });
 });
 
-$("#medium-player").click(function () {
-  var musicPlayer = $("#music-player");
-  if (musicPlayer.hasClass("min") || musicPlayer.hasClass("max")) {
+$(".medium-player").each(function () {
+  $(this).click(function () {
+    if ($(this).hasClass("large")) {
+      handleCloseMusicPlayerLarge();
+    }
+    handleShowMusicPlayer();
     musicPlayer.removeClass("min max").addClass("med");
-  }
+  });
 });
 
-$("#max-player").click(function () {
-  var musicPlayer = $("#music-player");
-  if (musicPlayer.hasClass("min") || musicPlayer.hasClass("med")) {
-    musicPlayer.removeClass("min med").addClass("max");
-  }
+$(".open-music-player").each(function () {
+  $(this).click(function () {
+    handleShowMusicPlayer();
+  });
 });
+
+$(".open-large-player").each(function () {
+  $(this).click(function () {
+    if ($(this).hasClass("large")) {
+      handleShowMusicPlayer();
+    } else {
+      handleCloseMusicPlayer();
+    }
+    handleShowMusicPlayerLarge();
+  });
+});
+
+checkClickOutside(
+  "music-player-large--inner",
+  function () {
+    handleCloseMusicPlayerLarge();
+  },
+  "open-large-player",
+);
