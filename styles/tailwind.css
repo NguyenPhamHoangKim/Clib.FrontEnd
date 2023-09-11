@@ -39,6 +39,9 @@
   .btn-fourth {
     @apply flex items-center justify-center rounded-xl bg-grey-200 px-6 py-3 font-semibold;
   }
+  .btn-fifth {
+    @apply flex items-center justify-center rounded-xl border border-grey-400 bg-grey-400 px-4 py-2.5 text-14 font-semibold text-white transition duration-75 md:py-2 hover:bg-transparent hover:text-grey-400;
+  }
   .btn-outline {
     @apply block w-[100px] rounded-xl border border-branding py-2 text-14 font-semibold text-branding transition-colors duration-75 hover:bg-branding hover:text-white;
   }
@@ -414,4 +417,7 @@ a.swiper-slide.digital-item:hover .digital-thumb {
 }
 .music-player-large.show {
   @apply flex;
+}
+.song-cmt:not(:last-child) {
+  @apply border-b border-b-grey-200;
 }

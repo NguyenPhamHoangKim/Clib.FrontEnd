@@ -6851,6 +6851,381 @@
           </div>
         </div>
         <div class="player-next-up">
+          <!doctype html>
+          <html lang="en">
+            <head>
+              <meta charset="UTF-8" />
+              <meta
+                name="viewport"
+                content="width=device-width, initial-scale=1.0"
+              />
+              <title>Clib - Mix for you</title>
+              <link rel="stylesheet" href="./styles/index.css" />
+            </head>
+            <body>
+              <div>
+                <div
+                  class="bg-[url('../assets/images/mix-bg.png')] bg-center bg-cover backdrop-blur-[27px]"
+                >
+                  <div class="container flex items-center gap-5 lg:gap-8 py-14">
+                    <img
+                      class="w-[150px] lg:w-[200px] aspect-square shadow-[0px_4px_30px_0px_rgba(0,0,0,0.16)] rounded-xl"
+                      src="/assets/images/mfy.jpg"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <div class="flex-1">
+                      <div class="text-14 text-grey-400 font-semibold">
+                        Playlist
+                      </div>
+                      <div class="mt-1 text-[28px] lg:text-32 font-semibold">
+                        Mix for you
+                      </div>
+                      <div
+                        class="flex mt-1 items-center gap-2 text-14 lg:text-base text-grey-400 w-full"
+                      >
+                        <span>Clib’s suggestions</span>
+                        <span class="dot w-0.5 h-0.5 flex-shrink-0"></span>
+                        <span>30 songs</span>
+                        <span class="dot w-0.5 h-0.5 flex-shrink-0"></span>
+                        <span>1:05:60</span>
+                      </div>
+                      <div class="mt-3 flex items-center gap-x-5">
+                        <button
+                          class="w-12 aspect-square rounded-full bg-white flex items-center justify-center"
+                          style="
+                            filter: drop-shadow(
+                              0px 4px 30px rgba(0, 0, 0, 0.16)
+                            );
+                          "
+                        >
+                          <img src="assets/svgs/play.svg" alt="" />
+                        </button>
+                        <button>
+                          <img
+                            class="w-7 aspect-square"
+                            src="assets/svgs/heart-outline.svg"
+                            alt=""
+                          />
+                        </button>
+                        <button
+                          class="p-2 duration-100 transition-colors rounded-full hover:bg-bg"
+                        >
+                          <img
+                            class="w-7 aspect-square"
+                            src="assets/svgs/more.svg"
+                            alt=""
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-2 container">
+                  <div
+                    class="flex items-center w-[400px] max-w-full gap-2 rounded-xl bg-grey-100 p-3"
+                  >
+                    <img
+                      class="aspect-square w-5 flex-shrink-0"
+                      src="assets/svgs/search-people.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <input
+                      class="h-full flex-1 flex-shrink-0 bg-transparent text-14 outline-none placeholder:text-grey-300"
+                      placeholder="Search within songs"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="container mt-6 grid lg:grid-cols-[3fr_1fr] gap-2 md:gap-3.5 lg:gap-4 xl:gap-6"
+                >
+                  <div class="bg-white rounded-xl">
+                    <div
+                      class="flex items-center lg:px-4 py-3 border-b gap-6 border-b-grey-200"
+                    >
+                      <div class="flex flex-[2] items-center">
+                        <div class="mr-3">
+                          <img
+                            class="w-4 lg:w-6 aspect-square"
+                            src="assets/svgs/chart-grey.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="text-14 lg:text-base text-grey-400">
+                          Song & Artist
+                        </div>
+                      </div>
+                      <div class="text-14 flex-1 lg:text-base text-grey-400">
+                        Album
+                      </div>
+                      <div
+                        class="text-14 lg:text-base text-grey-400 w-14 lg:w-20 text-right"
+                      >
+                        Duration
+                      </div>
+                      <div
+                        class="text-14 lg:text-base text-grey-400 w-14 lg:w-20 text-right"
+                      >
+                        View
+                      </div>
+                    </div>
+                    <ul class="mt-2">
+                      <li class="py-2 lg:px-4 flex items-center gap-6">
+                        <div class="flex flex-[2] items-center">
+                          <div
+                            class="w-4 lg:w-6 text-center text-base lg:text-18 font-semibold text-grey-400 mr-3"
+                          >
+                            1
+                          </div>
+                          <div
+                            class="text-14 flex-1 flex items-center justify-between gap-2 lg:text-base text-grey-400"
+                          >
+                            <div
+                              class="flex items-center gap-1.5 md:gap-2 lg:gap-3"
+                            >
+                              <img
+                                class="w-10 lg:w-12 aspect-square rounded-lg"
+                                src="assets/images/artists/1.png"
+                                alt=""
+                              />
+                              <div>
+                                <div class="text-14 lg:text-base line-clamp-1">
+                                  It's My Life
+                                </div>
+                                <div
+                                  class="text-12 text-grey-400 lg:text-14 line-clamp-1"
+                                >
+                                  The Marvelettes
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              id="toggle-more-menu"
+                              class="hover:bg-bg toggle-more-menu p-1 cursor-pointer relative rounded-full duration-100 transition-colors"
+                            >
+                              <img
+                                class="w-4 lg:w-6 aspect-square"
+                                src="assets/svgs/more.svg"
+                                alt=""
+                              />
+                              <div class="menu-more">
+                                <button
+                                  class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                                >
+                                  <img src="assets/svgs/repost.svg" />
+                                  Repost
+                                </button>
+                                <button
+                                  class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                                >
+                                  <img src="assets/svgs/add-next.svg" />
+                                  Add to next up
+                                </button>
+                                <button
+                                  class="show-create-playlist-popup flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                                >
+                                  <img src="assets/svgs/add-playlist.svg" />
+                                  Add to playlist
+                                </button>
+                                <button
+                                  class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                                >
+                                  <img src="assets/svgs/repost.svg" />
+                                  Share
+                                </button>
+                                <button
+                                  class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                                >
+                                  <img src="assets/svgs/copy-link.svg" />
+                                  Copy link
+                                </button>
+                                <button
+                                  class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                                >
+                                  <img src="assets/svgs/repost.svg" />
+                                  Report
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="text-14 flex-1 lg:text-base text-grey-400 line-clamp-1"
+                        >
+                          Like a Slippery Map
+                        </div>
+                        <div
+                          class="text-14 lg:text-base text-grey-400 w-14 lg:w-20 text-right"
+                        >
+                          01:58
+                        </div>
+                        <div
+                          class="text-14 lg:text-base text-grey-400 w-14 lg:w-20 text-right"
+                        >
+                          5.2k
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    class="bg-white rounded-xl pb-2 max-lg:border-t border-t-grey-200"
+                  >
+                    <div class="text-18 lg:text-20 font-semibold pt-4 lg:px-4">
+                      Related artists
+                    </div>
+                    <ul class="mt-1 lg:mt-2">
+                      <li>
+                        <a
+                          href="#"
+                          class="lg:px-4 py-2 flex items-center justify-between gap-5"
+                        >
+                          <div class="flex items-center">
+                            <img
+                              class="w-12 mr-2 aspect-square rounded-lg"
+                              src="assets/images/artists/1.png"
+                              alt=""
+                            />
+                            <div>
+                              <div
+                                class="text-14 lg:text-base font-semibold line-clamp-1"
+                              >
+                                James Bay
+                              </div>
+                              <div
+                                class="mt-1 text-12 lg:text-14 text-gray-400 line-clamp-1"
+                              >
+                                Eleanor Pena
+                              </div>
+                            </div>
+                          </div>
+                          <button
+                            class="text-12 lg:text-14 xl:text-base py-1.5 btn-primary text-white font-semibold"
+                          >
+                            Follow
+                          </button>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="lg:px-4 py-2 flex items-center justify-between gap-5"
+                        >
+                          <div class="flex items-center">
+                            <img
+                              class="w-12 mr-2 aspect-square rounded-lg"
+                              src="assets/images/artists/1.png"
+                              alt=""
+                            />
+                            <div>
+                              <div
+                                class="text-14 lg:text-base font-semibold line-clamp-1"
+                              >
+                                James Bay
+                              </div>
+                              <div
+                                class="mt-1 text-12 lg:text-14 text-gray-400 line-clamp-1"
+                              >
+                                Eleanor Pena
+                              </div>
+                            </div>
+                          </div>
+                          <button
+                            class="text-12 lg:text-14 xl:text-base py-1.5 btn-primary text-white font-semibold"
+                          >
+                            Follow
+                          </button>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="lg:px-4 py-2 flex items-center justify-between gap-5"
+                        >
+                          <div class="flex items-center">
+                            <img
+                              class="w-12 mr-2 aspect-square rounded-lg"
+                              src="assets/images/artists/1.png"
+                              alt=""
+                            />
+                            <div>
+                              <div
+                                class="text-14 lg:text-base font-semibold line-clamp-1"
+                              >
+                                James Bay
+                              </div>
+                              <div
+                                class="mt-1 text-12 lg:text-14 text-gray-400 line-clamp-1"
+                              >
+                                Eleanor Pena
+                              </div>
+                            </div>
+                          </div>
+                          <button
+                            class="text-12 lg:text-14 xl:text-base py-1.5 btn-primary text-white font-semibold"
+                          >
+                            Follow
+                          </button>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="lg:px-4 py-2 flex items-center justify-between gap-5"
+                        >
+                          <div class="flex items-center">
+                            <img
+                              class="w-12 mr-2 aspect-square rounded-lg"
+                              src="assets/images/artists/1.png"
+                              alt=""
+                            />
+                            <div>
+                              <div
+                                class="text-14 lg:text-base font-semibold line-clamp-1"
+                              >
+                                James Bay
+                              </div>
+                              <div
+                                class="mt-1 text-12 lg:text-14 text-gray-400 line-clamp-1"
+                              >
+                                Eleanor Pena
+                              </div>
+                            </div>
+                          </div>
+                          <button
+                            class="text-12 lg:text-14 xl:text-base py-1.5 btn-primary text-white font-semibold"
+                          >
+                            Follow
+                          </button>
+                        </a>
+                      </li>
+                      <a
+                        href="#"
+                        class="flex justify-center text-14 text-grey-400 font-semibold items-center mt-2 gap-1"
+                      >
+                        See more
+                        <img
+                          class="w-4 aspect-square"
+                          src="assets/svgs/arrow-down.svg"
+                          alt=""
+                        />
+                      </a>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </body>
+            <script
+              src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+              integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+              crossorigin="anonymous"
+              referrerpolicy="no-referrer"
+            ></script>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+            <script src="js/index.js"></script>
+            <script src="js/ranking.js"></script>
+          </html>
+
           <span class="font-semibold">Next up:</span>
           <div class="flex items-center gap-[3px] flex-1">
             <span>Into You</span>
