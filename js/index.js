@@ -2,18 +2,25 @@ function checkClickOutside(elementId, callback, openClass) {
   $(document).on("click", function (event) {
     const targetElement = event.target;
     const containerElement = $("#" + elementId);
-    const openClassElement = $("." + openClass);
 
     if (!openClass) {
-      if (containerElement.has(targetElement).length === 0) {
+      if (
+        !containerElement.is(targetElement) &&
+        !containerElement.has(targetElement).length
+      ) {
         callback();
       }
-    }
-    if (
-      containerElement.has(targetElement).length === 0 &&
-      openClassElement.has(targetElement).length === 0
-    ) {
-      callback();
+    } else {
+      const openClassElements = $("." + openClass);
+
+      if (
+        !containerElement.is(targetElement) &&
+        !openClassElements.is(targetElement) &&
+        !containerElement.has(targetElement).length &&
+        !openClassElements.has(targetElement).length
+      ) {
+        callback();
+      }
     }
   });
 }
@@ -144,6 +151,17 @@ $(".medium-player").each(function () {
 $(".open-music-player").each(function () {
   $(this).click(function () {
     handleShowMusicPlayer();
+  });
+});
+
+$(".open-large-player").each(function () {
+  $(this).click(function () {
+    if ($(this).hasClass("large")) {
+      handleShowMusicPlayer();
+    } else {
+      handleCloseMusicPlayer();
+    }
+    handleShowMusicPlayerLarge();
   });
 });
 

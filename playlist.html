@@ -14,20 +14,23 @@
         <div class="container flex items-center gap-5 lg:gap-8 py-14">
           <img
             class="w-[150px] lg:w-[200px] aspect-square shadow-[0px_4px_30px_0px_rgba(0,0,0,0.16)] rounded-xl"
-            src="/assets/images/songs/truth-about-love.jpg"
+            src="/assets/images/mfy.jpg"
             loading="lazy"
             alt=""
           />
           <div class="flex-1">
+            <div class="text-14 text-grey-400 font-semibold">Playlist</div>
             <div class="mt-1 text-[28px] lg:text-32 font-semibold">
-              Just Give Me a Reason (feat. Nate Ruess)
+              Diamonds And Danceflows
             </div>
             <div
               class="flex mt-1 items-center gap-2 text-14 lg:text-base text-grey-400 w-full"
             >
-              <span>Pink, Nate Ruess</span>
+              <span>Olivia Rodrigo</span>
               <span class="dot w-0.5 h-0.5 flex-shrink-0"></span>
-              <span>04:30</span>
+              <span>30 songs</span>
+              <span class="dot w-0.5 h-0.5 flex-shrink-0"></span>
+              <span>1:05:60</span>
             </div>
             <div class="mt-3 flex items-center gap-x-5">
               <button
@@ -43,403 +46,461 @@
                   alt=""
                 />
               </button>
-              <button
-                class="p-2 duration-100 transition-colors rounded-full hover:bg-bg"
+              <div
+                class="relative toggle-more-menu-playlist p-2 duration-100 transition-colors rounded-full hover:bg-bg"
               >
                 <img
                   class="w-7 aspect-square"
                   src="assets/svgs/more.svg"
                   alt=""
                 />
-              </button>
+                <div class="menu-more">
+                  <button
+                    class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                  >
+                    <img src="assets/svgs/repost.svg" />
+                    Repost
+                  </button>
+                  <button
+                    class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                  >
+                    <img src="assets/svgs/add-next.svg" />
+                    Add to next up
+                  </button>
+                  <button
+                    class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                  >
+                    <img src="assets/svgs/repost.svg" />
+                    Share
+                  </button>
+                  <button
+                    class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                  >
+                    <img src="assets/svgs/copy-link.svg" />
+                    Copy link
+                  </button>
+                  <!-- <button
+                    class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                  >
+                    <img src="assets/svgs/repost.svg" />
+                    Report
+                  </button> -->
+                  <button
+                    id="toggle-edit-detail"
+                    class="flex items-center toggle-edit-detail gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                  >
+                    <img class="w-6" src="assets/svgs/edit-profile.svg" />
+                    Edit detail
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="container mt-8 grid grid-cols-[3fr_1fr] gap-6">
-        <div class="flex flex-col gap-6">
-          <div class="bg-white rounded-xl">
-            <div class="px-4 py-3 text-20 font-semibold">Info</div>
-            <div class="text-grey-400 text-14 px-4 pb-3">
-              P!nk's official music video for 'Just Give Me A Reason' ft. Nate
-              Ruess. Click to listen to P!nk on Spotify:
-              http://smarturl.it/PSpot?IQid=PJGMR <br />
-              As featured on The Truth About Love. Click to buy the track or
-              album via iTunes: http://smarturl.it/PTALiTunes?IQid=PJGMR
+        <div class="bg-white rounded-xl">
+          <div
+            class="flex items-center lg:px-4 py-3 border-b gap-6 border-b-grey-200"
+          >
+            <div class="flex flex-[2] items-center">
+              <div class="mr-3">
+                <img
+                  class="w-4 lg:w-6 aspect-square"
+                  src="assets/svgs/chart-grey.svg"
+                  alt=""
+                />
+              </div>
+              <div class="text-14 lg:text-base text-grey-400">
+                Song & Artist
+              </div>
             </div>
-          </div>
-          <div class="bg-white rounded-xl">
-            <div class="px-4 py-3 text-20 font-semibold">Lyric</div>
-            <div class="text-grey-400 text-14 px-4 line-clamp-6">
-              Right from the start<br />You were a thiefYou stole my heart<br />And
-              I your willing victim<br />I let you see the parts of me<br />That
-              weren't all that prettyAnd with every touch youfixed them<br />Now
-              you've been talking in your sleep, oh, oh
-            </div>
-            <button
-              class="px-4 mt-1.5 pb-3 text-grey-400 font-semibold text-14 flex items-center gap-1"
+            <div class="text-14 flex-1 lg:text-base text-grey-400">Album</div>
+            <div
+              class="text-14 lg:text-base text-grey-400 w-14 lg:w-20 text-right"
             >
-              Xem thêm
-              <img class="w-6" src="assets/svgs/arrow-down.svg" alt="" />
-            </button>
-          </div>
-          <div class="bg-white rounded-xl px-4 py-3">
-            <div class="text-20 font-semibold">Comment (78)</div>
-            <div class="mt-3 relative">
-              <textarea
-                class="bg-grey-100 rounded-xl resize-none scrollbar-custom w-full p-3 text-base placeholder:text-grey-300 border-none outline-none max-h-[120px]"
-                name=""
-                id=""
-                rows="5"
-                placeholder="What’s your opinions..."
-              ></textarea>
-              <button disabled class="absolute bottom-4 right-3">
-                <img class="w-11" src="assets/svgs/send-disable.svg" alt="" />
-              </button>
+              Duration
             </div>
-            <ul class="mt-3">
-              <li class="py-3 song-cmt flex overflow-hidden">
-                <div class="mr-2">
-                  <img
-                    class="w-12 aspect-square rounded-lg"
-                    loading="lazy"
-                    src="assets/images/artists/2.png"
-                    alt=""
-                  />
-                </div>
-                <div class="flex-1">
-                  <div class="flex justify-between gap-x-20">
-                    <div>
-                      <div class="text-base font-semibold">
-                        Ahmet Kalburcuoglu
-                      </div>
-                      <div class="text-base text-grey-400 mt-1">
-                        omg, this is amazing
-                      </div>
-                    </div>
-                    <div class="text-14 text-grey-400 text-end flex-shrink-0">
-                      <div>1 day ago</div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="py-3 song-cmt flex overflow-hidden">
-                <div class="mr-2">
-                  <img
-                    class="w-12 aspect-square rounded-lg"
-                    loading="lazy"
-                    src="assets/images/artists/2.png"
-                    alt=""
-                  />
-                </div>
-                <div class="flex-1">
-                  <div class="flex justify-between gap-x-20">
-                    <div>
-                      <div class="text-base font-semibold">Emine Kiyag</div>
-                      <div class="text-base text-grey-400 mt-1">
-                        Love their drink specials. Bartenders super nice. Spent
-                        a week at UCSF and this was a very nice break for the
-                        parental unit.
-                      </div>
-                    </div>
-                    <div class="text-14 text-grey-400 text-end flex-shrink-0">
-                      <div>3 days ago</div>
-                      <div class="mt-1">Reply (3)</div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="py-3 song-cmt flex overflow-hidden">
-                <div class="mr-2">
-                  <img
-                    class="w-12 aspect-square rounded-lg"
-                    loading="lazy"
-                    src="assets/images/artists/2.png"
-                    alt=""
-                  />
-                </div>
-                <div class="flex-1">
-                  <div class="flex justify-between gap-x-20">
-                    <div>
-                      <div class="text-base font-semibold">Emine Kiyag</div>
-                      <div class="text-base text-grey-400 mt-1">
-                        I'll be there in 2 mins
-                      </div>
-                    </div>
-                    <div class="text-14 text-grey-400 text-end flex-shrink-0">
-                      <div>3 days ago</div>
-                      <div class="mt-1">Reply (3)</div>
-                    </div>
-                  </div>
-                  <div class="relative">
-                    <ul class="mt-2 flex flex-col gap-4">
-                      <li class="flex">
-                        <img
-                          class="w-10 h-10 flex-shrink-0 flex-grow-0 mr-2 rounded-lg"
-                          loading="lazy"
-                          src="assets/images/artists/2.png"
-                          alt=""
-                        />
-                        <div class="flex-1 flex justify-between gap-x-20">
-                          <div>
-                            <div class="text-base font-semibold">
-                              Kemal Serbetci
-                            </div>
-                            <div class="text-base text-grey-400 mt-1">
-                              I had I was very sad this day. There were friendly
-                              people at the bar that engaged with me.
-                              Interactions with people was very well needed. I
-                              enjoyed a great Long Island ice tea,some tasty
-                              vegetarian nachos, and sat by the water
-                            </div>
-                          </div>
-                          <div
-                            class="text-14 text-grey-400 text-end flex-shrink-0"
-                          >
-                            <div>29/04/2023</div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="flex">
-                        <img
-                          class="w-10 h-10 flex-shrink-0 flex-grow-0 mr-2 rounded-lg"
-                          loading="lazy"
-                          src="assets/images/artists/2.png"
-                          alt=""
-                        />
-                        <div class="flex-1 flex justify-between gap-x-20">
-                          <div>
-                            <div class="text-base font-semibold">
-                              Selahattin Kuzucu
-                            </div>
-                            <div class="text-base text-grey-400 mt-1">
-                              just ideas for next time
-                            </div>
-                          </div>
-                          <div
-                            class="text-14 text-grey-400 text-end flex-shrink-0"
-                          >
-                            <div>29/04/2023</div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="flex">
-                        <img
-                          class="w-10 h-10 flex-shrink-0 flex-grow-0 mr-2 rounded-lg"
-                          loading="lazy"
-                          src="assets/images/artists/2.png"
-                          alt=""
-                        />
-                        <div class="flex-1 flex justify-between gap-x-20">
-                          <div>
-                            <div class="text-base font-semibold">
-                              Emre Dilek
-                            </div>
-                            <div class="text-base text-grey-400 mt-1">
-                              Love their drink specials. Bartenders super nice.
-                              Spent a week at UCSF and this was a very nice
-                              break for the parental unit.
-                            </div>
-                          </div>
-                          <div
-                            class="text-14 text-grey-400 text-end flex-shrink-0"
-                          >
-                            <div>29/04/2023</div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                    <div
-                      class="h-full w-0.5 bg-grey-200 absolute top-0 -left-8"
-                    ></div>
-                  </div>
-                </div>
-              </li>
-              <li class="py-3 song-cmt flex overflow-hidden">
-                <div class="mr-2">
-                  <img
-                    class="w-12 aspect-square rounded-lg"
-                    loading="lazy"
-                    src="assets/images/artists/2.png"
-                    alt=""
-                  />
-                </div>
-                <div class="flex-1">
-                  <div class="flex justify-between gap-x-20">
-                    <div>
-                      <div class="text-base font-semibold">Muhlis Ilter</div>
-                      <div class="text-base text-grey-400 mt-1">woohoooo</div>
-                    </div>
-                    <div class="text-14 text-grey-400 text-end flex-shrink-0">
-                      <div>3 days ago</div>
-                      <div class="mt-1">Reply (4)</div>
-                    </div>
-                  </div>
-                  <div class="mt-2 relative">
-                    <textarea
-                      class="p-3 w-full rounded-xl bg-grey-100 outline-none border-none resize-none max-h-[120px] scrollbar-custom"
-                      name=""
-                      id=""
-                      rows="5"
-                      placeholder="Write something..."
-                    >
-Wow, this is really epic</textarea
-                    >
-                    <button disabled class="absolute bottom-4 right-3">
-                      <img class="w-11" src="assets/svgs/send.svg" alt="" />
-                    </button>
-                  </div>
-                </div>
-              </li>
-              <li class="py-3 song-cmt flex overflow-hidden">
-                <div class="mr-2">
-                  <img
-                    class="w-12 aspect-square rounded-lg"
-                    loading="lazy"
-                    src="assets/images/artists/2.png"
-                    alt=""
-                  />
-                </div>
-                <div class="flex-1">
-                  <div class="flex justify-between gap-x-20">
-                    <div>
-                      <div class="text-base font-semibold">
-                        Fadime Yalcinkaya
-                      </div>
-                      <div class="text-base text-grey-400 mt-1">aww</div>
-                    </div>
-                    <div class="text-14 text-grey-400 text-end flex-shrink-0">
-                      <div>3 days ago</div>
-                      <div class="mt-1">Reply (3)</div>
-                    </div>
-                  </div>
-                  <div class="relative">
-                    <ul class="mt-2 flex flex-col gap-4">
-                      <li class="flex">
-                        <img
-                          class="w-10 h-10 flex-shrink-0 flex-grow-0 mr-2 rounded-lg"
-                          loading="lazy"
-                          src="assets/images/artists/2.png"
-                          alt=""
-                        />
-                        <div>
-                          <div class="flex-1 flex justify-between gap-x-20">
-                            <div>
-                              <div class="text-base font-semibold">
-                                Huseyin Akcagul
-                              </div>
-                              <div class="text-base text-grey-400 mt-1">
-                                Love their drink specials. Bartenders super
-                                nice. Spent a week at UCSF and this was a very
-                                nice break for the parental unit.
-                              </div>
-                            </div>
-                            <div
-                              class="text-14 text-grey-400 text-end flex-shrink-0"
-                            >
-                              <div>29/04/2023</div>
-                            </div>
-                          </div>
-                          <div class="mt-2 relative">
-                            <textarea
-                              class="p-3 w-full rounded-xl bg-grey-100 outline-none border-none resize-none max-h-[120px] scrollbar-custom"
-                              name=""
-                              id=""
-                              rows="5"
-                              placeholder="Write something..."
-                            >
-    deffo coming back</textarea
-                            >
-                            <button disabled class="absolute bottom-4 right-3">
-                              <img
-                                class="w-11"
-                                src="assets/svgs/send.svg"
-                                alt=""
-                              />
-                            </button>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="flex">
-                        <img
-                          class="w-10 h-10 flex-shrink-0 flex-grow-0 mr-2 rounded-lg"
-                          loading="lazy"
-                          src="assets/images/artists/2.png"
-                          alt=""
-                        />
-                        <div class="flex-1 flex justify-between gap-x-20">
-                          <div>
-                            <div class="text-base font-semibold">
-                              Hamide Alici
-                            </div>
-                            <div class="text-base text-grey-400 mt-1">
-                              Their customer support team is great! :) Always
-                              there to help.
-                            </div>
-                          </div>
-                          <div
-                            class="text-14 text-grey-400 text-end flex-shrink-0"
-                          >
-                            <div>29/04/2023</div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="flex">
-                        <img
-                          class="w-10 h-10 flex-shrink-0 flex-grow-0 mr-2 rounded-lg"
-                          loading="lazy"
-                          src="assets/images/artists/2.png"
-                          alt=""
-                        />
-                        <div class="flex-1 flex justify-between gap-x-20">
-                          <div>
-                            <div class="text-base font-semibold">
-                              Diana Ross
-                            </div>
-                            <div class="text-base text-grey-400 mt-1">
-                              Great vaule for money. Rock on.
-                            </div>
-                          </div>
-                          <div
-                            class="text-14 text-grey-400 text-end flex-shrink-0"
-                          >
-                            <div>29/04/2023</div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                    <div
-                      class="h-full w-0.5 bg-grey-200 absolute top-0 -left-8"
-                    ></div>
-                  </div>
-                </div>
-              </li>
-              <li class="py-3 song-cmt flex overflow-hidden">
-                <div class="mr-2">
-                  <img
-                    class="mr-2 w-12 aspect-square rounded-lg"
-                    loading="lazy"
-                    src="assets/images/artists/2.png"
-                    alt=""
-                  />
-                </div>
-                <div class="flex-1">
-                  <div class="flex justify-between gap-x-20">
-                    <div>
-                      <div class="text-base font-semibold">Emine Kiyag</div>
-                      <div class="text-base text-grey-400 mt-1">
-                        I'll be there in 2 mins
-                      </div>
-                    </div>
-                    <div class="text-14 text-grey-400 text-end flex-shrink-0">
-                      <div>3 days ago</div>
-                      <div class="mt-1">Reply (3)</div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
+            <div
+              class="text-14 lg:text-base text-grey-400 w-14 lg:w-20 text-right"
+            >
+              View
+            </div>
           </div>
+          <ul class="mt-2">
+            <li class="py-2 lg:px-4 flex items-center gap-6">
+              <div class="flex flex-[2] items-center">
+                <div
+                  class="w-4 lg:w-6 text-center text-base lg:text-18 font-semibold text-grey-400 mr-3"
+                >
+                  1
+                </div>
+                <div
+                  class="text-14 flex-1 flex items-center justify-between gap-2 lg:text-base text-grey-400"
+                >
+                  <div class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
+                    <img
+                      class="w-10 lg:w-12 aspect-square rounded-lg"
+                      src="assets/images/artists/1.png"
+                      alt=""
+                    />
+                    <div>
+                      <div class="text-14 lg:text-base line-clamp-1">
+                        It's My Life
+                      </div>
+                      <div
+                        class="text-12 text-grey-400 lg:text-14 line-clamp-1"
+                      >
+                        The Marvelettes
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    id="toggle-more-menu"
+                    class="hover:bg-bg toggle-more-menu p-1 cursor-pointer relative rounded-full duration-100 transition-colors"
+                  >
+                    <img
+                      class="w-4 lg:w-6 aspect-square"
+                      src="assets/svgs/more.svg"
+                      alt=""
+                    />
+                    <div class="menu-more">
+                      <button
+                        class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                      >
+                        <img src="assets/svgs/repost.svg" />
+                        Repost
+                      </button>
+                      <button
+                        class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                      >
+                        <img src="assets/svgs/add-next.svg" />
+                        Add to next up
+                      </button>
+                      <button
+                        class="show-create-playlist-popup flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <img src="assets/svgs/add-playlist.svg" />
+                        Add to playlist
+                      </button>
+                      <button
+                        class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                      >
+                        <img src="assets/svgs/repost.svg" />
+                        Share
+                      </button>
+                      <button
+                        class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                      >
+                        <img src="assets/svgs/copy-link.svg" />
+                        Copy link
+                      </button>
+                      <button
+                        class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                      >
+                        <img src="assets/svgs/repost.svg" />
+                        Report
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="text-14 flex-1 lg:text-base text-grey-400 line-clamp-1"
+              >
+                Like a Slippery Map
+              </div>
+              <div
+                class="text-14 lg:text-base text-grey-400 w-14 lg:w-20 text-right"
+              >
+                01:58
+              </div>
+              <div
+                class="text-14 lg:text-base text-grey-400 w-14 lg:w-20 text-right"
+              >
+                5.2k
+              </div>
+            </li>
+            <li class="py-2 lg:px-4 flex items-center gap-6">
+              <div class="flex flex-[2] items-center">
+                <div
+                  class="w-4 lg:w-6 text-center text-base lg:text-18 font-semibold text-grey-400 mr-3"
+                >
+                  2
+                </div>
+                <div
+                  class="text-14 flex-1 flex items-center justify-between gap-2 lg:text-base text-grey-400"
+                >
+                  <div class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
+                    <img
+                      class="w-10 lg:w-12 aspect-square rounded-lg"
+                      src="assets/images/artists/1.png"
+                      alt=""
+                    />
+                    <div>
+                      <div class="text-14 lg:text-base line-clamp-1">
+                        It's My Life
+                      </div>
+                      <div
+                        class="text-12 text-grey-400 lg:text-14 line-clamp-1"
+                      >
+                        The Marvelettes
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    id="toggle-more-menu"
+                    class="hover:bg-bg toggle-more-menu p-1 cursor-pointer relative rounded-full duration-100 transition-colors"
+                  >
+                    <img
+                      class="w-4 lg:w-6 aspect-square"
+                      src="assets/svgs/more.svg"
+                      alt=""
+                    />
+                    <div class="menu-more">
+                      <button
+                        class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                      >
+                        <img src="assets/svgs/repost.svg" />
+                        Repost
+                      </button>
+                      <button
+                        class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                      >
+                        <img src="assets/svgs/add-next.svg" />
+                        Add to next up
+                      </button>
+                      <button
+                        class="show-create-playlist-popup flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <img src="assets/svgs/add-playlist.svg" />
+                        Add to playlist
+                      </button>
+                      <button
+                        class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                      >
+                        <img src="assets/svgs/repost.svg" />
+                        Share
+                      </button>
+                      <button
+                        class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                      >
+                        <img src="assets/svgs/copy-link.svg" />
+                        Copy link
+                      </button>
+                      <button
+                        class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                      >
+                        <img src="assets/svgs/repost.svg" />
+                        Report
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="text-14 flex-1 lg:text-base text-grey-400 line-clamp-1"
+              >
+                Like a Slippery Map
+              </div>
+              <div
+                class="text-14 lg:text-base text-grey-400 w-14 lg:w-20 text-right"
+              >
+                01:58
+              </div>
+              <div
+                class="text-14 lg:text-base text-grey-400 w-14 lg:w-20 text-right"
+              >
+                5.2k
+              </div>
+            </li>
+            <li class="py-2 lg:px-4 flex items-center gap-6">
+              <div class="flex flex-[2] items-center">
+                <div
+                  class="w-4 lg:w-6 text-center text-base lg:text-18 font-semibold text-grey-400 mr-3"
+                >
+                  3
+                </div>
+                <div
+                  class="text-14 flex-1 flex items-center justify-between gap-2 lg:text-base text-grey-400"
+                >
+                  <div class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
+                    <img
+                      class="w-10 lg:w-12 aspect-square rounded-lg"
+                      src="assets/images/artists/1.png"
+                      alt=""
+                    />
+                    <div>
+                      <div class="text-14 lg:text-base line-clamp-1">
+                        It's My Life
+                      </div>
+                      <div
+                        class="text-12 text-grey-400 lg:text-14 line-clamp-1"
+                      >
+                        The Marvelettes
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    id="toggle-more-menu"
+                    class="hover:bg-bg toggle-more-menu p-1 cursor-pointer relative rounded-full duration-100 transition-colors"
+                  >
+                    <img
+                      class="w-4 lg:w-6 aspect-square"
+                      src="assets/svgs/more.svg"
+                      alt=""
+                    />
+                    <div class="menu-more">
+                      <button
+                        class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                      >
+                        <img src="assets/svgs/repost.svg" />
+                        Repost
+                      </button>
+                      <button
+                        class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                      >
+                        <img src="assets/svgs/add-next.svg" />
+                        Add to next up
+                      </button>
+                      <button
+                        class="show-create-playlist-popup flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <img src="assets/svgs/add-playlist.svg" />
+                        Add to playlist
+                      </button>
+                      <button
+                        class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                      >
+                        <img src="assets/svgs/repost.svg" />
+                        Share
+                      </button>
+                      <button
+                        class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                      >
+                        <img src="assets/svgs/copy-link.svg" />
+                        Copy link
+                      </button>
+                      <button
+                        class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                      >
+                        <img src="assets/svgs/repost.svg" />
+                        Report
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="text-14 flex-1 lg:text-base text-grey-400 line-clamp-1"
+              >
+                Like a Slippery Map
+              </div>
+              <div
+                class="text-14 lg:text-base text-grey-400 w-14 lg:w-20 text-right"
+              >
+                01:58
+              </div>
+              <div
+                class="text-14 lg:text-base text-grey-400 w-14 lg:w-20 text-right"
+              >
+                5.2k
+              </div>
+            </li>
+            <li class="py-2 lg:px-4 flex items-center gap-6">
+              <div class="flex flex-[2] items-center">
+                <div
+                  class="w-4 lg:w-6 text-center text-base lg:text-18 font-semibold text-grey-400 mr-3"
+                >
+                  4
+                </div>
+                <div
+                  class="text-14 flex-1 flex items-center justify-between gap-2 lg:text-base text-grey-400"
+                >
+                  <div class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
+                    <img
+                      class="w-10 lg:w-12 aspect-square rounded-lg"
+                      src="assets/images/artists/1.png"
+                      alt=""
+                    />
+                    <div>
+                      <div class="text-14 lg:text-base line-clamp-1">
+                        It's My Life
+                      </div>
+                      <div
+                        class="text-12 text-grey-400 lg:text-14 line-clamp-1"
+                      >
+                        The Marvelettes
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    id="toggle-more-menu"
+                    class="hover:bg-bg toggle-more-menu p-1 cursor-pointer relative rounded-full duration-100 transition-colors"
+                  >
+                    <img
+                      class="w-4 lg:w-6 aspect-square"
+                      src="assets/svgs/more.svg"
+                      alt=""
+                    />
+                    <div class="menu-more">
+                      <button
+                        class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                      >
+                        <img src="assets/svgs/repost.svg" />
+                        Repost
+                      </button>
+                      <button
+                        class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                      >
+                        <img src="assets/svgs/add-next.svg" />
+                        Add to next up
+                      </button>
+                      <button
+                        class="show-create-playlist-popup flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <img src="assets/svgs/add-playlist.svg" />
+                        Add to playlist
+                      </button>
+                      <button
+                        class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                      >
+                        <img src="assets/svgs/repost.svg" />
+                        Share
+                      </button>
+                      <button
+                        class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                      >
+                        <img src="assets/svgs/copy-link.svg" />
+                        Copy link
+                      </button>
+                      <button
+                        class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                      >
+                        <img src="assets/svgs/repost.svg" />
+                        Report
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="text-14 flex-1 lg:text-base text-grey-400 line-clamp-1"
+              >
+                Like a Slippery Map
+              </div>
+              <div
+                class="text-14 lg:text-base text-grey-400 w-14 lg:w-20 text-right"
+              >
+                01:58
+              </div>
+              <div
+                class="text-14 lg:text-base text-grey-400 w-14 lg:w-20 text-right"
+              >
+                5.2k
+              </div>
+            </li>
+          </ul>
         </div>
         <div class="gap-6 flex flex-col">
           <div class="py-3 px-4 bg-white rounded-xl">
@@ -467,7 +528,33 @@ Wow, this is really epic</textarea
                     </div>
                   </div>
                   <button
-                    class="text-12 lg:text-14 py-1.5 !bg-grey-400 btn-fifth text-white font-semibold"
+                    class="text-12 lg:text-14 py-1.5 btn-primary text-white font-semibold"
+                  >
+                    Follow
+                  </button>
+                </li>
+                <li class="flex items-center justify-between gap-2 py-2">
+                  <div class="flex items-center">
+                    <img
+                      class="w-12 mr-2 aspect-square flex-shrink-0 flex-grow-0 rounded-lg"
+                      src="assets/images/artists/1.png"
+                      alt=""
+                    />
+                    <div>
+                      <div
+                        class="text-14 lg:text-base font-semibold line-clamp-1"
+                      >
+                        James Bay
+                      </div>
+                      <div
+                        class="mt-1 text-12 lg:text-14 text-gray-400 line-clamp-1"
+                      >
+                        Eleanor Pena
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="text-12 lg:text-14 py-1.5 btn-fifth text-white font-semibold"
                   >
                     Following
                   </button>
@@ -493,35 +580,9 @@ Wow, this is really epic</textarea
                     </div>
                   </div>
                   <button
-                    class="text-12 lg:text-14 py-1.5 btn-primary text-white font-semibold"
+                    class="text-12 lg:text-14 py-1.5 btn-fifth text-white font-semibold"
                   >
-                    Follow
-                  </button>
-                </li>
-                <li class="flex items-center justify-between gap-2 py-2">
-                  <div class="flex items-center">
-                    <img
-                      class="w-12 mr-2 aspect-square flex-shrink-0 flex-grow-0 rounded-lg"
-                      src="assets/images/artists/1.png"
-                      alt=""
-                    />
-                    <div>
-                      <div
-                        class="text-14 lg:text-base font-semibold line-clamp-1"
-                      >
-                        James Bay
-                      </div>
-                      <div
-                        class="mt-1 text-12 lg:text-14 text-gray-400 line-clamp-1"
-                      >
-                        Eleanor Pena
-                      </div>
-                    </div>
-                  </div>
-                  <button
-                    class="text-12 lg:text-14 py-1.5 btn-primary text-white font-semibold"
-                  >
-                    Follow
+                    Following
                   </button>
                 </li>
                 <li class="flex items-center justify-between gap-2 py-2">
@@ -615,7 +676,7 @@ Wow, this is really epic</textarea
                     </div>
                   </div>
                   <button
-                    class="text-12 lg:text-14 py-1.5 !bg-grey-400 btn-fifth text-white font-semibold"
+                    class="text-12 lg:text-14 py-1.5 btn-fifth text-white font-semibold"
                   >
                     Following
                   </button>
@@ -741,6 +802,114 @@ Wow, this is really epic</textarea
         </div>
       </div>
     </div>
+    <footer
+      class="mt-[100px] border-t border-t-grey-400 pb-6 pt-4 max-md:hidden"
+    >
+      <div class="container flex items-center justify-between">
+        <div class="flex items-center">
+          <div class="-mb-0.5 mr-6 text-14 text-grey-400">
+            Copyright © 2023 Clib Music. All rights reserved.
+          </div>
+          <ul class="flex items-center gap-3">
+            <li>
+              <a href="#" class="text-14 text-grey-400">Privacy Policy</a>
+            </li>
+            <li>
+              <span class="footer-divider"></span>
+            </li>
+            <li>
+              <a href="#" class="text-14 text-grey-400">Terms of Use</a>
+            </li>
+            <li>
+              <span class="footer-divider"></span>
+            </li>
+            <li>
+              <a href="#" class="text-14 text-grey-400">Cookie Warning</a>
+            </li>
+            <li>
+              <span class="footer-divider"></span>
+            </li>
+            <li>
+              <a href="#" class="text-14 text-grey-400">Support</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="flex items-center gap-3">
+          <li>
+            <a href="#" class="lang-footer-item active">English</a>
+          </li>
+          <li>
+            <span class="footer-divider"></span>
+          </li>
+          <li>
+            <a href="#" class="lang-footer-item">Tiếng Việt</a>
+          </li>
+          <li>
+            <span class="footer-divider"></span>
+          </li>
+          <li>
+            <a href="#" class="lang-footer-item">简体中文</a>
+          </li>
+          <li>
+            <span class="footer-divider"></span>
+          </li>
+          <li>
+            <a href="#" class="lang-footer-item">한국어</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div id="edit-detail-modal" class="edit-detail-modal overlay">
+      <div id="edit-detail-modal--inner">
+        <div class="p-6 rounded-xl bg-white relative w-[970px] max-w-full">
+          <button id="close-detail-modal" class="absolute right-3 top-3">
+            <img width="20" src="assets/svgs/close.svg" alt="" />
+          </button>
+          <div class="text-center text-24 font-semibold">Edit detail</div>
+          <div class="grid grid-cols-[320px_1fr] gap-8 mt-[18px]">
+            <div>
+              <img
+                class="w-full h-full object-cover rounded-xl"
+                src="assets/images/mfy.jpg"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <div>
+              <div class="flex flex-col gap-1">
+                <div class="text-base font-semibold text-grey-400">Tittle</div>
+                <input
+                  type="text"
+                  class="py-3 px-4 text-base placeholder:text-grey-400 outline-none bg-grey-100 rounded-xl w-full"
+                  placeholder="Title"
+                />
+              </div>
+              <div class="flex mt-3 flex-col gap-1">
+                <div class="text-base font-semibold text-grey-400">
+                  Description
+                </div>
+                <textarea
+                  name=""
+                  id=""
+                  rows="10"
+                  class="py-3 px-4 text-base resize-none max-h-[120px] placeholder:text-grey-400 outline-none bg-grey-100 rounded-xl w-full scrollbar-custom"
+                  placeholder="Description"
+                ></textarea>
+              </div>
+              <div class="mt-6 flex items-center justify-between gap-3">
+                <button class="btn-fourth w-full h-11">Cancel</button>
+                <button class="btn-primary w-full h-11">Save</button>
+              </div>
+            </div>
+          </div>
+          <div class="mt-[18px] text-grey-400">
+            By proceeding, you agree to give Spotify access to the image you
+            choose to upload. Please make sure you have the right to upload the
+            image.
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -750,5 +919,5 @@ Wow, this is really epic</textarea
   ></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="js/index.js"></script>
-  <script src="js/ranking.js"></script>
+  <script src="js/playlist.js"></script>
 </html>

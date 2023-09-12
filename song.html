@@ -43,15 +43,54 @@
                   alt=""
                 />
               </button>
-              <button
-                class="p-2 duration-100 transition-colors rounded-full hover:bg-bg"
+              <div
+                class="relative toggle-more-menu-playlist p-2 duration-100 transition-colors rounded-full hover:bg-bg"
               >
                 <img
                   class="w-7 aspect-square"
                   src="assets/svgs/more.svg"
                   alt=""
                 />
-              </button>
+                <div class="menu-more">
+                  <button
+                    class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                  >
+                    <img src="assets/svgs/repost.svg" />
+                    Repost
+                  </button>
+                  <button
+                    class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                  >
+                    <img src="assets/svgs/add-next.svg" />
+                    Add to next up
+                  </button>
+                  <button
+                    class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                  >
+                    <img src="assets/svgs/repost.svg" />
+                    Share
+                  </button>
+                  <button
+                    class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                  >
+                    <img src="assets/svgs/copy-link.svg" />
+                    Copy link
+                  </button>
+                  <!-- <button
+                    class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                  >
+                    <img src="assets/svgs/repost.svg" />
+                    Report
+                  </button> -->
+                  <button
+                    id="toggle-edit-detail"
+                    class="flex items-center toggle-edit-detail gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
+                  >
+                    <img class="w-6" src="assets/svgs/edit-profile.svg" />
+                    Edit detail
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -467,7 +506,7 @@ Wow, this is really epic</textarea
                     </div>
                   </div>
                   <button
-                    class="text-12 lg:text-14 py-1.5 !bg-grey-400 btn-fifth text-white font-semibold"
+                    class="text-12 lg:text-14 py-1.5 btn-fifth text-white font-semibold"
                   >
                     Following
                   </button>
@@ -615,7 +654,7 @@ Wow, this is really epic</textarea
                     </div>
                   </div>
                   <button
-                    class="text-12 lg:text-14 py-1.5 !bg-grey-400 btn-fifth text-white font-semibold"
+                    class="text-12 lg:text-14 py-1.5 btn-fifth text-white font-semibold"
                   >
                     Following
                   </button>
@@ -741,6 +780,57 @@ Wow, this is really epic</textarea
         </div>
       </div>
     </div>
+    <div id="edit-detail-modal" class="edit-detail-modal overlay">
+      <div id="edit-detail-modal--inner">
+        <div class="p-6 rounded-xl bg-white relative w-[970px] max-w-full">
+          <button id="close-detail-modal" class="absolute right-3 top-3">
+            <img width="20" src="assets/svgs/close.svg" alt="" />
+          </button>
+          <div class="text-center text-24 font-semibold">Edit detail</div>
+          <div class="grid grid-cols-[320px_1fr] gap-8 mt-[18px]">
+            <div>
+              <img
+                class="w-full h-full object-cover rounded-xl"
+                src="assets/images/mfy.jpg"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <div>
+              <div class="flex flex-col gap-1">
+                <div class="text-base font-semibold text-grey-400">Tittle</div>
+                <input
+                  type="text"
+                  class="py-3 px-4 text-base placeholder:text-grey-400 outline-none bg-grey-100 rounded-xl w-full"
+                  placeholder="Title"
+                />
+              </div>
+              <div class="flex mt-3 flex-col gap-1">
+                <div class="text-base font-semibold text-grey-400">
+                  Description
+                </div>
+                <textarea
+                  name=""
+                  id=""
+                  rows="10"
+                  class="py-3 px-4 text-base resize-none max-h-[120px] placeholder:text-grey-400 outline-none bg-grey-100 rounded-xl w-full scrollbar-custom"
+                  placeholder="Description"
+                ></textarea>
+              </div>
+              <div class="mt-6 flex items-center justify-between gap-3">
+                <button class="btn-fourth w-full h-11">Cancel</button>
+                <button class="btn-primary w-full h-11">Save</button>
+              </div>
+            </div>
+          </div>
+          <div class="mt-[18px] text-grey-400">
+            By proceeding, you agree to give Spotify access to the image you
+            choose to upload. Please make sure you have the right to upload the
+            image.
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -750,5 +840,5 @@ Wow, this is really epic</textarea
   ></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="js/index.js"></script>
-  <script src="js/ranking.js"></script>
+  <script src="js/song.js"></script>
 </html>

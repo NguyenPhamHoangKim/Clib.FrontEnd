@@ -421,3 +421,16 @@ a.swiper-slide.digital-item:hover .digital-thumb {
 .song-cmt:not(:last-child) {
   @apply border-b border-b-grey-200;
 }
+.toggle-more-menu-playlist .menu-more {
+  @apply hidden;
+}
+.toggle-more-menu-playlist:hover .menu-more {
+  @apply flex;
+}
+
+.edit-detail-modal {
+  @apply hidden items-center justify-center p-4;
+}
+.edit-detail-modal.show {
+  @apply flex;
+}
