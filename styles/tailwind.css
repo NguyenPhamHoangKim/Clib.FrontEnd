@@ -434,3 +434,32 @@ a.swiper-slide.digital-item:hover .digital-thumb {
 .edit-detail-modal.show {
   @apply flex;
 }
+
+.abs-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+svg {
+  @apply cursor-pointer;
+}
+
+img {
+  @apply cursor-pointer;
+}
+
+.highlight {
+  @apply bg-[#1975ff];
+}
+
+.chat-container {
+  display: none;
+}
