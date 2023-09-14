@@ -44,8 +44,6 @@ $(document).ready(function () {
   let filterProduct = $(".filter-product");
   let services = $("#services");
   services.hide();
-
-  filterMusic.show();
   filterProduct.hide();
 
   // Add a click event handler for the Digital Food button
@@ -56,7 +54,7 @@ $(document).ready(function () {
 
     // Show/hide elements based on their IDs
     filterMusic.show();
-    videos.show();
+    music.show();
     filterProduct.hide();
     services.hide();
   });
@@ -82,5 +80,6 @@ $(document).ready(function () {
   $(".close-filter").click(function () {
     // Show the video section and hide the music section
     $(".filter-music").hide();
+    $(".filter-product").hide();
   });
 });

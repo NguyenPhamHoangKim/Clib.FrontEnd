@@ -476,3 +476,7 @@ img {
   -webkit-line-clamp: 2; /* Số dòng bạn muốn hiển thị */
   -webkit-box-orient: vertical;
 }
+
+.ts-h {
+  transition: height 0.3s ease-in-out;
+}

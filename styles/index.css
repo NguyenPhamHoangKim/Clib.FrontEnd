@@ -1485,6 +1485,10 @@ body{
   height: 100vh;
 }
 
+.h-\[238px\]{
+  height: 238px;
+}
+
 .max-h-12{
   max-height: 3rem;
 }
@@ -1706,10 +1710,6 @@ body{
   width: 100%;
 }
 
-.w-\[130px\]{
-  width: 130px;
-}
-
 .max-w-\[1170px\]{
   max-width: 1170px;
 }
@@ -1740,10 +1740,6 @@ body{
 
 .max-w-\[220px\]{
   max-width: 220px;
-}
-
-.max-w-\[308px\]{
-  max-width: 308px;
 }
 
 .max-w-\[340px\]{
@@ -1888,11 +1884,6 @@ body{
 
 .scale-100{
   --tw-scale-x: 1;
-  --tw-scale-y: 1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.scale-y-100{
   --tw-scale-y: 1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -2231,6 +2222,10 @@ body{
 
 .grid-cols-\[456px_1fr\]{
   grid-template-columns: 456px 1fr;
+}
+
+.grid-cols-4{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-row{
@@ -5101,6 +5096,10 @@ img{
   -webkit-box-orient: vertical;
 }
 
+.ts-h {
+  transition: height 0.3s ease-in-out;
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
@@ -5296,33 +5295,33 @@ img{
   text-align: center;
 }
 
+.group:hover .group-hover\:visible{
+  visibility: visible;
+}
+
 .group:hover .group-hover\:h-10{
   height: 2.5rem;
 }
 
-.group:hover .group-hover\:h-\[180px\]{
-  height: 180px;
+.group:hover .group-hover\:h-\[200px\]{
+  height: 200px;
+}
+
+.group:hover .group-hover\:h-\[220px\]{
+  height: 220px;
+}
+
+.group:hover .group-hover\:h-\[198px\]{
+  height: 198px;
+}
+
+.group:hover .group-hover\:h-\[100px\]{
+  height: 100px;
 }
 
 .group:hover .group-hover\:scale-110{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.group:hover .group-hover\:scale-105{
-  --tw-scale-x: 1.05;
-  --tw-scale-y: 1.05;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.group:hover .group-hover\:scale-y-125{
-  --tw-scale-y: 1.25;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.group:hover .group-hover\:scale-y-105{
-  --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -5402,10 +5401,6 @@ img{
     position: fixed;
   }
 
-  .md\:relative{
-    position: relative;
-  }
-
   .md\:z-50{
     z-index: 50;
   }
@@ -5474,10 +5469,6 @@ img{
     min-width: 260px;
   }
 
-  .md\:max-w-\[800px\]{
-    max-width: 800px;
-  }
-
   .md\:grid-cols-1{
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -5510,10 +5501,6 @@ img{
     gap: 1.75rem;
   }
 
-  .md\:gap-\[125px\]{
-    gap: 125px;
-  }
-
   .md\:overflow-x-hidden{
     overflow-x: hidden;
   }
@@ -5531,24 +5518,16 @@ img{
     background-color: rgb(247 247 247 / var(--tw-bg-opacity));
   }
 
+  .md\:p-12{
+    padding: 3rem;
+  }
+
   .md\:p-2{
     padding: 0.5rem;
   }
 
   .md\:p-4{
     padding: 1rem;
-  }
-
-  .md\:p-10{
-    padding: 2.5rem;
-  }
-
-  .md\:p-16{
-    padding: 4rem;
-  }
-
-  .md\:p-12{
-    padding: 3rem;
   }
 
   .md\:px-2{
@@ -5697,10 +5676,6 @@ img{
     grid-template-columns: 3fr 1fr;
   }
 
-  .lg\:grid-cols-1{
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-
   .lg\:gap-3{
     gap: 0.75rem;
   }
@@ -5711,10 +5686,6 @@ img{
 
   .lg\:gap-8{
     gap: 2rem;
-  }
-
-  .lg\:gap-\[334px\]{
-    gap: 334px;
   }
 
   .lg\:p-4{
@@ -5770,6 +5741,14 @@ img{
 
   .lg\:font-bold{
     font-weight: 700;
+  }
+
+  .group:hover .lg\:group-hover\:h-10{
+    height: 2.5rem;
+  }
+
+  .group:hover .lg\:group-hover\:h-\[220px\]{
+    height: 220px;
   }
 }
 
