@@ -1,0 +1,1006 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clib - Login</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <main class="bg-[#ebeef0] mt-12 hidden md:block">
+      <div class="w-full max-w-[1440px] mx-auto px-5">
+        <div>
+          <div class="flex items-center justify-between">
+            <div class="invisible w-[150px]">fix center</div>
+            <div
+              class="flex items-center justify-center p-1 bg-[#f7f7f7] rounded-lg font-16 font-semibold"
+            >
+              <button
+                id="digitalFoodButton"
+                class="flex items-center gap-2 px-5 py-2 rounded-lg text-[#bdcad4] active"
+              >
+                Digital food
+              </button>
+              <button
+                id="servicesButton"
+                class="flex items-center gap-2 px-5 py-2 rounded-xl text-[#A1ABB2]"
+              >
+                Services
+              </button>
+            </div>
+
+            <div
+              class="flex items-center gap-2 px-5 py-2 bg-[#52616b] rounded-lg text-[#fff] cursor-pointer font-16 font-semibold"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M6 12H18"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 18V6"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Upload
+            </div>
+          </div>
+          <div class="mt-8 mb-[145px] flex items-start gap-8">
+            <div
+              class="filter-music w-full lg:max-w-[308px] lg:p-4 bg-[#fff] rounded-xl md:fixed md:hidden md:fixed top-0 left-0 bottom-0 md:p-12 md:z-50 lg:block lg:static"
+            >
+              <h4
+                class="close-filter text-sm flex items-center justify-between font-semibold md:text-base lg:text-2xl mb-4"
+              >
+                Filter
+                <img
+                  class="block lg:hidden"
+                  src="./assets/svgs/close.svg"
+                  alt=""
+                />
+              </h4>
+              <div>
+                <h5 class="text-lg font-semibold">Category</h5>
+                <div
+                  class="grid grid-cols-2 w-full bg-[#f7f7f7] font-semibold rounded-lg mt-2 text-12 md:text-14 lg:text-16 transition-all duration-500"
+                >
+                  <button id="musicButton" class="px-4 py-2 rounded-lg active">
+                    Music
+                  </button>
+                  <button id="videosButton" class="px-4 py-2 rounded-lg">
+                    Videos
+                  </button>
+                </div>
+              </div>
+              <div>
+                <h5 class="text-lg font-semibold mt-5">Seller</h5>
+                <div class="flex items-center gap-8 mt-3">
+                  <div class="flex items-center gap-4">
+                    <input type="radio" /> All
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <input type="radio" /> Following
+                  </div>
+                </div>
+              </div>
+              <div class="w-full">
+                <h5 class="text-lg font-semibold mt-5">Price</h5>
+                <div class="flex items-center gap-2 mt-3">
+                  <div
+                    class="flex border items-center justify-center gap-3 w-full max-w-[120px] rounded-xl px-3 py-2"
+                  >
+                    $
+                    <input
+                      type="text"
+                      class="border outline-none w-full border-none"
+                      placeholder="Min"
+                    />
+                  </div>
+                  <span class="w-3 h-[2px] bg-[#EBEEF0]"></span>
+                  <div
+                    class="flex border items-center justify-center gap-3 w-full max-w-[120px] rounded-xl px-3 py-2"
+                  >
+                    $
+                    <input
+                      type="text"
+                      class="border outline-none border w-full border-none"
+                      placeholder="Max"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="w-full">
+                <h5 class="text-lg font-semibold mt-5">Product</h5>
+                <div class="flex flex-col gap-4 mt-3">
+                  <div class="flex items-center gap-4">
+                    <input type="checkbox" /> Option 1
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <input type="checkbox" /> Option 2
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <input type="checkbox" /> Option 3
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <input type="checkbox" /> Option 4
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <input type="checkbox" /> Option 5
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-3 mt-9 font-semibold">
+                <button
+                  id="videosBtn"
+                  class="px-4 py-2 border text-[#52616B] rounded-lg"
+                >
+                  Clear
+                </button>
+                <button
+                  id="musicBtn"
+                  class="px-4 py-2 bg-[#0ecad5] text-[#fff] rounded-lg"
+                >
+                  Apply All
+                </button>
+              </div>
+            </div>
+            <div
+              class="filter-product w-full lg:max-w-[308px] lg:p-4 bg-[#fff] rounded-xl md:fixed md:hidden md:fixed top-0 left-0 bottom-0 md:p-12 md:z-50 lg:block lg:static"
+            >
+              <h4
+                class="close-filter text-sm flex items-center justify-between font-semibold md:text-base lg:text-2xl mb-4"
+              >
+                Filter
+                <img
+                  class="block lg:hidden"
+                  src="./assets/svgs/close.svg"
+                  alt=""
+                />
+              </h4>
+
+              <div>
+                <h5 class="text-lg font-semibold mt-5">Seller</h5>
+                <div class="flex items-center gap-8 mt-3">
+                  <div class="flex items-center gap-4">
+                    <input type="radio" /> All
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <input type="radio" /> Following
+                  </div>
+                </div>
+              </div>
+              <div class="w-full">
+                <h5 class="text-lg font-semibold mt-5">Price</h5>
+                <div class="flex items-center gap-2 mt-3">
+                  <div
+                    class="flex border items-center justify-center gap-3 w-full max-w-[120px] rounded-xl px-3 py-2"
+                  >
+                    $
+                    <input
+                      type="text"
+                      class="border outline-none w-full border-none"
+                      placeholder="Min"
+                    />
+                  </div>
+                  <span class="w-3 h-[2px] bg-[#EBEEF0]"></span>
+                  <div
+                    class="flex border items-center justify-center gap-3 w-full max-w-[120px] rounded-xl px-3 py-2"
+                  >
+                    $
+                    <input
+                      type="text"
+                      class="border outline-none border w-full border-none"
+                      placeholder="Max"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="w-full">
+                <h5 class="text-lg font-semibold mt-5">Product</h5>
+                <div class="flex flex-col gap-4 mt-3">
+                  <div class="flex items-center gap-4">
+                    <input type="checkbox" /> Option 1
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <input type="checkbox" /> Option 2
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <input type="checkbox" /> Option 3
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <input type="checkbox" /> Option 4
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <input type="checkbox" /> Option 5
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-3 mt-9 font-semibold">
+                <button
+                  id="videosBtn"
+                  class="px-4 py-2 border text-[#52616B] rounded-lg"
+                >
+                  Clear
+                </button>
+                <button
+                  id="musicBtn"
+                  class="px-4 py-2 bg-[#0ecad5] text-[#fff] rounded-lg"
+                >
+                  Apply All
+                </button>
+              </div>
+            </div>
+            <!-- right -->
+            <div class="w-full bg-[#fff] rounded-xl p-4">
+              <div class="flex items-center justify-between">
+                <div
+                  class="px-4 py-3 w-full flex items-center bg-[#f7f7f7] flex items-center gap-2 rounded-lg max-w-[360px]"
+                >
+                  <img src="./assets/svgs/search.svg" alt="" />
+                  <input
+                    type="text"
+                    class="lg:w-full bg-transparent border-none outline-none"
+                    placeholder="What are you looking for?"
+                  />
+                </div>
+                <div class="flex items-center justify-end gap-2 w-full">
+                  <select
+                    class="text-[#52616B] text-sm rounded-lg flex items-center w-full px-4 py-3 max-w-[150px] outline-none border border-[#ccc] rounded-lg"
+                  >
+                    <option selected>Newest</option>
+                    <option value="old">Old</option>
+                    <option value="new">New</option>
+                  </select>
+                  <button
+                    id="button-filter"
+                    class="flex justify-center items-center h-12 px-1 text-[#fff] block lg:hidden bg-[#0ecad5] rounded-xl max-w-150px"
+                  >
+                    Filter
+                  </button>
+                </div>
+              </div>
+              <!-- list items music-->
+              <div
+                id="music"
+                class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-6 mt-4 cursor-pointer"
+              >
+                <div
+                  class="group transition-all delay-300 ease-linear duration-500"
+                >
+                  <div
+                    class="transition-all delay-300 ease-linear duration-500 overflow-hidden"
+                  >
+                    <img
+                      src="./assets/images/songs/1.jpg"
+                      alt=""
+                      class="w-full transition-all duration-300 scale-100 group-hover:scale-110 overflow-hidden"
+                    />
+                  </div>
+                  <div class="mt-3">
+                    <h6
+                      class="font-16 font-semibold mb-[10px] truncate overflow-ellipsis"
+                    >
+                      Speak of the demon
+                    </h6>
+                    <div
+                      class="flex items-center justify-between gap-5 relative"
+                    >
+                      <div class="flex items-center gap-[6px]">
+                        <img src="./assets/images/st.png" alt="" />
+                        <img
+                          src="./assets/svgs/verify.svg"
+                          alt=""
+                          class="absolute bottom-[-4px] left-10"
+                        />
+                        <div>
+                          <p
+                            class="text-12 text-[#52616B] truncate overflow-ellipsis"
+                          >
+                            Owner
+                          </p>
+                          <p
+                            class="text-14 text-[#52616B] truncate overflow-ellipsis"
+                          >
+                            Audioslave
+                          </p>
+                        </div>
+                      </div>
+                      <div class="text-base xl:text-xl font-bold">$29</div>
+                    </div>
+                    <div
+                      class="flex items-center h-0 justify-center gap-2 bg-[#0ecad5] rounded-br-2xl rounded-bl-2xl mt-4 text-[#fff] group-hover:h-10"
+                    >
+                      <img src="./assets/svgs/shopping-cart.svg" alt="" />
+                      <button>Buy now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- list items videos-->
+              <div
+                id="videos"
+                class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-6 mt-4"
+              >
+                <div
+                  class="overflow-hidden group transition-transform duration-500"
+                >
+                  <div class="transition-all duration-500 cursor-pointer">
+                    <img
+                      src="./assets/images/Rectangle 243.png"
+                      alt=""
+                      class="transition-all duration-300 w-full h-[123px] scale-100 group-hover:scale-110"
+                    />
+                  </div>
+                  <div class="mt-3">
+                    <h6
+                      class="font-16 font-semibold mb-[10px] truncate overflow-ellipsis"
+                    >
+                      Speak of the demon
+                    </h6>
+                    <div
+                      class="flex items-center justify-between gap-5 relative"
+                    >
+                      <div class="flex items-center gap-[6px]">
+                        <img
+                          class="w-8 h-8"
+                          src="./assets/images/st.png"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/svgs/verify.svg"
+                          alt=""
+                          class="absolute bottom-[-4px] left-[1.5rem]"
+                        />
+                        <div>
+                          <p
+                            class="text-12 text-[#52616B] truncate overflow-ellipsis"
+                          >
+                            Owner
+                          </p>
+                          <p
+                            class="text-14 text-[#52616B] truncate overflow-ellipsis"
+                          >
+                            Audioslave
+                          </p>
+                        </div>
+                      </div>
+                      <div class="text-base xl:text-xl font-bold">$29</div>
+                    </div>
+                    <div
+                      class="flex items-center h-0 justify-center gap-2 bg-[#0ecad5] rounded-br-2xl rounded-bl-2xl mt-4 text-[#fff]"
+                    >
+                      <img src="./assets/svgs/shopping-cart.svg" alt="" />
+                      <button>Buy now</button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="overflow-hidden group transition-transform duration-500"
+                >
+                  <div class="transition-all duration-500 cursor-pointer">
+                    <img
+                      src="./assets/images/Rectangle 243.png"
+                      alt=""
+                      class="transition-all duration-300 w-full h-[123px] scale-100 group-hover:scale-110"
+                    />
+                  </div>
+                  <div class="mt-3">
+                    <h6
+                      class="font-16 font-semibold mb-[10px] truncate overflow-ellipsis"
+                    >
+                      Speak of the demon
+                    </h6>
+                    <div
+                      class="flex items-center justify-between gap-5 relative"
+                    >
+                      <div class="flex items-center gap-[6px]">
+                        <img
+                          class="w-8 h-8"
+                          src="./assets/images/st.png"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/svgs/verify.svg"
+                          alt=""
+                          class="absolute bottom-[-4px] left-[1.5rem]"
+                        />
+                        <div>
+                          <p
+                            class="text-12 text-[#52616B] truncate overflow-ellipsis"
+                          >
+                            Owner
+                          </p>
+                          <p
+                            class="text-14 text-[#52616B] truncate overflow-ellipsis"
+                          >
+                            Audioslave
+                          </p>
+                        </div>
+                      </div>
+                      <div class="text-base xl:text-xl font-bold">$29</div>
+                    </div>
+                    <div
+                      class="flex items-center h-0 justify-center gap-2 bg-[#0ecad5] rounded-br-2xl rounded-bl-2xl mt-4 text-[#fff]"
+                    >
+                      <img src="./assets/svgs/shopping-cart.svg" alt="" />
+                      <button>Buy now</button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="overflow-hidden group transition-transform duration-500"
+                >
+                  <div class="transition-all duration-500 cursor-pointer">
+                    <img
+                      src="./assets/images/Rectangle 243.png"
+                      alt=""
+                      class="transition-all duration-300 w-full h-[123px] scale-100 group-hover:scale-110"
+                    />
+                  </div>
+                  <div class="mt-3">
+                    <h6
+                      class="font-16 font-semibold mb-[10px] truncate overflow-ellipsis"
+                    >
+                      Speak of the demon
+                    </h6>
+                    <div
+                      class="flex items-center justify-between gap-5 relative"
+                    >
+                      <div class="flex items-center gap-[6px]">
+                        <img
+                          class="w-8 h-8"
+                          src="./assets/images/st.png"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/svgs/verify.svg"
+                          alt=""
+                          class="absolute bottom-[-4px] left-[1.5rem]"
+                        />
+                        <div>
+                          <p
+                            class="text-12 text-[#52616B] truncate overflow-ellipsis"
+                          >
+                            Owner
+                          </p>
+                          <p
+                            class="text-14 text-[#52616B] truncate overflow-ellipsis"
+                          >
+                            Audioslave
+                          </p>
+                        </div>
+                      </div>
+                      <div class="text-base xl:text-xl font-bold">$29</div>
+                    </div>
+                    <div
+                      class="flex items-center h-0 justify-center gap-2 bg-[#0ecad5] rounded-br-2xl rounded-bl-2xl mt-4 text-[#fff]"
+                    >
+                      <img src="./assets/svgs/shopping-cart.svg" alt="" />
+                      <button>Buy now</button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="overflow-hidden group transition-transform duration-500"
+                >
+                  <div class="transition-all duration-500 cursor-pointer">
+                    <img
+                      src="./assets/images/Rectangle 243.png"
+                      alt=""
+                      class="transition-all duration-300 w-full h-[123px] scale-100 group-hover:scale-110"
+                    />
+                  </div>
+                  <div class="mt-3">
+                    <h6
+                      class="font-16 font-semibold mb-[10px] truncate overflow-ellipsis"
+                    >
+                      Speak of the demon
+                    </h6>
+                    <div
+                      class="flex items-center justify-between gap-5 relative"
+                    >
+                      <div class="flex items-center gap-[6px]">
+                        <img
+                          class="w-8 h-8"
+                          src="./assets/images/st.png"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/svgs/verify.svg"
+                          alt=""
+                          class="absolute bottom-[-4px] left-[1.5rem]"
+                        />
+                        <div>
+                          <p
+                            class="text-12 text-[#52616B] truncate overflow-ellipsis"
+                          >
+                            Owner
+                          </p>
+                          <p
+                            class="text-14 text-[#52616B] truncate overflow-ellipsis"
+                          >
+                            Audioslave
+                          </p>
+                        </div>
+                      </div>
+                      <div class="text-base xl:text-xl font-bold">$29</div>
+                    </div>
+                    <div
+                      class="flex items-center h-0 justify-center gap-2 bg-[#0ecad5] rounded-br-2xl rounded-bl-2xl mt-4 text-[#fff]"
+                    >
+                      <img src="./assets/svgs/shopping-cart.svg" alt="" />
+                      <button>Buy now</button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="overflow-hidden group transition-transform duration-500"
+                >
+                  <div class="transition-all duration-500 cursor-pointer">
+                    <img
+                      src="./assets/images/Rectangle 243.png"
+                      alt=""
+                      class="transition-all duration-300 w-full h-[123px] scale-100 group-hover:scale-110"
+                    />
+                  </div>
+                  <div class="mt-3">
+                    <h6
+                      class="font-16 font-semibold mb-[10px] truncate overflow-ellipsis"
+                    >
+                      Speak of the demon
+                    </h6>
+                    <div
+                      class="flex items-center justify-between gap-5 relative"
+                    >
+                      <div class="flex items-center gap-[6px]">
+                        <img
+                          class="w-8 h-8"
+                          src="./assets/images/st.png"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/svgs/verify.svg"
+                          alt=""
+                          class="absolute bottom-[-4px] left-[1.5rem]"
+                        />
+                        <div>
+                          <p
+                            class="text-12 text-[#52616B] truncate overflow-ellipsis"
+                          >
+                            Owner
+                          </p>
+                          <p
+                            class="text-14 text-[#52616B] truncate overflow-ellipsis"
+                          >
+                            Audioslave
+                          </p>
+                        </div>
+                      </div>
+                      <div class="text-base xl:text-xl font-bold">$29</div>
+                    </div>
+                    <div
+                      class="flex items-center h-0 justify-center gap-2 bg-[#0ecad5] rounded-br-2xl rounded-bl-2xl mt-4 text-[#fff]"
+                    >
+                      <img src="./assets/svgs/shopping-cart.svg" alt="" />
+                      <button>Buy now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- list services -->
+              <div
+                id="services"
+                class="grid md:grid-cols-1 lg:grid-cols-2 gap-x-4 gap-y-6 mt-4"
+              >
+                <div
+                  class="overflow-hidden group transition-transform duration-500 flex gap-6"
+                >
+                  <div class="transition-all duration-500 cursor-pointer">
+                    <img
+                      src="./assets/images/Rectangle 243.png"
+                      alt=""
+                      class="transition-all duration-300 w-full max-w-[160px] h-full scale-100 group-hover:scale-110"
+                    />
+                  </div>
+                  <div class="text-[#52616B] w-[60%]">
+                    <h6 class="font-16 font-semibold">
+                      Producer | Mixing | Mastering
+                    </h6>
+                    <p class="my-1">by ALOU Productions</p>
+                    <div class="flex items-center gap-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M14.2354 6.02903L10.2383 5.42072L8.45152 1.62743C8.40272 1.52357 8.32243 1.4395 8.22325 1.38839C7.97452 1.25981 7.67226 1.36696 7.54789 1.62743L5.76109 5.42072L1.76402 6.02903C1.65382 6.04552 1.55307 6.09992 1.47593 6.18234C1.38267 6.28272 1.33128 6.41776 1.33305 6.55779C1.33482 6.69782 1.38961 6.83138 1.48537 6.92913L4.37731 9.88167L3.69407 14.0508C3.67805 14.1478 3.6883 14.2476 3.72366 14.3387C3.75902 14.4299 3.81807 14.5089 3.89411 14.5668C3.97016 14.6246 4.06017 14.659 4.15392 14.666C4.24767 14.673 4.34142 14.6523 4.42454 14.6064L7.99971 12.638L11.5749 14.6064C11.6725 14.6608 11.7858 14.6789 11.8945 14.6591C12.1684 14.6097 12.3526 14.3377 12.3053 14.0508L11.6221 9.88167L14.514 6.92913C14.5928 6.84835 14.6447 6.74285 14.6604 6.62745C14.703 6.33896 14.5109 6.07189 14.2354 6.02903Z"
+                          fill="#FFAE10"
+                        />
+                      </svg>
+                      4.3 (168)
+                    </div>
+                    <p class="mt-2 mb-3 custom-ellipsis">
+                      I am an open book. Ask me anything music or mixing and
+                      I'll give you direct feedback that you can easily
+                      understand and act upon. I live in the real world, I'm
+                    </p>
+                    <a class="text-[#0ECAD5] flex items-center gap-1" href="#"
+                      >View service
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M5.94043 13.2807L10.2871 8.93404C10.8004 8.4207 10.8004 7.5807 10.2871 7.06737L5.94043 2.7207"
+                          stroke="#0ECAD5"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg
+                    ></a>
+                  </div>
+                </div>
+                <div
+                  class="overflow-hidden group transition-transform duration-500 flex gap-6"
+                >
+                  <div class="transition-all duration-500 cursor-pointer">
+                    <img
+                      src="./assets/images/Rectangle 243.png"
+                      alt=""
+                      class="transition-all duration-300 w-full max-w-[160px] h-full scale-100 group-hover:scale-110"
+                    />
+                  </div>
+                  <div class="text-[#52616B] w-[60%]">
+                    <h6 class="font-16 font-semibold">
+                      Producer | Mixing | Mastering
+                    </h6>
+                    <p class="my-1">by ALOU Productions</p>
+                    <div class="flex items-center gap-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M14.2354 6.02903L10.2383 5.42072L8.45152 1.62743C8.40272 1.52357 8.32243 1.4395 8.22325 1.38839C7.97452 1.25981 7.67226 1.36696 7.54789 1.62743L5.76109 5.42072L1.76402 6.02903C1.65382 6.04552 1.55307 6.09992 1.47593 6.18234C1.38267 6.28272 1.33128 6.41776 1.33305 6.55779C1.33482 6.69782 1.38961 6.83138 1.48537 6.92913L4.37731 9.88167L3.69407 14.0508C3.67805 14.1478 3.6883 14.2476 3.72366 14.3387C3.75902 14.4299 3.81807 14.5089 3.89411 14.5668C3.97016 14.6246 4.06017 14.659 4.15392 14.666C4.24767 14.673 4.34142 14.6523 4.42454 14.6064L7.99971 12.638L11.5749 14.6064C11.6725 14.6608 11.7858 14.6789 11.8945 14.6591C12.1684 14.6097 12.3526 14.3377 12.3053 14.0508L11.6221 9.88167L14.514 6.92913C14.5928 6.84835 14.6447 6.74285 14.6604 6.62745C14.703 6.33896 14.5109 6.07189 14.2354 6.02903Z"
+                          fill="#FFAE10"
+                        />
+                      </svg>
+                      4.3 (168)
+                    </div>
+                    <p class="mt-2 mb-3 custom-ellipsis">
+                      I am an open book. Ask me anything music or mixing and
+                      I'll give you direct feedback that you can easily
+                      understand and act upon. I live in the real world, I'm
+                    </p>
+                    <a class="text-[#0ECAD5] flex items-center gap-1" href="#"
+                      >View service
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M5.94043 13.2807L10.2871 8.93404C10.8004 8.4207 10.8004 7.5807 10.2871 7.06737L5.94043 2.7207"
+                          stroke="#0ECAD5"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg
+                    ></a>
+                  </div>
+                </div>
+                <div
+                  class="overflow-hidden group transition-transform duration-500 flex gap-6"
+                >
+                  <div class="transition-all duration-500 cursor-pointer">
+                    <img
+                      src="./assets/images/Rectangle 243.png"
+                      alt=""
+                      class="transition-all duration-300 w-full max-w-[160px] h-full scale-100 group-hover:scale-110"
+                    />
+                  </div>
+                  <div class="text-[#52616B] w-[60%]">
+                    <h6 class="font-16 font-semibold">
+                      Producer | Mixing | Mastering
+                    </h6>
+                    <p class="my-1">by ALOU Productions</p>
+                    <div class="flex items-center gap-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M14.2354 6.02903L10.2383 5.42072L8.45152 1.62743C8.40272 1.52357 8.32243 1.4395 8.22325 1.38839C7.97452 1.25981 7.67226 1.36696 7.54789 1.62743L5.76109 5.42072L1.76402 6.02903C1.65382 6.04552 1.55307 6.09992 1.47593 6.18234C1.38267 6.28272 1.33128 6.41776 1.33305 6.55779C1.33482 6.69782 1.38961 6.83138 1.48537 6.92913L4.37731 9.88167L3.69407 14.0508C3.67805 14.1478 3.6883 14.2476 3.72366 14.3387C3.75902 14.4299 3.81807 14.5089 3.89411 14.5668C3.97016 14.6246 4.06017 14.659 4.15392 14.666C4.24767 14.673 4.34142 14.6523 4.42454 14.6064L7.99971 12.638L11.5749 14.6064C11.6725 14.6608 11.7858 14.6789 11.8945 14.6591C12.1684 14.6097 12.3526 14.3377 12.3053 14.0508L11.6221 9.88167L14.514 6.92913C14.5928 6.84835 14.6447 6.74285 14.6604 6.62745C14.703 6.33896 14.5109 6.07189 14.2354 6.02903Z"
+                          fill="#FFAE10"
+                        />
+                      </svg>
+                      4.3 (168)
+                    </div>
+                    <p class="mt-2 mb-3 custom-ellipsis">
+                      I am an open book. Ask me anything music or mixing and
+                      I'll give you direct feedback that you can easily
+                      understand and act upon. I live in the real world, I'm
+                    </p>
+                    <a class="text-[#0ECAD5] flex items-center gap-1" href="#"
+                      >View service
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M5.94043 13.2807L10.2871 8.93404C10.8004 8.4207 10.8004 7.5807 10.2871 7.06737L5.94043 2.7207"
+                          stroke="#0ECAD5"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg
+                    ></a>
+                  </div>
+                </div>
+                <div
+                  class="overflow-hidden group transition-transform duration-500 flex gap-6"
+                >
+                  <div class="transition-all duration-500 cursor-pointer">
+                    <img
+                      src="./assets/images/Rectangle 243.png"
+                      alt=""
+                      class="transition-all duration-300 w-full max-w-[160px] h-full scale-100 group-hover:scale-110"
+                    />
+                  </div>
+                  <div class="text-[#52616B] w-[60%]">
+                    <h6 class="font-16 font-semibold">
+                      Producer | Mixing | Mastering
+                    </h6>
+                    <p class="my-1">by ALOU Productions</p>
+                    <div class="flex items-center gap-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M14.2354 6.02903L10.2383 5.42072L8.45152 1.62743C8.40272 1.52357 8.32243 1.4395 8.22325 1.38839C7.97452 1.25981 7.67226 1.36696 7.54789 1.62743L5.76109 5.42072L1.76402 6.02903C1.65382 6.04552 1.55307 6.09992 1.47593 6.18234C1.38267 6.28272 1.33128 6.41776 1.33305 6.55779C1.33482 6.69782 1.38961 6.83138 1.48537 6.92913L4.37731 9.88167L3.69407 14.0508C3.67805 14.1478 3.6883 14.2476 3.72366 14.3387C3.75902 14.4299 3.81807 14.5089 3.89411 14.5668C3.97016 14.6246 4.06017 14.659 4.15392 14.666C4.24767 14.673 4.34142 14.6523 4.42454 14.6064L7.99971 12.638L11.5749 14.6064C11.6725 14.6608 11.7858 14.6789 11.8945 14.6591C12.1684 14.6097 12.3526 14.3377 12.3053 14.0508L11.6221 9.88167L14.514 6.92913C14.5928 6.84835 14.6447 6.74285 14.6604 6.62745C14.703 6.33896 14.5109 6.07189 14.2354 6.02903Z"
+                          fill="#FFAE10"
+                        />
+                      </svg>
+                      4.3 (168)
+                    </div>
+                    <p class="mt-2 mb-3 custom-ellipsis">
+                      I am an open book. Ask me anything music or mixing and
+                      I'll give you direct feedback that you can easily
+                      understand and act upon. I live in the real world, I'm
+                    </p>
+                    <a class="text-[#0ECAD5] flex items-center gap-1" href="#"
+                      >View service
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M5.94043 13.2807L10.2871 8.93404C10.8004 8.4207 10.8004 7.5807 10.2871 7.06737L5.94043 2.7207"
+                          stroke="#0ECAD5"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg
+                    ></a>
+                  </div>
+                </div>
+                <div
+                  class="overflow-hidden group transition-transform duration-500 flex gap-6"
+                >
+                  <div class="transition-all duration-500 cursor-pointer">
+                    <img
+                      src="./assets/images/Rectangle 243.png"
+                      alt=""
+                      class="transition-all duration-300 w-full max-w-[160px] h-full scale-100 group-hover:scale-110"
+                    />
+                  </div>
+                  <div class="text-[#52616B] w-[60%]">
+                    <h6 class="font-16 font-semibold">
+                      Producer | Mixing | Mastering
+                    </h6>
+                    <p class="my-1">by ALOU Productions</p>
+                    <div class="flex items-center gap-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M14.2354 6.02903L10.2383 5.42072L8.45152 1.62743C8.40272 1.52357 8.32243 1.4395 8.22325 1.38839C7.97452 1.25981 7.67226 1.36696 7.54789 1.62743L5.76109 5.42072L1.76402 6.02903C1.65382 6.04552 1.55307 6.09992 1.47593 6.18234C1.38267 6.28272 1.33128 6.41776 1.33305 6.55779C1.33482 6.69782 1.38961 6.83138 1.48537 6.92913L4.37731 9.88167L3.69407 14.0508C3.67805 14.1478 3.6883 14.2476 3.72366 14.3387C3.75902 14.4299 3.81807 14.5089 3.89411 14.5668C3.97016 14.6246 4.06017 14.659 4.15392 14.666C4.24767 14.673 4.34142 14.6523 4.42454 14.6064L7.99971 12.638L11.5749 14.6064C11.6725 14.6608 11.7858 14.6789 11.8945 14.6591C12.1684 14.6097 12.3526 14.3377 12.3053 14.0508L11.6221 9.88167L14.514 6.92913C14.5928 6.84835 14.6447 6.74285 14.6604 6.62745C14.703 6.33896 14.5109 6.07189 14.2354 6.02903Z"
+                          fill="#FFAE10"
+                        />
+                      </svg>
+                      4.3 (168)
+                    </div>
+                    <p class="mt-2 mb-3 custom-ellipsis">
+                      I am an open book. Ask me anything music or mixing and
+                      I'll give you direct feedback that you can easily
+                      understand and act upon. I live in the real world, I'm
+                    </p>
+                    <a class="text-[#0ECAD5] flex items-center gap-1" href="#"
+                      >View service
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M5.94043 13.2807L10.2871 8.93404C10.8004 8.4207 10.8004 7.5807 10.2871 7.06737L5.94043 2.7207"
+                          stroke="#0ECAD5"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg
+                    ></a>
+                  </div>
+                </div>
+                <div
+                  class="overflow-hidden group transition-transform duration-500 flex gap-6"
+                >
+                  <div class="transition-all duration-500 cursor-pointer">
+                    <img
+                      src="./assets/images/Rectangle 243.png"
+                      alt=""
+                      class="transition-all duration-300 w-full max-w-[160px] h-full scale-100 group-hover:scale-110"
+                    />
+                  </div>
+                  <div class="text-[#52616B] w-[60%]">
+                    <h6 class="font-16 font-semibold">
+                      Producer | Mixing | Mastering
+                    </h6>
+                    <p class="my-1">by ALOU Productions</p>
+                    <div class="flex items-center gap-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M14.2354 6.02903L10.2383 5.42072L8.45152 1.62743C8.40272 1.52357 8.32243 1.4395 8.22325 1.38839C7.97452 1.25981 7.67226 1.36696 7.54789 1.62743L5.76109 5.42072L1.76402 6.02903C1.65382 6.04552 1.55307 6.09992 1.47593 6.18234C1.38267 6.28272 1.33128 6.41776 1.33305 6.55779C1.33482 6.69782 1.38961 6.83138 1.48537 6.92913L4.37731 9.88167L3.69407 14.0508C3.67805 14.1478 3.6883 14.2476 3.72366 14.3387C3.75902 14.4299 3.81807 14.5089 3.89411 14.5668C3.97016 14.6246 4.06017 14.659 4.15392 14.666C4.24767 14.673 4.34142 14.6523 4.42454 14.6064L7.99971 12.638L11.5749 14.6064C11.6725 14.6608 11.7858 14.6789 11.8945 14.6591C12.1684 14.6097 12.3526 14.3377 12.3053 14.0508L11.6221 9.88167L14.514 6.92913C14.5928 6.84835 14.6447 6.74285 14.6604 6.62745C14.703 6.33896 14.5109 6.07189 14.2354 6.02903Z"
+                          fill="#FFAE10"
+                        />
+                      </svg>
+                      4.3 (168)
+                    </div>
+                    <p class="mt-2 mb-3 custom-ellipsis">
+                      I am an open book. Ask me anything music or mixing and
+                      I'll give you direct feedback that you can easily
+                      understand and act upon. I live in the real world, I'm
+                    </p>
+                    <a class="text-[#0ECAD5] flex items-center gap-1" href="#"
+                      >View service
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M5.94043 13.2807L10.2871 8.93404C10.8004 8.4207 10.8004 7.5807 10.2871 7.06737L5.94043 2.7207"
+                          stroke="#0ECAD5"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg
+                    ></a>
+                  </div>
+                </div>
+                <div
+                  class="overflow-hidden group transition-transform duration-500 flex gap-6"
+                >
+                  <div class="transition-all duration-500 cursor-pointer">
+                    <img
+                      src="./assets/images/Rectangle 243.png"
+                      alt=""
+                      class="transition-all duration-300 w-full max-w-[160px] h-full scale-100 group-hover:scale-110"
+                    />
+                  </div>
+                  <div class="text-[#52616B] w-[60%]">
+                    <h6 class="font-16 font-semibold">
+                      Producer | Mixing | Mastering
+                    </h6>
+                    <p class="my-1">by ALOU Productions</p>
+                    <div class="flex items-center gap-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M14.2354 6.02903L10.2383 5.42072L8.45152 1.62743C8.40272 1.52357 8.32243 1.4395 8.22325 1.38839C7.97452 1.25981 7.67226 1.36696 7.54789 1.62743L5.76109 5.42072L1.76402 6.02903C1.65382 6.04552 1.55307 6.09992 1.47593 6.18234C1.38267 6.28272 1.33128 6.41776 1.33305 6.55779C1.33482 6.69782 1.38961 6.83138 1.48537 6.92913L4.37731 9.88167L3.69407 14.0508C3.67805 14.1478 3.6883 14.2476 3.72366 14.3387C3.75902 14.4299 3.81807 14.5089 3.89411 14.5668C3.97016 14.6246 4.06017 14.659 4.15392 14.666C4.24767 14.673 4.34142 14.6523 4.42454 14.6064L7.99971 12.638L11.5749 14.6064C11.6725 14.6608 11.7858 14.6789 11.8945 14.6591C12.1684 14.6097 12.3526 14.3377 12.3053 14.0508L11.6221 9.88167L14.514 6.92913C14.5928 6.84835 14.6447 6.74285 14.6604 6.62745C14.703 6.33896 14.5109 6.07189 14.2354 6.02903Z"
+                          fill="#FFAE10"
+                        />
+                      </svg>
+                      4.3 (168)
+                    </div>
+                    <p class="mt-2 mb-3 custom-ellipsis">
+                      I am an open book. Ask me anything music or mixing and
+                      I'll give you direct feedback that you can easily
+                      understand and act upon. I live in the real world, I'm
+                    </p>
+                    <a class="text-[#0ECAD5] flex items-center gap-1" href="#"
+                      >View service
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M5.94043 13.2807L10.2871 8.93404C10.8004 8.4207 10.8004 7.5807 10.2871 7.06737L5.94043 2.7207"
+                          stroke="#0ECAD5"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="./js/maketplace.js"></script>
+</html>

@@ -463,3 +463,16 @@ img {
 .chat-container {
   display: none;
 }
+
+.active {
+  background-color: #0ecad5;
+  color: #fff;
+}
+
+.custom-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Số dòng bạn muốn hiển thị */
+  -webkit-box-orient: vertical;
+}
