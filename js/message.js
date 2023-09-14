@@ -8,6 +8,14 @@ $(document).ready(function () {
     //tắt modal
     $("#modal").hide();
   });
+  $(".create-chat").click(function () {
+    // Hiển thị modal
+    $(".modal-create").show();
+  });
+  $(".close-create-chat").click(function () {
+    //tắt modal
+    $(".modal-create").hide();
+  });
 
   // Khi nội dung của container đã tải xong
   $(".overflow-y-auto").on("scroll", function () {
@@ -97,14 +105,14 @@ $(document).ready(function () {
           </div>
         </div>
         <div class="w-full flex items-end flex-col gap-1 my-1">
-          <div class="flex w-[560px] bg-[#ffffff] gap-4 p-4 rounded-xl">
+          <div class="flex w-full max-w-[560px] bg-[#ffffff] gap-4 p-4 rounded-xl ">
             <img
               class="w-[220px] h"
               src="./assets/images/Rectangle 90.png"
               alt=""
             />
-            <div>
-              <div class="w-[290px] flex items-center justify-between">
+            <div class="w-full">
+              <div class="max-w-[350px] flex items-center justify-between">
                 <h6 class="text-base lg:text-xl font-semibold">
                   Chill with me
                 </h6>

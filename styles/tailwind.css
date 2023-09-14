@@ -480,3 +480,7 @@ img {
 .ts-h {
   transition: height 0.3s ease-in-out;
 }
+
+.box-shadow {
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.08);
+}
