@@ -63,7 +63,7 @@
 }
 
 .scrollbar-custom {
-  @apply md:scrollbar:!w-1.5 md:scrollbar:bg-transparent md:scrollbar-track:!rounded md:scrollbar-track:!bg-white md:scrollbar-thumb:!rounded md:scrollbar-thumb:!bg-grey-300;
+  @apply scrollbar:!w-1.5 scrollbar:bg-transparent scrollbar-track:!rounded scrollbar-track:!bg-white scrollbar-thumb:!rounded scrollbar-thumb:!bg-grey-300;
 }
 
 .hot-tab-vid.active {

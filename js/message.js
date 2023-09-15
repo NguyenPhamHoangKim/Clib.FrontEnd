@@ -17,6 +17,44 @@ $(document).ready(function () {
     $(".modal-create").hide();
   });
 
+  $(".playlist").click(function () {
+    // Hiển thị modal
+    $(".modal-playlist").show();
+  });
+  $(".close-modal-playlist").click(function () {
+    //tắt modal
+    $(".modal-playlist").hide();
+  });
+
+  $(".new-message").click(function () {
+    // Hiển thị modal
+    $(".list-people").show();
+  });
+  $(".close-modal-playlist").click(function () {
+    //tắt modal
+    $(".modal-playlist").hide();
+  });
+
+  $(".more").click(function () {
+    // Hiển thị modal
+    $(".modal-more").show();
+  });
+  $(".x").click(function () {
+    //tắt modal
+    $(".modal-more").hide();
+  });
+
+  $(".people").each(function () {
+    $(this).click(function () {
+      // Đảm bảo bạn có phần tử ".chat" và ".list-people" tương ứng
+      $(".chat").show();
+      $(".list-people").hide();
+      $(".modal-content").hide();
+
+      // Hiển thị ".chat" và ẩn ".list-people" tương ứng
+    });
+  });
+
   // Khi nội dung của container đã tải xong
   $(".overflow-y-auto").on("scroll", function () {
     // Kiểm tra nếu chiều cao thực tế của container lớn hơn chiều cao tối đa
