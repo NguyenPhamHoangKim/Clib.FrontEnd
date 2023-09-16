@@ -481,6 +481,13 @@ img {
   -webkit-line-clamp: 2; /* Số dòng bạn muốn hiển thị */
   -webkit-box-orient: vertical;
 }
+.custom-ellipsis-5 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* Số dòng bạn muốn hiển thị */
+  -webkit-box-orient: vertical;
+}
 
 .ts-h {
   transition: height 0.3s ease-in-out;
@@ -494,3 +501,5 @@ img {
   color: #48cfc1;
   border-bottom: 2px solid #48cdc1;
 }
+
+/* Style for Prev and Next buttons */

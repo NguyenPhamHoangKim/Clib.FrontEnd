@@ -12,21 +12,22 @@
   </head>
   <body>
     <main class="container my-24 relative">
-      <div class="overlay modal-checkout ">
-        <div class="w-full lg:w-[640px] abs-center rounded-xl bg-[#fff] p-6 relative">
-            <img src="./assets/svgs/close.svg" alt="" class="close-checkout absolute right-6 top-6">
-              <div class="flex items-center flex-col justify-center">
-                  <h5 class="text-20 lg:text-24 font-semibold ">Check out</h5>
-                  <p class="text-14 text-[#52616B] mt-1 mb-4">Payment with wallet</p>
-                  <img src="./assets/images/songs/1.jpg" alt="" class="w-[160px] h-[160px] rounded-xl">
-                  <p class="text-18 lg:text-20 font-semibold text-[#2C2F33] mt-4">Co Chac Yeu La Day</p>
-                  <p>Sell by <span class="text-14 lg:text-16 font-semibold  mt-4 text-[#52616B]">Son Tung M-TP</span></p>
-                  <p class="text-20 lg:text-24 font-semibold my-6">$50</p>
-                  <button class="px-6 py-3 text-[#fff] bg-[#1975ff] rounded-xl mb-6 transition-opacity duration-300 lg:hover:opacity-70">Confirm</button>
-                  <div class="flex  items-center gap-4 text-[#52616B]"><input type="checkbox">I confirm that tby checking this box, you confirm having read and agree to the terms and conditions.</div>
-              </div>
-          </div>
-      </div>
+        <!-- modal -->
+        <div class="overlay modal-checkout ">
+          <div class="w-full lg:w-[640px] abs-center rounded-xl bg-[#fff] p-6 relative">
+              <img src="./assets/svgs/close.svg" alt="" class="close-checkout absolute right-6 top-6">
+                <div class="flex items-center flex-col justify-center">
+                    <h5 class="text-20 lg:text-24 font-semibold ">Check out</h5>
+                    <p class="text-14 text-[#52616B] mt-1 mb-4">Payment with wallet</p>
+                    <img src="./assets/images/songs/1.jpg" alt="" class="w-[160px] h-[160px] rounded-xl">
+                    <p class="text-18 lg:text-20 font-semibold text-[#2C2F33] mt-4">Co Chac Yeu La Day</p>
+                    <p>Sell by <span class="text-14 lg:text-16 font-semibold  mt-4 text-[#52616B]">Son Tung M-TP</span></p>
+                    <p class="text-20 lg:text-24 font-semibold my-6">$50</p>
+                    <button class="px-6 py-3 text-[#fff] bg-[#1975ff] rounded-xl mb-6">Confirm</button>
+                    <div class="flex  items-center gap-4 text-[#52616B]"><input type="checkbox">I confirm that tby checking this box, you confirm having read and agree to the terms and conditions.</div>
+                </div>
+            </div>
+        </div>
       <div class="fixed bottom-0 px-4 left-0 right-0 flex items-center justify-center  gap-6 z-50 bg-[#fff] box-shadow rounded-tl-3xl rounded-tr-3xl lg:hidden">
         <div class="flex flex-col gap-1  py-2">
           <p class="text-14 md:text-16 text-[#52616B] ">Price</p>
@@ -34,7 +35,7 @@
         </div>
         
         <div class=" w-[90%] h-12 bg-[#0ecad5] flex items-center rounded-xl  text-[#fff] justify-between">
-          <button class="w-full btn-checkout transition-opacity duration-300 lg:hover:opacity-70">Check out</button>
+          <button class="btn-checkout w-full transition-opacity duration-300 lg:hover:opacity-70">Check out</button>
         </div>
       
       </div>
@@ -46,7 +47,7 @@
           <img src="./assets/images/Rectangle 244.png" alt="" />
 
           <button
-            class="text-14 transition-opacity duration-300 lg:hover:opacity-70 md:text-16 font-semibold flex items-center justify-center gap-2 text-center py-3 lg:py-2 bg-[#ebeef0] rounded-xl h-12"
+            class="text-14 md:text-16 font-semibold flex items-center transition-opacity duration-300 lg:hover:opacity-70  justify-center gap-2 text-center py-3 lg:py-2 bg-[#ebeef0] rounded-xl h-12"
           >
             <img src="./assets/svgs/video-play.svg" alt="" />
             Play demo
@@ -68,7 +69,7 @@
                 <img
                   src="./assets/images/Rectangle 244.png"
                   alt=""
-                  class="w-12 h-12"
+                  class="w-12 h-12 rounded-xl"
                 />
                 <div>
                   <p class="text-16 font-semibold">Son Tung M-TP</p>
@@ -133,16 +134,16 @@
               </div>
             </div>
             <div class="hidden flex-col gap-4 text-14 lg:flex lg:text-16 font-semibold">
-              <h4 class="text-14 lg:text-16 font-semibold">Check out</h4>
+              <h4 class="text-14 lg:text-16 font-semibold ">Check out</h4>
               <button
-                class="flex items-center transition-opacity duration-300 lg:hover:opacity-70 gap-1 py-3 rounded-xl w-full bg-[#0ecad5] text-[#fff] justify-center"
+                class="flex items-center gap-1 py-3 rounded-xl transition-opacity duration-300 lg:hover:opacity-70 w-full bg-[#0ecad5] text-[#fff] justify-center"
               >
                 <img src="" alt="" /> Wallet balance
               </button>
               <button
-                class="flex btn-checkout transition-opacity duration-300 lg:hover:opacity-70 items-center gap-1 py-3 rounded-xl w-full bg-[#003087] text-[#fff] justify-center"
+                class="btn-checkout flex transition-opacity duration-300 lg:hover:opacity-70 items-center gap-1 py-3 rounded-xl w-full bg-[#003087] text-[#fff] justify-center"
               >
-                <img src="" alt="" class="btn-checkout" /> Paypal
+                <img src="" alt="" /> Paypal
               </button>
             </div>
           
@@ -161,7 +162,7 @@
                   <div class="flex flex-col gap-3 text-[#52616B] relative">
                     <img
                       src="./assets//images/songs/1.jpg"
-                      class="h-[180px] lg:h-[220px]"
+                      class="h-[150px] lg:h-[180px]"
                       alt=""
                     />
                     <div>
@@ -188,13 +189,13 @@
                         class="absolute bottom-[-5px] left-10"
                       />
                     </div>
+                    </div>
                   </div>
-                </div>
                 <div class="swiper-slide">
                   <div class="flex flex-col gap-3 text-[#52616B] relative">
                     <img
                       src="./assets//images/songs/1.jpg"
-                      class="h-[180px] lg:h-[220px]"
+                      class="h-[150px] lg:h-[180px]"
                       alt=""
                     />
                     <div>
@@ -221,13 +222,13 @@
                         class="absolute bottom-[-5px] left-10"
                       />
                     </div>
+                    </div>
                   </div>
-                </div>
                 <div class="swiper-slide">
                   <div class="flex flex-col gap-3 text-[#52616B] relative">
                     <img
                       src="./assets//images/songs/1.jpg"
-                      class="h-[180px] lg:h-[220px]"
+                      class="h-[150px] lg:h-[180px]"
                       alt=""
                     />
                     <div>
@@ -254,13 +255,13 @@
                         class="absolute bottom-[-5px] left-10"
                       />
                     </div>
+                    </div>
                   </div>
-                </div>
                 <div class="swiper-slide">
                   <div class="flex flex-col gap-3 text-[#52616B] relative">
                     <img
                       src="./assets//images/songs/1.jpg"
-                      class="h-[180px] lg:h-[220px]"
+                      class="h-[150px] lg:h-[180px]"
                       alt=""
                     />
                     <div>
@@ -287,13 +288,13 @@
                         class="absolute bottom-[-5px] left-10"
                       />
                     </div>
+                    </div>
                   </div>
-                </div>
                 <div class="swiper-slide">
                   <div class="flex flex-col gap-3 text-[#52616B] relative">
                     <img
                       src="./assets//images/songs/1.jpg"
-                      class="h-[180px] lg:h-[220px]"
+                      class="h-[150px] lg:h-[180px]"
                       alt=""
                     />
                     <div>
@@ -320,13 +321,13 @@
                         class="absolute bottom-[-5px] left-10"
                       />
                     </div>
+                    </div>
                   </div>
-                </div>
                 <div class="swiper-slide">
                   <div class="flex flex-col gap-3 text-[#52616B] relative">
                     <img
                       src="./assets//images/songs/1.jpg"
-                      class="h-[180px] lg:h-[220px]"
+                      class="h-[150px] lg:h-[180px]"
                       alt=""
                     />
                     <div>
@@ -353,41 +354,13 @@
                         class="absolute bottom-[-5px] left-10"
                       />
                     </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="flex flex-col gap-3 text-[#52616B] relative">
-                    <img
-                      src="./assets//images/songs/1.jpg"
-                      class="h-[180px] lg:h-[220px]"
-                      alt=""
-                    />
-                    <div>
-                      <h6
-                        class="text-14 font-semibold lg:text-18 truncate overflow-ellipsis text-[#2C2F33]"
-                      >
-                        Speak of the demon
-                      </h6>
-                      <div
-                        class="text-[#2C2F33] text-14 lg:text-18 font-semibold flex items-center justify-between"
-                      >
-                        <div class="flex items-center gap-[6px]">
-                          <img src="./assets/images/st.png" alt="" />
-                          <div class="text-14 font-normal">
-                            <p>Owner</p>
-                            <p>Mark Knopfler</p>
-                          </div>
-                        </div>
-                        $19
-                      </div>
-                      <img
-                        src="./assets/svgs/verify.svg"
-                        alt=""
-                        class="absolute bottom-[-5px] left-10"
-                      />
                     </div>
                   </div>
                 </div>
+                    </div>
+                  </div>
+                </div>
+                
             </div>
           </div>
         </div>

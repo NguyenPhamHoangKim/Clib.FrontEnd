@@ -1,4 +1,4 @@
-new Swiper(".swiper-styles", {
+new Swiper(".swiper-service", {
   slidesPerView: 1.2,
   spaceBetween: 16,
 
@@ -8,32 +8,24 @@ new Swiper(".swiper-styles", {
   },
   autoResize: false,
   breakpoints: {
-    480: {
-      slidesPerView: 3.5,
-    },
-    680: {
-      slidesPerView: 4.5,
-      spaceBetween: 14,
-    },
     1024: {
-      slidesPerView: 5.5,
+      slidesPerView: 2.5,
       spaceBetween: 16,
     },
   },
 });
+$(".modal-cmt").hide();
 
-$(".modal-checkout").hide();
-
-// $(".modal-checkout").hide();
 $(".close-checkout").each(function () {
   $(this).click(function () {
     // Ẩn nội dung âm nhạc
-    $(".modal-checkout").hide();
+    $(".modal-cmt").hide();
   });
 });
-$(".btn-checkout").each(function () {
+
+$(".cmt").each(function () {
   $(this).click(function () {
     // Ẩn nội dung âm nhạc
-    $(".modal-checkout").show();
+    $(".modal-cmt").show();
   });
 });
