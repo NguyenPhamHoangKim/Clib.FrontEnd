@@ -1034,8 +1034,16 @@ body{
   z-index: 1;
 }
 
+.z-\[9999999\]{
+  z-index: 9999999;
+}
+
 .z-\[999\]{
   z-index: 999;
+}
+
+.z-\[100\]{
+  z-index: 100;
 }
 
 .float-right{
@@ -1100,6 +1108,11 @@ body{
   margin-bottom: 0.25rem;
 }
 
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .-mb-0{
   margin-bottom: -0px;
 }
@@ -1122,6 +1135,10 @@ body{
 
 .mb-20{
   margin-bottom: 5rem;
+}
+
+.mb-24{
+  margin-bottom: 6rem;
 }
 
 .mb-3{
@@ -1428,6 +1445,10 @@ body{
   height: 2rem;
 }
 
+.h-\[100px\]{
+  height: 100px;
+}
+
 .h-\[104px\]{
   height: 104px;
 }
@@ -1438,6 +1459,14 @@ body{
 
 .h-\[123px\]{
   height: 123px;
+}
+
+.h-\[165px\]{
+  height: 165px;
+}
+
+.h-\[180px\]{
+  height: 180px;
 }
 
 .h-\[1px\]{
@@ -1500,6 +1529,10 @@ body{
   height: 760px;
 }
 
+.h-\[99px\]{
+  height: 99px;
+}
+
 .h-fit{
   height: -moz-fit-content;
   height: fit-content;
@@ -1511,14 +1544,6 @@ body{
 
 .h-screen{
   height: 100vh;
-}
-
-.h-\[500px\]{
-  height: 500px;
-}
-
-.h-\[300px\]{
-  height: 300px;
 }
 
 .max-h-12{
@@ -1669,6 +1694,10 @@ body{
   width: 1000px;
 }
 
+.w-\[100\]{
+  width: 100;
+}
+
 .w-\[114px\]{
   width: 114px;
 }
@@ -1792,6 +1821,10 @@ body{
 
 .max-w-\[367px\]{
   max-width: 367px;
+}
+
+.max-w-\[380px\]{
+  max-width: 380px;
 }
 
 .max-w-\[440px\]{
@@ -2224,6 +2257,10 @@ body{
   grid-auto-flow: column dense;
 }
 
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -2558,6 +2595,10 @@ body{
 
 .gap-y-4{
   row-gap: 1rem;
+}
+
+.gap-y-5{
+  row-gap: 1.25rem;
 }
 
 .gap-y-6{
@@ -3654,6 +3695,14 @@ body{
   line-height: 28px;
 }
 
+.text-\[10px\]{
+  font-size: 10px;
+}
+
+.text-\[14px\]{
+  font-size: 14px;
+}
+
 .text-\[28px\]{
   font-size: 28px;
 }
@@ -3763,6 +3812,11 @@ body{
 .text-\[\#0ECAD5\]{
   --tw-text-opacity: 1;
   color: rgb(14 202 213 / var(--tw-text-opacity));
+}
+
+.text-\[\#1975ff\]{
+  --tw-text-opacity: 1;
+  color: rgb(25 117 255 / var(--tw-text-opacity));
 }
 
 .text-\[\#222222\]{
@@ -5170,6 +5224,11 @@ img{
   color: #fff;
 }
 
+.active-hero {
+  background-color: #1975ff;
+  color: #fff;
+}
+
 .custom-ellipsis {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -5185,6 +5244,11 @@ img{
 
 .box-shadow {
   box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.08);
+}
+
+.active-mobile {
+  color: #48cfc1;
+  border-bottom: 2px solid #48cdc1;
 }
 
 @media (min-width: 640px){
