@@ -1010,6 +1010,10 @@ body{
   top: 1.5rem;
 }
 
+.top-7{
+  top: 1.75rem;
+}
+
 .top-\[-20px\]{
   top: -20px;
 }
@@ -1135,6 +1139,11 @@ body{
 .my-6{
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .-mb-0{
@@ -1642,10 +1651,6 @@ body{
   max-height: 812px;
 }
 
-.max-h-\[90\%\]{
-  max-height: 90%;
-}
-
 .max-h-full{
   max-height: 100%;
 }
@@ -1847,6 +1852,10 @@ body{
   width: 100%;
 }
 
+.w-\[240px\]{
+  width: 240px;
+}
+
 .max-w-\[1170px\]{
   max-width: 1170px;
 }
@@ -1913,6 +1922,10 @@ body{
 
 .max-w-full{
   max-width: 100%;
+}
+
+.max-w-none{
+  max-width: none;
 }
 
 .flex-1{
@@ -3551,6 +3564,10 @@ body{
   padding: 1.5rem;
 }
 
+.p-\[10px\]{
+  padding: 10px;
+}
+
 .px-1{
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -3659,6 +3676,11 @@ body{
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-9{
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
 }
 
 .pb-2{
@@ -3912,6 +3934,11 @@ body{
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.text-\[\#02BA4B\]{
+  --tw-text-opacity: 1;
+  color: rgb(2 186 75 / var(--tw-text-opacity));
+}
+
 .text-\[\#0ECAD5\]{
   --tw-text-opacity: 1;
   color: rgb(14 202 213 / var(--tw-text-opacity));
@@ -3954,6 +3981,11 @@ body{
 .text-\[\#A1ABB2\]{
   --tw-text-opacity: 1;
   color: rgb(161 171 178 / var(--tw-text-opacity));
+}
+
+.text-\[\#EBEEF0\]{
+  --tw-text-opacity: 1;
+  color: rgb(235 238 240 / var(--tw-text-opacity));
 }
 
 .text-\[\#EF5350\]{
@@ -4070,6 +4102,10 @@ body{
 .subpixel-antialiased{
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
+}
+
+.opacity-0{
+  opacity: 0;
 }
 
 .bg-blend-normal{
@@ -4384,6 +4420,10 @@ body{
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.delay-100{
+  transition-delay: 100ms;
 }
 
 .delay-300{
@@ -5543,6 +5583,10 @@ img{
   text-decoration-line: underline;
 }
 
+.hover\:opacity-70:hover{
+  opacity: 0.7;
+}
+
 .before\:hover\:text-center:hover::before{
   content: var(--tw-content);
   text-align: center;
@@ -5561,6 +5605,10 @@ img{
   text-align: center;
 }
 
+.group:hover .group-hover\:visible{
+  visibility: visible;
+}
+
 .group:hover .group-hover\:h-10{
   height: 2.5rem;
 }
@@ -5573,6 +5621,10 @@ img{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:opacity-100{
+  opacity: 1;
 }
 
 @media not all and (min-width: 1024px){
@@ -6121,6 +6173,10 @@ img{
 
   .lg\:text-\[32px\]{
     font-size: 32px;
+  }
+
+  .lg\:text-\[48px\]{
+    font-size: 48px;
   }
 
   .lg\:text-base{

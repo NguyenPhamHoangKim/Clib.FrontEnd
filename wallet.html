@@ -7,7 +7,389 @@
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
-    <main class="container"></main>
+    <main class="container relative">
+      <div class="modal-paypal overlay">
+        <div
+          class="abs-center bg-[#fff] w-[95%] lg:w-[40%] p-6 rounded-xl flex flex-col justify-center items-center"
+        >
+          <img
+            src="./assets/svgs/close.svg"
+            alt=""
+            class="absolute top-6 right-6 close-modal"
+          />
+          <h5 class="text-20 lg:text-24 font-semibold text-[#2C2F33] mb-2">
+            Top-up
+          </h5>
+          <p class="text-14 lg:text-base text-[#52616B]">
+            Select the amount you want to deposit in to your wallet
+          </p>
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 my-8 w-full">
+            <button
+              class="p-[10px] bg-[#ebeef0] text-[#2C2F33] text-14 lg:text-base font-semibold rounded-xl"
+            >
+              $100
+            </button>
+            <button
+              class="p-[10px] bg-[#ebeef0] text-[#2C2F33] text-14 lg:text-base font-semibold rounded-xl"
+            >
+              $100
+            </button>
+            <button
+              class="p-[10px] bg-[#ebeef0] text-[#2C2F33] text-14 lg:text-base font-semibold rounded-xl"
+            >
+              $100
+            </button>
+            <button
+              class="p-[10px] bg-[#ebeef0] text-[#2C2F33] text-14 lg:text-base font-semibold rounded-xl"
+            >
+              $100
+            </button>
+            <button
+              class="p-[10px] bg-[#ebeef0] text-[#2C2F33] text-14 lg:text-base font-semibold rounded-xl"
+            >
+              $100
+            </button>
+            <button
+              class="p-[10px] bg-[#ebeef0] text-[#2C2F33] text-14 lg:text-base font-semibold rounded-xl"
+            >
+              $100
+            </button>
+            <button
+              class="p-[10px] bg-[#ebeef0] text-[#2C2F33] text-14 lg:text-base font-semibold rounded-xl"
+            >
+              $100
+            </button>
+            <button
+              class="p-[10px] bg-[#ebeef0] text-[#2C2F33] text-14 lg:text-base font-semibold rounded-xl"
+            >
+              $100
+            </button>
+          </div>
+          <button
+            type="button"
+            class="px-6 py-3 w-full text-[#fff] justify-center bg-[#003087] rounded-xl flex items-center gap-2 text-center transition-opacity duration-300 hover:opacity-70"
+          >
+            <img src="./assets/svgs/image 167.png" alt="" />
+            Paypal to Clib wallet
+          </button>
+          <p class="text-14 lg:text-base text-[#52616B] mt-8">
+            By clicking check out you agree to the License Terms and User Terms.
+          </p>
+        </div>
+      </div>
+      <div class="modal-money overlay">
+        <div
+          class="abs-center bg-[#fff] p-6 rounded-xl flex flex-col justify-center items-center w-[95%] lg:w-[40%]"
+        >
+          <img
+            src="./assets/svgs/close.svg"
+            alt=""
+            class="absolute top-6 right-6 close-modal"
+          />
+          <h5 class="text-20 lg:text-24 font-semibold text-[#2C2F33] mb-2">
+            Top-up
+          </h5>
+          <p class="text-14 lg:text-base text-[#52616B]">
+            Select the amount you want to deposit in to your wallet
+          </p>
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 my-8 w-full">
+            <button
+              class="p-[10px] bg-[#ebeef0] text-[#2C2F33] text-14 lg:text-base font-semibold rounded-xl"
+            >
+              $100
+            </button>
+            <button
+              class="p-[10px] bg-[#ebeef0] text-[#2C2F33] text-14 lg:text-base font-semibold rounded-xl"
+            >
+              $100
+            </button>
+            <button
+              class="p-[10px] bg-[#ebeef0] text-[#2C2F33] text-14 lg:text-base font-semibold rounded-xl"
+            >
+              $100
+            </button>
+            <button
+              class="p-[10px] bg-[#ebeef0] text-[#2C2F33] text-14 lg:text-base font-semibold rounded-xl"
+            >
+              $100
+            </button>
+            <button
+              class="p-[10px] bg-[#ebeef0] text-[#2C2F33] text-14 lg:text-base font-semibold rounded-xl"
+            >
+              $100
+            </button>
+            <button
+              class="p-[10px] bg-[#ebeef0] text-[#2C2F33] text-14 lg:text-base font-semibold rounded-xl"
+            >
+              $100
+            </button>
+            <button
+              class="p-[10px] bg-[#ebeef0] text-[#2C2F33] text-14 lg:text-base font-semibold rounded-xl"
+            >
+              $100
+            </button>
+            <button
+              class="p-[10px] bg-[#ebeef0] text-[#2C2F33] text-14 lg:text-base font-semibold rounded-xl"
+            >
+              $100
+            </button>
+          </div>
+          <button
+            type="button"
+            class="px-6 py-3 w-full text-[#fff] justify-center bg-[#003087] rounded-xl flex items-center gap-2 text-center transition-opacity duration-300 hover:opacity-70"
+          >
+            <img src="./assets/svgs/image 167.png" alt="" />
+            Paypal to Clib wallet
+          </button>
+          <p
+            class="text-14 lg:text-base text-[#52616B] mt-8 truncate overflow-ellipsis"
+          >
+            By clicking check out you agree to the License Terms and User Terms.
+          </p>
+        </div>
+      </div>
+      <section class="my-8">
+        <div class="p-4 bg-[#fff] rounded-xl">
+          <div class="grid grid-1 lg:grid-cols-2 gap-4">
+            <div class="relative group">
+              <img
+                src="./assets/svgs/Rectangle 652.png"
+                alt=""
+                class="w-full h-full group-hover:visible"
+              />
+              <div
+                class="invisible opacity-0 transition-all duration-200 absolute bottom-0 delay-100 group-hover:visible group-hover:opacity-100 w-full"
+              >
+                <img
+                  src="./assets/svgs/Rectangle 660.png"
+                  alt=""
+                  class="w-full relative"
+                />
+                <div class="absolute left-5 top-7">
+                  <p
+                    class="text-[#EBEEF0] mb-2 text-14 lg:text-base font-semibold"
+                  >
+                    Clib balance
+                  </p>
+                  <p class="text-[#fff] font-semibold text-20 lg:text-[48px]">
+                    $200.00
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="py-9 px-6 border rounded-xl flex flex-col justify-center"
+            >
+              <p class="text-base lg:text-20 font-semibold">Transfer</p>
+              <button
+                type="button"
+                class="px-6 py-3 btn-paypal w-full text-[#fff] justify-center bg-[#003087] rounded-xl mt-6 mb-4 flex items-center gap-2 text-center transition-opacity duration-300 hover:opacity-70"
+              >
+                <img src="./assets/svgs/image 167.png" alt="" />
+                Paypal to Clib wallet
+              </button>
+              <button
+                type="button"
+                class="px-6 py-3 btn-monney w-full text-[#2C2F33] justify-center bg-[#ebeef0] rounded-xl flex text-center items-center gap-2 transition-opacity duration-300 hover:opacity-70"
+              >
+                <img src="./assets/svgs/money-recive.png " alt="" />
+                Withdraw money
+              </button>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl">
+            <div
+              class="text-[#2C2F33] text-base lg:text-20 font-semibold mb-3 mt-6"
+            >
+              History activity
+            </div>
+
+            <ul class="mt-2">
+              <li class="py-2 lg:px-4 flex items-center gap-6">
+                <div class="flex flex-[2] items-center">
+                  <div
+                    class="text-14 flex-1 flex items-center justify-between gap-2 lg:text-base text-grey-400"
+                  >
+                    <div class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
+                      <img
+                        class="w-10 lg:w-12 aspect-square rounded-lg"
+                        src="assets/images/artists/1.png"
+                        alt=""
+                      />
+                      <div>
+                        <div class="text-14 lg:text-base line-clamp-1">
+                          It's My Life
+                        </div>
+                        <div
+                          class="text-12 text-grey-400 lg:text-14 line-clamp-1"
+                        >
+                          The Marvelettes
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="text-14 flex-1 lg:text-base text-grey-400 line-clamp-1"
+                >
+                  Jul 5 2023, 19:00 PM
+                </div>
+
+                <div
+                  class="text-14 lg:text-20 text-[#02BA4B] w-14 font-semibold lg:w-20 text-right"
+                >
+                  + $70
+                </div>
+              </li>
+              <li class="py-2 lg:px-4 flex items-center gap-6">
+                <div class="flex flex-[2] items-center">
+                  <div
+                    class="text-14 flex-1 flex items-center justify-between gap-2 lg:text-base text-grey-400"
+                  >
+                    <div class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
+                      <img
+                        class="w-10 lg:w-12 aspect-square rounded-lg"
+                        src="assets/images/artists/1.png"
+                        alt=""
+                      />
+                      <div>
+                        <div class="text-14 lg:text-base line-clamp-1">
+                          It's My Life
+                        </div>
+                        <div
+                          class="text-12 text-grey-400 lg:text-14 line-clamp-1"
+                        >
+                          The Marvelettes
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="text-14 flex-1 lg:text-base text-grey-400 line-clamp-1"
+                >
+                  Jul 5 2023, 19:00 PM
+                </div>
+
+                <div
+                  class="text-14 lg:text-20 text-[#EF5350] w-14 font-semibold lg:w-20 text-right"
+                >
+                  - $70
+                </div>
+              </li>
+              <li class="py-2 lg:px-4 flex items-center gap-6">
+                <div class="flex flex-[2] items-center">
+                  <div
+                    class="text-14 flex-1 flex items-center justify-between gap-2 lg:text-base text-grey-400"
+                  >
+                    <div class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
+                      <img
+                        class="w-10 lg:w-12 aspect-square rounded-lg"
+                        src="assets/images/artists/1.png"
+                        alt=""
+                      />
+                      <div>
+                        <div class="text-14 lg:text-base line-clamp-1">
+                          It's My Life
+                        </div>
+                        <div
+                          class="text-12 text-grey-400 lg:text-14 line-clamp-1"
+                        >
+                          The Marvelettes
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="text-14 flex-1 lg:text-base text-grey-400 line-clamp-1"
+                >
+                  Jul 5 2023, 19:00 PM
+                </div>
+
+                <div
+                  class="text-14 lg:text-20 text-[#EF5350] w-14 font-semibold lg:w-20 text-right"
+                >
+                  - $70
+                </div>
+              </li>
+              <li class="py-2 lg:px-4 flex items-center gap-6">
+                <div class="flex flex-[2] items-center">
+                  <div
+                    class="text-14 flex-1 flex items-center justify-between gap-2 lg:text-base text-grey-400"
+                  >
+                    <div class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
+                      <img
+                        class="w-10 lg:w-12 aspect-square rounded-lg"
+                        src="assets/images/artists/1.png"
+                        alt=""
+                      />
+                      <div>
+                        <div class="text-14 lg:text-base line-clamp-1">
+                          It's My Life
+                        </div>
+                        <div
+                          class="text-12 text-grey-400 lg:text-14 line-clamp-1"
+                        >
+                          The Marvelettes
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="text-14 flex-1 lg:text-base text-grey-400 line-clamp-1"
+                >
+                  Jul 5 2023, 19:00 PM
+                </div>
+
+                <div
+                  class="text-14 lg:text-20 text-[#EF5350] w-14 font-semibold lg:w-20 text-right"
+                >
+                  - $70
+                </div>
+              </li>
+              <li class="py-2 lg:px-4 flex items-center gap-6">
+                <div class="flex flex-[2] items-center">
+                  <div
+                    class="text-14 flex-1 flex items-center justify-between gap-2 lg:text-base text-grey-400"
+                  >
+                    <div class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
+                      <img
+                        class="w-10 lg:w-12 aspect-square rounded-lg"
+                        src="assets/images/artists/1.png"
+                        alt=""
+                      />
+                      <div>
+                        <div class="text-14 lg:text-base line-clamp-1">
+                          It's My Life
+                        </div>
+                        <div
+                          class="text-12 text-grey-400 lg:text-14 line-clamp-1"
+                        >
+                          The Marvelettes
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="text-14 flex-1 lg:text-base text-grey-400 line-clamp-1"
+                >
+                  Jul 5 2023, 19:00 PM
+                </div>
+
+                <div
+                  class="text-14 lg:text-20 text-[#EF5350] w-14 font-semibold lg:w-20 text-right"
+                >
+                  - $70
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
