@@ -502,4 +502,21 @@ img {
   border-bottom: 2px solid #48cdc1;
 }
 
-/* Style for Prev and Next buttons */
+.active-upload {
+  color: #fff;
+  background-color: #1975ff;
+}
+
+.custom-select select option {
+  padding: 0.5rem !important;
+  background-color: #f7f7f7 !important;
+  border: none !important;
+  outline: none !important;
+  cursor: pointer !important;
+}
+
+/* Style the selected option */
+.custom-select select option:checked {
+  background-color: #3498db !important;
+  color: white !important;
+}

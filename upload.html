@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clib - Login</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="my-12 relative">
+        <!-- music -->
+        <div class="modal-upload-music overlay">
+          <div
+            class="abs-center w-full lg:w-[78%] max-h-full scrollbar-custom overflow-y-auto lg:max-h-none bg-[#fff] rounded-xl p-6"
+          >
+            <div
+              class="w-full rounded-lg border py-2 px-4 hidden justify-between lg:flex items-center mb-6"
+            >
+              <div class="flex items-center gap-2">
+                <p class="text-14 lg:text-base font-semibold">file</p>
+                <p class="px-6 py-2 bg-[#f7f7f7] rounded-xl text-[#52616B]">
+                  demosong.mp3
+                </p>
+              </div>
+              <div class="px-6 py-2 bg-[#f7f7f7] rounded-xl text-[#52616B]">
+                Replace
+              </div>
+            </div>
+            <div class="flex flex-col lg:flex-row lg:items-center gap-8">
+              <div class="lg:w-[40%]">
+                <img
+                  src="./assets/svgs/Frame 48096929.png"
+                  alt=""
+                  class="w-full lg:h-full"
+                />
+              </div>
+              <form class="lg:w-[60%] flex flex-col gap-3 text-[#52616B]">
+                <div class="flex flex-col gap-2">
+                  <label class="text-14 lg:text-base font-semibold"
+                    >Title</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Title"
+                    class="w-full px-4 py-3 titile bg-[#f7f7f7] rounded-xl outline-none border-none"
+                  />
+                </div>
+                <div>
+                  <label class="text-14 lg:text-base font-semibold" for="Genre"
+                    >Genre</label
+                  >
+                  <select
+                    data-te-select-init
+                    class="w-full genre custom-select outline-none border-none px-4 py-3 bg-[#f7f7f7] rounded-xl mt-2"
+                  >
+                    <option
+                      class="outline-none border-none px-4 py-3 bg-[#f7f7f7] rounded-xl"
+                      value="1"
+                    >
+                      Pop
+                    </option>
+                    <option
+                      class="outline-none border-none px-4 py-3 bg-[#f7f7f7] rounded-xl"
+                      value="5"
+                    >
+                      Rock
+                    </option>
+                  </select>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label class="text-14 lg:text-base font-semibold"
+                    >Description</label
+                  >
+                  <textarea
+                    class="bg-[#f7f7f7] description rounded-xl min-h-[96px] h-[96px] outline-none border-none px-4 py-3"
+                    name="Description"
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="Description your song"
+                  ></textarea>
+                </div>
+                <div
+                  class="text-14 lg:text-base font-semibold flex items-center gap-3"
+                >
+                  Privacy
+                  <div class="flex items-center gap-1 font-normal lg:ml-12">
+                    <input type="radio" />Public
+                  </div>
+                  <div class="flex items-center gap-1 font-normal">
+                    <input type="radio" />Private
+                  </div>
+                </div>
+                <div
+                  class="text-14 lg:text-base font-semibold flex-col md:flex-row gap-3 items-center"
+                >
+                  Sell
+                  <div
+                    class="flex items-center font-normal lg:ml-20 gap-1 text-[#A1ABB2]"
+                  >
+                    <input type="radio" />No, It’s free
+                  </div>
+                  <div
+                    class="flex items-center font-normal gap-1 text-[#A1ABB2]"
+                  >
+                    <input type="radio" />Yes, It’s for sell
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 mt-9">
+                  <button
+                    type="button"
+                    class="px-6 close-modal py-3 rounded-xl text-center bg-[#ebeef0] font-semibold text-[#52616B] transition-opacity duration-300 lg:hover:opacity-70"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="button"
+                    class="px-6 uploadButton py-3 rounded-xl text-center bg-[#a1abb2] font-semibold text-[#fff] transition-opacity duration-300 lg:hover:opacity-70"
+                  >
+                    Upload
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- video -->
+        <div class="modal-upload-video overlay overflow-hidden">
+          <div
+            class="abs-center w-full lg:w-[78%] max-h-full scrollbar-custom overflow-y-auto lg:max-h-none bg-[#fff] rounded-xl p-6"
+          >
+            <div
+              class="w-full rounded-lg border py-2 px-4 hidden justify-between lg:flex items-center mb-6"
+            >
+              <div class="flex items-center gap-2">
+                <p class="text-14 lg:text-base font-semibold">file</p>
+                <p class="px-6 py-2 bg-[#f7f7f7] rounded-xl text-[#52616B]">
+                  demosong.mp3
+                </p>
+              </div>
+              <div class="px-6 py-2 bg-[#f7f7f7] rounded-xl text-[#52616B]">
+                Replace
+              </div>
+            </div>
+            <div class="flex flex-col lg:flex-row lg:items-center gap-8">
+              <div class="lg:w-[40%]">
+                <img
+                  src="./assets/svgs/Frame 48096929.png"
+                  alt=""
+                  class="w-full lg:h-[280px] object-cover rounded-xl"
+                />
+              </div>
+              <form class="lg:w-[60%] flex flex-col gap-3 text-[#52616B]">
+                <div class="flex flex-col gap-2">
+                  <label class="text-14 lg:text-base font-semibold"
+                    >Title</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Title"
+                    class="w-full px-4 py-3 titile bg-[#f7f7f7] rounded-xl outline-none border-none"
+                  />
+                </div>
+
+                <div class="flex flex-col gap-2">
+                  <label class="text-14 lg:text-base font-semibold"
+                    >Description</label
+                  >
+                  <textarea
+                    class="bg-[#f7f7f7] description rounded-xl min-h-[96px] h-[96px] outline-none border-none px-4 py-3"
+                    name="Description"
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="Description your song"
+                  ></textarea>
+                </div>
+                <div
+                  class="text-14 lg:text-base font-semibold flex items-center gap-3"
+                >
+                  Privacy
+                  <div class="flex items-center gap-1 font-normal ml-12">
+                    <input type="radio" />Public
+                  </div>
+                  <div class="flex items-center gap-1 font-normal">
+                    <input type="radio" />Private
+                  </div>
+                </div>
+                <div
+                  class="text-14 lg:text-base font-semibold flex gap-3 items-center"
+                >
+                  Sell
+                  <div
+                    class="flex items-center font-normal ml-20 gap-1 text-[#A1ABB2]"
+                  >
+                    <input type="radio" />No, It’s free
+                  </div>
+                  <div
+                    class="flex items-center font-normal gap-1 text-[#A1ABB2]"
+                  >
+                    <input type="radio" />Yes, It’s for sell
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 mt-9">
+                  <button
+                    type="button"
+                    class="px-6 close-modal py-3 rounded-xl text-center bg-[#ebeef0] font-semibold text-[#52616B] transition-opacity duration-300 lg:hover:opacity-70"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="button"
+                    class="px-6 uploadButton py-3 rounded-xl text-center bg-[#a1abb2] font-semibold text-[#fff] transition-opacity duration-300 lg:hover:opacity-70"
+                  >
+                    Upload
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- your shop -->
+        <div class="modal-upload-yourshop overlay">
+          <div
+            class="abs-center w-full lg:w-[78%] max-h-full scrollbar-custom overflow-y-auto lg:max-h-none bg-[#fff] rounded-xl p-6"
+          >
+            <div
+              class="w-full rounded-lg border py-2 px-4 hidden justify-between lg:flex items-center mb-6"
+            >
+              <div class="flex items-center gap-2">
+                <p class="text-14 lg:text-base font-semibold">file</p>
+                <p class="px-6 py-2 bg-[#f7f7f7] rounded-xl text-[#52616B]">
+                  demosong.mp3
+                </p>
+              </div>
+              <div class="px-6 py-2 bg-[#f7f7f7] rounded-xl text-[#52616B]">
+                Replace
+              </div>
+            </div>
+            <div class="flex flex-col lg:flex-row lg:items-center gap-8">
+              <div class="lg:w-[40%]">
+                <img
+                  src="./assets/svgs/Frame 48096929.png"
+                  alt=""
+                  class="w-full lg:h-full"
+                />
+              </div>
+              <form class="lg:w-[60%] flex flex-col gap-3 text-[#52616B]">
+                <div class="flex flex-col gap-2">
+                  <label class="text-14 lg:text-base font-semibold"
+                    >Title</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Title"
+                    class="w-full px-4 py-3 titile bg-[#f7f7f7] rounded-xl outline-none border-none"
+                  />
+                </div>
+
+                <div class="flex flex-col gap-2">
+                  <label class="text-14 lg:text-base font-semibold"
+                    >Description</label
+                  >
+                  <textarea
+                    class="bg-[#f7f7f7] description rounded-xl min-h-[96px] h-[96px] outline-none border-none px-4 py-3"
+                    name="Description"
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="Description your song"
+                  ></textarea>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label class="text-14 lg:text-base font-semibold"
+                    >Add demo</label
+                  >
+                  <div class="flex justify-between items-center gap-3">
+                    <img src="./assets/svgs/menu.svg" alt="" />
+                    <div
+                      class="px-4 py-3 border flex items-center justify-between w-full rounded-xl"
+                    >
+                      <div class="flex items-center gap-2">
+                        music.mp3
+                        <img src="./assets/svgs/edit-profile.svg" alt="" />
+                      </div>
+                      <div class="flex items-center gap-1 pl-3 border-l">
+                        <img src="./assets/svgs/clock.png" alt="" />
+                        01 : 03
+                      </div>
+                    </div>
+                    <img
+                      src="./assets/svgs/trash.png"
+                      alt=""
+                      class="p-3 rounded-xl bg-[#f7f7f7]"
+                    />
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 mt-9">
+                  <button
+                    type="button"
+                    class="px-6 close-modal py-3 rounded-xl text-center bg-[#ebeef0] font-semibold text-[#52616B] transition-opacity duration-300 lg:hover:opacity-70"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="button"
+                    class="px-6 uploadButton py-3 rounded-xl text-center bg-[#1975ff] font-semibold text-[#fff] transition-opacity duration-300 lg:hover:opacity-70"
+                  >
+                    Upload
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full bg-[#fff] lg:p-6 flex flex-col justify-center items-center rounded-xl"
+        >
+          <div
+            class="grid grid-cols-1 w-full lg:grid-cols-3 p-1 bg-[#f7f7f7] rounded-xl lg:w-[570px] place-content-between mx-auto"
+          >
+            <button
+              class="flex btn-upload items-center justify-center gap-3 px-6 py-3 bg-[#f7f7f7] text-[#A1ABB2] rounded-xl active-upload"
+            >
+              Upload Music
+            </button>
+            <button
+              class="flex btn-upload btn-upload-video items-center justify-center gap-3 px-6 py-3 bg-[#f7f7f7] text-[#A1ABB2] rounded-xl"
+            >
+              Upload Video
+            </button>
+            <button
+              class="flex btn-upload btn-upload-yourshop items-center justify-center gap-3 px-6 py-3 bg-[#f7f7f7] text-[#A1ABB2] rounded-xl"
+            >
+              Your Upload
+            </button>
+          </div>
+          <div
+            class="px-4 lg:px-[100px] max-w-full py-12 border border-dashed lg:max-w-[640px] mx-auto mt-8 mb-6 rounded-xl"
+          >
+            <div class="flex items-center flex-col justify-center">
+              <img src="./assets/svgs/Frame 48097757.png" alt="" />
+              <p
+                class="text-12 lg:text-14 text-center text-[#52616B] mt-4 mb-6"
+              >
+                Drag and drop your tracks & albums here. Provide FLAC, WAV,
+                ALAC, or AIFF for highest audio quality.
+              </p>
+              <button
+                type="button"
+                class="text-[#52616B] upload-music px-6 py-3 bg-[#ebeef0] text-14 lg:text-base font-semibold rounded-xl"
+              >
+                or choose files to upload
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex items-center gap-2 mb-8 lg:mb-16 text-14 lg:text-base text-[#52616B]"
+          >
+            <input type="checkbox" />Make a playlist when multiple files are
+            selected
+          </div>
+          <div
+            class="text-12 lg:text-14 text-[#52616B] lg:max-w-[900px] flex flex-col text-center justify-center"
+          >
+            <p>
+              Supported file types and sizes ⁃ Upload troubleshooting tips ⁃
+              Copyright FAQs
+            </p>
+            <p>
+              By uploading, you confirm that your sounds comply with our Terms
+              of Use and you don't infringe anyone else's rights.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="./js/upload.js"></script>
+</html>
