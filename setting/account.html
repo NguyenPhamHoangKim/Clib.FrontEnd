@@ -15,7 +15,116 @@
     ></script>
   </head>
   <body>
-    <main class="container mt-12">
+    <main class="container mt-12 relative">
+      <div class="modal-delete overlay">
+        <div class="p-6 w-[600px] bg-[#fff] abs-center rounded-xl">
+          <img
+            src="../assets/svgs/close.svg"
+            class="absolute top-5 close-modal right-5"
+            alt=""
+          />
+          <h5
+            class="text-[#2C2F33] text-20 font-semibold text-center mb-4 lg:text-24"
+          >
+            Delete account
+          </h5>
+          <div class="flex flex-col gap-4">
+            <div class="flex items-center gap-3">
+              <input type="checkbox" name="" id="" />
+              <label for="" class="text-14 text-[#52616B]"
+                >I have another account</label
+              >
+            </div>
+            <div class="flex items-center gap-3">
+              <input type="checkbox" name="" id="" />
+              <label for="" class="text-14 text-[#52616B]"
+                >I want to make a new account</label
+              >
+            </div>
+            <div class="flex items-center gap-3">
+              <input type="checkbox" name="" id="" />
+              <label for="" class="text-14 text-[#52616B]"
+                >I am no longer creating content for this account</label
+              >
+            </div>
+            <div class="flex items-center gap-3">
+              <input type="checkbox" name="" id="" />
+              <label for="" class="text-14 text-[#52616B]"
+                >I had copyright issues with a track or tracks</label
+              >
+            </div>
+            <div class="flex items-center gap-3">
+              <input type="checkbox" name="" id="" />
+              <label for="" class="text-14 text-[#52616B]"
+                >I don’t want to subscribe to Clib Pro anymore</label
+              >
+            </div>
+            <div class="flex items-center gap-3">
+              <input type="checkbox" name="" id="" />
+              <label for="" class="text-14 text-[#52616B]"
+                >I switched to another music or audio service</label
+              >
+            </div>
+            <div class="flex items-center gap-3">
+              <input type="checkbox" name="" id="" />
+              <label for="" class="text-14 text-[#52616B]"
+                >My account got hacked</label
+              >
+            </div>
+            <div class="flex items-center gap-3">
+              <input type="checkbox" name="" id="" />
+              <label for="" class="text-14 text-[#52616B]"
+                >I can’t remove my tracks</label
+              >
+            </div>
+            <div class="flex items-center gap-3">
+              <input type="checkbox" name="" id="" />
+              <label for="" class="text-14 text-[#52616B]"
+                >People are harassing me</label
+              >
+            </div>
+            <div class="flex items-center gap-3">
+              <input type="checkbox" name="" id="" />
+              <label for="" class="text-14 text-[#52616B]"
+                >Too much spam on the platform</label
+              >
+            </div>
+            <div class="flex items-center gap-3">
+              <input type="checkbox" name="" id="" />
+              <label for="" class="text-14 text-[#52616B]"
+                >Other, please specify</label
+              >
+            </div>
+          </div>
+          <div class="w-full bg-[#f7f7f7] px-4 py-3 rounded-xl mt-4">
+            <input
+              type="text"
+              class="w-full bg-[#f7f7f7]"
+              placeholder="Type your reason"
+            />
+          </div>
+          <div class="flex items-center gap-3 mt-4">
+            <input type="checkbox" name="" id="" />
+            <label for="" class="text-14 text-[#52616B]"
+              >Yes, I want to delete my account and all my music, videos,
+              marketplace, comments and stats.</label
+            >
+          </div>
+          <div class="flex items-end justify-end gap-3">
+            <button
+              class="text-[#52616B] close-modal rounded-xl hover:opacity-80 transition-opacity duration-500 bg-[#ebeef0] text-14 lg:text-base font-semibold px-4 py-3"
+            >
+              Cancel
+            </button>
+            <button
+              type="button"
+              class="text-[#fff] rounded-xl hover:opacity-80 transition-opacity duration-500 bg-[#ef5350] text-14 lg:text-base font-semibold px-4 py-3"
+            >
+              Delete Account
+            </button>
+          </div>
+        </div>
+      </div>
       <header
         class="grid place-items-center grid-cols-2 lg:grid-cols-5 gap-1 p-2 rounded-xl mx-auto bg-[#f7f7f7] box-shadow"
       >
@@ -196,6 +305,8 @@
               </div>
             </div>
             <button
+              type="button"
+              id="open-modal"
               class="w-[200px] mx-auto opacity-100 hover:opacity-70 transition-all duration-500 text-center flex justify-center px-6 py-3 bg-[#ebeef0] text-14 lg:text-base text-[#EF5350] rounded-xl"
             >
               Delete Account
@@ -266,5 +377,5 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   ></script>
-  <script src="/js/login.js"></script>
+  <script src="../js/login.js"></script>
 </html>

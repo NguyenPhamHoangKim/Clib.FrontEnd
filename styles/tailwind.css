@@ -534,3 +534,8 @@ img {
 .active-setting {
   @apply text-white rounded-xl bg-[#1975ff];
 }
+
+.rig {
+  top: -10px !important;
+  right: -10px !important;
+}
