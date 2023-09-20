@@ -34,6 +34,29 @@ new Swiper(".song-swiper", {
   },
 });
 
+new Swiper(".music-swiper", {
+  slidesPerView: 2.5,
+  spaceBetween: 12,
+  navigation: {
+    nextEl: ".swiper-song-next",
+    prevEl: ".swiper-song-prev",
+  },
+  autoResize: false,
+  breakpoints: {
+    480: {
+      slidesPerView: 1.5,
+    },
+    680: {
+      slidesPerView: 2.5,
+      spaceBetween: 14,
+    },
+    1024: {
+      slidesPerView: 4.5,
+      spaceBetween: 16,
+    },
+  },
+});
+
 new Swiper(".albums-swiper", {
   slidesPerView: 2.5,
   spaceBetween: 12,
@@ -56,7 +79,6 @@ new Swiper(".albums-swiper", {
     },
   },
 });
-
 new Swiper(".playlists-mb-swiper", {
   slidesPerView: 2.5,
   spaceBetween: 12,

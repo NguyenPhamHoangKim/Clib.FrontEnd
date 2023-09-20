@@ -481,11 +481,11 @@ img {
   -webkit-line-clamp: 2; /* Số dòng bạn muốn hiển thị */
   -webkit-box-orient: vertical;
 }
-.custom-ellipsis-5 {
+.custom-ellipsis-1 {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 5; /* Số dòng bạn muốn hiển thị */
+  -webkit-line-clamp: 1; /* Số dòng bạn muốn hiển thị */
   -webkit-box-orient: vertical;
 }
 
@@ -519,4 +519,14 @@ img {
 .custom-select select option:checked {
   background-color: #3498db !important;
   color: white !important;
+}
+
+.bg {
+  background-image: url(../assets/images/bannermusic.png);
+}
+
+.filter {
+  background: rgba(0, 0, 0, 0.4);
+  /* BG blur */
+  backdrop-filter: blur(10px);
 }
