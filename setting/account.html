@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clib - Login</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <main class="container mt-12 relative hidden md:block">
+      <div class="modal-delete overlay">
+        <div class="p-6 w-[600px] bg-[#fff] abs-center rounded-xl">
+          <img
+            src="../assets/svgs/close.svg"
+            class="absolute top-5 close-modal right-5"
+            alt=""
+          />
+          <h5
+            class="text-[#2C2F33] text-20 font-semibold text-center mb-4 lg:text-24"
+          >
+            Delete account
+          </h5>
+          <div class="flex flex-col gap-4">
+            <div class="flex items-center gap-3">
+              <input type="checkbox" name="" id="" />
+              <label for="" class="text-14 text-[#52616B]"
+                >I have another account</label
+              >
+            </div>
+            <div class="flex items-center gap-3">
+              <input type="checkbox" name="" id="" />
+              <label for="" class="text-14 text-[#52616B]"
+                >I want to make a new account</label
+              >
+            </div>
+            <div class="flex items-center gap-3">
+              <input type="checkbox" name="" id="" />
+              <label for="" class="text-14 text-[#52616B]"
+                >I am no longer creating content for this account</label
+              >
+            </div>
+            <div class="flex items-center gap-3">
+              <input type="checkbox" name="" id="" />
+              <label for="" class="text-14 text-[#52616B]"
+                >I had copyright issues with a track or tracks</label
+              >
+            </div>
+            <div class="flex items-center gap-3">
+              <input type="checkbox" name="" id="" />
+              <label for="" class="text-14 text-[#52616B]"
+                >I don’t want to subscribe to Clib Pro anymore</label
+              >
+            </div>
+            <div class="flex items-center gap-3">
+              <input type="checkbox" name="" id="" />
+              <label for="" class="text-14 text-[#52616B]"
+                >I switched to another music or audio service</label
+              >
+            </div>
+            <div class="flex items-center gap-3">
+              <input type="checkbox" name="" id="" />
+              <label for="" class="text-14 text-[#52616B]"
+                >My account got hacked</label
+              >
+            </div>
+            <div class="flex items-center gap-3">
+              <input type="checkbox" name="" id="" />
+              <label for="" class="text-14 text-[#52616B]"
+                >I can’t remove my tracks</label
+              >
+            </div>
+            <div class="flex items-center gap-3">
+              <input type="checkbox" name="" id="" />
+              <label for="" class="text-14 text-[#52616B]"
+                >People are harassing me</label
+              >
+            </div>
+            <div class="flex items-center gap-3">
+              <input type="checkbox" name="" id="" />
+              <label for="" class="text-14 text-[#52616B]"
+                >Too much spam on the platform</label
+              >
+            </div>
+            <div class="flex items-center gap-3">
+              <input type="checkbox" name="" id="" />
+              <label for="" class="text-14 text-[#52616B]"
+                >Other, please specify</label
+              >
+            </div>
+          </div>
+          <div class="w-full bg-[#f7f7f7] px-4 py-3 rounded-xl mt-4">
+            <input
+              type="text"
+              class="w-full bg-[#f7f7f7]"
+              placeholder="Type your reason"
+            />
+          </div>
+          <div class="flex items-center gap-3 mt-4">
+            <input type="checkbox" name="" id="" />
+            <label for="" class="text-14 text-[#52616B]"
+              >Yes, I want to delete my account and all my music, videos,
+              marketplace, comments and stats.</label
+            >
+          </div>
+          <div class="flex items-end justify-end gap-3">
+            <button
+              class="text-[#52616B] close-modal rounded-xl hover:opacity-80 transition-opacity duration-500 bg-[#ebeef0] text-14 lg:text-base font-semibold px-4 py-3"
+            >
+              Cancel
+            </button>
+            <button
+              type="button"
+              class="text-[#fff] rounded-xl hover:opacity-80 transition-opacity duration-500 bg-[#ef5350] text-14 lg:text-base font-semibold px-4 py-3"
+            >
+              Delete Account
+            </button>
+          </div>
+        </div>
+      </div>
+      <header
+        class="grid place-items-center grid-cols-2 lg:grid-cols-5 gap-1 p-2 rounded-xl mx-auto bg-[#f7f7f7] box-shadow"
+      >
+        <a
+          href="../setting/account.html"
+          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          id="account-link"
+        >
+          <ion-icon name="person-outline" class="w-[20px] h-[20px]"></ion-icon>
+          Account
+        </a>
+        <a
+          href="../setting/content.html"
+          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          id="content-link"
+        >
+          <ion-icon name="document-text-outline" class="w-5 h-5"> </ion-icon>
+          Content
+        </a>
+        <a
+          href="../setting/notifications.html"
+          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          id="notifications-link"
+        >
+          <ion-icon name="notifications-outline" class="w-5 h-5"></ion-icon>
+          Notifications
+        </a>
+        <a
+          href="../setting/privacy.html"
+          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          id="privacy-link"
+        >
+          <ion-icon name="shield-outline" class="w-5 h-5"></ion-icon>
+          Privacy
+        </a>
+        <a
+          href="../setting/advertising.html"
+          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          id="advertising-link"
+        >
+          <ion-icon name="volume-high"></ion-icon>
+          Advertising
+        </a>
+      </header>
+      <section class="flex items-start flex-col lg:flex-row gap-6">
+        <div
+          class="p-6 bg-white box-shadow w-full lg:w-[70%] mx-0 rounded-xl my-8"
+        >
+          <h5 class="text-20 lg:text-24 font-semibold mb-6">Profile</h5>
+          <div class="flex items-start flex-col lg:flex-row gap-3">
+            <label
+              for=""
+              class="w-[30%] lg:w-[20%] text-14 mt-3 lg:text-base font-semibold text-[#52616B]"
+              >Email addresses</label
+            >
+            <div class="flex flex-col gap-4 w-full">
+              <input
+                type="text"
+                placeholder="iberd@gmail.com (Primary) "
+                class="w-full px-4 py-3 bg-[#f7f7f7] rounded-xl"
+              />
+              <div
+                class="flex items-center gap-2 w-full px-4 py-3 bg-[#f7f7f7] rounded-xl"
+              >
+                <input
+                  type="text"
+                  placeholder="ngocson@gmail.com (Not confirmed - Resend confirm email)"
+                  class="w-full bg-[#f7f7f7] outline-none border-none"
+                />
+                <img src="../assets/svgs/trash.png" alt="" />
+              </div>
+              <div
+                class="flex items-center gap-2 px-4 py-1 w-full bg-[#f7f7f7] rounded-xl"
+              >
+                <input
+                  type="text"
+                  placeholder="Please enter your email address"
+                  class="w-full bg-[#f7f7f7] outline-none border-none"
+                />
+                <div class="flex items-center gap-2">
+                  <button
+                    class="text-14 lg:text-base font-semibold text-[#52616B] bg-[#ebeef0] px-6 py-2 rounded-xl"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    class="text-14 lg:text-base font-semibold text-[#fff] bg-[#1975ff] px-6 py-2 rounded-xl"
+                  >
+                    Add
+                  </button>
+                </div>
+              </div>
+              <span class="text-12 lg:text-14 font-semibold text-[#EF5350]"
+                >That email addresses is already in use</span
+              >
+            </div>
+          </div>
+          <div class="w-full lg:w-[60%] flex items-center gap-[72px] mt-6">
+            <div>
+              <label
+                for=""
+                class="w-[20%] text-14 mt-3 lg:text-base font-semibold text-[#52616B]"
+                >Password</label
+              >
+            </div>
+            <input
+              type="text"
+              placeholder="Send password-reset link"
+              class="w-full px-4 py-3 bg-[#f7f7f7] rounded-xl"
+            />
+          </div>
+          <div class="w-full lg:w-[62%] flex items-center gap-[50px] mt-6">
+            <div class="flex items-center gap-2">
+              <div>
+                <label
+                  for=""
+                  class="text-14 mt-3 lg:text-base font-semibold text-[#52616B]"
+                  >Verification
+                </label>
+              </div>
+              <img src="../assets/svgs/verify.svg" alt="" />
+            </div>
+            <input
+              type="text"
+              placeholder="Send password-reset link"
+              class="w-full px-4 py-3 bg-[#f7f7f7] rounded-xl"
+            />
+          </div>
+          <div class="">
+            <h5 class="text-20 lg:text-24 font-semibold my-6">
+              Basic informaiton
+            </h5>
+            <div class="items-center flex gap-[40px]">
+              <div>
+                <label
+                  for=""
+                  class="w-[20%] text-14 mt-3 lg:text-base font-semibold text-[#52616B]"
+                  >Your birthday</label
+                >
+              </div>
+              <div class="flex items-center gap-3">
+                <select
+                  id="countries"
+                  class="w-full lg:w-[240px] bg-[#f7f7f7] px-6 py-3 border-none outline-none rounded-xl"
+                >
+                  <option selected>january</option>
+                  <option value="US">May</option>
+                  <option value="CA">July</option>
+                  <option value="FR">September</option>
+                  <option value="DE">October</option>
+                </select>
+                <select
+                  id="countries"
+                  class="w-full lg:w-[240px] bg-[#f7f7f7] px-6 py-3 border-none outline-none rounded-xl"
+                >
+                  <option selected>1990</option>
+                  <option value="FR">2001</option>
+                  <option value="CA">2002</option>
+                  <option value="US">2003</option>
+                  <option value="DE">2004</option>
+                </select>
+              </div>
+            </div>
+            <div class="items-center flex gap-[90px] mt-6 mb-8">
+              <div>
+                <label
+                  for=""
+                  class="w-[20%] text-14 mt-3 lg:text-base font-semibold text-[#52616B]"
+                  >Gender</label
+                >
+              </div>
+              <div class="flex items-center gap-3">
+                <input type="radio" name="" id="" />
+                Male
+              </div>
+              <div class="flex items-center gap-3">
+                <input type="radio" name="" id="" />
+                Female
+              </div>
+              <div class="flex items-center gap-3">
+                <input type="radio" name="" id="" />
+                Prefer to not answer
+              </div>
+            </div>
+            <button
+              type="button"
+              id="open-modal"
+              class="w-[200px] mx-auto opacity-100 hover:opacity-70 transition-all duration-500 text-center flex justify-center px-6 py-3 bg-[#ebeef0] text-14 lg:text-base text-[#EF5350] rounded-xl"
+            >
+              Delete Account
+            </button>
+          </div>
+        </div>
+        <div
+          class="p-4 bg-white box-shadow w-full lg:w-[30%] mx-0 rounded-xl my-8"
+        >
+          <h6 class="text-base lg:text-20 font-semibold text-[#52616B] mb-4">
+            Log in with social networks
+          </h6>
+          <div
+            class="px-4 py-3 bg-[#f7f7f7] flex items-center justify-between rounded-xl"
+          >
+            <div class="flex items-center gap-3">
+              <img src="../assets/images/gg.png" alt="" />
+              Iberd
+            </div>
+            <button class="py-2 px-4 bg-[#52616b] text-[#fff] rounded-xl">
+              Disconnect
+            </button>
+          </div>
+          <div
+            class="px-4 py-3 bg-[#f7f7f7] flex items-center justify-between rounded-xl mt-3 mb-4"
+          >
+            <div class="flex items-center gap-3">
+              <img src="../assets/images/face.png" alt="" />
+              Iberd
+            </div>
+            <button class="py-2 px-4 bg-[#52616b] text-[#fff] rounded-xl">
+              Disconnect
+            </button>
+          </div>
+          <div>
+            <h6 class="text-base lg:text-20 font-semibold text-[#52616B] mb-4">
+              Add account
+            </h6>
+
+            <div class="grid grid-cols-3 place-items-center gap-3">
+              <div
+                class="w-full py-6 flex items-center flex-col bg-[#f7f7f7] rounded-xl"
+              >
+                <img src="../assets/images/gg.png" alt="" />
+                <p class="text-14 text-center lg:text-base mt-2">Google</p>
+              </div>
+              <div
+                class="w-full py-6 flex items-center flex-col bg-[#f7f7f7] rounded-xl"
+              >
+                <img src="../assets/images/apple.png" alt="" />
+                <p class="text-14 text-center lg:text-base mt-2">Apple</p>
+              </div>
+              <div
+                class="w-full py-6 flex items-center flex-col bg-[#f7f7f7] rounded-xl"
+              >
+                <img src="../assets/images/face.png" alt="" />
+                <p class="text-14 text-center lg:text-base mt-2">Facebook</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- mobile navigation -->
+    <section class="h-full block md:hidden">
+      <div class="">
+        <div class="w-full flex items-center justify-between py-3 box-shadow">
+          <img src="../assets/svgs/arrow-left.png" alt="" />
+          <div class="text-18 font-semibold text-[#2C2F33] px-4">Setting</div>
+          <div></div>
+        </div>
+        <div class="mt-4 px-4 flex flex-col gap-3">
+          <a
+            href="../setting/account-informations.html"
+            class="py-3 flex items-center justify-between"
+          >
+            <div class="flex items-center gap-3 text-14 text-[#2C2F33]">
+              <ion-icon name="person-outline" class="w-6 h-6"></ion-icon>
+              Account
+            </div>
+            <img src="../assets/images/arrow-right.png" alt="" />
+          </a>
+          <a
+            href="../setting/notifications.html"
+            class="py-3 flex items-center justify-between"
+          >
+            <div class="flex items-center gap-3 text-14 text-[#2C2F33]">
+              <ion-icon name="notifications-outline" class="w-6 h-6"></ion-icon>
+              Notifications
+            </div>
+            <img src="../assets/images/arrow-right.png" alt="" />
+          </a>
+          <a
+            href="../setting/content.html"
+            class="py-3 flex items-center justify-between"
+          >
+            <div class="flex items-center gap-3 text-14 text-[#2C2F33]">
+              <ion-icon name="reader-outline" class="w-6 h-6"></ion-icon>
+              Content
+            </div>
+            <img src="../assets/images/arrow-right.png" alt="" />
+          </a>
+          <a href="#" class="py-3 flex items-center justify-between">
+            <div class="flex items-center gap-3 text-14 text-[#2C2F33]">
+              <ion-icon name="volume-medium-outline" class="w-6 h-6"></ion-icon>
+              Advertising
+            </div>
+            <img src="../assets/images/arrow-right.png" alt="" />
+          </a>
+          <a
+            href="../setting/privacy.html"
+            class="py-3 flex items-center justify-between"
+          >
+            <div class="flex items-center gap-3 text-14 text-[#2C2F33]">
+              <ion-icon name="lock-closed-outline" class="w-6 h-6"></ion-icon>
+              Privacy
+            </div>
+            <img src="../assets/images/arrow-right.png" alt="" />
+          </a>
+          <a href="#" class="py-3 flex items-center justify-between">
+            <div class="flex items-center gap-3 text-14 text-[#2C2F33]">
+              <ion-icon name="help-buoy-outline" class="w-6 h-6"></ion-icon>
+              Contact support
+            </div>
+            <img src="../assets/images/arrow-right.png" alt="" />
+          </a>
+        </div>
+        <a
+          href="#"
+          class="px-6 w-[150px] mx-auto mt-6 md:hidden rounded-xl flex items-center justify-center py-3 text-base font-semibold text-[#2C2F33] bg-[#ebeef0]"
+        >
+          Sign out</a
+        >
+      </div>
+    </section>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="../js/login.js"></script>
+</html>
