@@ -15,44 +15,49 @@
     <link rel="stylesheet" href="../styles/index.css" />
   </head>
   <body>
-    <main class="container mt-12">
+    <main class="container mt-12 hidden md:block">
       <header
         class="grid place-items-center grid-cols-2 lg:grid-cols-5 gap-1 p-2 rounded-xl mx-auto bg-[#f7f7f7] box-shadow"
       >
         <a
-          href="#"
-          class="flex w-full p-2 items-center justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold active-setting"
+          href="../setting/account.html"
+          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          id="account-link"
         >
           <ion-icon name="person-outline" class="w-[20px] h-[20px]"></ion-icon>
           Account
         </a>
         <a
-          href="#"
-          class="flex items-center p-2 gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          href="../setting/content.html"
+          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          id="content-link"
         >
-          <ion-icon name="document-text-outline" class="w-5 h-5"> \</ion-icon>
+          <ion-icon name="document-text-outline" class="w-5 h-5"> </ion-icon>
           Content
         </a>
         <a
-          href="#"
-          class="flex items-center gap-2 p-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          href="../setting/notifications.html"
+          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          id="notifications-link"
         >
           <ion-icon name="notifications-outline" class="w-5 h-5"></ion-icon>
           Notifications
         </a>
         <a
-          href="#"
-          class="flex items-center gap-2 p-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          href="../setting/privacy.html"
+          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          id="privacy-link"
         >
           <ion-icon name="shield-outline" class="w-5 h-5"></ion-icon>
           Privacy
         </a>
         <a
-          href="#"
-          class="flex items-center gap-2 p-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          href="../setting/advertising.html"
+          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          id="advertising-link"
         >
-          <ion-icon name="shield-outline" class="w-5 h-5"></ion-icon>
-          Account
+          <ion-icon name="volume-high"></ion-icon>
+          Advertising
         </a>
       </header>
 
@@ -263,6 +268,225 @@
         </div>
       </section>
     </main>
+    <!-- mobile -->
+    <section class="lg:p-6 rounded-xl bg-white lg:mt-6 block md:hidden">
+      <div
+        class="w-full flex items-center justify-between py-3 mb-6 md:hidden box-shadow"
+      >
+        <a href="../setting/basic-information.html"
+          ><img src="../assets/svgs/arrow-left.png" alt=""
+        /></a>
+        <div class="text-18 font-semibold text-[#2C2F33] px-4">Content</div>
+        <div></div>
+      </div>
+      <div class="px-4 md:px-0">
+        <div class="w-[550px]">
+          <h5 class="text-20 lg:text-24 font-semibold text-[#2C2F33]">
+            RSS feed
+          </h5>
+          <p class="text-[#A1ABB2] text-14 lg:text-base mt-2">
+            hare your uploads with an RSS feed to enable your listeners to
+            subscribe in Podcasting apps
+          </p>
+        </div>
+        <div class="my-6 flex flex-col gap-6">
+          <div class="w-full lg:w-[82%]">
+            <label
+              for=""
+              class="text-[#52616B] text-14 lg:text-base font-semibold"
+              >RSS feed</label
+            >
+            <input
+              placeholder="https://feeds.Clib.com/users/Clib:users:1213810303/Clib.rss"
+              type="text"
+              class="w-full p-3 mt-2 text-12 bg-[#f7f7f7] outline-none border-none rounded-xl"
+            />
+          </div>
+          <div class="w-full lg:w-[40%]">
+            <label
+              for=""
+              class="text-[#52616B] text-14 lg:text-base font-semibold"
+              >Email address displayed</label
+            >
+            <input
+              placeholder="Don’t display email address"
+              type="text"
+              class="w-full p-3 mt-2 text-12 bg-[#f7f7f7] outline-none border-none rounded-xl"
+            />
+          </div>
+        </div>
+        <div class="grid grid-cols-1 gap-6">
+          <div class="w-full">
+            <label
+              for=""
+              class="text-[#52616B] text-14 lg:text-base font-semibold"
+              >Custom feed title</label
+            >
+            <input
+              placeholder="Type  feed title"
+              type="text"
+              class="w-full p-3 mt-2 text-12 bg-[#f7f7f7] outline-none border-none rounded-xl"
+            />
+          </div>
+          <div class="w-full">
+            <label
+              for=""
+              class="text-[#52616B] text-14 lg:text-base font-semibold"
+              >Category</label
+            >
+            <select
+              name=""
+              id=""
+              class="w-full p-3 mt-2 text-12 bg-[#f7f7f7] text-[#A1ABB2] outline-none border-none rounded-xl"
+            >
+              <option selected>Category</option>
+              <option>Viet Nam</option>
+              <option>America</option>
+            </select>
+          </div>
+          <div class="w-full">
+            <label
+              for=""
+              class="text-[#52616B] text-14 lg:text-base font-semibold"
+              >Stats-service URL prefix</label
+            >
+            <input
+              placeholder="http://"
+              type="text"
+              class="w-full p-3 mt-2 text-12 bg-[#f7f7f7] outline-none border-none rounded-xl"
+            />
+          </div>
+          <div class="w-full">
+            <label
+              for=""
+              class="text-[#52616B] text-14 lg:text-base font-semibold"
+              >Custom author name</label
+            >
+            <input
+              placeholder="Type author name"
+              type="text"
+              class="w-full p-3 mt-2 text-12 bg-[#f7f7f7] outline-none border-none rounded-xl"
+            />
+          </div>
+          <div class="w-full">
+            <label
+              for=""
+              class="text-[#52616B] text-14 lg:text-base font-semibold"
+              >Language</label
+            >
+            <select
+              name=""
+              id=""
+              class="w-full p-3 mt-2 text-12 bg-[#f7f7f7] text-[#A1ABB2] outline-none border-none rounded-xl"
+            >
+              <option selected>Language</option>
+              <option>Viet Nam</option>
+              <option>America</option>
+            </select>
+          </div>
+          <div class="w-full">
+            <label
+              for=""
+              class="text-[#52616B] text-14 lg:text-base font-semibold"
+              >Subscriber redirect</label
+            >
+            <input
+              placeholder="http://"
+              type="text"
+              class="w-full p-3 mt-2 text-12 bg-[#f7f7f7] outline-none border-none rounded-xl"
+            />
+          </div>
+        </div>
+        <div class="mt-8">
+          <h5 class="text-base font-semibold text-[#2C2F33]">
+            Upload Defaults
+          </h5>
+          <p class="text-[#A1ABB2] text-12 lg:text-base mt-2">
+            Save time during upload by setting defaults. Track options can be
+            changed at any time when uploading or editing.
+          </p>
+          <div class="mt-2 text-12 flex items-center gap-3 text-[#52616B]">
+            <input type="checkbox" class="text-12 lg:text-14" />
+            Include in RSS feed
+          </div>
+          <div class="mt-2 text-12 flex items-center gap-3 text-[#52616B]">
+            <input type="checkbox" class="text-12 lg:text-14" />
+            Include in RSS feed
+          </div>
+          <div class="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-x-24">
+            <div class="pb-4 border-b">
+              <div
+                class="text-14 flex items-center justify-between lg:text-base text-[#52616B] mb-2"
+              >
+                Attribution
+                <img src="../assets/images/Toggle light.png" alt="" />
+              </div>
+              <p class="text-12 lg:text-14 text-[#52616B]">
+                Allow others to copy, distribute, display and perform your
+                copyrighted work but only if they give credit the way you
+                request.
+              </p>
+            </div>
+            <div class="pb-4 border-b">
+              <div
+                class="text-14 flex items-center justify-between lg:text-base text-[#52616B] mb-2"
+              >
+                Attribution
+                <img src="../assets/images/Toggle.png" alt="" />
+              </div>
+              <p class="text-12 lg:text-14 text-[#52616B]">
+                Allow others to copy, distribute, display and perform your
+                copyrighted work but only if they give credit the way you
+                request.
+              </p>
+            </div>
+          </div>
+          <div class="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-x-24">
+            <div class="pb-4 border-b">
+              <div
+                class="text-14 flex items-center justify-between lg:text-base text-[#52616B] mb-2"
+              >
+                Attribution
+                <img src="../assets/images/Toggle light.png" alt="" />
+              </div>
+              <p class="text-12 lg:text-14 text-[#52616B]">
+                Allow others to copy, distribute, display and perform your
+                copyrighted work but only if they give credit the way you
+                request.
+              </p>
+            </div>
+            <div class="pb-4 border-b">
+              <div
+                class="text-14 flex items-center justify-between lg:text-base text-[#52616B] mb-2"
+              >
+                Attribution
+                <img src="../assets/images/Toggle.png" alt="" />
+              </div>
+              <p class="text-12 lg:text-14 text-[#52616B]">
+                Allow others to copy, distribute, display and perform your
+                copyrighted work but only if they give credit the way you
+                request.
+              </p>
+            </div>
+          </div>
+
+          <div class="w-full gap-3 mt-6">
+            <button
+              type="button"
+              class="text-[#fff] w-full rounded-xl hover:opacity-80 transition-opacity duration-500 bg-[#1975ff] text-14 lg:text-base font-semibold px-4 py-3"
+            >
+              Sale
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../js/login.js"></script>
   </body>
-  <script src="../js/setting.js"></script>
 </html>

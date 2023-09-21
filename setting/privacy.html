@@ -15,7 +15,7 @@
     ></script>
   </head>
   <body>
-    <main class="container mt-12 relative">
+    <main class="container mt-12 relative hidden md:block">
       <div class="modal-privacy overlay">
         <div class="p-6 w-full lg:w-[600px] bg-[#fff] abs-center rounded-xl">
           <img
@@ -207,39 +207,44 @@
         class="grid place-items-center grid-cols-2 lg:grid-cols-5 gap-1 p-2 rounded-xl mx-auto bg-[#f7f7f7] box-shadow"
       >
         <a
-          href="#"
-          class="flex w-full p-2 items-center justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold active-setting"
+          href="../setting/account.html"
+          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          id="account-link"
         >
           <ion-icon name="person-outline" class="w-[20px] h-[20px]"></ion-icon>
           Account
         </a>
         <a
-          href="#"
-          class="flex items-center p-2 gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          href="../setting/content.html"
+          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          id="content-link"
         >
-          <ion-icon name="document-text-outline" class="w-5 h-5"> \</ion-icon>
+          <ion-icon name="document-text-outline" class="w-5 h-5"> </ion-icon>
           Content
         </a>
         <a
-          href="#"
-          class="flex items-center gap-2 p-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          href="../setting/notifications.html"
+          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          id="notifications-link"
         >
           <ion-icon name="notifications-outline" class="w-5 h-5"></ion-icon>
           Notifications
         </a>
         <a
-          href="#"
-          class="flex items-center gap-2 p-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          href="../setting/privacy.html"
+          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          id="privacy-link"
         >
           <ion-icon name="shield-outline" class="w-5 h-5"></ion-icon>
           Privacy
         </a>
         <a
-          href="#"
-          class="flex items-center gap-2 p-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          href="../setting/advertising.html"
+          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          id="advertising-link"
         >
-          <ion-icon name="shield-outline" class="w-5 h-5"></ion-icon>
-          Account
+          <ion-icon name="volume-high"></ion-icon>
+          Advertising
         </a>
       </header>
       <div
@@ -350,6 +355,128 @@
         </div>
       </div>
     </main>
+    <!-- mobile -->
+    <div
+      class="w-full flex items-center md:hidden justify-between py-3 box-shadow"
+    >
+      <a href="account.html">
+        <img src="../assets/svgs/arrow-left.png" alt=""
+      /></a>
+      <div class="text-18 font-semibold text-[#2C2F33] px-4">Privacy</div>
+      <div></div>
+    </div>
+    <section class="block md:hidden">
+      <div
+        class="flex items-start flex-col lg:flex-row justify-between gap-6 mt-6"
+      >
+        <div class="w-full lg:w-[70%] bg-white p-6 rounded-xl">
+          <h5 class="text-20 lg:text-24 font-semibold text-[#2C2F33]">
+            Privacy setting
+          </h5>
+
+          <div class="mt-4 grid grid-cols-1">
+            <div class="pb-4 border-b">
+              <div
+                class="text-14 flex items-center justify-between lg:text-base text-[#52616B] mb-2"
+              >
+                Attribution
+                <img src="../assets/images/Toggle light.png" alt="" />
+              </div>
+              <p class="text-12 lg:text-14 text-[#52616B]">
+                Allow others to copy, distribute, display and perform your
+                copyrighted work but only if they give credit the way you
+                request.
+              </p>
+            </div>
+          </div>
+
+          <h5 class="text-20 lg:text-24 font-semibold text-[#2C2F33] my-6">
+            Cookies
+          </h5>
+          <div class="flex w-full flex-col lg:flex-row justify-between gap-6">
+            <p>Manage your cookie preferences</p>
+            <button
+              type="button"
+              class="text-14 open-privacy lg:text-base text-[#52616B] rounded-xl bg-[#ebeef0] px-6 py-3"
+            >
+              Open consent manager
+            </button>
+          </div>
+        </div>
+        <div class="p-6 bg-white rounded-xl w-full lg:w-[30%]">
+          <h5 class="text-20 lg:text-24 font-semibold text-[#2C2F33]">
+            Block users
+          </h5>
+          <div class="mt-4 flex flex-col gap-2">
+            <div class="flex items-center justify-between">
+              <div
+                class="flex items-center gap-2 text-14 lg:text-base font-semibold"
+              >
+                <img src="../assets/images/r2.png" alt="" />Dr Dre
+              </div>
+              <button
+                class="px-6 py-3 text-14 lg:text-base font-semibold hover:opacity-75 transition-all duration-500 text-[#EF5350] bg-[#f7f7f7] rounded-xl"
+              >
+                Blocked
+              </button>
+            </div>
+            <div class="flex items-center justify-between">
+              <div
+                class="flex items-center gap-2 text-14 lg:text-base font-semibold"
+              >
+                <img src="../assets/images/r2.png" alt="" />Dr Dre
+              </div>
+              <button
+                class="px-6 py-3 text-14 lg:text-base font-semibold hover:opacity-75 transition-all duration-500 text-[#EF5350] bg-[#f7f7f7] rounded-xl"
+              >
+                Blocked
+              </button>
+            </div>
+            <div class="flex items-center justify-between">
+              <div
+                class="flex items-center gap-2 text-14 lg:text-base font-semibold"
+              >
+                <img src="../assets/images/r2.png" alt="" />Dr Dre
+              </div>
+              <button
+                class="px-6 py-3 text-14 lg:text-base font-semibold hover:opacity-75 transition-all duration-500 text-[#EF5350] bg-[#f7f7f7] rounded-xl"
+              >
+                Blocked
+              </button>
+            </div>
+            <div class="flex items-center justify-between">
+              <div
+                class="flex items-center gap-2 text-14 lg:text-base font-semibold"
+              >
+                <img src="../assets/images/r2.png" alt="" />Dr Dre
+              </div>
+              <button
+                class="px-6 py-3 text-14 lg:text-base font-semibold hover:opacity-75 transition-all duration-500 text-[#EF5350] bg-[#f7f7f7] rounded-xl"
+              >
+                Blocked
+              </button>
+            </div>
+            <div class="flex items-center justify-between">
+              <div
+                class="flex items-center gap-2 text-14 lg:text-base font-semibold"
+              >
+                <img src="../assets/images/r2.png" alt="" />Dr Dre
+              </div>
+              <button
+                class="px-6 py-3 text-14 lg:text-base font-semibold hover:opacity-50 transition-all duration-500 text-[#EF5350] bg-[#f7f7f7] rounded-xl"
+              >
+                Blocked
+              </button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="px-6 py-3 text-14 w-[90%] mb-3 mx-auto lg:text-base font-semibold hover:opacity-50 transition-all duration-500 text-[#fff] bg-[#1975ff] rounded-xl"
+        >
+          Sale
+        </button>
+      </div>
+    </section>
   </body>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"

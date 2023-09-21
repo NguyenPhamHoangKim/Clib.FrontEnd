@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clib - Login</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <main class="relative md:hidden">
+      <div class="w-full flex items-center justify-between py-3 box-shadow">
+        <a href="../setting/account-informations.html">
+          <img src="../assets/svgs/arrow-left.png" alt=""
+        /></a>
+        <div class="text-18 font-semibold text-[#2C2F33]">
+          Basic information
+        </div>
+        <div></div>
+      </div>
+      <section class="flex items-start flex-col lg:flex-row gap-6">
+        <div class="w-full lg:w-[70%] mx-0 rounded-xl p-4">
+          <div class="flex items-start flex-col lg:flex-row gap-3">
+            <label
+              for=""
+              class="w-full text-14 mt-3 lg:text-base font-semibold text-[#52616B]"
+              >Email addresses</label
+            >
+            <div class="flex flex-col gap-4 w-full">
+              <input
+                type="text"
+                placeholder="iberd@gmail.com (Primary) "
+                class="w-full px-4 py-3 text-14 bg-[#f7f7f7] rounded-xl"
+              />
+              <div
+                class="flex items-center gap-2 w-full px-4 py-3 bg-[#f7f7f7] rounded-xl"
+              >
+                <input
+                  type="text"
+                  placeholder="ngocson@gmail.com (Not confirm)"
+                  class="w-full bg-[#f7f7f7] text-14 outline-none border-none"
+                />
+                <img src="../assets/svgs/edit.svg" alt="" />
+              </div>
+              <!-- <span class="text-12 lg:text-14 font-semibold text-[#EF5350]"
+                >That email addresses is already in use</span
+              > -->
+            </div>
+          </div>
+
+          <div class="">
+            <button
+              type="button"
+              id="open-modal"
+              class="mx-auto opacity-100 w-full items-center gap-2 hover:opacity-70 transition-all duration-500 text-center flex justify-center px-6 py-3 border mt-5 text-14 lg:text-base text-[#2C2F33] rounded-xl"
+            >
+              <img src="../assets/images/add.png" alt="" /> Add an email address
+            </button>
+          </div>
+          <div
+            class="items-center flex justify-between mt-4 py-4 border-t border-b"
+          >
+            <div>
+              <label
+                for=""
+                class="w-[20%] text-14 mt-3 lg:text-base font-semibold text-[#52616B]"
+                >Your birthday</label
+              >
+            </div>
+            <input type="date" />
+          </div>
+          <div class="flex flex-col mt-4">
+            <div>
+              <label
+                for=""
+                class="w-[20%] text-14 mt-3 lg:text-base font-semibold text-[#52616B]"
+                >Gender</label
+              >
+            </div>
+            <p class="flex items-center justify-between mt-3">
+              Male <img src="../assets/images/tick-circle (1).png" alt="" />
+            </p>
+            <p class="flex items-center justify-between mt-3">Female</p>
+            <p class="flex items-center justify-between mt-3">
+              Prefer not to say
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="../js/login.js"></script>
+</html>

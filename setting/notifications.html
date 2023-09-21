@@ -15,7 +15,51 @@
     <link rel="stylesheet" href="../styles/index.css" />
   </head>
   <body>
-    <main class="container mt-12">
+    <main class="container mt-12 hidden md:block">
+      <header
+        class="grid place-items-center grid-cols-2 lg:grid-cols-5 gap-1 p-2 rounded-xl mx-auto bg-[#f7f7f7] box-shadow"
+      >
+        <a
+          href="../setting/account.html"
+          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          id="account-link"
+        >
+          <ion-icon name="person-outline" class="w-[20px] h-[20px]"></ion-icon>
+          Account
+        </a>
+        <a
+          href="../setting/content.html"
+          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          id="content-link"
+        >
+          <ion-icon name="document-text-outline" class="w-5 h-5"> </ion-icon>
+          Content
+        </a>
+        <a
+          href="../setting/notifications.html"
+          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          id="notifications-link"
+        >
+          <ion-icon name="notifications-outline" class="w-5 h-5"></ion-icon>
+          Notifications
+        </a>
+        <a
+          href="../setting/privacy.html"
+          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          id="privacy-link"
+        >
+          <ion-icon name="shield-outline" class="w-5 h-5"></ion-icon>
+          Privacy
+        </a>
+        <a
+          href="../setting/advertising.html"
+          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          id="advertising-link"
+        >
+          <ion-icon name="volume-high"></ion-icon>
+          Advertising
+        </a>
+      </header>
       <div class="w-full p-6 bg-white rounded-xl mt-6">
         <h5 class="text-20 lg:text-24 font-semibold text-[#2C2F33]">
           Activities
@@ -116,6 +160,116 @@
         </div>
       </div>
     </main>
+    <!-- mobile -->
+    <div
+      class="w-full flex md:hidden items-center justify-between mb-6 py-3 box-shadow"
+    >
+      <a href="../setting/account-informations.html">
+        <img src="../assets/svgs/arrow-left.png" alt=""
+      /></a>
+      <div class="text-18 font-semibold text-[#2C2F33] px-4">Notifications</div>
+      <div></div>
+    </div>
+    <div class="w-full p-4 md:p-6 bg-white rounded-xl md:mt-6 block md:hidden">
+      <h5 class="text-20 lg:text-24 font-semibold text-[#2C2F33]">
+        Activities
+      </h5>
+      <p class="text-[#A1ABB2] text-14 lg:text-base mt-2">
+        You’ll get notifications from Clib
+      </p>
+      <div class="grid grid-cols-1 gap-x-24 mt-6">
+        <div
+          class="flex items-center text-14 lg:text-base text-[#52616B] justify-between pb-4 mt-4 border-b"
+        >
+          New follower
+          <img src="../assets/images/Toggle light.png" alt="" />
+        </div>
+        <div
+          class="flex items-center text-14 lg:text-base text-[#52616B] justify-between pb-4 mt-4 border-b"
+        >
+          New follower
+          <img src="../assets/images/Toggle light.png" alt="" />
+        </div>
+        <div
+          class="flex items-center text-14 lg:text-base text-[#52616B] justify-between pb-4 mt-4 border-b"
+        >
+          New follower
+          <img src="../assets/images/Toggle light.png" alt="" />
+        </div>
+        <div
+          class="flex items-center text-14 lg:text-base text-[#52616B] justify-between pb-4 mt-4 border-b"
+        >
+          New follower
+          <img src="../assets/images/Toggle light.png" alt="" />
+        </div>
+        <div
+          class="flex items-center text-14 lg:text-base text-[#52616B] justify-between pb-4 mt-4 border-b"
+        >
+          New follower
+          <img src="../assets/images/Toggle light.png" alt="" />
+        </div>
+        <div
+          class="flex items-center text-14 lg:text-base text-[#52616B] justify-between pb-4 mt-4 border-b"
+        >
+          New follower
+          <img src="../assets/images/Toggle light.png" alt="" />
+        </div>
+        <div
+          class="flex items-center text-14 lg:text-base text-[#52616B] justify-between pb-4 mt-4 border-b"
+        >
+          New follower
+          <img src="../assets/images/Toggle light.png" alt="" />
+        </div>
+      </div>
+
+      <h5 class="text-20 lg:text-24 font-semibold text-[#2C2F33] mt-8">
+        Email notification
+      </h5>
+      <p class="text-[#A1ABB2] text-14 lg:text-base mt-2">
+        You’ll get notifications from Clib to your mail
+      </p>
+      <div class="grid grid-cols-1 gap-x-24 mt-6">
+        <div
+          class="flex items-center text-14 lg:text-base text-[#52616B] justify-between pb-4 mt-4 border-b"
+        >
+          New follower
+          <img src="../assets/images/Toggle light.png" alt="" />
+        </div>
+        <div
+          class="flex items-center text-14 lg:text-base text-[#52616B] justify-between pb-4 mt-4 border-b"
+        >
+          New follower
+          <img src="../assets/images/Toggle light.png" alt="" />
+        </div>
+        <div
+          class="flex items-center text-14 lg:text-base text-[#52616B] justify-between pb-4 mt-4 border-b"
+        >
+          New follower
+          <img src="../assets/images/Toggle light.png" alt="" />
+        </div>
+        <div
+          class="flex items-center text-14 lg:text-base text-[#52616B] justify-between pb-4 mt-4 border-b"
+        >
+          New follower
+          <img src="../assets/images/Toggle light.png" alt="" />
+        </div>
+      </div>
+
+      <div class="flex w-full flex-col gap-3 mt-6">
+        <button
+          type="button"
+          class="text-[#fff] rounded-xl hover:opacity-80 transition-opacity duration-500 bg-[#1975ff] text-14 lg:text-base font-semibold px-4 py-3"
+        >
+          Sale
+        </button>
+      </div>
+    </div>
   </body>
-  <script src="/js/login.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="../js/login.js"></script>
 </html>

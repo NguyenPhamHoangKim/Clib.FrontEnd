@@ -15,20 +15,12 @@
     ></script>
   </head>
   <body>
-    <main class="container mt-12 relative">
-      <div class="modal-filter">
-        <div class="w-64 p-3 bg-white box-shadow rounded-xl">
-          <div class="items-center flex justify-between">
-            <p class="text-14 lg:text-base font-semibold text-[#52616B]">
-              Filter
-            </p>
-            <p class="text-[#EF5350] text-12 lg:text-14">Clear</p>
-          </div>
-        </div>
-      </div>
+    <main class="container mt-12 relative hidden md:block">
       <!--  -->
       <div class="modal-advertising overlay">
-        <div class="p-6 w-full lg:w-[600px] bg-[#fff] abs-center rounded-xl">
+        <div
+          class="p-6 w-full lg:w-[600px] bg-[#fff] abs-center rounded-xl z-0"
+        >
           <img
             src="../assets/svgs/close.svg"
             class="absolute top-5 close-modal right-5"
@@ -53,17 +45,22 @@
               />
             </div>
             <div
-              class="bg-[#f7f7f7] w-12 h-12 rounded-xl flex justify-center items-center"
+              class="bg-[#f7f7f7] open-modal-filter relative w-12 h-12 rounded-xl flex justify-center items-center"
             >
               <img
                 src="../assets/images/filter.png"
                 class="w-6 h-6 object-cover"
                 alt=""
               />
+              <div
+                class="w-6 absolute flex items-center justify-center top-[-10px] right-[-10px] h-6 rounded-[50%] text-white bg-[#1975ff]"
+              >
+                2
+              </div>
             </div>
           </div>
           <div
-            class="flex flex-col gap-4 mt-6 h-[250px] overflow-y-auto scrollbar-custom"
+            class="flex flex-col gap-4 mt-6 h-[240px] overflow-y-auto scrollbar-custom"
           >
             <div>
               <div class="flex items-center justify-between toggleDiv">
@@ -75,7 +72,7 @@
                     Strictly necessary cookies
                   </div>
                   <div class="pl-8">
-                    <a href="#" class="text-[#52616B] text-12 underline pl-8"
+                    <a href="#" class="text-[#52616B] text-12 underline"
                       >Cookies Details</a
                     >
                   </div>
@@ -107,7 +104,7 @@
                     Strictly necessary cookies
                   </div>
                   <div class="pl-8">
-                    <a href="#" class="text-[#52616B] text-12 underline pl-8"
+                    <a href="#" class="text-[#52616B] text-12 underline"
                       >Cookies Details</a
                     >
                   </div>
@@ -139,7 +136,7 @@
                     Exponential interactive, Inc d/b/a V/DX.tv
                   </div>
                   <div class="pl-8">
-                    <a href="#" class="text-[#52616B] text-12 underline pl-8"
+                    <a href="#" class="text-[#52616B] text-12 underline"
                       >Cookies Details</a
                     >
                   </div>
@@ -170,8 +167,8 @@
                     <img src="../assets/svgs/arrow-down.svg" alt="" />
                     Captify technologies limited
                   </div>
-                  <div class="pl-8">
-                    <a href="#" class="text-[#52616B] text-12 underline pl-8"
+                  <div class="">
+                    <a href="#" class="text-[#52616B] pl-8 text-12 underline"
                       >Cookies Details</a
                     >
                   </div>
@@ -203,7 +200,7 @@
                     Roq.ad Inc
                   </div>
                   <div class="pl-8">
-                    <a href="#" class="text-[#52616B] text-12 underline pl-8"
+                    <a href="#" class="text-[#52616B] text-12 underline"
                       >Cookies Details</a
                     >
                   </div>
@@ -241,43 +238,118 @@
             </button>
           </div>
         </div>
+        <div
+          class="modal-filter z-[999999999999] absolute top-[242px] right-[361px]"
+        >
+          <div class="w-64 p-3 bg-white box-shadow rounded-xl">
+            <div class="items-center flex justify-between pb-2 border-b">
+              <p class="text-14 lg:text-base font-semibold text-[#52616B]">
+                Filter
+              </p>
+              <p class="text-[#EF5350] text-12 lg:text-14">Clear</p>
+            </div>
+            <div class="overflow-y-auto h-[250px] scrollbar-custom">
+              <div
+                class="flex w-full mt-3 items-center gap-3 text-12 lg:text-14 text-[#52616B]"
+              >
+                <input type="checkbox" />Store and/or access information on a
+                device
+              </div>
+              <div
+                class="flex w-full mt-3 items-center gap-3 text-12 lg:text-14 text-[#52616B]"
+              >
+                <input type="checkbox" />Store and/or access information on a
+                device
+              </div>
+              <div
+                class="flex w-full mt-3 items-center gap-3 text-12 lg:text-14 text-[#52616B]"
+              >
+                <input type="checkbox" />Store and/or access information on a
+                device
+              </div>
+              <div
+                class="flex w-full mt-3 items-center gap-3 text-12 lg:text-14 text-[#52616B]"
+              >
+                <input type="checkbox" />Store and/or access information on a
+                device
+              </div>
+              <div
+                class="flex w-full mt-3 items-center gap-3 text-12 lg:text-14 text-[#52616B]"
+              >
+                <input type="checkbox" />Store and/or access information on a
+                device
+              </div>
+              <div
+                class="flex w-full mt-3 items-center gap-3 text-12 lg:text-14 text-[#52616B]"
+              >
+                <input type="checkbox" />Store and/or access information on a
+                device
+              </div>
+              <div
+                class="flex w-full mt-3 items-center gap-3 text-12 lg:text-14 text-[#52616B]"
+              >
+                <input type="checkbox" />Store and/or access information on a
+                device
+              </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
+              <button
+                type="button"
+                class="text-[#52616B] close-modal-filter w-full rounded-xl hover:opacity-80 transition-opacity duration-500 bg-[#ebeef0] text-12 lg:text-14 font-semibold py-2"
+              >
+                Cancel
+              </button>
+              <button
+                type="button"
+                class="text-[#fff] w-full rounded-xl hover:opacity-80 transition-opacity duration-500 bg-[#1975ff] text-12 lg:text-14 font-semibold py-2"
+              >
+                Apply
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
       <header
         class="grid place-items-center grid-cols-2 lg:grid-cols-5 gap-1 p-2 rounded-xl mx-auto bg-[#f7f7f7] box-shadow"
       >
         <a
-          href="#"
-          class="flex w-full p-2 items-center justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold active-setting"
+          href="../setting/account.html"
+          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          id="account-link"
         >
           <ion-icon name="person-outline" class="w-[20px] h-[20px]"></ion-icon>
           Account
         </a>
         <a
-          href="#"
-          class="flex items-center p-2 gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          href="../setting/content.html"
+          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          id="content-link"
         >
-          <ion-icon name="document-text-outline" class="w-5 h-5"> \</ion-icon>
+          <ion-icon name="document-text-outline" class="w-5 h-5"> </ion-icon>
           Content
         </a>
         <a
-          href="#"
-          class="flex items-center gap-2 p-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          href="../setting/notifications.html"
+          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          id="notifications-link"
         >
           <ion-icon name="notifications-outline" class="w-5 h-5"></ion-icon>
           Notifications
         </a>
         <a
-          href="#"
-          class="flex items-center gap-2 p-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          href="../setting/privacy.html"
+          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          id="privacy-link"
         >
           <ion-icon name="shield-outline" class="w-5 h-5"></ion-icon>
           Privacy
         </a>
         <a
-          href="#"
-          class="flex items-center gap-2 p-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          href="../setting/advertising.html"
+          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          id="advertising-link"
         >
-          <ion-icon name="volume-medium-outline" class="w-5 h-5"></ion-icon>
+          <ion-icon name="volume-high"></ion-icon>
           Advertising
         </a>
       </header>

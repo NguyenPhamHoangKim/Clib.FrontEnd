@@ -31,16 +31,27 @@ $("#password").blur(function () {
 $(".modal-delete").hide();
 $(".modal-privacy").hide();
 $(".modal-advertising").hide();
+$(".modal-filter").hide();
 
 $("#open-modal").click(function () {
   $(".modal-delete").show();
+});
+$("#open-modal").click(function () {
+  $(".modal-filter").hide();
 });
 
 $(".open-privacy").click(function () {
   $(".modal-privacy").show();
 });
+
+$(".open-modal-filter").click(function () {
+  $(".modal-filter").show();
+});
 $(".open-advertising").click(function () {
   $(".modal-advertising").show();
+});
+$(".close-modal-filter").click(function () {
+  $(".modal-filter").hide();
 });
 
 $(".close-modal").each(function () {
@@ -53,4 +64,13 @@ $(".close-modal").each(function () {
 
 $(".toggleDiv").click(function () {
   $(this).next(".hiddenText").slideToggle("fast"); // Sử dụng slideToggle để làm cho hiệu ứng mượt hơn
+});
+// Lấy URL của trang hiện tại
+let currentPathname = window.location.pathname;
+
+$(".link").each(function () {
+  let linkPathname = this.pathname;
+  if (currentPathname === linkPathname) {
+    $(this).addClass("active-setting");
+  }
 });

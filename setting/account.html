@@ -15,7 +15,7 @@
     ></script>
   </head>
   <body>
-    <main class="container mt-12 relative">
+    <main class="container mt-12 relative hidden md:block">
       <div class="modal-delete overlay">
         <div class="p-6 w-[600px] bg-[#fff] abs-center rounded-xl">
           <img
@@ -129,39 +129,44 @@
         class="grid place-items-center grid-cols-2 lg:grid-cols-5 gap-1 p-2 rounded-xl mx-auto bg-[#f7f7f7] box-shadow"
       >
         <a
-          href="#"
-          class="flex w-full p-2 items-center justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold active-setting"
+          href="../setting/account.html"
+          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          id="account-link"
         >
           <ion-icon name="person-outline" class="w-[20px] h-[20px]"></ion-icon>
           Account
         </a>
         <a
-          href="#"
-          class="flex items-center p-2 gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          href="../setting/content.html"
+          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          id="content-link"
         >
-          <ion-icon name="document-text-outline" class="w-5 h-5"> \</ion-icon>
+          <ion-icon name="document-text-outline" class="w-5 h-5"> </ion-icon>
           Content
         </a>
         <a
-          href="#"
-          class="flex items-center gap-2 p-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          href="../setting/notifications.html"
+          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          id="notifications-link"
         >
           <ion-icon name="notifications-outline" class="w-5 h-5"></ion-icon>
           Notifications
         </a>
         <a
-          href="#"
-          class="flex items-center gap-2 p-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          href="../setting/privacy.html"
+          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          id="privacy-link"
         >
           <ion-icon name="shield-outline" class="w-5 h-5"></ion-icon>
           Privacy
         </a>
         <a
-          href="#"
-          class="flex items-center gap-2 p-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          href="../setting/advertising.html"
+          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-[#A1ABB2] font-semibold"
+          id="advertising-link"
         >
-          <ion-icon name="shield-outline" class="w-5 h-5"></ion-icon>
-          Account
+          <ion-icon name="volume-high"></ion-icon>
+          Advertising
         </a>
       </header>
       <section class="flex items-start flex-col lg:flex-row gap-6">
@@ -187,7 +192,7 @@
                 <input
                   type="text"
                   placeholder="ngocson@gmail.com (Not confirmed - Resend confirm email)"
-                  class="w-full bg-[#f7f7f7]"
+                  class="w-full bg-[#f7f7f7] outline-none border-none"
                 />
                 <img src="../assets/svgs/trash.png" alt="" />
               </div>
@@ -197,7 +202,7 @@
                 <input
                   type="text"
                   placeholder="Please enter your email address"
-                  class="w-full bg-[#f7f7f7]"
+                  class="w-full bg-[#f7f7f7] outline-none border-none"
                 />
                 <div class="flex items-center gap-2">
                   <button
@@ -370,6 +375,78 @@
         </div>
       </section>
     </main>
+    <!-- mobile navigation -->
+    <section class="h-full block md:hidden">
+      <div class="">
+        <div class="w-full flex items-center justify-between py-3 box-shadow">
+          <img src="../assets/svgs/arrow-left.png" alt="" />
+          <div class="text-18 font-semibold text-[#2C2F33] px-4">Setting</div>
+          <div></div>
+        </div>
+        <div class="mt-4 px-4 flex flex-col gap-3">
+          <a
+            href="../setting/account-informations.html"
+            class="py-3 flex items-center justify-between"
+          >
+            <div class="flex items-center gap-3 text-14 text-[#2C2F33]">
+              <ion-icon name="person-outline" class="w-6 h-6"></ion-icon>
+              Account
+            </div>
+            <img src="../assets/images/arrow-right.png" alt="" />
+          </a>
+          <a
+            href="../setting/notifications.html"
+            class="py-3 flex items-center justify-between"
+          >
+            <div class="flex items-center gap-3 text-14 text-[#2C2F33]">
+              <ion-icon name="notifications-outline" class="w-6 h-6"></ion-icon>
+              Notifications
+            </div>
+            <img src="../assets/images/arrow-right.png" alt="" />
+          </a>
+          <a
+            href="../setting/content.html"
+            class="py-3 flex items-center justify-between"
+          >
+            <div class="flex items-center gap-3 text-14 text-[#2C2F33]">
+              <ion-icon name="reader-outline" class="w-6 h-6"></ion-icon>
+              Content
+            </div>
+            <img src="../assets/images/arrow-right.png" alt="" />
+          </a>
+          <a href="#" class="py-3 flex items-center justify-between">
+            <div class="flex items-center gap-3 text-14 text-[#2C2F33]">
+              <ion-icon name="volume-medium-outline" class="w-6 h-6"></ion-icon>
+              Advertising
+            </div>
+            <img src="../assets/images/arrow-right.png" alt="" />
+          </a>
+          <a
+            href="../setting/privacy.html"
+            class="py-3 flex items-center justify-between"
+          >
+            <div class="flex items-center gap-3 text-14 text-[#2C2F33]">
+              <ion-icon name="lock-closed-outline" class="w-6 h-6"></ion-icon>
+              Privacy
+            </div>
+            <img src="../assets/images/arrow-right.png" alt="" />
+          </a>
+          <a href="#" class="py-3 flex items-center justify-between">
+            <div class="flex items-center gap-3 text-14 text-[#2C2F33]">
+              <ion-icon name="help-buoy-outline" class="w-6 h-6"></ion-icon>
+              Contact support
+            </div>
+            <img src="../assets/images/arrow-right.png" alt="" />
+          </a>
+        </div>
+        <a
+          href="#"
+          class="px-6 w-[150px] mx-auto mt-6 md:hidden rounded-xl flex items-center justify-center py-3 text-base font-semibold text-[#2C2F33] bg-[#ebeef0]"
+        >
+          Sign out</a
+        >
+      </div>
+    </section>
   </body>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
