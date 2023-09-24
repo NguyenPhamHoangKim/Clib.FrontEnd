@@ -17,18 +17,18 @@
   <body>
     <main class="container mt-12 relative hidden md:block">
       <div class="modal-privacy overlay">
-        <div class="p-6 w-full lg:w-[600px] bg-[#fff] abs-center rounded-xl">
+        <div class="w-full lg:w-[600px] bg-[#fff] abs-center rounded-xl">
           <img
             src="../assets/svgs/close.svg"
             class="absolute top-5 close-modal right-5"
             alt=""
           />
           <h5
-            class="text-[#2C2F33] text-20 font-semibold text-center mb-4 lg:text-24"
+            class="text-[#2C2F33] pt-6 text-20 font-semibold text-center mb-4 lg:text-24"
           >
             About Your Privacy
           </h5>
-          <p class="text-14 lg:text-base text-[#52616B]">
+          <p class="text-14 lg:text-base px-6 text-[#52616B]">
             We process your data to deliver content or advertisements and
             measure the delivery of such content or advertisements to extract
             insights about our website. We share this information with our
@@ -38,167 +38,250 @@
             our vendors participating in the Transparency and Consent Framework.
           </p>
           <div
-            class="flex flex-col gap-4 mt-6 h-[250px] overflow-y-auto scrollbar-custom"
+            class="flex flex-col gap-4 mt-6 px-6 h-[250px] overflow-y-auto scrollbar-custom"
           >
             <div>
-              <div class="flex items-center justify-between toggleDiv">
+              <div class="flex flex-col items-center">
                 <div
-                  class="flex items-center gap-2 text-14 text-[#52616B] w-[80%] lg:text-base font-semibold"
+                  class="flex items-center justify-between w-full pb-4 border-b toggleDiv"
                 >
-                  <img src="../assets/svgs/arrow-down.svg" alt="" />
-                  Strictly necessary cookies
+                  <div class="w-full">
+                    <div
+                      class="toggleDiv flex items-center gap-2 text-14 text-[#52616B] line-clamp-1 lg:text-base font-semibold"
+                    >
+                      <img src="../assets/svgs/arrow-down.svg" alt="" />
+                      Strictly necessary cookies
+                    </div>
+                  </div>
+                  <label
+                    class="relative inline-flex items-center cursor-pointer"
+                  >
+                    <input type="checkbox" value="" class="sr-only peer" />
+                    <div
+                      class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                    ></div>
+                  </label>
                 </div>
-                <img src="../assets/images/Toggle light.png" alt="" />
-              </div>
-              <div class="hiddenText" style="display: none">
-                These cookies enable the website to provide enhanced
-                functionality and personalisation. They may be set by us or by
-                third party providers whose services we have added to our pages.
-                If you do not allow these cookies then some or all of these
-                services may not function properly.These cookies enable the
-                website to provide enhanced functionality and personalisation.
-                They may be set by us or by third party providers whose services
-                we have added to our pages. If you do not allow these cookies
-                then some or all of these services may not function properly.
+                <div class="hiddenText hidden">
+                  <div
+                    class="flex flex-col px-4 py-3 mt-3 rounded-xl text-14 lg:text-base text-[#52616B] bg-[#f7f7f7]"
+                  >
+                    These cookies enable the website to provide enhanced
+                    functionality and personalisation. They may be set by us or
+                    by third party providers whose services we have added to our
+                    pages. If you do not allow these cookies then some or all of
+                    these services may not function properly.These cookies
+                    enable the website to provide enhanced functionality and
+                    personalisation. They may be set by us or by third party
+                    providers whose services we have added to our pages. If you
+                    do not allow these cookies then some or all of these
+                    services may not function properly.
+                    <a
+                      href="#"
+                      class="text-14 lg:text-base text-[#1A75FF] underline"
+                      >Cookies Details</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
             <div>
-              <div class="flex items-center justify-between toggleDiv">
+              <div class="flex flex-col items-center">
                 <div
-                  class="flex items-center gap-2 text-14 text-[#52616B] w-[80%] lg:text-base font-semibold"
+                  class="flex items-center justify-between w-full pb-4 border-b toggleDiv"
                 >
-                  <img src="../assets/svgs/arrow-down.svg" alt="" />
-                  Strictly necessary cookies
+                  <div class="w-full">
+                    <div
+                      class="toggleDiv flex items-center gap-2 text-14 text-[#52616B] line-clamp-1 lg:text-base font-semibold"
+                    >
+                      <img src="../assets/svgs/arrow-down.svg" alt="" />
+                      Strictly necessary cookies
+                    </div>
+                  </div>
+                  <label
+                    class="relative inline-flex items-center cursor-pointer"
+                  >
+                    <input type="checkbox" value="" class="sr-only peer" />
+                    <div
+                      class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                    ></div>
+                  </label>
                 </div>
-                <img src="../assets/images/Toggle light.png" alt="" />
-              </div>
-              <div class="hiddenText" style="display: none">
-                These cookies enable the website to provide enhanced
-                functionality and personalisation. They may be set by us or by
-                third party providers whose services we have added to our pages.
-                If you do not allow these cookies then some or all of these
-                services may not function properly.These cookies enable the
-                website to provide enhanced functionality and personalisation.
-                They may be set by us or by third party providers whose services
-                we have added to our pages. If you do not allow these cookies
-                then some or all of these services may not function properly.
+                <div class="hiddenText hidden">
+                  <div
+                    class="flex flex-col px-4 py-3 mt-3 rounded-xl text-14 lg:text-base text-[#52616B] bg-[#f7f7f7]"
+                  >
+                    These cookies enable the website to provide enhanced
+                    functionality and personalisation. They may be set by us or
+                    by third party providers whose services we have added to our
+                    pages. If you do not allow these cookies then some or all of
+                    these services may not function properly.These cookies
+                    enable the website to provide enhanced functionality and
+                    personalisation. They may be set by us or by third party
+                    providers whose services we have added to our pages. If you
+                    do not allow these cookies then some or all of these
+                    services may not function properly.
+                    <a
+                      href="#"
+                      class="text-14 lg:text-base text-[#1A75FF] underline"
+                      >Cookies Details</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
             <div>
-              <div class="flex items-center justify-between toggleDiv">
+              <div class="flex flex-col items-center">
                 <div
-                  class="flex items-center gap-2 text-14 text-[#52616B] w-[80%] lg:text-base font-semibold"
+                  class="flex items-center justify-between w-full pb-4 border-b toggleDiv"
                 >
-                  <img src="../assets/svgs/arrow-down.svg" alt="" />
-                  Strictly necessary cookies
+                  <div class="w-full">
+                    <div
+                      class="toggleDiv flex items-center gap-2 text-14 text-[#52616B] line-clamp-1 lg:text-base font-semibold"
+                    >
+                      <img src="../assets/svgs/arrow-down.svg" alt="" />
+                      Strictly necessary cookies
+                    </div>
+                  </div>
+                  <label
+                    class="relative inline-flex items-center cursor-pointer"
+                  >
+                    <input type="checkbox" value="" class="sr-only peer" />
+                    <div
+                      class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                    ></div>
+                  </label>
                 </div>
-                <img src="../assets/images/Toggle light.png" alt="" />
-              </div>
-              <div class="hiddenText" style="display: none">
-                These cookies enable the website to provide enhanced
-                functionality and personalisation. They may be set by us or by
-                third party providers whose services we have added to our pages.
-                If you do not allow these cookies then some or all of these
-                services may not function properly.These cookies enable the
-                website to provide enhanced functionality and personalisation.
-                They may be set by us or by third party providers whose services
-                we have added to our pages. If you do not allow these cookies
-                then some or all of these services may not function properly.
+                <div class="hiddenText hidden">
+                  <div
+                    class="flex flex-col px-4 py-3 mt-3 rounded-xl text-14 lg:text-base text-[#52616B] bg-[#f7f7f7]"
+                  >
+                    These cookies enable the website to provide enhanced
+                    functionality and personalisation. They may be set by us or
+                    by third party providers whose services we have added to our
+                    pages. If you do not allow these cookies then some or all of
+                    these services may not function properly.These cookies
+                    enable the website to provide enhanced functionality and
+                    personalisation. They may be set by us or by third party
+                    providers whose services we have added to our pages. If you
+                    do not allow these cookies then some or all of these
+                    services may not function properly.
+                    <a
+                      href="#"
+                      class="text-14 lg:text-base text-[#1A75FF] underline"
+                      >Cookies Details</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
             <div>
-              <div class="flex items-center justify-between toggleDiv">
+              <div class="flex flex-col items-center">
                 <div
-                  class="flex items-center gap-2 text-14 text-[#52616B] w-[80%] lg:text-base font-semibold"
+                  class="flex items-center justify-between w-full pb-4 border-b toggleDiv"
                 >
-                  <img src="../assets/svgs/arrow-down.svg" alt="" />
-                  Strictly necessary cookies
+                  <div class="w-full">
+                    <div
+                      class="toggleDiv flex items-center gap-2 text-14 text-[#52616B] line-clamp-1 lg:text-base font-semibold"
+                    >
+                      <img src="../assets/svgs/arrow-down.svg" alt="" />
+                      Strictly necessary cookies
+                    </div>
+                  </div>
+                  <label
+                    class="relative inline-flex items-center cursor-pointer"
+                  >
+                    <input type="checkbox" value="" class="sr-only peer" />
+                    <div
+                      class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                    ></div>
+                  </label>
                 </div>
-                <img src="../assets/images/Toggle light.png" alt="" />
-              </div>
-              <div class="hiddenText" style="display: none">
-                These cookies enable the website to provide enhanced
-                functionality and personalisation. They may be set by us or by
-                third party providers whose services we have added to our pages.
-                If you do not allow these cookies then some or all of these
-                services may not function properly.These cookies enable the
-                website to provide enhanced functionality and personalisation.
-                They may be set by us or by third party providers whose services
-                we have added to our pages. If you do not allow these cookies
-                then some or all of these services may not function properly.
+                <div class="hiddenText hidden">
+                  <div
+                    class="flex flex-col px-4 py-3 mt-3 rounded-xl text-14 lg:text-base text-[#52616B] bg-[#f7f7f7]"
+                  >
+                    These cookies enable the website to provide enhanced
+                    functionality and personalisation. They may be set by us or
+                    by third party providers whose services we have added to our
+                    pages. If you do not allow these cookies then some or all of
+                    these services may not function properly.These cookies
+                    enable the website to provide enhanced functionality and
+                    personalisation. They may be set by us or by third party
+                    providers whose services we have added to our pages. If you
+                    do not allow these cookies then some or all of these
+                    services may not function properly.
+                    <a
+                      href="#"
+                      class="text-14 lg:text-base text-[#1A75FF] underline"
+                      >Cookies Details</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
             <div>
-              <div class="flex items-center justify-between toggleDiv">
+              <div class="flex flex-col items-center">
                 <div
-                  class="flex items-center gap-2 text-14 text-[#52616B] w-[80%] lg:text-base font-semibold"
+                  class="flex items-center justify-between w-full pb-4 border-b toggleDiv"
                 >
-                  <img src="../assets/svgs/arrow-down.svg" alt="" />
-                  Strictly necessary cookies
+                  <div class="w-full">
+                    <div
+                      class="toggleDiv flex items-center gap-2 text-14 text-[#52616B] line-clamp-1 lg:text-base font-semibold"
+                    >
+                      <img src="../assets/svgs/arrow-down.svg" alt="" />
+                      Strictly necessary cookies
+                    </div>
+                  </div>
+                  <label
+                    class="relative inline-flex items-center cursor-pointer"
+                  >
+                    <input type="checkbox" value="" class="sr-only peer" />
+                    <div
+                      class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                    ></div>
+                  </label>
                 </div>
-                <img src="../assets/images/Toggle light.png" alt="" />
-              </div>
-              <div class="hiddenText" style="display: none">
-                These cookies enable the website to provide enhanced
-                functionality and personalisation. They may be set by us or by
-                third party providers whose services we have added to our pages.
-                If you do not allow these cookies then some or all of these
-                services may not function properly.These cookies enable the
-                website to provide enhanced functionality and personalisation.
-                They may be set by us or by third party providers whose services
-                we have added to our pages. If you do not allow these cookies
-                then some or all of these services may not function properly.
-              </div>
-            </div>
-            <div>
-              <div class="flex items-center justify-between toggleDiv">
-                <div
-                  class="flex items-center gap-2 text-14 text-[#52616B] w-[80%] lg:text-base font-semibold"
-                >
-                  <img src="../assets/svgs/arrow-down.svg" alt="" />
-                  Strictly necessary cookies
+                <div class="hiddenText hidden">
+                  <div
+                    class="flex flex-col px-4 py-3 mt-3 rounded-xl text-14 lg:text-base text-[#52616B] bg-[#f7f7f7]"
+                  >
+                    These cookies enable the website to provide enhanced
+                    functionality and personalisation. They may be set by us or
+                    by third party providers whose services we have added to our
+                    pages. If you do not allow these cookies then some or all of
+                    these services may not function properly.These cookies
+                    enable the website to provide enhanced functionality and
+                    personalisation. They may be set by us or by third party
+                    providers whose services we have added to our pages. If you
+                    do not allow these cookies then some or all of these
+                    services may not function properly.
+                    <a
+                      href="#"
+                      class="text-14 lg:text-base text-[#1A75FF] underline"
+                      >Cookies Details</a
+                    >
+                  </div>
                 </div>
-                <img src="../assets/images/Toggle light.png" alt="" />
-              </div>
-              <div class="hiddenText" style="display: none">
-                These cookies enable the website to provide enhanced
-                functionality and personalisation. They may be set by us or by
-                third party providers whose services we have added to our pages.
-                If you do not allow these cookies then some or all of these
-                services may not function properly.
-              </div>
-            </div>
-            <div>
-              <div class="flex items-center justify-between toggleDiv">
-                <div
-                  class="flex items-center gap-2 text-14 text-[#52616B] w-[80%] lg:text-base font-semibold"
-                >
-                  <img src="../assets/svgs/arrow-down.svg" alt="" />
-                  Strictly necessary cookies
-                </div>
-                <img src="../assets/images/Toggle light.png" alt="" />
-              </div>
-              <div class="hiddenText" style="display: none">
-                These cookies enable the website to provide enhanced
-                functionality and personalisation. They may be set by us or by
-                third party providers whose services we have added to our pages.
-                If you do not allow these cookies then some or all of these
-                services may not function properly.
               </div>
             </div>
           </div>
-          <div class="flex items-center justify-between mt-6">
-            <div
-              class="flex items-center w-full gap-2 text-14 text-[#52616B] py-4 lg:text-base font-semibold"
-            >
-              Allow All
-              <img src="../assets/images/Toggle light.png" alt="" />
+          <div
+            class="px-6 py-4 flex items-center justify-between rounded-bl-xl rounded-br-xl box-shadow bg-[#fff]"
+          >
+            <div class="flex items-center gap-3">
+              <p class="text-14 lg:text-base text-[#52616B]">Allow All</p>
+              <label class="relative inline-flex items-center cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" />
+                <div
+                  class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                ></div>
+              </label>
             </div>
             <button
-              type="button"
-              class="text-[#fff] rounded-xl w-[200px] hover:opacity-80 transition-opacity duration-500 bg-[#1975ff] text-14 lg:text-base font-semibold py-2"
+              class="px-6 py-3 text-14 lg:text-base font-semibold hover:opacity-75 transition-all duration-500 text-white bg-[#1975ff] rounded-xl"
             >
-              Delete Account
+              Confirm My Choices
             </button>
           </div>
         </div>
@@ -261,7 +344,12 @@
                 class="text-14 flex items-center justify-between lg:text-base text-[#52616B] mb-2"
               >
                 Attribution
-                <img src="../assets/images/Toggle light.png" alt="" />
+                <label class="relative inline-flex items-center cursor-pointer">
+                  <input type="checkbox" value="" class="sr-only peer" />
+                  <div
+                    class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                  ></div>
+                </label>
               </div>
               <p class="text-12 lg:text-14 text-[#52616B]">
                 Allow others to copy, distribute, display and perform your
@@ -380,7 +468,12 @@
                 class="text-14 flex items-center justify-between lg:text-base text-[#52616B] mb-2"
               >
                 Attribution
-                <img src="../assets/images/Toggle light.png" alt="" />
+                <label class="relative inline-flex items-center cursor-pointer">
+                  <input type="checkbox" value="" class="sr-only peer" />
+                  <div
+                    class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                  ></div>
+                </label>
               </div>
               <p class="text-12 lg:text-14 text-[#52616B]">
                 Allow others to copy, distribute, display and perform your

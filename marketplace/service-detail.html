@@ -1,0 +1,1277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clib - Login</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <main class="container my-12 relative">
+      <div class="overlay modal-cmt">
+        <div
+          class="w-full lg:w-[640px] abs-center rounded-xl bg-[#fff] p-6 relative"
+        >
+          <img
+            src="../assets/svgs/close.svg"
+            alt=""
+            class="close-checkout absolute right-6 top-6"
+          />
+          <div class="flex items-center flex-col justify-center">
+            <h5 class="text-20 lg:text-24 font-semibold">
+              Producer | Mixing | Mastering
+            </h5>
+            <p class="text-14 text-[#52616B] mt-1 mb-4">Son Tung M-TP</p>
+            <p class="mb-2">Your rating</p>
+            <div class="flex items-end justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M21.3536 9.04257L15.358 8.1301L12.6778 2.44017C12.6046 2.28438 12.4841 2.15827 12.3354 2.08161C11.9623 1.88873 11.5089 2.04947 11.3223 2.44017L8.64213 8.1301L2.64652 9.04257C2.48122 9.0673 2.33009 9.1489 2.21438 9.27254C2.07449 9.4231 1.99741 9.62566 2.00007 9.8357C2.00272 10.0457 2.0849 10.2461 2.22855 10.3927L6.56645 14.8215L5.5416 21.0753C5.51757 21.2207 5.53294 21.3703 5.58598 21.5071C5.63901 21.6439 5.72759 21.7624 5.84166 21.8492C5.95573 21.9359 6.09074 21.9875 6.23137 21.998C6.37199 22.0085 6.51262 21.9775 6.63729 21.9086L12 18.9561L17.3628 21.9086C17.5092 21.9902 17.6792 22.0174 17.8422 21.9877C18.2531 21.9135 18.5293 21.5055 18.4585 21.0753L17.4336 14.8215L21.7715 10.3927C21.8896 10.2716 21.9675 10.1133 21.9912 9.9402C22.0549 9.50746 21.7668 9.10686 21.3536 9.04257Z"
+                  fill="#A1ABB3"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M21.3536 9.04257L15.358 8.1301L12.6778 2.44017C12.6046 2.28438 12.4841 2.15827 12.3354 2.08161C11.9623 1.88873 11.5089 2.04947 11.3223 2.44017L8.64213 8.1301L2.64652 9.04257C2.48122 9.0673 2.33009 9.1489 2.21438 9.27254C2.07449 9.4231 1.99741 9.62566 2.00007 9.8357C2.00272 10.0457 2.0849 10.2461 2.22855 10.3927L6.56645 14.8215L5.5416 21.0753C5.51757 21.2207 5.53294 21.3703 5.58598 21.5071C5.63901 21.6439 5.72759 21.7624 5.84166 21.8492C5.95573 21.9359 6.09074 21.9875 6.23137 21.998C6.37199 22.0085 6.51262 21.9775 6.63729 21.9086L12 18.9561L17.3628 21.9086C17.5092 21.9902 17.6792 22.0174 17.8422 21.9877C18.2531 21.9135 18.5293 21.5055 18.4585 21.0753L17.4336 14.8215L21.7715 10.3927C21.8896 10.2716 21.9675 10.1133 21.9912 9.9402C22.0549 9.50746 21.7668 9.10686 21.3536 9.04257Z"
+                  fill="#A1ABB3"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M21.3536 9.04257L15.358 8.1301L12.6778 2.44017C12.6046 2.28438 12.4841 2.15827 12.3354 2.08161C11.9623 1.88873 11.5089 2.04947 11.3223 2.44017L8.64213 8.1301L2.64652 9.04257C2.48122 9.0673 2.33009 9.1489 2.21438 9.27254C2.07449 9.4231 1.99741 9.62566 2.00007 9.8357C2.00272 10.0457 2.0849 10.2461 2.22855 10.3927L6.56645 14.8215L5.5416 21.0753C5.51757 21.2207 5.53294 21.3703 5.58598 21.5071C5.63901 21.6439 5.72759 21.7624 5.84166 21.8492C5.95573 21.9359 6.09074 21.9875 6.23137 21.998C6.37199 22.0085 6.51262 21.9775 6.63729 21.9086L12 18.9561L17.3628 21.9086C17.5092 21.9902 17.6792 22.0174 17.8422 21.9877C18.2531 21.9135 18.5293 21.5055 18.4585 21.0753L17.4336 14.8215L21.7715 10.3927C21.8896 10.2716 21.9675 10.1133 21.9912 9.9402C22.0549 9.50746 21.7668 9.10686 21.3536 9.04257Z"
+                  fill="#A1ABB3"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M21.3536 9.04257L15.358 8.1301L12.6778 2.44017C12.6046 2.28438 12.4841 2.15827 12.3354 2.08161C11.9623 1.88873 11.5089 2.04947 11.3223 2.44017L8.64213 8.1301L2.64652 9.04257C2.48122 9.0673 2.33009 9.1489 2.21438 9.27254C2.07449 9.4231 1.99741 9.62566 2.00007 9.8357C2.00272 10.0457 2.0849 10.2461 2.22855 10.3927L6.56645 14.8215L5.5416 21.0753C5.51757 21.2207 5.53294 21.3703 5.58598 21.5071C5.63901 21.6439 5.72759 21.7624 5.84166 21.8492C5.95573 21.9359 6.09074 21.9875 6.23137 21.998C6.37199 22.0085 6.51262 21.9775 6.63729 21.9086L12 18.9561L17.3628 21.9086C17.5092 21.9902 17.6792 22.0174 17.8422 21.9877C18.2531 21.9135 18.5293 21.5055 18.4585 21.0753L17.4336 14.8215L21.7715 10.3927C21.8896 10.2716 21.9675 10.1133 21.9912 9.9402C22.0549 9.50746 21.7668 9.10686 21.3536 9.04257Z"
+                  fill="#A1ABB3"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M21.3536 9.04257L15.358 8.1301L12.6778 2.44017C12.6046 2.28438 12.4841 2.15827 12.3354 2.08161C11.9623 1.88873 11.5089 2.04947 11.3223 2.44017L8.64213 8.1301L2.64652 9.04257C2.48122 9.0673 2.33009 9.1489 2.21438 9.27254C2.07449 9.4231 1.99741 9.62566 2.00007 9.8357C2.00272 10.0457 2.0849 10.2461 2.22855 10.3927L6.56645 14.8215L5.5416 21.0753C5.51757 21.2207 5.53294 21.3703 5.58598 21.5071C5.63901 21.6439 5.72759 21.7624 5.84166 21.8492C5.95573 21.9359 6.09074 21.9875 6.23137 21.998C6.37199 22.0085 6.51262 21.9775 6.63729 21.9086L12 18.9561L17.3628 21.9086C17.5092 21.9902 17.6792 22.0174 17.8422 21.9877C18.2531 21.9135 18.5293 21.5055 18.4585 21.0753L17.4336 14.8215L21.7715 10.3927C21.8896 10.2716 21.9675 10.1133 21.9912 9.9402C22.0549 9.50746 21.7668 9.10686 21.3536 9.04257Z"
+                  fill="#A1ABB3"
+                />
+              </svg>
+            </div>
+            <textarea
+              class="w-[90%] bg-[#f7f7f7] mt-3 rounded-xl p-4 outline-none border-none"
+              name=""
+              placeholder="Write review..."
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+            <div class="flex items-center gap-4 text-[#52616B] my-3">
+              <input type="checkbox" />I confirm that the information submitted
+              here is true and accurate.
+            </div>
+            <button
+              type="button"
+              class="text-14 lg:text-base font-semibold px-6 py-3 text-[#fff] bg-[#1975ff] rounded-xl opacity-100 transition-opacity lg:hover:opacity-70 duration-300"
+            >
+              Submit review
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col lg:flex-row gap-6">
+        <div class="lg:w-[75%]">
+          <div
+            class="p-4 bg-[#fff] flex flex-col lg:flex-row lg:items-center w-full lg:h-[230px] gap-8 rounded-xl"
+          >
+            <img
+              src="../assets//images/Rectangle 244.png"
+              alt=""
+              class="w-full h-[340px] md:h-[440px] lg:w-[200px] lg:h-[200px]"
+            />
+            <div class="text-[#2C2F33]">
+              <p class="text-14 md:text-base lg:text-24 font-semibold">
+                Producer | Mixing | Mastering
+              </p>
+              <p
+                class="text-12 lg:text-14 flex items-center gap-1 text-[#52616B] my-3"
+              >
+                <img src="../assets/svgs/Vector.png" alt="" /> 4.3 (168 reviews)
+              </p>
+              <div class="flex items-center gap-2">
+                <img
+                  src="../assets//images/st.png"
+                  alt=""
+                  class="w-12 h-12 rounded-xl"
+                />
+                <div>
+                  <p class="text-14 lg:text-base font-semibold">
+                    Son Tung M-TP
+                  </p>
+                  <p class="text-12 lg:text-14 text-[#52616B]">
+                    12,78M followers
+                  </p>
+                </div>
+              </div>
+              <button
+                class="px-6 py-3 w-full lg:w-[200px] text-[#fff] bg-[#0ecad5] rounded-xl mt-4"
+              >
+                Contact Iberd
+              </button>
+            </div>
+          </div>
+          <div class="p-4 mt-6 bg-[#fff] rounded-xl hidden md:block">
+            <h4 class="text-base lg:text-20 font-semibold mb-4">
+              Services description
+            </h4>
+            <div
+              class="text-14 lg:text-base text-[#52616B] flex flex-col gap-4 custom-ellipsis-5"
+            >
+              <p>
+                Quality and experienced Production, Mixing, Mastering, Vocal
+                Editing & Production! 10+ Millions Streams worldwide and worked
+                with/supported by the likes of Spinnin', Hexagon, Sony Music,
+                Universal, Soave, Central Station, Loudkult and more!
+              </p>
+              <p class="flex flex-col gap-2">
+                ABOUT ME:
+                <span
+                  >I have been working in the field for 6 years now and have
+                  been producing, writing and editing music for 12 years.With
+                  over 10 Million streams across all platforms, I have also
+                  written/produced for artists such as: Mashd N Kutcher
+                  (Universal), Isaiah (Sony), Skytech, Séb Mont, Paradigm and
+                  many more! WHAT I DO:I produce in a wide range of genres
+                  ranging from Dance, EDM (including a variety of sub-genres),
+                  Pop, Funk, Trap, RNB, Hip-Hop & more!I can take small idea,
+                  voice note, demo, vocal track or even some reference tracks
+                  and together with your insight turn it into a release ready
+                  track to share to the world.</span
+                >
+              </p>
+              <p class="flex flex-col gap-2">
+                SERVICES:
+                <span
+                  >I have been working in the field for 6 years now and have
+                  been producing, writing and editing music for 12 years.With
+                  over 10 Million streams across all platforms, I have also
+                  written/produced for artists such as: Mashd N Kutcher
+                  (Universal), Isaiah (Sony), Skytech, Séb Mont, Paradigm and
+                  many more! WHAT I DO:I produce in a wide range of genres
+                  ranging from Dance, EDM (including a variety of sub-genres),
+                  Pop, Funk, Trap, RNB, Hip-Hop & more!I can take small idea,
+                  voice note, demo, vocal track or even some reference tracks
+                  and together with your insight turn it into a release ready
+                  track to share to the world.</span
+                >
+              </p>
+              <p class="flex flex-col gap-2">
+                MY WORK PROCESS:
+                <span
+                  >I have been working in the field for 6 years now and have
+                  been producing, writing and editing music for 12 years.With
+                  over 10 Million streams across all platforms, I have also
+                  written/produced for artists such as: Mashd N Kutcher
+                  (Universal), Isaiah (Sony), Skytech, Séb Mont, Paradigm and
+                  many more! WHAT I DO:I produce in a wide range of genres
+                  ranging from Dance, EDM (including a variety of sub-genres),
+                  Pop, Funk, Trap, RNB, Hip-Hop & more!I can take small idea,
+                  voice note, demo, vocal track or even some reference tracks
+                  and together with your insight turn it into a release ready
+                  track to share to the world.</span
+                >
+              </p>
+              <p class="flex flex-col gap-2">
+                CLIENT GURANTEE:
+                <span
+                  >I have been working in the field for 6 years now and have
+                  been producing, writing and editing music for 12 years.With
+                  over 10 Million streams across all platforms, I have also
+                  written/produced for artists such as: Mashd N Kutcher
+                  (Universal), Isaiah (Sony), Skytech, Séb Mont, Paradigm and
+                  many more! WHAT I DO:I produce in a wide range of genres
+                  ranging from Dance, EDM (including a variety of sub-genres),
+                  Pop, Funk, Trap, RNB, Hip-Hop & more!I can take small idea,
+                  voice note, demo, vocal track or even some reference tracks
+                  and together with your insight turn it into a release ready
+                  track to share to the world.</span
+                >
+              </p>
+              <p>Looking forward to hearing from and working with you!</p>
+              <p>
+                Contact me through the green button above and let's get to work.
+              </p>
+            </div>
+          </div>
+          <div class="flex-col gap-6 w-full flex lg:hidden lg:w-[25%]">
+            <div class="bg-[#fff] p-4 rounded-xl flex flex-col gap-3">
+              <p class="text-14 lg:text-base font-semibold mb-2">Demo</p>
+              <div class="flex items-center gap-2">
+                <img src="./assets/svgs/play-circle.svg" alt="" />
+                <div>
+                  <p>We Shall Taste</p>
+                  <p>03:30</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./assets/svgs/play-circle.svg" alt="" />
+                <div>
+                  <p>We Shall Taste</p>
+                  <p>03:30</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./assets/svgs/play-circle.svg" alt="" />
+                <div>
+                  <p>We Shall Taste</p>
+                  <p>03:30</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./assets/svgs/play-circle.svg" alt="" />
+                <div>
+                  <p>We Shall Taste</p>
+                  <p>03:30</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-[#fff] p-4 rounded-xl flex flex-col gap-3">
+              <p class="text-14 lg:text-base font-semibold mb-2">
+                Other service by Iberd
+              </p>
+              <div class="flex items-center gap-2">
+                <img src="./assets/svgs/play-circle.svg" alt="" />
+                <div>
+                  <p>We Shall Taste</p>
+                  <p>03:30</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 mt-6 bg-[#fff] rounded-xl">
+            <div>
+              <p class="text-base lg:text-20 font-semibold text-[#2C2F33]">
+                Reviews (78)
+              </p>
+              <div class="flex flex-col lg:flex-row gap-6 lg:gap-12">
+                <div class="flex items-center justify-center w-[60%]">
+                  <div
+                    class="flex flex-col items-center gap-[10px] pr-8 border-r border-r-[#EBEEF0]"
+                  >
+                    <div
+                      class="text-24 md:text-32 text-[40] leading-[48px] font-semibold text-[#52616B]"
+                    >
+                      4.6
+                    </div>
+                    <div class="flex items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M14.7359 6.02903L10.7388 5.42072L8.95201 1.62743C8.90321 1.52357 8.82292 1.4395 8.72374 1.38839C8.47501 1.25981 8.17274 1.36696 8.04838 1.62743L6.26158 5.42072L2.26451 6.02903C2.15431 6.04552 2.05355 6.09992 1.97642 6.18234C1.88316 6.28272 1.83177 6.41776 1.83354 6.55779C1.83531 6.69782 1.8901 6.83138 1.98586 6.92913L4.8778 9.88167L4.19456 14.0508C4.17854 14.1478 4.18879 14.2476 4.22415 14.3387C4.2595 14.4299 4.31855 14.5089 4.3946 14.5668C4.47065 14.6246 4.56065 14.659 4.65441 14.666C4.74816 14.673 4.84191 14.6523 4.92502 14.6064L8.50019 12.638L12.0754 14.6064C12.173 14.6608 12.2863 14.6789 12.3949 14.6591C12.6689 14.6097 12.8531 14.3377 12.8058 14.0508L12.1226 9.88167L15.0145 6.92913C15.0932 6.84835 15.1452 6.74285 15.1609 6.62745C15.2034 6.33896 15.0114 6.07189 14.7359 6.02903Z"
+                          fill="#FFBB0C"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M14.7359 6.02903L10.7388 5.42072L8.95201 1.62743C8.90321 1.52357 8.82292 1.4395 8.72374 1.38839C8.47501 1.25981 8.17274 1.36696 8.04838 1.62743L6.26158 5.42072L2.26451 6.02903C2.15431 6.04552 2.05355 6.09992 1.97642 6.18234C1.88316 6.28272 1.83177 6.41776 1.83354 6.55779C1.83531 6.69782 1.8901 6.83138 1.98586 6.92913L4.8778 9.88167L4.19456 14.0508C4.17854 14.1478 4.18879 14.2476 4.22415 14.3387C4.2595 14.4299 4.31855 14.5089 4.3946 14.5668C4.47065 14.6246 4.56065 14.659 4.65441 14.666C4.74816 14.673 4.84191 14.6523 4.92502 14.6064L8.50019 12.638L12.0754 14.6064C12.173 14.6608 12.2863 14.6789 12.3949 14.6591C12.6689 14.6097 12.8531 14.3377 12.8058 14.0508L12.1226 9.88167L15.0145 6.92913C15.0932 6.84835 15.1452 6.74285 15.1609 6.62745C15.2034 6.33896 15.0114 6.07189 14.7359 6.02903Z"
+                          fill="#FFBB0C"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M14.7359 6.02903L10.7388 5.42072L8.95201 1.62743C8.90321 1.52357 8.82292 1.4395 8.72374 1.38839C8.47501 1.25981 8.17274 1.36696 8.04838 1.62743L6.26158 5.42072L2.26451 6.02903C2.15431 6.04552 2.05355 6.09992 1.97642 6.18234C1.88316 6.28272 1.83177 6.41776 1.83354 6.55779C1.83531 6.69782 1.8901 6.83138 1.98586 6.92913L4.8778 9.88167L4.19456 14.0508C4.17854 14.1478 4.18879 14.2476 4.22415 14.3387C4.2595 14.4299 4.31855 14.5089 4.3946 14.5668C4.47065 14.6246 4.56065 14.659 4.65441 14.666C4.74816 14.673 4.84191 14.6523 4.92502 14.6064L8.50019 12.638L12.0754 14.6064C12.173 14.6608 12.2863 14.6789 12.3949 14.6591C12.6689 14.6097 12.8531 14.3377 12.8058 14.0508L12.1226 9.88167L15.0145 6.92913C15.0932 6.84835 15.1452 6.74285 15.1609 6.62745C15.2034 6.33896 15.0114 6.07189 14.7359 6.02903Z"
+                          fill="#FFBB0C"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M14.7359 6.02903L10.7388 5.42072L8.95201 1.62743C8.90321 1.52357 8.82292 1.4395 8.72374 1.38839C8.47501 1.25981 8.17274 1.36696 8.04838 1.62743L6.26158 5.42072L2.26451 6.02903C2.15431 6.04552 2.05355 6.09992 1.97642 6.18234C1.88316 6.28272 1.83177 6.41776 1.83354 6.55779C1.83531 6.69782 1.8901 6.83138 1.98586 6.92913L4.8778 9.88167L4.19456 14.0508C4.17854 14.1478 4.18879 14.2476 4.22415 14.3387C4.2595 14.4299 4.31855 14.5089 4.3946 14.5668C4.47065 14.6246 4.56065 14.659 4.65441 14.666C4.74816 14.673 4.84191 14.6523 4.92502 14.6064L8.50019 12.638L12.0754 14.6064C12.173 14.6608 12.2863 14.6789 12.3949 14.6591C12.6689 14.6097 12.8531 14.3377 12.8058 14.0508L12.1226 9.88167L15.0145 6.92913C15.0932 6.84835 15.1452 6.74285 15.1609 6.62745C15.2034 6.33896 15.0114 6.07189 14.7359 6.02903Z"
+                          fill="#FFBB0C"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M14.7359 6.02903L10.7388 5.42072L8.95201 1.62743C8.90321 1.52357 8.82292 1.4395 8.72374 1.38839C8.47501 1.25981 8.17274 1.36696 8.04838 1.62743L6.26158 5.42072L2.26451 6.02903C2.15431 6.04552 2.05355 6.09992 1.97642 6.18234C1.88316 6.28272 1.83177 6.41776 1.83354 6.55779C1.83531 6.69782 1.8901 6.83138 1.98586 6.92913L4.8778 9.88167L4.19456 14.0508C4.17854 14.1478 4.18879 14.2476 4.22415 14.3387C4.2595 14.4299 4.31855 14.5089 4.3946 14.5668C4.47065 14.6246 4.56065 14.659 4.65441 14.666C4.74816 14.673 4.84191 14.6523 4.92502 14.6064L8.50019 12.638L12.0754 14.6064C12.173 14.6608 12.2863 14.6789 12.3949 14.6591C12.6689 14.6097 12.8531 14.3377 12.8058 14.0508L12.1226 9.88167L15.0145 6.92913C15.0932 6.84835 15.1452 6.74285 15.1609 6.62745C15.2034 6.33896 15.0114 6.07189 14.7359 6.02903Z"
+                          fill="#EBEEF0"
+                        />
+                      </svg>
+                    </div>
+                    <div class="text-14 lg:text-base text-[#0ECAD5]">
+                      120 reviews
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-[14px]">
+                    <div class="flex items-center justify-between pl-8 gap-3">
+                      <div class="flex items-center gap-2 w-[20%]">
+                        5
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M15.4829 5.63406L10.6864 4.90408L8.54222 0.352135C8.48365 0.227506 8.38731 0.126615 8.26829 0.0652895C7.96981 -0.0890138 7.6071 0.0395723 7.45786 0.352135L5.3137 4.90408L0.517213 5.63406C0.384974 5.65384 0.26407 5.71912 0.171503 5.81803C0.0595945 5.93848 -0.0020722 6.10053 5.31712e-05 6.26856C0.00217854 6.4366 0.0679221 6.59688 0.182838 6.71418L3.65316 10.2572L2.83328 15.2602C2.81405 15.3766 2.82635 15.4963 2.86878 15.6057C2.91121 15.7151 2.98207 15.8099 3.07333 15.8793C3.16459 15.9488 3.27259 15.99 3.38509 15.9984C3.4976 16.0068 3.6101 15.982 3.70983 15.9269L8.00004 13.5648L12.2902 15.9269C12.4074 15.9922 12.5434 16.0139 12.6737 15.9902C13.0024 15.9308 13.2235 15.6044 13.1668 15.2602L12.3469 10.2572L15.8172 6.71418C15.9117 6.61724 15.974 6.49064 15.9929 6.35216C16.0439 6.00597 15.8135 5.68549 15.4829 5.63406Z"
+                            fill="#52616B"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="211"
+                          height="8"
+                          viewBox="0 0 211 8"
+                          fill="none"
+                        >
+                          <rect width="211" height="8" rx="4" fill="#EBEEF0" />
+                          <path
+                            d="M0 4C0 1.79086 1.79086 0 4 0H178V8H4C1.79086 8 0 6.20914 0 4Z"
+                            fill="#FFBB0C"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="text-14 lg:text-base text-[#0ECAD5] font-semibold"
+                      >
+                        72%
+                      </div>
+                    </div>
+                    <div class="flex items-center justify-between pl-8 gap-3">
+                      <div class="flex items-center w-[34px] h-[24px] gap-2">
+                        4
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M15.4829 5.63406L10.6864 4.90408L8.54222 0.352135C8.48365 0.227506 8.38731 0.126615 8.26829 0.0652895C7.96981 -0.0890138 7.6071 0.0395723 7.45786 0.352135L5.3137 4.90408L0.517213 5.63406C0.384974 5.65384 0.26407 5.71912 0.171503 5.81803C0.0595945 5.93848 -0.0020722 6.10053 5.31712e-05 6.26856C0.00217854 6.4366 0.0679221 6.59688 0.182838 6.71418L3.65316 10.2572L2.83328 15.2602C2.81405 15.3766 2.82635 15.4963 2.86878 15.6057C2.91121 15.7151 2.98207 15.8099 3.07333 15.8793C3.16459 15.9488 3.27259 15.99 3.38509 15.9984C3.4976 16.0068 3.6101 15.982 3.70983 15.9269L8.00004 13.5648L12.2902 15.9269C12.4074 15.9922 12.5434 16.0139 12.6737 15.9902C13.0024 15.9308 13.2235 15.6044 13.1668 15.2602L12.3469 10.2572L15.8172 6.71418C15.9117 6.61724 15.974 6.49064 15.9929 6.35216C16.0439 6.00597 15.8135 5.68549 15.4829 5.63406Z"
+                            fill="#52616B"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="211"
+                          height="8"
+                          viewBox="0 0 211 8"
+                          fill="none"
+                        >
+                          <rect width="211" height="8" rx="4" fill="#EBEEF0" />
+                          <path
+                            d="M0 4C0 1.79086 1.79086 0 4 0H59V8H4C1.79086 8 0 6.20914 0 4Z"
+                            fill="#FFBB0C"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="text-14 lg:text-base text-[#0ECAD5] font-semibold"
+                      >
+                        20%
+                      </div>
+                    </div>
+                    <div class="flex items-center justify-between pl-8 gap-3">
+                      <div class="flex items-center gap-2 w-[34px] h-[24px]">
+                        3
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M15.4829 5.63406L10.6864 4.90408L8.54222 0.352135C8.48365 0.227506 8.38731 0.126615 8.26829 0.0652895C7.96981 -0.0890138 7.6071 0.0395723 7.45786 0.352135L5.3137 4.90408L0.517213 5.63406C0.384974 5.65384 0.26407 5.71912 0.171503 5.81803C0.0595945 5.93848 -0.0020722 6.10053 5.31712e-05 6.26856C0.00217854 6.4366 0.0679221 6.59688 0.182838 6.71418L3.65316 10.2572L2.83328 15.2602C2.81405 15.3766 2.82635 15.4963 2.86878 15.6057C2.91121 15.7151 2.98207 15.8099 3.07333 15.8793C3.16459 15.9488 3.27259 15.99 3.38509 15.9984C3.4976 16.0068 3.6101 15.982 3.70983 15.9269L8.00004 13.5648L12.2902 15.9269C12.4074 15.9922 12.5434 16.0139 12.6737 15.9902C13.0024 15.9308 13.2235 15.6044 13.1668 15.2602L12.3469 10.2572L15.8172 6.71418C15.9117 6.61724 15.974 6.49064 15.9929 6.35216C16.0439 6.00597 15.8135 5.68549 15.4829 5.63406Z"
+                            fill="#52616B"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="211"
+                          height="8"
+                          viewBox="0 0 211 8"
+                          fill="none"
+                        >
+                          <rect width="211" height="8" rx="4" fill="#EBEEF0" />
+                          <path
+                            d="M0 4C0 1.79086 1.79086 0 4 0H20V8H4C1.79086 8 0 6.20914 0 4Z"
+                            fill="#FFBB0C"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="text-14 lg:text-base text-[#0ECAD5] font-semibold"
+                      >
+                        6%
+                      </div>
+                    </div>
+                    <div class="flex items-center justify-between pl-8 gap-3">
+                      <div class="flex items-center w-[34px] h-[24px] gap-2">
+                        2
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M15.4829 5.63406L10.6864 4.90408L8.54222 0.352135C8.48365 0.227506 8.38731 0.126615 8.26829 0.0652895C7.96981 -0.0890138 7.6071 0.0395723 7.45786 0.352135L5.3137 4.90408L0.517213 5.63406C0.384974 5.65384 0.26407 5.71912 0.171503 5.81803C0.0595945 5.93848 -0.0020722 6.10053 5.31712e-05 6.26856C0.00217854 6.4366 0.0679221 6.59688 0.182838 6.71418L3.65316 10.2572L2.83328 15.2602C2.81405 15.3766 2.82635 15.4963 2.86878 15.6057C2.91121 15.7151 2.98207 15.8099 3.07333 15.8793C3.16459 15.9488 3.27259 15.99 3.38509 15.9984C3.4976 16.0068 3.6101 15.982 3.70983 15.9269L8.00004 13.5648L12.2902 15.9269C12.4074 15.9922 12.5434 16.0139 12.6737 15.9902C13.0024 15.9308 13.2235 15.6044 13.1668 15.2602L12.3469 10.2572L15.8172 6.71418C15.9117 6.61724 15.974 6.49064 15.9929 6.35216C16.0439 6.00597 15.8135 5.68549 15.4829 5.63406Z"
+                            fill="#52616B"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="211"
+                          height="8"
+                          viewBox="0 0 211 8"
+                          fill="none"
+                        >
+                          <rect width="211" height="8" rx="4" fill="#EBEEF0" />
+                          <path
+                            d="M0 4C0 1.79086 1.79086 0 4 0H5V8H4C1.79086 8 0 6.20914 0 4Z"
+                            fill="#FFBB0C"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="text-14 lg:text-base text-[#0ECAD5] font-semibold"
+                      >
+                        2%
+                      </div>
+                    </div>
+                    <div class="flex items-center justify-between pl-8 gap-3">
+                      <div class="flex items-center pl-[3px] gap-2">
+                        1
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M15.4829 5.63406L10.6864 4.90408L8.54222 0.352135C8.48365 0.227506 8.38731 0.126615 8.26829 0.0652895C7.96981 -0.0890138 7.6071 0.0395723 7.45786 0.352135L5.3137 4.90408L0.517213 5.63406C0.384974 5.65384 0.26407 5.71912 0.171503 5.81803C0.0595945 5.93848 -0.0020722 6.10053 5.31712e-05 6.26856C0.00217854 6.4366 0.0679221 6.59688 0.182838 6.71418L3.65316 10.2572L2.83328 15.2602C2.81405 15.3766 2.82635 15.4963 2.86878 15.6057C2.91121 15.7151 2.98207 15.8099 3.07333 15.8793C3.16459 15.9488 3.27259 15.99 3.38509 15.9984C3.4976 16.0068 3.6101 15.982 3.70983 15.9269L8.00004 13.5648L12.2902 15.9269C12.4074 15.9922 12.5434 16.0139 12.6737 15.9902C13.0024 15.9308 13.2235 15.6044 13.1668 15.2602L12.3469 10.2572L15.8172 6.71418C15.9117 6.61724 15.974 6.49064 15.9929 6.35216C16.0439 6.00597 15.8135 5.68549 15.4829 5.63406Z"
+                            fill="#52616B"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="211"
+                          height="8"
+                          viewBox="0 0 211 8"
+                          fill="none"
+                        >
+                          <rect width="211" height="8" rx="4" fill="#EBEEF0" />
+                        </svg>
+                      </div>
+                      <div
+                        class="text-14 lg:text-base text-[#0ECAD5] font-semibold"
+                      >
+                        0%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex justify-center items-center rounded-xl flex-col w-full lg:w-[50%] bg-[#f7f7f7] p-4"
+                >
+                  <p class="text-14 lg:text-base text-[#2C2F33]">
+                    Select your review
+                  </p>
+                  <div class="flex items-center mt-4 mb-6">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M21.3536 9.04257L15.358 8.1301L12.6778 2.44017C12.6046 2.28438 12.4841 2.15827 12.3354 2.08161C11.9623 1.88873 11.5089 2.04947 11.3223 2.44017L8.64213 8.1301L2.64652 9.04257C2.48122 9.0673 2.33009 9.1489 2.21438 9.27254C2.07449 9.4231 1.99741 9.62566 2.00007 9.8357C2.00272 10.0457 2.0849 10.2461 2.22855 10.3927L6.56645 14.8215L5.5416 21.0753C5.51757 21.2207 5.53294 21.3703 5.58598 21.5071C5.63901 21.6439 5.72759 21.7624 5.84166 21.8492C5.95573 21.9359 6.09074 21.9875 6.23137 21.998C6.37199 22.0085 6.51262 21.9775 6.63729 21.9086L12 18.9561L17.3628 21.9086C17.5092 21.9902 17.6792 22.0174 17.8422 21.9877C18.2531 21.9135 18.5293 21.5055 18.4585 21.0753L17.4336 14.8215L21.7715 10.3927C21.8896 10.2716 21.9675 10.1133 21.9912 9.9402C22.0549 9.50746 21.7668 9.10686 21.3536 9.04257Z"
+                        fill="#A1ABB3"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M21.3536 9.04257L15.358 8.1301L12.6778 2.44017C12.6046 2.28438 12.4841 2.15827 12.3354 2.08161C11.9623 1.88873 11.5089 2.04947 11.3223 2.44017L8.64213 8.1301L2.64652 9.04257C2.48122 9.0673 2.33009 9.1489 2.21438 9.27254C2.07449 9.4231 1.99741 9.62566 2.00007 9.8357C2.00272 10.0457 2.0849 10.2461 2.22855 10.3927L6.56645 14.8215L5.5416 21.0753C5.51757 21.2207 5.53294 21.3703 5.58598 21.5071C5.63901 21.6439 5.72759 21.7624 5.84166 21.8492C5.95573 21.9359 6.09074 21.9875 6.23137 21.998C6.37199 22.0085 6.51262 21.9775 6.63729 21.9086L12 18.9561L17.3628 21.9086C17.5092 21.9902 17.6792 22.0174 17.8422 21.9877C18.2531 21.9135 18.5293 21.5055 18.4585 21.0753L17.4336 14.8215L21.7715 10.3927C21.8896 10.2716 21.9675 10.1133 21.9912 9.9402C22.0549 9.50746 21.7668 9.10686 21.3536 9.04257Z"
+                        fill="#A1ABB3"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M21.3536 9.04257L15.358 8.1301L12.6778 2.44017C12.6046 2.28438 12.4841 2.15827 12.3354 2.08161C11.9623 1.88873 11.5089 2.04947 11.3223 2.44017L8.64213 8.1301L2.64652 9.04257C2.48122 9.0673 2.33009 9.1489 2.21438 9.27254C2.07449 9.4231 1.99741 9.62566 2.00007 9.8357C2.00272 10.0457 2.0849 10.2461 2.22855 10.3927L6.56645 14.8215L5.5416 21.0753C5.51757 21.2207 5.53294 21.3703 5.58598 21.5071C5.63901 21.6439 5.72759 21.7624 5.84166 21.8492C5.95573 21.9359 6.09074 21.9875 6.23137 21.998C6.37199 22.0085 6.51262 21.9775 6.63729 21.9086L12 18.9561L17.3628 21.9086C17.5092 21.9902 17.6792 22.0174 17.8422 21.9877C18.2531 21.9135 18.5293 21.5055 18.4585 21.0753L17.4336 14.8215L21.7715 10.3927C21.8896 10.2716 21.9675 10.1133 21.9912 9.9402C22.0549 9.50746 21.7668 9.10686 21.3536 9.04257Z"
+                        fill="#A1ABB3"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M21.3536 9.04257L15.358 8.1301L12.6778 2.44017C12.6046 2.28438 12.4841 2.15827 12.3354 2.08161C11.9623 1.88873 11.5089 2.04947 11.3223 2.44017L8.64213 8.1301L2.64652 9.04257C2.48122 9.0673 2.33009 9.1489 2.21438 9.27254C2.07449 9.4231 1.99741 9.62566 2.00007 9.8357C2.00272 10.0457 2.0849 10.2461 2.22855 10.3927L6.56645 14.8215L5.5416 21.0753C5.51757 21.2207 5.53294 21.3703 5.58598 21.5071C5.63901 21.6439 5.72759 21.7624 5.84166 21.8492C5.95573 21.9359 6.09074 21.9875 6.23137 21.998C6.37199 22.0085 6.51262 21.9775 6.63729 21.9086L12 18.9561L17.3628 21.9086C17.5092 21.9902 17.6792 22.0174 17.8422 21.9877C18.2531 21.9135 18.5293 21.5055 18.4585 21.0753L17.4336 14.8215L21.7715 10.3927C21.8896 10.2716 21.9675 10.1133 21.9912 9.9402C22.0549 9.50746 21.7668 9.10686 21.3536 9.04257Z"
+                        fill="#A1ABB3"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M21.3536 9.04257L15.358 8.1301L12.6778 2.44017C12.6046 2.28438 12.4841 2.15827 12.3354 2.08161C11.9623 1.88873 11.5089 2.04947 11.3223 2.44017L8.64213 8.1301L2.64652 9.04257C2.48122 9.0673 2.33009 9.1489 2.21438 9.27254C2.07449 9.4231 1.99741 9.62566 2.00007 9.8357C2.00272 10.0457 2.0849 10.2461 2.22855 10.3927L6.56645 14.8215L5.5416 21.0753C5.51757 21.2207 5.53294 21.3703 5.58598 21.5071C5.63901 21.6439 5.72759 21.7624 5.84166 21.8492C5.95573 21.9359 6.09074 21.9875 6.23137 21.998C6.37199 22.0085 6.51262 21.9775 6.63729 21.9086L12 18.9561L17.3628 21.9086C17.5092 21.9902 17.6792 22.0174 17.8422 21.9877C18.2531 21.9135 18.5293 21.5055 18.4585 21.0753L17.4336 14.8215L21.7715 10.3927C21.8896 10.2716 21.9675 10.1133 21.9912 9.9402C22.0549 9.50746 21.7668 9.10686 21.3536 9.04257Z"
+                        fill="#A1ABB3"
+                      />
+                    </svg>
+                  </div>
+                  <button
+                    class="cmt px-6 py-3 text-[#fff] bg-[#0ecad5] rounded-xl"
+                  >
+                    Write a review
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl px-4 py-3 mt-6">
+            <div class="text-18 lg:text-20 font-semibold">Comment (78)</div>
+            <li class="py-3 song-cmt flex overflow-hidden">
+              <div class="mr-2">
+                <img
+                  class="w-12 aspect-square rounded-lg"
+                  loading="lazy"
+                  src="../assets/images/artists/2.png"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1">
+                <div class="flex justify-between gap-x-20">
+                  <div>
+                    <div class="text-14 lg:text-base font-semibold">
+                      Ahmet Kalburcuoglu
+                    </div>
+                    <div class="flex items-center">
+                      <img src="../assets/svgs/Vector.png" alt="" /><img
+                        src="../assets/svgs/Vector.png"
+                        alt=""
+                      /><img src="../assets/svgs/Vector.png" alt="" /><img
+                        src="../assets/svgs/Vector.png"
+                        alt=""
+                      /><img src="../assets/svgs/Vector.png" alt="" />
+                    </div>
+                    <div class="text-14 lg:text-base text-grey-400 mt-1">
+                      omg, this is amazing
+                    </div>
+                  </div>
+                  <div class="text-14 text-grey-400 text-end flex-shrink-0">
+                    <div>1 day ago</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="py-3 song-cmt flex overflow-hidden">
+              <div class="mr-2">
+                <img
+                  class="w-12 aspect-square rounded-lg"
+                  loading="lazy"
+                  src="../assets/images/artists/2.png"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1">
+                <div class="flex justify-between gap-x-20">
+                  <div>
+                    <div class="text-14 lg:text-base font-semibold">
+                      Ahmet Kalburcuoglu
+                    </div>
+                    <div class="flex items-center">
+                      <img src="../assets/svgs/Vector.png" alt="" /><img
+                        src="../assets/svgs/Vector.png"
+                        alt=""
+                      /><img src="../assets/svgs/Vector.png" alt="" /><img
+                        src="../assets/svgs/Vector.png"
+                        alt=""
+                      /><img src="../assets/svgs/Vector.png" alt="" />
+                    </div>
+                    <div class="text-14 lg:text-base text-grey-400 mt-1">
+                      omg, this is amazing
+                    </div>
+                  </div>
+                  <div class="text-14 text-grey-400 text-end flex-shrink-0">
+                    <div>1 day ago</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="py-3 song-cmt flex overflow-hidden">
+              <div class="mr-2">
+                <img
+                  class="w-12 aspect-square rounded-lg"
+                  loading="lazy"
+                  src="../assets/images/artists/2.png"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1">
+                <div class="flex justify-between gap-x-20">
+                  <div>
+                    <div class="text-14 lg:text-base font-semibold">
+                      Ahmet Kalburcuoglu
+                    </div>
+                    <div class="flex items-center">
+                      <img src="../assets/svgs/Vector.png" alt="" /><img
+                        src="../assets/svgs/Vector.png"
+                        alt=""
+                      /><img src="../assets/svgs/Vector.png" alt="" /><img
+                        src="../assets/svgs/Vector.png"
+                        alt=""
+                      /><img src="../assets/svgs/Vector.png" alt="" />
+                    </div>
+                    <div class="text-14 lg:text-base text-grey-400 mt-1">
+                      omg, this is amazing
+                    </div>
+                  </div>
+                  <div class="text-14 text-grey-400 text-end flex-shrink-0">
+                    <div>1 day ago</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="py-3 song-cmt flex overflow-hidden">
+              <div class="mr-2">
+                <img
+                  class="w-12 aspect-square rounded-lg"
+                  loading="lazy"
+                  src="../assets/images/artists/2.png"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1">
+                <div class="flex justify-between gap-x-20">
+                  <div>
+                    <div class="text-14 lg:text-base font-semibold">
+                      Ahmet Kalburcuoglu
+                    </div>
+                    <div class="flex items-center">
+                      <img src="../assets/svgs/Vector.png" alt="" /><img
+                        src="../assets/svgs/Vector.png"
+                        alt=""
+                      /><img src="../assets/svgs/Vector.png" alt="" /><img
+                        src="../assets/svgs/Vector.png"
+                        alt=""
+                      /><img src="../assets/svgs/Vector.png" alt="" />
+                    </div>
+                    <div class="text-14 lg:text-base text-grey-400 mt-1">
+                      omg, this is amazing
+                    </div>
+                  </div>
+                  <div class="text-14 text-grey-400 text-end flex-shrink-0">
+                    <div>1 day ago</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="py-3 song-cmt flex overflow-hidden">
+              <div class="mr-2">
+                <img
+                  class="w-12 aspect-square rounded-lg"
+                  loading="lazy"
+                  src="../assets/images/artists/2.png"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1">
+                <div class="flex justify-between gap-x-20">
+                  <div>
+                    <div class="text-base font-semibold">
+                      Ahmet Kalburcuoglu
+                    </div>
+                    <div class="flex items-center">
+                      <img src="../assets/svgs/Vector.png" alt="" /><img
+                        src="../assets/svgs/Vector.png"
+                        alt=""
+                      /><img src="../assets/svgs/Vector.png" alt="" /><img
+                        src="../assets/svgs/Vector.png"
+                        alt=""
+                      /><img src="../assets/svgs/Vector.png" alt="" />
+                    </div>
+                    <div class="text-14 lg:text-base text-grey-400 mt-1">
+                      Love their drink specials. Bartenders super nice. Spent a
+                      week at UCSF and this was a very nice break for the
+                      parental unit.
+                    </div>
+                  </div>
+                  <div
+                    class="text-14 lg:text-base text-grey-400 text-end flex-shrink-0"
+                  >
+                    <div>1 day ago</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="py-3 song-cmt flex overflow-hidden">
+              <div class="mr-2">
+                <img
+                  class="w-12 aspect-square rounded-lg"
+                  loading="lazy"
+                  src="../assets/images/artists/2.png"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1">
+                <div class="flex justify-between gap-x-20">
+                  <div>
+                    <div class="text-14 lg:text-base font-semibold">
+                      Ahmet Kalburcuoglu
+                    </div>
+                    <div class="flex items-center">
+                      <img src="../assets/svgs/Vector.png" alt="" /><img
+                        src="../assets/svgs/Vector.png"
+                        alt=""
+                      /><img src="./assets/svgs/Vector.png" alt="" /><img
+                        src="../assets/svgs/Vector.png"
+                        alt=""
+                      /><img src="../assets/svgs/Vector.png" alt="" />
+                    </div>
+                    <div class="text-14 lg:text-base text-grey-400 mt-1">
+                      omg, this is amazing
+                    </div>
+                  </div>
+                  <div class="text-14 text-grey-400 text-end flex-shrink-0">
+                    <div>1 day ago</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </div>
+          <div
+            class="fluid services-swiper swiper container relative mt-6 bg-white rounded-xl"
+          >
+            <div class="swiper-wrapper p-4">
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <div
+                    class="relative overflow-hidden rounded-lg aspect-square h-[160px] w-[160px]"
+                  >
+                    <img
+                      class="h-full w-full rounded-lg object-cover"
+                      src="../assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div class="flex flex-col w-[50%]">
+                    <div
+                      class="text-14 lg:text-base font-semibold line-clamp-1"
+                    >
+                      Producer | Mixing | Mastering
+                    </div>
+                    <div
+                      class="mt-1 text-12 lg:text-14 text-grey-400 line-clamp-1"
+                    >
+                      by ALOU Productions
+                    </div>
+                    <div class="mt-1 text-14 text-grey-400 flex items-center">
+                      <img src="../assets/svgs/yellow-star.svg" alt="" />
+                      <span class="ml-1">4.3 (168)</span>
+                    </div>
+                    <p class="line-clamp-2 mt-2 text-12 lg:text-14">
+                      I am an open book. Ask me anything music or mixing and
+                      I'll give you direct feedback that you can easily
+                      understand and act upon. I live in the real world, I'm
+                    </p>
+                    <a
+                      href="#"
+                      class="hover:underline text-branding-fourth text-14 lg:text-base mt-3 flex items-center gap-1"
+                      >View service
+                      <img src="../assets/svgs/arrow-right-blue.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <div
+                    class="relative overflow-hidden rounded-lg aspect-square h-[160px] w-[160px]"
+                  >
+                    <img
+                      class="h-full w-full rounded-lg object-cover"
+                      src="../assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div class="flex flex-col w-[50%]">
+                    <div
+                      class="text-14 lg:text-base font-semibold line-clamp-1"
+                    >
+                      Producer | Mixing | Mastering
+                    </div>
+                    <div
+                      class="mt-1 text-12 lg:text-14 text-grey-400 line-clamp-1"
+                    >
+                      by ALOU Productions
+                    </div>
+                    <div class="mt-1 text-14 text-grey-400 flex items-center">
+                      <img src="../assets/svgs/yellow-star.svg" alt="" />
+                      <span class="ml-1">4.3 (168)</span>
+                    </div>
+                    <p class="line-clamp-2 mt-2 text-12 lg:text-14">
+                      I am an open book. Ask me anything music or mixing and
+                      I'll give you direct feedback that you can easily
+                      understand and act upon. I live in the real world, I'm
+                    </p>
+                    <a
+                      href="#"
+                      class="hover:underline text-branding-fourth text-14 lg:text-base mt-3 flex items-center gap-1"
+                      >View service
+                      <img src="../assets/svgs/arrow-right-blue.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <div
+                    class="relative overflow-hidden rounded-lg aspect-square h-[160px] w-[160px]"
+                  >
+                    <img
+                      class="h-full w-full rounded-lg object-cover"
+                      src="../assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div class="flex flex-col w-[50%]">
+                    <div
+                      class="text-14 lg:text-base font-semibold line-clamp-1"
+                    >
+                      Producer | Mixing | Mastering
+                    </div>
+                    <div
+                      class="mt-1 text-12 lg:text-14 text-grey-400 line-clamp-1"
+                    >
+                      by ALOU Productions
+                    </div>
+                    <div class="mt-1 text-14 text-grey-400 flex items-center">
+                      <img src="../assets/svgs/yellow-star.svg" alt="" />
+                      <span class="ml-1">4.3 (168)</span>
+                    </div>
+                    <p class="line-clamp-2 mt-2 text-12 lg:text-14">
+                      I am an open book. Ask me anything music or mixing and
+                      I'll give you direct feedback that you can easily
+                      understand and act upon. I live in the real world, I'm
+                    </p>
+                    <a
+                      href="#"
+                      class="hover:underline text-branding-fourth text-14 lg:text-base mt-3 flex items-center gap-1"
+                      >View service
+                      <img src="../assets/svgs/arrow-right-blue.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <div
+                    class="relative overflow-hidden rounded-lg aspect-square h-[160px] w-[160px]"
+                  >
+                    <img
+                      class="h-full w-full rounded-lg object-cover"
+                      src="../assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div class="flex flex-col w-[50%]">
+                    <div
+                      class="text-14 lg:text-base font-semibold line-clamp-1"
+                    >
+                      Producer | Mixing | Mastering
+                    </div>
+                    <div
+                      class="mt-1 text-12 lg:text-14 text-grey-400 line-clamp-1"
+                    >
+                      by ALOU Productions
+                    </div>
+                    <div class="mt-1 text-14 text-grey-400 flex items-center">
+                      <img src="../assets/svgs/yellow-star.svg" alt="" />
+                      <span class="ml-1">4.3 (168)</span>
+                    </div>
+                    <p class="line-clamp-2 mt-2 text-12 lg:text-14">
+                      I am an open book. Ask me anything music or mixing and
+                      I'll give you direct feedback that you can easily
+                      understand and act upon. I live in the real world, I'm
+                    </p>
+                    <a
+                      href="#"
+                      class="hover:underline text-branding-fourth text-14 lg:text-base mt-3 flex items-center gap-1"
+                      >View service
+                      <img src="../assets/svgs/arrow-right-blue.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <div
+                    class="relative overflow-hidden rounded-lg aspect-square h-[160px] w-[160px]"
+                  >
+                    <img
+                      class="h-full w-full rounded-lg object-cover"
+                      src="../assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div class="flex flex-col w-[50%]">
+                    <div
+                      class="text-14 lg:text-base font-semibold line-clamp-1"
+                    >
+                      Producer | Mixing | Mastering
+                    </div>
+                    <div
+                      class="mt-1 text-12 lg:text-14 text-grey-400 line-clamp-1"
+                    >
+                      by ALOU Productions
+                    </div>
+                    <div class="mt-1 text-14 text-grey-400 flex items-center">
+                      <img src="../assets/svgs/yellow-star.svg" alt="" />
+                      <span class="ml-1">4.3 (168)</span>
+                    </div>
+                    <p class="line-clamp-2 mt-2 text-12 lg:text-14">
+                      I am an open book. Ask me anything music or mixing and
+                      I'll give you direct feedback that you can easily
+                      understand and act upon. I live in the real world, I'm
+                    </p>
+                    <a
+                      href="#"
+                      class="hover:underline text-branding-fourth text-14 lg:text-base mt-3 flex items-center gap-1"
+                      >View service
+                      <img src="../assets/svgs/arrow-right-blue.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <div
+                    class="relative overflow-hidden rounded-lg aspect-square h-[160px] w-[160px]"
+                  >
+                    <img
+                      class="h-full w-full rounded-lg object-cover"
+                      src="../assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div class="flex flex-col w-[50%]">
+                    <div
+                      class="text-14 lg:text-base font-semibold line-clamp-1"
+                    >
+                      Producer | Mixing | Mastering
+                    </div>
+                    <div
+                      class="mt-1 text-12 lg:text-14 text-grey-400 line-clamp-1"
+                    >
+                      by ALOU Productions
+                    </div>
+                    <div class="mt-1 text-14 text-grey-400 flex items-center">
+                      <img src="../assets/svgs/yellow-star.svg" alt="" />
+                      <span class="ml-1">4.3 (168)</span>
+                    </div>
+                    <p class="line-clamp-2 mt-2 text-12 lg:text-14">
+                      I am an open book. Ask me anything music or mixing and
+                      I'll give you direct feedback that you can easily
+                      understand and act upon. I live in the real world, I'm
+                    </p>
+                    <a
+                      href="#"
+                      class="hover:underline text-branding-fourth text-14 lg:text-base mt-3 flex items-center gap-1"
+                      >View service
+                      <img src="../assets/svgs/arrow-right-blue.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-services-navigation swiper-services-next max-md:hidden"
+            >
+              <img src="../assets/svgs/arrow-next.svg" alt="" />
+            </div>
+            <div
+              class="swiper-services-navigation swiper-services-prev max-md:hidden"
+            >
+              <img
+                class="rotate-180"
+                src="../assets/svgs/arrow-next.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <!-- service -->
+        <div class="flex-col gap-6 w-full hidden lg:flex lg:w-[25%]">
+          <div class="bg-[#fff] p-4 rounded-xl flex flex-col gap-3">
+            <p class="text-14 lg:text-base font-semibold mb-2">Demo</p>
+            <div class="flex items-center gap-2">
+              <button class="p-2.5 bg-[#f7f7f7] rounded-[50%]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M4 11.9994V8.43941C4 4.01941 7.13 2.20941 10.96 4.41941L14.05 6.19941L17.14 7.97941C20.97 10.1894 20.97 13.8094 17.14 16.0194L14.05 17.7994L10.96 19.5794C7.13 21.7894 4 19.9794 4 15.5594V11.9994Z"
+                    fill="#52616B"
+                  />
+                </svg>
+              </button>
+              <div>
+                <p class="text-14 lg:text-base text-[#2C2F33] font-semibold">
+                  We Shall Taste
+                </p>
+                <p class="text-[#52616B]">03:30</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <button class="p-2.5 bg-[#f7f7f7] rounded-[50%]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M4 11.9994V8.43941C4 4.01941 7.13 2.20941 10.96 4.41941L14.05 6.19941L17.14 7.97941C20.97 10.1894 20.97 13.8094 17.14 16.0194L14.05 17.7994L10.96 19.5794C7.13 21.7894 4 19.9794 4 15.5594V11.9994Z"
+                    fill="#52616B"
+                  />
+                </svg>
+              </button>
+              <div>
+                <p class="text-14 lg:text-base text-[#2C2F33] font-semibold">
+                  We Shall Taste
+                </p>
+                <p class="text-[#52616B]">03:30</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <button class="p-2.5 bg-[#f7f7f7] rounded-[50%]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M4 11.9994V8.43941C4 4.01941 7.13 2.20941 10.96 4.41941L14.05 6.19941L17.14 7.97941C20.97 10.1894 20.97 13.8094 17.14 16.0194L14.05 17.7994L10.96 19.5794C7.13 21.7894 4 19.9794 4 15.5594V11.9994Z"
+                    fill="#52616B"
+                  />
+                </svg>
+              </button>
+              <div>
+                <p class="text-14 lg:text-base text-[#2C2F33] font-semibold">
+                  We Shall Taste
+                </p>
+                <p class="text-[#52616B]">03:30</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <button class="p-2.5 bg-[#f7f7f7] rounded-[50%]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M4 11.9994V8.43941C4 4.01941 7.13 2.20941 10.96 4.41941L14.05 6.19941L17.14 7.97941C20.97 10.1894 20.97 13.8094 17.14 16.0194L14.05 17.7994L10.96 19.5794C7.13 21.7894 4 19.9794 4 15.5594V11.9994Z"
+                    fill="#52616B"
+                  />
+                </svg>
+              </button>
+              <div>
+                <p class="text-14 lg:text-base text-[#2C2F33] font-semibold">
+                  We Shall Taste
+                </p>
+                <p class="text-[#52616B]">03:30</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-[#fff] p-4 rounded-xl flex flex-col gap-3">
+            <p class="text-14 lg:text-base font-semibold mb-2">
+              Other service by Iberd
+            </p>
+            <div class="flex items-center gap-2">
+              <img
+                src="../assets/images/Rectangle 10.png"
+                class="rounded-xl w-[56px] h-[56px]"
+                alt=""
+              />
+              <div>
+                <p class="text-14 lg:text-16 text-[#2C2F33]">Composer</p>
+                <p
+                  class="flex items-center gap-1 text-12 lg:text-14 text-[#52616B]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <path
+                      d="M9.15327 2.33977L10.3266 4.68643C10.4866 5.0131 10.9133 5.32643 11.2733 5.38643L13.3999 5.73977C14.7599 5.96643 15.0799 6.9531 14.0999 7.92643L12.4466 9.57977C12.1666 9.85977 12.0133 10.3998 12.0999 10.7864L12.5733 12.8331C12.9466 14.4531 12.0866 15.0798 10.6533 14.2331L8.65994 13.0531C8.29994 12.8398 7.70661 12.8398 7.33994 13.0531L5.34661 14.2331C3.91994 15.0798 3.05327 14.4464 3.42661 12.8331L3.89994 10.7864C3.98661 10.3998 3.83327 9.85977 3.55327 9.57977L1.89994 7.92643C0.926606 6.9531 1.23994 5.96643 2.59994 5.73977L4.72661 5.38643C5.07994 5.32643 5.50661 5.0131 5.66661 4.68643L6.83994 2.33977C7.47994 1.06643 8.51994 1.06643 9.15327 2.33977Z"
+                      fill="#FFBB0C"
+                      stroke="#FFBB0C"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  5.0(47)
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <img
+                src="../assets/images/Rectangle 10.png"
+                class="rounded-xl w-[56px] h-[56px]"
+                alt=""
+              />
+              <div>
+                <p class="text-14 lg:text-16 text-[#2C2F33]">Composer</p>
+                <p
+                  class="flex items-center gap-1 text-12 lg:text-14 text-[#52616B]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <path
+                      d="M9.15327 2.33977L10.3266 4.68643C10.4866 5.0131 10.9133 5.32643 11.2733 5.38643L13.3999 5.73977C14.7599 5.96643 15.0799 6.9531 14.0999 7.92643L12.4466 9.57977C12.1666 9.85977 12.0133 10.3998 12.0999 10.7864L12.5733 12.8331C12.9466 14.4531 12.0866 15.0798 10.6533 14.2331L8.65994 13.0531C8.29994 12.8398 7.70661 12.8398 7.33994 13.0531L5.34661 14.2331C3.91994 15.0798 3.05327 14.4464 3.42661 12.8331L3.89994 10.7864C3.98661 10.3998 3.83327 9.85977 3.55327 9.57977L1.89994 7.92643C0.926606 6.9531 1.23994 5.96643 2.59994 5.73977L4.72661 5.38643C5.07994 5.32643 5.50661 5.0131 5.66661 4.68643L6.83994 2.33977C7.47994 1.06643 8.51994 1.06643 9.15327 2.33977Z"
+                      fill="#FFBB0C"
+                      stroke="#FFBB0C"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  5.0(47)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="../js/service-detail.js"></script>
+  <script src="../js/search.js"></script>
+</html>

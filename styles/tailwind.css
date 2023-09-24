@@ -449,11 +449,11 @@ a.swiper-slide.digital-item:hover .digital-thumb {
 }
 
 svg {
-  @apply cursor-pointer;
+  @apply cursor-pointer object-cover;
 }
 
 img {
-  @apply cursor-pointer;
+  @apply cursor-pointer object-cover;
 }
 
 .highlight {
@@ -469,6 +469,11 @@ img {
   color: #fff;
 } */
 
+input {
+  outline: none;
+  border: none;
+}
+
 .active-hero {
   background-color: #1975ff;
   color: #fff;
@@ -482,10 +487,9 @@ img {
   -webkit-box-orient: vertical;
 }
 .custom-ellipsis-1 {
-  overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 1; /* Số dòng bạn muốn hiển thị */
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
 
@@ -523,11 +527,11 @@ img {
 
 .bg {
   background-image: url(../assets/images/bannermusic.png);
+  background-size: cover;
 }
 
-.filter {
+.filter-voting {
   background: rgba(0, 0, 0, 0.4);
-  /* BG blur */
   backdrop-filter: blur(10px);
 }
 
@@ -545,4 +549,7 @@ img {
 }
 .profile-nav-mobile.active {
   @apply border-b-2 border-b-branding-secondary text-branding-secondary;
+}
+.transition-h {
+  transition: height 0.3s linear;
 }
