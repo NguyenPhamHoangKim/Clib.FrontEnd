@@ -12,7 +12,7 @@ $(".profile-nav:not(.active)").mouseleave(function () {
   $(this).find("img").attr("src", newSrc);
 });
 
-new Swiper(".song-swiper", {
+new Swiper("#goods-swiper", {
   slidesPerView: 2.5,
   spaceBetween: 8,
   navigation: {
@@ -191,6 +191,29 @@ new Swiper(".digital-swiper", {
     },
     1280: {
       slidesPerView: 5.5,
+      spaceBetween: 16,
+    },
+  },
+});
+
+new Swiper(".playlist-video-swiper", {
+  slidesPerView: 1.5,
+  spaceBetween: 12,
+  navigation: {
+    nextEl: ".swiper-playlist-video-next",
+    prevEl: ".swiper-playlist-video-prev",
+  },
+  autoResize: false,
+  breakpoints: {
+    480: {
+      slidesPerView: 2.5,
+    },
+    680: {
+      slidesPerView: 3.2,
+      spaceBetween: 14,
+    },
+    1024: {
+      slidesPerView: 4.5,
       spaceBetween: 16,
     },
   },

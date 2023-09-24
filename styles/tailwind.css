@@ -314,7 +314,7 @@ a.swiper-slide.digital-item:hover .digital-thumb {
   @apply hidden;
 }
 .profile-nav {
-  @apply flex h-12 w-[180px] items-center justify-center gap-2 rounded-lg text-base font-semibold text-grey-300 hover:bg-branding hover:text-white;
+  @apply flex h-10 xl:h-12 px-2 w-[180px] items-center justify-center gap-2 rounded-lg text-base font-semibold text-grey-300 hover:bg-branding hover:text-white;
 }
 .profile-nav.active {
   @apply bg-branding text-white;
@@ -464,10 +464,10 @@ img {
   display: none;
 }
 
-.active {
+/* .active {
   background-color: #0ecad5;
   color: #fff;
-}
+} */
 
 .active-hero {
   background-color: #1975ff;
@@ -538,4 +538,11 @@ img {
 .rig {
   top: -10px !important;
   right: -10px !important;
+}
+
+.profile-nav-mobile {
+  @apply px-4 pt-3 pb-2 text-14 text-grey-300 hover:text-branding-secondary duration-100 transition-colors font-semibold flex items-center justify-center;
+}
+.profile-nav-mobile.active {
+  @apply border-b-2 border-b-branding-secondary text-branding-secondary;
 }
