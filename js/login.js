@@ -62,10 +62,6 @@ $(".close-modal").each(function () {
   });
 });
 
-$(".toggleDiv").click(function () {
-  $(this).next(".hiddenText").slideToggle("fast"); // Sử dụng slideToggle để làm cho hiệu ứng mượt hơn
-});
-// Lấy URL của trang hiện tại
 let currentPathname = window.location.pathname;
 
 $(".link").each(function () {
@@ -73,4 +69,17 @@ $(".link").each(function () {
   if (currentPathname === linkPathname) {
     $(this).addClass("active-setting");
   }
+});
+
+$(".toggleDiv").click(function (event) {
+  // Kiểm tra nếu người dùng nhấp vào label chứa checkbox thì không thay đổi
+  if ($(event.target).is("label")) {
+    return;
+  }
+
+  // Tìm phần hiddenText trong toggleDiv
+  const hiddenText = $(this).next(".hiddenText");
+
+  // Hiển thị hoặc ẩn hiddenText
+  hiddenText.slideToggle();
 });

@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clib - Profile</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
+  <body>
+    <main>
+      <section class="h-screen relative block md:hidden">
+        <!-- modal create new chat -->
+        <div class="modal-create w-full bg-[#666666] overlay">
+          <div
+            class="w-full max-w-[640px] p-4 bg-[#ffffff] absolute bottom-0 rounded-xl z-20"
+          >
+            <div class="h-[650px]">
+              <h4
+                class="text-center flex flex-col close-modal items-center gap-3 mb-4 text-18 font-semibold"
+              >
+                <button>
+                  <img
+                    src="../assets/images/playlists/Rectangle 4280.png"
+                    alt=" w-[64px] h-1"
+                  />
+                </button>
+                Create a new chat
+              </h4>
+              <div
+                class="px-4 py-3 w-full bg-[#f7f7f7] flex items-center gap-2 rounded-lg"
+              >
+                <img src="../assets/svgs/social-media/edit.svg" alt="" />
+                <input
+                  type="text"
+                  class="w-full bg-transparent text-14 border-none outline-none"
+                  placeholder="Search people"
+                />
+              </div>
+              <!-- scroll people like by khi hết height còn bth ít thì không scroll -->
+              <a
+                href="../message/chat-message-mobile.html"
+                class="mt-4 flex flex-col gap-4 max-h-[630px] overflow-y-auto scrollbar-custom overflow-hidden"
+              >
+                <div
+                  class="flex items-center gap-2 transition-all duration-300 w-full rounded-xl lg:cursorbg-[#ebf7fc]"
+                >
+                  <img src="../assets/images/likeby.png" alt="" />
+                  <div class="flex flex-col gap-1">
+                    <p class="text-14 font-semibold text-[#2C2F33] lg:text-xl">
+                      Theresa Webb
+                    </p>
+                    <span class="text-12 text-[#52616B]">2.650 followers</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="flex items-center justify-between py-3 box-shadow px-4">
+            <a href="../message/message-newchat-mobile.html">
+              <img src="../assets/svgs/arrow-left.png" alt=""
+            /></a>
+            <div class="text-lg font-semibold">Message</div>
+            <button class="create-chat">
+              <img class="" src="../assets/svgs/edit.svg" alt="" />
+            </button>
+          </div>
+          <div class="container">
+            <div class="flex items-center justify-center w-full h-full">
+              <div
+                class="text-center w-full flex items-center justify-center flex-col abs-center"
+              >
+                <div class="">
+                  <img
+                    src="../assets/images/message.png"
+                    alt="message"
+                    class="w-full h-full"
+                  />
+                </div>
+                <h5 class="text-18 font-semibold mt-6">Select a message</h5>
+                <p
+                  class="w-full max-w-[367px] text-14 font-normal text-[#52616b] mt-2 mb-4"
+                >
+                  Choose from your existing conversations, start a new one, or
+                  just keep swimming
+                </p>
+                <a
+                  href="../message/list-message-mobile.html"
+                  class="new-message w-[85%] px-6 py-3 bg-[#1975ff] text-[#ffffff] rounded-xl text-base"
+                >
+                  New message
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- list message -->
+        <div
+          class="bg-[#ffffff] list-people hidden fixed top-12 left-0 right-0 bottom-0 z-20"
+        >
+          <div
+            class="px-4 py-3 w-[95%] mx-auto bg-[#f7f7f7] flex items-center gap-2 rounded-lg"
+          >
+            <img src="./assets/svgs/search-people.svg" alt="" />
+            <input
+              type="text"
+              class="w-full bg-transparent border-none outline-none"
+              placeholder="Search people"
+            />
+          </div>
+          <div
+            class="flex flex-col gap-4 max-h-[630px] overflow-y-auto mt-4 scrollbar-custom px-4"
+          >
+            <div class="w-full transition-all duration-200 border-none people">
+              <div
+                class="flex items-center gap-2 w-full person lg:cursor-pointer"
+              >
+                <img src="./assets/images/st.png" alt="" />
+                <div class="flex flex-col gap-1 pr-3">
+                  <span
+                    class="text-lg font-semibold text-[#2C2F33] flex items-center gap-1 lg:text-xl whitespace-nowrap overflow-ellipsis max-w-[200px]"
+                    >Sơn tùng MTP
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M17.9667 8.94948L16.8334 7.63281C16.6167 7.38281 16.4417 6.91615 16.4417 6.58281V5.16615C16.4417 4.28281 15.7167 3.55781 14.8334 3.55781H13.4167C13.0917 3.55781 12.6167 3.38281 12.3667 3.16615L11.0501 2.03281C10.4751 1.54115 9.5334 1.54115 8.95007 2.03281L7.64173 3.17448C7.39173 3.38281 6.91673 3.55781 6.59173 3.55781H5.15006C4.26673 3.55781 3.54173 4.28281 3.54173 5.16615V6.59115C3.54173 6.91615 3.36673 7.38281 3.1584 7.63281L2.0334 8.95781C1.55007 9.53281 1.55007 10.4661 2.0334 11.0411L3.1584 12.3661C3.36673 12.6161 3.54173 13.0828 3.54173 13.4078V14.8328C3.54173 15.7161 4.26673 16.4411 5.15006 16.4411H6.59173C6.91673 16.4411 7.39173 16.6161 7.64173 16.8328L8.9584 17.9661C9.5334 18.4578 10.4751 18.4578 11.0584 17.9661L12.3751 16.8328C12.6251 16.6161 13.0917 16.4411 13.4251 16.4411H14.8417C15.7251 16.4411 16.4501 15.7161 16.4501 14.8328V13.4161C16.4501 13.0911 16.6251 12.6161 16.8417 12.3661L17.9751 11.0495C18.4584 10.4745 18.4584 9.52448 17.9667 8.94948ZM13.4667 8.42448L9.44173 12.4495C9.32507 12.5661 9.16673 12.6328 9.00007 12.6328C8.8334 12.6328 8.67507 12.5661 8.5584 12.4495L6.54173 10.4328C6.30007 10.1911 6.30007 9.79115 6.54173 9.54948C6.7834 9.30781 7.1834 9.30781 7.42507 9.54948L9.00007 11.1245L12.5834 7.54115C12.8251 7.29948 13.2251 7.29948 13.4667 7.54115C13.7084 7.78281 13.7084 8.18281 13.4667 8.42448Z"
+                        fill="#1A75FF"
+                      />
+                    </svg>
+                  </span>
+                  <span class="text-sm text-[#52616B]">Send playlist</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-full transition-all flex items-center justify-between border-[#1A75FF]"
+            >
+              <div
+                class="flex items-center gap-2 w-full person lg:cursor-pointer list-people"
+              >
+                <img src="../assets/images/st.png" alt="" />
+                <div class="flex flex-col gap-1 pr-3">
+                  <span
+                    class="text-lg font-semibold text-[#2C2F33] flex items-center gap-1 lg:text-xl whitespace-nowrap overflow-ellipsis max-w-[200px]"
+                    >Jack97
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M17.9667 8.94948L16.8334 7.63281C16.6167 7.38281 16.4417 6.91615 16.4417 6.58281V5.16615C16.4417 4.28281 15.7167 3.55781 14.8334 3.55781H13.4167C13.0917 3.55781 12.6167 3.38281 12.3667 3.16615L11.0501 2.03281C10.4751 1.54115 9.5334 1.54115 8.95007 2.03281L7.64173 3.17448C7.39173 3.38281 6.91673 3.55781 6.59173 3.55781H5.15006C4.26673 3.55781 3.54173 4.28281 3.54173 5.16615V6.59115C3.54173 6.91615 3.36673 7.38281 3.1584 7.63281L2.0334 8.95781C1.55007 9.53281 1.55007 10.4661 2.0334 11.0411L3.1584 12.3661C3.36673 12.6161 3.54173 13.0828 3.54173 13.4078V14.8328C3.54173 15.7161 4.26673 16.4411 5.15006 16.4411H6.59173C6.91673 16.4411 7.39173 16.6161 7.64173 16.8328L8.9584 17.9661C9.5334 18.4578 10.4751 18.4578 11.0584 17.9661L12.3751 16.8328C12.6251 16.6161 13.0917 16.4411 13.4251 16.4411H14.8417C15.7251 16.4411 16.4501 15.7161 16.4501 14.8328V13.4161C16.4501 13.0911 16.6251 12.6161 16.8417 12.3661L17.9751 11.0495C18.4584 10.4745 18.4584 9.52448 17.9667 8.94948ZM13.4667 8.42448L9.44173 12.4495C9.32507 12.5661 9.16673 12.6328 9.00007 12.6328C8.8334 12.6328 8.67507 12.5661 8.5584 12.4495L6.54173 10.4328C6.30007 10.1911 6.30007 9.79115 6.54173 9.54948C6.7834 9.30781 7.1834 9.30781 7.42507 9.54948L9.00007 11.1245L12.5834 7.54115C12.8251 7.29948 13.2251 7.29948 13.4667 7.54115C13.7084 7.78281 13.7084 8.18281 13.4667 8.42448Z"
+                        fill="#1A75FF"
+                      />
+                    </svg>
+                  </span>
+                  <span class="text-sm text-[#000] font-semibold">Awww</span>
+                </div>
+              </div>
+              <div class="mr-3 flex flex-col gap-1">
+                <p class="text-12">3d</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="8"
+                  height="8"
+                  viewBox="0 0 8 8"
+                  fill="none"
+                >
+                  <circle cx="4" cy="4" r="4" fill="#1A75FF" />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="w-full flex items-center justify-between transition-all border-[#1A75FF]"
+            >
+              <div
+                class="flex items-center gap-2 w-full person lg:cursor-pointer people"
+              >
+                <img src="../assets/images/st.png" alt="" />
+                <div class="flex flex-col gap-1 pr-3">
+                  <span
+                    class="text-lg font-semibold text-[#2C2F33] flex items-center gap-1 lg:text-xl whitespace-nowrap overflow-ellipsis max-w-[200px]"
+                    >K-ICM
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M17.9667 8.94948L16.8334 7.63281C16.6167 7.38281 16.4417 6.91615 16.4417 6.58281V5.16615C16.4417 4.28281 15.7167 3.55781 14.8334 3.55781H13.4167C13.0917 3.55781 12.6167 3.38281 12.3667 3.16615L11.0501 2.03281C10.4751 1.54115 9.5334 1.54115 8.95007 2.03281L7.64173 3.17448C7.39173 3.38281 6.91673 3.55781 6.59173 3.55781H5.15006C4.26673 3.55781 3.54173 4.28281 3.54173 5.16615V6.59115C3.54173 6.91615 3.36673 7.38281 3.1584 7.63281L2.0334 8.95781C1.55007 9.53281 1.55007 10.4661 2.0334 11.0411L3.1584 12.3661C3.36673 12.6161 3.54173 13.0828 3.54173 13.4078V14.8328C3.54173 15.7161 4.26673 16.4411 5.15006 16.4411H6.59173C6.91673 16.4411 7.39173 16.6161 7.64173 16.8328L8.9584 17.9661C9.5334 18.4578 10.4751 18.4578 11.0584 17.9661L12.3751 16.8328C12.6251 16.6161 13.0917 16.4411 13.4251 16.4411H14.8417C15.7251 16.4411 16.4501 15.7161 16.4501 14.8328V13.4161C16.4501 13.0911 16.6251 12.6161 16.8417 12.3661L17.9751 11.0495C18.4584 10.4745 18.4584 9.52448 17.9667 8.94948ZM13.4667 8.42448L9.44173 12.4495C9.32507 12.5661 9.16673 12.6328 9.00007 12.6328C8.8334 12.6328 8.67507 12.5661 8.5584 12.4495L6.54173 10.4328C6.30007 10.1911 6.30007 9.79115 6.54173 9.54948C6.7834 9.30781 7.1834 9.30781 7.42507 9.54948L9.00007 11.1245L12.5834 7.54115C12.8251 7.29948 13.2251 7.29948 13.4667 7.54115C13.7084 7.78281 13.7084 8.18281 13.4667 8.42448Z"
+                        fill="#1A75FF"
+                      />
+                    </svg>
+                  </span>
+                  <span class="text-sm text-[#52616B]">Send playlist</span>
+                </div>
+              </div>
+              <div class="mr-3">
+                <span class="text-12">17/08/2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="../js/message-mobile.js"></script>
+</html>
