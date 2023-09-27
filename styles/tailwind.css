@@ -442,12 +442,6 @@ a.swiper-slide.digital-item:hover .digital-thumb {
   transform: translate(-50%, -50%);
 }
 
-.text-ellipsis {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 svg {
   @apply cursor-pointer object-cover;
 }
@@ -479,20 +473,6 @@ input {
   color: #fff;
 }
 
-.custom-ellipsis {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2; /* Số dòng bạn muốn hiển thị */
-  -webkit-box-orient: vertical;
-}
-.custom-ellipsis-1 {
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-}
-
 .ts-h {
   transition: height 0.3s ease-in-out;
 }
@@ -519,7 +499,6 @@ input {
   cursor: pointer !important;
 }
 
-/* Style the selected option */
 .custom-select select option:checked {
   background-color: #3498db !important;
   color: white !important;
@@ -546,4 +525,59 @@ input {
 
 .transition-h {
   transition: height 0.3s linear;
+}
+
+.bg-rgba {
+  background: rgba(255, 255, 255, 0.1);
+}
+.border-music {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background-color: #783e87;
+  transition: all 0.5s ease;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 12px;
+}
+
+.header-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header-button img {
+  width: 24px;
+  height: 24px;
+}
+
+.header-title {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+#album-cover {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  transition:
+    transform 0.5s ease,
+    opacity 0.5s ease,
+    height 0.5s ease;
+}
+.scrollbar-custom-lyric {
+  @apply scrollbar:!w-1.5 scrollbar:bg-transparent scrollbar-track:!rounded scrollbar-track:!bg-[#865293] scrollbar-thumb:!rounded scrollbar-thumb:!bg-[#783e87];
+}
+
+.bg-video {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
 }

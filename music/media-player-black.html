@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clib - MarketPlace</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- mobile -->
+    <section
+      class="relative h-screen flex flex-col justify-between pb-3 bg-[#000000] md:hidden"
+    >
+      <div class="container">
+        <div class="header-content flex items-center justify-between">
+          <button class="header-button w-[96px]">
+            <img src="../assets/svgs/arrow-left.svg" alt="" />
+          </button>
+          <h4 class="header-title">Now playing</h4>
+          <div class="flex items-center gap-3">
+            <button class="header-button">
+              <img src="../assets/images/volume-high.svg" alt="" />
+            </button>
+            <button class="header-button">
+              <img src="../assets/images/setting-2.svg" alt="" />
+            </button>
+            <button class="header-button">
+              <img src="../assets/images/maximize-2.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-end flex-col justify-end">
+        <div class="w-full">
+          <img src="../assets/images/Thumnail2.png" alt="" class="w-full" />
+        </div>
+        <div class="container">
+          <div class="flex items-start justify-between mt-[19px] mb-6">
+            <div class="flex flex-col gap-[5px]">
+              <h4 class="text-14 font-semibold text-white">The show</h4>
+              <p class="text-14 text-white">Robert Glasper</p>
+            </div>
+            <div><img src="../assets/images/heart (2).png" alt="" /></div>
+          </div>
+          <div>
+            <div class="flex items-center text-14 text-white justify-between">
+              <p>00:50</p>
+              <p>02:00</p>
+            </div>
+            <div class="relative">
+              <img
+                src="../assets/images/Rectangle 63.png"
+                alt=""
+                class="w-full"
+              />
+              <img
+                src="../assets/images/Rectangle 62.png"
+                alt=""
+                class="absolute bottom-0"
+              />
+              <img
+                src="../assets/images/Ellipse 27.png"
+                alt=""
+                class="abs-center"
+              />
+            </div>
+          </div>
+          <!-- btn action -->
+
+          <!-- btn action -->
+          <div class="flex items-center mt-4 mb-6 justify-center">
+            <button class="p-3">
+              <img src="../assets/images/shuffle.svg" alt="" class="w-8 h-8" />
+            </button>
+            <button class="p-3">
+              <img src="../assets/images/previous.svg" alt="" class="w-8 h-8" />
+            </button>
+            <button class="p-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="65"
+                height="64"
+                viewBox="0 0 65 64"
+                fill="none"
+              >
+                <path
+                  d="M32.4206 5.33301C17.7006 5.33301 5.75391 17.2797 5.75391 31.9997C5.75391 46.7197 17.7006 58.6663 32.4206 58.6663C47.1406 58.6663 59.0872 46.7197 59.0872 31.9997C59.0872 17.2797 47.1672 5.33301 32.4206 5.33301ZM29.0872 40.0797C29.0872 41.3597 28.5539 41.8663 27.1939 41.8663H23.7272C22.3672 41.8663 21.8339 41.3597 21.8339 40.0797V23.9197C21.8339 22.6397 22.3672 22.133 23.7272 22.133H27.1672C28.5272 22.133 29.0606 22.6397 29.0606 23.9197V40.0797H29.0872ZM43.1672 40.0797C43.1672 41.3597 42.6339 41.8663 41.2739 41.8663H37.8339C36.4739 41.8663 35.9406 41.3597 35.9406 40.0797V23.9197C35.9406 22.6397 36.4739 22.133 37.8339 22.133H41.2739C42.6339 22.133 43.1672 22.6397 43.1672 23.9197V40.0797Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+            <button class="p-3">
+              <img src="../assets/images/btn2.svg" alt="" class="w-8 h-8" />
+            </button>
+            <button class="p-3">
+              <img src="../assets/images/btn3.svg" alt="" class="w-8 h-8" />
+            </button>
+          </div>
+          <div class="flex items-center justify-center gap-4">
+            <button class="p-3">
+              <img
+                src="../assets/images/video-play.svg"
+                alt=""
+                class="w-6 h-6"
+              />
+            </button>
+            <button class="p-3">
+              <img
+                src="../assets/images/info-circle.svg"
+                alt=""
+                class="w-6 h-6"
+              />
+            </button>
+            <button class="p-3">
+              <img
+                src="../assets/images/message-text.svg"
+                alt=""
+                class="w-6 h-6"
+              />
+            </button>
+            <button class="p-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+              >
+                <path
+                  d="M17.0859 6.16992C19.0859 7.55992 20.4659 9.76992 20.7459 12.3199"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M3.61523 12.3697C3.87523 9.82973 5.23523 7.61973 7.21523 6.21973"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.31445 20.9404C9.47445 21.5304 10.7945 21.8604 12.1845 21.8604C13.5245 21.8604 14.7845 21.5604 15.9145 21.0104"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12.1843 7.69965C13.7196 7.69965 14.9643 6.455 14.9643 4.91965C14.9643 3.3843 13.7196 2.13965 12.1843 2.13965C10.6489 2.13965 9.4043 3.3843 9.4043 4.91965C9.4043 6.455 10.6489 7.69965 12.1843 7.69965Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M4.95578 19.9204C6.49113 19.9204 7.73578 18.6757 7.73578 17.1404C7.73578 15.605 6.49113 14.3604 4.95578 14.3604C3.42043 14.3604 2.17578 15.605 2.17578 17.1404C2.17578 18.6757 3.42043 19.9204 4.95578 19.9204Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M19.2956 19.9204C20.831 19.9204 22.0756 18.6757 22.0756 17.1404C22.0756 15.605 20.831 14.3604 19.2956 14.3604C17.7603 14.3604 16.5156 15.605 16.5156 17.1404C16.5156 18.6757 17.7603 19.9204 19.2956 19.9204Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="../js/music.js"></script>
+</html>
