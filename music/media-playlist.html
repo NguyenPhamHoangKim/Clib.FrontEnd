@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clib - MarketPlace</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- mobile -->
+    <main class="relative block md:hidden">
+      <!-- header content -->
+      <section class="flex items-end justify-between py-3 box-shadow">
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M14.9998 19.9201L8.47984 13.4001C7.70984 12.6301 7.70984 11.3701 8.47984 10.6001L14.9998 4.08008"
+              stroke="#52616B"
+              stroke-width="1.5"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+        <h2 class="text-18 text-[#2C2F33] font-semibold">Playlist</h2>
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M5 10C3.9 10 3 10.9 3 12C3 13.1 3.9 14 5 14C6.1 14 7 13.1 7 12C7 10.9 6.1 10 5 10Z"
+              fill="#52616B"
+            />
+            <path
+              d="M19 10C17.9 10 17 10.9 17 12C17 13.1 17.9 14 19 14C20.1 14 21 13.1 21 12C21 10.9 20.1 10 19 10Z"
+              fill="#52616B"
+            />
+            <path
+              d="M12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"
+              fill="#52616B"
+            />
+          </svg>
+        </button>
+      </section>
+      <!-- content -->
+      <section class="container">
+        <div class="flex flex-col mt-4 items-center">
+          <div class="max-w-[208px]">
+            <img
+              src="../assets/images/playlists/1.png"
+              alt=""
+              class="w-fullh h-full rounded-lg"
+            />
+          </div>
+          <h4 class="text-base mt-3 mb-2 font-semibold text-[#2C2F33]">
+            Playlist for working
+          </h4>
+          <p class="text-14 text-[#1975FF] mb-2">Hira</p>
+          <p class="text-12 text-[#52616B] flex items-center mb-4 gap-1">
+            Album <img src="../assets/images/Ellipse 29.svg" alt="" /> 30 songs
+          </p>
+        </div>
+        <!-- button -->
+        <div class="grid grid-cols-2 gap-3 mb-4">
+          <button
+            class="text-14 font-semibol px-4 py-3 bg-[#1975ff] text-white flex rounded-xl justify-center items-center gap-1"
+          >
+            <img src="../assets/images/play.svg" alt="" />Play all
+          </button>
+          <button
+            class="text-14 font-semibold px-4 py-3 bg-[#ebeef0] text-[#52616B] rounded-xl justify-center flex items-center gap-1"
+          >
+            <img src="../assets/images/shuffle (1).svg" alt="" />Shuffle
+          </button>
+        </div>
+        <!-- actions -->
+        <div class="grid grid-cols-4">
+          <div class="flex flex-col text-12 text-[#2C2F33] gap-1 items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+            >
+              <path
+                d="M13.495 20.8096C13.155 20.9296 12.595 20.9296 12.255 20.8096C9.355 19.8196 2.875 15.6896 2.875 8.68961C2.875 5.59961 5.365 3.09961 8.435 3.09961C10.255 3.09961 11.865 3.97961 12.875 5.33961C13.885 3.97961 15.505 3.09961 17.315 3.09961C20.385 3.09961 22.875 5.59961 22.875 8.68961C22.875 15.6896 16.395 19.8196 13.495 20.8096Z"
+                stroke="#52616B"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            Like
+          </div>
+          <div class="flex flex-col text-12 text-[#2C2F33] gap-1 items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+            >
+              <path
+                d="M4.20508 5.16016H18.0451C19.7051 5.16016 21.0451 6.50016 21.0451 8.16016V11.4802"
+                stroke="#52616B"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M7.36508 2L4.20508 5.15997L7.36508 8.32001"
+                stroke="#52616B"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M21.0451 18.8395H7.20508C5.54508 18.8395 4.20508 17.4995 4.20508 15.8395V12.5195"
+                stroke="#52616B"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M17.8848 21.9997L21.0448 18.8397L17.8848 15.6797"
+                stroke="#52616B"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            Repost
+          </div>
+          <div class="flex flex-col text-12 text-[#2C2F33] gap-1 items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+            >
+              <path
+                d="M12.375 22C17.875 22 22.375 17.5 22.375 12C22.375 6.5 17.875 2 12.375 2C6.875 2 2.375 6.5 2.375 12C2.375 17.5 6.875 22 12.375 22Z"
+                stroke="#52616B"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12.375 8V13"
+                stroke="#52616B"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12.3691 16H12.3781"
+                stroke="#52616B"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            Playlist infor
+          </div>
+          <div class="flex flex-col text-12 text-[#2C2F33] gap-1 items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+            >
+              <path
+                d="M17.0859 6.16992C19.0859 7.55992 20.4659 9.76992 20.7459 12.3199"
+                stroke="#52616B"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M3.61523 12.3697C3.87523 9.82973 5.23523 7.61973 7.21523 6.21973"
+                stroke="#52616B"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M8.31445 20.9404C9.47445 21.5304 10.7945 21.8604 12.1845 21.8604C13.5245 21.8604 14.7845 21.5604 15.9145 21.0104"
+                stroke="#292D32"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12.1843 7.69965C13.7196 7.69965 14.9643 6.455 14.9643 4.91965C14.9643 3.3843 13.7196 2.13965 12.1843 2.13965C10.6489 2.13965 9.4043 3.3843 9.4043 4.91965C9.4043 6.455 10.6489 7.69965 12.1843 7.69965Z"
+                stroke="#292D32"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M4.95578 19.9204C6.49113 19.9204 7.73578 18.6757 7.73578 17.1404C7.73578 15.605 6.49113 14.3604 4.95578 14.3604C3.42043 14.3604 2.17578 15.605 2.17578 17.1404C2.17578 18.6757 3.42043 19.9204 4.95578 19.9204Z"
+                stroke="#292D32"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M19.2956 19.9204C20.831 19.9204 22.0756 18.6757 22.0756 17.1404C22.0756 15.605 20.831 14.3604 19.2956 14.3604C17.7603 14.3604 16.5156 15.605 16.5156 17.1404C16.5156 18.6757 17.7603 19.9204 19.2956 19.9204Z"
+                stroke="#292D32"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            Share
+          </div>
+        </div>
+        <!-- list album -->
+        <div class="mt-4 flex flex-col gap-4">
+          <div class="flex items-center justify-between">
+            <div class="w-full flex items-center gap-2">
+              <p
+                class="w-4 flex items-center justify-center text-14 text-[#52616B] font-semibold"
+              >
+                1
+              </p>
+              <div class="flex items-center gap-2">
+                <img
+                  src="../assets/images/Thumnail.png"
+                  alt=""
+                  class="w-12 h-12 rounded-xl"
+                />
+                <div class="flex w-full flex-col gap-1">
+                  <p class="line-clamp-1 text-14 texy-[#2C2F33] font-semibold">
+                    Run now
+                  </p>
+                  <p class="text-12 text-[#52616B]">Son Tung M-TP</p>
+                </div>
+              </div>
+            </div>
+            <button><img src="../assets/svgs/more.svg" alt="" /></button>
+          </div>
+          <div class="flex items-center justify-between">
+            <div class="w-full flex items-center gap-2">
+              <p
+                class="w-4 flex items-center justify-center text-14 text-[#52616B] font-semibold"
+              >
+                2
+              </p>
+              <div class="flex items-center gap-2">
+                <img
+                  src="../assets/images/Thumnail.png"
+                  alt=""
+                  class="w-12 h-12 rounded-xl"
+                />
+                <div class="flex w-full flex-col gap-1">
+                  <p class="line-clamp-1 text-14 texy-[#2C2F33] font-semibold">
+                    Run now
+                  </p>
+                  <p class="text-12 text-[#52616B]">Son Tung M-TP</p>
+                </div>
+              </div>
+            </div>
+            <button><img src="../assets/svgs/more.svg" alt="" /></button>
+          </div>
+          <div class="flex items-center justify-between">
+            <div class="w-full flex items-center gap-2">
+              <p
+                class="w-4 flex items-center justify-center text-14 text-[#52616B] font-semibold"
+              >
+                3
+              </p>
+              <div class="flex items-center gap-2">
+                <img
+                  src="../assets/images/Thumnail.png"
+                  alt=""
+                  class="w-12 h-12 rounded-xl"
+                />
+                <div class="flex w-full flex-col gap-1">
+                  <p class="line-clamp-1 text-14 texy-[#2C2F33] font-semibold">
+                    Run now
+                  </p>
+                  <p class="text-12 text-[#52616B]">Son Tung M-TP</p>
+                </div>
+              </div>
+            </div>
+            <button><img src="../assets/svgs/more.svg" alt="" /></button>
+          </div>
+          <div class="flex items-center justify-between">
+            <div class="w-full flex items-center gap-2">
+              <p
+                class="w-4 flex items-center justify-center text-14 text-[#52616B] font-semibold"
+              >
+                4
+              </p>
+              <div class="flex items-center gap-2">
+                <img
+                  src="../assets/images/Thumnail.png"
+                  alt=""
+                  class="w-12 h-12 rounded-xl"
+                />
+                <div class="flex w-full flex-col gap-1">
+                  <p class="line-clamp-1 text-14 texy-[#2C2F33] font-semibold">
+                    Run now
+                  </p>
+                  <p class="text-12 text-[#52616B]">Son Tung M-TP</p>
+                </div>
+              </div>
+            </div>
+            <button><img src="../assets/svgs/more.svg" alt="" /></button>
+          </div>
+          <div class="flex items-center justify-between">
+            <div class="w-full flex items-center gap-2">
+              <p
+                class="w-4 flex items-center justify-center text-14 text-[#52616B] font-semibold"
+              >
+                5
+              </p>
+              <div class="flex items-center gap-2">
+                <img
+                  src="../assets/images/Thumnail.png"
+                  alt=""
+                  class="w-12 h-12 rounded-xl"
+                />
+                <div class="flex w-full flex-col gap-1">
+                  <p class="line-clamp-1 text-14 texy-[#2C2F33] font-semibold">
+                    Run now
+                  </p>
+                  <p class="text-12 text-[#52616B]">Son Tung M-TP</p>
+                </div>
+              </div>
+            </div>
+            <button><img src="../assets/svgs/more.svg" alt="" /></button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</html>

@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clib - MarketPlace</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- mobile -->
+    <section class="relative h-full pb-3 bg-[#783e87] block md:hidden">
+      <div class="container">
+        <div class="sticky-header">
+          <div class="header-content">
+            <button class="header-button w-[60px]">
+              <img src="../assets/svgs/arrow-left.svg" alt="" />
+            </button>
+            <h4 class="header-title">Now playing</h4>
+            <div class="flex items-center gap-3">
+              <button class="header-button">
+                <img src="../assets/svgs/message-text.svg" alt="" />
+              </button>
+              <button class="header-button">
+                <img src="../assets/svgs/music-filter.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- image -->
+        <div class="">
+          <img
+            id="album-cover"
+            src="../assets/images/rose.png"
+            alt=""
+            class="w-full h-full rounded-xl"
+          />
+        </div>
+        <div class="flex items-start justify-between">
+          <img src="../assets/images/heart.svg" alt="" />
+          <div class="flex flex-col items-center gap-[5px]">
+            <h6 class="text-24 font-semibold text-white">Gone</h6>
+            <p class="text-14 text-white font-normal">ROSÉ</p>
+          </div>
+          <img src="../assets/images/more.svg" alt="" />
+        </div>
+        <!-- time music -->
+        <div>
+          <div class="flex items-center flex-col gap-2 py-6">
+            <img src="../assets/images/path2.svg" alt="" />
+            <div
+              class="flex text-12 w-full font-normal text-white items-center justify-between"
+            >
+              <p>00:32</p>
+              <p>04:00</p>
+            </div>
+          </div>
+        </div>
+        <!-- btn action -->
+        <div class="flex items-center gap-4">
+          <button class="p-3">
+            <img src="../assets/images/shuffle.svg" alt="" />
+          </button>
+          <button class="p-3">
+            <img src="../assets/images/btn.svg" alt="" />
+          </button>
+          <button class="p-3">
+            <img src="../assets/images/btn1.svg" alt="" />
+          </button>
+          <button class="p-3">
+            <img src="../assets/images/btn2.svg" alt="" />
+          </button>
+          <button class="p-3">
+            <img src="../assets/images/btn3.svg" alt="" />
+          </button>
+        </div>
+        <!-- btn lyrics -->
+        <div id="show-lyrics-box" class="flex flex-col items-center pt-6">
+          <img src="../assets/images/btn4.svg" class="w-6 h-6" alt="" />
+          <button id="show-lyrics" class="text-14 text-white">Lyrics</button>
+        </div>
+        <!-- lyrics -->
+        <div id="lyrics" class="p-3 my-10 bg-rgba rounded-xl">
+          <div class="items-center justify-between pb-3 border-music flex">
+            <div class="flex items-center gap-2 text-14 text-white">
+              <img src="../assets/images/Thumnail.png" alt="" />ROSÉ
+            </div>
+            <button>
+              <img src="../assets/images/arrow-right.svg" alt="" />
+            </button>
+          </div>
+          <div class="pt-4 h-[460px] overflow-y-auto scrollbar-custom-lyric">
+            <h5 class="text-white text-20 font-semibold mb-3">Lyrics</h5>
+            <div class="flex flex-col gap-4">
+              <div class="text-white text-14">
+                <p>Right from the start</p>
+                <p>You were a thief</p>
+                <p>You stole my heart</p>
+                <p>And I your willing victim</p>
+                <p>I let you see the parts of me</p>
+                <p>That weren't all that pretty</p>
+                <p>And with every touch youfixed them</p>
+              </div>
+              <div class="text-white text-14">
+                <p>Right from the start</p>
+                <p>You were a thief</p>
+                <p>You stole my heart</p>
+                <p>And I your willing victim</p>
+                <p>I let you see the parts of me</p>
+                <p>That weren't all that pretty</p>
+                <p>And with every touch youfixed them</p>
+              </div>
+              <div class="text-white text-14">
+                <p>Right from the start</p>
+                <p>You were a thief</p>
+                <p>You stole my heart</p>
+                <p>And I your willing victim</p>
+                <p>I let you see the parts of me</p>
+                <p>That weren't all that pretty</p>
+                <p>And with every touch youfixed them</p>
+              </div>
+              <div class="text-white text-14">
+                <p>Right from the start</p>
+                <p>You were a thief</p>
+                <p>You stole my heart</p>
+                <p>And I your willing victim</p>
+              </div>
+              <div class="text-white text-14">
+                <p>Right from the start</p>
+                <p>You were a thief</p>
+                <p>You stole my heart</p>
+                <p>And I your willing victim</p>
+                <p>I let you see the parts of me</p>
+                <p>That weren't all that pretty</p>
+                <p>And with every touch youfixed them</p>
+                <p>And with every touch youfixed them</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="../js/music.js"></script>
+</html>
