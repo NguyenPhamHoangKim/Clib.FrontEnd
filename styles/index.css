@@ -2953,14 +2953,9 @@ body{
   gap: 72px;
 }
 
-.gap-\[80px\]{
-  gap: 80px;
-}
-
 .gap-\[90px\]{
   gap: 90px;
 }
-
 
 .gap-x-0{
   -moz-column-gap: 0px;
@@ -3890,6 +3885,14 @@ body{
   background-image: url('/assets/images/login-bg.jpg');
 }
 
+.bg-\[url\(\'\.\/assets\/images\/login-bg\.jpg\'\)\]{
+  background-image: url('./assets/images/login-bg.jpg');
+}
+
+.bg-\[url\(\'\.\.\/assets\/images\/login-bg\.jpg\'\)\]{
+  background-image: url('../assets/images/login-bg.jpg');
+}
+
 .decoration-slice{
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -4052,6 +4055,7 @@ body{
 .p-\[6px\]{
   padding: 6px;
 }
+
 .\!px-0{
   padding-left: 0px !important;
   padding-right: 0px !important;
@@ -4262,10 +4266,6 @@ body{
 
 .pr-4{
   padding-right: 1rem;
-}
-
-.pr-8{
-  padding-right: 2rem;
 }
 
 .pr-\[46px\]{
@@ -6734,12 +6734,13 @@ input {
     border-radius: 0.75rem;
   }
 
-  .md\:border-r{
-    border-right-width: 1px;
-  }
   .md\:rounded-b-xl{
     border-bottom-right-radius: 0.75rem;
     border-bottom-left-radius: 0.75rem;
+  }
+
+  .md\:border-r{
+    border-right-width: 1px;
   }
 
   .md\:border-none{
