@@ -1,0 +1,1224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Player</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <div class="container grid grid-cols-[1fr_360px] gap-6">
+      <div class="flex flex-col gap-y-6">
+        <div class="rounded-xl overflow-hidden bg-white">
+          <div class="h-[548px] relative">
+            <div
+              class="absolute top-0 right-0 left-0 bottom-0 z-10 bg-black/60 flex items-center justify-center"
+            >
+              <button class="absolute right-3 top-3 z-1">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22 9.98V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22H10"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M5.99219 5.98L11.0022 11H6.99219"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M11 11V6.99"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M13 16.15V18.85C13 21.1 13.9 22 16.15 22H18.85C21.1 22 22 21.1 22 18.85V16.15C22 13.9 21.1 13 18.85 13H16.15C13.9 13 13 13.9 13 16.15Z"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div class="flex items-center justify-center gap-x-3">
+                <button>
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M26.9868 9.62657V22.3866C26.9868 24.9999 24.1468 26.6399 21.8802 25.3332L16.3468 22.1466L10.8135 18.9466C8.54681 17.6399 8.54681 14.3732 10.8135 13.0666L16.3468 9.86656L21.8802 6.67992C24.1468 5.37325 26.9868 6.99991 26.9868 9.62657Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M5.01367 24.24V7.76001"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <button>
+                  <svg
+                    width="56"
+                    height="56"
+                    viewBox="0 0 56 56"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M27.93 4.66675C15.05 4.66675 4.59668 15.1201 4.59668 28.0001C4.59668 40.8801 15.05 51.3334 27.93 51.3334C40.81 51.3334 51.2633 40.8801 51.2633 28.0001C51.2633 15.1201 40.8333 4.66675 27.93 4.66675ZM34.93 33.2034L28.1633 37.1001C27.3233 37.5901 26.39 37.8234 25.48 37.8234C24.5467 37.8234 23.6367 37.5901 22.7967 37.1001C21.1167 36.1201 20.1133 34.3934 20.1133 32.4334V24.6167C20.1133 22.6801 21.1167 20.9301 22.7967 19.9501C24.4767 18.9701 26.4833 18.9701 28.1867 19.9501L34.9533 23.8467C36.6333 24.8267 37.6367 26.5534 37.6367 28.5134C37.6367 30.4734 36.6333 32.2234 34.93 33.2034Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+                <button>
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.01318 9.62657V22.3866C5.01318 24.9999 7.85317 26.6399 10.1198 25.3332L15.6532 22.1466L21.1865 18.9466C23.4532 17.6399 23.4532 14.3732 21.1865 13.0666L15.6532 9.86656L10.1198 6.67992C7.85317 5.37325 5.01318 6.99991 5.01318 9.62657Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M26.9863 24.24V7.76001"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="absolute bottom-4">
+                <svg
+                  max
+                  class="max-w-full max-xl:px-4"
+                  width="896"
+                  height="44"
+                  viewBox="0 0 896 44"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.744 17.572C0.744 16.196 0.968 15.124 1.416 14.356C1.864 13.58 2.648 13.192 3.768 13.192C4.88 13.192 5.66 13.58 6.108 14.356C6.556 15.124 6.78 16.196 6.78 17.572C6.78 18.972 6.556 20.06 6.108 20.836C5.66 21.612 4.88 22 3.768 22C2.648 22 1.864 21.612 1.416 20.836C0.968 20.06 0.744 18.972 0.744 17.572ZM5.7 17.572C5.7 16.876 5.652 16.288 5.556 15.808C5.468 15.32 5.28 14.928 4.992 14.632C4.712 14.336 4.304 14.188 3.768 14.188C3.224 14.188 2.808 14.336 2.52 14.632C2.24 14.928 2.052 15.32 1.956 15.808C1.868 16.288 1.824 16.876 1.824 17.572C1.824 18.292 1.868 18.896 1.956 19.384C2.052 19.872 2.24 20.264 2.52 20.56C2.808 20.856 3.224 21.004 3.768 21.004C4.304 21.004 4.712 20.856 4.992 20.56C5.28 20.264 5.468 19.872 5.556 19.384C5.652 18.896 5.7 18.292 5.7 17.572ZM8.27916 17.572C8.27916 16.196 8.50316 15.124 8.95116 14.356C9.39916 13.58 10.1832 13.192 11.3032 13.192C12.4152 13.192 13.1952 13.58 13.6432 14.356C14.0912 15.124 14.3152 16.196 14.3152 17.572C14.3152 18.972 14.0912 20.06 13.6432 20.836C13.1952 21.612 12.4152 22 11.3032 22C10.1832 22 9.39916 21.612 8.95116 20.836C8.50316 20.06 8.27916 18.972 8.27916 17.572ZM13.2352 17.572C13.2352 16.876 13.1872 16.288 13.0912 15.808C13.0032 15.32 12.8152 14.928 12.5272 14.632C12.2472 14.336 11.8392 14.188 11.3032 14.188C10.7592 14.188 10.3432 14.336 10.0552 14.632C9.77516 14.928 9.58716 15.32 9.49116 15.808C9.40316 16.288 9.35916 16.876 9.35916 17.572C9.35916 18.292 9.40316 18.896 9.49116 19.384C9.58716 19.872 9.77516 20.264 10.0552 20.56C10.3432 20.856 10.7592 21.004 11.3032 21.004C11.8392 21.004 12.2472 20.856 12.5272 20.56C12.8152 20.264 13.0032 19.872 13.0912 19.384C13.1872 18.896 13.2352 18.292 13.2352 17.572ZM16.3423 22.072C16.1343 22.072 15.9583 22 15.8143 21.856C15.6703 21.712 15.5983 21.536 15.5983 21.328C15.5983 21.12 15.6703 20.944 15.8143 20.8C15.9583 20.656 16.1343 20.584 16.3423 20.584C16.5423 20.584 16.7103 20.656 16.8463 20.8C16.9903 20.944 17.0623 21.12 17.0623 21.328C17.0623 21.536 16.9903 21.712 16.8463 21.856C16.7103 22 16.5423 22.072 16.3423 22.072ZM16.3423 16.936C16.1343 16.936 15.9583 16.864 15.8143 16.72C15.6703 16.576 15.5983 16.4 15.5983 16.192C15.5983 15.984 15.6703 15.808 15.8143 15.664C15.9583 15.52 16.1343 15.448 16.3423 15.448C16.5423 15.448 16.7103 15.52 16.8463 15.664C16.9903 15.808 17.0623 15.984 17.0623 16.192C17.0623 16.4 16.9903 16.576 16.8463 16.72C16.7103 16.864 16.5423 16.936 16.3423 16.936ZM23.901 14.272H19.689V17.008C19.873 16.752 20.145 16.544 20.505 16.384C20.865 16.216 21.253 16.132 21.669 16.132C22.333 16.132 22.873 16.272 23.289 16.552C23.705 16.824 24.001 17.18 24.177 17.62C24.361 18.052 24.453 18.512 24.453 19C24.453 19.576 24.345 20.092 24.129 20.548C23.913 21.004 23.581 21.364 23.133 21.628C22.693 21.892 22.145 22.024 21.489 22.024C20.649 22.024 19.969 21.808 19.449 21.376C18.929 20.944 18.613 20.368 18.501 19.648H19.569C19.673 20.104 19.893 20.46 20.229 20.716C20.565 20.972 20.989 21.1 21.501 21.1C22.133 21.1 22.609 20.912 22.929 20.536C23.249 20.152 23.409 19.648 23.409 19.024C23.409 18.4 23.249 17.92 22.929 17.584C22.609 17.24 22.137 17.068 21.513 17.068C21.089 17.068 20.717 17.172 20.397 17.38C20.085 17.58 19.857 17.856 19.713 18.208H18.681V13.312H23.901V14.272ZM25.9042 17.572C25.9042 16.196 26.1282 15.124 26.5762 14.356C27.0242 13.58 27.8082 13.192 28.9282 13.192C30.0402 13.192 30.8202 13.58 31.2682 14.356C31.7162 15.124 31.9402 16.196 31.9402 17.572C31.9402 18.972 31.7162 20.06 31.2682 20.836C30.8202 21.612 30.0402 22 28.9282 22C27.8082 22 27.0242 21.612 26.5762 20.836C26.1282 20.06 25.9042 18.972 25.9042 17.572ZM30.8602 17.572C30.8602 16.876 30.8122 16.288 30.7162 15.808C30.6282 15.32 30.4402 14.928 30.1522 14.632C29.8722 14.336 29.4642 14.188 28.9282 14.188C28.3842 14.188 27.9682 14.336 27.6802 14.632C27.4002 14.928 27.2122 15.32 27.1162 15.808C27.0282 16.288 26.9842 16.876 26.9842 17.572C26.9842 18.292 27.0282 18.896 27.1162 19.384C27.2122 19.872 27.4002 20.264 27.6802 20.56C27.9682 20.856 28.3842 21.004 28.9282 21.004C29.4642 21.004 29.8722 20.856 30.1522 20.56C30.4402 20.264 30.6282 19.872 30.7162 19.384C30.8122 18.896 30.8602 18.292 30.8602 17.572Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M720.682 17.572C720.682 16.196 720.906 15.124 721.354 14.356C721.802 13.58 722.586 13.192 723.706 13.192C724.818 13.192 725.598 13.58 726.046 14.356C726.493 15.124 726.717 16.196 726.717 17.572C726.717 18.972 726.493 20.06 726.046 20.836C725.598 21.612 724.818 22 723.706 22C722.586 22 721.802 21.612 721.354 20.836C720.906 20.06 720.682 18.972 720.682 17.572ZM725.638 17.572C725.638 16.876 725.59 16.288 725.494 15.808C725.406 15.32 725.218 14.928 724.93 14.632C724.65 14.336 724.242 14.188 723.706 14.188C723.162 14.188 722.746 14.336 722.458 14.632C722.178 14.928 721.99 15.32 721.894 15.808C721.806 16.288 721.762 16.876 721.762 17.572C721.762 18.292 721.806 18.896 721.894 19.384C721.99 19.872 722.178 20.264 722.458 20.56C722.746 20.856 723.162 21.004 723.706 21.004C724.242 21.004 724.65 20.856 724.93 20.56C725.218 20.264 725.406 19.872 725.494 19.384C725.59 18.896 725.638 18.292 725.638 17.572ZM728.085 21.124C729.101 20.308 729.897 19.64 730.473 19.12C731.049 18.592 731.533 18.044 731.925 17.476C732.325 16.9 732.525 16.336 732.525 15.784C732.525 15.264 732.397 14.856 732.141 14.56C731.893 14.256 731.489 14.104 730.929 14.104C730.385 14.104 729.961 14.276 729.657 14.62C729.361 14.956 729.201 15.408 729.177 15.976H728.121C728.153 15.08 728.425 14.388 728.937 13.9C729.449 13.412 730.109 13.168 730.917 13.168C731.741 13.168 732.393 13.396 732.873 13.852C733.361 14.308 733.605 14.936 733.605 15.736C733.605 16.4 733.405 17.048 733.005 17.68C732.613 18.304 732.165 18.856 731.661 19.336C731.157 19.808 730.513 20.36 729.729 20.992H733.857V21.904H728.085V21.124ZM735.647 22.072C735.439 22.072 735.263 22 735.119 21.856C734.975 21.712 734.903 21.536 734.903 21.328C734.903 21.12 734.975 20.944 735.119 20.8C735.263 20.656 735.439 20.584 735.647 20.584C735.847 20.584 736.015 20.656 736.151 20.8C736.295 20.944 736.367 21.12 736.367 21.328C736.367 21.536 736.295 21.712 736.151 21.856C736.015 22 735.847 22.072 735.647 22.072ZM735.647 16.936C735.439 16.936 735.263 16.864 735.119 16.72C734.975 16.576 734.903 16.4 734.903 16.192C734.903 15.984 734.975 15.808 735.119 15.664C735.263 15.52 735.439 15.448 735.647 15.448C735.847 15.448 736.015 15.52 736.151 15.664C736.295 15.808 736.367 15.984 736.367 16.192C736.367 16.4 736.295 16.576 736.151 16.72C736.015 16.864 735.847 16.936 735.647 16.936ZM737.674 17.572C737.674 16.196 737.898 15.124 738.346 14.356C738.794 13.58 739.578 13.192 740.698 13.192C741.81 13.192 742.59 13.58 743.038 14.356C743.486 15.124 743.71 16.196 743.71 17.572C743.71 18.972 743.486 20.06 743.038 20.836C742.59 21.612 741.81 22 740.698 22C739.578 22 738.794 21.612 738.346 20.836C737.898 20.06 737.674 18.972 737.674 17.572ZM742.63 17.572C742.63 16.876 742.582 16.288 742.486 15.808C742.398 15.32 742.21 14.928 741.922 14.632C741.642 14.336 741.234 14.188 740.698 14.188C740.154 14.188 739.738 14.336 739.45 14.632C739.17 14.928 738.982 15.32 738.886 15.808C738.798 16.288 738.754 16.876 738.754 17.572C738.754 18.292 738.798 18.896 738.886 19.384C738.982 19.872 739.17 20.264 739.45 20.56C739.738 20.856 740.154 21.004 740.698 21.004C741.234 21.004 741.642 20.856 741.922 20.56C742.21 20.264 742.398 19.872 742.486 19.384C742.582 18.896 742.63 18.292 742.63 17.572ZM745.209 17.572C745.209 16.196 745.433 15.124 745.881 14.356C746.329 13.58 747.113 13.192 748.233 13.192C749.345 13.192 750.125 13.58 750.573 14.356C751.021 15.124 751.245 16.196 751.245 17.572C751.245 18.972 751.021 20.06 750.573 20.836C750.125 21.612 749.345 22 748.233 22C747.113 22 746.329 21.612 745.881 20.836C745.433 20.06 745.209 18.972 745.209 17.572ZM750.165 17.572C750.165 16.876 750.117 16.288 750.021 15.808C749.933 15.32 749.745 14.928 749.457 14.632C749.177 14.336 748.769 14.188 748.233 14.188C747.689 14.188 747.273 14.336 746.985 14.632C746.705 14.928 746.517 15.32 746.421 15.808C746.333 16.288 746.289 16.876 746.289 17.572C746.289 18.292 746.333 18.896 746.421 19.384C746.517 19.872 746.705 20.264 746.985 20.56C747.273 20.856 747.689 21.004 748.233 21.004C748.769 21.004 749.177 20.856 749.457 20.56C749.745 20.264 749.933 19.872 750.021 19.384C750.117 18.896 750.165 18.292 750.165 17.572Z"
+                    fill="white"
+                  />
+                  <rect
+                    opacity="0.6"
+                    y="30"
+                    width="752"
+                    height="4"
+                    rx="2"
+                    fill="white"
+                  />
+                  <rect y="30" width="591" height="4" rx="2" fill="#1A75FF" />
+                  <circle
+                    cx="591"
+                    cy="32"
+                    r="5"
+                    fill="white"
+                    stroke="#1A75FF"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M776 20V24C776 26 777 27 779 27H780.43C780.8 27 781.17 27.11 781.49 27.3L784.41 29.13C786.93 30.71 789 29.56 789 26.59V17.41C789 14.43 786.93 13.29 784.41 14.87L781.49 16.7C781.17 16.89 780.8 17 780.43 17H779C777 17 776 18 776 20Z"
+                    stroke="white"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M792 18C793.78 20.37 793.78 23.63 792 26"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M793.83 15.5C796.72 19.35 796.72 24.65 793.83 28.5"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <rect
+                    x="808"
+                    width="44"
+                    height="44"
+                    rx="22"
+                    fill="white"
+                    fill-opacity="0.2"
+                  />
+                  <path
+                    d="M830 25C831.657 25 833 23.6569 833 22C833 20.3431 831.657 19 830 19C828.343 19 827 20.3431 827 22C827 23.6569 828.343 25 830 25Z"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M820 22.8799V21.1199C820 20.0799 820.85 19.2199 821.9 19.2199C823.71 19.2199 824.45 17.9399 823.54 16.3699C823.02 15.4699 823.33 14.2999 824.24 13.7799L825.97 12.7899C826.76 12.3199 827.78 12.5999 828.25 13.3899L828.36 13.5799C829.26 15.1499 830.74 15.1499 831.65 13.5799L831.76 13.3899C832.23 12.5999 833.25 12.3199 834.04 12.7899L835.77 13.7799C836.68 14.2999 836.99 15.4699 836.47 16.3699C835.56 17.9399 836.3 19.2199 838.11 19.2199C839.15 19.2199 840.01 20.0699 840.01 21.1199V22.8799C840.01 23.9199 839.16 24.7799 838.11 24.7799C836.3 24.7799 835.56 26.0599 836.47 27.6299C836.99 28.5399 836.68 29.6999 835.77 30.2199L834.04 31.2099C833.25 31.6799 832.23 31.3999 831.76 30.6099L831.65 30.4199C830.75 28.8499 829.27 28.8499 828.36 30.4199L828.25 30.6099C827.78 31.3999 826.76 31.6799 825.97 31.2099L824.24 30.2199C823.33 29.6999 823.02 28.5299 823.54 27.6299C824.45 26.0599 823.71 24.7799 821.9 24.7799C820.85 24.7799 820 23.9199 820 22.8799Z"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M864 19V16.5C864 14.01 866.01 12 868.5 12H871"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M877 12H879.5C881.99 12 884 14.01 884 16.5V19"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M884 26V27.5C884 29.99 881.99 32 879.5 32H878"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M871 32H868.5C866.01 32 864 29.99 864 27.5V25"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <img
+              class="w-full h-full"
+              src="./assets/images/video-player.jpg"
+              loading="lazy"
+              alt=""
+            />
+          </div>
+          <div class="bg-white p-4">
+            <h1 class="text-20 font-semibold line-clamp-1">
+              How to make the Best Restaurant Style Crispy Chili Beef on a Flat
+              Top Griddle
+            </h1>
+            <div class="mt-4 flex items-center justify-between">
+              <div class="flex items-center">
+                <div class="text-grey-400 font-semibold">70,200,210 views</div>
+                <div class="h-4 w-[1px] bg-grey-300 mx-2"></div>
+                <div class="text-grey-400">11 days ago</div>
+              </div>
+              <div class="text-grey-400 flex items-center gap-x-4">
+                <div class="flex items-center gap-x-1">
+                  2K
+                  <img
+                    class="w-6 aspect-square"
+                    src="./assets/svgs/heart-outline.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="flex items-center gap-x-1">
+                  72
+                  <img
+                    class="w-6 aspect-square"
+                    src="./assets/svgs/repeat.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="flex items-center gap-x-1">
+                  40
+                  <img
+                    class="w-6 aspect-square"
+                    src="./assets/svgs/ms-comment.svg"
+                    alt=""
+                  />
+                </div>
+                <button>
+                  <img src="./assets/svgs/more.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="mt-4 flex items-center justify-between">
+              <div class="flex items-center gap-x-3">
+                <img
+                  class="w-12 aspect-square rounded-xl"
+                  src="./assets/images/shark-tank.jpg"
+                  alt=""
+                />
+                <div>
+                  <div class="font-semibold">Food reviewer</div>
+                  <div class="mt-1 text-14 text-grey-400">12,78M followers</div>
+                </div>
+              </div>
+              <button
+                class="px-6 py-2.5 bg-branding font-semibold text-white border border-branding rounded-xl transition-colors duration-200 hover:bg-transparent hover:text-branding"
+              >
+                Follow
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-xl p-4 bg-white">
+          <div class="text-20 font-semibold">Tittle</div>
+          <div id="video-title-content" class="mt-6 line-clamp-5 text-grey-400">
+            1. LOCAL BHUJUNG HOME <br />
+            ADDRESS: Bhujung village, Lamjung <br />INTERVIEWEES: Khem Bahadur
+            Gurung + Madan Singh Gurung <br />
+            <br />
+            KODHO SEL ROTI (MILLET BREAD): Mix kodho (millet flour), caulo,
+            sugar and water. <br />Deep-fry for two minutes. 🇳🇵ALOO TARKARI
+            (POTATO CURRY): Cut potatoes, chilis, tomato, and garlic. Add soya
+            bean oil to heat in a pan. Add fenugreek seeds, potatoes, and water.
+            <br />
+            Cover and simmer for 10 minutes. Add more water, turmeric, jira
+            masala, salt, potatoes, and onions. Add water and other vegetables.
+            Cook for another 10-15 minutes.
+          </div>
+          <button
+            id="video-title-more-btn"
+            class="flex items-center gap-x-1 font-semibold text-grey-400 mt-0.5 hover:underline"
+          >
+            Xem thêm
+            <img
+              class="w-6 aspect-square"
+              src="./assets/svgs/arrow-down.svg"
+              alt=""
+            />
+          </button>
+        </div>
+        <div class="bg-white rounded-xl px-4 py-3">
+          <div class="text-20 font-semibold">Comment (78)</div>
+          <div class="mt-3 relative">
+            <textarea
+              class="bg-grey-100 rounded-xl resize-none scrollbar-custom w-full p-3 text-base placeholder:text-grey-300 border-none outline-none max-h-[120px]"
+              name=""
+              id=""
+              rows="5"
+              placeholder="What’s your opinions..."
+            ></textarea>
+            <button disabled class="absolute bottom-4 right-3">
+              <img class="w-11" src="./assets/svgs/send-disable.svg" alt="" />
+            </button>
+          </div>
+          <ul class="mt-3">
+            <li class="py-3 song-cmt flex overflow-hidden">
+              <div class="mr-2">
+                <img
+                  class="w-12 aspect-square rounded-lg"
+                  loading="lazy"
+                  src="./assets/images/artists/2.png"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1">
+                <div class="flex justify-between gap-x-20">
+                  <div>
+                    <div class="text-base font-semibold">
+                      Ahmet Kalburcuoglu
+                    </div>
+                    <div class="text-base text-grey-400 mt-1">
+                      omg, this is amazing
+                    </div>
+                  </div>
+                  <div class="text-14 text-grey-400 text-end flex-shrink-0">
+                    <div>1 day ago</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="py-3 song-cmt flex overflow-hidden">
+              <div class="mr-2">
+                <img
+                  class="w-12 aspect-square rounded-lg"
+                  loading="lazy"
+                  src="./assets/images/artists/2.png"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1">
+                <div class="flex justify-between gap-x-20">
+                  <div>
+                    <div class="text-base font-semibold">Emine Kiyag</div>
+                    <div class="text-base text-grey-400 mt-1">
+                      Love their drink specials. Bartenders super nice. Spent a
+                      week at UCSF and this was a very nice break for the
+                      parental unit.
+                    </div>
+                  </div>
+                  <div class="text-14 text-grey-400 text-end flex-shrink-0">
+                    <div>3 days ago</div>
+                    <div class="mt-1">Reply (3)</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="py-3 song-cmt flex overflow-hidden">
+              <div class="mr-2">
+                <img
+                  class="w-12 aspect-square rounded-lg"
+                  loading="lazy"
+                  src="./assets/images/artists/2.png"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1">
+                <div class="flex justify-between gap-x-20">
+                  <div>
+                    <div class="text-base font-semibold">Emine Kiyag</div>
+                    <div class="text-base text-grey-400 mt-1">
+                      I'll be there in 2 mins
+                    </div>
+                  </div>
+                  <div class="text-14 text-grey-400 text-end flex-shrink-0">
+                    <div>3 days ago</div>
+                    <div class="mt-1">Reply (3)</div>
+                  </div>
+                </div>
+                <div class="relative">
+                  <ul class="mt-2 flex flex-col gap-4">
+                    <li class="flex">
+                      <img
+                        class="w-10 h-10 flex-shrink-0 flex-grow-0 mr-2 rounded-lg"
+                        loading="lazy"
+                        src="./assets/images/artists/2.png"
+                        alt=""
+                      />
+                      <div class="flex-1 flex justify-between gap-x-20">
+                        <div>
+                          <div class="text-base font-semibold">
+                            Kemal Serbetci
+                          </div>
+                          <div class="text-base text-grey-400 mt-1">
+                            I had I was very sad this day. There were friendly
+                            people at the bar that engaged with me. Interactions
+                            with people was very well needed. I enjoyed a great
+                            Long Island ice tea,some tasty vegetarian nachos,
+                            and sat by the water
+                          </div>
+                        </div>
+                        <div
+                          class="text-14 text-grey-400 text-end flex-shrink-0"
+                        >
+                          <div>29/04/2023</div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="flex">
+                      <img
+                        class="w-10 h-10 flex-shrink-0 flex-grow-0 mr-2 rounded-lg"
+                        loading="lazy"
+                        src="./assets/images/artists/2.png"
+                        alt=""
+                      />
+                      <div class="flex-1 flex justify-between gap-x-20">
+                        <div>
+                          <div class="text-base font-semibold">
+                            Selahattin Kuzucu
+                          </div>
+                          <div class="text-base text-grey-400 mt-1">
+                            just ideas for next time
+                          </div>
+                        </div>
+                        <div
+                          class="text-14 text-grey-400 text-end flex-shrink-0"
+                        >
+                          <div>29/04/2023</div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="flex">
+                      <img
+                        class="w-10 h-10 flex-shrink-0 flex-grow-0 mr-2 rounded-lg"
+                        loading="lazy"
+                        src="./assets/images/artists/2.png"
+                        alt=""
+                      />
+                      <div class="flex-1 flex justify-between gap-x-20">
+                        <div>
+                          <div class="text-base font-semibold">Emre Dilek</div>
+                          <div class="text-base text-grey-400 mt-1">
+                            Love their drink specials. Bartenders super nice.
+                            Spent a week at UCSF and this was a very nice break
+                            for the parental unit.
+                          </div>
+                        </div>
+                        <div
+                          class="text-14 text-grey-400 text-end flex-shrink-0"
+                        >
+                          <div>29/04/2023</div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div
+                    class="h-full w-0.5 bg-grey-200 absolute top-0 -left-8"
+                  ></div>
+                </div>
+              </div>
+            </li>
+            <li class="py-3 song-cmt flex overflow-hidden">
+              <div class="mr-2">
+                <img
+                  class="w-12 aspect-square rounded-lg"
+                  loading="lazy"
+                  src="./assets/images/artists/2.png"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1">
+                <div class="flex justify-between gap-x-20">
+                  <div>
+                    <div class="text-base font-semibold">Muhlis Ilter</div>
+                    <div class="text-base text-grey-400 mt-1">woohoooo</div>
+                  </div>
+                  <div class="text-14 text-grey-400 text-end flex-shrink-0">
+                    <div>3 days ago</div>
+                    <div class="mt-1">Reply (4)</div>
+                  </div>
+                </div>
+                <div class="mt-2 relative">
+                  <textarea
+                    class="p-3 w-full rounded-xl bg-grey-100 outline-none border-none resize-none max-h-[120px] scrollbar-custom"
+                    name=""
+                    id=""
+                    rows="5"
+                    placeholder="Write something..."
+                  >
+Wow, this is really epic</textarea
+                  >
+                  <button disabled class="absolute bottom-4 right-3">
+                    <img class="w-11" src="./assets/svgs/send.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="py-3 song-cmt flex overflow-hidden">
+              <div class="mr-2">
+                <img
+                  class="w-12 aspect-square rounded-lg"
+                  loading="lazy"
+                  src="./assets/images/artists/2.png"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1">
+                <div class="flex justify-between gap-x-20">
+                  <div>
+                    <div class="text-base font-semibold">Fadime Yalcinkaya</div>
+                    <div class="text-base text-grey-400 mt-1">aww</div>
+                  </div>
+                  <div class="text-14 text-grey-400 text-end flex-shrink-0">
+                    <div>3 days ago</div>
+                    <div class="mt-1">Reply (3)</div>
+                  </div>
+                </div>
+                <div class="relative">
+                  <ul class="mt-2 flex flex-col gap-4">
+                    <li class="flex">
+                      <img
+                        class="w-10 h-10 flex-shrink-0 flex-grow-0 mr-2 rounded-lg"
+                        loading="lazy"
+                        src="./assets/images/artists/2.png"
+                        alt=""
+                      />
+                      <div>
+                        <div class="flex-1 flex justify-between gap-x-20">
+                          <div>
+                            <div class="text-base font-semibold">
+                              Huseyin Akcagul
+                            </div>
+                            <div class="text-base text-grey-400 mt-1">
+                              Love their drink specials. Bartenders super nice.
+                              Spent a week at UCSF and this was a very nice
+                              break for the parental unit.
+                            </div>
+                          </div>
+                          <div
+                            class="text-14 text-grey-400 text-end flex-shrink-0"
+                          >
+                            <div>29/04/2023</div>
+                          </div>
+                        </div>
+                        <div class="mt-2 relative">
+                          <textarea
+                            class="p-3 w-full rounded-xl bg-grey-100 outline-none border-none resize-none max-h-[120px] scrollbar-custom"
+                            name=""
+                            id=""
+                            rows="5"
+                            placeholder="Write something..."
+                          >
+    deffo coming back</textarea
+                          >
+                          <button disabled class="absolute bottom-4 right-3">
+                            <img
+                              class="w-11"
+                              src="./assets/svgs/send.svg"
+                              alt=""
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="flex">
+                      <img
+                        class="w-10 h-10 flex-shrink-0 flex-grow-0 mr-2 rounded-lg"
+                        loading="lazy"
+                        src="./assets/images/artists/2.png"
+                        alt=""
+                      />
+                      <div class="flex-1 flex justify-between gap-x-20">
+                        <div>
+                          <div class="text-base font-semibold">
+                            Hamide Alici
+                          </div>
+                          <div class="text-base text-grey-400 mt-1">
+                            Their customer support team is great! :) Always
+                            there to help.
+                          </div>
+                        </div>
+                        <div
+                          class="text-14 text-grey-400 text-end flex-shrink-0"
+                        >
+                          <div>29/04/2023</div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="flex">
+                      <img
+                        class="w-10 h-10 flex-shrink-0 flex-grow-0 mr-2 rounded-lg"
+                        loading="lazy"
+                        src="./assets/images/artists/2.png"
+                        alt=""
+                      />
+                      <div class="flex-1 flex justify-between gap-x-20">
+                        <div>
+                          <div class="text-base font-semibold">Diana Ross</div>
+                          <div class="text-base text-grey-400 mt-1">
+                            Great vaule for money. Rock on.
+                          </div>
+                        </div>
+                        <div
+                          class="text-14 text-grey-400 text-end flex-shrink-0"
+                        >
+                          <div>29/04/2023</div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div
+                    class="h-full w-0.5 bg-grey-200 absolute top-0 -left-8"
+                  ></div>
+                </div>
+              </div>
+            </li>
+            <li class="py-3 song-cmt flex overflow-hidden">
+              <div class="mr-2">
+                <img
+                  class="mr-2 w-12 aspect-square rounded-lg"
+                  loading="lazy"
+                  src="./assets/images/artists/2.png"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1">
+                <div class="flex justify-between gap-x-20">
+                  <div>
+                    <div class="text-base font-semibold">Emine Kiyag</div>
+                    <div class="text-base text-grey-400 mt-1">
+                      I'll be there in 2 mins
+                    </div>
+                  </div>
+                  <div class="text-14 text-grey-400 text-end flex-shrink-0">
+                    <div>3 days ago</div>
+                    <div class="mt-1">Reply (3)</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-col gap-y-6">
+        <div
+          class="playlist-sidebar rounded-xl p-4 bg-white h-[548px] flex flex-col relative"
+        >
+          <div>
+            <div class="text-20 font-semibold">Food tour challenge</div>
+            <div class="flex items-center justify-between mt-2">
+              <div class="flex items-center text-base">
+                <span>Food reviewer</span>
+                <div class="mx-2 bg-grey-300 w-[1px] h-4"></div>
+                <span>4/5 videos</span>
+              </div>
+              <button
+                id="toggle-list-video"
+                class="p-1.5 rounded-full hover:bg-bg duration-150 transition-colors"
+              >
+                <img
+                  class="rotate-180"
+                  src="./assets/svgs/arrow-down.svg"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+          <div
+            class="autoplay-elements mt-2 text-14 text-grey-400 flex items-center"
+          >
+            Autoplay
+            <label
+              class="relative inline-flex items-center cursor-pointer ml-2"
+            >
+              <input type="checkbox" value="" class="sr-only peer" />
+              <div
+                class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+              ></div>
+            </label>
+            <button
+              class="ml-3 p-1 rounded-full duration-200 transition-colors hover:bg-grey-100"
+            >
+              <img class="w-6" src="./assets/svgs/shuffle.svg" alt="" />
+            </button>
+            <button
+              class="ml-3 p-1 rounded-full duration-200 transition-colors hover:bg-grey-100"
+            >
+              <img class="w-6" src="./assets/svgs/more.svg" alt="" />
+            </button>
+          </div>
+          <ul
+            class="list-video-sidebar mt-2 flex-1 overflow-y-auto h-full relative"
+          >
+            <li>
+              <a href="#" class="sidebar-video-item">
+                <div
+                  class="w-6 font-semibold text-grey-400 flex items-center justify-center flex-shrink-0"
+                >
+                  1
+                </div>
+                <div
+                  class="relative ml-1 overflow-hidden flex-shrink-0 rounded-lg"
+                >
+                  <img
+                    class="rounded-lg w-[100px] h-14"
+                    src="./assets/images/food-tour.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div
+                    class="absolute bottom-1 right-1 text-12 text-white px-1.5 py-0.5 rounded-xl bg-black/40 backdrop-blur-[10px] w-fit"
+                  >
+                    03:20
+                  </div>
+                </div>
+                <div class="ml-3">
+                  <div class="text-14 font-semibold line-clamp-2">
+                    Lover Boy
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400">Diana Krall</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-video-item isPlaying">
+                <div
+                  class="w-6 font-semibold text-grey-400 flex items-center justify-center flex-shrink-0"
+                >
+                  2
+                </div>
+                <div
+                  class="relative ml-1 overflow-hidden flex-shrink-0 rounded-lg"
+                >
+                  <img
+                    class="rounded-lg w-[100px] h-14"
+                    src="./assets/images/food-tour.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div
+                    class="absolute bottom-0 left-0 right-0 text-12 text-white px-1.5 py-1 bg-black/40 backdrop-blur-[10px] w-full gap-1 flex items-center justify-center rounded-b-lg"
+                  >
+                    <img class="w-4" src="./assets/svgs/pause.svg" alt="" />
+                    Playing
+                  </div>
+                </div>
+                <div class="ml-3">
+                  <div class="text-14 font-semibold line-clamp-2">
+                    How to make the Best Restaurant Style Crispy Chili Beef on a
+                    Flat Top Griddle
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400">Food reviewer</div>
+                </div>
+                <button class="ml-auto flex-shrink-0">
+                  <img src="./assets/svgs/more.svg" alt="" />
+                </button>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-video-item">
+                <div
+                  class="w-6 font-semibold text-grey-400 flex items-center justify-center flex-shrink-0"
+                >
+                  3
+                </div>
+                <div
+                  class="relative ml-1 overflow-hidden flex-shrink-0 rounded-lg"
+                >
+                  <img
+                    class="rounded-lg w-[100px] h-14"
+                    src="./assets/images/food-tour.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div
+                    class="absolute bottom-1 right-1 text-12 text-white px-1.5 py-0.5 rounded-xl bg-black/40 backdrop-blur-[10px] w-fit"
+                  >
+                    03:20
+                  </div>
+                </div>
+                <div class="ml-3">
+                  <div class="text-14 font-semibold line-clamp-2">
+                    Lover Boy
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400">Diana Krall</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-video-item">
+                <div
+                  class="w-6 font-semibold text-grey-400 flex items-center justify-center flex-shrink-0"
+                >
+                  4
+                </div>
+                <div
+                  class="relative ml-1 overflow-hidden flex-shrink-0 rounded-lg"
+                >
+                  <img
+                    class="rounded-lg w-[100px] h-14"
+                    src="./assets/images/food-tour.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div
+                    class="absolute bottom-1 right-1 text-12 text-white px-1.5 py-0.5 rounded-xl bg-black/40 backdrop-blur-[10px] w-fit"
+                  >
+                    03:20
+                  </div>
+                </div>
+                <div class="ml-3">
+                  <div class="text-14 font-semibold line-clamp-2">
+                    Lover Boy
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400">Diana Krall</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-video-item">
+                <div
+                  class="w-6 font-semibold text-grey-400 flex items-center justify-center flex-shrink-0"
+                >
+                  5
+                </div>
+                <div
+                  class="relative ml-1 overflow-hidden flex-shrink-0 rounded-lg"
+                >
+                  <img
+                    class="rounded-lg w-[100px] h-14"
+                    src="./assets/images/food-tour.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div
+                    class="absolute bottom-1 right-1 text-12 text-white px-1.5 py-0.5 rounded-xl bg-black/40 backdrop-blur-[10px] w-fit"
+                  >
+                    03:20
+                  </div>
+                </div>
+                <div class="ml-3">
+                  <div class="text-14 font-semibold line-clamp-2">
+                    Lover Boy
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400">Diana Krall</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-video-item">
+                <div
+                  class="w-6 font-semibold text-grey-400 flex items-center justify-center flex-shrink-0"
+                >
+                  6
+                </div>
+                <div
+                  class="relative ml-1 overflow-hidden flex-shrink-0 rounded-lg"
+                >
+                  <img
+                    class="rounded-lg w-[100px] h-14"
+                    src="./assets/images/food-tour.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div
+                    class="absolute bottom-1 right-1 text-12 text-white px-1.5 py-0.5 rounded-xl bg-black/40 backdrop-blur-[10px] w-fit"
+                  >
+                    03:20
+                  </div>
+                </div>
+                <div class="ml-3">
+                  <div class="text-14 font-semibold line-clamp-2">
+                    Lover Boy
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400">Diana Krall</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-video-item">
+                <div
+                  class="w-6 font-semibold text-grey-400 flex items-center justify-center flex-shrink-0"
+                >
+                  7
+                </div>
+                <div
+                  class="relative ml-1 overflow-hidden flex-shrink-0 rounded-lg"
+                >
+                  <img
+                    class="rounded-lg w-[100px] h-14"
+                    src="./assets/images/food-tour.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div
+                    class="absolute bottom-1 right-1 text-12 text-white px-1.5 py-0.5 rounded-xl bg-black/40 backdrop-blur-[10px] w-fit"
+                  >
+                    03:20
+                  </div>
+                </div>
+                <div class="ml-3">
+                  <div class="text-14 font-semibold line-clamp-2">
+                    Lover Boy
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400">Diana Krall</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-video-item">
+                <div
+                  class="w-6 font-semibold text-grey-400 flex items-center justify-center flex-shrink-0"
+                >
+                  8
+                </div>
+                <div
+                  class="relative ml-1 overflow-hidden flex-shrink-0 rounded-lg"
+                >
+                  <img
+                    class="rounded-lg w-[100px] h-14"
+                    src="./assets/images/food-tour.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div
+                    class="absolute bottom-1 right-1 text-12 text-white px-1.5 py-0.5 rounded-xl bg-black/40 backdrop-blur-[10px] w-fit"
+                  >
+                    03:20
+                  </div>
+                </div>
+                <div class="ml-3">
+                  <div class="text-14 font-semibold line-clamp-2">
+                    Lover Boy
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400">Diana Krall</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-video-item">
+                <div
+                  class="w-6 font-semibold text-grey-400 flex items-center justify-center flex-shrink-0"
+                >
+                  9
+                </div>
+                <div
+                  class="relative ml-1 overflow-hidden flex-shrink-0 rounded-lg"
+                >
+                  <img
+                    class="rounded-lg w-[100px] h-14"
+                    src="./assets/images/food-tour.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div
+                    class="absolute bottom-1 right-1 text-12 text-white px-1.5 py-0.5 rounded-xl bg-black/40 backdrop-blur-[10px] w-fit"
+                  >
+                    03:20
+                  </div>
+                </div>
+                <div class="ml-3">
+                  <div class="text-14 font-semibold line-clamp-2">
+                    Lover Boy
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400">Diana Krall</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-video-item">
+                <div
+                  class="w-6 font-semibold text-grey-400 flex items-center justify-center flex-shrink-0"
+                >
+                  10
+                </div>
+                <div
+                  class="relative ml-1 overflow-hidden flex-shrink-0 rounded-lg"
+                >
+                  <img
+                    class="rounded-lg w-[100px] h-14"
+                    src="./assets/images/food-tour.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div
+                    class="absolute bottom-1 right-1 text-12 text-white px-1.5 py-0.5 rounded-xl bg-black/40 backdrop-blur-[10px] w-fit"
+                  >
+                    03:20
+                  </div>
+                </div>
+                <div class="ml-3">
+                  <div class="text-14 font-semibold line-clamp-2">
+                    Lover Boy
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400">Diana Krall</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div
+            class="sidebar-video-blur w-full absolute bottom-3 bg-[linear-gradient(180deg,rgba(255,255,255,0.00)_0%,#FFF_100%)] left-0 right-0 h-8"
+          ></div>
+        </div>
+        <div class="rounded-xl bg-white relative pt-4">
+          <div class="text-20 font-semibold px-4">Relevant videos</div>
+          <ul class="mt-1">
+            <li>
+              <a
+                href="#"
+                class="px-4 py-3 hover:bg-bg duration-200 transition-colors w-full block rounded-lg"
+              >
+                <div
+                  class="relative w-full rounded-lg overflow-hidden h-[184px]"
+                >
+                  <img
+                    class="w-full h-full"
+                    src="./assets/images/videos/1.jpg"
+                    alt=""
+                  />
+                  <div
+                    class="absolute bottom-2 z-10 text-white text-12 right-2 py-0.5 px-1.5 rounded-xl bg-black/60 backdrop-blur-[10px]"
+                  >
+                    03:20
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <div class="line-clamp-1 font-semibold text-base">
+                    It's My Life
+                  </div>
+                  <div class="mt-1 text-14">Audioslave</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="px-4 py-3 hover:bg-bg duration-200 transition-colors w-full block rounded-lg"
+              >
+                <div
+                  class="relative w-full rounded-lg overflow-hidden h-[184px]"
+                >
+                  <img
+                    class="w-full h-full"
+                    src="./assets/images/videos/1.jpg"
+                    alt=""
+                  />
+                  <div
+                    class="absolute bottom-2 z-10 text-white text-12 right-2 py-0.5 px-1.5 rounded-xl bg-black/60 backdrop-blur-[10px]"
+                  >
+                    03:20
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <div class="line-clamp-1 font-semibold text-base">
+                    It's My Life
+                  </div>
+                  <div class="mt-1 text-14">Audioslave</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="px-4 py-3 hover:bg-bg duration-200 transition-colors w-full block rounded-lg"
+              >
+                <div
+                  class="relative w-full rounded-lg overflow-hidden h-[184px]"
+                >
+                  <img
+                    class="w-full h-full"
+                    src="./assets/images/videos/1.jpg"
+                    alt=""
+                  />
+                  <div
+                    class="absolute bottom-2 z-10 text-white text-12 right-2 py-0.5 px-1.5 rounded-xl bg-black/60 backdrop-blur-[10px]"
+                  >
+                    03:20
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <div class="line-clamp-1 font-semibold text-base">
+                    It's My Life
+                  </div>
+                  <div class="mt-1 text-14">Audioslave</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="px-4 py-3 hover:bg-bg duration-200 transition-colors w-full block rounded-lg"
+              >
+                <div
+                  class="relative w-full rounded-lg overflow-hidden h-[184px]"
+                >
+                  <img
+                    class="w-full h-full"
+                    src="./assets/images/videos/1.jpg"
+                    alt=""
+                  />
+                  <div
+                    class="absolute bottom-2 z-10 text-white text-12 right-2 py-0.5 px-1.5 rounded-xl bg-black/60 backdrop-blur-[10px]"
+                  >
+                    03:20
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <div class="line-clamp-1 font-semibold text-base">
+                    It's My Life
+                  </div>
+                  <div class="mt-1 text-14">Audioslave</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="px-4 py-3 hover:bg-bg duration-200 transition-colors w-full block rounded-lg"
+              >
+                <div
+                  class="relative w-full rounded-lg overflow-hidden h-[184px]"
+                >
+                  <img
+                    class="w-full h-full"
+                    src="./assets/images/videos/1.jpg"
+                    alt=""
+                  />
+                  <div
+                    class="absolute bottom-2 z-10 text-white text-12 right-2 py-0.5 px-1.5 rounded-xl bg-black/60 backdrop-blur-[10px]"
+                  >
+                    03:20
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <div class="line-clamp-1 font-semibold text-base">
+                    It's My Life
+                  </div>
+                  <div class="mt-1 text-14">Audioslave</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+    $(document).ready(function () {
+      const videoTitle = $("#video-title-content");
+      const videoTitleMoreBtn = $("#video-title-more-btn");
+      const videoTitleMoreBtnArrow = $("#video-title-more-btn img");
+
+      const listVideoSidebar = $(".list-video-sidebar");
+      const sidebarVideoBlur = $(".sidebar-video-blur");
+
+      const toggleListVideo = $("#toggle-list-video");
+      const playlistSidebar = $(".playlist-sidebar");
+      const autoplayElements = $(".autoplay-elements");
+
+      videoTitleMoreBtn.on("click", function () {
+        videoTitle.toggleClass("line-clamp-5");
+        videoTitleMoreBtnArrow.toggleClass("rotate-180");
+      });
+
+      listVideoSidebar.scroll(function () {
+        const scrollTop = listVideoSidebar.scrollTop();
+        const scrollHeight = listVideoSidebar.prop("scrollHeight");
+        const height = listVideoSidebar.height();
+
+        if (scrollTop + height >= scrollHeight) {
+          sidebarVideoBlur.addClass("!hidden");
+        } else {
+          sidebarVideoBlur.removeClass("!hidden");
+        }
+      });
+
+      toggleListVideo.click(function () {
+        $(this).toggleClass("rotate-180");
+        playlistSidebar.toggleClass("!h-fit");
+        listVideoSidebar.toggleClass("!h-0 !overflow-hidden flex-1 mt-2");
+        sidebarVideoBlur.toggleClass("!hidden");
+        autoplayElements.toggleClass("!hidden");
+      });
+    });
+  </script>
+</html>
