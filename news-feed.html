@@ -8,851 +8,873 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
-    <div class="container !px-0">
-      <div class="md:rounded-b-xl bg-white lg:px-4 pb-3">
-        <img
-          class="h-[160px] lg:h-[260px] w-full lg:rounded-b-xl object-cover object-center"
-          src="../assets/images/profile/banner.jpg"
-          alt=""
-        />
-        <!-- OTHER <div class="mt-4 flex items-center justify-end gap-3">
-          <a href="#" class="btn-fourth h-11 gap-1.5"
-            ><img src="../assets/svgs/profile-ms.svg" alt="" /> Message</a
-          >
-          <a href="#" class="btn-primary no-hover h-11 gap-1.5">
-            <img src="../assets/svgs/profile-add.svg" alt="" />
-            Follow</a
-          >
-        </div> OTHER -->
-        <div class="mt-4 flex max-lg:hidden items-center justify-end gap-3">
-          <button id="show-edit-modal" href="#" class="btn-fourth h-11 gap-1.5">
-            <img src="../assets/svgs/edit-profile.svg" alt="" /> Edit profile
-          </button>
-        </div>
-        <div
-          class="mx-auto -mt-[68px] lg:-mt-[210px] flex flex-col items-center"
-        >
-          <div
-            class="rounded-[32px] bg-white p-1 shadow-[0px_2px_20px_0px_rgba(0,0,0,0.08)]"
-          >
-            <img
-              class="aspect-square w-[120px] rounded-[32px] lg:w-[200px] object-cover object-center"
-              src="../assets/images/artists/1.png"
-              loading="lazy"
-              alt=""
-            />
-          </div>
-          <div
-            class="mt-4 flex items-center gap-1 whitespace-nowrap text-center text-18 lg:text-20 xl:text-24 font-semibold"
-          >
-            Son Tung M-TP
-            <svg
-              class="flex-shrink-0"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+    <div class="container">
+      <div class="mt-6 grid grid-cols-[1.2fr,2fr,1.2fr] gap-6">
+        <div class="flex flex-col gap-y-6">
+          <div class="p-4 rounded-xl bg-white">
+            <div class="text-20 font-semibold">About</div>
+            <div class="mt-4 flex flex-col text-base text-grey-400">
+              <span>Artist / Composer.</span>
+              <span
+                >Contact:
+                <a href="mailto:work@gmail.com">work@gmail.com</a></span
+              >
+              <span>Website: <a target="_blank" href="#">artist.com</a></span>
+            </div>
+            <div
+              class="mt-4 border-t flex flex-col gap-4 border-t-grey-200 pt-4"
             >
-              <path
-                d="M21.5599 10.7401L20.1999 9.16006C19.9399 8.86006 19.7299 8.30006 19.7299 7.90006V6.20006C19.7299 5.14006 18.8599 4.27006 17.7999 4.27006H16.0999C15.7099 4.27006 15.1399 4.06006 14.8399 3.80006L13.2599 2.44006C12.5699 1.85006 11.4399 1.85006 10.7399 2.44006L9.16988 3.81006C8.86988 4.06006 8.29988 4.27006 7.90988 4.27006H6.17988C5.11988 4.27006 4.24988 5.14006 4.24988 6.20006V7.91006C4.24988 8.30006 4.03988 8.86006 3.78988 9.16006L2.43988 10.7501C1.85988 11.4401 1.85988 12.5601 2.43988 13.2501L3.78988 14.8401C4.03988 15.1401 4.24988 15.7001 4.24988 16.0901V17.8001C4.24988 18.8601 5.11988 19.7301 6.17988 19.7301H7.90988C8.29988 19.7301 8.86988 19.9401 9.16988 20.2001L10.7499 21.5601C11.4399 22.1501 12.5699 22.1501 13.2699 21.5601L14.8499 20.2001C15.1499 19.9401 15.7099 19.7301 16.1099 19.7301H17.8099C18.8699 19.7301 19.7399 18.8601 19.7399 17.8001V16.1001C19.7399 15.7101 19.9499 15.1401 20.2099 14.8401L21.5699 13.2601C22.1499 12.5701 22.1499 11.4301 21.5599 10.7401ZM16.1599 10.1101L11.3299 14.9401C11.1899 15.0801 10.9999 15.1601 10.7999 15.1601C10.5999 15.1601 10.4099 15.0801 10.2699 14.9401L7.84988 12.5201C7.55988 12.2301 7.55988 11.7501 7.84988 11.4601C8.13988 11.1701 8.61988 11.1701 8.90988 11.4601L10.7999 13.3501L15.0999 9.05006C15.3899 8.76006 15.8699 8.76006 16.1599 9.05006C16.4499 9.34006 16.4499 9.82006 16.1599 10.1101Z"
-                fill="#1A75FF"
-              />
-            </svg>
-          </div>
-          <div
-            class="mt-3 lg:mt-4 xl:mt-6 flex items-center justify-center gap-7"
-          >
-            <div class="flex flex-col items-center">
-              <span class="text-18 lg:text-20 font-semibold">1280</span>
-              <span class="text-12 lg:text-14 text-grey-400">Posts</span>
-            </div>
-            <div class="flex flex-col items-center">
-              <span class="text-18 lg:text-20 font-semibold">53K</span>
-              <span class="text-12 lg:text-14 text-grey-400">Followers</span>
-            </div>
-            <div class="flex flex-col items-center">
-              <span class="text-18 lg:text-20 font-semibold">12,3K</span>
-              <span class="text-12 lg:text-14 text-grey-400">Following</span>
+              <div class="flex items-center gap-2">
+                <img
+                  class="w-6 aspect-square"
+                  src="assets/svgs/call.svg"
+                  alt=""
+                />
+                <a href="tel:+097 024 5689">097 024 5689</a>
+              </div>
+              <div class="flex items-center gap-2">
+                <img
+                  class="w-6 aspect-square"
+                  src="assets/svgs/sms.svg"
+                  alt=""
+                />
+                <a href="mailto:partners@mtpentertainment.com"
+                  >partners@mtpentertainment.com</a
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img
+                  class="w-6 aspect-square"
+                  src="assets/svgs/global-1.svg"
+                  alt=""
+                />
+                <a target="_blank" href="#">mtpentertainment.com</a>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div
-          class="relative mt-4 lg:mt-6 flex items-center gap-x-2 lg:gap-x-6 px-4"
-        >
-          <div
-            class="mx-auto flex gap-x-3 lg:hidden w-fit flex-shrink-0 items-center overflow-hidden"
-          >
-            <a
-              href="/profile"
-              class="px-5 md:px-6 py-4 h-11 rounded-xl bg-grey-200 flex items-center gap-x-1.5 font-semibold"
-            >
-              <img src="../assets/svgs/messenger.svg" alt="" />
-              Message
-            </a>
-            <a
-              href="/profile/music.html"
-              class="px-5 md:px-6 py-4 h-11 rounded-xl text-white flex items-center gap-x-1.5 bg-branding font-semibold"
-            >
-              <img src="../assets/svgs/profile-add.svg" alt="" />
-              Follow
-            </a>
+          <div class="p-4 rounded-xl bg-white">
+            <div class="text-20 font-semibold">Achievement</div>
+            <div class="mt-4 flex flex-col gap-3">
+              <div class="flex items-center gap-2">
+                <img
+                  class="w-6 aspect-square"
+                  src="assets/svgs/achi-star.svg"
+                  alt=""
+                />
+                <span>Top 10 best artist 2023</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <img
+                  class="w-6 aspect-square"
+                  src="assets/svgs/music-1.svg"
+                  alt=""
+                />
+                <span>Top 1 best song 2023</span>
+              </div>
+            </div>
           </div>
-          <div
-            class="mx-auto hidden lg:flex w-fit items-center overflow-hidden rounded-xl bg-grey-100 p-1"
-          >
-            <a href="/profile" class="profile-nav">
-              <img src="../assets/svgs/profile-info-selected.svg" alt="" />
-              Info
-            </a>
-            <a href="/profile/music.html" class="profile-nav">
-              <img src="../assets/svgs/profile-music.svg" alt="" />
-              Music
-            </a>
-            <a href="/profile/video.html" class="profile-nav active">
-              <img src="../assets/svgs/profile-video-selected.svg" alt="" />
-              Video
-            </a>
-            <a href="/profile/photo.html" class="profile-nav">
-              <img src="../assets/svgs/profile-photos.svg" alt="" />
-              Photos
-            </a>
-            <a href="/profile/marketplace.html" class="profile-nav">
-              <img src="../assets/svgs/profile-market.svg" alt="" />
+          <div class="rounded-xl py-3 bg-white">
+            <ul class="grid grid-cols-3 gap-1 px-2.5 mt-3">
+              <li>
+                <div class="gallery-img cursor-pointer">
+                  <img
+                    class="aspect-square rounded"
+                    src="assets/images/profile/photos1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+              </li>
+              <li>
+                <div class="gallery-img cursor-pointer">
+                  <img
+                    class="aspect-square rounded"
+                    src="assets/images/profile/photos1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+              </li>
+              <li>
+                <div class="gallery-img cursor-pointer">
+                  <img
+                    class="aspect-square rounded"
+                    src="assets/images/profile/photos1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+              </li>
+              <li>
+                <div class="gallery-img cursor-pointer">
+                  <img
+                    class="aspect-square rounded"
+                    src="assets/images/profile/photos1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+              </li>
+              <li>
+                <div class="gallery-img cursor-pointer">
+                  <img
+                    class="aspect-square rounded"
+                    src="assets/images/profile/photos1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+              </li>
+              <li>
+                <div class="gallery-img cursor-pointer">
+                  <img
+                    class="aspect-square rounded"
+                    src="assets/images/profile/photos1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+              </li>
+              <li>
+                <div class="gallery-img cursor-pointer">
+                  <img
+                    class="aspect-square rounded"
+                    src="assets/images/profile/photos1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+              </li>
+              <li>
+                <div class="gallery-img cursor-pointer">
+                  <img
+                    class="aspect-square rounded"
+                    src="assets/images/profile/photos1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+              </li>
+              <li>
+                <div class="gallery-img cursor-pointer">
+                  <img
+                    class="aspect-square rounded"
+                    src="assets/images/profile/photos1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="rounded-xl w-full pb-4 bg-white overflow-hidden">
+            <div
+              class="text-20 py-3 text-white bg-branding-secondary font-semibold justify-center flex items-center gap-x-1"
+            >
               Marketplace
-            </a>
-          </div>
-          <button
-            class="h-11 lg:h-12 max-h-full rounded-xl bg-grey-200 px-4 py-3 transition-transform duration-200 hover:scale-105"
-          >
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M5 10C3.9 10 3 10.9 3 12C3 13.1 3.9 14 5 14C6.1 14 7 13.1 7 12C7 10.9 6.1 10 5 10Z"
-                fill="#52616B"
-              />
-              <path
-                d="M19 10C17.9 10 17 10.9 17 12C17 13.1 17.9 14 19 14C20.1 14 21 13.1 21 12C21 10.9 20.1 10 19 10Z"
-                fill="#52616B"
-              />
-              <path
-                d="M12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"
-                fill="#52616B"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
-      <div class="bg-white mt-2 max-lg:block hidden md:rounded-xl md:mb-6">
-        <div class="px-4 overflow-x-auto max-w-full">
-          <div class="flex items-center gap-x-0.5">
-            <a href="./index.html" class="profile-nav-mobile">Feed</a>
-            <a href="./info.html" class="profile-nav-mobile">Info</a>
-            <a href="./music.html" class="profile-nav-mobile">Music</a>
-            <a href="./video.html" class="profile-nav-mobile active">Video</a>
-            <a href="./photo.html" class="profile-nav-mobile">Photo</a>
-            <a href="./marketplace.html" class="profile-nav-mobile"
-              >Marketplace</a
-            >
-          </div>
-        </div>
-      </div>
-      <section
-        class="lg:mt-4 xl:mt-6 rounded-xl bg-white p-0 md:container py-4 md:p-4"
-      >
-        <div class="container flex items-center justify-between">
-          <div class="flex items-center">
-            <img class="mr-1.5" src="../assets/svgs/play-circle.svg" alt="" />
-            <a
-              href="#"
-              class="flex items-center text-18 font-semibold md:text-24"
-              >New video releases
-              <img
-                class="ml-2 -rotate-90 rounded-lg object-cover"
-                src="../assets/svgs/arrow-down.svg"
-                loading="lazy"
-                alt=""
-              />
-            </a>
-          </div>
-          <a
-            href="#"
-            class="text-right text-14 text-branding hover:underline md:hidden"
-            >View all</a
-          >
-        </div>
-        <div class="fluid new-video-swiper swiper container relative mt-4">
-          <div class="swiper-wrapper">
-            <a href="#" class="swiper-slide video-item">
-              <div class="relative">
-                <img
-                  class="h-full w-full rounded-lg object-cover"
-                  src="../assets/images/videos/1.jpg"
-                  loading="lazy"
-                  alt=""
-                />
-                <span
-                  class="absolute bottom-2 right-2 z-10 block rounded-full bg-black/60 px-1.5 py-0.5 text-12 text-white backdrop-blur-[10px]"
-                  >03:20</span
-                >
-              </div>
-              <div class="mt-3">
-                <div class="text-14 font-semibold md:text-base">
-                  It's My Life
-                </div>
-                <div class="mt-1 text-12 text-grey-400 md:text-14">
-                  Audioslave
-                </div>
-                <div class="mt-1 flex items-center">
-                  <div
-                    class="mr-3 line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                  >
-                    <img src="../assets/svgs/views.svg" alt="" />
-                    150K views
-                  </div>
-                  <div
-                    class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                  >
-                    <img src="../assets/svgs/clock.svg" alt="" />
-                    1 days ago
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="swiper-slide video-item">
-              <div class="relative">
-                <img
-                  class="h-full w-full rounded-lg object-cover"
-                  src="../assets/images/videos/1.jpg"
-                  loading="lazy"
-                  alt=""
-                />
-                <span
-                  class="absolute bottom-2 right-2 z-10 block rounded-full bg-black/60 px-1.5 py-0.5 text-12 text-white backdrop-blur-[10px]"
-                  >03:20</span
-                >
-              </div>
-              <div class="mt-3">
-                <div class="text-14 font-semibold md:text-base">
-                  It's My Life
-                </div>
-                <div class="mt-1 text-12 text-grey-400 md:text-14">
-                  Audioslave
-                </div>
-                <div class="mt-1 flex items-center">
-                  <div
-                    class="mr-3 line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                  >
-                    <img src="../assets/svgs/views.svg" alt="" />
-                    150K views
-                  </div>
-                  <div
-                    class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                  >
-                    <img src="../assets/svgs/clock.svg" alt="" />
-                    1 days ago
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="swiper-slide video-item">
-              <div class="relative">
-                <img
-                  class="h-full w-full rounded-lg object-cover"
-                  src="../assets/images/videos/1.jpg"
-                  loading="lazy"
-                  alt=""
-                />
-                <span
-                  class="absolute bottom-2 right-2 z-10 block rounded-full bg-black/60 px-1.5 py-0.5 text-12 text-white backdrop-blur-[10px]"
-                  >03:20</span
-                >
-              </div>
-              <div class="mt-3">
-                <div class="text-14 font-semibold md:text-base">
-                  It's My Life
-                </div>
-                <div class="mt-1 text-12 text-grey-400 md:text-14">
-                  Audioslave
-                </div>
-                <div class="mt-1 flex items-center">
-                  <div
-                    class="mr-3 line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                  >
-                    <img src="../assets/svgs/views.svg" alt="" />
-                    150K views
-                  </div>
-                  <div
-                    class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                  >
-                    <img src="../assets/svgs/clock.svg" alt="" />
-                    1 days ago
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="swiper-slide video-item">
-              <div class="relative">
-                <img
-                  class="h-full w-full rounded-lg object-cover"
-                  src="../assets/images/videos/1.jpg"
-                  loading="lazy"
-                  alt=""
-                />
-                <span
-                  class="absolute bottom-2 right-2 z-10 block rounded-full bg-black/60 px-1.5 py-0.5 text-12 text-white backdrop-blur-[10px]"
-                  >03:20</span
-                >
-              </div>
-              <div class="mt-3">
-                <div class="text-14 font-semibold md:text-base">
-                  It's My Life
-                </div>
-                <div class="mt-1 text-12 text-grey-400 md:text-14">
-                  Audioslave
-                </div>
-                <div class="mt-1 flex items-center">
-                  <div
-                    class="mr-3 line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                  >
-                    <img src="../assets/svgs/views.svg" alt="" />
-                    150K views
-                  </div>
-                  <div
-                    class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                  >
-                    <img src="../assets/svgs/clock.svg" alt="" />
-                    1 days ago
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="swiper-slide video-item">
-              <div class="relative">
-                <img
-                  class="h-full w-full rounded-lg object-cover"
-                  src="../assets/images/videos/1.jpg"
-                  loading="lazy"
-                  alt=""
-                />
-                <span
-                  class="absolute bottom-2 right-2 z-10 block rounded-full bg-black/60 px-1.5 py-0.5 text-12 text-white backdrop-blur-[10px]"
-                  >03:20</span
-                >
-              </div>
-              <div class="mt-3">
-                <div class="text-14 font-semibold md:text-base">
-                  It's My Life
-                </div>
-                <div class="mt-1 text-12 text-grey-400 md:text-14">
-                  Audioslave
-                </div>
-                <div class="mt-1 flex items-center">
-                  <div
-                    class="mr-3 line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                  >
-                    <img src="../assets/svgs/views.svg" alt="" />
-                    150K views
-                  </div>
-                  <div
-                    class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                  >
-                    <img src="../assets/svgs/clock.svg" alt="" />
-                    1 days ago
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="swiper-slide video-item">
-              <div class="relative">
-                <img
-                  class="h-full w-full rounded-lg object-cover"
-                  src="../assets/images/videos/1.jpg"
-                  loading="lazy"
-                  alt=""
-                />
-                <span
-                  class="absolute bottom-2 right-2 z-10 block rounded-full bg-black/60 px-1.5 py-0.5 text-12 text-white backdrop-blur-[10px]"
-                  >03:20</span
-                >
-              </div>
-              <div class="mt-3">
-                <div class="text-14 font-semibold md:text-base">
-                  It's My Life
-                </div>
-                <div class="mt-1 text-12 text-grey-400 md:text-14">
-                  Audioslave
-                </div>
-                <div class="mt-1 flex items-center">
-                  <div
-                    class="mr-3 line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                  >
-                    <img src="../assets/svgs/views.svg" alt="" />
-                    150K views
-                  </div>
-                  <div
-                    class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                  >
-                    <img src="../assets/svgs/clock.svg" alt="" />
-                    1 days ago
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="swiper-slide video-item">
-              <div class="relative">
-                <img
-                  class="h-full w-full rounded-lg object-cover"
-                  src="../assets/images/videos/1.jpg"
-                  loading="lazy"
-                  alt=""
-                />
-                <span
-                  class="absolute bottom-2 right-2 z-10 block rounded-full bg-black/60 px-1.5 py-0.5 text-12 text-white backdrop-blur-[10px]"
-                  >03:20</span
-                >
-              </div>
-              <div class="mt-3">
-                <div class="text-14 font-semibold md:text-base">
-                  It's My Life
-                </div>
-                <div class="mt-1 text-12 text-grey-400 md:text-14">
-                  Audioslave
-                </div>
-                <div class="mt-1 flex items-center">
-                  <div
-                    class="mr-3 line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                  >
-                    <img src="../assets/svgs/views.svg" alt="" />
-                    150K views
-                  </div>
-                  <div
-                    class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                  >
-                    <img src="../assets/svgs/clock.svg" alt="" />
-                    1 days ago
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div
-            class="swiper-new-video-navigation swiper-new-video-next max-md:hidden"
-          >
-            <img src="../assets/svgs/arrow-next.svg" alt="" />
-          </div>
-          <div
-            class="swiper-new-video-navigation swiper-new-video-prev max-md:hidden"
-          >
-            <img
-              class="rotate-180"
-              src="../assets/svgs/arrow-next.svg"
-              alt=""
-            />
-          </div>
-        </div>
-      </section>
-      <section
-        class="rounded-xl bg-white md:hidden p-0 md:container md:mt-8 md:p-4"
-      >
-        <div class="container flex items-center justify-between">
-          <div class="flex items-center">
-            <img class="mr-1.5" src="../assets/svgs/video-play.svg" alt="" />
-            <a
-              href="#"
-              class="flex items-center text-18 font-semibold md:text-24"
-              >Playlist
-              <img
-                class="ml-2 -rotate-90 rounded-lg object-cover"
-                src="../assets/svgs/arrow-down.svg"
-                loading="lazy"
-                alt=""
-              />
-            </a>
-          </div>
-          <a
-            href="#"
-            class="text-right text-14 text-branding hover:underline md:hidden"
-            >View all</a
-          >
-        </div>
-        <div class="fluid playlist-video-swiper swiper container relative mt-4">
-          <div class="swiper-wrapper">
-            <a href="#" class="swiper-slide video-item">
-              <div class="relative">
-                <img
-                  class="h-full w-full rounded-lg object-cover"
-                  src="../assets/images/videos/1.jpg"
-                  loading="lazy"
-                  alt=""
-                />
-                <span
-                  class="absolute bottom-2 right-2 z-10 gap-2 rounded-full px-4 py-2 text-12 text-white backdrop-blur-[10px] flex items-center bg-black/40"
-                >
-                  <img
-                    width="24"
-                    height="24"
-                    src="../assets/svgs/video-play-solid.svg"
-                    alt=""
-                  />
-                  120 Videos</span
-                >
-              </div>
-              <div class="mt-3">
-                <div class="text-14 font-semibold md:text-base line-clamp-1">
-                  Machine learning basic to advance
-                </div>
-                <div class="mt-1 text-12 text-grey-400 md:text-14 line-clamp-1">
-                  Prayers
-                </div>
-              </div>
-            </a>
-            <a href="#" class="swiper-slide video-item">
-              <div class="relative">
-                <img
-                  class="h-full w-full rounded-lg object-cover"
-                  src="../assets/images/videos/1.jpg"
-                  loading="lazy"
-                  alt=""
-                />
-                <span
-                  class="absolute bottom-2 right-2 z-10 gap-2 rounded-full px-4 py-2 text-12 text-white backdrop-blur-[10px] flex items-center bg-black/40"
-                >
-                  <img
-                    width="24"
-                    height="24"
-                    src="../assets/svgs/video-play-solid.svg"
-                    alt=""
-                  />
-                  120 Videos</span
-                >
-              </div>
-              <div class="mt-3">
-                <div class="text-14 font-semibold md:text-base line-clamp-1">
-                  Machine learning basic to advance
-                </div>
-                <div class="mt-1 text-12 text-grey-400 md:text-14 line-clamp-1">
-                  Prayers
-                </div>
-              </div>
-            </a>
-            <a href="#" class="swiper-slide video-item">
-              <div class="relative">
-                <img
-                  class="h-full w-full rounded-lg object-cover"
-                  src="../assets/images/videos/1.jpg"
-                  loading="lazy"
-                  alt=""
-                />
-                <span
-                  class="absolute bottom-2 right-2 z-10 gap-2 rounded-full px-4 py-2 text-12 text-white backdrop-blur-[10px] flex items-center bg-black/40"
-                >
-                  <img
-                    width="24"
-                    height="24"
-                    src="../assets/svgs/video-play-solid.svg"
-                    alt=""
-                  />
-                  120 Videos</span
-                >
-              </div>
-              <div class="mt-3">
-                <div class="text-14 font-semibold md:text-base line-clamp-1">
-                  Machine learning basic to advance
-                </div>
-                <div class="mt-1 text-12 text-grey-400 md:text-14 line-clamp-1">
-                  Prayers
-                </div>
-              </div>
-            </a>
-            <a href="#" class="swiper-slide video-item">
-              <div class="relative">
-                <img
-                  class="h-full w-full rounded-lg object-cover"
-                  src="../assets/images/videos/1.jpg"
-                  loading="lazy"
-                  alt=""
-                />
-                <span
-                  class="absolute bottom-2 right-2 z-10 gap-2 rounded-full px-4 py-2 text-12 text-white backdrop-blur-[10px] flex items-center bg-black/40"
-                >
-                  <img
-                    width="24"
-                    height="24"
-                    src="../assets/svgs/video-play-solid.svg"
-                    alt=""
-                  />
-                  120 Videos</span
-                >
-              </div>
-              <div class="mt-3">
-                <div class="text-14 font-semibold md:text-base line-clamp-1">
-                  Machine learning basic to advance
-                </div>
-                <div class="mt-1 text-12 text-grey-400 md:text-14 line-clamp-1">
-                  Prayers
-                </div>
-              </div>
-            </a>
-            <a href="#" class="swiper-slide video-item">
-              <div class="relative">
-                <img
-                  class="h-full w-full rounded-lg object-cover"
-                  src="../assets/images/videos/1.jpg"
-                  loading="lazy"
-                  alt=""
-                />
-                <span
-                  class="absolute bottom-2 right-2 z-10 gap-2 rounded-full px-4 py-2 text-12 text-white backdrop-blur-[10px] flex items-center bg-black/40"
-                >
-                  <img
-                    width="24"
-                    height="24"
-                    src="../assets/svgs/video-play-solid.svg"
-                    alt=""
-                  />
-                  120 Videos</span
-                >
-              </div>
-              <div class="mt-3">
-                <div class="text-14 font-semibold md:text-base line-clamp-1">
-                  Machine learning basic to advance
-                </div>
-                <div class="mt-1 text-12 text-grey-400 md:text-14 line-clamp-1">
-                  Prayers
-                </div>
-              </div>
-            </a>
-            <a href="#" class="swiper-slide video-item">
-              <div class="relative">
-                <img
-                  class="h-full w-full rounded-lg object-cover"
-                  src="../assets/images/videos/1.jpg"
-                  loading="lazy"
-                  alt=""
-                />
-                <span
-                  class="absolute bottom-2 right-2 z-10 gap-2 rounded-full px-4 py-2 text-12 text-white backdrop-blur-[10px] flex items-center bg-black/40"
-                >
-                  <img
-                    width="24"
-                    height="24"
-                    src="../assets/svgs/video-play-solid.svg"
-                    alt=""
-                  />
-                  120 Videos</span
-                >
-              </div>
-              <div class="mt-3">
-                <div class="text-14 font-semibold md:text-base line-clamp-1">
-                  Machine learning basic to advance
-                </div>
-                <div class="mt-1 text-12 text-grey-400 md:text-14 line-clamp-1">
-                  Prayers
-                </div>
-              </div>
-            </a>
-            <a href="#" class="swiper-slide video-item">
-              <div class="relative">
-                <img
-                  class="h-full w-full rounded-lg object-cover"
-                  src="../assets/images/videos/1.jpg"
-                  loading="lazy"
-                  alt=""
-                />
-                <span
-                  class="absolute bottom-2 right-2 z-10 gap-2 rounded-full px-4 py-2 text-12 text-white backdrop-blur-[10px] flex items-center bg-black/40"
-                >
-                  <img
-                    width="24"
-                    height="24"
-                    src="../assets/svgs/video-play-solid.svg"
-                    alt=""
-                  />
-                  120 Videos</span
-                >
-              </div>
-              <div class="mt-3">
-                <div class="text-14 font-semibold md:text-base line-clamp-1">
-                  Machine learning basic to advance
-                </div>
-                <div class="mt-1 text-12 text-grey-400 md:text-14 line-clamp-1">
-                  Prayers
-                </div>
-              </div>
-            </a>
-            <a href="#" class="swiper-slide video-item">
-              <div class="relative">
-                <img
-                  class="h-full w-full rounded-lg object-cover"
-                  src="../assets/images/videos/1.jpg"
-                  loading="lazy"
-                  alt=""
-                />
-                <span
-                  class="absolute bottom-2 right-2 z-10 gap-2 rounded-full px-4 py-2 text-12 text-white backdrop-blur-[10px] flex items-center bg-black/40"
-                >
-                  <img
-                    width="24"
-                    height="24"
-                    src="../assets/svgs/video-play-solid.svg"
-                    alt=""
-                  />
-                  120 Videos</span
-                >
-              </div>
-              <div class="mt-3">
-                <div class="text-14 font-semibold md:text-base line-clamp-1">
-                  Machine learning basic to advance
-                </div>
-                <div class="mt-1 text-12 text-grey-400 md:text-14 line-clamp-1">
-                  Prayers
-                </div>
-              </div>
-            </a>
-          </div>
-          <div
-            class="swiper-playlist-video-navigation swiper-playlist-video-next max-md:hidden"
-          >
-            <img src="../assets/svgs/arrow-next.svg" alt="" />
-          </div>
-          <div
-            class="swiper-playlist-video-navigation swiper-playlist-video-prev max-md:hidden"
-          >
-            <img
-              class="rotate-180"
-              src="../assets/svgs/arrow-next.svg"
-              alt=""
-            />
-          </div>
-        </div>
-      </section>
-      <section
-        class="container mt-8 hidden flex-col rounded-xl bg-white p-4 md:flex"
-      >
-        <div class="flex items-center">
-          <img class="mr-1.5" src="../assets/svgs/video-play.svg" alt="" />
-          <a href="#" class="flex items-center text-18 font-semibold md:text-24"
-            >Playlist videos
-            <img
-              class="ml-2 -rotate-90 rounded-lg object-cover"
-              src="../assets/svgs/arrow-down.svg"
-              loading="lazy"
-              alt=""
-            />
-          </a>
-        </div>
-        <div class="mt-4 grid h-[330px] max-h-[330px] flex-1 grid-cols-2 gap-4">
-          <div class="w-full h-full overflow-hidden">
-            <img
-              class="rounded-lg object-cover w-full h-full"
-              loading="lazy"
-              src="../assets/images/gorden.jpg"
-              alt=""
-            />
-          </div>
-          <div
-            class="h-full relative flex flex-col overflow-x-hidden scrollbar-custom"
-          >
-            <div>
+            </div>
+            <div class="p-4">
               <div class="flex items-center justify-between">
-                <div class="text-20 font-semibold">
-                  Gordon Ramsay's Ultimate Cookery Course
+                <div class="flex items-center">
+                  <a
+                    href="#"
+                    class="flex items-center text-18 font-semibold lg:text-20"
+                    >Digital goods
+                    <img
+                      class="ml-1 -rotate-90 w-6 aspect-square rounded-lg object-cover"
+                      src="assets/svgs/arrow-down.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </a>
                 </div>
-                <button>
-                  <img src="../assets/svgs/heart-outline.svg" alt="" />
+                <a
+                  href="#"
+                  class="text-right text-14 text-branding hover:underline md:hidden"
+                  >View all</a
+                >
+              </div>
+              <!-- <div class="song-swiper swiper relative mt-4">
+                <div class="swiper-wrapper w-full max-w-full max-h-full h-full">
+                  <a href="#" class="swiper-slide">
+                    <div class="overflow-hidden rounded-lg aspect-square">
+                      <img
+                        class="rounded-lg w-[120px] object-cover"
+                        src="assets/images/songs/1.jpg"
+                        loading="lazy"
+                        alt=""
+                      />
+                    </div>
+                    <div class="mt-3 text-center text-base line-clamp-1">
+                      Album 2023
+                    </div>
+                  </a>
+                  <a href="#" class="swiper-slide">
+                    <div class="overflow-hidden rounded-lg aspect-square">
+                      <img
+                        class="rounded-lg w-[120px] object-cover"
+                        src="assets/images/songs/1.jpg"
+                        loading="lazy"
+                        alt=""
+                      />
+                    </div>
+                    <div class="mt-3 text-center text-base line-clamp-1">
+                      Album 2023
+                    </div>
+                  </a>
+                  <a href="#" class="swiper-slide">
+                    <div class="overflow-hidden rounded-lg aspect-square">
+                      <img
+                        class="rounded-lg w-[120px] object-cover"
+                        src="assets/images/songs/1.jpg"
+                        loading="lazy"
+                        alt=""
+                      />
+                    </div>
+                    <div class="mt-3 text-center text-base line-clamp-1">
+                      Album 2023
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="swiper-song-navigation swiper-song-next max-lg:hidden"
+                >
+                  <img src="assets/svgs/arrow-next.svg" alt="" />
+                </div>
+                <div
+                  class="swiper-song-navigation swiper-song-prev max-lg:hidden"
+                >
+                  <img
+                    class="rotate-180"
+                    src="assets/svgs/arrow-next.svg"
+                    alt=""
+                  />
+                </div>
+              </div> -->
+              <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                  <a
+                    href="#"
+                    class="flex items-center text-18 font-semibold lg:text-20"
+                    >Services
+                    <img
+                      class="ml-1 -rotate-90 w-6 aspect-square rounded-lg object-cover"
+                      src="assets/svgs/arrow-down.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <a
+                  href="#"
+                  class="text-right text-14 text-branding hover:underline md:hidden"
+                  >View all</a
+                >
+              </div>
+              <ul class="mt-4 flex flex-col gap-3">
+                <li>
+                  <a href="#" class="items-center flex gap-2">
+                    <img
+                      class="w-14 aspect-square rounded-xl"
+                      src="assets/images/albums/1.jpg"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <div>
+                      <div class="text-base">Composer</div>
+                      <div class="flex items-center gap-1">
+                        <img
+                          class="w-4 aspect-square"
+                          src="assets/svgs/yellow-star.svg"
+                          alt=""
+                        />
+                        <span class="text-14 text-grey-400">5.0(47)</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="items-center flex gap-2">
+                    <img
+                      class="w-14 aspect-square rounded-xl"
+                      src="assets/images/albums/1.jpg"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <div>
+                      <div class="text-base">Composer</div>
+                      <div class="flex items-center gap-1">
+                        <img
+                          class="w-4 aspect-square"
+                          src="assets/svgs/yellow-star.svg"
+                          alt=""
+                        />
+                        <span class="text-14 text-grey-400">5.0(47)</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-6">
+          <div class="px-4 py-3 bg-white rounded-xl">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <img
+                  class="w-12 aspect-square rounded-lg"
+                  src="assets/images/artists/2.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div>
+                  <div class="flex items-center gap-1 text-18 font-semibold">
+                    <span>Son Tung M-TP</span>
+                    <img src="assets/svgs/verify.svg" alt="" />
+                  </div>
+                  <div class="text-14 text-grey-400">5 days ago</div>
+                </div>
+              </div>
+              <div
+                class="hover:bg-bg toggle-more-menu p-1 cursor-pointer relative rounded-full duration-100 transition-colors"
+              >
+                <img
+                  class="w-4 lg:w-6 aspect-square"
+                  src="assets/svgs/more.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <p class="mt-4 text-base text-grey-400">
+              A small gift from me to you on my special day !
+            </p>
+            <div class="mt-4">
+              <img
+                class="w-full aspect-square rounded-xl object-cover object-center"
+                src="assets/images/profile/feed1.jpg"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <div class="mt-3 grid text-grey-400 grid-cols-3 items-center">
+              <button class="flex items-center gap-2 text-base justify-center">
+                <img
+                  class="w-6 aspect-square"
+                  src="assets/svgs/heart.svg"
+                  alt=""
+                />
+                200 liked
+              </button>
+              <button class="flex items-center gap-2 text-base justify-center">
+                <img
+                  class="w-6 aspect-square"
+                  src="assets/svgs/ms-comment.svg"
+                  alt=""
+                />
+                200 comments
+              </button>
+              <button class="flex items-center gap-2 text-base justify-center">
+                <img
+                  class="w-6 aspect-square"
+                  src="assets/svgs/repost.svg"
+                  alt=""
+                />
+                200 reposts
+              </button>
+            </div>
+            <div
+              class="mt-4 pt-3 border-t border-t-grey-200 flex items-center gap-2"
+            >
+              <img
+                class="w-11 aspect-square rounded-xl object-cover object-center"
+                src="assets/images/artists/3.png"
+                loading="lazy"
+                alt=""
+              />
+              <textarea
+                class="px-3 h-11 py-2.5 bg-grey-100 rounded-xl outline-none flex-1 max-h-full text-base placeholder:text-grey-300 resize-none"
+                placeholder="What’s on in your mind...."
+              ></textarea>
+            </div>
+          </div>
+          <div class="py-3 bg-white rounded-xl">
+            <div
+              class="px-4 text-grey-400 text-14 flex items-center gap-1.5 pb-3 border-b border-b-grey-200 mb-3"
+            >
+              <img
+                class="w-6 aspect-square"
+                src="assets/svgs/repost.svg"
+                alt=""
+              />
+              <div>
+                <b>Son Tung M-TP</b>
+                reposted a playlist
+              </div>
+            </div>
+            <div class="px-4">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <img
+                    class="w-12 aspect-square rounded-lg"
+                    src="assets/images/artists/2.png"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div>
+                    <div class="flex items-center gap-1 text-18 font-semibold">
+                      <span>Mark Knopfler</span>
+                      <img src="assets/svgs/verify.svg" alt="" />
+                    </div>
+                    <div class="text-14 text-grey-400">10 days ago</div>
+                  </div>
+                </div>
+                <div
+                  class="hover:bg-bg toggle-more-menu p-1 cursor-pointer relative rounded-full duration-100 transition-colors"
+                >
+                  <img
+                    class="w-4 lg:w-6 aspect-square"
+                    src="assets/svgs/more.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <p class="mt-4 text-base text-grey-400">New playlist !</p>
+              <div class="mt-4">
+                <div class="flex max-h-[220px] bg-bg gap-4 rounded-xl p-4">
+                  <div
+                    class="aspect-square max-w-[220px] flex-shrink-0 overflow-hidden rounded-lg"
+                  >
+                    <img
+                      class="h-full w-full rounded-lg object-cover"
+                      src="assets/images/playlists/1-pc.png"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div class="flex flex-1 flex-col justify-between gap-y-3">
+                    <div>
+                      <div class="flex items-center justify-between">
+                        <div class="text-20 font-semibold">Chill with me!</div>
+                        <button>
+                          <img src="assets/svgs/heart-outline.svg" alt="" />
+                        </button>
+                      </div>
+                      <div class="mt-1.5 flex items-center gap-3">
+                        <span
+                          class="flex items-center gap-1 text-14 text-grey-400"
+                        >
+                          <img src="assets/svgs/music-grey.svg" alt="" />
+                          22 songs</span
+                        >
+                        <span
+                          class="flex items-center gap-1 text-14 text-grey-400"
+                        >
+                          <img src="assets/svgs/heart-grey.svg" alt="" />
+                          20K liked</span
+                        >
+                      </div>
+                    </div>
+                    <ul class="scrollbar-custom flex-1 overflow-y-auto">
+                      <li>
+                        <a
+                          href="#"
+                          class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                        >
+                          <div class="flex items-center gap-2">
+                            <div
+                              class="w-6 flex-shrink-0 text-center text-base font-semibold text-grey-400"
+                            >
+                              1
+                            </div>
+                            <div class="max-w-[180px]">
+                              <div class="line-clamp-1 text-base font-semibold">
+                                Yearning for Quiet Monkeys
+                              </div>
+                              <div class="mt-1 text-14 text-grey-400">
+                                Robbie Williams
+                              </div>
+                            </div>
+                          </div>
+                          <div class="text-14 text-grey-400">02:00</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                        >
+                          <div class="flex items-center gap-2">
+                            <div
+                              class="w-6 flex-shrink-0 text-center text-base font-semibold text-grey-400"
+                            >
+                              2
+                            </div>
+                            <div class="max-w-[180px]">
+                              <div class="line-clamp-1 text-base font-semibold">
+                                Yearning for Quiet Monkeys
+                              </div>
+                              <div class="mt-1 text-14 text-grey-400">
+                                Robbie Williams
+                              </div>
+                            </div>
+                          </div>
+                          <div class="text-14 text-grey-400">02:00</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                        >
+                          <div class="flex items-center gap-2">
+                            <div
+                              class="w-6 flex-shrink-0 text-center text-base font-semibold text-grey-400"
+                            >
+                              3
+                            </div>
+                            <div class="max-w-[180px]">
+                              <div class="line-clamp-1 text-base font-semibold">
+                                Yearning for Quiet Monkeys
+                              </div>
+                              <div class="mt-1 text-14 text-grey-400">
+                                Robbie Williams
+                              </div>
+                            </div>
+                          </div>
+                          <div class="text-14 text-grey-400">02:00</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                        >
+                          <div class="flex items-center gap-2">
+                            <div
+                              class="w-6 flex-shrink-0 text-center text-base font-semibold text-grey-400"
+                            >
+                              4
+                            </div>
+                            <div class="max-w-[180px]">
+                              <div class="line-clamp-1 text-base font-semibold">
+                                Yearning for Quiet Monkeys
+                              </div>
+                              <div class="mt-1 text-14 text-grey-400">
+                                Robbie Williams
+                              </div>
+                            </div>
+                          </div>
+                          <div class="text-14 text-grey-400">02:00</div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-3 grid text-grey-400 grid-cols-3 items-center">
+                <button
+                  class="flex items-center gap-2 text-base justify-center"
+                >
+                  <img
+                    class="w-6 aspect-square"
+                    src="assets/svgs/heart.svg"
+                    alt=""
+                  />
+                  200 liked
+                </button>
+                <button
+                  class="flex items-center gap-2 text-base justify-center"
+                >
+                  <img
+                    class="w-6 aspect-square"
+                    src="assets/svgs/ms-comment.svg"
+                    alt=""
+                  />
+                  200 comments
+                </button>
+                <button
+                  class="flex items-center gap-2 text-base justify-center"
+                >
+                  <img
+                    class="w-6 aspect-square"
+                    src="assets/svgs/repost.svg"
+                    alt=""
+                  />
+                  200 reposts
                 </button>
               </div>
-              <div class="mt-1 flex items-center gap-3 text-14 text-grey-400">
-                <div class="flex items-center gap-1">
-                  <img src="../assets/svgs/video-circle.svg" alt="" /> 18 videos
-                </div>
-                <div class="flex items-center gap-1">
-                  <img src="../assets/svgs/heart-grey.svg" alt="" /> 200 liked
-                </div>
+              <div
+                class="mt-4 pt-3 border-t border-t-grey-200 flex items-center gap-2"
+              >
+                <img
+                  class="w-11 aspect-square rounded-xl object-cover object-center"
+                  src="assets/images/artists/3.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <textarea
+                  class="px-3 h-11 py-2.5 bg-grey-100 rounded-xl outline-none flex-1 max-h-full text-base placeholder:text-grey-300 resize-none"
+                  placeholder="What’s on in your mind...."
+                ></textarea>
               </div>
             </div>
-            <ul class="max-h-full mt-2 gap-1 flex-1">
-              <li class="playlist-video-item">
-                <a href="#" class="hot-item">
+          </div>
+        </div>
+        <div class="flex flex-col gap-6">
+          <div class="rounded-xl pt-4 bg-white">
+            <div class="text-20 font-semibold px-4">Who to follow</div>
+            <ul class="mt-2">
+              <li>
+                <div class="px-4 py-2 flex items-center justify-between gap-5">
                   <div class="flex items-center">
-                    <div
-                      class="mr-1 w-4 flex-shrink-0 text-center text-14 font-semibold text-grey-400 md:w-6 md:text-18 playlist-video-item--index"
-                    >
-                      1
-                    </div>
                     <img
-                      class="mr-1 hidden w-4 flex-shrink-0 mx-auto font-semibold text-grey-400 md:w-6 playlist-video-item--play"
-                      src="../assets/svgs/play-grey.svg"
+                      class="w-12 mr-2 aspect-square rounded-lg"
+                      src="assets/images/artists/1.png"
                       alt=""
                     />
-                    <div class="mr-2">
+                    <div>
                       <div
-                        class="line-clamp-1 text-14 font-semibold md:text-base"
+                        class="text-14 lg:text-base font-semibold line-clamp-1"
                       >
-                        Gordon Ramsay's Top Basic Cooking Skills | Ultimate
-                        Cookery Course FULL EPISODE
+                        Dr Dre
                       </div>
-                      <div class="mt-1 text-12 text-grey-400 md:text-14">
-                        Gordon Ramsay
+                      <div
+                        class="mt-1 text-12 lg:text-14 text-gray-400 line-clamp-1"
+                      >
+                        2.650 followers
                       </div>
                     </div>
                   </div>
-                  <div class="hot-item--duration max-md:hidden">01:10</div>
-                  <div class="hot-item--more">
-                    <button class="hot-item--love">
+                  <button
+                    class="text-12 lg:text-14 xl:text-base py-1.5 btn-primary text-white font-semibold"
+                  >
+                    Follow
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="px-4 py-2 flex items-center justify-between gap-5">
+                  <div class="flex items-center">
+                    <img
+                      class="w-12 mr-2 aspect-square rounded-lg"
+                      src="assets/images/artists/1.png"
+                      alt=""
+                    />
+                    <div>
+                      <div
+                        class="text-14 lg:text-base font-semibold line-clamp-1"
+                      >
+                        Dr Dre
+                      </div>
+                      <div
+                        class="mt-1 text-12 lg:text-14 text-gray-400 line-clamp-1"
+                      >
+                        2.650 followers
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="text-12 lg:text-14 xl:text-base py-1.5 btn-primary text-white font-semibold"
+                  >
+                    Follow
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="px-4 py-2 flex items-center justify-between gap-5">
+                  <div class="flex items-center">
+                    <img
+                      class="w-12 mr-2 aspect-square rounded-lg"
+                      src="assets/images/artists/1.png"
+                      alt=""
+                    />
+                    <div>
+                      <div
+                        class="text-14 lg:text-base font-semibold line-clamp-1"
+                      >
+                        Dr Dre
+                      </div>
+                      <div
+                        class="mt-1 text-12 lg:text-14 text-gray-400 line-clamp-1"
+                      >
+                        2.650 followers
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="text-12 lg:text-14 xl:text-base py-1.5 btn-primary text-white font-semibold"
+                  >
+                    Follow
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="px-4 py-2 flex items-center justify-between gap-5">
+                  <div class="flex items-center">
+                    <img
+                      class="w-12 mr-2 aspect-square rounded-lg"
+                      src="assets/images/artists/1.png"
+                      alt=""
+                    />
+                    <div>
+                      <div
+                        class="text-14 lg:text-base font-semibold line-clamp-1"
+                      >
+                        Dr Dre
+                      </div>
+                      <div
+                        class="mt-1 text-12 lg:text-14 text-gray-400 line-clamp-1"
+                      >
+                        2.650 followers
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="text-12 lg:text-14 xl:text-base py-1.5 btn-primary text-white font-semibold"
+                  >
+                    Follow
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="px-4 py-2 flex items-center justify-between gap-5">
+                  <div class="flex items-center">
+                    <img
+                      class="w-12 mr-2 aspect-square rounded-lg"
+                      src="assets/images/artists/1.png"
+                      alt=""
+                    />
+                    <div>
+                      <div
+                        class="text-14 lg:text-base font-semibold line-clamp-1"
+                      >
+                        Dr Dre
+                      </div>
+                      <div
+                        class="mt-1 text-12 lg:text-14 text-gray-400 line-clamp-1"
+                      >
+                        2.650 followers
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="text-12 lg:text-14 xl:text-base py-1.5 btn-primary text-white font-semibold"
+                  >
+                    Follow
+                  </button>
+                </div>
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="flex hover:underline justify-center text-14 py-2 text-grey-400 font-semibold items-center gap-1"
+            >
+              See more
+              <img
+                class="w-4 aspect-square"
+                src="assets/svgs/arrow-down.svg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="rounded-xl pt-4 bg-white">
+            <div class="flex items-center justify-between px-4">
+              <div class="flex items-center">
+                <a
+                  href="#"
+                  class="flex items-center text-18 font-semibold lg:text-20"
+                  >Recommend
+                  <img
+                    class="ml-1 -rotate-90 w-6 aspect-square rounded-lg object-cover"
+                    src="assets/svgs/arrow-down.svg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <a
+                href="#"
+                class="text-right text-14 text-branding hover:underline md:hidden"
+                >View all</a
+              >
+            </div>
+            <ul class="mt-2 px-2 pb-2">
+              <li>
+                <a
+                  href="#"
+                  class="mixed-link flex items-center justify-between rounded-lg gap-2 p-2 transition-colors duration-75 hover:bg-bg"
+                >
+                  <div class="mr-2 flex flex-1 items-center gap-3">
+                    <img
+                      class="aspect-square w-12 rounded-lg object-cover"
+                      loading="lazy"
+                      src="assets/images/songs/mixed-for-u.jpg"
+                      alt=""
+                    />
+                    <div class="">
+                      <span class="line-clamp-1 text-base font-semibold"
+                        >Cats Sound Better With You</span
+                      >
+                      <span class="line-clamp-1 text-14 text-grey-400"
+                        >Derek And The Dominos</span
+                      >
+                    </div>
+                  </div>
+                  <div class="mixed-link--duration text-14 text-grey-400">
+                    01:34
+                  </div>
+                  <div class="mixed-link--more flex-shrink-0">
+                    <button class="mixed-link--love">
                       <img
                         class=""
-                        src="../assets/svgs/heart-outline.svg"
+                        src="assets/svgs/heart-outline.svg"
                         alt=""
                       />
                     </button>
-                    <div class="toggle-more-menu relative">
-                      <img src="../assets/svgs/more.svg" alt="" />
+                    <div
+                      id="toggle-more-menu"
+                      class="toggle-more-menu relative"
+                    >
+                      <img src="assets/svgs/more.svg" alt="" />
                       <div class="menu-more">
                         <button
                           class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
                         >
-                          <img src="../assets/svgs/repost.svg" />
+                          <img src="assets/svgs/repost.svg" />
                           Repost
                         </button>
                         <button
                           class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
                         >
-                          <img src="../assets/svgs/add-next.svg" />
+                          <img src="assets/svgs/add-next.svg" />
                           Add to next up
                         </button>
                         <button
                           class="show-create-playlist-popup flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
                         >
-                          <img src="../assets/svgs/add-playlist.svg" />
+                          <img src="assets/svgs/add-playlist.svg" />
                           Add to playlist
                         </button>
                         <button
                           class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
                         >
-                          <img src="../assets/svgs/repost.svg" />
+                          <img src="assets/svgs/repost.svg" />
                           Share
                         </button>
                         <button
                           class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
                         >
-                          <img src="../assets/svgs/copy-link.svg" />
+                          <img src="assets/svgs/copy-link.svg" />
                           Copy link
                         </button>
                         <button
                           class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
                         >
-                          <img src="../assets/svgs/repost.svg" />
+                          <img src="assets/svgs/repost.svg" />
                           Report
                         </button>
                       </div>
@@ -860,77 +882,78 @@
                   </div>
                 </a>
               </li>
-              <li class="playlist-video-item">
-                <a href="#" class="hot-item">
-                  <div class="flex items-center">
-                    <div
-                      class="mr-1 w-4 flex-shrink-0 text-center text-14 font-semibold text-grey-400 md:w-6 md:text-18 playlist-video-item--index"
-                    >
-                      1
-                    </div>
+              <li>
+                <a
+                  href="#"
+                  class="mixed-link flex items-center justify-between rounded-lg gap-2 p-2 transition-colors duration-75 hover:bg-bg"
+                >
+                  <div class="mr-2 flex flex-1 items-center gap-3">
                     <img
-                      class="mr-1 hidden w-4 flex-shrink-0 mx-auto font-semibold text-grey-400 md:w-6 playlist-video-item--play"
-                      src="../assets/svgs/play-grey.svg"
+                      class="aspect-square w-12 rounded-lg object-cover"
+                      loading="lazy"
+                      src="assets/images/songs/mixed-for-u.jpg"
                       alt=""
                     />
-                    <div class="mr-2">
-                      <div
-                        class="line-clamp-1 text-14 font-semibold md:text-base"
+                    <div class="">
+                      <span class="line-clamp-1 text-base font-semibold"
+                        >Cats Sound Better With You</span
                       >
-                        Gordon Ramsay's Top Basic Cooking Skills | Ultimate
-                        Cookery Course FULL EPISODE
-                      </div>
-                      <div class="mt-1 text-12 text-grey-400 md:text-14">
-                        Gordon Ramsay
-                      </div>
+                      <span class="line-clamp-1 text-14 text-grey-400"
+                        >Derek And The Dominos</span
+                      >
                     </div>
                   </div>
-                  <div class="hot-item--duration max-md:hidden">01:10</div>
-                  <div class="hot-item--more">
-                    <button class="hot-item--love">
+                  <div class="mixed-link--duration text-14 text-grey-400">
+                    01:34
+                  </div>
+                  <div class="mixed-link--more flex-shrink-0">
+                    <button class="mixed-link--love">
                       <img
                         class=""
-                        src="../assets/svgs/heart-outline.svg"
+                        src="assets/svgs/heart-outline.svg"
                         alt=""
                       />
                     </button>
-                    <div class="toggle-more-menu relative">
-                      <img src="../assets/svgs/more.svg" alt="" />
+                    <div
+                      id="toggle-more-menu"
+                      class="toggle-more-menu relative"
+                    >
+                      <img src="assets/svgs/more.svg" alt="" />
                       <div class="menu-more">
                         <button
                           class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
                         >
-                          <img src="../assets/svgs/repost.svg" />
+                          <img src="assets/svgs/repost.svg" />
                           Repost
                         </button>
                         <button
                           class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
                         >
-                          <img src="../assets/svgs/add-next.svg" />
+                          <img src="assets/svgs/add-next.svg" />
                           Add to next up
                         </button>
                         <button
                           class="show-create-playlist-popup flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
                         >
-                          <img src="../assets/svgs/add-playlist.svg" />
+                          <img src="assets/svgs/add-playlist.svg" />
                           Add to playlist
                         </button>
                         <button
                           class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
                         >
-                          <img src="../assets/svgs/repost.svg" />
+                          <img src="assets/svgs/repost.svg" />
                           Share
                         </button>
                         <button
                           class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
                         >
-                          <img src="../assets/svgs/copy-link.svg" />
+                          <img src="assets/svgs/copy-link.svg" />
                           Copy link
                         </button>
                         <button
                           class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
                         >
-                          <img src="../assets/svgs/repost.svg" />
+                          <img src="assets/svgs/repost.svg" />
                           Report
                         </button>
                       </div>
@@ -938,77 +961,78 @@
                   </div>
                 </a>
               </li>
-              <li class="playlist-video-item">
-                <a href="#" class="hot-item">
-                  <div class="flex items-center">
-                    <div
-                      class="mr-1 w-4 flex-shrink-0 text-center text-14 font-semibold text-grey-400 md:w-6 md:text-18 playlist-video-item--index"
-                    >
-                      1
-                    </div>
+              <li>
+                <a
+                  href="#"
+                  class="mixed-link flex items-center justify-between rounded-lg gap-2 p-2 transition-colors duration-75 hover:bg-bg"
+                >
+                  <div class="mr-2 flex flex-1 items-center gap-3">
                     <img
-                      class="mr-1 hidden w-4 flex-shrink-0 mx-auto font-semibold text-grey-400 md:w-6 playlist-video-item--play"
-                      src="../assets/svgs/play-grey.svg"
+                      class="aspect-square w-12 rounded-lg object-cover"
+                      loading="lazy"
+                      src="assets/images/songs/mixed-for-u.jpg"
                       alt=""
                     />
-                    <div class="mr-2">
-                      <div
-                        class="line-clamp-1 text-14 font-semibold md:text-base"
+                    <div class="">
+                      <span class="line-clamp-1 text-base font-semibold"
+                        >Cats Sound Better With You</span
                       >
-                        Gordon Ramsay's Top Basic Cooking Skills | Ultimate
-                        Cookery Course FULL EPISODE
-                      </div>
-                      <div class="mt-1 text-12 text-grey-400 md:text-14">
-                        Gordon Ramsay
-                      </div>
+                      <span class="line-clamp-1 text-14 text-grey-400"
+                        >Derek And The Dominos</span
+                      >
                     </div>
                   </div>
-                  <div class="hot-item--duration max-md:hidden">01:10</div>
-                  <div class="hot-item--more">
-                    <button class="hot-item--love">
+                  <div class="mixed-link--duration text-14 text-grey-400">
+                    01:34
+                  </div>
+                  <div class="mixed-link--more flex-shrink-0">
+                    <button class="mixed-link--love">
                       <img
                         class=""
-                        src="../assets/svgs/heart-outline.svg"
+                        src="assets/svgs/heart-outline.svg"
                         alt=""
                       />
                     </button>
-                    <div class="toggle-more-menu relative">
-                      <img src="../assets/svgs/more.svg" alt="" />
+                    <div
+                      id="toggle-more-menu"
+                      class="toggle-more-menu relative"
+                    >
+                      <img src="assets/svgs/more.svg" alt="" />
                       <div class="menu-more">
                         <button
                           class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
                         >
-                          <img src="../assets/svgs/repost.svg" />
+                          <img src="assets/svgs/repost.svg" />
                           Repost
                         </button>
                         <button
                           class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
                         >
-                          <img src="../assets/svgs/add-next.svg" />
+                          <img src="assets/svgs/add-next.svg" />
                           Add to next up
                         </button>
                         <button
                           class="show-create-playlist-popup flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
                         >
-                          <img src="../assets/svgs/add-playlist.svg" />
+                          <img src="assets/svgs/add-playlist.svg" />
                           Add to playlist
                         </button>
                         <button
                           class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
                         >
-                          <img src="../assets/svgs/repost.svg" />
+                          <img src="assets/svgs/repost.svg" />
                           Share
                         </button>
                         <button
                           class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
                         >
-                          <img src="../assets/svgs/copy-link.svg" />
+                          <img src="assets/svgs/copy-link.svg" />
                           Copy link
                         </button>
                         <button
                           class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
                         >
-                          <img src="../assets/svgs/repost.svg" />
+                          <img src="assets/svgs/repost.svg" />
                           Report
                         </button>
                       </div>
@@ -1016,77 +1040,78 @@
                   </div>
                 </a>
               </li>
-              <li class="playlist-video-item">
-                <a href="#" class="hot-item">
-                  <div class="flex items-center">
-                    <div
-                      class="mr-1 w-4 flex-shrink-0 text-center text-14 font-semibold text-grey-400 md:w-6 md:text-18 playlist-video-item--index"
-                    >
-                      1
-                    </div>
+              <li>
+                <a
+                  href="#"
+                  class="mixed-link flex items-center justify-between rounded-lg gap-2 p-2 transition-colors duration-75 hover:bg-bg"
+                >
+                  <div class="mr-2 flex flex-1 items-center gap-3">
                     <img
-                      class="mr-1 hidden w-4 flex-shrink-0 mx-auto font-semibold text-grey-400 md:w-6 playlist-video-item--play"
-                      src="../assets/svgs/play-grey.svg"
+                      class="aspect-square w-12 rounded-lg object-cover"
+                      loading="lazy"
+                      src="assets/images/songs/mixed-for-u.jpg"
                       alt=""
                     />
-                    <div class="mr-2">
-                      <div
-                        class="line-clamp-1 text-14 font-semibold md:text-base"
+                    <div class="">
+                      <span class="line-clamp-1 text-base font-semibold"
+                        >Cats Sound Better With You</span
                       >
-                        Gordon Ramsay's Top Basic Cooking Skills | Ultimate
-                        Cookery Course FULL EPISODE
-                      </div>
-                      <div class="mt-1 text-12 text-grey-400 md:text-14">
-                        Gordon Ramsay
-                      </div>
+                      <span class="line-clamp-1 text-14 text-grey-400"
+                        >Derek And The Dominos</span
+                      >
                     </div>
                   </div>
-                  <div class="hot-item--duration max-md:hidden">01:10</div>
-                  <div class="hot-item--more">
-                    <button class="hot-item--love">
+                  <div class="mixed-link--duration text-14 text-grey-400">
+                    01:34
+                  </div>
+                  <div class="mixed-link--more flex-shrink-0">
+                    <button class="mixed-link--love">
                       <img
                         class=""
-                        src="../assets/svgs/heart-outline.svg"
+                        src="assets/svgs/heart-outline.svg"
                         alt=""
                       />
                     </button>
-                    <div class="toggle-more-menu relative">
-                      <img src="../assets/svgs/more.svg" alt="" />
+                    <div
+                      id="toggle-more-menu"
+                      class="toggle-more-menu relative"
+                    >
+                      <img src="assets/svgs/more.svg" alt="" />
                       <div class="menu-more">
                         <button
                           class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
                         >
-                          <img src="../assets/svgs/repost.svg" />
+                          <img src="assets/svgs/repost.svg" />
                           Repost
                         </button>
                         <button
                           class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
                         >
-                          <img src="../assets/svgs/add-next.svg" />
+                          <img src="assets/svgs/add-next.svg" />
                           Add to next up
                         </button>
                         <button
                           class="show-create-playlist-popup flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
                         >
-                          <img src="../assets/svgs/add-playlist.svg" />
+                          <img src="assets/svgs/add-playlist.svg" />
                           Add to playlist
                         </button>
                         <button
                           class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
                         >
-                          <img src="../assets/svgs/repost.svg" />
+                          <img src="assets/svgs/repost.svg" />
                           Share
                         </button>
                         <button
                           class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
                         >
-                          <img src="../assets/svgs/copy-link.svg" />
+                          <img src="assets/svgs/copy-link.svg" />
                           Copy link
                         </button>
                         <button
                           class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
                         >
-                          <img src="../assets/svgs/repost.svg" />
+                          <img src="assets/svgs/repost.svg" />
                           Report
                         </button>
                       </div>
@@ -1094,77 +1119,78 @@
                   </div>
                 </a>
               </li>
-              <li class="playlist-video-item">
-                <a href="#" class="hot-item">
-                  <div class="flex items-center">
-                    <div
-                      class="mr-1 w-4 flex-shrink-0 text-center text-14 font-semibold text-grey-400 md:w-6 md:text-18 playlist-video-item--index"
-                    >
-                      1
-                    </div>
+              <li>
+                <a
+                  href="#"
+                  class="mixed-link flex items-center justify-between rounded-lg gap-2 p-2 transition-colors duration-75 hover:bg-bg"
+                >
+                  <div class="mr-2 flex flex-1 items-center gap-3">
                     <img
-                      class="mr-1 hidden w-4 flex-shrink-0 mx-auto font-semibold text-grey-400 md:w-6 playlist-video-item--play"
-                      src="../assets/svgs/play-grey.svg"
+                      class="aspect-square w-12 rounded-lg object-cover"
+                      loading="lazy"
+                      src="assets/images/songs/mixed-for-u.jpg"
                       alt=""
                     />
-                    <div class="mr-2">
-                      <div
-                        class="line-clamp-1 text-14 font-semibold md:text-base"
+                    <div class="">
+                      <span class="line-clamp-1 text-base font-semibold"
+                        >Cats Sound Better With You</span
                       >
-                        Gordon Ramsay's Top Basic Cooking Skills | Ultimate
-                        Cookery Course FULL EPISODE
-                      </div>
-                      <div class="mt-1 text-12 text-grey-400 md:text-14">
-                        Gordon Ramsay
-                      </div>
+                      <span class="line-clamp-1 text-14 text-grey-400"
+                        >Derek And The Dominos</span
+                      >
                     </div>
                   </div>
-                  <div class="hot-item--duration max-md:hidden">01:10</div>
-                  <div class="hot-item--more">
-                    <button class="hot-item--love">
+                  <div class="mixed-link--duration text-14 text-grey-400">
+                    01:34
+                  </div>
+                  <div class="mixed-link--more flex-shrink-0">
+                    <button class="mixed-link--love">
                       <img
                         class=""
-                        src="../assets/svgs/heart-outline.svg"
+                        src="assets/svgs/heart-outline.svg"
                         alt=""
                       />
                     </button>
-                    <div class="toggle-more-menu relative">
-                      <img src="../assets/svgs/more.svg" alt="" />
+                    <div
+                      id="toggle-more-menu"
+                      class="toggle-more-menu relative"
+                    >
+                      <img src="assets/svgs/more.svg" alt="" />
                       <div class="menu-more">
                         <button
                           class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
                         >
-                          <img src="../assets/svgs/repost.svg" />
+                          <img src="assets/svgs/repost.svg" />
                           Repost
                         </button>
                         <button
                           class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
                         >
-                          <img src="../assets/svgs/add-next.svg" />
+                          <img src="assets/svgs/add-next.svg" />
                           Add to next up
                         </button>
                         <button
                           class="show-create-playlist-popup flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
                         >
-                          <img src="../assets/svgs/add-playlist.svg" />
+                          <img src="assets/svgs/add-playlist.svg" />
                           Add to playlist
                         </button>
                         <button
                           class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
                         >
-                          <img src="../assets/svgs/repost.svg" />
+                          <img src="assets/svgs/repost.svg" />
                           Share
                         </button>
                         <button
                           class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
                         >
-                          <img src="../assets/svgs/copy-link.svg" />
+                          <img src="assets/svgs/copy-link.svg" />
                           Copy link
                         </button>
                         <button
                           class="flex items-center gap-2 rounded-lg p-2 transition-colors duration-75 hover:bg-bg text-14 lg:text-base"
                         >
-                          <img src="../assets/svgs/repost.svg" />
+                          <img src="assets/svgs/repost.svg" />
                           Report
                         </button>
                       </div>
@@ -1174,8 +1200,14 @@
               </li>
             </ul>
           </div>
+          <img
+            class="w-full object-cover object-center rounded-xl"
+            src="assets/images/profile/poster.jpg"
+            loading="lazy"
+            alt=""
+          />
         </div>
-      </section>
+      </div>
     </div>
     <footer
       class="mt-[100px] border-t border-t-grey-400 pb-6 pt-4 max-md:hidden"
@@ -1244,7 +1276,7 @@
           <div class="relative">
             <img
               class="h-[120px] w-full rounded-xl object-cover object-center"
-              src="../assets/images/profile/banner.jpg"
+              src="assets/images/profile/banner.jpg"
               alt=""
               loading="lazy"
             />
@@ -1253,7 +1285,7 @@
             >
               <img
                 class="w-4 aspect-square"
-                src="../assets/svgs/replace.svg"
+                src="assets/svgs/replace.svg"
                 alt=""
               />
               Replace
@@ -1264,7 +1296,7 @@
           >
             <img
               class="aspect-square w-[140px] object-cover object-center"
-              src="../assets/images/artists/1.png"
+              src="assets/images/artists/1.png"
               loading="lazy"
               alt=""
             />
@@ -1273,7 +1305,7 @@
             >
               <img
                 class="w-4 aspect-square"
-                src="../assets/svgs/camera.svg"
+                src="assets/svgs/camera.svg"
                 alt=""
               />
             </button>
@@ -1299,14 +1331,14 @@
                   <button>
                     <img
                       class="w-6 aspect-square"
-                      src="../assets/svgs/copy.svg"
+                      src="assets/svgs/copy.svg"
                       alt=""
                     />
                   </button>
                   <button class="profile-edit-btn">
                     <img
                       class="w-6 aspect-square"
-                      src="../assets/svgs/edit-profile.svg"
+                      src="assets/svgs/edit-profile.svg"
                       alt=""
                     />
                   </button>
@@ -1343,7 +1375,7 @@
                   <button class="profile-edit-btn">
                     <img
                       class="w-6 aspect-square"
-                      src="../assets/svgs/edit-profile.svg"
+                      src="assets/svgs/edit-profile.svg"
                       alt=""
                     />
                   </button>
@@ -1376,7 +1408,7 @@
                 <button class="absolute top-4 right-4 profile-edit-btn">
                   <img
                     class="w-6 aspect-square"
-                    src="../assets/svgs/edit-profile.svg"
+                    src="assets/svgs/edit-profile.svg"
                     alt=""
                   />
                 </button>
@@ -1406,7 +1438,7 @@
               >
                 <img
                   class="w-6 aspect-square"
-                  src="../assets/svgs/call.svg"
+                  src="assets/svgs/call.svg"
                   alt=""
                 />
                 <input
@@ -1419,7 +1451,7 @@
                 <button class="profile-edit-btn">
                   <img
                     class="w-6 aspect-square"
-                    src="../assets/svgs/edit-profile.svg"
+                    src="assets/svgs/edit-profile.svg"
                     alt=""
                   />
                 </button>
@@ -1444,7 +1476,7 @@
               >
                 <img
                   class="w-6 aspect-square"
-                  src="../assets/svgs/sms.svg"
+                  src="assets/svgs/sms.svg"
                   alt=""
                 />
                 <input
@@ -1457,7 +1489,7 @@
                 <button class="profile-edit-btn">
                   <img
                     class="w-6 aspect-square"
-                    src="../assets/svgs/edit-profile.svg"
+                    src="assets/svgs/edit-profile.svg"
                     alt=""
                   />
                 </button>
@@ -1482,7 +1514,7 @@
               >
                 <img
                   class="w-6 aspect-square"
-                  src="../assets/svgs/global-1.svg"
+                  src="assets/svgs/global-1.svg"
                   alt=""
                 />
                 <input
@@ -1495,7 +1527,7 @@
                 <button class="profile-edit-btn">
                   <img
                     class="w-6 aspect-square"
-                    src="../assets/svgs/edit-profile.svg"
+                    src="assets/svgs/edit-profile.svg"
                     alt=""
                   />
                 </button>
@@ -1545,21 +1577,21 @@
               <button>
                 <img
                   class="w-6 aspect-square"
-                  src="../assets/svgs/zoom-in.svg"
+                  src="assets/svgs/zoom-in.svg"
                   alt=""
                 />
               </button>
               <button>
                 <img
                   class="w-6 aspect-square"
-                  src="../assets/svgs/frame.svg"
+                  src="assets/svgs/frame.svg"
                   alt=""
                 />
               </button>
               <button>
                 <img
                   class="w-6 aspect-square"
-                  src="../assets/svgs/maximize.svg"
+                  src="assets/svgs/maximize.svg"
                   alt=""
                 />
               </button>
@@ -1569,7 +1601,7 @@
             <div class="px-16">
               <img
                 class="w-full h-full object-cover rounded"
-                src="../assets/images/gallery.jpg"
+                src="assets/images/gallery.jpg"
                 loading=""
                 alt=""
               />
@@ -1577,16 +1609,12 @@
             <button
               class="absolute right-0 top-1/2 -translate-y-1/2 z-10 p-1.5 aspect-square bg-white rounded-full"
             >
-              <img src="../assets/svgs/arrow-next.svg" alt="" />
+              <img src="assets/svgs/arrow-next.svg" alt="" />
             </button>
             <button
               class="absolute left-0 top-1/2 -translate-y-1/2 z-10 p-1.5 aspect-square bg-white rounded-full"
             >
-              <img
-                class="rotate-180"
-                src="../assets/svgs/arrow-next.svg"
-                alt=""
-              />
+              <img class="rotate-180" src="assets/svgs/arrow-next.svg" alt="" />
             </button>
           </div>
         </div>
@@ -1596,14 +1624,14 @@
               <div class="flex items-center gap-2">
                 <img
                   class="w-12 aspect-square rounded-lg"
-                  src="../assets/images/artists/2.png"
+                  src="assets/images/artists/2.png"
                   loading="lazy"
                   alt=""
                 />
                 <div>
                   <div class="flex items-center gap-1 text-18 font-semibold">
                     <span>IBerD</span>
-                    <img src="../assets/svgs/verify.svg" alt="" />
+                    <img src="assets/svgs/verify.svg" alt="" />
                   </div>
                   <div class="text-14 text-grey-400">5 days ago</div>
                 </div>
@@ -1613,7 +1641,7 @@
               >
                 <img
                   class="w-4 lg:w-6 aspect-square"
-                  src="../assets/svgs/more.svg"
+                  src="assets/svgs/more.svg"
                   alt=""
                 />
               </div>
@@ -1627,7 +1655,7 @@
               <button class="flex items-center gap-2 text-base justify-center">
                 <img
                   class="w-6 aspect-square"
-                  src="../assets/svgs/heart.svg"
+                  src="assets/svgs/heart.svg"
                   alt=""
                 />
                 200
@@ -1635,7 +1663,7 @@
               <button class="flex items-center gap-2 text-base justify-center">
                 <img
                   class="w-6 aspect-square"
-                  src="../assets/svgs/ms-comment.svg"
+                  src="assets/svgs/ms-comment.svg"
                   alt=""
                 />
                 200
@@ -1643,7 +1671,7 @@
               <button class="flex items-center gap-2 text-base justify-center">
                 <img
                   class="w-6 aspect-square"
-                  src="../assets/svgs/repost.svg"
+                  src="assets/svgs/repost.svg"
                   alt=""
                 />
                 200
@@ -1652,7 +1680,7 @@
             <div class="mt-3 flex items-center gap-3">
               <img
                 class="w-11 aspect-square rounded-lg object-cover object-center"
-                src="../assets/images/artists/3.png"
+                src="assets/images/artists/3.png"
                 loading="lazy"
                 alt=""
               />
@@ -1667,7 +1695,7 @@
               <a href="#">
                 <img
                   class="rounded-lg w-12 aspect-square mr-3"
-                  src="../assets/images/artists/3.png"
+                  src="assets/images/artists/3.png"
                   alt=""
                 />
               </a>
@@ -1688,13 +1716,13 @@
                     </div>
                   </div>
                   <button>
-                    <img src="../assets/svgs/heart-outline.svg" alt="" />
+                    <img src="assets/svgs/heart-outline.svg" alt="" />
                   </button>
                 </div>
                 <div class="reply-cmt-box">
                   <img
                     class="w-9 aspect-square rounded-xl object-cover object-center"
-                    src="../assets/images/artists/3.png"
+                    src="assets/images/artists/3.png"
                     loading="lazy"
                     alt=""
                   />
@@ -1730,7 +1758,7 @@
               <a href="#">
                 <img
                   class="rounded-lg w-12 aspect-square mr-3"
-                  src="../assets/images/artists/3.png"
+                  src="assets/images/artists/3.png"
                   alt=""
                 />
               </a>
@@ -1755,13 +1783,13 @@
                     </div>
                   </div>
                   <button>
-                    <img src="../assets/svgs/heart-outline.svg" alt="" />
+                    <img src="assets/svgs/heart-outline.svg" alt="" />
                   </button>
                 </div>
                 <div class="reply-cmt-box">
                   <img
                     class="w-9 aspect-square rounded-xl object-cover object-center"
-                    src="../assets/images/artists/3.png"
+                    src="assets/images/artists/3.png"
                     loading="lazy"
                     alt=""
                   />
@@ -1797,7 +1825,7 @@
               <a href="#">
                 <img
                   class="rounded-lg w-12 aspect-square mr-3"
-                  src="../assets/images/artists/3.png"
+                  src="assets/images/artists/3.png"
                   alt=""
                 />
               </a>
@@ -1823,13 +1851,13 @@
                     </div>
                   </div>
                   <button>
-                    <img src="../assets/svgs/heart-outline.svg" alt="" />
+                    <img src="assets/svgs/heart-outline.svg" alt="" />
                   </button>
                 </div>
                 <div class="reply-cmt-box">
                   <img
                     class="w-9 aspect-square rounded-xl object-cover object-center"
-                    src="../assets/images/artists/3.png"
+                    src="assets/images/artists/3.png"
                     loading="lazy"
                     alt=""
                   />
@@ -1865,7 +1893,7 @@
               <a href="#">
                 <img
                   class="rounded-lg w-12 aspect-square mr-3"
-                  src="../assets/images/artists/3.png"
+                  src="assets/images/artists/3.png"
                   alt=""
                 />
               </a>
@@ -1890,13 +1918,13 @@
                     </div>
                   </div>
                   <button>
-                    <img src="../assets/svgs/heart-outline.svg" alt="" />
+                    <img src="assets/svgs/heart-outline.svg" alt="" />
                   </button>
                 </div>
                 <div class="reply-cmt-box">
                   <img
                     class="w-9 aspect-square rounded-xl object-cover object-center"
-                    src="../assets/images/artists/3.png"
+                    src="assets/images/artists/3.png"
                     loading="lazy"
                     alt=""
                   />
@@ -1931,7 +1959,7 @@
                     <div class="flex items-start">
                       <img
                         class="rounded-lg flex-grow-0 flex-shrink-0 w-9 aspect-square mr-3"
-                        src="../assets/images/artists/3.png"
+                        src="assets/images/artists/3.png"
                         alt=""
                       />
                       <div class="cmt-box-right">
@@ -1958,7 +1986,7 @@
                     <div class="reply-cmt-box">
                       <img
                         class="w-9 aspect-square rounded-xl object-cover object-center"
-                        src="../assets/images/artists/3.png"
+                        src="assets/images/artists/3.png"
                         loading="lazy"
                         alt=""
                       />
@@ -1998,7 +2026,7 @@
                     <div class="flex items-start">
                       <img
                         class="rounded-lg flex-grow-0 flex-shrink-0 w-9 aspect-square mr-3"
-                        src="../assets/images/artists/3.png"
+                        src="assets/images/artists/3.png"
                         alt=""
                       />
                       <div class="cmt-box-right">
@@ -2025,7 +2053,7 @@
                     <div class="reply-cmt-box">
                       <img
                         class="w-9 aspect-square rounded-xl object-cover object-center"
-                        src="../assets/images/artists/3.png"
+                        src="assets/images/artists/3.png"
                         loading="lazy"
                         alt=""
                       />
@@ -2065,7 +2093,7 @@
                     <div class="flex items-start">
                       <img
                         class="rounded-lg flex-grow-0 flex-shrink-0 w-9 aspect-square mr-3"
-                        src="../assets/images/artists/3.png"
+                        src="assets/images/artists/3.png"
                         alt=""
                       />
                       <div class="cmt-box-right">
@@ -2092,7 +2120,7 @@
                     <div class="reply-cmt-box">
                       <img
                         class="w-9 aspect-square rounded-xl object-cover object-center"
-                        src="../assets/images/artists/3.png"
+                        src="assets/images/artists/3.png"
                         loading="lazy"
                         alt=""
                       />
@@ -2143,6 +2171,6 @@
     referrerpolicy="no-referrer"
   ></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script src="../js/index.js"></script>
-  <script src="../js/profile.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/profile.js"></script>
 </html>

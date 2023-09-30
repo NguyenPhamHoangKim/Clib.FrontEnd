@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="../styles/index.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="rounded-b-xl bg-white px-4 pb-3">
+    <div class="container !px-0 max-md:bg-grey-200">
+      <div class="md:rounded-b-xl bg-white lg:px-4 pb-3">
         <img
-          class="h-[260px] w-full rounded-b-xl object-cover object-center"
+          class="h-[160px] lg:h-[260px] w-full lg:rounded-b-xl object-cover object-center"
           src="../assets/images/profile/banner.jpg"
           alt=""
         />
@@ -27,24 +27,26 @@
             Follow</a
           >
         </div> OTHER -->
-        <div class="mt-4 flex items-center justify-end gap-3">
+        <div class="mt-4 flex max-lg:hidden items-center justify-end gap-3">
           <button id="show-edit-modal" href="#" class="btn-fourth h-11 gap-1.5">
             <img src="../assets/svgs/edit-profile.svg" alt="" /> Edit profile
           </button>
         </div>
-        <div class="mx-auto -mt-[210px] flex flex-col items-center">
+        <div
+          class="mx-auto -mt-[68px] lg:-mt-[210px] flex flex-col items-center"
+        >
           <div
             class="rounded-[32px] bg-white p-1 shadow-[0px_2px_20px_0px_rgba(0,0,0,0.08)]"
           >
             <img
-              class="aspect-square w-[200px] object-cover object-center"
+              class="aspect-square w-[120px] rounded-[32px] lg:w-[200px] object-cover object-center"
               src="../assets/images/artists/1.png"
               loading="lazy"
               alt=""
             />
           </div>
           <div
-            class="mt-4 flex items-center gap-1 whitespace-nowrap text-center text-24 font-semibold"
+            class="mt-4 flex items-center gap-1 whitespace-nowrap text-center text-18 lg:text-20 xl:text-24 font-semibold"
           >
             Son Tung M-TP
             <svg
@@ -61,24 +63,47 @@
               />
             </svg>
           </div>
-          <div class="mt-6 flex items-center justify-center gap-7">
+          <div
+            class="mt-3 lg:mt-4 xl:mt-6 flex items-center justify-center gap-7"
+          >
             <div class="flex flex-col items-center">
-              <span class="text-20 font-semibold">1280</span>
-              <span class="text-14 text-grey-400">Posts</span>
+              <span class="text-18 lg:text-20 font-semibold">1280</span>
+              <span class="text-12 lg:text-14 text-grey-400">Posts</span>
             </div>
             <div class="flex flex-col items-center">
-              <span class="text-20 font-semibold">53K</span>
-              <span class="text-14 text-grey-400">Followers</span>
+              <span class="text-18 lg:text-20 font-semibold">53K</span>
+              <span class="text-12 lg:text-14 text-grey-400">Followers</span>
             </div>
             <div class="flex flex-col items-center">
-              <span class="text-20 font-semibold">12,3K</span>
-              <span class="text-14 text-grey-400">Following</span>
+              <span class="text-18 lg:text-20 font-semibold">12,3K</span>
+              <span class="text-12 lg:text-14 text-grey-400">Following</span>
             </div>
           </div>
         </div>
-        <div class="relative mt-6">
+
+        <div
+          class="relative mt-4 lg:mt-6 flex items-center gap-x-2 lg:gap-x-6 px-4"
+        >
           <div
-            class="mx-auto flex w-fit items-center overflow-hidden rounded-xl bg-grey-100 p-1"
+            class="mx-auto flex gap-x-3 lg:hidden w-fit flex-shrink-0 items-center overflow-hidden"
+          >
+            <a
+              href="/profile"
+              class="px-5 md:px-6 py-4 h-11 rounded-xl bg-grey-200 flex items-center gap-x-1.5 font-semibold"
+            >
+              <img src="../assets/svgs/messenger.svg" alt="" />
+              Message
+            </a>
+            <a
+              href="/profile/music.html"
+              class="px-5 md:px-6 py-4 h-11 rounded-xl text-white flex items-center gap-x-1.5 bg-branding font-semibold"
+            >
+              <img src="../assets/svgs/profile-add.svg" alt="" />
+              Follow
+            </a>
+          </div>
+          <div
+            class="mx-auto hidden lg:flex w-fit items-center overflow-hidden rounded-xl bg-grey-100 p-1"
           >
             <a href="/profile" class="profile-nav active">
               <img src="../assets/svgs/profile-info-selected.svg" alt="" />
@@ -102,7 +127,7 @@
             </a>
           </div>
           <button
-            class="absolute right-0 top-0 h-12 max-h-full rounded-xl bg-grey-200 px-4 py-3 transition-transform duration-200 hover:scale-105"
+            class="h-11 lg:h-12 max-h-full rounded-xl bg-grey-200 px-4 py-3 transition-transform duration-200 hover:scale-105"
           >
             <svg
               width="24"
@@ -127,8 +152,10 @@
           </button>
         </div>
       </div>
-      <div class="mt-6 grid grid-cols-[1.2fr,2fr,1.2fr] gap-6">
-        <div class="flex flex-col gap-y-6">
+      <div
+        class="mt-2 lg:mt-4 w-full xl:mt-6 grid lg:grid-cols-[1fr_2fr] xl:grid-cols-[1.2fr,2fr,1.2fr] gap-6"
+      >
+        <div class="flex flex-col gap-y-6 max-lg:hidden">
           <div class="p-4 rounded-xl bg-white">
             <div class="text-20 font-semibold">About</div>
             <div class="mt-4 flex flex-col text-base text-grey-400">
@@ -156,7 +183,9 @@
                   src="../assets/svgs/sms.svg"
                   alt=""
                 />
-                <a href="mailto:partners@mtpentertainment.com"
+                <a
+                  class="block whitespace-nowrap text-ellipsis"
+                  href="mailto:partners@mtpentertainment.com"
                   >partners@mtpentertainment.com</a
                 >
               </div>
@@ -285,14 +314,14 @@
               </li>
             </ul>
           </div>
-          <div class="rounded-xl w-full pb-4 bg-white overflow-hidden">
+          <div class="rounded-xl w-full bg-white overflow-hidden">
             <div
               class="text-20 py-3 text-white bg-branding-secondary font-semibold justify-center flex items-center gap-x-1"
             >
               Marketplace
             </div>
-            <div class="p-4">
-              <div class="flex items-center justify-between">
+            <div class="p-4 pr-0">
+              <!-- <div class="flex items-center justify-between pr-4">
                 <div class="flex items-center">
                   <a
                     href="#"
@@ -312,45 +341,75 @@
                   >View all</a
                 >
               </div>
-              <!-- <div class="song-swiper swiper relative mt-4">
-                <div class="swiper-wrapper w-full max-w-full max-h-full h-full">
+              <div
+                id="goods-swiper"
+                class="song-swiper swiper relative mt-4 w-full"
+              >
+                <div class="swiper-wrapper">
                   <a href="#" class="swiper-slide">
-                    <div class="overflow-hidden rounded-lg aspect-square">
+                    <div class="overflow-hidden rounded-lg relative">
                       <img
-                        class="rounded-lg w-[120px] object-cover"
+                        class="w-full aspect-square rounded-lg object-cover"
                         src="../assets/images/songs/1.jpg"
                         loading="lazy"
                         alt=""
                       />
+                      <div
+                        class="font-semibold absolute bottom-1 right-1 text-white px-3 h-8 rounded-lg bg-black/60 backdrop-blur"
+                      >
+                        $12
+                      </div>
                     </div>
-                    <div class="mt-3 text-center text-base line-clamp-1">
-                      Album 2023
+                    <div class="mt-3">
+                      <div
+                        class="text-14 md:text-base text-center text-ellipsis whitespace-nowrap"
+                      >
+                        I Love You 3000
+                      </div>
                     </div>
                   </a>
                   <a href="#" class="swiper-slide">
-                    <div class="overflow-hidden rounded-lg aspect-square">
+                    <div class="overflow-hidden rounded-lg relative">
                       <img
-                        class="rounded-lg w-[120px] object-cover"
+                        class="w-full aspect-square rounded-lg object-cover"
                         src="../assets/images/songs/1.jpg"
                         loading="lazy"
                         alt=""
                       />
+                      <div
+                        class="font-semibold absolute bottom-1 right-1 text-white px-3 h-8 rounded-lg bg-black/60 backdrop-blur"
+                      >
+                        $12
+                      </div>
                     </div>
-                    <div class="mt-3 text-center text-base line-clamp-1">
-                      Album 2023
+                    <div class="mt-3">
+                      <div
+                        class="text-14 md:text-base text-center text-ellipsis whitespace-nowrap"
+                      >
+                        I Love You 3000
+                      </div>
                     </div>
                   </a>
                   <a href="#" class="swiper-slide">
-                    <div class="overflow-hidden rounded-lg aspect-square">
+                    <div class="overflow-hidden rounded-lg relative">
                       <img
-                        class="rounded-lg w-[120px] object-cover"
+                        class="w-full aspect-square rounded-lg object-cover"
                         src="../assets/images/songs/1.jpg"
                         loading="lazy"
                         alt=""
                       />
+                      <div
+                        class="font-semibold absolute bottom-1 right-1 text-white px-3 h-8 rounded-lg bg-black/60 backdrop-blur"
+                      >
+                        $12
+                      </div>
                     </div>
-                    <div class="mt-3 text-center text-base line-clamp-1">
-                      Album 2023
+                    <div class="mt-3">
+                      <div
+                        class="text-14 md:text-base text-center text-ellipsis whitespace-nowrap"
+                      >
+                        I Love You 3000
+                      </div>
                     </div>
                   </a>
                 </div>
@@ -369,7 +428,7 @@
                   />
                 </div>
               </div> -->
-              <div class="flex items-center justify-between">
+              <div class="flex items-center justify-between pr-4 mt-4">
                 <div class="flex items-center">
                   <a
                     href="#"
@@ -389,7 +448,7 @@
                   >View all</a
                 >
               </div>
-              <ul class="mt-4 flex flex-col gap-3">
+              <ul class="mt-4 flex flex-col gap-3 pr-4">
                 <li>
                   <a href="#" class="items-center flex gap-2">
                     <img
@@ -436,115 +495,75 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-col gap-6">
-          <div class="px-4 py-3 bg-white rounded-xl">
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-2">
-                <img
-                  class="w-12 aspect-square rounded-lg"
-                  src="../assets/images/artists/2.png"
-                  loading="lazy"
-                  alt=""
-                />
-                <div>
-                  <div class="flex items-center gap-1 text-18 font-semibold">
-                    <span>Son Tung M-TP</span>
-                    <img src="../assets/svgs/verify.svg" alt="" />
-                  </div>
-                  <div class="text-14 text-grey-400">5 days ago</div>
-                </div>
+        <div class="">
+          <div class="bg-white max-lg:block hidden md:rounded-xl md:mb-2">
+            <div class="px-4 overflow-x-auto max-w-full">
+              <div class="grid grid-cols-6">
+                <a href="./index.html" class="profile-nav-mobile active"
+                  >Feed</a
+                >
+                <a href="./info.html" class="profile-nav-mobile">Info</a>
+                <a href="./music.html" class="profile-nav-mobile">Music</a>
+                <a href="./video.html" class="profile-nav-mobile">Video</a>
+                <a href="./photo.html" class="profile-nav-mobile">Photo</a>
+                <a href="./marketplace.html" class="profile-nav-mobile"
+                  >Marketplace</a
+                >
               </div>
-              <div
-                class="hover:bg-bg toggle-more-menu p-1 cursor-pointer relative rounded-full duration-100 transition-colors"
-              >
-                <img
-                  class="w-4 lg:w-6 aspect-square"
-                  src="../assets/svgs/more.svg"
-                  alt=""
-                />
-              </div>
-            </div>
-            <p class="mt-4 text-base text-grey-400">
-              A small gift from me to you on my special day !
-            </p>
-            <div class="mt-4">
-              <img
-                class="w-full aspect-square rounded-xl object-cover object-center"
-                src="../assets/images/profile/feed1.jpg"
-                loading="lazy"
-                alt=""
-              />
-            </div>
-            <div class="mt-3 grid text-grey-400 grid-cols-3 items-center">
-              <button class="flex items-center gap-2 text-base justify-center">
-                <img
-                  class="w-6 aspect-square"
-                  src="../assets/svgs/heart.svg"
-                  alt=""
-                />
-                200 liked
-              </button>
-              <button class="flex items-center gap-2 text-base justify-center">
-                <img
-                  class="w-6 aspect-square"
-                  src="../assets/svgs/ms-comment.svg"
-                  alt=""
-                />
-                200 comments
-              </button>
-              <button class="flex items-center gap-2 text-base justify-center">
-                <img
-                  class="w-6 aspect-square"
-                  src="../assets/svgs/repost.svg"
-                  alt=""
-                />
-                200 reposts
-              </button>
             </div>
             <div
-              class="mt-4 pt-3 border-t border-t-grey-200 flex items-center gap-2"
+              class="py-3 border-y border-y-grey-200 pl-4 pr-3 flex items-center justify-between"
             >
-              <img
-                class="w-11 aspect-square rounded-xl object-cover object-center"
-                src="../assets/images/artists/3.png"
-                loading="lazy"
-                alt=""
-              />
-              <textarea
-                class="px-3 h-11 py-2.5 bg-grey-100 rounded-xl outline-none flex-1 max-h-full text-base placeholder:text-grey-300 resize-none"
+              <div class="text-grey-400 font-semibold text-16">
+                Post something
+              </div>
+              <div class="flex items-center gap-x-2">
+                <button class="rounded-xl p-2.5 bg-grey-100">
+                  <img src="../assets/svgs/music1.svg" alt="" />
+                </button>
+                <button class="rounded-xl p-2.5 bg-grey-100">
+                  <img src="../assets/svgs/video-play.svg" alt="" />
+                </button>
+                <button class="rounded-xl p-2.5 bg-grey-100">
+                  <img src="../assets/svgs/gallery.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="flex items-center gap-x-2 px-4 py-3">
+              <div class="w-11 flex-shrink-0">
+                <img
+                  class="w-full rounded-xl aspect-square"
+                  src="../assets/images/artists/2.png"
+                  alt=""
+                />
+              </div>
+              <input
+                type="text"
+                class="flex-1 outline-none px-3 py-2.5 placeholder:text-grey-300 bg-grey-100 rounded-xl"
                 placeholder="What’s on in your mind...."
-              ></textarea>
+              />
             </div>
           </div>
-          <div class="py-3 bg-white rounded-xl">
-            <div
-              class="px-4 text-grey-400 text-14 flex items-center gap-1.5 pb-3 border-b border-b-grey-200 mb-3"
-            >
-              <img
-                class="w-6 aspect-square"
-                src="../assets/svgs/repost.svg"
-                alt=""
-              />
-              <div>
-                <b>Son Tung M-TP</b>
-                reposted a playlist
-              </div>
-            </div>
-            <div class="px-4">
+          <div
+            class="max-md:mt-2 flex flex-col gap-y-2 lg:gap-y-4 xl:gap-y-6 pb-20"
+          >
+            <div class="px-4 py-3 bg-white md:rounded-xl">
               <div class="flex items-center justify-between">
                 <div class="flex items-center gap-2">
                   <img
-                    class="w-12 aspect-square rounded-lg"
+                    class="w-11 lg:w-12 aspect-square rounded-lg"
                     src="../assets/images/artists/2.png"
                     loading="lazy"
                     alt=""
                   />
                   <div>
-                    <div class="flex items-center gap-1 text-18 font-semibold">
-                      <span>Mark Knopfler</span>
+                    <div
+                      class="flex items-center gap-1 text-base lg:text-18 font-semibold"
+                    >
+                      <span>Son Tung M-TP</span>
                       <img src="../assets/svgs/verify.svg" alt="" />
                     </div>
-                    <div class="text-14 text-grey-400">10 days ago</div>
+                    <div class="text-14 text-grey-400">5 days ago</div>
                   </div>
                 </div>
                 <div
@@ -557,173 +576,62 @@
                   />
                 </div>
               </div>
-              <p class="mt-4 text-base text-grey-400">New playlist !</p>
+              <p class="mt-4 text-base text-grey-400">
+                A small gift from me to you on my special day !
+              </p>
               <div class="mt-4">
-                <div class="flex max-h-[220px] bg-bg gap-4 rounded-xl p-4">
-                  <div
-                    class="aspect-square max-w-[220px] flex-shrink-0 overflow-hidden rounded-lg"
-                  >
-                    <img
-                      class="h-full w-full rounded-lg object-cover"
-                      src="../assets/images/playlists/1-pc.png"
-                      loading="lazy"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex flex-1 flex-col justify-between gap-y-3">
-                    <div>
-                      <div class="flex items-center justify-between">
-                        <div class="text-20 font-semibold">Chill with me!</div>
-                        <button>
-                          <img src="../assets/svgs/heart-outline.svg" alt="" />
-                        </button>
-                      </div>
-                      <div class="mt-1.5 flex items-center gap-3">
-                        <span
-                          class="flex items-center gap-1 text-14 text-grey-400"
-                        >
-                          <img src="../assets/svgs/music-grey.svg" alt="" />
-                          22 songs</span
-                        >
-                        <span
-                          class="flex items-center gap-1 text-14 text-grey-400"
-                        >
-                          <img src="../assets/svgs/heart-grey.svg" alt="" />
-                          20K liked</span
-                        >
-                      </div>
-                    </div>
-                    <ul class="scrollbar-custom flex-1 overflow-y-auto">
-                      <li>
-                        <a
-                          href="#"
-                          class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                        >
-                          <div class="flex items-center gap-2">
-                            <div
-                              class="w-6 flex-shrink-0 text-center text-base font-semibold text-grey-400"
-                            >
-                              1
-                            </div>
-                            <div class="max-w-[180px]">
-                              <div class="line-clamp-1 text-base font-semibold">
-                                Yearning for Quiet Monkeys
-                              </div>
-                              <div class="mt-1 text-14 text-grey-400">
-                                Robbie Williams
-                              </div>
-                            </div>
-                          </div>
-                          <div class="text-14 text-grey-400">02:00</div>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                        >
-                          <div class="flex items-center gap-2">
-                            <div
-                              class="w-6 flex-shrink-0 text-center text-base font-semibold text-grey-400"
-                            >
-                              2
-                            </div>
-                            <div class="max-w-[180px]">
-                              <div class="line-clamp-1 text-base font-semibold">
-                                Yearning for Quiet Monkeys
-                              </div>
-                              <div class="mt-1 text-14 text-grey-400">
-                                Robbie Williams
-                              </div>
-                            </div>
-                          </div>
-                          <div class="text-14 text-grey-400">02:00</div>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                        >
-                          <div class="flex items-center gap-2">
-                            <div
-                              class="w-6 flex-shrink-0 text-center text-base font-semibold text-grey-400"
-                            >
-                              3
-                            </div>
-                            <div class="max-w-[180px]">
-                              <div class="line-clamp-1 text-base font-semibold">
-                                Yearning for Quiet Monkeys
-                              </div>
-                              <div class="mt-1 text-14 text-grey-400">
-                                Robbie Williams
-                              </div>
-                            </div>
-                          </div>
-                          <div class="text-14 text-grey-400">02:00</div>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                        >
-                          <div class="flex items-center gap-2">
-                            <div
-                              class="w-6 flex-shrink-0 text-center text-base font-semibold text-grey-400"
-                            >
-                              4
-                            </div>
-                            <div class="max-w-[180px]">
-                              <div class="line-clamp-1 text-base font-semibold">
-                                Yearning for Quiet Monkeys
-                              </div>
-                              <div class="mt-1 text-14 text-grey-400">
-                                Robbie Williams
-                              </div>
-                            </div>
-                          </div>
-                          <div class="text-14 text-grey-400">02:00</div>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                <img
+                  class="w-full aspect-square rounded-xl object-cover object-center"
+                  src="../assets/images/profile/feed1.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
+              <div
+                class="flex md:hidden items-center justify-between text-14 text-grey-400 border-b border-b-grey-200 pb-3 mt-3"
+              >
+                <div>200 liked</div>
+                <div class="flex items-center gap-x-3">
+                  <div>200 comments</div>
+                  <div>200 reposts</div>
                 </div>
               </div>
-              <div class="mt-3 grid text-grey-400 grid-cols-3 items-center">
+              <div
+                class="mt-3 grid text-grey-400 grid-cols-3 items-center text-14 md:text-base"
+              >
                 <button
-                  class="flex items-center gap-2 text-base justify-center"
+                  class="flex items-center gap-2 text-14 lg:text-base justify-center max-md:capitalize"
                 >
                   <img
                     class="w-6 aspect-square"
                     src="../assets/svgs/heart.svg"
                     alt=""
                   />
-                  200 liked
+                  <span class="hidden md:inline-block">200</span> liked
                 </button>
                 <button
-                  class="flex items-center gap-2 text-base justify-center"
+                  class="flex items-center gap-2 text-14 lg:text-base justify-center max-md:capitalize"
                 >
                   <img
                     class="w-6 aspect-square"
                     src="../assets/svgs/ms-comment.svg"
                     alt=""
                   />
-                  200 comments
+                  <span class="hidden md:inline-block">200</span> comments
                 </button>
                 <button
-                  class="flex items-center gap-2 text-base justify-center"
+                  class="flex items-center gap-2 text-14 lg:text-base justify-center max-md:capitalize"
                 >
                   <img
                     class="w-6 aspect-square"
                     src="../assets/svgs/repost.svg"
                     alt=""
                   />
-                  200 reposts
+                  <span class="hidden md:inline-block">200</span> reposts
                 </button>
               </div>
               <div
-                class="mt-4 pt-3 border-t border-t-grey-200 flex items-center gap-2"
+                class="mt-3 lg:mt-4 pt-3 border-t border-t-grey-200 flex items-center gap-2"
               >
                 <img
                   class="w-11 aspect-square rounded-xl object-cover object-center"
@@ -737,9 +645,293 @@
                 ></textarea>
               </div>
             </div>
+            <div class="px-4 py-3 bg-white md:rounded-xl">
+              <div
+                class="text-grey-400 text-14 flex items-center gap-1.5 pb-3 border-b border-b-grey-200 mb-3"
+              >
+                <img
+                  class="w-6 aspect-square"
+                  src="../assets/svgs/repost.svg"
+                  alt=""
+                />
+                <div>
+                  <b>Son Tung M-TP</b>
+                  reposted a playlist
+                </div>
+              </div>
+              <div class="md:px-4">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <img
+                      class="w-11 lg:w-12 aspect-square rounded-lg"
+                      src="../assets/images/artists/2.png"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <div>
+                      <div
+                        class="flex items-center gap-1 text-base lg:text-18 font-semibold"
+                      >
+                        <span>Mark Knopfler</span>
+                        <img src="../assets/svgs/verify.svg" alt="" />
+                      </div>
+                      <div class="text-12 lg:text-14 text-grey-400">
+                        10 days ago
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="hover:bg-bg toggle-more-menu p-1 cursor-pointer relative rounded-full duration-100 transition-colors"
+                  >
+                    <img
+                      class="w-4 lg:w-6 aspect-square"
+                      src="../assets/svgs/more.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <p class="mt-4 text-base text-grey-400">New playlist !</p>
+                <div class="mt-4">
+                  <div
+                    class="hidden md:flex max-h-[220px] bg-bg gap-4 rounded-xl p-4"
+                  >
+                    <div
+                      class="aspect-square max-w-[220px] flex-shrink-0 overflow-hidden rounded-lg"
+                    >
+                      <img
+                        class="h-full w-full rounded-lg object-cover"
+                        src="../assets/images/playlists/1-pc.png"
+                        loading="lazy"
+                        alt=""
+                      />
+                    </div>
+                    <div class="flex flex-1 flex-col justify-between gap-y-3">
+                      <div>
+                        <div class="flex items-center justify-between">
+                          <div class="text-20 font-semibold">
+                            Chill with me!
+                          </div>
+                          <button>
+                            <img
+                              src="../assets/svgs/heart-outline.svg"
+                              alt=""
+                            />
+                          </button>
+                        </div>
+                        <div class="mt-1.5 flex items-center gap-3">
+                          <span
+                            class="flex items-center gap-1 text-14 text-grey-400"
+                          >
+                            <img src="../assets/svgs/music-grey.svg" alt="" />
+                            22 songs</span
+                          >
+                          <span
+                            class="flex items-center gap-1 text-14 text-grey-400"
+                          >
+                            <img src="../assets/svgs/heart-grey.svg" alt="" />
+                            20K liked</span
+                          >
+                        </div>
+                      </div>
+                      <ul class="scrollbar-custom flex-1 overflow-y-auto">
+                        <li>
+                          <a
+                            href="#"
+                            class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                          >
+                            <div class="flex items-center gap-2">
+                              <div
+                                class="w-6 flex-shrink-0 text-center text-base font-semibold text-grey-400"
+                              >
+                                1
+                              </div>
+                              <div class="max-w-[180px]">
+                                <div
+                                  class="line-clamp-1 text-base font-semibold"
+                                >
+                                  Yearning for Quiet Monkeys
+                                </div>
+                                <div class="mt-1 text-14 text-grey-400">
+                                  Robbie Williams
+                                </div>
+                              </div>
+                            </div>
+                            <div class="text-14 text-grey-400">02:00</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                          >
+                            <div class="flex items-center gap-2">
+                              <div
+                                class="w-6 flex-shrink-0 text-center text-base font-semibold text-grey-400"
+                              >
+                                2
+                              </div>
+                              <div class="max-w-[180px]">
+                                <div
+                                  class="line-clamp-1 text-base font-semibold"
+                                >
+                                  Yearning for Quiet Monkeys
+                                </div>
+                                <div class="mt-1 text-14 text-grey-400">
+                                  Robbie Williams
+                                </div>
+                              </div>
+                            </div>
+                            <div class="text-14 text-grey-400">02:00</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                          >
+                            <div class="flex items-center gap-2">
+                              <div
+                                class="w-6 flex-shrink-0 text-center text-base font-semibold text-grey-400"
+                              >
+                                3
+                              </div>
+                              <div class="max-w-[180px]">
+                                <div
+                                  class="line-clamp-1 text-base font-semibold"
+                                >
+                                  Yearning for Quiet Monkeys
+                                </div>
+                                <div class="mt-1 text-14 text-grey-400">
+                                  Robbie Williams
+                                </div>
+                              </div>
+                            </div>
+                            <div class="text-14 text-grey-400">02:00</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                          >
+                            <div class="flex items-center gap-2">
+                              <div
+                                class="w-6 flex-shrink-0 text-center text-base font-semibold text-grey-400"
+                              >
+                                4
+                              </div>
+                              <div class="max-w-[180px]">
+                                <div
+                                  class="line-clamp-1 text-base font-semibold"
+                                >
+                                  Yearning for Quiet Monkeys
+                                </div>
+                                <div class="mt-1 text-14 text-grey-400">
+                                  Robbie Williams
+                                </div>
+                              </div>
+                            </div>
+                            <div class="text-14 text-grey-400">02:00</div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div
+                    class="flex md:hidden h-[220px] bg-grey-100 p-3 rounded-xl items-center gap-x-3"
+                  >
+                    <div class="w-1/2 h-full">
+                      <img
+                        class="w-full h-full aspect-square"
+                        src="../assets/images/playlists/1.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="w-1/2">
+                      <b class="text-14">Chill with me!</b>
+                      <div class="my-1 text-12">Robbie Williams</div>
+                      <div
+                        class="flex items-center gap-x-2 text-12 text-grey-400"
+                      >
+                        <div class="flex items-center gap-1">
+                          <img
+                            class="aspect-square w-4 rounded-lg object-cover"
+                            src="../assets/svgs/music-grey.svg"
+                            loading="lazy"
+                            alt=""
+                          />
+                          18 songs
+                        </div>
+                        <div class="flex items-center gap-1">
+                          <img src="../assets/svgs/heart-grey.svg" alt="" /> 200
+                          liked
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex md:hidden items-center justify-between text-14 text-grey-400 border-b border-b-grey-200 pb-3 mt-3"
+                >
+                  <div>200 liked</div>
+                  <div class="flex items-center gap-x-3">
+                    <div>200 comments</div>
+                    <div>200 reposts</div>
+                  </div>
+                </div>
+                <div
+                  class="mt-3 grid text-grey-400 grid-cols-3 items-center text-14 md:text-base"
+                >
+                  <button
+                    class="flex items-center gap-2 text-14 lg:text-base justify-center max-md:capitalize"
+                  >
+                    <img
+                      class="w-6 aspect-square"
+                      src="../assets/svgs/heart.svg"
+                      alt=""
+                    />
+                    <span class="hidden md:inline-block">200</span> liked
+                  </button>
+                  <button
+                    class="flex items-center gap-2 text-14 lg:text-base justify-center max-md:capitalize"
+                  >
+                    <img
+                      class="w-6 aspect-square"
+                      src="../assets/svgs/ms-comment.svg"
+                      alt=""
+                    />
+                    <span class="hidden md:inline-block">200</span> comments
+                  </button>
+                  <button
+                    class="flex items-center gap-2 text-14 lg:text-base justify-center max-md:capitalize"
+                  >
+                    <img
+                      class="w-6 aspect-square"
+                      src="../assets/svgs/repost.svg"
+                      alt=""
+                    />
+                    <span class="hidden md:inline-block">200</span> reposts
+                  </button>
+                </div>
+                <div
+                  class="mt-3 lg:mt-4 pt-3 border-t border-t-grey-200 flex items-center gap-2"
+                >
+                  <img
+                    class="w-11 aspect-square rounded-xl object-cover object-center"
+                    src="../assets/images/artists/3.png"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <textarea
+                    class="px-3 h-11 py-2.5 bg-grey-100 rounded-xl outline-none flex-1 max-h-full text-base placeholder:text-grey-300 resize-none"
+                    placeholder="What’s on in your mind...."
+                  ></textarea>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="flex flex-col gap-6">
+        <div class="flex flex-col gap-6 max-xl:hidden">
           <div class="rounded-xl pt-4 bg-white">
             <div class="text-20 font-semibold px-4">Who to follow</div>
             <ul class="mt-2">
@@ -1742,17 +1934,19 @@
             <div class="flex items-center py-4 justify-between">
               <div class="flex items-center gap-2">
                 <img
-                  class="w-12 aspect-square rounded-lg"
+                  class="w-11 lg:w-12 aspect-square rounded-lg"
                   src="../assets/images/artists/2.png"
                   loading="lazy"
                   alt=""
                 />
                 <div>
-                  <div class="flex items-center gap-1 text-18 font-semibold">
+                  <div
+                    class="flex items-center gap-1 text-base lg:text-18 font-semibold"
+                  >
                     <span>IBerD</span>
                     <img src="../assets/svgs/verify.svg" alt="" />
                   </div>
-                  <div class="text-14 text-grey-400">5 days ago</div>
+                  <div class="text-12 lg:text-14 text-grey-400">5 days ago</div>
                 </div>
               </div>
               <div
@@ -2291,5 +2485,5 @@
   ></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="../js/index.js"></script>
-  <script src="../js/profile.js"></script>
+  <script src="../js/profile.js?v=1"></script>
 </html>
