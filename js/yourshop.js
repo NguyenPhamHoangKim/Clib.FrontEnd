@@ -14,16 +14,9 @@ new Swiper(".albums-swiper", {
   },
   autoResize: false,
   breakpoints: {
-    320: {
-      slidesPerView: 1.8,
-    },
-    680: {
-      slidesPerView: 4.5,
-      spaceBetween: 14,
-    },
-    1024: {
-      slidesPerView: 6.5,
-      spaceBetween: 16,
+    500: {
+      spaceBetween: 12,
+      slidesPerView: 2.8,
     },
   },
 });
