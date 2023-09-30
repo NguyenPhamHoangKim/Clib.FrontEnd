@@ -97,7 +97,9 @@ $(".add-playlist-btn").each(function (idx) {
 });
 
 $(".show-create-playlist-popup").each(function () {
-  $(this).click(function () {
+  $(this).click(function (e) {
+    e.stopPropagation();
+    e.preventDefault();
     $(".add-playlist-modal").addClass("active");
   });
 });

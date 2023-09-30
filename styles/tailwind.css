@@ -298,7 +298,7 @@ a.swiper-slide.digital-item:hover .digital-thumb {
   @apply flex;
 }
 .add-playlist-modal--inner {
-  @apply relative flex w-[640px] max-w-full flex-col overflow-hidden rounded-xl bg-white px-6 py-4 pt-0;
+  @apply relative flex w-[640px] max-w-full flex-col max-h-[90vh] overflow-hidden rounded-xl bg-white px-6 py-4 pt-0;
 }
 
 .add-playlist-btn {
@@ -586,4 +586,10 @@ input {
 .bg-video {
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10px);
+}
+.sidebar-video-item {
+  @apply hover:bg-bg duration-100 transition-colors w-full gap-2 p-2 flex items-center -mx-2 rounded-lg line-clamp-2;
+}
+.sidebar-video-item.isPlaying {
+  @apply bg-bg;
 }

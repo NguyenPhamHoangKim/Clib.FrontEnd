@@ -42,12 +42,20 @@ module.exports = {
         md: "0",
       },
       screens: {
-        sm: "680px",
-        md: "768px",
+        sm: "620px",
+        md: "750px",
         lg: "960px",
         xl: "1160px",
         "2xl": "1320px",
       },
+    },
+    screens: {
+      xsm: "450px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
     },
     fontSize: {
       base: ["16px", "24px"],
