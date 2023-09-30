@@ -1147,11 +1147,6 @@ body{
   margin-right: -0.5rem;
 }
 
-.-mx-4{
-  margin-left: -1rem;
-  margin-right: -1rem;
-}
-
 .mx-0{
   margin-left: 0px;
   margin-right: 0px;
@@ -1501,6 +1496,10 @@ body{
   display: flex;
 }
 
+.\!flex{
+  display: flex !important;
+}
+
 .inline-flex{
   display: inline-flex;
 }
@@ -1591,6 +1590,11 @@ body{
 
 .\!h-3{
   height: 0.75rem !important;
+}
+
+.\!h-fit{
+  height: -moz-fit-content !important;
+  height: fit-content !important;
 }
 
 .h-0{
@@ -1753,6 +1757,10 @@ body{
   height: 400px;
 }
 
+.h-\[450px\]{
+  height: 450px;
+}
+
 .h-\[456px\]{
   height: 456px;
 }
@@ -1834,13 +1842,8 @@ body{
   height: 100vh;
 }
 
-.\!h-fit{
-  height: -moz-fit-content !important;
-  height: fit-content !important;
-}
-
-.h-\[450px\]{
-  height: 450px;
+.h-\[90px\]{
+  height: 90px;
 }
 
 .max-h-12{
@@ -1889,6 +1892,18 @@ body{
 
 .max-h-full{
   max-height: 100%;
+}
+
+.max-h-\[90px\]{
+  max-height: 90px;
+}
+
+.max-h-\[90vh\]{
+  max-height: 90vh;
+}
+
+.max-h-\[70vh\]{
+  max-height: 70vh;
 }
 
 .min-h-\[100px\]{
@@ -2698,10 +2713,6 @@ body{
   grid-template-columns: 1.2fr 2fr 1.2fr;
 }
 
-.grid-cols-\[1fr_360px\]{
-  grid-template-columns: 1fr 360px;
-}
-
 .grid-cols-\[256px\2c 1fr\]{
   grid-template-columns: 256px 1fr;
 }
@@ -3222,12 +3233,12 @@ body{
   overflow: auto;
 }
 
-.overflow-hidden{
-  overflow: hidden;
-}
-
 .\!overflow-hidden{
   overflow: hidden !important;
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .overflow-clip{
@@ -5101,6 +5112,10 @@ body{
   transition-duration: 100ms;
 }
 
+.duration-150{
+  transition-duration: 150ms;
+}
+
 .duration-200{
   transition-duration: 200ms;
 }
@@ -5115,10 +5130,6 @@ body{
 
 .duration-75{
   transition-duration: 75ms;
-}
-
-.duration-150{
-  transition-duration: 150ms;
 }
 
 .ease-in{
@@ -7127,6 +7138,10 @@ input {
     max-height: none;
   }
 
+  .lg\:max-h-\[90vh\]{
+    max-height: 90vh;
+  }
+
   .lg\:w-12{
     width: 3rem;
   }
@@ -7219,6 +7234,10 @@ input {
     width: 100%;
   }
 
+  .lg\:w-\[100px\]{
+    width: 100px;
+  }
+
   .lg\:max-w-\[308px\]{
     max-width: 308px;
   }
@@ -7307,6 +7326,11 @@ input {
 
   .lg\:gap-y-6{
     row-gap: 1.5rem;
+  }
+
+  .lg\:gap-x-2{
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
   }
 
   .lg\:rounded-b-xl{
@@ -7493,6 +7517,10 @@ input {
 
   .xl\:p-8{
     padding: 2rem;
+  }
+
+  .xl\:p-6{
+    padding: 1.5rem;
   }
 
   .xl\:text-14{
