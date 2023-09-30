@@ -7461,6 +7461,10 @@ input {
     grid-template-columns: 1.2fr 2fr 1.2fr;
   }
 
+  .xl\:grid-cols-\[1fr_360px\]{
+    grid-template-columns: 1fr 360px;
+  }
+
   .xl\:gap-4{
     gap: 1rem;
   }
