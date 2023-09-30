@@ -1839,6 +1839,10 @@ body{
   height: fit-content !important;
 }
 
+.h-\[450px\]{
+  height: 450px;
+}
+
 .max-h-12{
   max-height: 3rem;
 }
@@ -7431,6 +7435,10 @@ input {
 
   .xl\:mt-\[140px\]{
     margin-top: 140px;
+  }
+
+  .xl\:hidden{
+    display: none;
   }
 
   .xl\:w-12{
