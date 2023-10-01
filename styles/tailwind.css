@@ -45,6 +45,12 @@
   .btn-outline {
     @apply block w-[100px] rounded-xl border border-branding py-2 text-14 font-semibold text-branding transition-colors duration-75 hover:bg-branding hover:text-white;
   }
+  .header-item-link {
+    @apply block rounded-xl py-2.5 text-center text-base uppercase text-grey-300 transition-colors duration-75 hover:bg-branding-tertiary hover:text-white;
+  }
+  .header-item-link.active {
+    @apply bg-branding-tertiary text-white;
+  }
 }
 @tailwind utilities;
 
