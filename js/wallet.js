@@ -21,3 +21,19 @@ $(".btn-monney").each(function () {
     $(".modal-money").show();
   });
 });
+
+checkClickOutside(
+  "modal-paypal",
+  function () {
+    $(".modal-paypal").hide();
+  },
+  "btn-paypal",
+);
+
+checkClickOutside(
+  "modal-money",
+  function () {
+    $(".modal-money").hide();
+  },
+  "btn-monney",
+);

@@ -8,14 +8,15 @@
   </head>
   <body>
     <main class="container relative">
-      <div class="modal-paypal overlay">
+      <div class="modal-paypal overlay px-4">
         <div
-          class="abs-center bg-[#fff] md:w-[95%] lg:w-[40%] p-6 rounded-tr-3xl rounded-tl-3xl md:rounded-xl flex flex-col justify-center items-center"
+          id="modal-paypal"
+          class="abs-center bg-[#fff] p-6 rounded-xl flex flex-col justify-center items-center w-[590px] max-w-[95%]"
         >
           <img
             src="../assets/svgs/close.svg"
             alt=""
-            class="absolute top-6 right-6 close-modal"
+            class="absolute top-4 right-4 w-4 close-modal"
           />
           <h5 class="text-18 lg:text-24 font-semibold text-[#2C2F33] mb-2">
             Top-up
@@ -23,7 +24,9 @@
           <p class="text-12 lg:text-base text-[#52616B]">
             Select the amount you want to deposit in to your wallet
           </p>
-          <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 my-8 w-full">
+          <div
+            class="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-3 xl:gap-4 my-4 lg:my-6 xl:my-8 w-full"
+          >
             <button
               class="p-[10px] bg-[#ebeef0] text-[#2C2F33] text-14 lg:text-base font-semibold rounded-xl"
             >
@@ -67,32 +70,42 @@
           </div>
           <button
             type="button"
-            class="px-6 py-3 text-14 w-full text-[#fff] justify-center bg-[#003087] rounded-xl flex items-center gap-2 text-center transition-opacity duration-300 hover:opacity-70"
+            class="px-6 py-3 text-14 text-[#fff] justify-center bg-[#003087] rounded-xl flex items-center gap-2 text-center transition-opacity duration-300 hover:opacity-70 w-fit mx-auto"
           >
             <img src="../assets/svgs/image 167.png" alt="" />
-            Paypal to Clib wallet
+            Deposit via Paypal
           </button>
-          <p class="text-12 lg:text-base text-[#52616B] mt-8">
-            By clicking check out you agree to the License Terms and User Terms.
+          <p class="text-12 lg:text-base text-[#52616B] mt-8 line-clamp-1">
+            By clicking check out you agree to the
+            <a href="#" class="underline-offset-1 underline decoration-1"
+              >License Terms</a
+            >
+            and
+            <a href="#" class="underline-offset-1 underline decoration-1"
+              >User Terms.</a
+            >
           </p>
         </div>
       </div>
-      <div class="modal-money overlay">
+      <div class="modal-money overlay px-4">
         <div
-          class="abs-center bg-[#fff] p-6 rounded-xl flex flex-col justify-center items-center w-[95%] lg:w-[40%]"
+          id="modal-money"
+          class="abs-center bg-[#fff] p-6 rounded-xl flex flex-col justify-center items-center w-[590px] max-w-[95%]"
         >
           <img
             src="../assets/svgs/close.svg"
             alt=""
-            class="absolute top-6 right-6 close-modal"
+            class="absolute top-4 right-4 w-4 close-modal"
           />
           <h5 class="text-20 lg:text-24 font-semibold text-[#2C2F33] mb-2">
-            Top-up
+            Withdraw money
           </h5>
           <p class="text-14 text-center lg:text-base text-[#52616B]">
-            Select the amount you want to deposit in to your wallet
+            Select the amount you want to withdraw into your Paypal
           </p>
-          <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 my-8 w-full">
+          <div
+            class="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-3 xl:gap-4 my-4 lg:my-6 xl:my-8 w-full"
+          >
             <button
               class="p-[10px] bg-[#ebeef0] text-[#2C2F33] text-14 lg:text-base font-semibold rounded-xl"
             >
@@ -136,13 +149,20 @@
           </div>
           <button
             type="button"
-            class="px-6 text-14 md:text-base py-3 w-full text-[#fff] justify-center bg-[#003087] rounded-xl flex items-center gap-2 text-center transition-opacity duration-300 hover:opacity-70"
+            class="px-6 py-3 text-14 text-[#fff] justify-center bg-[#003087] rounded-xl flex items-center gap-2 text-center transition-opacity duration-300 hover:opacity-70 w-fit mx-auto"
           >
             <img src="../assets/svgs/image 167.png" alt="" />
-            Paypal to Clib wallet
+            Withdraw via Paypal
           </button>
           <p class="text-12 lg:text-base text-[#52616B] mt-8 line-clamp-1">
-            By clicking check out you agree to the License Terms and User Terms.
+            By clicking check out you agree to the
+            <a href="#" class="underline-offset-1 underline decoration-1"
+              >License Terms</a
+            >
+            and
+            <a href="#" class="underline-offset-1 underline decoration-1"
+              >User Terms.</a
+            >
           </p>
         </div>
       </div>
@@ -395,5 +415,6 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   ></script>
+  <script src="../js/index.js"></script>
   <script src="../js/wallet.js"></script>
 </html>
