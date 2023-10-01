@@ -871,176 +871,174 @@
             </div>
 
             <!-- right -->
+            <!-- list items video-->
             <div class="w-full bg-[#fff] rounded-xl p-4">
-              <!-- list items video-->
-              <div class="w-full bg-[#fff] rounded-xl p-4">
-                <div class="flex items-center justify-between">
-                  <div
-                    class="px-4 py-3 w-full bg-[#f7f7f7] flex items-center gap-2 rounded-lg max-w-[360px]"
+              <div class="flex items-center justify-between">
+                <div
+                  class="px-4 py-3 w-full bg-[#f7f7f7] flex items-center gap-2 rounded-lg max-w-[360px]"
+                >
+                  <img src="../assets/svgs/search.svg" alt="" />
+                  <input
+                    type="text"
+                    class="w-full bg-transparent border-none outline-none"
+                    placeholder="What are you looking for ?"
+                  />
+                </div>
+                <div class="flex items-center justify-end gap-2 w-full">
+                  <select
+                    class="text-[#52616B] text-sm flex items-center w-full px-4 py-3 max-w-[150px] outline-none border border-[#ccc] rounded-lg"
                   >
-                    <img src="../assets/svgs/search.svg" alt="" />
-                    <input
-                      type="text"
-                      class="w-full bg-transparent border-none outline-none"
-                      placeholder="What are you looking for ?"
+                    <option selected>Newest</option>
+                    <option value="old">Old</option>
+                    <option value="new">New</option>
+                  </select>
+                  <button
+                    class="justify-center btn-filter items-center h-12 px-1 text-[#fff] block lg:hidden bg-[#0ecad5] rounded-xl max-w-150px"
+                  >
+                    Filter
+                  </button>
+                </div>
+              </div>
+              <!-- list items videos-->
+              <div class="grid grid-cols-2 gap-x-4 gap-y-6 mt-4">
+                <div class="flex items-center gap-4">
+                  <div
+                    class="relative overflow-hidden rounded-lg aspect-square w-full max-w-[160px] flex-shrink-0"
+                  >
+                    <img
+                      class="h-full w-full rounded-lg object-cover"
+                      src="../assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt=""
                     />
                   </div>
-                  <div class="flex items-center justify-end gap-2 w-full">
-                    <select
-                      class="text-[#52616B] text-sm flex items-center w-full px-4 py-3 max-w-[150px] outline-none border border-[#ccc] rounded-lg"
-                    >
-                      <option selected>Newest</option>
-                      <option value="old">Old</option>
-                      <option value="new">New</option>
-                    </select>
-                    <button
-                      class="justify-center btn-filter items-center h-12 px-1 text-[#fff] block lg:hidden bg-[#0ecad5] rounded-xl max-w-150px"
-                    >
-                      Filter
-                    </button>
+                  <div class="">
+                    <div class="text-base font-semibold line-clamp-1">
+                      Producer | Mixing | Mastering
+                    </div>
+                    <div class="mt-1 text-14 text-grey-400 line-clamp-1">
+                      by ALOU Productions
+                    </div>
+                    <div class="mt-1 text-14 text-grey-400 flex items-center">
+                      <img src="assets/svgs/yellow-star.svg" alt="" />
+                      <span class="ml-1">4.3 (168)</span>
+                    </div>
+                    <p class="line-clamp-2 mt-2">
+                      I am an open book. Ask me anything music or mixing and
+                      I'll give you direct feedback that you can easily
+                      understand and act upon. I live in the real world, I'm
+                    </p>
+                    <a
+                      href="#"
+                      class="hover:underline text-branding-fourth mt-3 flex items-center gap-1"
+                      >View service
+                      <img src="../assets/svgs/arrow-right-blue.svg" alt="" />
+                    </a>
                   </div>
                 </div>
-                <!-- list items videos-->
-                <div class="grid grid-cols-2 gap-x-4 gap-y-6 mt-4">
-                  <div class="flex items-center gap-4">
-                    <div
-                      class="relative overflow-hidden rounded-lg aspect-square w-full max-w-[160px] flex-shrink-0"
-                    >
-                      <img
-                        class="h-full w-full rounded-lg object-cover"
-                        src="../assets/images/videos/1.jpg"
-                        loading="lazy"
-                        alt=""
-                      />
-                    </div>
-                    <div class="">
-                      <div class="text-base font-semibold line-clamp-1">
-                        Producer | Mixing | Mastering
-                      </div>
-                      <div class="mt-1 text-14 text-grey-400 line-clamp-1">
-                        by ALOU Productions
-                      </div>
-                      <div class="mt-1 text-14 text-grey-400 flex items-center">
-                        <img src="assets/svgs/yellow-star.svg" alt="" />
-                        <span class="ml-1">4.3 (168)</span>
-                      </div>
-                      <p class="line-clamp-2 mt-2">
-                        I am an open book. Ask me anything music or mixing and
-                        I'll give you direct feedback that you can easily
-                        understand and act upon. I live in the real world, I'm
-                      </p>
-                      <a
-                        href="#"
-                        class="hover:underline text-branding-fourth mt-3 flex items-center gap-1"
-                        >View service
-                        <img src="../assets/svgs/arrow-right-blue.svg" alt="" />
-                      </a>
-                    </div>
+                <div class="flex items-center gap-4">
+                  <div
+                    class="relative overflow-hidden rounded-lg aspect-square w-full max-w-[160px] flex-shrink-0"
+                  >
+                    <img
+                      class="h-full w-full rounded-lg object-cover"
+                      src="../assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt=""
+                    />
                   </div>
-                  <div class="flex items-center gap-4">
-                    <div
-                      class="relative overflow-hidden rounded-lg aspect-square w-full max-w-[160px] flex-shrink-0"
-                    >
-                      <img
-                        class="h-full w-full rounded-lg object-cover"
-                        src="../assets/images/videos/1.jpg"
-                        loading="lazy"
-                        alt=""
-                      />
+                  <div class="">
+                    <div class="text-base font-semibold line-clamp-1">
+                      Producer | Mixing | Mastering
                     </div>
-                    <div class="">
-                      <div class="text-base font-semibold line-clamp-1">
-                        Producer | Mixing | Mastering
-                      </div>
-                      <div class="mt-1 text-14 text-grey-400 line-clamp-1">
-                        by ALOU Productions
-                      </div>
-                      <div class="mt-1 text-14 text-grey-400 flex items-center">
-                        <img src="assets/svgs/yellow-star.svg" alt="" />
-                        <span class="ml-1">4.3 (168)</span>
-                      </div>
-                      <p class="line-clamp-2 mt-2">
-                        I am an open book. Ask me anything music or mixing and
-                        I'll give you direct feedback that you can easily
-                        understand and act upon. I live in the real world, I'm
-                      </p>
-                      <a
-                        href="#"
-                        class="hover:underline text-branding-fourth mt-3 flex items-center gap-1"
-                        >View service
-                        <img src="../assets/svgs/arrow-right-blue.svg" alt="" />
-                      </a>
+                    <div class="mt-1 text-14 text-grey-400 line-clamp-1">
+                      by ALOU Productions
                     </div>
+                    <div class="mt-1 text-14 text-grey-400 flex items-center">
+                      <img src="assets/svgs/yellow-star.svg" alt="" />
+                      <span class="ml-1">4.3 (168)</span>
+                    </div>
+                    <p class="line-clamp-2 mt-2">
+                      I am an open book. Ask me anything music or mixing and
+                      I'll give you direct feedback that you can easily
+                      understand and act upon. I live in the real world, I'm
+                    </p>
+                    <a
+                      href="#"
+                      class="hover:underline text-branding-fourth mt-3 flex items-center gap-1"
+                      >View service
+                      <img src="../assets/svgs/arrow-right-blue.svg" alt="" />
+                    </a>
                   </div>
-                  <div class="flex items-center gap-4">
-                    <div
-                      class="relative overflow-hidden rounded-lg aspect-square w-full max-w-[160px] flex-shrink-0"
-                    >
-                      <img
-                        class="h-full w-full rounded-lg object-cover"
-                        src="../assets/images/videos/1.jpg"
-                        loading="lazy"
-                        alt=""
-                      />
-                    </div>
-                    <div class="">
-                      <div class="text-base font-semibold line-clamp-1">
-                        Producer | Mixing | Mastering
-                      </div>
-                      <div class="mt-1 text-14 text-grey-400 line-clamp-1">
-                        by ALOU Productions
-                      </div>
-                      <div class="mt-1 text-14 text-grey-400 flex items-center">
-                        <img src="../assets/svgs/yellow-star.svg" alt="" />
-                        <span class="ml-1">4.3 (168)</span>
-                      </div>
-                      <p class="line-clamp-2 mt-2">
-                        I am an open book. Ask me anything music or mixing and
-                        I'll give you direct feedback that you can easily
-                        understand and act upon. I live in the real world, I'm
-                      </p>
-                      <a
-                        href="#"
-                        class="hover:underline text-branding-fourth mt-3 flex items-center gap-1"
-                        >View service
-                        <img src="../assets/svgs/arrow-right-blue.svg" alt="" />
-                      </a>
-                    </div>
+                </div>
+                <div class="flex items-center gap-4">
+                  <div
+                    class="relative overflow-hidden rounded-lg aspect-square w-full max-w-[160px] flex-shrink-0"
+                  >
+                    <img
+                      class="h-full w-full rounded-lg object-cover"
+                      src="../assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt=""
+                    />
                   </div>
-                  <div class="flex items-center gap-4">
-                    <div
-                      class="relative overflow-hidden rounded-lg aspect-square w-full max-w-[160px] flex-shrink-0"
-                    >
-                      <img
-                        class="h-full w-full rounded-lg object-cover"
-                        src="../assets/images/videos/1.jpg"
-                        loading="lazy"
-                        alt=""
-                      />
+                  <div class="">
+                    <div class="text-base font-semibold line-clamp-1">
+                      Producer | Mixing | Mastering
                     </div>
-                    <div class="">
-                      <div class="text-base font-semibold line-clamp-1">
-                        Producer | Mixing | Mastering
-                      </div>
-                      <div class="mt-1 text-14 text-grey-400 line-clamp-1">
-                        by ALOU Productions
-                      </div>
-                      <div class="mt-1 text-14 text-grey-400 flex items-center">
-                        <img src="../assets/svgs/yellow-star.svg" alt="" />
-                        <span class="ml-1">4.3 (168)</span>
-                      </div>
-                      <p class="line-clamp-2 mt-2">
-                        I am an open book. Ask me anything music or mixing and
-                        I'll give you direct feedback that you can easily
-                        understand and act upon. I live in the real world, I'm
-                      </p>
-                      <a
-                        href="#"
-                        class="hover:underline text-branding-fourth mt-3 flex items-center gap-1"
-                        >View service
-                        <img src="../assets/svgs/arrow-right-blue.svg" alt="" />
-                      </a>
+                    <div class="mt-1 text-14 text-grey-400 line-clamp-1">
+                      by ALOU Productions
                     </div>
+                    <div class="mt-1 text-14 text-grey-400 flex items-center">
+                      <img src="../assets/svgs/yellow-star.svg" alt="" />
+                      <span class="ml-1">4.3 (168)</span>
+                    </div>
+                    <p class="line-clamp-2 mt-2">
+                      I am an open book. Ask me anything music or mixing and
+                      I'll give you direct feedback that you can easily
+                      understand and act upon. I live in the real world, I'm
+                    </p>
+                    <a
+                      href="#"
+                      class="hover:underline text-branding-fourth mt-3 flex items-center gap-1"
+                      >View service
+                      <img src="../assets/svgs/arrow-right-blue.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="flex items-center gap-4">
+                  <div
+                    class="relative overflow-hidden rounded-lg aspect-square w-full max-w-[160px] flex-shrink-0"
+                  >
+                    <img
+                      class="h-full w-full rounded-lg object-cover"
+                      src="../assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div class="">
+                    <div class="text-base font-semibold line-clamp-1">
+                      Producer | Mixing | Mastering
+                    </div>
+                    <div class="mt-1 text-14 text-grey-400 line-clamp-1">
+                      by ALOU Productions
+                    </div>
+                    <div class="mt-1 text-14 text-grey-400 flex items-center">
+                      <img src="../assets/svgs/yellow-star.svg" alt="" />
+                      <span class="ml-1">4.3 (168)</span>
+                    </div>
+                    <p class="line-clamp-2 mt-2">
+                      I am an open book. Ask me anything music or mixing and
+                      I'll give you direct feedback that you can easily
+                      understand and act upon. I live in the real world, I'm
+                    </p>
+                    <a
+                      href="#"
+                      class="hover:underline text-branding-fourth mt-3 flex items-center gap-1"
+                      >View service
+                      <img src="../assets/svgs/arrow-right-blue.svg" alt="" />
+                    </a>
                   </div>
                 </div>
               </div>
