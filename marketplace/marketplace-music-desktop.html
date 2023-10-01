@@ -11,7 +11,624 @@
     />
   </head>
   <body>
-    <section class="bg-[#ebeef0] relative mt-12 hidden md:block">
+    <header class="fixed left-0 right-0 top-0 z-[999]">
+      <div class="bg-white py-2.5 shadow-[0px_2px_10px_0px_rgba(0,0,0,0.04)]">
+        <div class="container relative flex items-center justify-between">
+          <div class="flex items-center space-x-4">
+            <button id="toggle-mobile-menu">
+              <img src="../assets/svgs/menu.svg" alt="" />
+            </button>
+            <div
+              class="hidden w-fit items-center rounded-lg border border-grey-200 px-4 py-2 md:flex"
+            >
+              <img class="mr-2" src="../assets/svgs/search.svg" alt="" />
+              <input
+                class="h-full flex-1 text-base outline-none placeholder:text-grey-300 md:min-w-[260px]"
+                placeholder="What are you looking for?"
+              />
+            </div>
+          </div>
+
+          <a
+            href="/"
+            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden"
+          >
+            <img
+              class="object-contain w-8"
+              src="../assets/svgs/logo-mb.svg"
+              alt=""
+            />
+          </a>
+          <!-- SIGNED IN MOBILE -->
+          <div class="flex items-center space-x-4 md:hidden">
+            <button class="rounded-lg bg-grey-100 p-1.5">
+              <img
+                width="24"
+                height="24"
+                src="../assets/svgs/notification.svg"
+                alt=""
+              />
+            </button>
+            <button class="rounded-lg bg-grey-100 p-1.5">
+              <img src="../assets/svgs/messenger.svg" alt="" />
+            </button>
+          </div>
+          <!-- SIGNED IN -->
+
+          <!-- SIGNED IN PC-->
+          <div class="flex items-center space-x-4 max-md:hidden xl:space-x-6">
+            <button class="bg-grey-1 rounded-lg">
+              <img src="../assets/svgs/document.svg" alt="" />
+            </button>
+            <button class="">
+              <img src="../assets/svgs/sol.svg" alt="" />
+            </button>
+            <button class="">
+              <img src="../assets/svgs/export-pc.svg" alt="" />
+            </button>
+            <div
+              id="ms-wrapper"
+              class="relative flex items-center justify-center"
+            >
+              <button id="toggle-ms" class="toggle-ms">
+                <img
+                  class="ms-icon"
+                  src="../assets/svgs/messenger-pc.svg"
+                  alt=""
+                />
+              </button>
+              <div id="ms-popup" class="ms-popup">
+                <div class="flex items-center justify-between px-4 pb-2 pt-4">
+                  <span class="text-20 font-semibold">Message</span>
+                  <div class="flex items-center gap-2">
+                    <span class="text-14">New chat</span>
+                    <button class="rounded-xl bg-grey-200 p-1.5 duration-100">
+                      <img
+                        class="h-6 w-6"
+                        src="../assets/svgs/edit.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="mt-2 px-4">
+                  <div
+                    class="flex items-center gap-2 rounded-xl bg-grey-100 p-3"
+                  >
+                    <img
+                      class="aspect-square w-5"
+                      src="../assets/svgs/search-people.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <input
+                      class="h-full flex-1 bg-transparent text-14 outline-none placeholder:text-grey-300"
+                      placeholder="Search people"
+                    />
+                  </div>
+                </div>
+                <ul class="mt-2 px-4">
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                    >
+                      <div class="mr-2 flex items-center gap-2">
+                        <img
+                          class="aspect-square w-10 rounded-lg object-cover"
+                          src="assets/images/artists/1.png"
+                          loading="lazy"
+                          alt="Benny Andersson"
+                        />
+                        <div>
+                          <div class="line-clamp-1 text-14 font-semibold">
+                            Benny Andersson
+                          </div>
+                          <div class="line-clamp-1 text-14 font-semibold">
+                            aww
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex flex-col items-end gap-2.5">
+                        <div class="text-12 text-grey-400">3d</div>
+                        <span class="dot !h-3 !w-3 !bg-branding"></span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center justify-between border-r-4 border-r-branding bg-[linear-gradient(270deg,#F3FCFF_0%,rgba(243,252,255,0.00)_103.09%)] px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                    >
+                      <div class="mr-2 flex items-center gap-2">
+                        <img
+                          class="aspect-square w-10 rounded-lg object-cover"
+                          src="assets/images/artists/1.png"
+                          loading="lazy"
+                          alt="Son Tung M-TP"
+                        />
+                        <div>
+                          <div
+                            class="line-clamp-1 flex items-center gap-1 text-14 font-semibold"
+                          >
+                            Son Tung M-TP
+                            <img src="../assets/svgs/verify.svg" alt="" />
+                          </div>
+                          <div class="line-clamp-1 text-14">
+                            Send a playlist
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex flex-col items-end gap-2.5">
+                        <div class="text-12 text-grey-400">3d</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                    >
+                      <div class="mr-2 flex items-center gap-2">
+                        <img
+                          class="aspect-square w-10 rounded-lg object-cover"
+                          src="assets/images/artists/1.png"
+                          loading="lazy"
+                          alt="Donna Summer"
+                        />
+                        <div>
+                          <div class="line-clamp-1 text-14 font-semibold">
+                            Donna Summer
+                          </div>
+                          <div class="line-clamp-1 text-14">Hi</div>
+                        </div>
+                      </div>
+                      <div class="flex flex-col items-end gap-2.5">
+                        <div class="text-12 text-grey-400">3d</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                    >
+                      <div class="mr-2 flex items-center gap-2">
+                        <img
+                          class="aspect-square w-10 rounded-lg object-cover"
+                          src="assets/images/artists/1.png"
+                          loading="lazy"
+                          alt="James"
+                        />
+                        <div>
+                          <div class="text-14 font-semibold">James</div>
+                          <div class="line-clamp-1 text-14">
+                            Wow, this is really epic
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex flex-col items-end gap-2.5">
+                        <div class="text-12 text-grey-400">3w</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                    >
+                      <div class="mr-2 flex items-center gap-2">
+                        <img
+                          class="aspect-square w-10 rounded-lg object-cover"
+                          src="assets/images/artists/1.png"
+                          loading="lazy"
+                          alt="James"
+                        />
+                        <div>
+                          <div class="text-14 font-semibold">Roger Daltrey</div>
+                          <div class="line-clamp-1 text-14">woohoooo</div>
+                        </div>
+                      </div>
+                      <div class="flex flex-col items-end gap-2.5">
+                        <div class="text-12 text-grey-400">17/03/2023</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                    >
+                      <div class="mr-2 flex items-center gap-2">
+                        <img
+                          class="aspect-square w-10 rounded-lg object-cover"
+                          src="assets/images/artists/1.png"
+                          loading="lazy"
+                          alt="James"
+                        />
+                        <div>
+                          <div class="text-14 font-semibold">Big Star</div>
+                          <div class="line-clamp-1 text-14">
+                            Haha that's terrifying 😂
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex flex-col items-end gap-2.5">
+                        <div class="text-12 text-grey-400">05/03/2023</div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <div class="mt-2 py-3 text-center">
+                  <a
+                    href="#"
+                    class="text-14 font-semibold text-grey-400 hover:text-branding-secondary hover:underline"
+                    >View all message</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              id="noti-wrapper"
+              class="relative flex items-center justify-center"
+            >
+              <button id="toggle-notification" class="">
+                <img
+                  class="noti-icon"
+                  src="../assets/svgs/notification-pc.svg"
+                  alt=""
+                />
+              </button>
+              <div id="noti-popup" class="noti-popup">
+                <div class="flex items-center justify-between px-4 pb-2 pt-4">
+                  <span class="text-20 font-semibold">Notification</span>
+                  <button
+                    class="transition-transform duration-100 hover:rotate-180"
+                  >
+                    <img
+                      class="h-6 w-6"
+                      src="../assets/svgs/setting.svg"
+                      alt=""
+                    />
+                  </button>
+                </div>
+                <div class="px-4">
+                  <div class="grid grid-cols-3 items-center">
+                    <button
+                      class="h-[60px] border-b-4 border-b-branding-secondary text-center text-base font-semibold text-branding-secondary"
+                    >
+                      All
+                    </button>
+                    <button
+                      class="h-[60px] text-center text-base font-semibold text-grey-300"
+                    >
+                      Unread
+                    </button>
+                    <button
+                      class="h-[60px] text-center text-base font-semibold text-grey-300"
+                    >
+                      Following
+                    </button>
+                  </div>
+                </div>
+                <ul class="mt-4 px-2">
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                    >
+                      <div class="mr-2 flex items-center">
+                        <div class="relative mr-3">
+                          <img
+                            class="aspect-square w-12 rounded-lg object-cover"
+                            src="assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="Ariana Grande"
+                          />
+                          <span
+                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                          >
+                            <img
+                              class="aspect-square w-6 rounded-lg object-cover"
+                              src="../assets/svgs/ms-text.svg"
+                              alt=""
+                            />
+                          </span>
+                        </div>
+                        <div>
+                          <div class="text-14">
+                            <span class="font-semibold">Macos</span> commented
+                            on your post
+                          </div>
+                          <div class="mt-1 text-12 text-grey-400">
+                            2 day ago
+                          </div>
+                        </div>
+                      </div>
+                      <span class="dot !h-3 !w-3 !bg-branding"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                    >
+                      <div class="mr-2 flex items-center">
+                        <div class="relative mr-3">
+                          <img
+                            class="aspect-square w-12 rounded-lg object-cover"
+                            src="assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="Ariana Grande"
+                          />
+                          <span
+                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                          >
+                            <img
+                              class="aspect-square w-6 rounded-lg object-cover"
+                              src="../assets/svgs/react-noti.svg"
+                              alt=""
+                            />
+                          </span>
+                        </div>
+                        <div>
+                          <div class="text-14">
+                            <span class="font-semibold">Josh</span> commented on
+                            your post
+                          </div>
+                          <div class="mt-1 text-12 text-grey-400">
+                            2 day ago
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                    >
+                      <div class="mr-2 flex items-center">
+                        <div class="mr-3">
+                          <img
+                            class="aspect-square w-12 rounded-lg object-cover"
+                            src="assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="Harry"
+                          />
+                        </div>
+                        <div>
+                          <div class="text-14">
+                            <span class="font-semibold">Harry</span> following
+                            you
+                          </div>
+                          <div class="mt-1 text-12 text-grey-400">
+                            2 day ago
+                          </div>
+                        </div>
+                      </div>
+                      <button class="btn-primary">Follow</button>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                    >
+                      <div class="mr-2 flex items-center">
+                        <div class="relative mr-3">
+                          <img
+                            class="aspect-square w-12 rounded-lg object-cover"
+                            src="assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="Sona"
+                          />
+                          <span
+                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                          >
+                            <img
+                              class="aspect-square w-6 rounded-lg object-cover"
+                              src="../assets/svgs/ms-text.svg"
+                              alt=""
+                            />
+                          </span>
+                        </div>
+                        <div>
+                          <div class="text-14">
+                            <span class="font-semibold">Sona</span> commented on
+                            your post
+                          </div>
+                          <div class="mt-1 text-12 text-grey-400">
+                            2 day ago
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                    >
+                      <div class="mr-2 flex items-center">
+                        <div class="relative mr-3">
+                          <img
+                            class="aspect-square w-12 rounded-lg object-cover"
+                            src="assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="Been"
+                          />
+                          <span
+                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                          >
+                            <img
+                              class="aspect-square w-6 rounded-lg object-cover"
+                              src="../assets/svgs/react-love.svg"
+                              alt=""
+                            />
+                          </span>
+                        </div>
+                        <div>
+                          <div class="text-14">
+                            <span class="font-semibold">Been</span> liked your
+                            post
+                          </div>
+                          <div class="mt-1 text-12 text-grey-400">
+                            2 day ago
+                          </div>
+                        </div>
+                      </div>
+                      <span class="dot !h-3 !w-3 !bg-branding"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                    >
+                      <div class="mr-2 flex items-center">
+                        <div class="relative mr-3">
+                          <img
+                            class="aspect-square w-12 rounded-lg object-cover"
+                            src="assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="Harry"
+                          />
+                          <span
+                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                          >
+                            <img
+                              class="aspect-square w-6 rounded-lg object-cover"
+                              src="../assets/svgs/react-love.svg"
+                              alt=""
+                            />
+                          </span>
+                        </div>
+                        <div>
+                          <div class="text-14">
+                            <span class="font-semibold">Harry</span> liked your
+                            post
+                          </div>
+                          <div class="mt-1 text-12 text-grey-400">
+                            2 day ago
+                          </div>
+                        </div>
+                      </div>
+                      <span class="dot !h-3 !w-3 !bg-branding"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                    >
+                      <div class="mr-2 flex items-center">
+                        <div class="relative mr-3">
+                          <img
+                            class="aspect-square w-12 rounded-lg object-cover"
+                            src="assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="Jean"
+                          />
+                          <span
+                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                          >
+                            <img
+                              class="aspect-square w-6 rounded-lg object-cover"
+                              src="../assets/svgs/ms-text.svg"
+                              alt=""
+                            />
+                          </span>
+                        </div>
+                        <div>
+                          <div class="text-14">
+                            <span class="font-semibold">Jean</span> commented on
+                            your post
+                          </div>
+                          <div class="mt-1 text-12 text-grey-400">
+                            2 day ago
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <div class="mt-2 py-3 text-center">
+                  <a
+                    href="#"
+                    class="text-14 font-semibold text-grey-400 hover:text-branding-secondary hover:underline"
+                    >View all notifications</a
+                  >
+                </div>
+              </div>
+            </div>
+            <button class="">
+              <img src="../assets/svgs/wallet-pc.svg" alt="" />
+            </button>
+            <a href="./profile" class="flex items-center gap-2">
+              <img
+                src="../assets/images/avatar1.jpg"
+                class="h-11 w-11 rounded-lg object-cover"
+                loading="lazy"
+                alt="Iberd"
+              />
+              <span>Iberd</span>
+            </a>
+          </div>
+          <!-- SIGNED IN -->
+
+          <!-- NOT SIGN IN <div class="flex items-center space-x-4">
+            <button>
+              <img src="../assets/svgs/export.svg" alt="" />
+            </button>
+            <a href="login.html" class="btn-secondary text-14 md:text-base"
+              >Sign in</a
+            >
+          </div> NOT SIGN IN -->
+        </div>
+      </div>
+      <div
+        class="border-b border-b-grey-200 bg-white md:border-none md:bg-grey-100 md:py-1.5 xl:py-2"
+      >
+        <ul
+          class="container relative grid grid-cols-2 items-center gap-[35px] md:grid-cols-5"
+        >
+          <li>
+            <a href="/music.html" class="header-item-link">music</a>
+          </li>
+          <li>
+            <a href="#" class="header-item-link">videos</a>
+          </li>
+          <li class="max-md:hidden">
+            <a
+              href="/"
+              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+            >
+              <img
+                class="aspect-square w-20 lg:w-[116px] object-contain"
+                src="../assets/svgs/logo.svg"
+                alt=""
+              />
+            </a>
+          </li>
+          <li class="max-md:hidden">
+            <a
+              href="./marketplace/marketplace-music-desktop.html"
+              class="header-item-link active"
+              >marketplace</a
+            >
+          </li>
+          <li class="max-md:hidden">
+            <a href="./voting/music-voting.html" class="header-item-link"
+              >voting</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section
+      class="bg-[#ebeef0] relative mt-[94px] xl:mt-[180px] hidden md:block"
+    >
       <!-- modal upload -->
       <div class="overlay hidden modal-upload">
         <div
@@ -102,11 +719,11 @@
           <div class="flex items-center justify-between">
             <div class="invisible w-[150px]">fix center</div>
             <div
-              class="flex items-center justify-center p-1 bg-[#f7f7f7] rounded-lg font-16 font-semibold"
+              class="flex items-center justify-center p-1 bg-[#f7f7f7] rounded-lg font-16 font-semibold shadow-[0px_2px_20px_0px_rgba(0,0,0,0.08)]"
             >
               <a
                 href="../marketplace/marketplace-music-desktop.html"
-                class="flex items-center gap-2 px-5 py-2 rounded-lg text-[#bdcad4] active"
+                class="flex items-center gap-2 px-5 py-2 rounded-lg text-white bg-branding-secondary"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -203,11 +820,11 @@
               <div>
                 <h5 class="text-18 font-semibold">Category</h5>
                 <div
-                  class="grid grid-cols-2 w-full bg-[#f7f7f7] font-semibold rounded-lg mt-2 text-12 md:text-14 lg:text-16 transition-all duration-500"
+                  class="grid grid-cols-2 w-full bg-[#f7f7f7] font-semibold rounded-lg mt-2 text-12 md:text-14 lg:text-16 transition-all duration-500 p-1"
                 >
                   <a
-                    href="../marketplace/marketplace-mucsic-desktop.html"
-                    class="px-4 flex text-[#A1ABB2] items-center justify-center py-2 rounded-lg active"
+                    href="../marketplace/marketplace-music-desktop.html"
+                    class="px-4 flex items-center justify-center py-2 rounded-lg text-white bg-branding-secondary"
                   >
                     Music
                   </a>

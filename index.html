@@ -137,7 +137,7 @@
             class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden"
           >
             <img
-              class="aspect-square w-8"
+              class="object-contain w-8"
               src="./assets/svgs/logo-mb.svg"
               alt=""
             />
@@ -691,24 +691,16 @@
         </div>
       </div>
       <div
-        class="border-b border-b-grey-200 bg-white md:border-none md:bg-grey-100 md:py-2"
+        class="border-b border-b-grey-200 bg-white md:border-none md:bg-grey-100 md:py-1.5 xl:py-2"
       >
         <ul
           class="container relative grid grid-cols-2 items-center gap-[35px] md:grid-cols-5"
         >
           <li>
-            <a
-              href="/music.html"
-              class="block border-b-transparent py-2 text-center text-14 uppercase text-grey-300 transition-colors duration-75 hover:border-b-branding-secondary hover:text-branding-secondary max-md:border-b-2 max-md:font-semibold md:rounded-xl md:py-2.5 md:text-base md:hover:bg-branding-tertiary md:hover:text-white"
-              >music</a
-            >
+            <a href="/music.html" class="header-item-link">music</a>
           </li>
           <li>
-            <a
-              href="#"
-              class="block border-b-transparent py-2 text-center text-14 uppercase text-grey-300 transition-colors duration-75 hover:border-b-branding-secondary hover:text-branding-secondary max-md:border-b-2 max-md:font-semibold md:rounded-xl md:py-2.5 md:text-base md:hover:bg-branding-tertiary md:hover:text-white"
-              >videos</a
-            >
+            <a href="#" class="header-item-link">videos</a>
           </li>
           <li class="max-md:hidden">
             <a
@@ -723,7 +715,11 @@
             </a>
           </li>
           <li class="max-md:hidden">
-            <a href="#" class="header-item-link">marketplace</a>
+            <a
+              href="./marketplace/marketplace-music-desktop.html"
+              class="header-item-link"
+              >marketplace</a
+            >
           </li>
           <li class="max-md:hidden">
             <a href="./voting/music-voting.html" class="header-item-link"
