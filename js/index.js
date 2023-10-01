@@ -185,3 +185,14 @@ checkClickOutside(
   },
   "open-large-player",
 );
+
+$(".close-modal").each(function () {
+  $(this).click(function () {
+    $(".modal-video").hide();
+  });
+});
+$(".btn-open-video").each(function () {
+  $(this).click(function () {
+    $(".modal-video").show();
+  });
+});

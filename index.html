@@ -11,6 +11,109 @@
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
+    <!-- modal video -->
+    <div
+      class="w-[456px] hidden modal-video p-3 rounded-xl bg-white fixed bottom-5 right-5 z-50 box-shadow"
+    >
+      <div class="relative">
+        <img src="./assets/images/Rectangle9png.png" />
+        <div class="absolute close-modal top-4 right-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M20 20L4 4"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M4 20L20 4"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <div class="absolute top-4 left-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M22 9.98V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22H10"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M11 11L5.99 5.97998H10"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M5.99023 5.97998V9.98998"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M13 16.15V18.85C13 21.1 13.9 22 16.15 22H18.85C21.1 22 22 21.1 22 18.85V16.15C22 13.9 21.1 13 18.85 13H16.15C13.9 13 13 13.9 13 16.15Z"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center mt-4 gap-2">
+            <img
+              src="./assets/images/playlists/1-pc.png"
+              alt=""
+              class="w-12 h-12 rounded"
+            />
+            <div>
+              <h6 class="text-18 font-semibold text-[#52616B]">Into you</h6>
+              <p class="text-[#52616B] text-15">Ariana Grande</p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M19.9201 15.0501L13.4001 8.53014C12.6301 7.76014 11.3701 7.76014 10.6001 8.53014L4.08008 15.0501"
+                stroke="#52616B"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal video -->
+
     <header class="fixed left-0 right-0 top-0 z-[999]">
       <div class="bg-white py-2.5 shadow-[0px_2px_10px_0px_rgba(0,0,0,0.04)]">
         <div class="container relative flex items-center justify-between">
@@ -111,12 +214,12 @@
                   <li>
                     <a
                       href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-[linear-gradient(270deg,#F3FCFF_0%,rgba(243,252,255,0.00)_103.09%)]"
+                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
                     >
                       <div class="mr-2 flex items-center gap-2">
                         <img
                           class="aspect-square w-10 rounded-lg object-cover"
-                          src="./assets/images/artists/1.png"
+                          src="assets/images/artists/1.png"
                           loading="lazy"
                           alt="Benny Andersson"
                         />
@@ -143,7 +246,7 @@
                       <div class="mr-2 flex items-center gap-2">
                         <img
                           class="aspect-square w-10 rounded-lg object-cover"
-                          src="./assets/images/artists/1.png"
+                          src="assets/images/artists/1.png"
                           loading="lazy"
                           alt="Son Tung M-TP"
                         />
@@ -167,12 +270,12 @@
                   <li>
                     <a
                       href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-[linear-gradient(270deg,#F3FCFF_0%,rgba(243,252,255,0.00)_103.09%)]"
+                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
                     >
                       <div class="mr-2 flex items-center gap-2">
                         <img
                           class="aspect-square w-10 rounded-lg object-cover"
-                          src="./assets/images/artists/1.png"
+                          src="assets/images/artists/1.png"
                           loading="lazy"
                           alt="Donna Summer"
                         />
@@ -191,12 +294,12 @@
                   <li>
                     <a
                       href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-[linear-gradient(270deg,#F3FCFF_0%,rgba(243,252,255,0.00)_103.09%)]"
+                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
                     >
                       <div class="mr-2 flex items-center gap-2">
                         <img
                           class="aspect-square w-10 rounded-lg object-cover"
-                          src="./assets/images/artists/1.png"
+                          src="assets/images/artists/1.png"
                           loading="lazy"
                           alt="James"
                         />
@@ -215,12 +318,12 @@
                   <li>
                     <a
                       href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-[linear-gradient(270deg,#F3FCFF_0%,rgba(243,252,255,0.00)_103.09%)]"
+                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
                     >
                       <div class="mr-2 flex items-center gap-2">
                         <img
                           class="aspect-square w-10 rounded-lg object-cover"
-                          src="./assets/images/artists/1.png"
+                          src="assets/images/artists/1.png"
                           loading="lazy"
                           alt="James"
                         />
@@ -237,12 +340,12 @@
                   <li>
                     <a
                       href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-[linear-gradient(270deg,#F3FCFF_0%,rgba(243,252,255,0.00)_103.09%)]"
+                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
                     >
                       <div class="mr-2 flex items-center gap-2">
                         <img
                           class="aspect-square w-10 rounded-lg object-cover"
-                          src="./assets/images/artists/1.png"
+                          src="assets/images/artists/1.png"
                           loading="lazy"
                           alt="James"
                         />
@@ -321,7 +424,7 @@
                         <div class="relative mr-3">
                           <img
                             class="aspect-square w-12 rounded-lg object-cover"
-                            src="./assets/images/artists/1.png"
+                            src="assets/images/artists/1.png"
                             loading="lazy"
                             alt="Ariana Grande"
                           />
@@ -357,7 +460,7 @@
                         <div class="relative mr-3">
                           <img
                             class="aspect-square w-12 rounded-lg object-cover"
-                            src="./assets/images/artists/1.png"
+                            src="assets/images/artists/1.png"
                             loading="lazy"
                             alt="Ariana Grande"
                           />
@@ -392,7 +495,7 @@
                         <div class="mr-3">
                           <img
                             class="aspect-square w-12 rounded-lg object-cover"
-                            src="./assets/images/artists/1.png"
+                            src="assets/images/artists/1.png"
                             loading="lazy"
                             alt="Harry"
                           />
@@ -419,7 +522,7 @@
                         <div class="relative mr-3">
                           <img
                             class="aspect-square w-12 rounded-lg object-cover"
-                            src="./assets/images/artists/1.png"
+                            src="assets/images/artists/1.png"
                             loading="lazy"
                             alt="Sona"
                           />
@@ -454,7 +557,7 @@
                         <div class="relative mr-3">
                           <img
                             class="aspect-square w-12 rounded-lg object-cover"
-                            src="./assets/images/artists/1.png"
+                            src="assets/images/artists/1.png"
                             loading="lazy"
                             alt="Been"
                           />
@@ -490,7 +593,7 @@
                         <div class="relative mr-3">
                           <img
                             class="aspect-square w-12 rounded-lg object-cover"
-                            src="./assets/images/artists/1.png"
+                            src="assets/images/artists/1.png"
                             loading="lazy"
                             alt="Harry"
                           />
@@ -526,7 +629,7 @@
                         <div class="relative mr-3">
                           <img
                             class="aspect-square w-12 rounded-lg object-cover"
-                            src="./assets/images/artists/1.png"
+                            src="assets/images/artists/1.png"
                             loading="lazy"
                             alt="Jean"
                           />
@@ -638,7 +741,7 @@
     </header>
     <section class="container md:hidden">
       <section
-        class="banner-swiper swiper mt-[120px] xl:mt-[140px] overflow-hidden rounded-xl"
+        class="banner-swiper swiper mt-[140px] overflow-hidden rounded-xl"
       >
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -708,7 +811,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -738,7 +841,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -768,7 +871,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -798,7 +901,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -828,7 +931,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -858,7 +961,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -888,7 +991,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -918,7 +1021,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -948,7 +1051,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -978,7 +1081,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -1161,7 +1264,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -1191,7 +1294,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -1221,7 +1324,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -1251,7 +1354,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -1281,7 +1384,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -1311,7 +1414,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -1341,7 +1444,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -1371,7 +1474,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -1401,7 +1504,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -1431,7 +1534,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -1500,7 +1603,7 @@
                     <img
                       class="mx-2 aspect-square w-10 rounded-lg object-cover"
                       loading="lazy"
-                      src="./assets/images/artists/1.png"
+                      src="assets/images/artists/1.png"
                       alt=""
                     />
                     <div class="line-clamp-1 text-14 font-semibold">
@@ -1523,7 +1626,7 @@
                     <img
                       class="mx-2 aspect-square w-10 rounded-lg object-cover"
                       loading="lazy"
-                      src="./assets/images/artists/1.png"
+                      src="assets/images/artists/1.png"
                       alt=""
                     />
                     <div class="line-clamp-1 text-14 font-semibold">
@@ -1546,7 +1649,7 @@
                     <img
                       class="mx-2 aspect-square w-10 rounded-lg object-cover"
                       loading="lazy"
-                      src="./assets/images/artists/1.png"
+                      src="assets/images/artists/1.png"
                       alt=""
                     />
                     <div class="line-clamp-1 text-14 font-semibold">
@@ -1569,7 +1672,7 @@
                     <img
                       class="mx-2 aspect-square w-10 rounded-lg object-cover"
                       loading="lazy"
-                      src="./assets/images/artists/1.png"
+                      src="assets/images/artists/1.png"
                       alt=""
                     />
                     <div class="line-clamp-1 text-14 font-semibold">
@@ -1592,7 +1695,7 @@
                     <img
                       class="mx-2 aspect-square w-10 rounded-lg object-cover"
                       loading="lazy"
-                      src="./assets/images/artists/1.png"
+                      src="assets/images/artists/1.png"
                       alt=""
                     />
                     <div class="line-clamp-1 text-14 font-semibold">
@@ -1620,7 +1723,7 @@
                     <img
                       class="mx-2 aspect-square w-10 rounded-lg object-cover"
                       loading="lazy"
-                      src="./assets/images/artists/1.png"
+                      src="assets/images/artists/1.png"
                       alt=""
                     />
                     <div class="line-clamp-1 text-14 font-semibold">
@@ -1643,7 +1746,7 @@
                     <img
                       class="mx-2 aspect-square w-10 rounded-lg object-cover"
                       loading="lazy"
-                      src="./assets/images/artists/1.png"
+                      src="assets/images/artists/1.png"
                       alt=""
                     />
                     <div class="line-clamp-1 text-14 font-semibold">
@@ -1666,7 +1769,7 @@
                     <img
                       class="mx-2 aspect-square w-10 rounded-lg object-cover"
                       loading="lazy"
-                      src="./assets/images/artists/1.png"
+                      src="assets/images/artists/1.png"
                       alt=""
                     />
                     <div class="line-clamp-1 text-14 font-semibold">
@@ -1689,7 +1792,7 @@
                     <img
                       class="mx-2 aspect-square w-10 rounded-lg object-cover"
                       loading="lazy"
-                      src="./assets/images/artists/1.png"
+                      src="assets/images/artists/1.png"
                       alt=""
                     />
                     <div class="line-clamp-1 text-14 font-semibold">
@@ -1712,7 +1815,7 @@
                     <img
                       class="mx-2 aspect-square w-10 rounded-lg object-cover"
                       loading="lazy"
-                      src="./assets/images/artists/1.png"
+                      src="assets/images/artists/1.png"
                       alt=""
                     />
                     <div class="line-clamp-1 text-14 font-semibold">
@@ -3833,6 +3936,7 @@
         <div class="mr-3 flex items-center text-24 font-semibold">
           <img class="mr-3" src="./assets/svgs/video-play.svg" alt="" />
           Videos
+          <img src="a" alt="" />
         </div>
         <select
           class="flex items-center gap-1 bg-transparent text-base font-semibold text-grey-400 outline-none"
@@ -3861,7 +3965,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -3891,7 +3995,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -3921,7 +4025,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -3951,7 +4055,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -3981,7 +4085,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -4011,7 +4115,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -4041,7 +4145,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -4071,7 +4175,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -4101,7 +4205,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -4131,7 +4235,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -4161,7 +4265,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -4191,7 +4295,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -4221,7 +4325,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -4314,6 +4418,14 @@
                         class="absolute bottom-1.5 right-2.5 text-12 text-white"
                         >03:20</span
                       >
+                      <div class="hot-item-play btn-open-video rounded-xl">
+                        <img
+                          class="aspect-square transintion-opacity w-6 h-6 duration-500 rounded-lg object-cover"
+                          src="./assets/svgs/play-music.svg"
+                          loading="lazy"
+                          alt="Vlogging as a career in 2022"
+                        />
+                      </div>
                     </div>
                     <div class="mr-2">
                       <div class="text-14 font-semibold md:text-base">
@@ -4353,138 +4465,8 @@
                     <div
                       class="mr-2 flex w-4 flex-col items-center text-center text-14 font-semibold text-grey-400 md:mr-1 md:w-6 md:text-18"
                     >
-                      2
-                      <img
-                        class="md:hidden"
-                        src="./assets/svgs/stand.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="mr-3 hidden flex-col items-center md:flex">
-                      <span class="text-12 font-semibold">1</span>
-                      <img src="./assets/svgs/stand.svg" alt="" />
-                    </div>
-                    <div
-                      class="relative mr-3 h-16 w-[114px] md:h-20 md:w-[142px]"
-                    >
-                      <img
-                        class="mr-3 aspect-square h-full w-full rounded-lg object-cover"
-                        src="./assets/images/videos/1.jpg"
-                        loading="lazy"
-                        alt="Vlogging as a career in 2022"
-                      />
-                      <span
-                        class="absolute bottom-1.5 right-2.5 text-12 text-white"
-                        >03:20</span
-                      >
-                    </div>
-                    <div class="mr-2">
-                      <div class="text-14 font-semibold md:text-base">
-                        Vlogging as a career in 2022
-                      </div>
-                      <div class="mt-1 text-12 text-grey-400 md:text-14">
-                        Nancy Jaiswal
-                      </div>
-                      <div class="mt-1 hidden items-center md:flex">
-                        <div
-                          class="mr-3 line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                        >
-                          <img src="./assets/svgs/views.svg" alt="" />
-                          150K views
-                        </div>
-                        <div
-                          class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                        >
-                          <img src="./assets/svgs/clock.svg" alt="" />
-                          1 days ago
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="hot-item--love self-start">
-                    <img
-                      class=""
-                      src="./assets/svgs/heart-outline.svg"
-                      alt=""
-                    />
-                  </button>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="hot-item">
-                  <div class="flex items-center">
-                    <div
-                      class="mr-2 flex w-4 flex-col items-center text-center text-14 font-semibold text-grey-400 md:mr-1 md:w-6 md:text-18"
-                    >
-                      3
-                      <img
-                        class="md:hidden"
-                        src="./assets/svgs/down.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="mr-3 hidden flex-col items-center md:flex">
-                      <span class="text-12 font-semibold">1</span>
-                      <img src="./assets/svgs/down.svg" alt="" />
-                    </div>
-                    <div
-                      class="relative mr-3 h-16 w-[114px] md:h-20 md:w-[142px]"
-                    >
-                      <img
-                        class="mr-3 aspect-square h-full w-full rounded-lg object-cover"
-                        src="./assets/images/videos/1.jpg"
-                        loading="lazy"
-                        alt="Vlogging as a career in 2022"
-                      />
-                      <span
-                        class="absolute bottom-1.5 right-2.5 text-12 text-white"
-                        >03:20</span
-                      >
-                    </div>
-                    <div class="mr-2">
-                      <div class="text-14 font-semibold md:text-base">
-                        Vlogging as a career in 2022
-                      </div>
-                      <div class="mt-1 text-12 text-grey-400 md:text-14">
-                        Nancy Jaiswal
-                      </div>
-                      <div class="mt-1 hidden items-center md:flex">
-                        <div
-                          class="mr-3 line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                        >
-                          <img src="./assets/svgs/views.svg" alt="" />
-                          150K views
-                        </div>
-                        <div
-                          class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                        >
-                          <img src="./assets/svgs/clock.svg" alt="" />
-                          1 days ago
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="hot-item--love self-start">
-                    <img
-                      class=""
-                      src="./assets/svgs/heart-outline.svg"
-                      alt=""
-                    />
-                  </button>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="hot-item">
-                  <div class="flex items-center">
-                    <div
-                      class="mr-2 flex w-4 flex-col items-center text-center text-14 font-semibold text-grey-400 md:mr-1 md:w-6 md:text-18"
-                    >
-                      4
-                      <img
-                        class="md:hidden"
-                        src="./assets/svgs/up.svg"
-                        alt=""
-                      />
+                      1
+                      <img class="md:hidden" src="assets/svgs/up.svg" alt="" />
                     </div>
                     <div class="mr-3 hidden flex-col items-center md:flex">
                       <span class="text-12 font-semibold">1</span>
@@ -4503,6 +4485,14 @@
                         class="absolute bottom-1.5 right-2.5 text-12 text-white"
                         >03:20</span
                       >
+                      <div class="hot-item-play btn-open-video rounded-xl">
+                        <img
+                          class="aspect-square transintion-opacity w-6 h-6 duration-500 rounded-lg object-cover"
+                          src="./assets/svgs/play-music.svg"
+                          loading="lazy"
+                          alt="Vlogging as a career in 2022"
+                        />
+                      </div>
                     </div>
                     <div class="mr-2">
                       <div class="text-14 font-semibold md:text-base">
@@ -4542,138 +4532,8 @@
                     <div
                       class="mr-2 flex w-4 flex-col items-center text-center text-14 font-semibold text-grey-400 md:mr-1 md:w-6 md:text-18"
                     >
-                      5
-                      <img
-                        class="md:hidden"
-                        src="./assets/svgs/up.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="mr-3 hidden flex-col items-center md:flex">
-                      <span class="text-12 font-semibold">1</span>
-                      <img src="./assets/svgs/stand.svg" alt="" />
-                    </div>
-                    <div
-                      class="relative mr-3 h-16 w-[114px] md:h-20 md:w-[142px]"
-                    >
-                      <img
-                        class="mr-3 aspect-square h-full w-full rounded-lg object-cover"
-                        src="./assets/images/videos/1.jpg"
-                        loading="lazy"
-                        alt="Vlogging as a career in 2022"
-                      />
-                      <span
-                        class="absolute bottom-1.5 right-2.5 text-12 text-white"
-                        >03:20</span
-                      >
-                    </div>
-                    <div class="mr-2">
-                      <div class="text-14 font-semibold md:text-base">
-                        Vlogging as a career in 2022
-                      </div>
-                      <div class="mt-1 text-12 text-grey-400 md:text-14">
-                        Nancy Jaiswal
-                      </div>
-                      <div class="mt-1 hidden items-center md:flex">
-                        <div
-                          class="mr-3 line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                        >
-                          <img src="./assets/svgs/views.svg" alt="" />
-                          150K views
-                        </div>
-                        <div
-                          class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                        >
-                          <img src="./assets/svgs/clock.svg" alt="" />
-                          1 days ago
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="hot-item--love self-start">
-                    <img
-                      class=""
-                      src="./assets/svgs/heart-outline.svg"
-                      alt=""
-                    />
-                  </button>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="hot-item">
-                  <div class="flex items-center">
-                    <div
-                      class="mr-2 flex w-4 flex-col items-center text-center text-14 font-semibold text-grey-400 md:mr-1 md:w-6 md:text-18"
-                    >
-                      6
-                      <img
-                        class="md:hidden"
-                        src="./assets/svgs/down.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="mr-3 hidden flex-col items-center md:flex">
-                      <span class="text-12 font-semibold">1</span>
-                      <img src="./assets/svgs/down.svg" alt="" />
-                    </div>
-                    <div
-                      class="relative mr-3 h-16 w-[114px] md:h-20 md:w-[142px]"
-                    >
-                      <img
-                        class="mr-3 aspect-square h-full w-full rounded-lg object-cover"
-                        src="./assets/images/videos/1.jpg"
-                        loading="lazy"
-                        alt="Vlogging as a career in 2022"
-                      />
-                      <span
-                        class="absolute bottom-1.5 right-2.5 text-12 text-white"
-                        >03:20</span
-                      >
-                    </div>
-                    <div class="mr-2">
-                      <div class="text-14 font-semibold md:text-base">
-                        Vlogging as a career in 2022
-                      </div>
-                      <div class="mt-1 text-12 text-grey-400 md:text-14">
-                        Nancy Jaiswal
-                      </div>
-                      <div class="mt-1 hidden items-center md:flex">
-                        <div
-                          class="mr-3 line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                        >
-                          <img src="./assets/svgs/views.svg" alt="" />
-                          150K views
-                        </div>
-                        <div
-                          class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                        >
-                          <img src="./assets/svgs/clock.svg" alt="" />
-                          1 days ago
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="hot-item--love self-start">
-                    <img
-                      class=""
-                      src="./assets/svgs/heart-outline.svg"
-                      alt=""
-                    />
-                  </button>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="hot-item">
-                  <div class="flex items-center">
-                    <div
-                      class="mr-2 flex w-4 flex-col items-center text-center text-14 font-semibold text-grey-400 md:mr-1 md:w-6 md:text-18"
-                    >
-                      7
-                      <img
-                        class="md:hidden"
-                        src="./assets/svgs/up.svg"
-                        alt=""
-                      />
+                      1
+                      <img class="md:hidden" src="assets/svgs/up.svg" alt="" />
                     </div>
                     <div class="mr-3 hidden flex-col items-center md:flex">
                       <span class="text-12 font-semibold">1</span>
@@ -4692,195 +4552,14 @@
                         class="absolute bottom-1.5 right-2.5 text-12 text-white"
                         >03:20</span
                       >
-                    </div>
-                    <div class="mr-2">
-                      <div class="text-14 font-semibold md:text-base">
-                        Vlogging as a career in 2022
+                      <div class="hot-item-play btn-open-video rounded-xl">
+                        <img
+                          class="aspect-square transintion-opacity w-6 h-6 duration-500 rounded-lg object-cover"
+                          src="./assets/svgs/play-music.svg"
+                          loading="lazy"
+                          alt="Vlogging as a career in 2022"
+                        />
                       </div>
-                      <div class="mt-1 text-12 text-grey-400 md:text-14">
-                        Nancy Jaiswal
-                      </div>
-                      <div class="mt-1 hidden items-center md:flex">
-                        <div
-                          class="mr-3 line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                        >
-                          <img src="./assets/svgs/views.svg" alt="" />
-                          150K views
-                        </div>
-                        <div
-                          class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                        >
-                          <img src="./assets/svgs/clock.svg" alt="" />
-                          1 days ago
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="hot-item--love self-start">
-                    <img
-                      class=""
-                      src="./assets/svgs/heart-outline.svg"
-                      alt=""
-                    />
-                  </button>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="hot-item">
-                  <div class="flex items-center">
-                    <div
-                      class="mr-2 flex w-4 flex-col items-center text-center text-14 font-semibold text-grey-400 md:mr-1 md:w-6 md:text-18"
-                    >
-                      8
-                      <img
-                        class="md:hidden"
-                        src="./assets/svgs/stand.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="mr-3 hidden flex-col items-center md:flex">
-                      <span class="text-12 font-semibold">1</span>
-                      <img src="./assets/svgs/stand.svg" alt="" />
-                    </div>
-                    <div
-                      class="relative mr-3 h-16 w-[114px] md:h-20 md:w-[142px]"
-                    >
-                      <img
-                        class="mr-3 aspect-square h-full w-full rounded-lg object-cover"
-                        src="./assets/images/videos/1.jpg"
-                        loading="lazy"
-                        alt="Vlogging as a career in 2022"
-                      />
-                      <span
-                        class="absolute bottom-1.5 right-2.5 text-12 text-white"
-                        >03:20</span
-                      >
-                    </div>
-                    <div class="mr-2">
-                      <div class="text-14 font-semibold md:text-base">
-                        Vlogging as a career in 2022
-                      </div>
-                      <div class="mt-1 text-12 text-grey-400 md:text-14">
-                        Nancy Jaiswal
-                      </div>
-                      <div class="mt-1 hidden items-center md:flex">
-                        <div
-                          class="mr-3 line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                        >
-                          <img src="./assets/svgs/views.svg" alt="" />
-                          150K views
-                        </div>
-                        <div
-                          class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                        >
-                          <img src="./assets/svgs/clock.svg" alt="" />
-                          1 days ago
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="hot-item--love self-start">
-                    <img
-                      class=""
-                      src="./assets/svgs/heart-outline.svg"
-                      alt=""
-                    />
-                  </button>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="hot-item">
-                  <div class="flex items-center">
-                    <div
-                      class="mr-2 flex w-4 flex-col items-center text-center text-14 font-semibold text-grey-400 md:mr-1 md:w-6 md:text-18"
-                    >
-                      9
-                      <img
-                        class="md:hidden"
-                        src="./assets/svgs/down.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="mr-3 hidden flex-col items-center md:flex">
-                      <span class="text-12 font-semibold">1</span>
-                      <img src="./assets/svgs/down.svg" alt="" />
-                    </div>
-                    <div
-                      class="relative mr-3 h-16 w-[114px] md:h-20 md:w-[142px]"
-                    >
-                      <img
-                        class="mr-3 aspect-square h-full w-full rounded-lg object-cover"
-                        src="./assets/images/videos/1.jpg"
-                        loading="lazy"
-                        alt="Vlogging as a career in 2022"
-                      />
-                      <span
-                        class="absolute bottom-1.5 right-2.5 text-12 text-white"
-                        >03:20</span
-                      >
-                    </div>
-                    <div class="mr-2">
-                      <div class="text-14 font-semibold md:text-base">
-                        Vlogging as a career in 2022
-                      </div>
-                      <div class="mt-1 text-12 text-grey-400 md:text-14">
-                        Nancy Jaiswal
-                      </div>
-                      <div class="mt-1 hidden items-center md:flex">
-                        <div
-                          class="mr-3 line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                        >
-                          <img src="./assets/svgs/views.svg" alt="" />
-                          150K views
-                        </div>
-                        <div
-                          class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                        >
-                          <img src="./assets/svgs/clock.svg" alt="" />
-                          1 days ago
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="hot-item--love self-start">
-                    <img
-                      class=""
-                      src="./assets/svgs/heart-outline.svg"
-                      alt=""
-                    />
-                  </button>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="hot-item">
-                  <div class="flex items-center">
-                    <div
-                      class="mr-2 flex w-4 flex-col items-center text-center text-14 font-semibold text-grey-400 md:mr-1 md:w-6 md:text-18"
-                    >
-                      10
-                      <img
-                        class="md:hidden"
-                        src="./assets/svgs/down.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="mr-3 hidden flex-col items-center md:flex">
-                      <span class="text-12 font-semibold">1</span>
-                      <img src="./assets/svgs/down.svg" alt="" />
-                    </div>
-                    <div
-                      class="relative mr-3 h-16 w-[114px] md:h-20 md:w-[142px]"
-                    >
-                      <img
-                        class="mr-3 aspect-square h-full w-full rounded-lg object-cover"
-                        src="./assets/images/videos/1.jpg"
-                        loading="lazy"
-                        alt="Vlogging as a career in 2022"
-                      />
-                      <span
-                        class="absolute bottom-1.5 right-2.5 text-12 text-white"
-                        >03:20</span
-                      >
                     </div>
                     <div class="mr-2">
                       <div class="text-14 font-semibold md:text-base">
@@ -4934,7 +4613,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -4964,7 +4643,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -4994,7 +4673,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -5024,7 +4703,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -5054,7 +4733,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -5084,7 +4763,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -5114,7 +4793,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -5144,7 +4823,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -5174,7 +4853,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -5204,7 +4883,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -5234,7 +4913,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -5264,7 +4943,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
@@ -5294,7 +4973,7 @@
                 </div>
                 <img
                   class="mx-3 aspect-square w-12 rounded-xl object-cover"
-                  src="./assets/images/artists/1.png"
+                  src="assets/images/artists/1.png"
                   loading="lazy"
                   alt="Ariana Grande"
                 />
