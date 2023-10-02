@@ -103,7 +103,7 @@ $(document).ready(function () {
         </div>
       </div>
     </div>
-    <div class="h-full w-full bg-[#f7f7f7] flex flex-col">
+    <div class="h-full w-full bg-grey-100 flex flex-col">
       <div class="px-4">
         <div class="flex items-start flex-col gap-1">
           <div class="flex items-end gap-3">
@@ -122,7 +122,7 @@ $(document).ready(function () {
           <div class="flex items-center flex-row-reverse gap-3">
             <div class="whitespace-normal w-full max-w-[440px]">
               <p
-                class="bg-[#0abfac] px-4 py-2 rounded-tl-[12px] rounded-tr-[12px] rounded-br-[12px] rounded-bl-[0] text-base text-[#ffffff]"
+                class="bg-branding-secondary px-4 py-2 rounded-tl-[12px] rounded-tr-[12px] rounded-br-[12px] rounded-bl-[0] text-base text-[#ffffff]"
               >
                 Wow you so beautiful
               </p>
@@ -293,7 +293,7 @@ $(document).ready(function () {
           <input
             type="text"
             placeholder="Write something..."
-            class="rounded-xl w-full py-3 px-4 bg-[#f7f7f7] border-none outline-none"
+            class="rounded-xl w-full py-3 px-4 bg-grey-100 border-none outline-none"
           />
         </div>
 

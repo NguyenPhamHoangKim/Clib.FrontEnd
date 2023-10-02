@@ -632,7 +632,7 @@
     </header>
     <main class="container mt-[120px] lg:mt-[165px]">
       <header
-        class="grid place-items-center grid-cols-2 lg:grid-cols-5 gap-1 p-1 rounded-xl mx-auto bg-[#f7f7f7] box-shadow"
+        class="grid place-items-center grid-cols-2 lg:grid-cols-5 gap-1 p-1 rounded-xl mx-auto bg-grey-100 box-shadow"
       >
         <a
           href="../setting/account.html"
@@ -830,6 +830,165 @@
         </div>
       </div>
     </main>
+    <footer
+      class="mt-[100px] border-t border-t-grey-400 pb-6 pt-4 max-md:hidden"
+    >
+      <div class="container flex items-center justify-between">
+        <div class="flex items-center">
+          <div class="-mb-0.5 mr-6 text-14 text-grey-400">
+            Copyright © 2023 Clib Music. All rights reserved.
+          </div>
+          <ul class="flex items-center gap-3">
+            <li>
+              <a href="#" class="text-14 text-grey-400">Privacy Policy</a>
+            </li>
+            <li>
+              <span class="footer-divider"></span>
+            </li>
+            <li>
+              <a href="#" class="text-14 text-grey-400">Terms of Use</a>
+            </li>
+            <li>
+              <span class="footer-divider"></span>
+            </li>
+            <li>
+              <a href="#" class="text-14 text-grey-400">Cookie Warning</a>
+            </li>
+            <li>
+              <span class="footer-divider"></span>
+            </li>
+            <li>
+              <a href="#" class="text-14 text-grey-400">Support</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="flex items-center gap-3">
+          <li>
+            <a href="#" class="lang-footer-item active">English</a>
+          </li>
+          <li>
+            <span class="footer-divider"></span>
+          </li>
+          <li>
+            <a href="#" class="lang-footer-item">Tiếng Việt</a>
+          </li>
+          <li>
+            <span class="footer-divider"></span>
+          </li>
+          <li>
+            <a href="#" class="lang-footer-item">简体中文</a>
+          </li>
+          <li>
+            <span class="footer-divider"></span>
+          </li>
+          <li>
+            <a href="#" class="lang-footer-item">한국어</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div id="header-tab-modal" class="overlay header-tab-modal">
+      <div class="header-tab-modal--inner">
+        <div class="flex-1">
+          <button
+            id="close-header-tab-modal"
+            class="flex w-full items-center justify-end"
+          >
+            <img width="16" height="16" src="../assets/svgs/close.svg" alt="" />
+          </button>
+          <div class="mt-4 flex items-center gap-3 md:hidden">
+            <img
+              class="rounded-2xl object-cover"
+              width="64"
+              height="64"
+              loading="lazy"
+              src="../assets/images/artists/2.png"
+              alt=""
+            />
+            <div>
+              <div class="flex items-center gap-1 text-14 font-semibold">
+                Son Tung M-TP <img src="../assets/svgs/verify.svg" alt="" />
+              </div>
+              <div class="mt-2 flex items-center gap-3 text-14 text-grey-400">
+                <div><span class="font-semibold">53K</span> Followers</div>
+                <div><span class="font-semibold">12,3K</span> Following</div>
+              </div>
+            </div>
+          </div>
+          <ul class="mt-[14px]">
+            <li class="header-link">
+              <a
+                href="/voting/music-voting.html"
+                class="flex items-center text-grey-400"
+                ><img src="../assets/svgs/voting.svg" alt="" />
+                <span class="flex-1 text-center text-18 font-semibold"
+                  >Voting</span
+                ></a
+              >
+            </li>
+            <li class="header-link">
+              <a href="/wallet.html" class="flex items-center text-grey-400"
+                ><img src="../assets/svgs/wallet.svg" alt="" />
+                <span class="flex-1 text-center text-18 font-semibold"
+                  >Wallet</span
+                ></a
+              >
+            </li>
+            <li class="header-link">
+              <a href="/about-us.html" class="flex items-center text-grey-400"
+                ><img src="../assets/svgs/about-us.svg" alt="" />
+                <span class="flex-1 text-center text-18 font-semibold"
+                  >About us</span
+                ></a
+              >
+            </li>
+            <li class="header-link">
+              <a href="/setting.html" class="flex items-center text-grey-400"
+                ><img src="../assets/svgs/setting.svg" alt="" />
+                <span class="flex-1 text-center text-18 font-semibold"
+                  >Setting</span
+                ></a
+              >
+            </li>
+            <li class="header-link">
+              <a href="/support.html" class="flex items-center text-grey-400"
+                ><img src="../assets/svgs/support.svg" alt="" />
+                <span class="flex-1 text-center text-18 font-semibold"
+                  >Support</span
+                ></a
+              >
+            </li>
+            <li class="header-link">
+              <a
+                href="/privacy-police.html"
+                class="flex items-center text-grey-400"
+                ><img src="../assets/svgs/privacy-police.svg" alt="" />
+                <span class="flex-1 text-center text-18 font-semibold"
+                  >Privacy Police</span
+                ></a
+              >
+            </li>
+          </ul>
+          <div class="mt-[30px] flex items-center justify-center gap-4">
+            <button class="btn-tertiary">Sign out</button>
+          </div>
+        </div>
+        <div
+          class="flex items-center justify-between border-t border-t-grey-200 pt-4"
+        >
+          <div class="flex items-center gap-x-2 text-base">
+            <img src="../assets/svgs/global.svg" alt="" />
+            Language
+          </div>
+          <button
+            class="flex items-center gap-2 rounded-xl bg-grey-100 px-4 py-2"
+          >
+            <img src="../assets/svgs/flags/us.svg" alt="" />
+            English
+          </button>
+        </div>
+      </div>
+    </div>
     <!-- mobile -->
     <div
       class="w-full flex md:hidden items-center justify-between mb-6 py-3 box-shadow"
@@ -986,165 +1145,6 @@
             class="text-[#fff] rounded-xl hover:opacity-80 transition-opacity duration-500 bg-[#1975ff] text-14 lg:text-base font-semibold px-4 py-3"
           >
             Sale
-          </button>
-        </div>
-      </div>
-    </div>
-    <footer
-      class="mt-[100px] border-t border-t-grey-400 pb-6 pt-4 max-md:hidden"
-    >
-      <div class="container flex items-center justify-between">
-        <div class="flex items-center">
-          <div class="-mb-0.5 mr-6 text-14 text-grey-400">
-            Copyright © 2023 Clib Music. All rights reserved.
-          </div>
-          <ul class="flex items-center gap-3">
-            <li>
-              <a href="#" class="text-14 text-grey-400">Privacy Policy</a>
-            </li>
-            <li>
-              <span class="footer-divider"></span>
-            </li>
-            <li>
-              <a href="#" class="text-14 text-grey-400">Terms of Use</a>
-            </li>
-            <li>
-              <span class="footer-divider"></span>
-            </li>
-            <li>
-              <a href="#" class="text-14 text-grey-400">Cookie Warning</a>
-            </li>
-            <li>
-              <span class="footer-divider"></span>
-            </li>
-            <li>
-              <a href="#" class="text-14 text-grey-400">Support</a>
-            </li>
-          </ul>
-        </div>
-        <ul class="flex items-center gap-3">
-          <li>
-            <a href="#" class="lang-footer-item active">English</a>
-          </li>
-          <li>
-            <span class="footer-divider"></span>
-          </li>
-          <li>
-            <a href="#" class="lang-footer-item">Tiếng Việt</a>
-          </li>
-          <li>
-            <span class="footer-divider"></span>
-          </li>
-          <li>
-            <a href="#" class="lang-footer-item">简体中文</a>
-          </li>
-          <li>
-            <span class="footer-divider"></span>
-          </li>
-          <li>
-            <a href="#" class="lang-footer-item">한국어</a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-    <div id="header-tab-modal" class="overlay header-tab-modal">
-      <div class="header-tab-modal--inner">
-        <div class="flex-1">
-          <button
-            id="close-header-tab-modal"
-            class="flex w-full items-center justify-end"
-          >
-            <img width="16" height="16" src="../assets/svgs/close.svg" alt="" />
-          </button>
-          <div class="mt-4 flex items-center gap-3 md:hidden">
-            <img
-              class="rounded-2xl object-cover"
-              width="64"
-              height="64"
-              loading="lazy"
-              src="../assets/images/artists/2.png"
-              alt=""
-            />
-            <div>
-              <div class="flex items-center gap-1 text-14 font-semibold">
-                Son Tung M-TP <img src="../assets/svgs/verify.svg" alt="" />
-              </div>
-              <div class="mt-2 flex items-center gap-3 text-14 text-grey-400">
-                <div><span class="font-semibold">53K</span> Followers</div>
-                <div><span class="font-semibold">12,3K</span> Following</div>
-              </div>
-            </div>
-          </div>
-          <ul class="mt-[14px]">
-            <li class="header-link">
-              <a
-                href="/voting/music-voting.html"
-                class="flex items-center text-grey-400"
-                ><img src="../assets/svgs/voting.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >Voting</span
-                ></a
-              >
-            </li>
-            <li class="header-link">
-              <a href="/wallet.html" class="flex items-center text-grey-400"
-                ><img src="../assets/svgs/wallet.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >Wallet</span
-                ></a
-              >
-            </li>
-            <li class="header-link">
-              <a href="/about-us.html" class="flex items-center text-grey-400"
-                ><img src="../assets/svgs/about-us.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >About us</span
-                ></a
-              >
-            </li>
-            <li class="header-link">
-              <a href="/setting.html" class="flex items-center text-grey-400"
-                ><img src="../assets/svgs/setting.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >Setting</span
-                ></a
-              >
-            </li>
-            <li class="header-link">
-              <a href="/support.html" class="flex items-center text-grey-400"
-                ><img src="../assets/svgs/support.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >Support</span
-                ></a
-              >
-            </li>
-            <li class="header-link">
-              <a
-                href="/privacy-police.html"
-                class="flex items-center text-grey-400"
-                ><img src="../assets/svgs/privacy-police.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >Privacy Police</span
-                ></a
-              >
-            </li>
-          </ul>
-          <div class="mt-[30px] flex items-center justify-center gap-4">
-            <button class="btn-tertiary">Sign out</button>
-          </div>
-        </div>
-        <div
-          class="flex items-center justify-between border-t border-t-grey-200 pt-4"
-        >
-          <div class="flex items-center gap-x-2 text-base">
-            <img src="../assets/svgs/global.svg" alt="" />
-            Language
-          </div>
-          <button
-            class="flex items-center gap-2 rounded-xl bg-grey-100 px-4 py-2"
-          >
-            <img src="../assets/svgs/flags/us.svg" alt="" />
-            English
           </button>
         </div>
       </div>
