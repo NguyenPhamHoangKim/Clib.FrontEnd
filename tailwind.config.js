@@ -34,6 +34,9 @@ module.exports = {
         Poppins: ["Poppins", ...defaultTheme.fontFamily.sans],
         Inter: ["Inter", ...defaultTheme.fontFamily.sans],
       },
+      backdropBlur: {
+        10: "10px",
+      },
     },
     container: {
       center: true,
