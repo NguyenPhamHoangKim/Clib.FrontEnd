@@ -132,7 +132,7 @@ new Swiper(".playlists-mb-swiper", {
 });
 
 new Swiper(".playlists-pc-swiper", {
-  slidesPerView: 2.4,
+  slidesPerView: 1.5,
   spaceBetween: 16,
   autoResize: false,
   navigation: {
@@ -140,7 +140,11 @@ new Swiper(".playlists-pc-swiper", {
     prevEl: ".swiper-playlists-pc-prev",
   },
   breakpoints: {
+    800: {
+      slidesPerView: 1.2,
+    },
     1320: {
+      slidesPerView: 2.3,
       spaceBetween: 24,
     },
   },

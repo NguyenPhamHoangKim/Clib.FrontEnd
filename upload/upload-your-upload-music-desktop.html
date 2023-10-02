@@ -622,113 +622,567 @@
         </ul>
       </div>
     </header>
-    <main class="container mt-[120px] lg:mt-[165px]">
+    <main class="container mt-[120px] md:mt-[135px] lg:mt-[165px]">
       <section class="my-12 relative">
-        <!-- video -->
-        <div class="modal-upload-video hidden overlay overflow-hidden">
-          <div
-            class="abs-center w-full lg:w-[78%] max-h-full scrollbar-custom overflow-y-auto lg:max-h-none bg-[#fff] rounded-xl p-6"
-          >
-            <div
-              class="w-full rounded-lg border py-2 px-4 hidden justify-between lg:flex items-center mb-6"
-            >
-              <div class="flex items-center gap-2">
-                <p class="text-14 lg:text-base font-semibold">file</p>
-                <p class="px-6 py-2 bg-grey-100 rounded-xl text-grey-400">
-                  demosong.mp3
-                </p>
-              </div>
-              <div class="px-6 py-2 bg-grey-100 rounded-xl text-grey-400">
-                Replace
+        <div class="overlay hidden modal-per">
+          <div class="w-[592px] abs-center p-6 rounded-xl bg-white">
+            <div class="mb-20">
+              <button class="close-modal">
+                <img
+                  src="../assets/svgs/close.svg"
+                  class="absolute right-4 top-4"
+                  alt=""
+                />
+              </button>
+              <h6 class="text-24 text-[#2C2F33] text-center font-semibold">
+                Permissions
+              </h6>
+              <div class="mt-6 flex flex-col gap-4">
+                <div class="flex flex-col gap-2">
+                  <div
+                    class="flex items-center text-base font-semibold text-grey-400 w-full justify-between"
+                  >
+                    Enable direct downloads
+                    <label
+                      class="relative inline-flex items-center cursor-pointer"
+                    >
+                      <input type="checkbox" value="" class="sr-only peer" />
+                      <div
+                        class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                      ></div>
+                    </label>
+                  </div>
+                  <p
+                    class="text-14 text-grey-400 pb-4 border-b border-b-[#EBEEF0]"
+                  >
+                    All songs will be available for direct download in the
+                    original format they were uploaded.
+                  </p>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <div
+                    class="flex items-center text-base font-semibold text-grey-400 w-full justify-between"
+                  >
+                    Enable direct downloads
+                    <label
+                      class="relative inline-flex items-center cursor-pointer"
+                    >
+                      <input type="checkbox" value="" class="sr-only peer" />
+                      <div
+                        class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                      ></div>
+                    </label>
+                  </div>
+                  <p
+                    class="text-14 text-grey-400 pb-4 border-b border-b-[#EBEEF0]"
+                  >
+                    All songs will be available for direct download in the
+                  </p>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <div
+                    class="flex items-center text-base font-semibold text-grey-400 w-full justify-between"
+                  >
+                    Enable direct downloads
+                    <label
+                      class="relative inline-flex items-center cursor-pointer"
+                    >
+                      <input type="checkbox" value="" class="sr-only peer" />
+                      <div
+                        class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                      ></div>
+                    </label>
+                  </div>
+                  <p
+                    class="text-14 text-grey-400 pb-4 border-b border-b-[#EBEEF0]"
+                  >
+                    All songs will be available for direct download in the
+                  </p>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <div
+                    class="flex items-center text-base font-semibold text-grey-400 w-full justify-between"
+                  >
+                    Enable direct downloads
+                    <label
+                      class="relative inline-flex items-center cursor-pointer"
+                    >
+                      <input type="checkbox" value="" class="sr-only peer" />
+                      <div
+                        class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                      ></div>
+                    </label>
+                  </div>
+                  <p
+                    class="text-14 text-grey-400 pb-4 border-b border-b-[#EBEEF0]"
+                  >
+                    All songs will be available for direct download in the
+                  </p>
+                </div>
+                <div class="px-4 py-3 bg-grey-100 rounded-xl">
+                  <p class="text-base font-semibold text-grey-400">
+                    Important:
+                    <span class="font-normal text-14 text-grey-400">
+                      By sharing, you confirm that your tracks comply with our
+                      Terms of use and you don’t infringe anyone else’s rights.
+                      If in doubt, refer to the Copyright information pages and
+                      FAQs before uploading.</span
+                    >
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="flex flex-col lg:flex-row lg:items-center gap-8">
-              <div class="lg:w-[40%]">
-                <img
-                  src="../assets/svgs/Frame 48096929.png"
-                  alt=""
-                  class="w-full lg:h-[280px] object-cover rounded-xl"
-                />
+            <div
+              class="fixed bottom-0 py-3 px-6 bg-white box-shadow rounded-bl-xl rounded-br-xl left-0 right-0 flex items-end gap-3 justify-end"
+            >
+              <div class="flex items-end justify-end gap-4">
+                <button
+                  class="text-base rounded-xl close-modal font-semibold text-grey-400 py-3 px-6 bg-[#ebeef0]"
+                >
+                  Cancel
+                </button>
+                <button
+                  class="text-base rounded-xl font-semibold text-[#fff] py-3 px-6 bg-[#1975ff]"
+                >
+                  Save
+                </button>
               </div>
-              <form class="lg:w-[60%] flex flex-col gap-3 text-grey-400">
-                <div class="flex flex-col gap-2">
-                  <label class="text-14 lg:text-base font-semibold"
-                    >Title</label
-                  >
-                  <input
-                    type="text"
-                    placeholder="Title"
-                    class="w-full px-4 py-3 titile bg-grey-100 rounded-xl outline-none border-none"
-                  />
-                </div>
-
-                <div class="flex flex-col gap-2">
-                  <label class="text-14 lg:text-base font-semibold"
-                    >Description</label
-                  >
-                  <textarea
-                    class="bg-grey-100 description rounded-xl min-h-[96px] h-[96px] outline-none border-none px-4 py-3"
-                    name="Description"
-                    id=""
-                    cols="30"
-                    rows="10"
-                    placeholder="Description your song"
-                  ></textarea>
-                </div>
-                <div
-                  class="text-14 lg:text-base font-semibold flex items-center gap-3"
-                >
-                  Privacy
-                  <div class="flex items-center gap-1 font-normal ml-12">
-                    <input type="radio" />Public
-                  </div>
-                  <div class="flex items-center gap-1 font-normal">
-                    <input type="radio" />Private
-                  </div>
-                </div>
-                <div
-                  class="text-14 lg:text-base font-semibold flex gap-3 items-center"
-                >
-                  Sell
-                  <div
-                    class="flex text-14 items-center font-normal line-clamp-1 ml-20 gap-1 text-grey-300"
-                  >
-                    <input type="radio" />No, It’s free
-                  </div>
-                  <div
-                    class="flex text-14 items-center font-normal line-clamp-1 gap-1 text-grey-300"
-                  >
-                    <input type="radio" />Yes, It’s for sell
-                  </div>
-                </div>
-                <div
-                  class="flex items-center py-2 w-[50%] justify-between rounded-xl px-4 text-16 font-semibold text-[#2C2F33] border border-[#EBEEF0] md:hidden"
-                >
-                  <p>$</p>
-                  <span>78</span>
-                  <p class="invisible">$</p>
-                </div>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 mt-9">
-                  <button
-                    type="button"
-                    class="px-6 close-modal hidden md:block py-3 rounded-xl text-center bg-[#ebeef0] font-semibold text-grey-400 transition-opacity duration-300 lg:hover:opacity-70"
-                  >
-                    Cancel
-                  </button>
-                  <button
-                    type="button"
-                    class="px-6 uploadButton py-3 rounded-xl text-center bg-grey-300 font-semibold text-[#fff] transition-opacity duration-300 lg:hover:opacity-70"
-                  >
-                    Upload
-                  </button>
-                </div>
-              </form>
             </div>
           </div>
         </div>
-        <!-- your shop -->
+        <!--  -->
+        <div class="overlay hidden artworkModal">
+          <div class="w-[592px] abs-center p-6 rounded-xl bg-white">
+            <div class="mb-20">
+              <button class="close-modal">
+                <img
+                  src="../assets/svgs/close.svg"
+                  class="absolute right-4 top-4"
+                  alt=""
+                />
+              </button>
+              <h6 class="text-24 text-[#2C2F33] text-center font-semibold">
+                Change Artwork
+              </h6>
+              <img
+                src="../assets/svgs/hinh1.png"
+                class="rounded-xl mx-auto mt-6"
+                alt=""
+              />
+            </div>
+            <div
+              class="fixed bottom-0 py-3 px-6 bg-white box-shadow rounded-bl-xl rounded-br-xl left-0 right-0 flex items-center gap-3 justify-between"
+            >
+              <h6 class="text-base text-grey-400">
+                Create a playlist with 3 songs
+              </h6>
+              <div class="flex items-end justify-end gap-4">
+                <button
+                  class="text-base rounded-xl close-modal font-semibold text-grey-400 py-3 px-6 bg-[#ebeef0]"
+                >
+                  Cancel
+                </button>
+                <button
+                  class="text-base rounded-xl font-semibold text-[#fff] py-3 px-6 bg-[#1975ff]"
+                >
+                  Save
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- modal delete  -->
+        <div class="overlay hidden modal-delete">
+          <div
+            class="abs-center px-6 pt-4 flex justify-between flex-col items-center bg-white w-[592px] rounded-xl"
+          >
+            <button class="close-modal">
+              <img
+                src="../assets/svgs/close.svg "
+                class="absolute right-4 top-4"
+                alt=""
+              />
+            </button>
+            <h6
+              class="md:text-20 text-24 w-full text-center font-semibold mb-6 text-[#2C2F33]"
+            >
+              Delete forever
+            </h6>
+            <div class="px-4 py-3 bg-grey-100 rounded-xl w-full">
+              <input
+                type="text"
+                placeholder="2 songs is about to be deleted"
+                class="text-grey-400 w-full bg-inherit"
+              />
+            </div>
+            <div class="w-full mt-4 mb-32 flex flex-col gap-4">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <img
+                    src="../assets/images/Avatar.png"
+                    class="w-12 h-12"
+                    alt=""
+                  />
+                  <div class="flex flex-col">
+                    <h6
+                      class="text-base font-semibold line-clamp-1 text-[#2C2F33]"
+                    >
+                      Songs for breakup
+                    </h6>
+                    <p class="flex items-center gap-1 line-clamp-1">18 songs</p>
+                  </div>
+                </div>
+                <button><img src="../assets/svgs/close.svg" alt="" /></button>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <img
+                    src="../assets/images/Avatar.png"
+                    class="w-12 h-12"
+                    alt=""
+                  />
+                  <div class="flex flex-col">
+                    <h6
+                      class="text-base font-semibold text-[#2C2F33] line-clamp-1"
+                    >
+                      Songs for breakup
+                    </h6>
+                    <p class="flex items-center gap-1 line-clamp-1">18 songs</p>
+                  </div>
+                </div>
+                <button><img src="../assets/svgs/close.svg" alt="" /></button>
+              </div>
+            </div>
+            <div
+              class="fixed bottom-0 py-3 px-6 bg-white box-shadow rounded-bl-xl rounded-br-xl left-0 right-0 flex flex-col gap-3 justify-between"
+            >
+              <h6 class="text-base text-grey-400">
+                Create a playlist with 3 songs
+              </h6>
+              <div class="flex items-end justify-end gap-[19px]">
+                <button
+                  class="text-base rounded-xl close-modal font-semibold text-grey-400 py-3 px-6 bg-[#ebeef0]"
+                >
+                  Cancel
+                </button>
+                <button
+                  class="text-base rounded-xl font-semibold text-[#fff] py-3 px-6 bg-[#ef5350]"
+                >
+                  Delete forever
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- fixed -->
+        </div>
+        <!-- modal add list -->
+        <div class="overlay hidden modal-add">
+          <div class="abs-center px-6 bg-white w-[592px] max-w-full rounded-xl">
+            <button class="close-modal absolute right-4 top-4">
+              <img src="../assets/svgs/close.svg " alt="" />
+            </button>
+            <div class="flex items-center justify-center mt-4">
+              <button
+                href="#"
+                class="text-grey-300 active-mobile btn btn-add py-3 px-6 text-base font-semibold"
+              >
+                Add to playlist
+              </button>
+              <button
+                href="#"
+                class="text-grey-300 btn create-btn py-3 px-6 text-base font-semibold"
+              >
+                Create to playlist
+              </button>
+            </div>
+            <div
+              class="flex items-center gap-2 bg-grey-100 px-4 py-2 rounded-xl mb-6"
+            >
+              <img src="../assets/svgs/search.svg" alt="" />
+              <input
+                type="text"
+                placeholder="Find your playlist music "
+                class="bg-inherit"
+              />
+            </div>
+            <div
+              class="flex flex-col gap-4 h-[400px] mb-4 overflow-y-auto scrollbar-custom"
+            >
+              <div class="flex items-center gap-3">
+                <img
+                  src="../assets/images/Avatar.png"
+                  class="w-12 h-12"
+                  alt=""
+                />
+                <div class="flex flex-col">
+                  <h6 class="text-base font-semibold text-[#2C2F33]">
+                    Songs for breakup
+                  </h6>
+                  <p class="flex items-center gap-1">
+                    <img src="../assets/images/musicnote.svg" alt="" /> 18 songs
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <img
+                  src="../assets/images/Avatar.png"
+                  class="w-12 h-12"
+                  alt=""
+                />
+                <div class="flex flex-col">
+                  <h6 class="text-base font-semibold text-[#2C2F33]">
+                    Songs for breakup
+                  </h6>
+                  <p class="flex items-center gap-1">
+                    <img src="../assets/images/musicnote.svg" alt="" /> 18 songs
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <img
+                  src="../assets/images/Avatar.png"
+                  class="w-12 h-12"
+                  alt=""
+                />
+                <div class="flex flex-col">
+                  <h6 class="text-base font-semibold text-[#2C2F33]">
+                    Songs for breakup
+                  </h6>
+                  <p class="flex items-center gap-1">
+                    <img src="../assets/images/musicnote.svg" alt="" /> 18 songs
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <img
+                  src="../assets/images/Avatar.png"
+                  class="w-12 h-12"
+                  alt=""
+                />
+                <div class="flex flex-col">
+                  <h6 class="text-base font-semibold text-[#2C2F33]">
+                    Songs for breakup
+                  </h6>
+                  <p class="flex items-center gap-1">
+                    <img src="../assets/images/musicnote.svg" alt="" /> 18 songs
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <img
+                  src="../assets/images/Avatar.png"
+                  class="w-12 h-12"
+                  alt=""
+                />
+                <div class="flex flex-col">
+                  <h6 class="text-base font-semibold text-[#2C2F33]">
+                    Songs for breakup
+                  </h6>
+                  <p class="flex items-center gap-1">
+                    <img src="../assets/images/musicnote.svg" alt="" /> 18 songs
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <img
+                  src="../assets/images/Avatar.png"
+                  class="w-12 h-12"
+                  alt=""
+                />
+                <div class="flex flex-col">
+                  <h6 class="text-base font-semibold text-[#2C2F33]">
+                    Songs for breakup
+                  </h6>
+                  <p class="flex items-center gap-1">
+                    <img src="../assets/images/musicnote.svg" alt="" /> 18 songs
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <img
+                  src="../assets/images/Avatar.png"
+                  class="w-12 h-12"
+                  alt=""
+                />
+                <div class="flex flex-col">
+                  <h6 class="text-base font-semibold text-[#2C2F33]">
+                    Songs for breakup
+                  </h6>
+                  <p class="flex items-center gap-1">
+                    <img src="../assets/images/musicnote.svg" alt="" /> 18 songs
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <img
+                  src="../assets/images/Avatar.png"
+                  class="w-12 h-12"
+                  alt=""
+                />
+                <div class="flex flex-col">
+                  <h6 class="text-base font-semibold text-[#2C2F33]">
+                    Songs for breakup
+                  </h6>
+                  <p class="flex items-center gap-1">
+                    <img src="../assets/images/musicnote.svg" alt="" /> 18 songs
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- modal Create list -->
+        <div class="overlay hidden modal-create">
+          <div
+            class="rounded-xl w-[592px] max-w-full abs-center bg-white px-4 pb-3"
+          >
+            <button class="close-modal absolute right-4 top-4">
+              <img src="../assets/svgs/close.svg" alt="" />
+            </button>
+            <div class="h-[590px] mb-14 overflow-y-auto scrollbar-custom">
+              <div class="flex items-center justify-center mt-3 mb-4">
+                <button
+                  href="#"
+                  class="text-grey-300 btn btn-add py-3 px-6 text-base font-semibold"
+                >
+                  Add to playlist
+                </button>
+                <button
+                  href="#"
+                  class="text-grey-300 active-mobile btn create-button py-3 px-6 text-base font-semibold"
+                >
+                  Create to playlist
+                </button>
+              </div>
+              <div class="flex flex-col gap-1">
+                <label class="text-base font-semibold text-grey-400" for=""
+                  >Playlist tittle</label
+                >
+                <input
+                  type="text"
+                  class="px-4 py-3 rounded-xl bg-grey-100"
+                  placeholder="playlist tittle"
+                />
+              </div>
+              <div class="flex mt-4 flex-col gap-1">
+                <label class="text-base font-semibold text-grey-400" for=""
+                  >Description</label
+                >
+                <textarea
+                  class="border-none px-4 outline-none py-3 bg-grey-100 rounded-xl min-h-[96px] max-h-[96px]"
+                >
+                </textarea>
+              </div>
+              <div
+                class="flex text-base mt-4 font-semibold text-grey-400 items-center gap-4"
+              >
+                Privacy
+                <div class="flex items-center gap-4">
+                  <div
+                    class="flex font-normal items-center text-[#2C2F33] gap-[6px]"
+                  >
+                    <input type="radio" />
+                    <label for="">Public</label>
+                  </div>
+                  <div
+                    class="flex font-normal text-[#2C2F33] items-center gap-[6px]"
+                  >
+                    <input type="radio" />
+                    <label for="">Private</label>
+                  </div>
+                </div>
+              </div>
+              <!-- list -->
+              <div class="flex flex-col gap-4 py-4 border-b border-b-[#EBEEF0]">
+                <div class="flex items-center justify-between w-full">
+                  <div class="flex items-center gap-3">
+                    <img
+                      src="../assets/images/Avatar.png"
+                      class="w-12 h-12"
+                      alt=""
+                    />
+                    <div class="flex flex-col">
+                      <h6 class="text-base font-semibold text-[#2C2F33]">
+                        Songs for breakup
+                      </h6>
+                      <p class="flex items-center gap-1">18 songs</p>
+                    </div>
+                  </div>
+                  <button><img src="../assets/svgs/close.svg" alt="" /></button>
+                </div>
+                <div class="flex items-center justify-between w-full">
+                  <div class="flex items-center gap-3">
+                    <img
+                      src="../assets/images/Avatar.png"
+                      class="w-12 h-12"
+                      alt=""
+                    />
+                    <div class="flex flex-col">
+                      <h6 class="text-base font-semibold text-[#2C2F33]">
+                        Songs for breakup
+                      </h6>
+                      <p class="flex items-center gap-1">18 songs</p>
+                    </div>
+                  </div>
+                  <button><img src="../assets/svgs/close.svg" alt="" /></button>
+                </div>
+                <div class="flex items-center justify-between w-full">
+                  <div class="flex items-center gap-3">
+                    <img
+                      src="../assets/images/Avatar.png"
+                      class="w-12 h-12"
+                      alt=""
+                    />
+                    <div class="flex flex-col">
+                      <h6 class="text-base font-semibold text-[#2C2F33]">
+                        Songs for breakup
+                      </h6>
+                      <p class="flex items-center gap-1">18 songs</p>
+                    </div>
+                  </div>
+                  <button><img src="../assets/svgs/close.svg" alt="" /></button>
+                </div>
+              </div>
+              <!-- find-->
+              <h5 class="text-base text-grey-400 mb-4 font-semibold">
+                Let's find something for your playlist
+              </h5>
+              <div
+                class="flex items-center gap-2 bg-grey-100 px-4 py-3 rounded-xl mb-6"
+              >
+                <img src="../assets/svgs/search.svg" alt="" />
+                <input
+                  type="text"
+                  placeholder="Find your playlist music "
+                  class="bg-inherit flex-1"
+                />
+              </div>
+            </div>
+            <!-- fixed -->
+            <div
+              class="fixed bottom-0 py-3 px-6 bg-white box-shadow rounded-bl-xl rounded-br-xl left-0 right-0 flex items-center justify-between max-sm:flex-col gap-7"
+            >
+              <h6 class="text-base text-grey-400">
+                Create a playlist with 3 songs
+              </h6>
+              <div class="flex items-center gap-[19px]">
+                <button
+                  class="text-base rounded-xl close-modal font-semibold text-grey-400 py-3 px-6 bg-[#ebeef0]"
+                >
+                  Cancel
+                </button>
+                <button
+                  class="text-base rounded-xl font-semibold text-[#fff] py-3 px-6 bg-[#1975ff]"
+                >
+                  Save
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
         <div
-          class="w-full bg-[#fff] lg:p-6 flex flex-col justify-center items-center rounded-xl"
+          class="w-full bg-[#fff] md:p-6 flex flex-col justify-center items-center rounded-xl"
         >
           <div
             class="grid grid-cols-1 w-full lg:grid-cols-3 p-1 bg-grey-100 rounded-xl lg:w-[570px] place-content-between mx-auto"
@@ -808,7 +1262,7 @@
             </a>
             <a
               href="../library/upload-video-desktop.html"
-              class="flex btn-upload btn-upload-video items-center active-upload text-14 font-semibold lg:text-16 justify-center gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl"
+              class="flex btn-upload btn-upload-video items-center font-semibold text-14 lg:text-16 justify-center gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -818,36 +1272,63 @@
                 fill="none"
               >
                 <path
-                  d="M14.2295 2.5V5.86H9.76953V2.5H14.2295Z"
-                  fill="white"
-                  stroke="white"
+                  d="M22 9V15C22 15.23 22 15.45 21.98 15.67C21.94 15.61 21.89 15.55 21.84 15.5C21.83 15.49 21.82 15.47 21.81 15.46C21 14.56 19.81 14 18.5 14C17.24 14 16.09 14.52 15.27 15.36C14.48 16.17 14 17.28 14 18.5C14 19.34 14.24 20.14 14.65 20.82C14.87 21.19 15.15 21.53 15.47 21.81C15.49 21.82 15.5 21.83 15.51 21.84C15.56 21.89 15.61 21.93 15.67 21.98C15.46 22 15.23 22 15 22H9C4 22 2 20 2 15V9C2 4 4 2 9 2H15C20 2 22 4 22 9Z"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                 />
                 <path
-                  d="M4.35297 3.49663C5.09793 2.94152 6.07364 2.5971 7.26975 2.52048C7.26999 2.5209 7.27019 2.5213 7.27035 2.52168C7.2704 2.52178 7.27043 2.52187 7.27047 2.52195V5.8607H2.77047C2.77033 5.8607 2.77021 5.8607 2.77009 5.8607C2.77001 5.86059 2.76992 5.86048 2.76983 5.86036C2.76875 5.85887 2.76803 5.85713 2.76775 5.85553C2.76762 5.85479 2.76753 5.85387 2.7676 5.85262C2.76767 5.85142 2.76793 5.84917 2.76898 5.8457L2.76899 5.8457L2.76998 5.84237C3.06695 4.83723 3.60802 4.05173 4.35297 3.49663Z"
-                  fill="white"
-                  stroke="white"
+                  d="M2.51953 7.10938H21.4795"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                 />
                 <path
-                  d="M16.7306 2.50996C16.7307 2.50958 16.731 2.50918 16.7312 2.50876C17.9273 2.58538 18.903 2.9298 19.648 3.48491C20.3929 4.04001 20.934 4.82551 21.231 5.83065L21.2309 5.83066L21.232 5.83398C21.233 5.83745 21.2333 5.8397 21.2333 5.8409C21.2334 5.84215 21.2333 5.84307 21.2332 5.84381C21.2329 5.84541 21.2322 5.84715 21.2311 5.84864C21.231 5.84876 21.2309 5.84887 21.2308 5.84898C21.2307 5.84898 21.2306 5.84898 21.2305 5.84898H16.7305V2.51023C16.7305 2.51015 16.7305 2.51006 16.7306 2.50996Z"
-                  fill="white"
-                  stroke="white"
+                  d="M8.51953 2.10938V6.96936"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                 />
                 <path
-                  d="M21.4864 15.8536C21.4709 15.838 21.4586 15.8238 21.4497 15.813C21.4407 15.802 21.4334 15.7923 21.4281 15.785C21.4259 15.7819 21.4238 15.779 21.4219 15.7764C20.7057 14.9907 19.6572 14.5 18.5 14.5C17.3796 14.5 16.3573 14.9621 15.6279 15.7091L21.4864 15.8536ZM21.4864 15.8536C21.4864 15.8536 21.4865 15.8536 21.4865 15.8536C21.4865 15.8536 21.4864 15.8536 21.4864 15.8536ZM21.5 15.8676V15.8803L21.6151 16.0191C22.1714 16.6903 22.5 17.5577 22.5 18.5C22.5 18.8227 22.4642 19.1292 22.3866 19.4221L22.3866 19.422L22.3843 19.4313C22.2868 19.8303 22.1265 20.2144 21.9203 20.5643C21.2265 21.7195 19.9561 22.5 18.5 22.5C17.5477 22.5 16.6916 22.1715 16.0316 21.6171L15.9857 21.5786L15.8871 21.48H15.8571C15.841 21.4641 15.8122 21.4368 15.7701 21.4079C15.5033 21.1688 15.2671 20.8796 15.0798 20.5645L15.0798 20.5645L15.0782 20.5618C14.7128 19.9558 14.5 19.2445 14.5 18.5C14.5 17.4135 14.9269 16.428 15.6278 15.7093L21.5 15.8676ZM16.0336 21.6265L16.0328 21.6257C16.0375 21.6302 16.0384 21.6312 16.0336 21.6265ZM15.5222 21.8278L15.67 21.68L15.5222 21.8278ZM21.6265 16.0236C21.6312 16.0284 21.6302 16.0275 21.6257 16.0228L21.6265 16.0236ZM19.75 20.2V19.73H20.18C20.8805 19.73 21.43 19.1618 21.43 18.48C21.43 17.7939 20.8661 17.23 20.18 17.23H19.75V16.84C19.75 16.1539 19.1861 15.59 18.5 15.59C17.8139 15.59 17.25 16.1539 17.25 16.84V17.23H16.82C16.1339 17.23 15.57 17.7939 15.57 18.48C15.57 19.1661 16.1339 19.73 16.82 19.73H17.25V20.2C17.25 20.8861 17.8139 21.45 18.5 21.45C19.1861 21.45 19.75 20.8861 19.75 20.2Z"
-                  fill="white"
-                  stroke="white"
+                  d="M15.4795 2.10938V6.51941"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                 />
                 <path
-                  d="M21.5 8.35937V12.7302C20.5913 12.2567 19.5561 11.9994 18.5 11.9994C16.7562 11.9994 15.0571 12.7131 13.8425 13.9598C12.6494 15.1749 12 16.7912 12 18.4994C12 19.4137 12.3528 20.5299 12.7653 21.4274C12.7723 21.4427 12.7728 21.4658 12.76 21.4876C12.756 21.4944 12.7524 21.4979 12.7506 21.4994C12.7504 21.4994 12.7502 21.4994 12.75 21.4994H7.81C4.87614 21.4994 2.5 19.1232 2.5 16.1894V8.35937H21.5Z"
-                  fill="white"
-                  stroke="white"
+                  d="M23 18.5C23 18.86 22.96 19.21 22.87 19.55C22.76 20 22.58 20.43 22.35 20.82C21.57 22.12 20.14 23 18.5 23C17.42 23 16.44 22.62 15.68 21.98C15.67 21.98 15.67 21.98 15.67 21.98C15.61 21.93 15.56 21.89 15.51 21.84C15.5 21.83 15.49 21.82 15.47 21.81C15.15 21.53 14.87 21.19 14.65 20.82C14.24 20.14 14 19.34 14 18.5C14 17.28 14.48 16.17 15.27 15.36C16.09 14.52 17.24 14 18.5 14C19.81 14 21 14.56 21.81 15.46C21.82 15.47 21.83 15.49 21.84 15.5C21.89 15.55 21.94 15.61 21.98 15.67C22.62 16.44 23 17.43 23 18.5Z"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M20.1803 18.4805H16.8203"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18.5 16.8398V20.1998"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                 />
               </svg>
               Upload Video
             </a>
             <a
-              href="../library/upload-your-upload-music-desktop.html"
-              class="flex btn-upload btn-upload-yourshop text-14 font-semibold lg:text-16 items-center justify-center gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl"
+              href="../library/upload-your-upload-desktop.html"
+              class="flex btn-upload btn-upload-yourshop text-14 active-upload font-semibold lg:text-16 items-center justify-center gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -857,64 +1338,213 @@
                 fill="none"
               >
                 <path
-                  d="M16.9405 8.89844C20.5405 9.20844 22.0105 11.0584 22.0105 15.1084V15.2384C22.0105 19.7084 20.2205 21.4984 15.7505 21.4984H9.24047C4.77047 21.4984 2.98047 19.7084 2.98047 15.2384V15.1084C2.98047 11.0884 4.43047 9.23844 7.97047 8.90844"
-                  stroke="#A1ABB3"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  d="M11.25 9.5V15.25C11.25 15.9361 11.8139 16.5 12.5 16.5C13.1861 16.5 13.75 15.9361 13.75 15.25V9.5H17.3C18.7946 9.5 19.9577 9.96497 20.745 10.7533C21.5321 11.5415 21.9947 12.7043 21.99 14.1984V14.2V16.8C21.99 18.2946 21.5251 19.4578 20.7364 20.2464C19.9478 21.0351 18.7846 21.5 17.29 21.5H7.7C6.20546 21.5 5.04235 21.0351 4.2538 20.2454C3.46518 19.4557 3 18.29 3 16.79V14.2C3 12.7054 3.46492 11.5422 4.25355 10.7536C5.04218 9.96492 6.20545 9.5 7.7 9.5H11.25Z"
+                  fill="white"
+                  stroke="white"
                 />
                 <path
-                  d="M12.5 15.0011V3.62109"
-                  stroke="#A1ABB3"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M15.8504 5.85L12.5004 2.5L9.15039 5.85"
-                  stroke="#A1ABB3"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  d="M13.6034 4.20785L12.7498 3.3543V4.56141V8.50141H12.2498V4.56141V3.3543L11.3963 4.20785L9.32629 6.27785C9.23155 6.37259 9.06813 6.37259 8.9734 6.27785C8.87866 6.18312 8.87866 6.0197 8.9734 5.92496L12.3234 2.57496C12.4181 2.48022 12.5816 2.48022 12.6763 2.57496L16.0263 5.92496C16.121 6.0197 16.121 6.18312 16.0263 6.27785C15.975 6.32914 15.9144 6.35141 15.8498 6.35141C15.7853 6.35141 15.7247 6.32914 15.6734 6.27785L13.6034 4.20785Z"
+                  fill="white"
+                  stroke="white"
                 />
               </svg>
               Your Upload
             </a>
           </div>
+          <!-- navigation -->
+          <div class="flex items-center mt-3">
+            <a
+              href="../library/upload-your-upload-music-desktop.html"
+              class="py-3 text-grey-300 active-mobile px-6 text-base font-semibold"
+            >
+              Your songs
+            </a>
+            <a
+              href="../library/upload-your-upload-video-desktop.html"
+              class="text-grey-300 py-3 px-6 text-base font-semibold"
+            >
+              Your videos
+            </a>
+          </div>
+          <!-- content -->
           <div
-            class="px-4 lg:px-[100px] max-w-full py-12 border border-dashed lg:max-w-[640px] mx-auto mt-8 mb-6 rounded-xl"
+            class="mt-8 mb-6 flex items-center justify-between w-full pb-4 border-b border-b-[#EBEEF0]"
           >
-            <div class="flex items-center flex-col justify-center">
-              <img src="../assets/svgs/Frame 48097757.png" alt="" />
-              <p class="text-12 lg:text-14 text-center text-grey-400 mt-4 mb-6">
-                Drag and drop your tracks & albums here. <br />
-                Provide MP4, MOV for highest audio quality.
-              </p>
-              <button
-                type="button"
-                class="text-grey-400 btn-upload-video px-6 py-3 bg-[#ebeef0] text-14 lg:text-base font-semibold rounded-xl"
+            <div class="flex items-center gap-[18px] text-14 text-grey-400">
+              <input type="checkbox" />
+              <label for="">Select all (2 selected)</label>
+            </div>
+            <div class="flex items-center gap-4">
+              <select
+                class="text-grey-300 dropdown outline-none border-none rounded-xl bg-grey-100 py-2 px-4"
+                name=""
+                id=""
               >
-                or choose files to upload
+                <option selected class="text-grey-300">Edit</option>
+                <option class="text-grey-300">Privacy and tag</option>
+                <option class="text-grey-300">Artwork</option>
+                <option class="text-grey-300">Permissions</option>
+              </select>
+              <button
+                class="px-4 py-2 open-modal-add bg-grey-100 text-base text-grey-300 rounded-xl"
+              >
+                Add to playlist
+              </button>
+              <button
+                class="px-4 py-2 bg-grey-100 open-modal-delete text-base text-grey-300 rounded-xl"
+              >
+                Delete
               </button>
             </div>
           </div>
-          <div
-            class="flex items-center gap-2 mb-8 lg:mb-16 text-14 lg:text-base text-grey-400"
-          >
-            <input type="checkbox" />Make a playlist when multiple files are
-            selected
-          </div>
-          <div
-            class="text-12 lg:text-14 text-grey-400 lg:max-w-[900px] flex flex-col text-center justify-center"
-          >
-            <p>
-              Supported file types and sizes ⁃ Upload troubleshooting tips ⁃
-              Copyright FAQs
-            </p>
-            <p>
-              By uploading, you confirm that your sounds comply with our Terms
-              of Use and you don't infringe anyone else's rights.
-            </p>
+          <!-- list -->
+          <div class="flex flex-col gap-4 w-full">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-4">
+                <input type="checkbox" name="" id="" />
+                <div class="flex items-center gap-3">
+                  <img
+                    src="../assets/images/Avatar.png"
+                    alt=""
+                    class="w-full h-full rounded-xl"
+                  />
+                  <div>
+                    <h6 class="text-base w-[300px]">My name is will</h6>
+                    <p class="text-14 text-grey-400">Ngoc son</p>
+                    <div class="flex items-center gap-4">
+                      <div class="flex items-center gap-1 text-grey-400">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M8.31582 10.572L8.31659 10.5716L9.16993 10.0782L10.0225 9.58534C10.0226 9.5853 10.0226 9.58526 10.0227 9.58521C10.6656 9.21497 11.098 8.65732 11.098 7.9987C11.098 7.34023 10.6658 6.78268 10.0232 6.41244C10.0229 6.41231 10.0227 6.41218 10.0225 6.41205L9.16993 5.91916L8.31659 5.42583L8.31582 5.42539C7.67411 5.05591 6.97537 4.95889 6.4047 5.28686C5.83315 5.61533 5.56634 6.26866 5.56634 7.01203V7.9987V8.98536C5.56634 9.72637 5.83371 10.3786 6.40395 10.7076C6.97398 11.0365 7.67287 10.9422 8.31582 10.572ZM1.83301 7.9987C1.83301 4.59484 4.59582 1.83203 7.99967 1.83203C11.4035 1.83203 14.1663 4.59484 14.1663 7.9987C14.1663 11.4026 11.4035 14.1654 7.99967 14.1654C4.59582 14.1654 1.83301 11.4026 1.83301 7.9987Z"
+                            fill="#A1ABB3"
+                            stroke="#A1ABB3"
+                          />
+                        </svg>
+                        15k
+                      </div>
+                      <div class="flex items-center gap-1 text-grey-400">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M8.41301 13.8731C8.18634 13.9531 7.81301 13.9531 7.58634 13.8731C5.65301 13.2131 1.33301 10.4597 1.33301 5.79307C1.33301 3.73307 2.99301 2.06641 5.03967 2.06641C6.25301 2.06641 7.32634 2.65307 7.99967 3.55974C8.67301 2.65307 9.75301 2.06641 10.9597 2.06641C13.0063 2.06641 14.6663 3.73307 14.6663 5.79307C14.6663 10.4597 10.3463 13.2131 8.41301 13.8731Z"
+                            fill="#A1ABB3"
+                            stroke="#A1ABB3"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        820
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <button><img src="../assets/svgs/more.svg" alt="" /></button>
+                <div class="flex items-center gap-2 ml-20">
+                  <img src="../assets/images/global.svg" alt="" />
+                  <select
+                    class="outline-none text-14 border-none"
+                    name=""
+                    id=""
+                  >
+                    <option value="" class="flex items-center gap-2">
+                      Public
+                    </option>
+                    <option value="">Private</option>
+                  </select>
+                  <div class="max-w-[120px] text-14 text-center px-8">
+                    03:20
+                  </div>
+                  <div class="max-w-[120px] text-14 text-center">5 day ago</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-4">
+                <input type="checkbox" name="" id="" />
+                <div class="flex items-center gap-3">
+                  <img
+                    src="../assets/images/Avatar.png"
+                    alt=""
+                    class="w-full h-full rounded-xl"
+                  />
+                  <div>
+                    <h6 class="text-base w-[300px]">My name is will</h6>
+                    <p class="text-14 text-grey-400">Ngoc son</p>
+                    <div class="flex items-center gap-4">
+                      <div class="flex items-center gap-1 text-grey-400">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M8.31582 10.572L8.31659 10.5716L9.16993 10.0782L10.0225 9.58534C10.0226 9.5853 10.0226 9.58526 10.0227 9.58521C10.6656 9.21497 11.098 8.65732 11.098 7.9987C11.098 7.34023 10.6658 6.78268 10.0232 6.41244C10.0229 6.41231 10.0227 6.41218 10.0225 6.41205L9.16993 5.91916L8.31659 5.42583L8.31582 5.42539C7.67411 5.05591 6.97537 4.95889 6.4047 5.28686C5.83315 5.61533 5.56634 6.26866 5.56634 7.01203V7.9987V8.98536C5.56634 9.72637 5.83371 10.3786 6.40395 10.7076C6.97398 11.0365 7.67287 10.9422 8.31582 10.572ZM1.83301 7.9987C1.83301 4.59484 4.59582 1.83203 7.99967 1.83203C11.4035 1.83203 14.1663 4.59484 14.1663 7.9987C14.1663 11.4026 11.4035 14.1654 7.99967 14.1654C4.59582 14.1654 1.83301 11.4026 1.83301 7.9987Z"
+                            fill="#A1ABB3"
+                            stroke="#A1ABB3"
+                          />
+                        </svg>
+                        15k
+                      </div>
+                      <div class="flex items-center gap-1 text-grey-400">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M8.41301 13.8731C8.18634 13.9531 7.81301 13.9531 7.58634 13.8731C5.65301 13.2131 1.33301 10.4597 1.33301 5.79307C1.33301 3.73307 2.99301 2.06641 5.03967 2.06641C6.25301 2.06641 7.32634 2.65307 7.99967 3.55974C8.67301 2.65307 9.75301 2.06641 10.9597 2.06641C13.0063 2.06641 14.6663 3.73307 14.6663 5.79307C14.6663 10.4597 10.3463 13.2131 8.41301 13.8731Z"
+                            fill="#A1ABB3"
+                            stroke="#A1ABB3"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        820
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <button><img src="../assets/svgs/more.svg" alt="" /></button>
+                <div class="flex items-center gap-2 ml-20">
+                  <img src="../assets/images/lock.svg" alt="" />
+                  <select
+                    class="outline-none text-14 border-none"
+                    name=""
+                    id=""
+                  >
+                    <option value="" class="flex items-center gap-2">
+                      Private
+                    </option>
+                    <option value="">Public</option>
+                  </select>
+                  <div class="max-w-[120px] text-14 text-center px-8">
+                    03:20
+                  </div>
+                  <div class="max-w-[120px] text-14 text-center">5 day ago</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1086,5 +1716,5 @@
     referrerpolicy="no-referrer"
   ></script>
   <script src="../js/index.js"></script>
-  <script src="../js/upload.js"></script>
+  <script src="../js/your-upload.js"></script>
 </html>

@@ -3,15 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clib - Content</title>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
+    <title>Clib - Login</title>
     <link rel="stylesheet" href="../styles/index.css" />
   </head>
   <body>
@@ -631,274 +623,297 @@
       </div>
     </header>
     <main class="container mt-[120px] md:mt-[135px] lg:mt-[165px]">
-      <header
-        class="grid place-items-center grid-cols-2 lg:grid-cols-5 gap-1 p-1 rounded-xl mx-auto bg-grey-100 box-shadow"
-      >
-        <a
-          href="../setting/account.html"
-          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-grey-300 font-semibold"
-          id="account-link"
-        >
-          <ion-icon name="person-outline" class="w-[20px] h-[20px]"></ion-icon>
-          Account
-        </a>
-        <a
-          href="../setting/content.html"
-          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-grey-300 font-semibold"
-          id="content-link"
-        >
-          <ion-icon name="document-text-outline" class="w-5 h-5"> </ion-icon>
-          Content
-        </a>
-        <a
-          href="../setting/notifications.html"
-          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-grey-300 font-semibold"
-          id="notifications-link"
-        >
-          <ion-icon name="notifications-outline" class="w-5 h-5"></ion-icon>
-          Notifications
-        </a>
-        <a
-          href="../setting/privacy.html"
-          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-grey-300 font-semibold"
-          id="privacy-link"
-        >
-          <ion-icon name="shield-outline" class="w-5 h-5"></ion-icon>
-          Privacy
-        </a>
-        <a
-          href="../setting/advertising.html"
-          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-grey-300 font-semibold"
-          id="advertising-link"
-        >
-          <ion-icon name="volume-high"></ion-icon>
-          Advertising
-        </a>
-      </header>
-
-      <section class="p-6 rounded-xl bg-white mt-6">
-        <div class="w-[550px]">
-          <h5 class="text-20 lg:text-24 font-semibold text-[#2C2F33]">
-            RSS feed
-          </h5>
-          <p class="text-grey-300 text-14 lg:text-base mt-2">
-            hare your uploads with an RSS feed to enable your listeners to
-            subscribe in Podcasting apps
-          </p>
-        </div>
-        <div class="my-6 flex items-center justify-between gap-6">
-          <div class="w-full lg:w-[82%]">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >RSS feed</label
+      <section class="my-12 relative">
+        <!-- music -->
+        <div class="modal-upload-music hidden overlay">
+          <div
+            class="abs-center w-full lg:w-[78%] max-h-full scrollbar-custom overflow-y-auto lg:max-h-none bg-[#fff] rounded-xl p-6"
+          >
+            <div
+              class="w-full rounded-lg border py-2 px-4 hidden justify-between lg:flex items-center mb-6"
             >
-            <input
-              placeholder="https://feeds.Clib.com/users/Clib:users:1213810303/Clib.rss"
-              type="text"
-              class="w-full p-3 mt-2 bg-grey-100 outline-none border-none rounded-xl"
-            />
-          </div>
-          <div class="w-full lg:w-[40%]">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >Email address displayed</label
-            >
-            <input
-              placeholder="Don’t display email address"
-              type="text"
-              class="w-full p-3 mt-2 bg-grey-100 outline-none border-none rounded-xl"
-            />
-          </div>
-        </div>
-        <div class="grid grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="w-full">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >Custom feed title</label
-            >
-            <input
-              placeholder="Type feed title"
-              type="text"
-              class="w-full p-3 mt-2 bg-grey-100 outline-none border-none rounded-xl"
-            />
-          </div>
-          <div class="w-full">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >Category</label
-            >
-            <select
-              name=""
-              id=""
-              class="w-full p-3 mt-2 bg-grey-100 text-grey-300 outline-none border-none rounded-xl"
-            >
-              <option selected>Category</option>
-              <option>Viet Nam</option>
-              <option>America</option>
-            </select>
-          </div>
-          <div class="w-full">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >Stats-service URL prefix</label
-            >
-            <input
-              placeholder="http://"
-              type="text"
-              class="w-full p-3 mt-2 bg-grey-100 outline-none border-none rounded-xl"
-            />
-          </div>
-          <div class="w-full">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >Custom author name</label
-            >
-            <input
-              placeholder="Type author name"
-              type="text"
-              class="w-full p-3 mt-2 bg-grey-100 outline-none border-none rounded-xl"
-            />
-          </div>
-          <div class="w-full">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >Language</label
-            >
-            <select
-              name=""
-              id=""
-              class="w-full p-3 mt-2 bg-grey-100 text-grey-300 outline-none border-none rounded-xl"
-            >
-              <option selected>Language</option>
-              <option>Viet Nam</option>
-              <option>America</option>
-            </select>
-          </div>
-          <div class="w-full">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >Subscriber redirect</label
-            >
-            <input
-              placeholder="http://"
-              type="text"
-              class="w-full p-3 mt-2 bg-grey-100 outline-none border-none rounded-xl"
-            />
+              <div class="flex items-center gap-2">
+                <p class="text-14 lg:text-base font-semibold">file</p>
+                <p class="px-6 py-2 bg-grey-100 rounded-xl text-grey-400">
+                  demosong.mp3
+                </p>
+              </div>
+              <div class="px-6 py-2 bg-grey-100 rounded-xl text-grey-400">
+                Replace
+              </div>
+            </div>
+            <div class="flex flex-col lg:flex-row lg:items-center gap-8">
+              <div
+                class="h-[200px] w-[200px] mx-auto md:w-[500px] md:h-[500px]"
+              >
+                <img
+                  src="../assets/svgs/Frame 48096929.png"
+                  alt=""
+                  class="w-full rounded-xl object-cover h-full"
+                />
+              </div>
+              <form class="lg:w-[60%] flex flex-col gap-3 text-grey-400">
+                <div class="flex flex-col gap-2">
+                  <label class="text-14 lg:text-base font-semibold"
+                    >Title</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Title"
+                    class="w-full px-4 py-3 titile bg-grey-100 rounded-xl outline-none border-none"
+                  />
+                </div>
+                <div>
+                  <label class="text-14 lg:text-base font-semibold" for="Genre"
+                    >Genre</label
+                  >
+                  <select
+                    data-te-select-init
+                    class="w-full genre custom-select outline-none border-none px-4 py-3 bg-grey-100 rounded-xl mt-2"
+                  >
+                    <option
+                      class="outline-none border-none px-4 py-3 bg-grey-100 rounded-xl"
+                      value="1"
+                    >
+                      Pop
+                    </option>
+                    <option
+                      class="outline-none border-none px-4 py-3 bg-grey-100 rounded-xl"
+                      value="5"
+                    >
+                      Rock
+                    </option>
+                  </select>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label class="text-14 lg:text-base font-semibold"
+                    >Description</label
+                  >
+                  <textarea
+                    class="bg-grey-100 description rounded-xl min-h-[96px] h-[96px] outline-none border-none px-4 py-3"
+                    name="Description"
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="Description your song"
+                  ></textarea>
+                </div>
+                <div
+                  class="text-14 lg:text-base font-semibold flex items-center gap-3"
+                >
+                  Privacy
+                  <div class="flex items-center gap-1 font-normal lg:ml-12">
+                    <input type="radio" />Public
+                  </div>
+                  <div class="flex items-center gap-1 font-normal">
+                    <input type="radio" />Private
+                  </div>
+                </div>
+                <div
+                  class="text-14 lg:text-base font-semibold flex flex-col md:flex-row gap-3 md:items-center"
+                >
+                  Sell
+                  <div
+                    class="flex items-center font-normal lg:ml-20 gap-1 text-grey-300"
+                  >
+                    <input type="radio" />No, It’s free
+                  </div>
+                  <div
+                    class="flex items-center font-normal gap-1 text-grey-300"
+                  >
+                    <input type="radio" />Yes, It’s for sell
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 mt-9">
+                  <button
+                    type="button"
+                    class="px-6 close-modal hidden md:block py-3 rounded-xl text-center bg-[#ebeef0] font-semibold text-grey-400 transition-opacity duration-300 lg:hover:opacity-70"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="button"
+                    class="px-6 uploadButton py-3 rounded-xl text-center bg-grey-300 font-semibold text-[#fff] transition-opacity duration-300 lg:hover:opacity-70"
+                  >
+                    Upload
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-        <div class="mt-8">
-          <h5 class="text-20 lg:text-24 font-semibold text-[#2C2F33]">
-            Upload Defaults
-          </h5>
-          <p class="text-grey-300 text-14 lg:text-base mt-2">
-            Save time during upload by setting defaults. Track options can be
-            changed at any time when uploading or editing.
-          </p>
-          <div class="mt-2 flex items-center gap-3 text-grey-400">
-            <input type="checkbox" class="text-12 lg:text-14" />
-            Include in RSS feed
-          </div>
-          <div class="mt-2 flex items-center gap-3 text-grey-400">
-            <input type="checkbox" class="text-12 lg:text-14" />
-            Include in RSS feed
-          </div>
-          <div class="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-x-24">
-            <div class="pb-4 border-b">
-              <div
-                class="text-14 flex items-center justify-between lg:text-base text-grey-400 mb-2"
-              >
-                Attribution
-                <label class="relative inline-flex items-center cursor-pointer">
-                  <input type="checkbox" value="" class="sr-only peer" />
-                  <div
-                    class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
-                  ></div>
-                </label>
-              </div>
-              <p class="text-12 lg:text-14 text-grey-400">
-                Allow others to copy, distribute, display and perform your
-                copyrighted work but only if they give credit the way you
-                request.
-              </p>
-            </div>
-            <div class="pb-4 border-b">
-              <div
-                class="text-14 flex items-center justify-between lg:text-base text-grey-400 mb-2"
-              >
-                Attribution
-                <label class="relative inline-flex items-center cursor-pointer">
-                  <input type="checkbox" value="" class="sr-only peer" />
-                  <div
-                    class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
-                  ></div>
-                </label>
-              </div>
-              <p class="text-12 lg:text-14 text-grey-400">
-                Allow others to copy, distribute, display and perform your
-                copyrighted work but only if they give credit the way you
-                request.
-              </p>
-            </div>
-          </div>
-          <div class="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-x-24">
-            <div class="pb-4 border-b">
-              <div
-                class="text-14 flex items-center justify-between lg:text-base text-grey-400 mb-2"
-              >
-                Attribution
-                <label class="relative inline-flex items-center cursor-pointer">
-                  <input type="checkbox" value="" class="sr-only peer" />
-                  <div
-                    class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
-                  ></div>
-                </label>
-              </div>
-              <p class="text-12 lg:text-14 text-grey-400">
-                Allow others to copy, distribute, display and perform your
-                copyrighted work but only if they give credit the way you
-                request.
-              </p>
-            </div>
-            <div class="pb-4 border-b">
-              <div
-                class="text-14 flex items-center justify-between lg:text-base text-grey-400 mb-2"
-              >
-                Attribution
-                <label class="relative inline-flex items-center cursor-pointer">
-                  <input type="checkbox" value="" class="sr-only peer" />
-                  <div
-                    class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
-                  ></div>
-                </label>
-              </div>
-              <p class="text-12 lg:text-14 text-grey-400">
-                Allow others to copy, distribute, display and perform your
-                copyrighted work but only if they give credit the way you
-                request.
-              </p>
-            </div>
-          </div>
-
-          <div class="flex items-end justify-end gap-3 mt-6">
-            <button
-              class="text-grey-400 close-modal rounded-xl hover:opacity-80 transition-opacity duration-500 bg-[#ebeef0] text-14 lg:text-base font-semibold px-4 py-3"
+        <div
+          class="w-full bg-[#fff] lg:p-6 flex flex-col justify-center items-center rounded-xl"
+        >
+          <div
+            class="grid grid-cols-1 w-full lg:grid-cols-3 p-1 bg-grey-100 rounded-xl lg:w-[570px] place-content-between mx-auto"
+          >
+            <a
+              href="../library/upload-music-desktop.html"
+              class="flex btn-upload items-center justify-center w-full font-semibold text-14 lg:text-16 gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl active-upload"
             >
-              Cancel
-            </button>
-            <button
-              type="button"
-              class="text-[#fff] rounded-xl hover:opacity-80 transition-opacity duration-500 bg-[#1975ff] text-14 lg:text-base font-semibold px-4 py-3"
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+              >
+                <path
+                  d="M19.71 15.0117C18.62 14.9417 17.5 15.3417 16.67 16.1717C15.11 17.7317 15.11 20.2617 16.67 21.8317C17.2 22.3617 17.85 22.7117 18.54 22.8817C18.92 22.9817 19.32 23.0117 19.72 22.9917C20.67 22.9517 21.6 22.5717 22.33 21.8417C23.36 20.8117 23.71 19.3617 23.38 18.0517C23.22 17.3617 22.86 16.7117 22.33 16.1817C21.61 15.4517 20.67 15.0617 19.71 15.0117ZM21.74 18.9817C21.74 19.1917 21.66 19.3717 21.52 19.5117C21.38 19.6517 21.2 19.7317 20.99 19.7317H20.25V20.5117C20.25 20.7217 20.17 20.9017 20.03 21.0417C19.89 21.1817 19.71 21.2617 19.5 21.2617C19.09 21.2617 18.75 20.9217 18.75 20.5117V19.7317H18C17.59 19.7317 17.25 19.3917 17.25 18.9817C17.25 18.5717 17.59 18.2317 18 18.2317H18.75V17.5217C18.75 17.1117 19.09 16.7717 19.5 16.7717C19.91 16.7717 20.25 17.1117 20.25 17.5217V18.2317H20.99C21.41 18.2317 21.74 18.5717 21.74 18.9817Z"
+                  fill="white"
+                />
+                <path
+                  d="M12.7302 12.0703C12.3202 12.0703 11.9902 12.4003 11.9902 12.8103C11.9902 13.2203 12.3202 13.5503 12.7302 13.5503C13.1402 13.5503 13.4702 13.2203 13.4702 12.8103C13.4702 12.4003 13.1402 12.0703 12.7302 12.0703Z"
+                  fill="white"
+                />
+                <path
+                  d="M7.25953 13.0586C6.84953 13.0586 6.51953 13.3886 6.51953 13.7986C6.51953 14.2086 6.84953 14.5386 7.25953 14.5386C7.66953 14.5386 7.99953 14.2086 7.99953 13.7986C7.99953 13.3886 7.66953 13.0586 7.25953 13.0586Z"
+                  fill="white"
+                />
+                <path
+                  d="M16.69 2H8.31C8.03 2 7.76 2.01 7.5 2.05C4.35 2.34 2.5 4.45 2.5 7.81V16.19C2.5 19.55 4.35 21.66 7.5 21.95C7.76 21.99 8.03 22 8.31 22H14C14.39 22 14.64 21.56 14.49 21.2C14.2 20.51 14 19.71 14 19C14 15.97 16.47 13.5 19.5 13.5C20.26 13.5 21 13.65 21.68 13.95C22.05 14.11 22.5 13.86 22.5 13.46V7.81C22.5 4.17 20.33 2 16.69 2ZM14.98 8.05V12.81C14.98 12.82 14.97 12.83 14.97 12.85C14.95 14.07 13.96 15.06 12.73 15.06C11.49 15.06 10.49 14.05 10.49 12.82C10.49 11.58 11.5 10.58 12.73 10.58C12.99 10.58 13.24 10.63 13.48 10.72V9.03L9.51 10.11V13.81C9.51 13.82 9.5 13.83 9.5 13.84C9.48 15.06 8.49 16.04 7.26 16.04C6.02 16.04 5.02 15.03 5.02 13.8C5.02 12.57 6.03 11.56 7.26 11.56C7.52 11.56 7.77 11.61 8 11.7V9.54V7.79C8 6.86 8.58 6.11 9.47 5.87L12.45 5.05C13.38 4.8 13.95 5.05 14.27 5.29C14.73 5.64 14.96 6.21 14.96 6.97V8.05H14.98Z"
+                  fill="white"
+                />
+              </svg>
+              Upload Music
+            </a>
+            <a
+              href="../library/upload-video-desktop.html"
+              class="flex btn-upload btn-upload-video items-center font-semibold text-14 lg:text-16 justify-center gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl"
             >
-              Delete Account
-            </button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M22 9V15C22 15.23 22 15.45 21.98 15.67C21.94 15.61 21.89 15.55 21.84 15.5C21.83 15.49 21.82 15.47 21.81 15.46C21 14.56 19.81 14 18.5 14C17.24 14 16.09 14.52 15.27 15.36C14.48 16.17 14 17.28 14 18.5C14 19.34 14.24 20.14 14.65 20.82C14.87 21.19 15.15 21.53 15.47 21.81C15.49 21.82 15.5 21.83 15.51 21.84C15.56 21.89 15.61 21.93 15.67 21.98C15.46 22 15.23 22 15 22H9C4 22 2 20 2 15V9C2 4 4 2 9 2H15C20 2 22 4 22 9Z"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M2.51953 7.10938H21.4795"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.51953 2.10938V6.96936"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.4795 2.10938V6.51941"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M23 18.5C23 18.86 22.96 19.21 22.87 19.55C22.76 20 22.58 20.43 22.35 20.82C21.57 22.12 20.14 23 18.5 23C17.42 23 16.44 22.62 15.68 21.98C15.67 21.98 15.67 21.98 15.67 21.98C15.61 21.93 15.56 21.89 15.51 21.84C15.5 21.83 15.49 21.82 15.47 21.81C15.15 21.53 14.87 21.19 14.65 20.82C14.24 20.14 14 19.34 14 18.5C14 17.28 14.48 16.17 15.27 15.36C16.09 14.52 17.24 14 18.5 14C19.81 14 21 14.56 21.81 15.46C21.82 15.47 21.83 15.49 21.84 15.5C21.89 15.55 21.94 15.61 21.98 15.67C22.62 16.44 23 17.43 23 18.5Z"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M20.1803 18.4805H16.8203"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18.5 16.8398V20.1998"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Upload Video
+            </a>
+            <a
+              href="../library/upload-your-upload-music-desktop.html"
+              class="flex btn-upload btn-upload-yourshop text-14 font-semibold lg:text-16 items-center justify-center gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+              >
+                <path
+                  d="M16.9405 8.89844C20.5405 9.20844 22.0105 11.0584 22.0105 15.1084V15.2384C22.0105 19.7084 20.2205 21.4984 15.7505 21.4984H9.24047C4.77047 21.4984 2.98047 19.7084 2.98047 15.2384V15.1084C2.98047 11.0884 4.43047 9.23844 7.97047 8.90844"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12.5 15.0011V3.62109"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.8504 5.85L12.5004 2.5L9.15039 5.85"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Your Upload
+            </a>
+          </div>
+          <div
+            class="px-4 lg:px-[100px] max-w-full py-12 border border-dashed lg:max-w-[640px] mx-auto mt-8 mb-6 rounded-xl"
+          >
+            <div class="flex items-center flex-col justify-center">
+              <img src="../assets/svgs/Frame 48097757.png" alt="" />
+              <p class="text-12 lg:text-14 text-center text-grey-400 mt-4 mb-6">
+                Drag and drop your tracks & albums here. <br />
+                Provide FLAC, WAV, ALAC, or AIFF for highest audio quality.
+              </p>
+              <button
+                type="button"
+                class="text-grey-400 upload-music px-6 py-3 bg-[#ebeef0] text-14 lg:text-base font-semibold rounded-xl"
+              >
+                or choose files to upload
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex items-center gap-2 mb-8 lg:mb-16 text-14 lg:text-base text-grey-400"
+          >
+            <input type="checkbox" />Make a playlist when multiple files are
+            selected
+          </div>
+          <div
+            class="text-12 lg:text-14 text-grey-400 lg:max-w-[900px] flex flex-col text-center justify-center"
+          >
+            <p>
+              Supported file types and sizes ⁃ Upload troubleshooting tips ⁃
+              Copyright FAQs
+            </p>
+            <p>
+              By uploading, you confirm that your sounds comply with our Terms
+              of Use and you don't infringe anyone else's rights.
+            </p>
           </div>
         </div>
       </section>
@@ -1062,245 +1077,13 @@
         </div>
       </div>
     </div>
-    <!-- mobile -->
-    <section class="lg:p-6 rounded-xl bg-white lg:mt-6 block md:hidden">
-      <div
-        class="w-full flex items-center justify-between py-3 mb-6 md:hidden box-shadow"
-      >
-        <a href="../setting/basic-information.html"
-          ><img src="../assets/svgs/arrow-left.png" alt=""
-        /></a>
-        <div class="text-18 font-semibold text-[#2C2F33] px-4">Content</div>
-        <div></div>
-      </div>
-      <div class="px-4 md:px-0">
-        <div class="w-[550px]">
-          <h5 class="text-20 lg:text-24 font-semibold text-[#2C2F33]">
-            RSS feed
-          </h5>
-          <p class="text-grey-300 text-14 lg:text-base mt-2">
-            hare your uploads with an RSS feed to enable your listeners to
-            subscribe in Podcasting apps
-          </p>
-        </div>
-        <div class="my-6 flex flex-col gap-6">
-          <div class="w-full lg:w-[82%]">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >RSS feed</label
-            >
-            <input
-              placeholder="https://feeds.Clib.com/users/Clib:users:1213810303/Clib.rss"
-              type="text"
-              class="w-full p-3 mt-2 text-12 bg-grey-100 outline-none border-none rounded-xl"
-            />
-          </div>
-          <div class="w-full lg:w-[40%]">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >Email address displayed</label
-            >
-            <input
-              placeholder="Don’t display email address"
-              type="text"
-              class="w-full p-3 mt-2 text-12 bg-grey-100 outline-none border-none rounded-xl"
-            />
-          </div>
-        </div>
-        <div class="grid grid-cols-1 gap-6">
-          <div class="w-full">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >Custom feed title</label
-            >
-            <input
-              placeholder="Type feed title"
-              type="text"
-              class="w-full p-3 mt-2 text-12 bg-grey-100 outline-none border-none rounded-xl"
-            />
-          </div>
-          <div class="w-full">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >Category</label
-            >
-            <select
-              name=""
-              id=""
-              class="w-full p-3 mt-2 text-12 bg-grey-100 text-grey-300 outline-none border-none rounded-xl"
-            >
-              <option selected>Category</option>
-              <option>Viet Nam</option>
-              <option>America</option>
-            </select>
-          </div>
-          <div class="w-full">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >Stats-service URL prefix</label
-            >
-            <input
-              placeholder="http://"
-              type="text"
-              class="w-full p-3 mt-2 text-12 bg-grey-100 outline-none border-none rounded-xl"
-            />
-          </div>
-          <div class="w-full">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >Custom author name</label
-            >
-            <input
-              placeholder="Type author name"
-              type="text"
-              class="w-full p-3 mt-2 text-12 bg-grey-100 outline-none border-none rounded-xl"
-            />
-          </div>
-          <div class="w-full">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >Language</label
-            >
-            <select
-              name=""
-              id=""
-              class="w-full p-3 mt-2 text-12 bg-grey-100 text-grey-300 outline-none border-none rounded-xl"
-            >
-              <option selected>Language</option>
-              <option>Viet Nam</option>
-              <option>America</option>
-            </select>
-          </div>
-          <div class="w-full">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >Subscriber redirect</label
-            >
-            <input
-              placeholder="http://"
-              type="text"
-              class="w-full p-3 mt-2 text-12 bg-grey-100 outline-none border-none rounded-xl"
-            />
-          </div>
-        </div>
-        <div class="mt-8">
-          <h5 class="text-base font-semibold text-[#2C2F33]">
-            Upload Defaults
-          </h5>
-          <p class="text-grey-300 text-12 lg:text-base mt-2">
-            Save time during upload by setting defaults. Track options can be
-            changed at any time when uploading or editing.
-          </p>
-          <div class="mt-2 text-12 flex items-center gap-3 text-grey-400">
-            <input type="checkbox" class="text-12 lg:text-14" />
-            Include in RSS feed
-          </div>
-          <div class="mt-2 text-12 flex items-center gap-3 text-grey-400">
-            <input type="checkbox" class="text-12 lg:text-14" />
-            Include in RSS feed
-          </div>
-          <div class="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-x-24">
-            <div class="pb-4 border-b">
-              <div
-                class="text-14 flex items-center justify-between lg:text-base text-grey-400 mb-2"
-              >
-                Attribution
-                <label class="relative inline-flex items-center cursor-pointer">
-                  <input type="checkbox" value="" class="sr-only peer" />
-                  <div
-                    class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
-                  ></div>
-                </label>
-              </div>
-              <p class="text-12 lg:text-14 text-grey-400">
-                Allow others to copy, distribute, display and perform your
-                copyrighted work but only if they give credit the way you
-                request.
-              </p>
-            </div>
-            <div class="pb-4 border-b">
-              <div
-                class="text-14 flex items-center justify-between lg:text-base text-grey-400 mb-2"
-              >
-                Attribution
-                <label class="relative inline-flex items-center cursor-pointer">
-                  <input type="checkbox" value="" class="sr-only peer" />
-                  <div
-                    class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
-                  ></div>
-                </label>
-              </div>
-              <p class="text-12 lg:text-14 text-grey-400">
-                Allow others to copy, distribute, display and perform your
-                copyrighted work but only if they give credit the way you
-                request.
-              </p>
-            </div>
-          </div>
-          <div class="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-x-24">
-            <div class="pb-4 border-b">
-              <div
-                class="text-14 flex items-center justify-between lg:text-base text-grey-400 mb-2"
-              >
-                Attribution
-                <label class="relative inline-flex items-center cursor-pointer">
-                  <input type="checkbox" value="" class="sr-only peer" />
-                  <div
-                    class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
-                  ></div>
-                </label>
-              </div>
-              <p class="text-12 lg:text-14 text-grey-400">
-                Allow others to copy, distribute, display and perform your
-                copyrighted work but only if they give credit the way you
-                request.
-              </p>
-            </div>
-            <div class="pb-4 border-b">
-              <div
-                class="text-14 flex items-center justify-between lg:text-base text-grey-400 mb-2"
-              >
-                Attribution
-                <label class="relative inline-flex items-center cursor-pointer">
-                  <input type="checkbox" value="" class="sr-only peer" />
-                  <div
-                    class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
-                  ></div>
-                </label>
-              </div>
-              <p class="text-12 lg:text-14 text-grey-400">
-                Allow others to copy, distribute, display and perform your
-                copyrighted work but only if they give credit the way you
-                request.
-              </p>
-            </div>
-          </div>
-
-          <div class="w-full gap-3 mt-6">
-            <button
-              type="button"
-              class="text-[#fff] w-full rounded-xl hover:opacity-80 transition-opacity duration-500 bg-[#1975ff] text-14 lg:text-base font-semibold px-4 py-3"
-            >
-              Sale
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="../js/login.js"></script>
   </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="../js/index"></script>
+  <script src="../js/upload.js"></script>
 </html>

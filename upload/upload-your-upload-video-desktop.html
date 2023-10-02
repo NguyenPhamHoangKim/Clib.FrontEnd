@@ -622,8 +622,48 @@
         </ul>
       </div>
     </header>
-    <main class="container mt-[120px] lg:mt-[165px]">
+    <main class="container mt-[120px] md:mt-[135px] lg:mt-[165px]">
       <section class="my-12 relative">
+        <div class="overlay hidden artworkModal">
+          <div class="w-[592px] abs-center p-6 rounded-xl bg-white">
+            <div class="mb-20">
+              <button class="close-modal">
+                <img
+                  src="../assets/svgs/close.svg"
+                  class="absolute right-4 top-4"
+                  alt=""
+                />
+              </button>
+              <h6 class="text-24 text-[#2C2F33] text-center font-semibold">
+                Change Artwork
+              </h6>
+              <img
+                src="../assets/svgs/hinh1.png"
+                class="rounded-xl mx-auto mt-6"
+                alt=""
+              />
+            </div>
+            <div
+              class="fixed bottom-0 py-3 px-6 bg-white box-shadow rounded-bl-xl rounded-br-xl left-0 right-0 flex items-center gap-3 justify-between"
+            >
+              <h6 class="text-base text-grey-400">
+                Create a playlist with 3 videos
+              </h6>
+              <div class="flex items-end justify-end gap-4">
+                <button
+                  class="text-base rounded-xl close-modal font-semibold text-grey-400 py-3 px-6 bg-[#ebeef0]"
+                >
+                  Cancel
+                </button>
+                <button
+                  class="text-base rounded-xl font-semibold text-[#fff] py-3 px-6 bg-[#1975ff]"
+                >
+                  Save
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="overlay hidden modal-per">
           <div class="w-[592px] abs-center p-6 rounded-xl bg-white">
             <div class="mb-20">
@@ -750,48 +790,6 @@
             </div>
           </div>
         </div>
-        <!--  -->
-        <div class="overlay hidden artworkModal">
-          <div class="w-[592px] abs-center p-6 rounded-xl bg-white">
-            <div class="mb-20">
-              <button class="close-modal">
-                <img
-                  src="../assets/svgs/close.svg"
-                  class="absolute right-4 top-4"
-                  alt=""
-                />
-              </button>
-              <h6 class="text-24 text-[#2C2F33] text-center font-semibold">
-                Change Artwork
-              </h6>
-              <img
-                src="../assets/svgs/hinh1.png"
-                class="rounded-xl mx-auto mt-6"
-                alt=""
-              />
-            </div>
-            <div
-              class="fixed bottom-0 py-3 px-6 bg-white box-shadow rounded-bl-xl rounded-br-xl left-0 right-0 flex items-center gap-3 justify-between"
-            >
-              <h6 class="text-base text-grey-400">
-                Create a playlist with 3 songs
-              </h6>
-              <div class="flex items-end justify-end gap-4">
-                <button
-                  class="text-base rounded-xl close-modal font-semibold text-grey-400 py-3 px-6 bg-[#ebeef0]"
-                >
-                  Cancel
-                </button>
-                <button
-                  class="text-base rounded-xl font-semibold text-[#fff] py-3 px-6 bg-[#1975ff]"
-                >
-                  Save
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- modal delete  -->
         <div class="overlay hidden modal-delete">
           <div
             class="abs-center px-6 pt-4 flex justify-between flex-col items-center bg-white w-[592px] rounded-xl"
@@ -818,11 +816,7 @@
             <div class="w-full mt-4 mb-32 flex flex-col gap-4">
               <div class="flex items-center justify-between">
                 <div class="flex items-center gap-3">
-                  <img
-                    src="../assets/images/Avatar.png"
-                    class="w-12 h-12"
-                    alt=""
-                  />
+                  <img src="../assets/images/a2.png" alt="" />
                   <div class="flex flex-col">
                     <h6
                       class="text-base font-semibold line-clamp-1 text-[#2C2F33]"
@@ -836,11 +830,7 @@
               </div>
               <div class="flex items-center justify-between">
                 <div class="flex items-center gap-3">
-                  <img
-                    src="../assets/images/Avatar.png"
-                    class="w-12 h-12"
-                    alt=""
-                  />
+                  <img src="../assets/images/a2.png" alt="" />
                   <div class="flex flex-col">
                     <h6
                       class="text-base font-semibold text-[#2C2F33] line-clamp-1"
@@ -857,7 +847,7 @@
               class="fixed bottom-0 py-3 px-6 bg-white box-shadow rounded-bl-xl rounded-br-xl left-0 right-0 flex flex-col gap-3 justify-between"
             >
               <h6 class="text-base text-grey-400">
-                Create a playlist with 3 songs
+                Create a playlist with 3 videos
               </h6>
               <div class="flex items-end justify-end gap-[19px]">
                 <button
@@ -881,7 +871,7 @@
             <button class="close-modal absolute right-4 top-4">
               <img src="../assets/svgs/close.svg " alt="" />
             </button>
-            <div class="flex items-center justify-center mt-4">
+            <div class="flex items-center justify-center my-4">
               <button
                 href="#"
                 class="text-grey-300 active-mobile btn btn-add py-3 px-6 text-base font-semibold"
@@ -901,130 +891,193 @@
               <img src="../assets/svgs/search.svg" alt="" />
               <input
                 type="text"
-                placeholder="Find your playlist music "
-                class="bg-inherit"
+                placeholder="Find your playlist music"
+                class="bg-inherit flex-1"
               />
             </div>
             <div
               class="flex flex-col gap-4 h-[400px] mb-4 overflow-y-auto scrollbar-custom"
             >
               <div class="flex items-center gap-3">
-                <img
-                  src="../assets/images/Avatar.png"
-                  class="w-12 h-12"
-                  alt=""
-                />
+                <img src="../assets/images/a2.png" alt="" />
                 <div class="flex flex-col">
                   <h6 class="text-base font-semibold text-[#2C2F33]">
                     Songs for breakup
                   </h6>
                   <p class="flex items-center gap-1">
-                    <img src="../assets/images/musicnote.svg" alt="" /> 18 songs
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.99967 1.33203C4.31967 1.33203 1.33301 4.3187 1.33301 7.9987C1.33301 11.6787 4.31967 14.6654 7.99967 14.6654C11.6797 14.6654 14.6663 11.6787 14.6663 7.9987C14.6663 4.3187 11.6797 1.33203 7.99967 1.33203ZM9.77301 9.15203L8.91967 9.64536L8.06634 10.1387C6.96634 10.772 6.06634 10.252 6.06634 8.98536V7.9987V7.01203C6.06634 5.7387 6.96634 5.22536 8.06634 5.8587L8.91967 6.35203L9.77301 6.84537C10.873 7.4787 10.873 8.5187 9.77301 9.15203Z"
+                        fill="#A1ABB3"
+                      />
+                    </svg>
+                    18 songs
                   </p>
                 </div>
               </div>
               <div class="flex items-center gap-3">
-                <img
-                  src="../assets/images/Avatar.png"
-                  class="w-12 h-12"
-                  alt=""
-                />
+                <img src="../assets/images/a2.png" alt="" />
                 <div class="flex flex-col">
                   <h6 class="text-base font-semibold text-[#2C2F33]">
                     Songs for breakup
                   </h6>
                   <p class="flex items-center gap-1">
-                    <img src="../assets/images/musicnote.svg" alt="" /> 18 songs
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.99967 1.33203C4.31967 1.33203 1.33301 4.3187 1.33301 7.9987C1.33301 11.6787 4.31967 14.6654 7.99967 14.6654C11.6797 14.6654 14.6663 11.6787 14.6663 7.9987C14.6663 4.3187 11.6797 1.33203 7.99967 1.33203ZM9.77301 9.15203L8.91967 9.64536L8.06634 10.1387C6.96634 10.772 6.06634 10.252 6.06634 8.98536V7.9987V7.01203C6.06634 5.7387 6.96634 5.22536 8.06634 5.8587L8.91967 6.35203L9.77301 6.84537C10.873 7.4787 10.873 8.5187 9.77301 9.15203Z"
+                        fill="#A1ABB3"
+                      />
+                    </svg>
+                    18 songs
                   </p>
                 </div>
               </div>
               <div class="flex items-center gap-3">
-                <img
-                  src="../assets/images/Avatar.png"
-                  class="w-12 h-12"
-                  alt=""
-                />
+                <img src="../assets/images/a2.png" alt="" />
                 <div class="flex flex-col">
                   <h6 class="text-base font-semibold text-[#2C2F33]">
                     Songs for breakup
                   </h6>
                   <p class="flex items-center gap-1">
-                    <img src="../assets/images/musicnote.svg" alt="" /> 18 songs
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.99967 1.33203C4.31967 1.33203 1.33301 4.3187 1.33301 7.9987C1.33301 11.6787 4.31967 14.6654 7.99967 14.6654C11.6797 14.6654 14.6663 11.6787 14.6663 7.9987C14.6663 4.3187 11.6797 1.33203 7.99967 1.33203ZM9.77301 9.15203L8.91967 9.64536L8.06634 10.1387C6.96634 10.772 6.06634 10.252 6.06634 8.98536V7.9987V7.01203C6.06634 5.7387 6.96634 5.22536 8.06634 5.8587L8.91967 6.35203L9.77301 6.84537C10.873 7.4787 10.873 8.5187 9.77301 9.15203Z"
+                        fill="#A1ABB3"
+                      />
+                    </svg>
+                    18 songs
                   </p>
                 </div>
               </div>
               <div class="flex items-center gap-3">
-                <img
-                  src="../assets/images/Avatar.png"
-                  class="w-12 h-12"
-                  alt=""
-                />
+                <img src="../assets/images/a2.png" alt="" />
                 <div class="flex flex-col">
                   <h6 class="text-base font-semibold text-[#2C2F33]">
                     Songs for breakup
                   </h6>
                   <p class="flex items-center gap-1">
-                    <img src="../assets/images/musicnote.svg" alt="" /> 18 songs
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.99967 1.33203C4.31967 1.33203 1.33301 4.3187 1.33301 7.9987C1.33301 11.6787 4.31967 14.6654 7.99967 14.6654C11.6797 14.6654 14.6663 11.6787 14.6663 7.9987C14.6663 4.3187 11.6797 1.33203 7.99967 1.33203ZM9.77301 9.15203L8.91967 9.64536L8.06634 10.1387C6.96634 10.772 6.06634 10.252 6.06634 8.98536V7.9987V7.01203C6.06634 5.7387 6.96634 5.22536 8.06634 5.8587L8.91967 6.35203L9.77301 6.84537C10.873 7.4787 10.873 8.5187 9.77301 9.15203Z"
+                        fill="#A1ABB3"
+                      />
+                    </svg>
+                    18 songs
                   </p>
                 </div>
               </div>
               <div class="flex items-center gap-3">
-                <img
-                  src="../assets/images/Avatar.png"
-                  class="w-12 h-12"
-                  alt=""
-                />
+                <img src="../assets/images/a2.png" alt="" />
                 <div class="flex flex-col">
                   <h6 class="text-base font-semibold text-[#2C2F33]">
                     Songs for breakup
                   </h6>
                   <p class="flex items-center gap-1">
-                    <img src="../assets/images/musicnote.svg" alt="" /> 18 songs
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.99967 1.33203C4.31967 1.33203 1.33301 4.3187 1.33301 7.9987C1.33301 11.6787 4.31967 14.6654 7.99967 14.6654C11.6797 14.6654 14.6663 11.6787 14.6663 7.9987C14.6663 4.3187 11.6797 1.33203 7.99967 1.33203ZM9.77301 9.15203L8.91967 9.64536L8.06634 10.1387C6.96634 10.772 6.06634 10.252 6.06634 8.98536V7.9987V7.01203C6.06634 5.7387 6.96634 5.22536 8.06634 5.8587L8.91967 6.35203L9.77301 6.84537C10.873 7.4787 10.873 8.5187 9.77301 9.15203Z"
+                        fill="#A1ABB3"
+                      />
+                    </svg>
+                    18 songs
                   </p>
                 </div>
               </div>
               <div class="flex items-center gap-3">
-                <img
-                  src="../assets/images/Avatar.png"
-                  class="w-12 h-12"
-                  alt=""
-                />
+                <img src="../assets/images/a2.png" alt="" />
                 <div class="flex flex-col">
                   <h6 class="text-base font-semibold text-[#2C2F33]">
                     Songs for breakup
                   </h6>
                   <p class="flex items-center gap-1">
-                    <img src="../assets/images/musicnote.svg" alt="" /> 18 songs
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.99967 1.33203C4.31967 1.33203 1.33301 4.3187 1.33301 7.9987C1.33301 11.6787 4.31967 14.6654 7.99967 14.6654C11.6797 14.6654 14.6663 11.6787 14.6663 7.9987C14.6663 4.3187 11.6797 1.33203 7.99967 1.33203ZM9.77301 9.15203L8.91967 9.64536L8.06634 10.1387C6.96634 10.772 6.06634 10.252 6.06634 8.98536V7.9987V7.01203C6.06634 5.7387 6.96634 5.22536 8.06634 5.8587L8.91967 6.35203L9.77301 6.84537C10.873 7.4787 10.873 8.5187 9.77301 9.15203Z"
+                        fill="#A1ABB3"
+                      />
+                    </svg>
+                    18 songs
                   </p>
                 </div>
               </div>
               <div class="flex items-center gap-3">
-                <img
-                  src="../assets/images/Avatar.png"
-                  class="w-12 h-12"
-                  alt=""
-                />
+                <img src="../assets/images/a2.png" alt="" />
                 <div class="flex flex-col">
                   <h6 class="text-base font-semibold text-[#2C2F33]">
                     Songs for breakup
                   </h6>
                   <p class="flex items-center gap-1">
-                    <img src="../assets/images/musicnote.svg" alt="" /> 18 songs
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.99967 1.33203C4.31967 1.33203 1.33301 4.3187 1.33301 7.9987C1.33301 11.6787 4.31967 14.6654 7.99967 14.6654C11.6797 14.6654 14.6663 11.6787 14.6663 7.9987C14.6663 4.3187 11.6797 1.33203 7.99967 1.33203ZM9.77301 9.15203L8.91967 9.64536L8.06634 10.1387C6.96634 10.772 6.06634 10.252 6.06634 8.98536V7.9987V7.01203C6.06634 5.7387 6.96634 5.22536 8.06634 5.8587L8.91967 6.35203L9.77301 6.84537C10.873 7.4787 10.873 8.5187 9.77301 9.15203Z"
+                        fill="#A1ABB3"
+                      />
+                    </svg>
+                    18 songs
                   </p>
                 </div>
               </div>
               <div class="flex items-center gap-3">
-                <img
-                  src="../assets/images/Avatar.png"
-                  class="w-12 h-12"
-                  alt=""
-                />
+                <img src="../assets/images/a2.png" alt="" />
                 <div class="flex flex-col">
                   <h6 class="text-base font-semibold text-[#2C2F33]">
                     Songs for breakup
                   </h6>
                   <p class="flex items-center gap-1">
-                    <img src="../assets/images/musicnote.svg" alt="" /> 18 songs
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.99967 1.33203C4.31967 1.33203 1.33301 4.3187 1.33301 7.9987C1.33301 11.6787 4.31967 14.6654 7.99967 14.6654C11.6797 14.6654 14.6663 11.6787 14.6663 7.9987C14.6663 4.3187 11.6797 1.33203 7.99967 1.33203ZM9.77301 9.15203L8.91967 9.64536L8.06634 10.1387C6.96634 10.772 6.06634 10.252 6.06634 8.98536V7.9987V7.01203C6.06634 5.7387 6.96634 5.22536 8.06634 5.8587L8.91967 6.35203L9.77301 6.84537C10.873 7.4787 10.873 8.5187 9.77301 9.15203Z"
+                        fill="#A1ABB3"
+                      /></svg
+                    >18 songs
                   </p>
                 </div>
               </div>
@@ -1096,11 +1149,7 @@
               <div class="flex flex-col gap-4 py-4 border-b border-b-[#EBEEF0]">
                 <div class="flex items-center justify-between w-full">
                   <div class="flex items-center gap-3">
-                    <img
-                      src="../assets/images/Avatar.png"
-                      class="w-12 h-12"
-                      alt=""
-                    />
+                    <img src="../assets/images/a2.png" alt="" />
                     <div class="flex flex-col">
                       <h6 class="text-base font-semibold text-[#2C2F33]">
                         Songs for breakup
@@ -1112,11 +1161,7 @@
                 </div>
                 <div class="flex items-center justify-between w-full">
                   <div class="flex items-center gap-3">
-                    <img
-                      src="../assets/images/Avatar.png"
-                      class="w-12 h-12"
-                      alt=""
-                    />
+                    <img src="../assets/images/a2.png" alt="" />
                     <div class="flex flex-col">
                       <h6 class="text-base font-semibold text-[#2C2F33]">
                         Songs for breakup
@@ -1128,11 +1173,7 @@
                 </div>
                 <div class="flex items-center justify-between w-full">
                   <div class="flex items-center gap-3">
-                    <img
-                      src="../assets/images/Avatar.png"
-                      class="w-12 h-12"
-                      alt=""
-                    />
+                    <img src="../assets/images/a2.png" alt="" />
                     <div class="flex flex-col">
                       <h6 class="text-base font-semibold text-[#2C2F33]">
                         Songs for breakup
@@ -1154,7 +1195,7 @@
                 <input
                   type="text"
                   placeholder="Find your playlist music "
-                  class="bg-inherit flex-1"
+                  class="bg-inherit"
                 />
               </div>
             </div>
@@ -1163,7 +1204,7 @@
               class="fixed bottom-0 py-3 px-6 bg-white box-shadow rounded-bl-xl rounded-br-xl left-0 right-0 flex items-center justify-between max-sm:flex-col gap-7"
             >
               <h6 class="text-base text-grey-400">
-                Create a playlist with 3 songs
+                Create a playlist with 3 videos
               </h6>
               <div class="flex items-center gap-[19px]">
                 <button
@@ -1355,13 +1396,13 @@
           <div class="flex items-center mt-3">
             <a
               href="../library/upload-your-upload-music-desktop.html"
-              class="py-3 text-grey-300 active-mobile px-6 text-base font-semibold"
+              class="text-grey-300 py-3 px-6 text-base font-semibold"
             >
               Your songs
             </a>
             <a
               href="../library/upload-your-upload-video-desktop.html"
-              class="text-grey-300 py-3 px-6 text-base font-semibold"
+              class="text-grey-300 active-mobile py-3 px-6 text-base font-semibold"
             >
               Your videos
             </a>
@@ -1404,9 +1445,9 @@
                 <input type="checkbox" name="" id="" />
                 <div class="flex items-center gap-3">
                   <img
-                    src="../assets/images/Avatar.png"
+                    src="../assets/images/a2.png"
                     alt=""
-                    class="w-full h-full rounded-xl"
+                    class="w-full h-full rounded-lg"
                   />
                   <div>
                     <h6 class="text-base w-[300px]">My name is will</h6>
@@ -1477,9 +1518,9 @@
                 <input type="checkbox" name="" id="" />
                 <div class="flex items-center gap-3">
                   <img
-                    src="../assets/images/Avatar.png"
+                    src="../assets/images/a2.png"
                     alt=""
-                    class="w-full h-full rounded-xl"
+                    class="w-full h-full rounded-lg"
                   />
                   <div>
                     <h6 class="text-base w-[300px]">My name is will</h6>
@@ -1715,6 +1756,6 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   ></script>
-  <script src="../js/index.js"></script>
+  <script src="../js/index"></script>
   <script src="../js/your-upload.js"></script>
 </html>
