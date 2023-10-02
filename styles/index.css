@@ -7228,6 +7228,14 @@ input {
     margin-top: 160px;
   }
 
+  .lg\:mt-\[170px\]{
+    margin-top: 170px;
+  }
+
+  .lg\:mt-\[165px\]{
+    margin-top: 165px;
+  }
+
   .lg\:block{
     display: block;
   }
