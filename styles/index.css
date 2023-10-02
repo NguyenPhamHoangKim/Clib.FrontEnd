@@ -4066,6 +4066,11 @@ body{
   background-color: rgb(255 255 255 / 0.2);
 }
 
+.bg-grey-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(82 97 107 / var(--tw-bg-opacity));
+}
+
 .bg-\[linear-gradient\(180deg\2c rgba\(0\2c 0\2c 0\2c 0\.00\)_37\%\2c rgba\(0\2c 0\2c 0\2c 0\.80\)_100\%\)\]{
   background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 37%,rgba(0,0,0,0.80) 100%);
 }
