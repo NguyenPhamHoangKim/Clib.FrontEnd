@@ -110,7 +110,7 @@ $(document).ready(function () {
             <img src="./assets/images/st.png" alt="" />
             <div class="whitespace-normal w-full max-w-[440px]">
               <p
-                class="bg-[#ebeef0] px-4 py-2 rounded-tl-[12px] rounded-tr-[12px] rounded-br-[12px] rounded-bl-[0] text-base text-[#52616B]"
+                class="bg-[#ebeef0] px-4 py-2 rounded-tl-[12px] rounded-tr-[12px] rounded-br-[12px] rounded-bl-[0] text-base text-grey-400"
               >
                 má thằng đó tao yêu nó lắm mà nó cắm sừng tao mày ơi dm
                 nghiệp quật nó cho nó chừa đi,chứ tao buồn quá
@@ -135,7 +135,7 @@ $(document).ready(function () {
             <img src="./assets/images/st.png" alt="" />
             <div class="whitespace-normal w-full max-w-[440px]">
               <p
-                class="bg-[#ebeef0] px-4 py-2 rounded-tl-[12px] rounded-tr-[12px] rounded-br-[12px] rounded-bl-[0] text-base text-[#52616B]"
+                class="bg-[#ebeef0] px-4 py-2 rounded-tl-[12px] rounded-tr-[12px] rounded-br-[12px] rounded-bl-[0] text-base text-grey-400"
               >
                 Hello
               </p>
@@ -179,7 +179,7 @@ $(document).ready(function () {
                     <p class="">1</p>
                     <div>
                       <p>Out of my mine</p>
-                      <span class="text-sm font-normal text-[#52616B]"
+                      <span class="text-sm font-normal text-grey-400"
                         >Robbie Williams</span
                       >
                     </div>
@@ -191,7 +191,7 @@ $(document).ready(function () {
                     <p class="">2</p>
                     <div>
                       <p>Out of my mine</p>
-                      <span class="text-sm font-normal text-[#52616B]"
+                      <span class="text-sm font-normal text-grey-400"
                         >Robbie Williams</span
                       >
                     </div>
@@ -203,7 +203,7 @@ $(document).ready(function () {
                     <p class="">3</p>
                     <div>
                       <p>Out of my mine</p>
-                      <span class="text-sm font-normal text-[#52616B]"
+                      <span class="text-sm font-normal text-grey-400"
                         >Robbie Williams</span
                       >
                     </div>
@@ -239,7 +239,7 @@ $(document).ready(function () {
                 />
               </svg>
             </span>
-            <span class="text-sm text-[#52616B]">Send playlist</span>
+            <span class="text-sm text-grey-400">Send playlist</span>
           </div>
         </div>
         <div class="mr-3">
@@ -270,7 +270,7 @@ $(document).ready(function () {
                 />
               </svg>
             </span>
-            <span class="text-sm text-[#52616B]">Send playlist</span>
+            <span class="text-sm text-grey-400">Send playlist</span>
           </div>
         </div>
         <div class="mr-3">
