@@ -1016,8 +1016,8 @@ body{
   bottom: 1.25rem;
 }
 
-.bottom-6{
-  bottom: 1.5rem;
+.bottom-\[-2px\]{
+  bottom: -2px;
 }
 
 .bottom-\[-4px\]{
@@ -1058,10 +1058,6 @@ body{
 
 .left-5{
   left: 1.25rem;
-}
-
-.left-6{
-  left: 1.5rem;
 }
 
 .left-\[-2px\]{
@@ -1162,10 +1158,6 @@ body{
 
 .top-\[115px\]{
   top: 115px;
-}
-
-.top-\[50\%\]{
-  top: 50%;
 }
 
 .isolate{
@@ -1555,6 +1547,10 @@ body{
   margin-top: 94px;
 }
 
+.ml-5{
+  margin-left: 1.25rem;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -1861,6 +1857,10 @@ body{
 
 .h-\[400px\]{
   height: 400px;
+}
+
+.h-\[420px\]{
+  height: 420px;
 }
 
 .h-\[450px\]{
@@ -2176,6 +2176,10 @@ body{
   width: 300px;
 }
 
+.w-\[344px\]{
+  width: 344px;
+}
+
 .w-\[34px\]{
   width: 34px;
 }
@@ -2238,6 +2242,10 @@ body{
 
 .w-\[75\%\]{
   width: 75%;
+}
+
+.w-\[750px\]{
+  width: 750px;
 }
 
 .w-\[80\%\]{
@@ -3850,6 +3858,11 @@ body{
   border-top-color: rgb(82 97 107 / var(--tw-border-opacity));
 }
 
+.border-b-\[\#0ABFAC\]{
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(10 191 172 / var(--tw-border-opacity));
+}
+
 .\!bg-branding{
   --tw-bg-opacity: 1 !important;
   background-color: rgb(26 117 255 / var(--tw-bg-opacity)) !important;
@@ -4479,6 +4492,10 @@ body{
   padding-top: 1.5rem;
 }
 
+.pl-5{
+  padding-left: 1.25rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -4746,6 +4763,11 @@ body{
   color: rgb(83 98 108 / var(--tw-text-opacity));
 }
 
+.text-\[\#A1ABB2\]{
+  --tw-text-opacity: 1;
+  color: rgb(161 171 178 / var(--tw-text-opacity));
+}
+
 .text-\[\#EBEEF0\]{
   --tw-text-opacity: 1;
   color: rgb(235 238 240 / var(--tw-text-opacity));
@@ -4819,6 +4841,11 @@ body{
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#0ABFAC\]{
+  --tw-text-opacity: 1;
+  color: rgb(10 191 172 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -7175,10 +7202,6 @@ input {
     line-height: 24px;
   }
 
-  .md\:leading-\[48px\]{
-    line-height: 48px;
-  }
-
   .md\:text-\[\#fff\]{
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -7223,6 +7246,10 @@ input {
 
   .lg\:mr-3{
     margin-right: 0.75rem;
+  }
+
+  .lg\:mt-0{
+    margin-top: 0px;
   }
 
   .lg\:mt-1{

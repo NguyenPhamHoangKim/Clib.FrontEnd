@@ -8,6 +8,13 @@ $(".close-modal").each(function () {
     $(".modal-money").hide();
   });
 });
+$(".overlay").each(function () {
+  $(this).click(function () {
+    // Ẩn nội dung âm nhạc
+    $(".modal-paypal").hide();
+    $(".modal-money").hide();
+  });
+});
 
 $(".btn-paypal").each(function () {
   $(this).click(function () {

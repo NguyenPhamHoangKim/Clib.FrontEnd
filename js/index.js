@@ -189,10 +189,19 @@ checkClickOutside(
 $(".close-modal").each(function () {
   $(this).click(function () {
     $(".modal-video").hide();
+    $(".modal-video-full").hide();
   });
 });
+
 $(".btn-open-video").each(function () {
   $(this).click(function () {
     $(".modal-video").show();
+  });
+});
+
+$(".btn-modal-video-full").each(function () {
+  $(this).click(function () {
+    $(".modal-video").hide();
+    $(".modal-video-full").show();
   });
 });
