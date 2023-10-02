@@ -804,91 +804,101 @@
           </div>
           <div class="mt-8 mb-[145px] flex items-start gap-8">
             <div
-              class="filter-video w-full lg:max-w-[308px] lg:p-4 bg-[#fff] rounded-xl md:hidden md:fixed top-0 left-0 bottom-0 md:p-12 md:z-50 lg:block lg:static"
+              class="filter-video w-full mt-[100px] lg:mt-0 lg:max-w-[308px] lg:p-4 bg-[#fff] rounded-xl md:hidden md:fixed top-0 left-0 bottom-0 md:p-12 md:z-50 lg:block lg:static"
             >
               <h4
-                class="close-filter flex items-center justify-between font-semibold md:text-20 lg:text-24 mb-4"
+                class="flex items-center justify-between font-semibold md:text-20 lg:text-24 pb-3 border-b border-b-[#EBEEF0]"
               >
                 Filter
-                <img
-                  class="block lg:hidden"
-                  src="../assets/svgs/close.svg"
-                  alt=""
-                />
+                <button class="close-filter">
+                  <img
+                    class="block lg:hidden"
+                    src="../assets/svgs/close.svg"
+                    alt=""
+                  />
+                </button>
               </h4>
               <div>
-                <h5 class="text-18 font-semibold">Category</h5>
+                <h5 class="text-18 font-semibold mt-4 text-[#52616B]">
+                  Category
+                </h5>
                 <div
                   class="grid grid-cols-2 w-full bg-grey-100 font-semibold rounded-lg mt-2 text-12 md:text-14 lg:text-16 transition-all duration-500 p-1"
                 >
                   <a
                     href="../marketplace/marketplace-music-desktop.html"
-                    class="px-4 text-grey-300 flex items-center justify-center py-2 rounded-lg"
+                    class="px-4 flex items-center justify-center py-2 text-[#A1ABB2] font-semibold rounded-lg"
                   >
                     Music
                   </a>
                   <a
                     href="../marketplace/marketplace-video-desktop.html"
-                    class="px-4 flex items-center justify-center py-2 rounded-lg text-white bg-branding-fourth"
+                    class="px-4 text-white flex items-center justify-center py-2 bg-branding-fourth rounded-lg"
                   >
                     Videos
                   </a>
                 </div>
               </div>
               <div>
-                <h5 class="text-lg font-semibold mt-5">Seller</h5>
+                <h5 class="text-18 font-semibold mt-5 text-[#52616B]">
+                  Seller
+                </h5>
                 <div class="flex items-center gap-8 mt-3">
                   <div class="flex items-center gap-4">
-                    <input type="radio" /> All
+                    <input type="radio" class="w-5 h-5" /> All
                   </div>
                   <div class="flex items-center gap-4">
-                    <input type="radio" /> Following
+                    <input type="radio" class="w-5 h-5" /> Following
                   </div>
                 </div>
               </div>
               <div class="w-full">
-                <h5 class="text-lg font-semibold mt-5">Price</h5>
-                <div class="flex items-center gap-2 mt-3">
+                <h5 class="text-18 font-semibold mt-5 text-[#52616B]">Price</h5>
+                <div
+                  class="flex text-[#52616B] text-18 font-semibold items-center gap-2 mt-3"
+                >
                   <div
                     class="flex border items-center justify-center gap-3 w-full max-w-[120px] rounded-xl px-3 py-2"
                   >
                     $
                     <input
                       type="text"
-                      class="border outline-none w-full border-none"
+                      class="border outline-none text-[#A1ABB2] font-semibold text-18 w-full border-none"
                       placeholder="Min"
                     />
                   </div>
                   <span class="w-3 h-[2px] bg-[#EBEEF0]"></span>
                   <div
-                    class="flex border items-center justify-center gap-3 w-full max-w-[120px] rounded-xl px-3 py-2"
+                    class="flex border text-[#52616B] text-18 font-semibold items-center justify-center gap-3 w-full max-w-[120px] rounded-xl px-3 py-2"
                   >
                     $
                     <input
                       type="text"
-                      class="outline-none border w-full border-none"
+                      class="outline-none text-[#A1ABB2] font-semibold text-18 border w-full border-none"
                       placeholder="Max"
                     />
                   </div>
                 </div>
               </div>
               <div class="w-full">
-                <h5 class="text-18 font-semibold mt-5">Product</h5>
+                <h5 class="text-18 font-semibold mt-5 text-[#52616B]">
+                  Product
+                </h5>
                 <div class="flex flex-col gap-4 mt-3">
                   <div class="flex items-center gap-3">
-                    <input type="checkbox" /> Option 1
+                    <input type="checkbox" class="w-5 h-5" /> Option 1
                   </div>
                   <div class="flex items-center gap-3">
-                    <input type="checkbox" /> Option 2
+                    <input type="checkbox" class="w-5 h-5" /> Option 2
                   </div>
                   <div class="flex items-center gap-3">
-                    <input type="checkbox" /> Option 3
+                    <input type="checkbox" class="w-5 h-5" /> Option 3
                   </div>
                   <div class="flex items-center gap-3">
-                    <input type="checkbox" /> Option 4
+                    <input type="checkbox" class="w-5 h-5" /> Option 4
                   </div>
                   <div class="flex items-center gap-3">
-                    <input type="checkbox" /> Option 5
+                    <input type="checkbox" class="w-5 h-5" /> Option 5
                   </div>
                 </div>
               </div>
