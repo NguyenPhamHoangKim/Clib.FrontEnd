@@ -77,8 +77,6 @@
   ul li:nth-child(5) .header-item-link.active {
     @apply md:bg-branding-secondary;
   }
-  #toggle-mobile-menu {
-  }
 }
 @tailwind utilities;
 

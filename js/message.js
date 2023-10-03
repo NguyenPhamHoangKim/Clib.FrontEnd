@@ -110,10 +110,9 @@ $(document).ready(function () {
             <img src="./assets/images/st.png" alt="" />
             <div class="whitespace-normal w-full max-w-[440px]">
               <p
-                class="bg-[#ebeef0] px-4 py-2 rounded-tl-[12px] rounded-tr-[12px] rounded-br-[12px] rounded-bl-[0] text-base text-grey-400"
+                class="bg-grey-200 px-4 py-2 rounded-tl-[12px] rounded-tr-[12px] rounded-br-[12px] rounded-bl-[0] text-base text-grey-400"
               >
-                má thằng đó tao yêu nó lắm mà nó cắm sừng tao mày ơi dm
-                nghiệp quật nó cho nó chừa đi,chứ tao buồn quá
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
               </p>
             </div>
           </div>
@@ -135,7 +134,7 @@ $(document).ready(function () {
             <img src="./assets/images/st.png" alt="" />
             <div class="whitespace-normal w-full max-w-[440px]">
               <p
-                class="bg-[#ebeef0] px-4 py-2 rounded-tl-[12px] rounded-tr-[12px] rounded-br-[12px] rounded-bl-[0] text-base text-grey-400"
+                class="bg-grey-200 px-4 py-2 rounded-tl-[12px] rounded-tr-[12px] rounded-br-[12px] rounded-bl-[0] text-base text-grey-400"
               >
                 Hello
               </p>
@@ -285,7 +284,7 @@ $(document).ready(function () {
           <div id="playlist" class="relative">
             <img src="./assets/svgs/music.svg" alt="" />
             <span
-              class="absolute top-[-20px] right-[-15px] flex justify-center items-center w-6 h-6 rounded-[50%] bg-[#ebeef0]"
+              class="absolute top-[-20px] right-[-15px] flex justify-center items-center w-6 h-6 rounded-[50%] bg-grey-200"
               >2</span
             >
           </div>
