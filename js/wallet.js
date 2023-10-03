@@ -1,3 +1,29 @@
+function checkClickOutside(elementId, callback, openClass) {
+  $(document).on("click", function (event) {
+    const targetElement = event.target;
+    const containerElement = $("#" + elementId);
+
+    if (!openClass) {
+      if (
+        !containerElement.is(targetElement) &&
+        !containerElement.has(targetElement).length
+      ) {
+        callback();
+      }
+    } else {
+      const openClassElements = $("." + openClass);
+
+      if (
+        !containerElement.is(targetElement) &&
+        !openClassElements.is(targetElement) &&
+        !containerElement.has(targetElement).length &&
+        !openClassElements.has(targetElement).length
+      ) {
+        callback();
+      }
+    }
+  });
+}
 $(".modal-paypal").hide();
 $(".modal-money").hide();
 
