@@ -82,7 +82,7 @@ $(document).ready(function () {
       <div class="flex items-center justify-between w-full">
         <div>
           <span
-            class="text-lg font-semibold text-[#2C2F33] flex items-center gap-1 lg:text-xl whitespace-nowrap overflow-ellipsis max-w-[200px]"
+            class="text-lg font-semibold text-neutral-dark-500 flex items-center gap-1 lg:text-xl whitespace-nowrap overflow-ellipsis max-w-[200px]"
             >${personName}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -223,7 +223,7 @@ $(document).ready(function () {
           <img src="./assets/images/Rectangle 11 (1).png" alt="" />
           <div class="flex flex-col gap-1 pr-3">
             <span
-              class="text-lg font-semibold text-[#2C2F33] flex items-center gap-1 lg:text-xl whitespace-nowrap overflow-ellipsis max-w-[200px]"
+              class="text-lg font-semibold text-neutral-dark-500 flex items-center gap-1 lg:text-xl whitespace-nowrap overflow-ellipsis max-w-[200px]"
               >K-ICM
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -254,7 +254,7 @@ $(document).ready(function () {
           <img src="./assets/images/Rectangle 11 (1).png" alt="" />
           <div class="flex flex-col gap-1 pr-3">
             <span
-              class="text-lg font-semibold text-[#2C2F33] flex items-center gap-1 lg:text-xl whitespace-nowrap overflow-ellipsis max-w-[200px]"
+              class="text-lg font-semibold text-neutral-dark-500 flex items-center gap-1 lg:text-xl whitespace-nowrap overflow-ellipsis max-w-[200px]"
               >K-ICM
               <svg
                 xmlns="http://www.w3.org/2000/svg"
