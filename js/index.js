@@ -57,8 +57,8 @@ const handleToggleMs = function () {
   $elem.attr(
     "src",
     $elem.attr("src") === "/assets/svgs/messenger-selected.svg"
-      ? "/assets/svgs/messenger-pc.svg"
-      : "/assets/svgs/messenger-selected.svg",
+      ? "./assets/svgs/messenger-pc.svg"
+      : "./assets/svgs/messenger-selected.svg",
   );
 };
 
