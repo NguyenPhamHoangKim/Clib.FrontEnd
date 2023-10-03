@@ -795,7 +795,7 @@
         </div>
       </div>
       <div
-        class="mt-2 lg:mt-4 w-full xl:mt-6 grid lg:grid-cols-[1fr_2fr] xl:grid-cols-[1.2fr,2fr,1.2fr] gap-6"
+        class="mt-2 lg:mt-4 w-full xl:mt-6 grid lg:grid-cols-[340px_2fr] xl:grid-cols-[340px,2fr,1.2fr] gap-6"
       >
         <div class="flex flex-col gap-y-6 max-lg:hidden">
           <div class="p-4 rounded-xl bg-white">
@@ -970,8 +970,8 @@
             >
               Marketplace
             </div>
-            <div class="p-4 pr-0">
-              <!-- <div class="flex items-center justify-between pr-4">
+            <div class="p-4 pr-0 w-full">
+              <div class="flex items-center justify-between pr-4">
                 <div class="flex items-center">
                   <a
                     href="#"
@@ -991,10 +991,7 @@
                   >View all</a
                 >
               </div>
-              <div
-                id="goods-swiper"
-                class="song-swiper swiper relative mt-4 w-full"
-              >
+              <div class="goods-swiper swiper relative mt-4 w-full">
                 <div class="swiper-wrapper">
                   <a href="#" class="swiper-slide">
                     <div class="overflow-hidden rounded-lg relative">
@@ -1005,7 +1002,7 @@
                         alt=""
                       />
                       <div
-                        class="font-semibold absolute bottom-1 right-1 text-white px-3 h-8 rounded-lg bg-black/60 backdrop-blur"
+                        class="font-semibold absolute bottom-1 right-1 text-white px-3 h-8 rounded-lg bg-black/60 backdrop-blur flex items-center justify-center"
                       >
                         $12
                       </div>
@@ -1027,7 +1024,7 @@
                         alt=""
                       />
                       <div
-                        class="font-semibold absolute bottom-1 right-1 text-white px-3 h-8 rounded-lg bg-black/60 backdrop-blur"
+                        class="font-semibold absolute bottom-1 right-1 text-white px-3 h-8 rounded-lg bg-black/60 backdrop-blur flex items-center justify-center"
                       >
                         $12
                       </div>
@@ -1049,7 +1046,73 @@
                         alt=""
                       />
                       <div
-                        class="font-semibold absolute bottom-1 right-1 text-white px-3 h-8 rounded-lg bg-black/60 backdrop-blur"
+                        class="font-semibold absolute bottom-1 right-1 text-white px-3 h-8 rounded-lg bg-black/60 backdrop-blur flex items-center justify-center"
+                      >
+                        $12
+                      </div>
+                    </div>
+                    <div class="mt-3">
+                      <div
+                        class="text-14 md:text-base text-center text-ellipsis whitespace-nowrap"
+                      >
+                        I Love You 3000
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="swiper-slide">
+                    <div class="overflow-hidden rounded-lg relative">
+                      <img
+                        class="w-full aspect-square rounded-lg object-cover"
+                        src="../assets/images/songs/1.jpg"
+                        loading="lazy"
+                        alt=""
+                      />
+                      <div
+                        class="font-semibold absolute bottom-1 right-1 text-white px-3 h-8 rounded-lg bg-black/60 backdrop-blur flex items-center justify-center"
+                      >
+                        $12
+                      </div>
+                    </div>
+                    <div class="mt-3">
+                      <div
+                        class="text-14 md:text-base text-center text-ellipsis whitespace-nowrap"
+                      >
+                        I Love You 3000
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="swiper-slide">
+                    <div class="overflow-hidden rounded-lg relative">
+                      <img
+                        class="w-full aspect-square rounded-lg object-cover"
+                        src="../assets/images/songs/1.jpg"
+                        loading="lazy"
+                        alt=""
+                      />
+                      <div
+                        class="font-semibold absolute bottom-1 right-1 text-white px-3 h-8 rounded-lg bg-black/60 backdrop-blur flex items-center justify-center"
+                      >
+                        $12
+                      </div>
+                    </div>
+                    <div class="mt-3">
+                      <div
+                        class="text-14 md:text-base text-center text-ellipsis whitespace-nowrap"
+                      >
+                        I Love You 3000
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="swiper-slide">
+                    <div class="overflow-hidden rounded-lg relative">
+                      <img
+                        class="w-full aspect-square rounded-lg object-cover"
+                        src="../assets/images/songs/1.jpg"
+                        loading="lazy"
+                        alt=""
+                      />
+                      <div
+                        class="font-semibold absolute bottom-1 right-1 text-white px-3 h-8 rounded-lg bg-black/60 backdrop-blur flex items-center justify-center"
                       >
                         $12
                       </div>
@@ -1064,20 +1127,64 @@
                   </a>
                 </div>
                 <div
-                  class="swiper-song-navigation swiper-song-next max-lg:hidden"
+                  class="flex items-center justify-center flex-shrink-0 w-8 h-8 swiper-goods-navigation swiper-goods-next max-lg:hidden"
                 >
-                  <img src="../assets/svgs/arrow-next.svg" alt="" />
+                  <svg
+                    class="flex-shrink-0"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.4297 5.93005L20.4997 12.0001L14.4297 18.0701"
+                      stroke="#1A75FF"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M3.5 12H20.33"
+                      stroke="#1A75FF"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
                 </div>
                 <div
-                  class="swiper-song-navigation swiper-song-prev max-lg:hidden"
+                  class="flex items-center justify-center flex-shrink-0 w-8 h-8 swiper-goods-navigation swiper-goods-prev max-lg:hidden"
                 >
-                  <img
-                    class="rotate-180"
-                    src="../assets/svgs/arrow-next.svg"
-                    alt=""
-                  />
+                  <svg
+                    class="rotate-180 flex-shrink-0"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.4297 5.93005L20.4997 12.0001L14.4297 18.0701"
+                      stroke="#1A75FF"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M3.5 12H20.33"
+                      stroke="#1A75FF"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
                 </div>
-              </div> -->
+              </div>
               <div class="flex items-center justify-between pr-4 mt-4">
                 <div class="flex items-center">
                   <a
@@ -4612,7 +4719,6 @@
   ></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="../js/index.js"></script>
-  <script src="../js/home.js"></script>
   <script src="../js/feed.js"></script>
   <script src="../js/profile.js?v=1"></script>
 </html>

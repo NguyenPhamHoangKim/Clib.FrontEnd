@@ -12,16 +12,6 @@ $(".profile-nav:not(.active)").mouseleave(function () {
   $(this).find("img").attr("src", newSrc);
 });
 
-new Swiper("#goods-swiper", {
-  slidesPerView: 2.5,
-  spaceBetween: 8,
-  navigation: {
-    nextEl: ".swiper-song-next",
-    prevEl: ".swiper-song-prev",
-  },
-  autoResize: false,
-});
-
 $(".edit-profile-group").each(function () {
   const editProfileGroup = $(this);
   editProfileGroup.find(".profile-edit-btn").click(function () {
@@ -70,27 +60,14 @@ $(".comment-gallery-item").each(function () {
   });
 });
 
-new Swiper(".song-swiper", {
+new Swiper(".goods-swiper", {
   slidesPerView: 2.5,
   spaceBetween: 12,
   navigation: {
-    nextEl: ".swiper-song-next",
-    prevEl: ".swiper-song-prev",
+    nextEl: ".swiper-goods-next",
+    prevEl: ".swiper-goods-prev",
   },
   autoResize: false,
-  breakpoints: {
-    480: {
-      slidesPerView: 3.5,
-    },
-    680: {
-      slidesPerView: 4.5,
-      spaceBetween: 14,
-    },
-    1024: {
-      slidesPerView: 6.5,
-      spaceBetween: 16,
-    },
-  },
 });
 
 new Swiper(".albums-swiper", {
