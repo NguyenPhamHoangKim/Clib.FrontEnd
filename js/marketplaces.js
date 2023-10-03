@@ -27,3 +27,11 @@ $(".btn-upload").each(function () {
     $(".modal-upload").show();
   });
 });
+
+checkClickOutside(
+  "modal-upload-inner",
+  function () {
+    $(".modal-upload").hide();
+  },
+  "btn-upload",
+);

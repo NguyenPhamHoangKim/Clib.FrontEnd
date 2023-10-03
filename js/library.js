@@ -1,3 +1,29 @@
+function checkClickOutside(elementId, callback, openClass) {
+  $(document).on("click", function (event) {
+    const targetElement = event.target;
+    const containerElement = $("#" + elementId);
+
+    if (!openClass) {
+      if (
+        !containerElement.is(targetElement) &&
+        !containerElement.has(targetElement).length
+      ) {
+        callback();
+      }
+    } else {
+      const openClassElements = $("." + openClass);
+
+      if (
+        !containerElement.is(targetElement) &&
+        !openClassElements.is(targetElement) &&
+        !containerElement.has(targetElement).length &&
+        !openClassElements.has(targetElement).length
+      ) {
+        callback();
+      }
+    }
+  });
+}
 new Swiper(".albums-swiper", {
   slidesPerView: 2.3,
   spaceBetween: 12,
@@ -140,9 +166,34 @@ $(".open-modal-edit").each(function () {
     $(".modal-edit").show();
   });
 });
+$(".open-modal-edit").each(function () {
+  $(this).click(function () {
+    $(".modal-edit").show();
+  });
+});
 
 $(".open-modal-more").each(function () {
   $(this).click(function () {
     $(".modal-more").show();
   });
 });
+
+const closeVideo = function () {
+  $(".modal-choose").hide();
+};
+
+checkClickOutside(
+  "modal-choose-inner",
+  function () {
+    closeVideo();
+  },
+  "open-modal",
+);
+
+checkClickOutside(
+  "modal-edit-inner",
+  function () {
+    $(".modal-edit").hide();
+  },
+  "open-modal-edit",
+);

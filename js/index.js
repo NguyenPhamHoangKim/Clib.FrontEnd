@@ -213,3 +213,15 @@ $(".btn-modal-video-full").each(function () {
     $(".modal-video-full").show();
   });
 });
+
+const closeVideo = function () {
+  $(".modal-video-full").hide();
+};
+
+checkClickOutside(
+  "modal-inner",
+  function () {
+    closeVideo();
+  },
+  "btn-modal-video-full",
+);

@@ -3790,6 +3790,11 @@ body{
   border-bottom-color: rgb(10 191 172 / var(--tw-border-opacity));
 }
 
+.border-b-\[\#48cfc1\]{
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(72 207 193 / var(--tw-border-opacity));
+}
+
 .border-b-branding-secondary{
   --tw-border-opacity: 1;
   border-bottom-color: rgb(10 191 172 / var(--tw-border-opacity));
@@ -4712,6 +4717,11 @@ body{
 
 .text-\[\#336699\]\/\[\.35\]{
   color: rgb(51 102 153 / .35);
+}
+
+.text-\[\#48cfc1\]{
+  --tw-text-opacity: 1;
+  color: rgb(72 207 193 / var(--tw-text-opacity));
 }
 
 .text-\[\#52616B\]{
