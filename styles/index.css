@@ -6690,6 +6690,10 @@ input {
     margin-top: 1rem;
   }
 
+  .max-md\:mt-6{
+    margin-top: 1.5rem;
+  }
+
   .max-md\:hidden{
     display: none;
   }
@@ -6726,6 +6730,10 @@ input {
 
   .max-md\:pt-0{
     padding-top: 0px;
+  }
+
+  .max-md\:pt-4{
+    padding-top: 1rem;
   }
 
   .max-md\:capitalize{

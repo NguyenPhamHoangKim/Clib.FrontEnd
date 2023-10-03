@@ -863,6 +863,14 @@
             </div>
           </div>
           <div class="rounded-xl py-3 bg-white">
+            <div class="flex items-center gap-1 font-semibold text-20 px-4">
+              Photos
+              <img
+                class="-rotate-90"
+                src="../assets/svgs/arrow-down.svg"
+                alt=""
+              />
+            </div>
             <ul class="grid grid-cols-3 gap-1 px-2.5 mt-3">
               <li>
                 <div class="gallery-img cursor-pointer">
@@ -3181,6 +3189,598 @@
         </div>
       </div>
     </div>
+    <div id="add-playlist-modal" class="overlay add-playlist-modal">
+      <div id="add-playlist-modal--inner" class="add-playlist-modal--inner">
+        <button id="close-add-playlist-modal" class="absolute right-3 top-3">
+          <img width="16" height="16" src="../assets/svgs/close.svg" alt="" />
+        </button>
+        <div
+          class="mt-4 flex h-12 items-center justify-center text-base font-semibold"
+        >
+          <button class="add-playlist-btn active">Add to playlist</button>
+          <button class="add-playlist-btn">Create a playlist</button>
+        </div>
+        <div
+          class="add-playlist-show scrollbar-custom flex-1 h-full active overflow-y-auto overflow-x-hidden"
+        >
+          <div
+            class="mt-4 flex items-center gap-2 rounded-xl bg-grey-100 px-4 py-2"
+          >
+            <img
+              class="aspect-square w-5"
+              src="../assets/svgs/search-people.svg"
+              loading="lazy"
+              alt=""
+            />
+            <input
+              class="h-full flex-1 bg-transparent text-base outline-none placeholder:text-grey-300"
+              placeholder="Find your playlist music"
+            />
+          </div>
+          <ul
+            class="scrollbar-custom mt-4 flex h-full flex-1 flex-col gap-2 overflow-y-auto overflow-x-hidden"
+          >
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-3 rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+              >
+                <img
+                  class="aspect-square w-12 rounded-lg object-cover"
+                  src="../assets/images/playlists/1.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div>
+                  <div class="text-base font-semibold">Study song</div>
+                  <div class="flex items-center gap-1 text-14 text-grey-400">
+                    <img
+                      class="aspect-square w-4 rounded-lg object-cover"
+                      src="../assets/svgs/music-grey.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                    18 songs
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-3 rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+              >
+                <img
+                  class="aspect-square w-12 rounded-lg object-cover"
+                  src="../assets/images/playlists/1.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div>
+                  <div class="text-base font-semibold">Study song</div>
+                  <div class="flex items-center gap-1 text-14 text-grey-400">
+                    <img
+                      class="aspect-square w-4 rounded-lg object-cover"
+                      src="../assets/svgs/music-grey.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                    18 songs
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-3 rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+              >
+                <img
+                  class="aspect-square w-12 rounded-lg object-cover"
+                  src="../assets/images/playlists/1.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div>
+                  <div class="text-base font-semibold">Study song</div>
+                  <div class="flex items-center gap-1 text-14 text-grey-400">
+                    <img
+                      class="aspect-square w-4 rounded-lg object-cover"
+                      src="../assets/svgs/music-grey.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                    18 songs
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-3 rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+              >
+                <img
+                  class="aspect-square w-12 rounded-lg object-cover"
+                  src="../assets/images/playlists/1.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div>
+                  <div class="text-base font-semibold">Study song</div>
+                  <div class="flex items-center gap-1 text-14 text-grey-400">
+                    <img
+                      class="aspect-square w-4 rounded-lg object-cover"
+                      src="../assets/svgs/music-grey.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                    18 songs
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-3 rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+              >
+                <img
+                  class="aspect-square w-12 rounded-lg object-cover"
+                  src="../assets/images/playlists/1.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div>
+                  <div class="text-base font-semibold">Study song</div>
+                  <div class="flex items-center gap-1 text-14 text-grey-400">
+                    <img
+                      class="aspect-square w-4 rounded-lg object-cover"
+                      src="../assets/svgs/music-grey.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                    18 songs
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-3 rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+              >
+                <img
+                  class="aspect-square w-12 rounded-lg object-cover"
+                  src="../assets/images/playlists/1.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div>
+                  <div class="text-base font-semibold">Study song</div>
+                  <div class="flex items-center gap-1 text-14 text-grey-400">
+                    <img
+                      class="aspect-square w-4 rounded-lg object-cover"
+                      src="../assets/svgs/music-grey.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                    18 songs
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-3 rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+              >
+                <img
+                  class="aspect-square w-12 rounded-lg object-cover"
+                  src="../assets/images/playlists/1.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div>
+                  <div class="text-base font-semibold">Study song</div>
+                  <div class="flex items-center gap-1 text-14 text-grey-400">
+                    <img
+                      class="aspect-square w-4 rounded-lg object-cover"
+                      src="../assets/svgs/music-grey.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                    18 songs
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-3 rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+              >
+                <img
+                  class="aspect-square w-12 rounded-lg object-cover"
+                  src="../assets/images/playlists/1.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div>
+                  <div class="text-base font-semibold">Study song</div>
+                  <div class="flex items-center gap-1 text-14 text-grey-400">
+                    <img
+                      class="aspect-square w-4 rounded-lg object-cover"
+                      src="../assets/svgs/music-grey.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                    18 songs
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-3 rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+              >
+                <img
+                  class="aspect-square w-12 rounded-lg object-cover"
+                  src="../assets/images/playlists/1.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div>
+                  <div class="text-base font-semibold">Study song</div>
+                  <div class="flex items-center gap-1 text-14 text-grey-400">
+                    <img
+                      class="aspect-square w-4 rounded-lg object-cover"
+                      src="../assets/svgs/music-grey.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                    18 songs
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-3 rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+              >
+                <img
+                  class="aspect-square w-12 rounded-lg object-cover"
+                  src="../assets/images/playlists/1.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div>
+                  <div class="text-base font-semibold">Study song</div>
+                  <div class="flex items-center gap-1 text-14 text-grey-400">
+                    <img
+                      class="aspect-square w-4 rounded-lg object-cover"
+                      src="../assets/svgs/music-grey.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                    18 songs
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="add-playlist-show scrollbar-custom mt-4 flex-1 h-full overflow-y-auto overflow-x-hidden"
+        >
+          <div class="flex w-full flex-col">
+            <label
+              for="playlist-title"
+              class="text-base font-semibold text-grey-400"
+              >Playlist title</label
+            >
+            <input
+              id="playlist-title"
+              class="mt-1 w-full rounded-xl bg-grey-100 px-4 py-3 text-base outline-none placeholder:text-grey-300"
+              placeholder="Playlist title"
+            />
+          </div>
+          <div class="mt-4 flex w-full flex-col">
+            <label
+              for="description"
+              class="text-base font-semibold text-grey-400"
+              >Description</label
+            >
+            <textarea
+              id="description"
+              class="mt-1 h-[120px] w-full resize-none rounded-xl bg-grey-100 px-4 py-3 text-base outline-none placeholder:text-grey-300"
+              placeholder="Description"
+            ></textarea>
+          </div>
+          <div class="mt-4 flex items-center gap-4 text-base">
+            <span class="font-semibold text-grey-400">Privacy</span>
+            <div class="flex items-center gap-1.5">
+              <input id="public" type="radio" name="privacy" />
+              <label for="public">Public</label>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <input id="private" type="radio" name="privacy" />
+              <label for="private">Private</label>
+            </div>
+          </div>
+          <ul class="mt-4 flex flex-col gap-4 border-b border-b-grey-200 pb-4">
+            <li class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <img
+                  class="h-12 w-12 rounded-lg object-cover"
+                  loading="lazy"
+                  src="../assets/images/songs/1.jpg"
+                />
+                <div>
+                  <div class="text-16 font-semibold">My Heart, Your Eyes</div>
+                  <div class="mt-1 text-14 text-grey-400">Donna Summer</div>
+                </div>
+              </div>
+              <button>
+                <img class="h-4 w-4" src="../assets/svgs/close.svg" />
+              </button>
+            </li>
+            <li class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <img
+                  class="h-12 w-12 rounded-lg object-cover"
+                  loading="lazy"
+                  src="../assets/images/songs/1.jpg"
+                />
+                <div>
+                  <div class="text-16 font-semibold">My Heart, Your Eyes</div>
+                  <div class="mt-1 text-14 text-grey-400">Donna Summer</div>
+                </div>
+              </div>
+              <button>
+                <img class="h-4 w-4" src="../assets/svgs/close.svg" />
+              </button>
+            </li>
+            <li class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <img
+                  class="h-12 w-12 rounded-lg object-cover"
+                  loading="lazy"
+                  src="../assets/images/songs/1.jpg"
+                />
+                <div>
+                  <div class="text-16 font-semibold">My Heart, Your Eyes</div>
+                  <div class="mt-1 text-14 text-grey-400">Donna Summer</div>
+                </div>
+              </div>
+              <button>
+                <img class="h-4 w-4" src="../assets/svgs/close.svg" />
+              </button>
+            </li>
+          </ul>
+          <div class="mt-4 text-base font-semibold text-grey-400">
+            Let's find something for your playlist
+          </div>
+          <div
+            class="mt-4 flex items-center gap-2 rounded-xl bg-grey-100 px-4 py-2"
+          >
+            <img
+              class="aspect-square w-5"
+              src="../assets/svgs/search-people.svg"
+              loading="lazy"
+              alt=""
+            />
+            <input
+              class="h-full flex-1 bg-transparent text-base outline-none placeholder:text-grey-300"
+              placeholder="Find your playlist music"
+            />
+          </div>
+          <ul class="mt-4 flex flex-col gap-4 border-b border-b-grey-200 pb-4">
+            <li class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <img
+                  class="h-12 w-12 rounded-lg object-cover"
+                  loading="lazy"
+                  src="../assets/images/songs/1.jpg"
+                />
+                <div>
+                  <div class="text-16 font-semibold">My Heart, Your Eyes</div>
+                  <div class="mt-1 text-14 text-grey-400">Donna Summer</div>
+                </div>
+              </div>
+              <button
+                class="rounded-2xl bg-grey-100 px-4 py-2 text-14 text-branding transition-transform duration-200 hover:scale-105"
+              >
+                Add
+              </button>
+            </li>
+            <li class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <img
+                  class="h-12 w-12 rounded-lg object-cover"
+                  loading="lazy"
+                  src="../assets/images/songs/1.jpg"
+                />
+                <div>
+                  <div class="text-16 font-semibold">My Heart, Your Eyes</div>
+                  <div class="mt-1 text-14 text-grey-400">Donna Summer</div>
+                </div>
+              </div>
+              <button
+                class="rounded-2xl bg-grey-100 px-4 py-2 text-14 text-branding transition-transform duration-200 hover:scale-105"
+              >
+                Add
+              </button>
+            </li>
+            <li class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <img
+                  class="h-12 w-12 rounded-lg object-cover"
+                  loading="lazy"
+                  src="../assets/images/songs/1.jpg"
+                />
+                <div>
+                  <div class="text-16 font-semibold">My Heart, Your Eyes</div>
+                  <div class="mt-1 text-14 text-grey-400">Donna Summer</div>
+                </div>
+              </div>
+              <button
+                class="rounded-2xl bg-grey-100 px-4 py-2 text-14 text-branding transition-transform duration-200 hover:scale-105"
+              >
+                Add
+              </button>
+            </li>
+          </ul>
+          <div class="mt-4 text-base font-semibold text-grey-400">
+            Recommended
+          </div>
+          <div class="text-14 text-grey-400">
+            Based on what's in this playlist
+          </div>
+          <ul class="mt-4 flex flex-col gap-4 pb-[78px]">
+            <li class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <img
+                  class="h-12 w-12 rounded-lg object-cover"
+                  loading="lazy"
+                  src="../assets/images/songs/1.jpg"
+                />
+                <div>
+                  <div class="text-16 font-semibold">My Heart, Your Eyes</div>
+                  <div class="mt-1 text-14 text-grey-400">Donna Summer</div>
+                </div>
+              </div>
+              <button
+                class="rounded-2xl bg-grey-100 px-4 py-2 text-14 text-branding transition-transform duration-200 hover:scale-105"
+              >
+                Add
+              </button>
+            </li>
+            <li class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <img
+                  class="h-12 w-12 rounded-lg object-cover"
+                  loading="lazy"
+                  src="../assets/images/songs/1.jpg"
+                />
+                <div>
+                  <div class="text-16 font-semibold">My Heart, Your Eyes</div>
+                  <div class="mt-1 text-14 text-grey-400">Donna Summer</div>
+                </div>
+              </div>
+              <button
+                class="rounded-2xl bg-grey-100 px-4 py-2 text-14 text-branding transition-transform duration-200 hover:scale-105"
+              >
+                Add
+              </button>
+            </li>
+            <li class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <img
+                  class="h-12 w-12 rounded-lg object-cover"
+                  loading="lazy"
+                  src="../assets/images/songs/1.jpg"
+                />
+                <div>
+                  <div class="text-16 font-semibold">My Heart, Your Eyes</div>
+                  <div class="mt-1 text-14 text-grey-400">Donna Summer</div>
+                </div>
+              </div>
+              <button
+                class="rounded-2xl bg-grey-100 px-4 py-2 text-14 text-branding transition-transform duration-200 hover:scale-105"
+              >
+                Add
+              </button>
+            </li>
+            <li class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <img
+                  class="h-12 w-12 rounded-lg object-cover"
+                  loading="lazy"
+                  src="../assets/images/songs/1.jpg"
+                />
+                <div>
+                  <div class="text-16 font-semibold">My Heart, Your Eyes</div>
+                  <div class="mt-1 text-14 text-grey-400">Donna Summer</div>
+                </div>
+              </div>
+              <button
+                class="rounded-2xl bg-grey-100 px-4 py-2 text-14 text-branding transition-transform duration-200 hover:scale-105"
+              >
+                Add
+              </button>
+            </li>
+            <li class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <img
+                  class="h-12 w-12 rounded-lg object-cover"
+                  loading="lazy"
+                  src="../assets/images/songs/1.jpg"
+                />
+                <div>
+                  <div class="text-16 font-semibold">My Heart, Your Eyes</div>
+                  <div class="mt-1 text-14 text-grey-400">Donna Summer</div>
+                </div>
+              </div>
+              <button
+                class="rounded-2xl bg-grey-100 px-4 py-2 text-14 text-branding transition-transform duration-200 hover:scale-105"
+              >
+                Add
+              </button>
+            </li>
+            <li class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <img
+                  class="h-12 w-12 rounded-lg object-cover"
+                  loading="lazy"
+                  src="../assets/images/songs/1.jpg"
+                />
+                <div>
+                  <div class="text-16 font-semibold">My Heart, Your Eyes</div>
+                  <div class="mt-1 text-14 text-grey-400">Donna Summer</div>
+                </div>
+              </div>
+              <button
+                class="rounded-2xl bg-grey-100 px-4 py-2 text-14 text-branding transition-transform duration-200 hover:scale-105"
+              >
+                Add
+              </button>
+            </li>
+            <li class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <img
+                  class="h-12 w-12 rounded-lg object-cover"
+                  loading="lazy"
+                  src="../assets/images/songs/1.jpg"
+                />
+                <div>
+                  <div class="text-16 font-semibold">My Heart, Your Eyes</div>
+                  <div class="mt-1 text-14 text-grey-400">Donna Summer</div>
+                </div>
+              </div>
+              <button
+                class="rounded-2xl bg-grey-100 px-4 py-2 text-14 text-branding transition-transform duration-200 hover:scale-105"
+              >
+                Add
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="create-playlist-btm absolute bottom-0 left-0 right-0 flex w-full items-center justify-between bg-white px-6 py-4 shadow-[0px_-4px_60px_0px_rgba(0,0,0,0.06)]"
+        >
+          <div class="text-base text-grey-400">
+            Create a playlist with 3 songs
+          </div>
+          <div class="flex items-center gap-5">
+            <button class="btn-tertiary md:py-3">Cancel</button>
+            <button class="btn-primary md:py-3">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
   <div
     id="liked-by-modal"
@@ -4012,6 +4612,7 @@
   ></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="../js/index.js"></script>
+  <script src="../js/home.js"></script>
   <script src="../js/feed.js"></script>
   <script src="../js/profile.js?v=1"></script>
 </html>

@@ -114,6 +114,14 @@ $(".hot-item-play").each(function () {
   });
 });
 
+checkClickOutside(
+  "add-playlist-modal--inner",
+  function () {
+    $(".add-playlist-modal").removeClass("active");
+  },
+  "show-create-playlist-popup",
+);
+
 const musicPlayer = $("#music-player");
 
 const handleShowMusicPlayer = function () {
