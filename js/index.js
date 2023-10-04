@@ -40,17 +40,14 @@ const handleToggleNoti = function () {
   $elem.attr(
     "src",
     $elem.attr("src").includes("notification-selected.svg")
-      ? "./assets/svgs/notification-pc.svg"
-      : "./assets/svgs/notification-selected.svg",
+      ? "/assets/svgs/notification-pc.svg"
+      : "/assets/svgs/notification-selected.svg",
   );
 };
 
 const handleCloseNoti = function () {
   $("#noti-popup").removeClass("active");
-  $("#noti-wrapper .noti-icon").attr(
-    "src",
-    "./assets/svgs/notification-pc.svg",
-  );
+  $("#noti-wrapper .noti-icon").attr("src", "/assets/svgs/notification-pc.svg");
 };
 
 const handleToggleMs = function () {
@@ -60,14 +57,14 @@ const handleToggleMs = function () {
   $elem.attr(
     "src",
     $elem.attr("src").includes("messenger-selected.svg")
-      ? "./assets/svgs/messenger-pc.svg"
-      : "./assets/svgs/messenger-selected.svg",
+      ? "/assets/svgs/messenger-pc.svg"
+      : "/assets/svgs/messenger-selected.svg",
   );
 };
 
 const handleCloseMs = function () {
   $("#ms-popup").removeClass("active");
-  $("#ms-wrapper .ms-icon").attr("src", "./assets/svgs/messenger-pc.svg");
+  $("#ms-wrapper .ms-icon").attr("src", "/assets/svgs/messenger-pc.svg");
 };
 
 $("#toggle-notification").click(function () {

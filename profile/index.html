@@ -2330,282 +2330,105 @@
         </ul>
       </div>
     </footer>
-    <div id="edit-profile--modal" class="edit-profile--modal overlay">
-      <div
-        id="edit-profile--inner"
-        class="p-6 rounded-xl bg-white w-[640px] max-w-full"
-      >
-        <div class="text-24 font-semibold">Edit Profile</div>
-        <div class="mt-4">
-          <div class="relative">
-            <img
-              class="h-[120px] w-full rounded-xl object-cover object-center"
-              src="../assets/images/profile/banner.jpg"
-              alt=""
-              loading="lazy"
-            />
-            <button
-              class="btn-fourth px-4 py-2 text-14 font-semibold absolute bottom-3 right-4"
-            >
-              <img
-                class="w-4 aspect-square"
-                src="../assets/svgs/replace.svg"
-                alt=""
-              />
-              Replace
-            </button>
-          </div>
-          <div
-            class="rounded-[32px] relative z-10 -mt-[96px] bg-white p-1 mx-auto w-fit shadow-[0px_2px_20px_0px_rgba(0,0,0,0.08)]"
+    <div id="header-tab-modal" class="overlay header-tab-modal">
+      <div class="header-tab-modal--inner">
+        <div class="flex-1">
+          <button
+            id="close-header-tab-modal"
+            class="flex w-full items-center justify-end"
           >
+            <img width="16" height="16" src="../assets/svgs/close.svg" alt="" />
+          </button>
+          <div class="mt-4 flex items-center gap-3 md:hidden">
             <img
-              class="aspect-square w-[140px] object-cover object-center"
-              src="../assets/images/avatar-about.png"
+              class="rounded-2xl object-cover"
+              width="64"
+              height="64"
               loading="lazy"
+              src="../assets/images/artists/2.png"
               alt=""
             />
-            <button
-              class="absolute right-0 bottom-0 z-20 translate-x-2 border border-grey-200 translate-y-2 p-2.5 rounded-full bg-white backdrop-blur-10"
-            >
-              <img
-                class="w-4 aspect-square"
-                src="../assets/svgs/camera.svg"
-                alt=""
-              />
-            </button>
+            <div>
+              <div class="flex items-center gap-1 text-14 font-semibold">
+                Son Tung M-TP <img src="../assets/svgs/verify.svg" alt="" />
+              </div>
+              <div class="mt-2 flex items-center gap-3 text-14 text-grey-400">
+                <div><span class="font-semibold">53K</span> Followers</div>
+                <div><span class="font-semibold">12,3K</span> Following</div>
+              </div>
+            </div>
+          </div>
+          <ul class="mt-[14px]">
+            <li class="header-link">
+              <a
+                href="/voting/music-voting.html"
+                class="flex items-center text-grey-400"
+                ><img src="../assets/svgs/voting.svg" alt="" />
+                <span class="flex-1 text-center text-18 font-semibold"
+                  >Voting</span
+                ></a
+              >
+            </li>
+            <li class="header-link">
+              <a href="/wallet.html" class="flex items-center text-grey-400"
+                ><img src="../assets/svgs/wallet.svg" alt="" />
+                <span class="flex-1 text-center text-18 font-semibold"
+                  >Wallet</span
+                ></a
+              >
+            </li>
+            <li class="header-link">
+              <a href="/about-us.html" class="flex items-center text-grey-400"
+                ><img src="../assets/svgs/about-us.svg" alt="" />
+                <span class="flex-1 text-center text-18 font-semibold"
+                  >About us</span
+                ></a
+              >
+            </li>
+            <li class="header-link">
+              <a href="/setting.html" class="flex items-center text-grey-400"
+                ><img src="../assets/svgs/setting.svg" alt="" />
+                <span class="flex-1 text-center text-18 font-semibold"
+                  >Setting</span
+                ></a
+              >
+            </li>
+            <li class="header-link">
+              <a href="/support.html" class="flex items-center text-grey-400"
+                ><img src="../assets/svgs/support.svg" alt="" />
+                <span class="flex-1 text-center text-18 font-semibold"
+                  >Support</span
+                ></a
+              >
+            </li>
+            <li class="header-link">
+              <a
+                href="/privacy-police.html"
+                class="flex items-center text-grey-400"
+                ><img src="../assets/svgs/privacy-police.svg" alt="" />
+                <span class="flex-1 text-center text-18 font-semibold"
+                  >Privacy Police</span
+                ></a
+              >
+            </li>
+          </ul>
+          <div class="mt-[30px] flex items-center justify-center gap-4">
+            <button class="btn-tertiary">Sign out</button>
           </div>
         </div>
-        <div class="mt-6 flex flex-col gap-y-4">
-          <div class="edit-profile-group">
-            <label for="your-name" class="text-base font-semibold text-grey-400"
-              >Your name</label
-            >
-            <div>
-              <div class="relative">
-                <input
-                  class="px-4 py-2.5 pr-[84px] outline-none w-full bg-grey-100 rounded-xl text-base"
-                  type="text"
-                  disabled
-                  id="your-name"
-                  placeholder="Your name"
-                />
-                <div
-                  class="flex items-center gap-x-3 absolute top-1/2 right-4 -translate-y-1/2"
-                >
-                  <button>
-                    <img
-                      class="w-6 aspect-square"
-                      src="../assets/svgs/copy.svg"
-                      alt=""
-                    />
-                  </button>
-                  <button class="profile-edit-btn">
-                    <img
-                      class="w-6 aspect-square"
-                      src="../assets/svgs/edit-profile.svg"
-                      alt=""
-                    />
-                  </button>
-                </div>
-              </div>
-              <div class="save-edit-profile">
-                <div class="mt-3 flex items-center justify-end gap-3">
-                  <button class="btn-fourth h-8 close-save-edit-profile">
-                    Cancel
-                  </button>
-                  <button class="btn-primary h-8">Save</button>
-                </div>
-              </div>
-            </div>
+        <div
+          class="flex items-center justify-between border-t border-t-grey-200 pt-4"
+        >
+          <div class="flex items-center gap-x-2 text-base">
+            <img src="../assets/svgs/global.svg" alt="" />
+            Language
           </div>
-          <div class="edit-profile-group">
-            <label
-              for="profile-url"
-              class="text-base font-semibold text-grey-400"
-              >Profile URL</label
-            >
-            <div>
-              <div class="relative">
-                <input
-                  class="px-4 py-2.5 pr-[46px] outline-none w-full bg-grey-100 rounded-xl text-base"
-                  type="text"
-                  id="profile-url"
-                  disabled
-                  placeholder="Profile URL"
-                />
-                <div
-                  class="flex items-center gap-x-3 absolute top-1/2 right-4 -translate-y-1/2"
-                >
-                  <button class="profile-edit-btn">
-                    <img
-                      class="w-6 aspect-square"
-                      src="../assets/svgs/edit-profile.svg"
-                      alt=""
-                    />
-                  </button>
-                </div>
-              </div>
-              <div class="save-edit-profile">
-                <div class="mt-3 flex items-center justify-end gap-3">
-                  <button class="btn-fourth h-8 close-save-edit-profile">
-                    Cancel
-                  </button>
-                  <button class="btn-primary h-8">Save</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="w-full h-[1px] bg-grey-200"></div>
-          <div class="edit-profile-group !items-start">
-            <label for="bio" class="text-base font-semibold text-grey-400"
-              >Bio</label
-            >
-            <div>
-              <div class="relative">
-                <textarea
-                  disabled
-                  class="px-4 h-[104px] resize-none py-2.5 pr-[46px] outline-none w-full bg-grey-100 rounded-xl text-base"
-                  type="text"
-                  id="bio"
-                  placeholder="Bio"
-                ></textarea>
-                <button class="absolute top-4 right-4 profile-edit-btn">
-                  <img
-                    class="w-6 aspect-square"
-                    src="../assets/svgs/edit-profile.svg"
-                    alt=""
-                  />
-                </button>
-              </div>
-              <div class="save-edit-profile">
-                <div class="mt-1.5 text-base text-right text-grey-300">
-                  Maximum 100 characters
-                </div>
-                <div class="mt-3 flex items-center justify-end gap-3">
-                  <button class="btn-fourth h-8 close-save-edit-profile">
-                    Cancel
-                  </button>
-                  <button class="btn-primary h-8">Save</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="edit-profile-group">
-            <label
-              for="phone-number"
-              class="text-base font-semibold text-grey-400"
-              >Phone number</label
-            >
-            <div>
-              <div
-                class="px-4 py-2.5 relative w-full bg-grey-100 rounded-xl text-base gap-2 flex items-center"
-              >
-                <img
-                  class="w-6 aspect-square"
-                  src="../assets/svgs/call.svg"
-                  alt=""
-                />
-                <input
-                  disabled
-                  class="bg-transparent outline-none flex-1"
-                  type="text"
-                  id="phone-number"
-                  placeholder="Phone number"
-                />
-                <button class="profile-edit-btn">
-                  <img
-                    class="w-6 aspect-square"
-                    src="../assets/svgs/edit-profile.svg"
-                    alt=""
-                  />
-                </button>
-              </div>
-              <div class="save-edit-profile">
-                <div class="mt-3 flex items-center justify-end gap-3">
-                  <button class="btn-fourth h-8 close-save-edit-profile">
-                    Cancel
-                  </button>
-                  <button class="btn-primary h-8">Save</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="edit-profile-group">
-            <label for="email" class="text-base font-semibold text-grey-400"
-              >Email</label
-            >
-            <div>
-              <div
-                class="px-4 py-2.5 relative w-full bg-grey-100 rounded-xl text-base gap-2 flex items-center"
-              >
-                <img
-                  class="w-6 aspect-square"
-                  src="../assets/svgs/sms.svg"
-                  alt=""
-                />
-                <input
-                  disabled
-                  class="bg-transparent outline-none flex-1"
-                  type="email"
-                  id="email"
-                  placeholder="Email"
-                />
-                <button class="profile-edit-btn">
-                  <img
-                    class="w-6 aspect-square"
-                    src="../assets/svgs/edit-profile.svg"
-                    alt=""
-                  />
-                </button>
-              </div>
-              <div class="save-edit-profile">
-                <div class="mt-3 flex items-center justify-end gap-3">
-                  <button class="btn-fourth h-8 close-save-edit-profile">
-                    Cancel
-                  </button>
-                  <button class="btn-primary h-8">Save</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="edit-profile-group">
-            <label for="website" class="text-base font-semibold text-grey-400"
-              >Website</label
-            >
-            <div>
-              <div
-                class="px-4 py-2.5 relative w-full bg-grey-100 rounded-xl text-base gap-2 flex items-center"
-              >
-                <img
-                  class="w-6 aspect-square"
-                  src="../assets/svgs/global-1.svg"
-                  alt=""
-                />
-                <input
-                  disabled
-                  class="bg-transparent outline-none flex-1"
-                  type="email"
-                  id="website"
-                  placeholder="Website"
-                />
-                <button class="profile-edit-btn">
-                  <img
-                    class="w-6 aspect-square"
-                    src="../assets/svgs/edit-profile.svg"
-                    alt=""
-                  />
-                </button>
-              </div>
-              <div class="save-edit-profile">
-                <div class="mt-3 flex items-center justify-end gap-3">
-                  <button class="btn-fourth h-8 close-save-edit-profile">
-                    Cancel
-                  </button>
-                  <button class="btn-primary h-8">Save</button>
-                </div>
-              </div>
-            </div>
-          </div>
+          <button
+            class="flex items-center gap-2 rounded-xl bg-grey-100 px-4 py-2"
+          >
+            <img src="../assets/svgs/flags/us.svg" alt="" />
+            English
+          </button>
         </div>
       </div>
     </div>
