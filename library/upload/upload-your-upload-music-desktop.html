@@ -1,0 +1,1836 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clib - Login</title>
+    <link rel="stylesheet" href="../../styles/index.css" />
+  </head>
+  <body>
+<div class="hidden md:block">
+      <header class="fixed left-0 right-0 top-0 z-[999]">
+        <div class="bg-white py-2.5 shadow-[0px_2px_10px_0px_rgba(0,0,0,0.04)]">
+          <div class="container relative flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+              <button id="toggle-mobile-menu">
+                <img src="../../assets/svgs/menu.svg" alt="" />
+              </button>
+              <div
+                class="hidden w-fit items-center rounded-lg border border-grey-200 px-4 py-2 md:flex"
+              >
+                <img class="mr-2" src="../../assets/svgs/search.svg" alt="" />
+                <input
+                  class="h-full flex-1 text-base outline-none placeholder:text-grey-300 md:min-w-[260px]"
+                  placeholder="What are you looking for?"
+                />
+              </div>
+            </div>
+  
+            <a
+              href="/"
+              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden"
+            >
+              <img
+                class="object-contain w-8"
+                src="../../assets/svgs/logo-mb.svg"
+                alt=""
+              />
+            </a>
+            <!-- SIGNED IN MOBILE -->
+            <div class="flex items-center space-x-4 md:hidden">
+              <button class="rounded-lg bg-grey-100 p-1.5">
+                <img
+                  width="24"
+                  height="24"
+                  src="../../assets/svgs/notification.svg"
+                  alt=""
+                />
+              </button>
+              <button class="rounded-lg bg-grey-100 p-1.5">
+                <img src="../../assets/svgs/messenger.svg" alt="" />
+              </button>
+            </div>
+            <!-- SIGNED IN -->
+  
+            <!-- SIGNED IN PC-->
+            <div class="flex items-center space-x-4 max-md:hidden xl:space-x-6">
+              <button class="bg-grey-1 rounded-lg">
+                <img src="../../assets/svgs/document.svg" alt="" />
+              </button>
+              <button class="">
+                <img src="../../assets/svgs/sol.svg" alt="" />
+              </button>
+              <button class="">
+                <img src="../../assets/svgs/export-pc.svg" alt="" />
+              </button>
+              <div
+                id="ms-wrapper"
+                class="relative flex items-center justify-center"
+              >
+                <button id="toggle-ms" class="toggle-ms">
+                  <img
+                    class="ms-icon"
+                    src="../../assets/svgs/messenger-pc.svg"
+                    alt=""
+                  />
+                </button>
+                <div id="ms-popup" class="ms-popup">
+                  <div class="flex items-center justify-between px-4 pb-2 pt-4">
+                    <span class="text-20 font-semibold">Message</span>
+                    <div class="flex items-center gap-2">
+                      <span class="text-14">New chat</span>
+                      <button class="rounded-xl bg-grey-200 p-1.5 duration-100">
+                        <img
+                          class="h-6 w-6"
+                          src="../../assets/svgs/edit.svg"
+                          alt=""
+                        />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="mt-2 px-4">
+                    <div
+                      class="flex items-center gap-2 rounded-xl bg-grey-100 p-3"
+                    >
+                      <img
+                        class="aspect-square w-5"
+                        src="../../assets/svgs/search-people.svg"
+                        loading="lazy"
+                        alt=""
+                      />
+                      <input
+                        class="h-full flex-1 bg-transparent text-14 outline-none placeholder:text-grey-300"
+                        placeholder="Search people"
+                      />
+                    </div>
+                  </div>
+                  <ul class="mt-2 px-4">
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="../../assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="Benny Andersson"
+                          />
+                          <div>
+                            <div class="line-clamp-1 text-14 font-semibold">
+                              Benny Andersson
+                            </div>
+                            <div class="line-clamp-1 text-14 font-semibold">
+                              aww
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">3d</div>
+                          <span class="dot !h-3 !w-3 !bg-branding"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between border-r-4 border-r-branding bg-[linear-gradient(270deg,#F3FCFF_0%,rgba(243,252,255,0.00)_103.09%)] px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="../../assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="Son Tung M-TP"
+                          />
+                          <div>
+                            <div
+                              class="line-clamp-1 flex items-center gap-1 text-14 font-semibold"
+                            >
+                              Son Tung M-TP
+                              <img src="../../assets/svgs/verify.svg" alt="" />
+                            </div>
+                            <div class="line-clamp-1 text-14">
+                              Send a playlist
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">3d</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="../../assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="Donna Summer"
+                          />
+                          <div>
+                            <div class="line-clamp-1 text-14 font-semibold">
+                              Donna Summer
+                            </div>
+                            <div class="line-clamp-1 text-14">Hi</div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">3d</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="../../assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="James"
+                          />
+                          <div>
+                            <div class="text-14 font-semibold">James</div>
+                            <div class="line-clamp-1 text-14">
+                              Wow, this is really epic
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">3w</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="../../assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="James"
+                          />
+                          <div>
+                            <div class="text-14 font-semibold">Roger Daltrey</div>
+                            <div class="line-clamp-1 text-14">woohoooo</div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">17/03/2023</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="../../assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="James"
+                          />
+                          <div>
+                            <div class="text-14 font-semibold">Big Star</div>
+                            <div class="line-clamp-1 text-14">
+                              Haha that's terrifying 😂
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">05/03/2023</div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="mt-2 py-3 text-center">
+                    <a
+                      href="#"
+                      class="text-14 font-semibold text-grey-400 hover:text-branding-secondary hover:underline"
+                      >View all message</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                id="noti-wrapper"
+                class="relative flex items-center justify-center"
+              >
+                <button id="toggle-notification" class="">
+                  <img
+                    class="noti-icon"
+                    src="../../assets/svgs/notification-pc.svg"
+                    alt=""
+                  />
+                </button>
+                <div id="noti-popup" class="noti-popup">
+                  <div class="flex items-center justify-between px-4 pb-2 pt-4">
+                    <span class="text-20 font-semibold">Notification</span>
+                    <button
+                      class="transition-transform duration-100 hover:rotate-180"
+                    >
+                      <img
+                        class="h-6 w-6"
+                        src="../../assets/svgs/setting.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                  <div class="px-4">
+                    <div class="grid grid-cols-3 items-center">
+                      <button
+                        class="h-[60px] border-b-4 border-b-branding-secondary text-center text-base font-semibold text-branding-secondary"
+                      >
+                        All
+                      </button>
+                      <button
+                        class="h-[60px] text-center text-base font-semibold text-grey-300"
+                      >
+                        Unread
+                      </button>
+                      <button
+                        class="h-[60px] text-center text-base font-semibold text-grey-300"
+                      >
+                        Following
+                      </button>
+                    </div>
+                  </div>
+                  <ul class="mt-4 px-2">
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Ariana Grande"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../../assets/svgs/ms-text.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Macos</span> commented
+                              on your post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                        <span class="dot !h-3 !w-3 !bg-branding"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Ariana Grande"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../../assets/svgs/react-noti.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Josh</span> commented on
+                              your post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Harry"
+                            />
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Harry</span> following
+                              you
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                        <button class="btn-primary">Follow</button>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Sona"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../../assets/svgs/ms-text.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Sona</span> commented on
+                              your post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Been"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../../assets/svgs/react-love.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Been</span> liked your
+                              post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                        <span class="dot !h-3 !w-3 !bg-branding"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Harry"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../../assets/svgs/react-love.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Harry</span> liked your
+                              post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                        <span class="dot !h-3 !w-3 !bg-branding"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Jean"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../../assets/svgs/ms-text.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Jean</span> commented on
+                              your post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="mt-2 py-3 text-center">
+                    <a
+                      href="#"
+                      class="text-14 font-semibold text-grey-400 hover:text-branding-secondary hover:underline"
+                      >View all notifications</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <button class="">
+                <img src="../../assets/svgs/wallet-pc.svg" alt="" />
+              </button>
+              <a href="../profile" class="flex items-center gap-2">
+                <img
+                  src="../../assets/images/avatar1.jpg"
+                  class="h-11 w-11 rounded-lg object-cover"
+                  loading="lazy"
+                  alt="Iberd"
+                />
+                <span>Iberd</span>
+              </a>
+            </div>
+            <!-- SIGNED IN -->
+  
+            <!-- NOT SIGN IN <div class="flex items-center space-x-4">
+              <button>
+                <img src="../../assets/svgs/export.svg" alt="" />
+              </button>
+              <a href="login.html" class="btn-secondary text-14 md:text-base"
+                >Sign in</a
+              >
+            </div> NOT SIGN IN -->
+          </div>
+        </div>
+        <div
+          class="border-b border-b-grey-200 bg-white md:border-none md:bg-grey-100 md:py-1.5 xl:py-2"
+        >
+          <ul
+            class="container relative grid grid-cols-2 items-center gap-[35px] md:grid-cols-5"
+          >
+            <li>
+              <a href="../music/index.html" class="header-item-link">music</a>
+            </li>
+            <li>
+              <a href="../videos/index.html" class="header-item-link">videos</a>
+            </li>
+            <li class="max-md:hidden">
+              <a
+                href="/"
+                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+              >
+                <img
+                  class="aspect-square w-20 lg:w-[116px] object-contain"
+                  src="../../assets/svgs/logo.svg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="max-md:hidden">
+              <a
+                href="../marketplace/marketplace-music-desktop.html"
+                class="header-item-link"
+                >marketplace</a
+              >
+            </li>
+            <li class="max-md:hidden">
+              <a href="../voting/music-voting.html" class="header-item-link"
+                >voting</a
+              >
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main class="container mt-[120px] md:mt-[135px] lg:mt-[165px]">
+        <section class="my-12 relative">
+          <div class="overlay hidden modal-per">
+            <div class="w-[592px] abs-center p-6 rounded-xl bg-white">
+              <div class="mb-20">
+                <button class="close-modal">
+                  <img
+                    src="../../assets/svgs/close.svg"
+                    class="absolute right-4 top-4"
+                    alt=""
+                  />
+                </button>
+                <h6
+                  class="text-24 text-neutral-dark-500 text-center font-semibold"
+                >
+                  Permissions
+                </h6>
+                <div class="mt-6 flex flex-col gap-4">
+                  <div class="flex flex-col gap-2">
+                    <div
+                      class="flex items-center text-base font-semibold text-grey-400 w-full justify-between"
+                    >
+                      Enable direct downloads
+                      <label
+                        class="relative inline-flex items-center cursor-pointer"
+                      >
+                        <input type="checkbox" value="" class="sr-only peer" />
+                        <div
+                          class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                        ></div>
+                      </label>
+                    </div>
+                    <p
+                      class="text-14 text-grey-400 pb-4 border-b border-b-grey-200"
+                    >
+                      All songs will be available for direct download in the
+                      original format they were uploaded.
+                    </p>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <div
+                      class="flex items-center text-base font-semibold text-grey-400 w-full justify-between"
+                    >
+                      Enable direct downloads
+                      <label
+                        class="relative inline-flex items-center cursor-pointer"
+                      >
+                        <input type="checkbox" value="" class="sr-only peer" />
+                        <div
+                          class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                        ></div>
+                      </label>
+                    </div>
+                    <p
+                      class="text-14 text-grey-400 pb-4 border-b border-b-grey-200"
+                    >
+                      All songs will be available for direct download in the
+                    </p>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <div
+                      class="flex items-center text-base font-semibold text-grey-400 w-full justify-between"
+                    >
+                      Enable direct downloads
+                      <label
+                        class="relative inline-flex items-center cursor-pointer"
+                      >
+                        <input type="checkbox" value="" class="sr-only peer" />
+                        <div
+                          class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                        ></div>
+                      </label>
+                    </div>
+                    <p
+                      class="text-14 text-grey-400 pb-4 border-b border-b-grey-200"
+                    >
+                      All songs will be available for direct download in the
+                    </p>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <div
+                      class="flex items-center text-base font-semibold text-grey-400 w-full justify-between"
+                    >
+                      Enable direct downloads
+                      <label
+                        class="relative inline-flex items-center cursor-pointer"
+                      >
+                        <input type="checkbox" value="" class="sr-only peer" />
+                        <div
+                          class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                        ></div>
+                      </label>
+                    </div>
+                    <p
+                      class="text-14 text-grey-400 pb-4 border-b border-b-grey-200"
+                    >
+                      All songs will be available for direct download in the
+                    </p>
+                  </div>
+                  <div class="px-4 py-3 bg-grey-100 rounded-xl">
+                    <p class="text-base font-semibold text-grey-400">
+                      Important:
+                      <span class="font-normal text-14 text-grey-400">
+                        By sharing, you confirm that your tracks comply with our
+                        Terms of use and you don’t infringe anyone else’s rights.
+                        If in doubt, refer to the Copyright information pages and
+                        FAQs before uploading.</span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="fixed bottom-0 py-3 px-6 bg-white box-shadow rounded-bl-xl rounded-br-xl left-0 right-0 flex items-end gap-3 justify-end"
+              >
+                <div class="flex items-end justify-end gap-4">
+                  <button
+                    class="text-base rounded-xl close-modal font-semibold text-grey-400 py-3 px-6 bg-grey-200"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    class="text-base rounded-xl font-semibold text-[#fff] py-3 px-6 bg-[#1975ff]"
+                  >
+                    Save
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="overlay hidden artworkModal">
+            <div class="w-[592px] abs-center p-6 rounded-xl bg-white">
+              <div class="mb-20">
+                <button class="close-modal">
+                  <img
+                    src="../../assets/svgs/close.svg"
+                    class="absolute right-4 top-4"
+                    alt=""
+                  />
+                </button>
+                <h6
+                  class="text-24 text-neutral-dark-500 text-center font-semibold"
+                >
+                  Change Artwork
+                </h6>
+                <img
+                  src="../../assets/svgs/hinh1.png"
+                  class="rounded-xl mx-auto mt-6"
+                  alt=""
+                />
+              </div>
+              <div
+                class="fixed bottom-0 py-3 px-6 bg-white box-shadow rounded-bl-xl rounded-br-xl left-0 right-0 flex items-center gap-3 justify-between"
+              >
+                <h6 class="text-base text-grey-400">
+                  Create a playlist with 3 songs
+                </h6>
+                <div class="flex items-end justify-end gap-4">
+                  <button
+                    class="text-base rounded-xl close-modal font-semibold text-grey-400 py-3 px-6 bg-grey-200"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    class="text-base rounded-xl font-semibold text-[#fff] py-3 px-6 bg-[#1975ff]"
+                  >
+                    Save
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal delete  -->
+          <div class="overlay hidden modal-delete">
+            <div
+              class="abs-center px-6 pt-4 flex justify-between flex-col items-center bg-white w-[592px] rounded-xl"
+            >
+              <button class="close-modal">
+                <img
+                  src="../../assets/svgs/close.svg "
+                  class="absolute right-4 top-4"
+                  alt=""
+                />
+              </button>
+              <h6
+                class="md:text-20 text-24 w-full text-center font-semibold mb-6 text-neutral-dark-500"
+              >
+                Delete forever
+              </h6>
+              <div class="px-4 py-3 bg-grey-100 rounded-xl w-full">
+                <input
+                  type="text"
+                  placeholder="2 songs is about to be deleted"
+                  class="text-grey-400 w-full bg-inherit"
+                />
+              </div>
+              <div class="w-full mt-4 mb-32 flex flex-col gap-4">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <img
+                      src="../../assets/images/Avatar.png"
+                      class="w-12 h-12"
+                      alt=""
+                    />
+                    <div class="flex flex-col">
+                      <h6
+                        class="text-base font-semibold line-clamp-1 text-neutral-dark-500"
+                      >
+                        Songs for breakup
+                      </h6>
+                      <p class="flex items-center gap-1 line-clamp-1">18 songs</p>
+                    </div>
+                  </div>
+                  <button><img src="../../assets/svgs/close.svg" alt="" /></button>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <img
+                      src="../../assets/images/Avatar.png"
+                      class="w-12 h-12"
+                      alt=""
+                    />
+                    <div class="flex flex-col">
+                      <h6
+                        class="text-base font-semibold text-neutral-dark-500 line-clamp-1"
+                      >
+                        Songs for breakup
+                      </h6>
+                      <p class="flex items-center gap-1 line-clamp-1">18 songs</p>
+                    </div>
+                  </div>
+                  <button><img src="../../assets/svgs/close.svg" alt="" /></button>
+                </div>
+              </div>
+              <div
+                class="fixed bottom-0 py-3 px-6 bg-white box-shadow rounded-bl-xl rounded-br-xl left-0 right-0 flex flex-col gap-3 justify-between"
+              >
+                <h6 class="text-base text-grey-400">
+                  Create a playlist with 3 songs
+                </h6>
+                <div class="flex items-end justify-end gap-[19px]">
+                  <button
+                    class="text-base rounded-xl close-modal font-semibold text-grey-400 py-3 px-6 bg-grey-200"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    class="text-base rounded-xl font-semibold text-[#fff] py-3 px-6 bg-[#ef5350]"
+                  >
+                    Delete forever
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- fixed -->
+          </div>
+          <!-- modal add list -->
+          <div class="overlay hidden modal-add">
+            <div class="abs-center px-6 bg-white w-[592px] max-w-full rounded-xl">
+              <button class="close-modal absolute right-4 top-4">
+                <img src="../../assets/svgs/close.svg " alt="" />
+              </button>
+              <div class="flex items-center mb-4 justify-center mt-4">
+                <button
+                  href="#"
+                  class="text-[#0ABFAC] border-b-4 border-b-[#0ABFAC] btn btn-add py-3 px-6 text-base font-semibold"
+                >
+                  Add to playlist
+                </button>
+                <button
+                  href="#"
+                  class="text-grey-300 btn create-btn py-3 px-6 text-base font-semibold"
+                >
+                  Create to playlist
+                </button>
+              </div>
+              <div
+                class="flex items-center gap-2 bg-grey-100 px-4 py-3 rounded-xl mb-6"
+              >
+                <img src="../../assets/svgs/search.svg" alt="" />
+                <input
+                  type="text"
+                  placeholder="Find your playlist music "
+                  class="bg-inherit"
+                />
+              </div>
+              <div
+                class="flex flex-col gap-4 h-[400px] mb-4 overflow-y-auto scrollbar-custom"
+              >
+                <div class="flex items-center gap-3">
+                  <img
+                    src="../../assets/images/Avatar.png"
+                    class="w-12 h-12"
+                    alt=""
+                  />
+                  <div class="flex flex-col">
+                    <h6 class="text-base font-semibold text-neutral-dark-500">
+                      Songs for breakup
+                    </h6>
+                    <p class="flex items-center gap-1">
+                      <img src="../../assets/images/musicnote.svg" alt="" /> 18 songs
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <img
+                    src="../../assets/images/Avatar.png"
+                    class="w-12 h-12"
+                    alt=""
+                  />
+                  <div class="flex flex-col">
+                    <h6 class="text-base font-semibold text-neutral-dark-500">
+                      Songs for breakup
+                    </h6>
+                    <p class="flex items-center gap-1">
+                      <img src="../../assets/images/musicnote.svg" alt="" /> 18 songs
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <img
+                    src="../../assets/images/Avatar.png"
+                    class="w-12 h-12"
+                    alt=""
+                  />
+                  <div class="flex flex-col">
+                    <h6 class="text-base font-semibold text-neutral-dark-500">
+                      Songs for breakup
+                    </h6>
+                    <p class="flex items-center gap-1">
+                      <img src="../../assets/images/musicnote.svg" alt="" /> 18 songs
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <img
+                    src="../../assets/images/Avatar.png"
+                    class="w-12 h-12"
+                    alt=""
+                  />
+                  <div class="flex flex-col">
+                    <h6 class="text-base font-semibold text-neutral-dark-500">
+                      Songs for breakup
+                    </h6>
+                    <p class="flex items-center gap-1">
+                      <img src="../../assets/images/musicnote.svg" alt="" /> 18 songs
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <img
+                    src="../../assets/images/Avatar.png"
+                    class="w-12 h-12"
+                    alt=""
+                  />
+                  <div class="flex flex-col">
+                    <h6 class="text-base font-semibold text-neutral-dark-500">
+                      Songs for breakup
+                    </h6>
+                    <p class="flex items-center gap-1">
+                      <img src="../../assets/images/musicnote.svg" alt="" /> 18 songs
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <img
+                    src="../../assets/images/Avatar.png"
+                    class="w-12 h-12"
+                    alt=""
+                  />
+                  <div class="flex flex-col">
+                    <h6 class="text-base font-semibold text-neutral-dark-500">
+                      Songs for breakup
+                    </h6>
+                    <p class="flex items-center gap-1">
+                      <img src="../../assets/images/musicnote.svg" alt="" /> 18 songs
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <img
+                    src="../../assets/images/Avatar.png"
+                    class="w-12 h-12"
+                    alt=""
+                  />
+                  <div class="flex flex-col">
+                    <h6 class="text-base font-semibold text-neutral-dark-500">
+                      Songs for breakup
+                    </h6>
+                    <p class="flex items-center gap-1">
+                      <img src="../../assets/images/musicnote.svg" alt="" /> 18 songs
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <img
+                    src="../../assets/images/Avatar.png"
+                    class="w-12 h-12"
+                    alt=""
+                  />
+                  <div class="flex flex-col">
+                    <h6 class="text-base font-semibold text-neutral-dark-500">
+                      Songs for breakup
+                    </h6>
+                    <p class="flex items-center gap-1">
+                      <img src="../../assets/images/musicnote.svg" alt="" /> 18 songs
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal Create list -->
+          <div class="overlay hidden modal-create">
+            <div
+              class="rounded-xl w-[592px] max-w-full abs-center bg-white px-4 pb-3"
+            >
+              <button class="close-modal absolute right-4 top-4">
+                <img src="../../assets/svgs/close.svg" alt="" />
+              </button>
+              <div class="h-[590px] mb-14 overflow-y-auto scrollbar-custom">
+                <div class="flex items-center justify-center mt-3 mb-4">
+                  <button
+                    href="#"
+                    class="text-grey-300 btn btn-add py-3 px-6 text-base font-semibold"
+                  >
+                    Add to playlist
+                  </button>
+                  <button
+                    href="#"
+                    class="text-[#0ABFAC] border-b-4 border-b-[#0ABFAC] btn create-button py-3 px-6 text-base font-semibold"
+                  >
+                    Create to playlist
+                  </button>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <label class="text-base font-semibold text-grey-400" for=""
+                    >Playlist tittle</label
+                  >
+                  <input
+                    type="text"
+                    class="px-4 py-3 rounded-xl bg-grey-100"
+                    placeholder="playlist tittle"
+                  />
+                </div>
+                <div class="flex mt-4 flex-col gap-1">
+                  <label class="text-base font-semibold text-grey-400" for=""
+                    >Description</label
+                  >
+                  <textarea
+                    class="border-none px-4 outline-none py-3 bg-grey-100 rounded-xl min-h-[96px] max-h-[96px]"
+                  >
+                  </textarea>
+                </div>
+                <div
+                  class="flex text-base mt-4 font-semibold text-grey-400 items-center gap-4"
+                >
+                  Privacy
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="flex font-normal items-center text-neutral-dark-500 gap-[6px]"
+                    >
+                      <input type="radio" />
+                      <label for="">Public</label>
+                    </div>
+                    <div
+                      class="flex font-normal text-neutral-dark-500 items-center gap-[6px]"
+                    >
+                      <input type="radio" />
+                      <label for="">Private</label>
+                    </div>
+                  </div>
+                </div>
+                <!-- list -->
+                <div class="flex flex-col gap-4 py-4 border-b border-b-grey-200">
+                  <div class="flex items-center justify-between w-full">
+                    <div class="flex items-center gap-3">
+                      <img
+                        src="../../assets/images/Avatar.png"
+                        class="w-12 h-12"
+                        alt=""
+                      />
+                      <div class="flex flex-col">
+                        <h6 class="text-base font-semibold text-neutral-dark-500">
+                          Songs for breakup
+                        </h6>
+                        <p class="flex items-center gap-1">18 songs</p>
+                      </div>
+                    </div>
+                    <button><img src="../../assets/svgs/close.svg" alt="" /></button>
+                  </div>
+                  <div class="flex items-center justify-between w-full">
+                    <div class="flex items-center gap-3">
+                      <img
+                        src="../../assets/images/Avatar.png"
+                        class="w-12 h-12"
+                        alt=""
+                      />
+                      <div class="flex flex-col">
+                        <h6 class="text-base font-semibold text-neutral-dark-500">
+                          Songs for breakup
+                        </h6>
+                        <p class="flex items-center gap-1">18 songs</p>
+                      </div>
+                    </div>
+                    <button><img src="../../assets/svgs/close.svg" alt="" /></button>
+                  </div>
+                  <div class="flex items-center justify-between w-full">
+                    <div class="flex items-center gap-3">
+                      <img
+                        src="../../assets/images/Avatar.png"
+                        class="w-12 h-12"
+                        alt=""
+                      />
+                      <div class="flex flex-col">
+                        <h6 class="text-base font-semibold text-neutral-dark-500">
+                          Songs for breakup
+                        </h6>
+                        <p class="flex items-center gap-1">18 songs</p>
+                      </div>
+                    </div>
+                    <button><img src="../../assets/svgs/close.svg" alt="" /></button>
+                  </div>
+                </div>
+                <!-- find-->
+                <h5 class="text-base text-grey-400 mb-4 font-semibold">
+                  Let's find something for your playlist
+                </h5>
+                <div
+                  class="flex items-center gap-2 bg-grey-100 px-4 py-3 rounded-xl mb-6"
+                >
+                  <img src="../../assets/svgs/search.svg" alt="" />
+                  <input
+                    type="text"
+                    placeholder="Find your playlist music "
+                    class="bg-inherit flex-1"
+                  />
+                </div>
+              </div>
+              <!-- fixed -->
+              <div
+                class="fixed bottom-0 py-3 px-6 bg-white box-shadow rounded-bl-xl rounded-br-xl left-0 right-0 flex items-center justify-between max-sm:flex-col gap-7"
+              >
+                <h6 class="text-base text-grey-400">
+                  Create a playlist with 3 songs
+                </h6>
+                <div class="flex items-center gap-[19px]">
+                  <button
+                    class="text-base rounded-xl close-modal font-semibold text-grey-400 py-3 px-6 bg-grey-200"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    class="text-base rounded-xl font-semibold text-[#fff] py-3 px-6 bg-[#1975ff]"
+                  >
+                    Save
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div
+            class="w-full bg-[#fff] md:p-6 flex flex-col justify-center items-center rounded-xl"
+          >
+            <div
+              class="grid grid-cols-1 w-full lg:grid-cols-3 p-1 bg-grey-100 rounded-xl lg:w-[570px] place-content-between mx-auto"
+            >
+              <a
+                href="../upload/upload-music-desktop.html"
+                class="flex btn-upload items-center justify-center font-semibold w-full text-14 lg:text-16 gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="24"
+                  viewBox="0 0 25 24"
+                  fill="none"
+                >
+                  <path
+                    d="M21.5 8.65002V14.35C21.5 14.69 21.49 15.02 21.47 15.33C20.75 14.51 19.68 14 18.5 14C16.29 14 14.5 15.79 14.5 18C14.5 18.75 14.71 19.46 15.08 20.06C15.28 20.4 15.54 20.71 15.84 20.97C15.53 20.99 15.2 21 14.85 21H9.14999C4.39999 21 2.5 19.1 2.5 14.35V8.65002C2.5 3.90002 4.39999 2 9.14999 2H14.85C19.6 2 21.5 3.90002 21.5 8.65002Z"
+                    stroke="#A1ABB3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.21953 14.4195C8.02034 14.4195 8.66953 13.7703 8.66953 12.9695C8.66953 12.1687 8.02034 11.5195 7.21953 11.5195C6.41872 11.5195 5.76953 12.1687 5.76953 12.9695C5.76953 13.7703 6.41872 14.4195 7.21953 14.4195Z"
+                    stroke="#A1ABB3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M13.9797 11.9995V6.33952C13.9797 5.12952 13.2197 4.96949 12.4597 5.17949L9.5697 5.96946C9.0497 6.10946 8.67969 6.5295 8.67969 7.1295V8.13951V8.8195V12.9695"
+                    stroke="#A1ABB3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12.5291 13.4508C13.3299 13.4508 13.9791 12.8016 13.9791 12.0008C13.9791 11.2 13.3299 10.5508 12.5291 10.5508C11.7283 10.5508 11.0791 11.2 11.0791 12.0008C11.0791 12.8016 11.7283 13.4508 12.5291 13.4508Z"
+                    stroke="#A1ABB3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8.66992 8.82892L13.9799 7.37891"
+                    stroke="#A1ABB3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M22.5 18C22.5 18.75 22.29 19.46 21.92 20.06C21.23 21.22 19.96 22 18.5 22C17.04 22 15.77 21.22 15.08 20.06C14.71 19.46 14.5 18.75 14.5 18C14.5 15.79 16.29 14 18.5 14C20.71 14 22.5 15.79 22.5 18Z"
+                    stroke="#A1ABB3"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M19.9898 17.9805H17.0098"
+                    stroke="#A1ABB3"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M18.5 16.5195V19.5095"
+                    stroke="#A1ABB3"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Upload Music
+              </a>
+              <a
+                href="../upload/upload-video-desktop.html"
+                class="flex btn-upload btn-upload-video items-center font-semibold text-14 lg:text-16 justify-center gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M22 9V15C22 15.23 22 15.45 21.98 15.67C21.94 15.61 21.89 15.55 21.84 15.5C21.83 15.49 21.82 15.47 21.81 15.46C21 14.56 19.81 14 18.5 14C17.24 14 16.09 14.52 15.27 15.36C14.48 16.17 14 17.28 14 18.5C14 19.34 14.24 20.14 14.65 20.82C14.87 21.19 15.15 21.53 15.47 21.81C15.49 21.82 15.5 21.83 15.51 21.84C15.56 21.89 15.61 21.93 15.67 21.98C15.46 22 15.23 22 15 22H9C4 22 2 20 2 15V9C2 4 4 2 9 2H15C20 2 22 4 22 9Z"
+                    stroke="#A1ABB3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M2.51953 7.10938H21.4795"
+                    stroke="#A1ABB3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8.51953 2.10938V6.96936"
+                    stroke="#A1ABB3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15.4795 2.10938V6.51941"
+                    stroke="#A1ABB3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M23 18.5C23 18.86 22.96 19.21 22.87 19.55C22.76 20 22.58 20.43 22.35 20.82C21.57 22.12 20.14 23 18.5 23C17.42 23 16.44 22.62 15.68 21.98C15.67 21.98 15.67 21.98 15.67 21.98C15.61 21.93 15.56 21.89 15.51 21.84C15.5 21.83 15.49 21.82 15.47 21.81C15.15 21.53 14.87 21.19 14.65 20.82C14.24 20.14 14 19.34 14 18.5C14 17.28 14.48 16.17 15.27 15.36C16.09 14.52 17.24 14 18.5 14C19.81 14 21 14.56 21.81 15.46C21.82 15.47 21.83 15.49 21.84 15.5C21.89 15.55 21.94 15.61 21.98 15.67C22.62 16.44 23 17.43 23 18.5Z"
+                    stroke="#A1ABB3"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M20.1803 18.4805H16.8203"
+                    stroke="#A1ABB3"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M18.5 16.8398V20.1998"
+                    stroke="#A1ABB3"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Upload Video
+              </a>
+              <a
+                href="../upload/upload-your-upload-desktop.html"
+                class="flex btn-upload btn-upload-yourshop text-14 active-upload font-semibold lg:text-16 items-center justify-center gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="24"
+                  viewBox="0 0 25 24"
+                  fill="none"
+                >
+                  <path
+                    d="M11.25 9.5V15.25C11.25 15.9361 11.8139 16.5 12.5 16.5C13.1861 16.5 13.75 15.9361 13.75 15.25V9.5H17.3C18.7946 9.5 19.9577 9.96497 20.745 10.7533C21.5321 11.5415 21.9947 12.7043 21.99 14.1984V14.2V16.8C21.99 18.2946 21.5251 19.4578 20.7364 20.2464C19.9478 21.0351 18.7846 21.5 17.29 21.5H7.7C6.20546 21.5 5.04235 21.0351 4.2538 20.2454C3.46518 19.4557 3 18.29 3 16.79V14.2C3 12.7054 3.46492 11.5422 4.25355 10.7536C5.04218 9.96492 6.20545 9.5 7.7 9.5H11.25Z"
+                    fill="white"
+                    stroke="white"
+                  />
+                  <path
+                    d="M13.6034 4.20785L12.7498 3.3543V4.56141V8.50141H12.2498V4.56141V3.3543L11.3963 4.20785L9.32629 6.27785C9.23155 6.37259 9.06813 6.37259 8.9734 6.27785C8.87866 6.18312 8.87866 6.0197 8.9734 5.92496L12.3234 2.57496C12.4181 2.48022 12.5816 2.48022 12.6763 2.57496L16.0263 5.92496C16.121 6.0197 16.121 6.18312 16.0263 6.27785C15.975 6.32914 15.9144 6.35141 15.8498 6.35141C15.7853 6.35141 15.7247 6.32914 15.6734 6.27785L13.6034 4.20785Z"
+                    fill="white"
+                    stroke="white"
+                  />
+                </svg>
+                Your Upload
+              </a>
+            </div>
+            <!-- navigation -->
+            <div class="flex items-center mt-3">
+              <a
+                href="../upload/upload-your-upload-music-desktop.html"
+                class="py-3 text-[#48cfc1] border-b-4 border-b-[#48cfc1] px-6 text-base font-semibold"
+              >
+                Your songs
+              </a>
+              <a
+                href="../upload/upload-your-upload-video-desktop.html"
+                class="text-grey-300 py-3 px-6 text-base font-semibold"
+              >
+                Your videos
+              </a>
+            </div>
+            <!-- content -->
+            <div
+              class="mt-8 mb-6 flex items-center justify-between w-full pb-4 border-b border-b-grey-200"
+            >
+              <div class="flex items-center gap-[18px] text-14 text-grey-400">
+                <input type="checkbox" />
+                <label for="">Select all (2 selected)</label>
+              </div>
+              <div class="flex items-center gap-4">
+                <select
+                  class="text-grey-300 dropdown outline-none border-none rounded-xl bg-grey-100 py-2 px-4"
+                  name=""
+                  id=""
+                >
+                  <option selected class="text-grey-300">Edit</option>
+                  <option class="text-grey-300">Privacy and tag</option>
+                  <option class="text-grey-300">Artwork</option>
+                  <option class="text-grey-300">Permissions</option>
+                </select>
+                <button
+                  class="px-4 py-2 open-modal-add bg-grey-100 text-base text-grey-300 rounded-xl"
+                >
+                  Add to playlist
+                </button>
+                <button
+                  class="px-4 py-2 bg-grey-100 open-modal-delete text-base text-grey-300 rounded-xl"
+                >
+                  Delete
+                </button>
+              </div>
+            </div>
+            <!-- list -->
+            <div class="flex flex-col gap-4 w-full">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-4">
+                  <input type="checkbox" name="" id="" />
+                  <div class="flex items-center gap-3">
+                    <img
+                      src="../../assets/images/Avatar.png"
+                      alt=""
+                      class="w-full h-full rounded-xl"
+                    />
+                    <div>
+                      <h6 class="text-base w-[300px]">My name is will</h6>
+                      <p class="text-14 text-grey-400">Ngoc son</p>
+                      <div class="flex items-center gap-4">
+                        <div class="flex items-center gap-1 text-grey-400">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                          >
+                            <path
+                              d="M8.31582 10.572L8.31659 10.5716L9.16993 10.0782L10.0225 9.58534C10.0226 9.5853 10.0226 9.58526 10.0227 9.58521C10.6656 9.21497 11.098 8.65732 11.098 7.9987C11.098 7.34023 10.6658 6.78268 10.0232 6.41244C10.0229 6.41231 10.0227 6.41218 10.0225 6.41205L9.16993 5.91916L8.31659 5.42583L8.31582 5.42539C7.67411 5.05591 6.97537 4.95889 6.4047 5.28686C5.83315 5.61533 5.56634 6.26866 5.56634 7.01203V7.9987V8.98536C5.56634 9.72637 5.83371 10.3786 6.40395 10.7076C6.97398 11.0365 7.67287 10.9422 8.31582 10.572ZM1.83301 7.9987C1.83301 4.59484 4.59582 1.83203 7.99967 1.83203C11.4035 1.83203 14.1663 4.59484 14.1663 7.9987C14.1663 11.4026 11.4035 14.1654 7.99967 14.1654C4.59582 14.1654 1.83301 11.4026 1.83301 7.9987Z"
+                              fill="#A1ABB3"
+                              stroke="#A1ABB3"
+                            />
+                          </svg>
+                          15k
+                        </div>
+                        <div class="flex items-center gap-1 text-grey-400">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                          >
+                            <path
+                              d="M8.41301 13.8731C8.18634 13.9531 7.81301 13.9531 7.58634 13.8731C5.65301 13.2131 1.33301 10.4597 1.33301 5.79307C1.33301 3.73307 2.99301 2.06641 5.03967 2.06641C6.25301 2.06641 7.32634 2.65307 7.99967 3.55974C8.67301 2.65307 9.75301 2.06641 10.9597 2.06641C13.0063 2.06641 14.6663 3.73307 14.6663 5.79307C14.6663 10.4597 10.3463 13.2131 8.41301 13.8731Z"
+                              fill="#A1ABB3"
+                              stroke="#A1ABB3"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                          820
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  <button><img src="../../assets/svgs/more.svg" alt="" /></button>
+                  <div class="flex items-center gap-2 ml-20">
+                    <img src="../../assets/images/global.svg" alt="" />
+                    <select
+                      class="outline-none text-14 border-none"
+                      name=""
+                      id=""
+                    >
+                      <option value="" class="flex items-center gap-2">
+                        Public
+                      </option>
+                      <option value="">Private</option>
+                    </select>
+                    <div class="max-w-[120px] text-14 text-center px-8">
+                      03:20
+                    </div>
+                    <div class="max-w-[120px] text-14 text-center">5 day ago</div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-4">
+                  <input type="checkbox" name="" id="" />
+                  <div class="flex items-center gap-3">
+                    <img
+                      src="../../assets/images/Avatar.png"
+                      alt=""
+                      class="w-full h-full rounded-xl"
+                    />
+                    <div>
+                      <h6 class="text-base w-[300px]">My name is will</h6>
+                      <p class="text-14 text-grey-400">Ngoc son</p>
+                      <div class="flex items-center gap-4">
+                        <div class="flex items-center gap-1 text-grey-400">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                          >
+                            <path
+                              d="M8.31582 10.572L8.31659 10.5716L9.16993 10.0782L10.0225 9.58534C10.0226 9.5853 10.0226 9.58526 10.0227 9.58521C10.6656 9.21497 11.098 8.65732 11.098 7.9987C11.098 7.34023 10.6658 6.78268 10.0232 6.41244C10.0229 6.41231 10.0227 6.41218 10.0225 6.41205L9.16993 5.91916L8.31659 5.42583L8.31582 5.42539C7.67411 5.05591 6.97537 4.95889 6.4047 5.28686C5.83315 5.61533 5.56634 6.26866 5.56634 7.01203V7.9987V8.98536C5.56634 9.72637 5.83371 10.3786 6.40395 10.7076C6.97398 11.0365 7.67287 10.9422 8.31582 10.572ZM1.83301 7.9987C1.83301 4.59484 4.59582 1.83203 7.99967 1.83203C11.4035 1.83203 14.1663 4.59484 14.1663 7.9987C14.1663 11.4026 11.4035 14.1654 7.99967 14.1654C4.59582 14.1654 1.83301 11.4026 1.83301 7.9987Z"
+                              fill="#A1ABB3"
+                              stroke="#A1ABB3"
+                            />
+                          </svg>
+                          15k
+                        </div>
+                        <div class="flex items-center gap-1 text-grey-400">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                          >
+                            <path
+                              d="M8.41301 13.8731C8.18634 13.9531 7.81301 13.9531 7.58634 13.8731C5.65301 13.2131 1.33301 10.4597 1.33301 5.79307C1.33301 3.73307 2.99301 2.06641 5.03967 2.06641C6.25301 2.06641 7.32634 2.65307 7.99967 3.55974C8.67301 2.65307 9.75301 2.06641 10.9597 2.06641C13.0063 2.06641 14.6663 3.73307 14.6663 5.79307C14.6663 10.4597 10.3463 13.2131 8.41301 13.8731Z"
+                              fill="#A1ABB3"
+                              stroke="#A1ABB3"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                          820
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  <button><img src="../../assets/svgs/more.svg" alt="" /></button>
+                  <div class="flex items-center gap-2 ml-20">
+                    <img src="../../assets/images/lock.svg" alt="" />
+                    <select
+                      class="outline-none text-14 border-none"
+                      name=""
+                      id=""
+                    >
+                      <option value="" class="flex items-center gap-2">
+                        Private
+                      </option>
+                      <option value="">Public</option>
+                    </select>
+                    <div class="max-w-[120px] text-14 text-center px-8">
+                      03:20
+                    </div>
+                    <div class="max-w-[120px] text-14 text-center">5 day ago</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer
+        class="mt-[100px] border-t border-t-grey-400 pb-6 pt-4 max-md:hidden"
+      >
+        <div class="container flex items-center justify-between">
+          <div class="flex items-center">
+            <div class="-mb-0.5 mr-6 text-14 text-grey-400">
+              Copyright © 2023 Clib Music. All rights reserved.
+            </div>
+            <ul class="flex items-center gap-3">
+              <li>
+                <a href="#" class="text-14 text-grey-400">Privacy Policy</a>
+              </li>
+              <li>
+                <span class="footer-divider"></span>
+              </li>
+              <li>
+                <a href="#" class="text-14 text-grey-400">Terms of Use</a>
+              </li>
+              <li>
+                <span class="footer-divider"></span>
+              </li>
+              <li>
+                <a href="#" class="text-14 text-grey-400">Cookie Warning</a>
+              </li>
+              <li>
+                <span class="footer-divider"></span>
+              </li>
+              <li>
+                <a href="#" class="text-14 text-grey-400">Support</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="flex items-center gap-3">
+            <li>
+              <a href="#" class="lang-footer-item active">English</a>
+            </li>
+            <li>
+              <span class="footer-divider"></span>
+            </li>
+            <li>
+              <a href="#" class="lang-footer-item">Tiếng Việt</a>
+            </li>
+            <li>
+              <span class="footer-divider"></span>
+            </li>
+            <li>
+              <a href="#" class="lang-footer-item">简体中文</a>
+            </li>
+            <li>
+              <span class="footer-divider"></span>
+            </li>
+            <li>
+              <a href="#" class="lang-footer-item">한국어</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+      <div id="header-tab-modal" class="overlay header-tab-modal">
+        <div class="header-tab-modal--inner">
+          <div class="flex-1">
+            <button
+              id="close-header-tab-modal"
+              class="flex w-full items-center justify-end"
+            >
+              <img width="16" height="16" src="../../assets/svgs/close.svg" alt="" />
+            </button>
+            <div class="mt-4 flex items-center gap-3 md:hidden">
+              <img
+                class="rounded-2xl object-cover"
+                width="64"
+                height="64"
+                loading="lazy"
+                src="../../assets/images/artists/2.png"
+                alt=""
+              />
+              <div>
+                <div class="flex items-center gap-1 text-14 font-semibold">
+                  Son Tung M-TP <img src="../../assets/svgs/verify.svg" alt="" />
+                </div>
+                <div class="mt-2 flex items-center gap-3 text-14 text-grey-400">
+                  <div><span class="font-semibold">53K</span> Followers</div>
+                  <div><span class="font-semibold">12,3K</span> Following</div>
+                </div>
+              </div>
+            </div>
+            <ul class="mt-[14px]">
+              <li class="header-link">
+                <a
+                  href="/voting/music-voting.html"
+                  class="flex items-center text-grey-400"
+                  ><img src="../../assets/svgs/voting.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >Voting</span
+                  ></a
+                >
+              </li>
+              <li class="header-link">
+                <a href="/wallet.html" class="flex items-center text-grey-400"
+                  ><img src="../../assets/svgs/wallet.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >Wallet</span
+                  ></a
+                >
+              </li>
+              <li class="header-link">
+                <a href="/about-us.html" class="flex items-center text-grey-400"
+                  ><img src="../../assets/svgs/about-us.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >About us</span
+                  ></a
+                >
+              </li>
+              <li class="header-link">
+                <a href="/setting.html" class="flex items-center text-grey-400"
+                  ><img src="../../assets/svgs/setting.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >Setting</span
+                  ></a
+                >
+              </li>
+              <li class="header-link">
+                <a href="/support.html" class="flex items-center text-grey-400"
+                  ><img src="../../assets/svgs/support.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >Support</span
+                  ></a
+                >
+              </li>
+              <li class="header-link">
+                <a
+                  href="/privacy-police.html"
+                  class="flex items-center text-grey-400"
+                  ><img src="../../assets/svgs/privacy-police.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >Privacy Police</span
+                  ></a
+                >
+              </li>
+            </ul>
+            <div class="mt-[30px] flex items-center justify-center gap-4">
+              <button class="btn-tertiary">Sign out</button>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-between border-t border-t-grey-200 pt-4"
+          >
+            <div class="flex items-center gap-x-2 text-base">
+              <img src="../../assets/svgs/global.svg" alt="" />
+              Language
+            </div>
+            <button
+              class="flex items-center gap-2 rounded-xl bg-grey-100 px-4 py-2"
+            >
+              <img src="../../assets/svgs/flags/us.svg" alt="" />
+              English
+            </button>
+          </div>
+        </div>
+      </div>
+</div>
+<!-- mobile -->
+<main class="relative block md:hidden">
+  <div class="box-shadow">
+    <div class="flex items-center justify-between py-3">
+      <div class="flex items-center gap-3">
+        <img
+          src="../../assets/images/arrow-left.svg"
+          alt=""
+          class="w-6 h-6 rounded-xl"
+        />
+      </div>
+      <div
+        class="flex items-center gap-2 text-18 font-semibold text-neutral-dark-500"
+      >
+        Edit detail
+      </div>
+      <div class="invisible w-6 h-6"></div>
+    </div>
+    <!-- navigation -->
+  </div>
+  <div class="">
+    <div class="overflow-hidden">
+      <div class="w-full p-6">
+        <div class="flex flex-col lg:flex-row lg:items-center gap-8">
+          <div class="w-[200px] h-[200px] mx-auto relative">
+            <img
+              src="../../assets/images/Thumbnail.png"
+              alt=""
+              class="absolute bottom-0 z-30"
+            />
+          </div>
+          <form class="flex flex-col gap-3 text-grey-400">
+            <div class="flex flex-col gap-2">
+              <label class="text-14 lg:text-base font-semibold"
+                >Title</label
+              >
+              <input
+                type="text"
+                placeholder="Title"
+                class="w-full px-4 text-14 py-3 titile bg-grey-100 rounded-xl outline-none border-none"
+              />
+            </div>
+
+            <div class="flex flex-col gap-2">
+              <label class="text-14 lg:text-base font-semibold"
+                >Description</label
+              >
+              <textarea
+                class="bg-grey-100 text-14 description rounded-xl min-h-[96px] h-[96px] outline-none border-none px-4 py-3"
+                name="Description"
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Description your song"
+              ></textarea>
+            </div>
+            <div
+              class="text-14 lg:text-base font-semibold flex flex-col gap-3"
+            >
+              Privacy
+              <div class="flex items-center gap-3">
+                <div class="flex items-center gap-1 font-normal">
+                  <input type="radio" />Public
+                </div>
+                <div class="flex items-center gap-1 font-normal">
+                  <input type="radio" />Private
+                </div>
+              </div>
+            </div>
+            <div
+              class="text-14 lg:text-base font-semibold justify-start flex flex-col gap-3 items-start"
+            >
+              Sell
+              <div class="flex items-start gap-3">
+                <div
+                  class="flex text-14 font-normal line-clamp-1 gap-1 text-grey-300"
+                >
+                  <input type="radio" />No, It’s free
+                </div>
+                <div
+                  class="flex text-14 font-normal line-clamp-1 gap-1 text-grey-300"
+                >
+                  <input type="radio" />Yes, It’s for sell
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex items-center py-2 w-[50%] justify-between rounded-xl px-4 text-16 font-semibold text-neutral-dark-500 border border-grey-200 md:hidden"
+            >
+              <p>$</p>
+              <span>78</span>
+              <p class="invisible">$</p>
+            </div>
+            <p class="text-12 text-neutral-dark-500">
+              If you choose Yes, your product will appear on marketplace
+            </p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 mt-6">
+              <button
+                type="button"
+                class="px-6 uploadButton py-3 rounded-xl text-center bg-[#1975ff] font-semibold text-[#fff] transition-opacity duration-300 lg:hover:opacity-70"
+              >
+                Save
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="../../js/index.js"></script>
+  <script src="../../js/your-upload.js"></script>
+</html>
