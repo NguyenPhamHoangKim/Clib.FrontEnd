@@ -15,1288 +15,1525 @@
     <link rel="stylesheet" href="../styles/index.css" />
   </head>
   <body>
-    <header class="fixed left-0 right-0 top-0 z-[999]">
-      <div class="bg-white py-2.5 shadow-[0px_2px_10px_0px_rgba(0,0,0,0.04)]">
-        <div class="container relative flex items-center justify-between">
-          <div class="flex items-center space-x-4">
-            <button id="toggle-mobile-menu">
-              <img src="../assets/svgs/menu.svg" alt="" />
-            </button>
-            <div
-              class="hidden w-fit items-center rounded-lg border border-grey-200 px-4 py-2 md:flex"
-            >
-              <img class="mr-2" src="../assets/svgs/search.svg" alt="" />
-              <input
-                class="h-full flex-1 text-base outline-none placeholder:text-grey-300 md:min-w-[260px]"
-                placeholder="What are you looking for?"
-              />
+<div class="hidden md:block">
+      <header class="fixed left-0 right-0 top-0 z-[999]">
+        <div class="bg-white py-2.5 shadow-[0px_2px_10px_0px_rgba(0,0,0,0.04)]">
+          <div class="container relative flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+              <button id="toggle-mobile-menu">
+                <img src="../assets/svgs/menu.svg" alt="" />
+              </button>
+              <div
+                class="hidden w-fit items-center rounded-lg border border-grey-200 px-4 py-2 md:flex"
+              >
+                <img class="mr-2" src="../assets/svgs/search.svg" alt="" />
+                <input
+                  class="h-full flex-1 text-base outline-none placeholder:text-grey-300 md:min-w-[260px]"
+                  placeholder="What are you looking for?"
+                />
+              </div>
             </div>
-          </div>
-
-          <a
-            href="/"
-            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden"
-          >
-            <img
-              class="object-contain w-8"
-              src="../assets/svgs/logo-mb.svg"
-              alt=""
-            />
-          </a>
-          <!-- SIGNED IN MOBILE -->
-          <div class="flex items-center space-x-4 md:hidden">
-            <button class="rounded-lg bg-grey-100 p-1.5">
+  
+            <a
+              href="/"
+              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden"
+            >
               <img
-                width="24"
-                height="24"
-                src="../assets/svgs/notification.svg"
+                class="object-contain w-8"
+                src="../assets/svgs/logo-mb.svg"
                 alt=""
               />
-            </button>
-            <button class="rounded-lg bg-grey-100 p-1.5">
-              <img src="../assets/svgs/messenger.svg" alt="" />
-            </button>
-          </div>
-          <!-- SIGNED IN -->
-
-          <!-- SIGNED IN PC-->
-          <div class="flex items-center space-x-4 max-md:hidden xl:space-x-6">
-            <button class="bg-grey-1 rounded-lg">
-              <img src="../assets/svgs/document.svg" alt="" />
-            </button>
-            <button class="">
-              <img src="../assets/svgs/sol.svg" alt="" />
-            </button>
-            <button class="">
-              <img src="../assets/svgs/export-pc.svg" alt="" />
-            </button>
-            <div
-              id="ms-wrapper"
-              class="relative flex items-center justify-center"
-            >
-              <button id="toggle-ms" class="toggle-ms">
+            </a>
+            <!-- SIGNED IN MOBILE -->
+            <div class="flex items-center space-x-4 md:hidden">
+              <button class="rounded-lg bg-grey-100 p-1.5">
                 <img
-                  class="ms-icon"
-                  src="../assets/svgs/messenger-pc.svg"
+                  width="24"
+                  height="24"
+                  src="../assets/svgs/notification.svg"
                   alt=""
                 />
               </button>
-              <div id="ms-popup" class="ms-popup">
-                <div class="flex items-center justify-between px-4 pb-2 pt-4">
-                  <span class="text-20 font-semibold">Message</span>
-                  <div class="flex items-center gap-2">
-                    <span class="text-14">New chat</span>
-                    <button class="rounded-xl bg-grey-200 p-1.5 duration-100">
+              <button class="rounded-lg bg-grey-100 p-1.5">
+                <img src="../assets/svgs/messenger.svg" alt="" />
+              </button>
+            </div>
+            <!-- SIGNED IN -->
+  
+            <!-- SIGNED IN PC-->
+            <div class="flex items-center space-x-4 max-md:hidden xl:space-x-6">
+              <button class="bg-grey-1 rounded-lg">
+                <img src="../assets/svgs/document.svg" alt="" />
+              </button>
+              <button class="">
+                <img src="../assets/svgs/sol.svg" alt="" />
+              </button>
+              <button class="">
+                <img src="../assets/svgs/export-pc.svg" alt="" />
+              </button>
+              <div
+                id="ms-wrapper"
+                class="relative flex items-center justify-center"
+              >
+                <button id="toggle-ms" class="toggle-ms">
+                  <img
+                    class="ms-icon"
+                    src="../assets/svgs/messenger-pc.svg"
+                    alt=""
+                  />
+                </button>
+                <div id="ms-popup" class="ms-popup">
+                  <div class="flex items-center justify-between px-4 pb-2 pt-4">
+                    <span class="text-20 font-semibold">Message</span>
+                    <div class="flex items-center gap-2">
+                      <span class="text-14">New chat</span>
+                      <button class="rounded-xl bg-grey-200 p-1.5 duration-100">
+                        <img
+                          class="h-6 w-6"
+                          src="../assets/svgs/edit.svg"
+                          alt=""
+                        />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="mt-2 px-4">
+                    <div
+                      class="flex items-center gap-2 rounded-xl bg-grey-100 p-3"
+                    >
+                      <img
+                        class="aspect-square w-5"
+                        src="../assets/svgs/search-people.svg"
+                        loading="lazy"
+                        alt=""
+                      />
+                      <input
+                        class="h-full flex-1 bg-transparent text-14 outline-none placeholder:text-grey-300"
+                        placeholder="Search people"
+                      />
+                    </div>
+                  </div>
+                  <ul class="mt-2 px-4">
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="../assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="Benny Andersson"
+                          />
+                          <div>
+                            <div class="line-clamp-1 text-14 font-semibold">
+                              Benny Andersson
+                            </div>
+                            <div class="line-clamp-1 text-14 font-semibold">
+                              aww
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">3d</div>
+                          <span class="dot !h-3 !w-3 !bg-branding"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between border-r-4 border-r-branding bg-[linear-gradient(270deg,#F3FCFF_0%,rgba(243,252,255,0.00)_103.09%)] px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="../assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="Son Tung M-TP"
+                          />
+                          <div>
+                            <div
+                              class="line-clamp-1 flex items-center gap-1 text-14 font-semibold"
+                            >
+                              Son Tung M-TP
+                              <img src="../assets/svgs/verify.svg" alt="" />
+                            </div>
+                            <div class="line-clamp-1 text-14">
+                              Send a playlist
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">3d</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="../assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="Donna Summer"
+                          />
+                          <div>
+                            <div class="line-clamp-1 text-14 font-semibold">
+                              Donna Summer
+                            </div>
+                            <div class="line-clamp-1 text-14">Hi</div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">3d</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="../assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="James"
+                          />
+                          <div>
+                            <div class="text-14 font-semibold">James</div>
+                            <div class="line-clamp-1 text-14">
+                              Wow, this is really epic
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">3w</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="../assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="James"
+                          />
+                          <div>
+                            <div class="text-14 font-semibold">Roger Daltrey</div>
+                            <div class="line-clamp-1 text-14">woohoooo</div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">17/03/2023</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="../assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="James"
+                          />
+                          <div>
+                            <div class="text-14 font-semibold">Big Star</div>
+                            <div class="line-clamp-1 text-14">
+                              Haha that's terrifying 😂
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">05/03/2023</div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="mt-2 py-3 text-center">
+                    <a
+                      href="#"
+                      class="text-14 font-semibold text-grey-400 hover:text-branding-secondary hover:underline"
+                      >View all message</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                id="noti-wrapper"
+                class="relative flex items-center justify-center"
+              >
+                <button id="toggle-notification" class="">
+                  <img
+                    class="noti-icon"
+                    src="../assets/svgs/notification-pc.svg"
+                    alt=""
+                  />
+                </button>
+                <div id="noti-popup" class="noti-popup">
+                  <div class="flex items-center justify-between px-4 pb-2 pt-4">
+                    <span class="text-20 font-semibold">Notification</span>
+                    <button
+                      class="transition-transform duration-100 hover:rotate-180"
+                    >
                       <img
                         class="h-6 w-6"
-                        src="../assets/svgs/edit.svg"
+                        src="../assets/svgs/setting.svg"
                         alt=""
                       />
                     </button>
                   </div>
-                </div>
-                <div class="mt-2 px-4">
-                  <div
-                    class="flex items-center gap-2 rounded-xl bg-grey-100 p-3"
-                  >
-                    <img
-                      class="aspect-square w-5"
-                      src="../assets/svgs/search-people.svg"
-                      loading="lazy"
-                      alt=""
-                    />
-                    <input
-                      class="h-full flex-1 bg-transparent text-14 outline-none placeholder:text-grey-300"
-                      placeholder="Search people"
-                    />
+                  <div class="px-4">
+                    <div class="grid grid-cols-3 items-center">
+                      <button
+                        class="h-[60px] border-b-4 border-b-branding-secondary text-center text-base font-semibold text-branding-secondary"
+                      >
+                        All
+                      </button>
+                      <button
+                        class="h-[60px] text-center text-base font-semibold text-grey-300"
+                      >
+                        Unread
+                      </button>
+                      <button
+                        class="h-[60px] text-center text-base font-semibold text-grey-300"
+                      >
+                        Following
+                      </button>
+                    </div>
                   </div>
-                </div>
-                <ul class="mt-2 px-4">
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="../assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="Benny Andersson"
-                        />
-                        <div>
-                          <div class="line-clamp-1 text-14 font-semibold">
-                            Benny Andersson
+                  <ul class="mt-4 px-2">
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Ariana Grande"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../assets/svgs/ms-text.svg"
+                                alt=""
+                              />
+                            </span>
                           </div>
-                          <div class="line-clamp-1 text-14 font-semibold">
-                            aww
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Macos</span> commented
+                              on your post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">3d</div>
                         <span class="dot !h-3 !w-3 !bg-branding"></span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between border-r-4 border-r-branding bg-[linear-gradient(270deg,#F3FCFF_0%,rgba(243,252,255,0.00)_103.09%)] px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="../assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="Son Tung M-TP"
-                        />
-                        <div>
-                          <div
-                            class="line-clamp-1 flex items-center gap-1 text-14 font-semibold"
-                          >
-                            Son Tung M-TP
-                            <img src="../assets/svgs/verify.svg" alt="" />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Ariana Grande"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../assets/svgs/react-noti.svg"
+                                alt=""
+                              />
+                            </span>
                           </div>
-                          <div class="line-clamp-1 text-14">
-                            Send a playlist
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">3d</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="../assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="Donna Summer"
-                        />
-                        <div>
-                          <div class="line-clamp-1 text-14 font-semibold">
-                            Donna Summer
-                          </div>
-                          <div class="line-clamp-1 text-14">Hi</div>
-                        </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">3d</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="../assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="James"
-                        />
-                        <div>
-                          <div class="text-14 font-semibold">James</div>
-                          <div class="line-clamp-1 text-14">
-                            Wow, this is really epic
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Josh</span> commented on
+                              your post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">3w</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="../assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="James"
-                        />
-                        <div>
-                          <div class="text-14 font-semibold">Roger Daltrey</div>
-                          <div class="line-clamp-1 text-14">woohoooo</div>
-                        </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">17/03/2023</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="../assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="James"
-                        />
-                        <div>
-                          <div class="text-14 font-semibold">Big Star</div>
-                          <div class="line-clamp-1 text-14">
-                            Haha that's terrifying 😂
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Harry"
+                            />
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Harry</span> following
+                              you
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">05/03/2023</div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-                <div class="mt-2 py-3 text-center">
-                  <a
-                    href="#"
-                    class="text-14 font-semibold text-grey-400 hover:text-branding-secondary hover:underline"
-                    >View all message</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div
-              id="noti-wrapper"
-              class="relative flex items-center justify-center"
-            >
-              <button id="toggle-notification" class="">
-                <img
-                  class="noti-icon"
-                  src="../assets/svgs/notification-pc.svg"
-                  alt=""
-                />
-              </button>
-              <div id="noti-popup" class="noti-popup">
-                <div class="flex items-center justify-between px-4 pb-2 pt-4">
-                  <span class="text-20 font-semibold">Notification</span>
-                  <button
-                    class="transition-transform duration-100 hover:rotate-180"
-                  >
-                    <img
-                      class="h-6 w-6"
-                      src="../assets/svgs/setting.svg"
-                      alt=""
-                    />
-                  </button>
-                </div>
-                <div class="px-4">
-                  <div class="grid grid-cols-3 items-center">
-                    <button
-                      class="h-[60px] border-b-4 border-b-branding-secondary text-center text-base font-semibold text-branding-secondary"
+                        <button class="btn-primary">Follow</button>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Sona"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../assets/svgs/ms-text.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Sona</span> commented on
+                              your post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Been"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../assets/svgs/react-love.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Been</span> liked your
+                              post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                        <span class="dot !h-3 !w-3 !bg-branding"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Harry"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../assets/svgs/react-love.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Harry</span> liked your
+                              post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                        <span class="dot !h-3 !w-3 !bg-branding"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Jean"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../assets/svgs/ms-text.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Jean</span> commented on
+                              your post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="mt-2 py-3 text-center">
+                    <a
+                      href="#"
+                      class="text-14 font-semibold text-grey-400 hover:text-branding-secondary hover:underline"
+                      >View all notifications</a
                     >
-                      All
-                    </button>
-                    <button
-                      class="h-[60px] text-center text-base font-semibold text-grey-300"
-                    >
-                      Unread
-                    </button>
-                    <button
-                      class="h-[60px] text-center text-base font-semibold text-grey-300"
-                    >
-                      Following
-                    </button>
                   </div>
                 </div>
-                <ul class="mt-4 px-2">
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="../assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Ariana Grande"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="../assets/svgs/ms-text.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Macos</span> commented
-                            on your post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                      <span class="dot !h-3 !w-3 !bg-branding"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="../assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Ariana Grande"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="../assets/svgs/react-noti.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Josh</span> commented on
-                            your post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="../assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Harry"
-                          />
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Harry</span> following
-                            you
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                      <button class="btn-primary">Follow</button>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="../assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Sona"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="../assets/svgs/ms-text.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Sona</span> commented on
-                            your post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="../assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Been"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="../assets/svgs/react-love.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Been</span> liked your
-                            post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                      <span class="dot !h-3 !w-3 !bg-branding"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="../assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Harry"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="../assets/svgs/react-love.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Harry</span> liked your
-                            post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                      <span class="dot !h-3 !w-3 !bg-branding"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="../assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Jean"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="../assets/svgs/ms-text.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Jean</span> commented on
-                            your post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-                <div class="mt-2 py-3 text-center">
-                  <a
-                    href="#"
-                    class="text-14 font-semibold text-grey-400 hover:text-branding-secondary hover:underline"
-                    >View all notifications</a
-                  >
-                </div>
               </div>
+              <button class="">
+                <img src="../assets/svgs/wallet-pc.svg" alt="" />
+              </button>
+              <a href="../profile" class="flex items-center gap-2">
+                <img
+                  src="../assets/images/avatar1.jpg"
+                  class="h-11 w-11 rounded-lg object-cover"
+                  loading="lazy"
+                  alt="Iberd"
+                />
+                <span>Iberd</span>
+              </a>
             </div>
-            <button class="">
-              <img src="../assets/svgs/wallet-pc.svg" alt="" />
-            </button>
-            <a href="../profile" class="flex items-center gap-2">
-              <img
-                src="../assets/images/avatar1.jpg"
-                class="h-11 w-11 rounded-lg object-cover"
-                loading="lazy"
-                alt="Iberd"
-              />
-              <span>Iberd</span>
-            </a>
-          </div>
-          <!-- SIGNED IN -->
-
-          <!-- NOT SIGN IN <div class="flex items-center space-x-4">
-            <button>
-              <img src="../assets/svgs/export.svg" alt="" />
-            </button>
-            <a href="login.html" class="btn-secondary text-14 md:text-base"
-              >Sign in</a
-            >
-          </div> NOT SIGN IN -->
-        </div>
-      </div>
-      <div
-        class="border-b border-b-grey-200 bg-white md:border-none md:bg-grey-100 md:py-1.5 xl:py-2"
-      >
-        <ul
-          class="container relative grid grid-cols-2 items-center gap-[35px] md:grid-cols-5"
-        >
-          <li>
-            <a href="../music/index.html" class="header-item-link">music</a>
-          </li>
-          <li>
-            <a href="../videos/index.html" class="header-item-link">videos</a>
-          </li>
-          <li class="max-md:hidden">
-            <a
-              href="/"
-              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-            >
-              <img
-                class="aspect-square w-20 lg:w-[116px] object-contain"
-                src="../assets/svgs/logo.svg"
-                alt=""
-              />
-            </a>
-          </li>
-          <li class="max-md:hidden">
-            <a
-              href="../marketplace/marketplace-music-desktop.html"
-              class="header-item-link"
-              >marketplace</a
-            >
-          </li>
-          <li class="max-md:hidden">
-            <a href="../voting/music-voting.html" class="header-item-link"
-              >voting</a
-            >
-          </li>
-        </ul>
-      </div>
-    </header>
-    <main class="container mt-[120px] md:mt-[135px] lg:mt-[165px]">
-      <header
-        class="grid place-items-center grid-cols-2 lg:grid-cols-5 gap-1 p-1 rounded-xl mx-auto bg-grey-100 box-shadow"
-      >
-        <a
-          href="../setting/account.html"
-          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-grey-300 font-semibold"
-          id="account-link"
-        >
-          <ion-icon name="person-outline" class="w-[20px] h-[20px]"></ion-icon>
-          Account
-        </a>
-        <a
-          href="../setting/content.html"
-          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-grey-300 font-semibold"
-          id="content-link"
-        >
-          <ion-icon name="document-text-outline" class="w-5 h-5"> </ion-icon>
-          Content
-        </a>
-        <a
-          href="../setting/notifications.html"
-          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-grey-300 font-semibold"
-          id="notifications-link"
-        >
-          <ion-icon name="notifications-outline" class="w-5 h-5"></ion-icon>
-          Notifications
-        </a>
-        <a
-          href="../setting/privacy.html"
-          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-grey-300 font-semibold"
-          id="privacy-link"
-        >
-          <ion-icon name="shield-outline" class="w-5 h-5"></ion-icon>
-          Privacy
-        </a>
-        <a
-          href="../setting/advertising.html"
-          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-grey-300 font-semibold"
-          id="advertising-link"
-        >
-          <ion-icon name="volume-high"></ion-icon>
-          Advertising
-        </a>
-      </header>
-
-      <section class="p-6 rounded-xl bg-white mt-6">
-        <div class="w-[550px]">
-          <h5 class="text-20 lg:text-24 font-semibold text-neutral-dark-500">
-            RSS feed
-          </h5>
-          <p class="text-grey-300 text-14 lg:text-base mt-2">
-            hare your uploads with an RSS feed to enable your listeners to
-            subscribe in Podcasting apps
-          </p>
-        </div>
-        <div class="my-6 flex items-center justify-between gap-6">
-          <div class="w-full lg:w-[82%]">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >RSS feed</label
-            >
-            <input
-              placeholder="https://feeds.Clib.com/users/Clib:users:1213810303/Clib.rss"
-              type="text"
-              class="w-full p-3 mt-2 bg-grey-100 outline-none border-none rounded-xl"
-            />
-          </div>
-          <div class="w-full lg:w-[40%]">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >Email address displayed</label
-            >
-            <input
-              placeholder="Don’t display email address"
-              type="text"
-              class="w-full p-3 mt-2 bg-grey-100 outline-none border-none rounded-xl"
-            />
-          </div>
-        </div>
-        <div class="grid grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="w-full">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >Custom feed title</label
-            >
-            <input
-              placeholder="Type feed title"
-              type="text"
-              class="w-full p-3 mt-2 bg-grey-100 outline-none border-none rounded-xl"
-            />
-          </div>
-          <div class="w-full">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >Category</label
-            >
-            <select
-              name=""
-              id=""
-              class="w-full p-3 mt-2 bg-grey-100 text-grey-300 outline-none border-none rounded-xl"
-            >
-              <option selected>Category</option>
-              <option>Viet Nam</option>
-              <option>America</option>
-            </select>
-          </div>
-          <div class="w-full">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >Stats-service URL prefix</label
-            >
-            <input
-              placeholder="http://"
-              type="text"
-              class="w-full p-3 mt-2 bg-grey-100 outline-none border-none rounded-xl"
-            />
-          </div>
-          <div class="w-full">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >Custom author name</label
-            >
-            <input
-              placeholder="Type author name"
-              type="text"
-              class="w-full p-3 mt-2 bg-grey-100 outline-none border-none rounded-xl"
-            />
-          </div>
-          <div class="w-full">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >Language</label
-            >
-            <select
-              name=""
-              id=""
-              class="w-full p-3 mt-2 bg-grey-100 text-grey-300 outline-none border-none rounded-xl"
-            >
-              <option selected>Language</option>
-              <option>Viet Nam</option>
-              <option>America</option>
-            </select>
-          </div>
-          <div class="w-full">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >Subscriber redirect</label
-            >
-            <input
-              placeholder="http://"
-              type="text"
-              class="w-full p-3 mt-2 bg-grey-100 outline-none border-none rounded-xl"
-            />
-          </div>
-        </div>
-        <div class="mt-8">
-          <h5 class="text-20 lg:text-24 font-semibold text-neutral-dark-500">
-            Upload Defaults
-          </h5>
-          <p class="text-grey-300 text-14 lg:text-base mt-2">
-            Save time during upload by setting defaults. Track options can be
-            changed at any time when uploading or editing.
-          </p>
-          <div class="mt-2 flex items-center gap-3 text-grey-400">
-            <input type="checkbox" class="text-12 lg:text-14" />
-            Include in RSS feed
-          </div>
-          <div class="mt-2 flex items-center gap-3 text-grey-400">
-            <input type="checkbox" class="text-12 lg:text-14" />
-            Include in RSS feed
-          </div>
-          <div class="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-x-24">
-            <div class="pb-4 border-b">
-              <div
-                class="text-14 flex items-center justify-between lg:text-base text-grey-400 mb-2"
+            <!-- SIGNED IN -->
+  
+            <!-- NOT SIGN IN <div class="flex items-center space-x-4">
+              <button>
+                <img src="../assets/svgs/export.svg" alt="" />
+              </button>
+              <a href="login.html" class="btn-secondary text-14 md:text-base"
+                >Sign in</a
               >
-                Attribution
-                <label class="relative inline-flex items-center cursor-pointer">
-                  <input type="checkbox" value="" class="sr-only peer" />
-                  <div
-                    class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
-                  ></div>
-                </label>
-              </div>
-              <p class="text-12 lg:text-14 text-grey-400">
-                Allow others to copy, distribute, display and perform your
-                copyrighted work but only if they give credit the way you
-                request.
-              </p>
-            </div>
-            <div class="pb-4 border-b">
-              <div
-                class="text-14 flex items-center justify-between lg:text-base text-grey-400 mb-2"
-              >
-                Attribution
-                <label class="relative inline-flex items-center cursor-pointer">
-                  <input type="checkbox" value="" class="sr-only peer" />
-                  <div
-                    class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
-                  ></div>
-                </label>
-              </div>
-              <p class="text-12 lg:text-14 text-grey-400">
-                Allow others to copy, distribute, display and perform your
-                copyrighted work but only if they give credit the way you
-                request.
-              </p>
-            </div>
-          </div>
-          <div class="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-x-24">
-            <div class="pb-4 border-b">
-              <div
-                class="text-14 flex items-center justify-between lg:text-base text-grey-400 mb-2"
-              >
-                Attribution
-                <label class="relative inline-flex items-center cursor-pointer">
-                  <input type="checkbox" value="" class="sr-only peer" />
-                  <div
-                    class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
-                  ></div>
-                </label>
-              </div>
-              <p class="text-12 lg:text-14 text-grey-400">
-                Allow others to copy, distribute, display and perform your
-                copyrighted work but only if they give credit the way you
-                request.
-              </p>
-            </div>
-            <div class="pb-4 border-b">
-              <div
-                class="text-14 flex items-center justify-between lg:text-base text-grey-400 mb-2"
-              >
-                Attribution
-                <label class="relative inline-flex items-center cursor-pointer">
-                  <input type="checkbox" value="" class="sr-only peer" />
-                  <div
-                    class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
-                  ></div>
-                </label>
-              </div>
-              <p class="text-12 lg:text-14 text-grey-400">
-                Allow others to copy, distribute, display and perform your
-                copyrighted work but only if they give credit the way you
-                request.
-              </p>
-            </div>
-          </div>
-
-          <div class="flex items-end justify-end gap-3 mt-6">
-            <button
-              class="text-grey-400 close-modal rounded-xl hover:opacity-80 transition-opacity duration-500 bg-grey-200 text-14 lg:text-base font-semibold px-4 py-3"
-            >
-              Cancel
-            </button>
-            <button
-              type="button"
-              class="text-[#fff] rounded-xl hover:opacity-80 transition-opacity duration-500 bg-[#1975ff] text-14 lg:text-base font-semibold px-4 py-3"
-            >
-              Delete Account
-            </button>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer
-      class="mt-[100px] border-t border-t-grey-400 pb-6 pt-4 max-md:hidden"
-    >
-      <div class="container flex items-center justify-between">
-        <div class="flex items-center">
-          <div class="-mb-0.5 mr-6 text-14 text-grey-400">
-            Copyright © 2023 Clib Music. All rights reserved.
-          </div>
-          <ul class="flex items-center gap-3">
-            <li>
-              <a href="#" class="text-14 text-grey-400">Privacy Policy</a>
-            </li>
-            <li>
-              <span class="footer-divider"></span>
-            </li>
-            <li>
-              <a href="#" class="text-14 text-grey-400">Terms of Use</a>
-            </li>
-            <li>
-              <span class="footer-divider"></span>
-            </li>
-            <li>
-              <a href="#" class="text-14 text-grey-400">Cookie Warning</a>
-            </li>
-            <li>
-              <span class="footer-divider"></span>
-            </li>
-            <li>
-              <a href="#" class="text-14 text-grey-400">Support</a>
-            </li>
-          </ul>
-        </div>
-        <ul class="flex items-center gap-3">
-          <li>
-            <a href="#" class="lang-footer-item active">English</a>
-          </li>
-          <li>
-            <span class="footer-divider"></span>
-          </li>
-          <li>
-            <a href="#" class="lang-footer-item">Tiếng Việt</a>
-          </li>
-          <li>
-            <span class="footer-divider"></span>
-          </li>
-          <li>
-            <a href="#" class="lang-footer-item">简体中文</a>
-          </li>
-          <li>
-            <span class="footer-divider"></span>
-          </li>
-          <li>
-            <a href="#" class="lang-footer-item">한국어</a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-    <div id="header-tab-modal" class="overlay header-tab-modal">
-      <div class="header-tab-modal--inner">
-        <div class="flex-1">
-          <button
-            id="close-header-tab-modal"
-            class="flex w-full items-center justify-end"
-          >
-            <img width="16" height="16" src="../assets/svgs/close.svg" alt="" />
-          </button>
-          <div class="mt-4 flex items-center gap-3 md:hidden">
-            <img
-              class="rounded-2xl object-cover"
-              width="64"
-              height="64"
-              loading="lazy"
-              src="../assets/images/artists/2.png"
-              alt=""
-            />
-            <div>
-              <div class="flex items-center gap-1 text-14 font-semibold">
-                Son Tung M-TP <img src="../assets/svgs/verify.svg" alt="" />
-              </div>
-              <div class="mt-2 flex items-center gap-3 text-14 text-grey-400">
-                <div><span class="font-semibold">53K</span> Followers</div>
-                <div><span class="font-semibold">12,3K</span> Following</div>
-              </div>
-            </div>
-          </div>
-          <ul class="mt-[14px]">
-            <li class="header-link">
-              <a
-                href="/voting/music-voting.html"
-                class="flex items-center text-grey-400"
-                ><img src="../assets/svgs/voting.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >Voting</span
-                ></a
-              >
-            </li>
-            <li class="header-link">
-              <a href="/wallet.html" class="flex items-center text-grey-400"
-                ><img src="../assets/svgs/wallet.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >Wallet</span
-                ></a
-              >
-            </li>
-            <li class="header-link">
-              <a href="/about-us.html" class="flex items-center text-grey-400"
-                ><img src="../assets/svgs/about-us.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >About us</span
-                ></a
-              >
-            </li>
-            <li class="header-link">
-              <a href="/setting.html" class="flex items-center text-grey-400"
-                ><img src="../assets/svgs/setting.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >Setting</span
-                ></a
-              >
-            </li>
-            <li class="header-link">
-              <a href="/support.html" class="flex items-center text-grey-400"
-                ><img src="../assets/svgs/support.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >Support</span
-                ></a
-              >
-            </li>
-            <li class="header-link">
-              <a
-                href="/privacy-police.html"
-                class="flex items-center text-grey-400"
-                ><img src="../assets/svgs/privacy-police.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >Privacy Police</span
-                ></a
-              >
-            </li>
-          </ul>
-          <div class="mt-[30px] flex items-center justify-center gap-4">
-            <button class="btn-tertiary">Sign out</button>
+            </div> NOT SIGN IN -->
           </div>
         </div>
         <div
-          class="flex items-center justify-between border-t border-t-grey-200 pt-4"
+          class="border-b border-b-grey-200 bg-white md:border-none md:bg-grey-100 md:py-1.5 xl:py-2"
         >
-          <div class="flex items-center gap-x-2 text-base">
-            <img src="../assets/svgs/global.svg" alt="" />
-            Language
-          </div>
-          <button
-            class="flex items-center gap-2 rounded-xl bg-grey-100 px-4 py-2"
+          <ul
+            class="container relative grid grid-cols-2 items-center gap-[35px] md:grid-cols-5"
           >
-            <img src="../assets/svgs/flags/us.svg" alt="" />
-            English
-          </button>
+            <li>
+              <a href="../music/index.html" class="header-item-link">music</a>
+            </li>
+            <li>
+              <a href="../videos/index.html" class="header-item-link">videos</a>
+            </li>
+            <li class="max-md:hidden">
+              <a
+                href="/"
+                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+              >
+                <img
+                  class="aspect-square w-20 lg:w-[116px] object-contain"
+                  src="../assets/svgs/logo.svg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="max-md:hidden">
+              <a
+                href="../marketplace/marketplace-music-desktop.html"
+                class="header-item-link"
+                >marketplace</a
+              >
+            </li>
+            <li class="max-md:hidden">
+              <a href="../voting/music-voting.html" class="header-item-link"
+                >voting</a
+              >
+            </li>
+          </ul>
         </div>
-      </div>
-    </div>
-    <!-- mobile -->
-    <section class="lg:p-6 rounded-xl bg-white lg:mt-6 block md:hidden">
-      <div
-        class="w-full flex items-center justify-between py-3 mb-6 md:hidden box-shadow"
+      </header>
+      <main class="container mt-[120px] md:mt-[135px] lg:mt-[165px]">
+        <header
+          class="grid place-items-center grid-cols-2 lg:grid-cols-5 gap-1 p-1 rounded-xl mx-auto bg-grey-100 box-shadow"
+        >
+          <a
+            href="../setting/account.html"
+            class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-grey-300 font-semibold"
+            id="account-link"
+          >
+            <ion-icon name="person-outline" class="w-[20px] h-[20px]"></ion-icon>
+            Account
+          </a>
+          <a
+            href="../setting/content.html"
+            class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-grey-300 font-semibold"
+            id="content-link"
+          >
+            <ion-icon name="document-text-outline" class="w-5 h-5"> </ion-icon>
+            Content
+          </a>
+          <a
+            href="../setting/notifications.html"
+            class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-grey-300 font-semibold"
+            id="notifications-link"
+          >
+            <ion-icon name="notifications-outline" class="w-5 h-5"></ion-icon>
+            Notifications
+          </a>
+          <a
+            href="../setting/privacy.html"
+            class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-grey-300 font-semibold"
+            id="privacy-link"
+          >
+            <ion-icon name="shield-outline" class="w-5 h-5"></ion-icon>
+            Privacy
+          </a>
+          <a
+            href="../setting/advertising.html"
+            class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-grey-300 font-semibold"
+            id="advertising-link"
+          >
+            <ion-icon name="volume-high"></ion-icon>
+            Advertising
+          </a>
+        </header>
+  
+        <section class="p-6 rounded-xl bg-white mt-6">
+          <div class="w-[550px]">
+            <h5 class="text-20 lg:text-24 font-semibold text-neutral-dark-500">
+              RSS feed
+            </h5>
+            <p class="text-grey-300 text-14 lg:text-base mt-2">
+              hare your uploads with an RSS feed to enable your listeners to
+              subscribe in Podcasting apps
+            </p>
+          </div>
+          <div class="my-6 flex items-center justify-between gap-6">
+            <div class="w-full lg:w-[82%]">
+              <label
+                for=""
+                class="text-grey-400 text-14 lg:text-base font-semibold"
+                >RSS feed</label
+              >
+              <input
+                placeholder="https://feeds.Clib.com/users/Clib:users:1213810303/Clib.rss"
+                type="text"
+                class="w-full p-3 mt-2 bg-grey-100 outline-none border-none rounded-xl"
+              />
+            </div>
+            <div class="w-full lg:w-[40%]">
+              <label
+                for=""
+                class="text-grey-400 text-14 lg:text-base font-semibold"
+                >Email address displayed</label
+              >
+              <input
+                placeholder="Don’t display email address"
+                type="text"
+                class="w-full p-3 mt-2 bg-grey-100 outline-none border-none rounded-xl"
+              />
+            </div>
+          </div>
+          <div class="grid grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="w-full">
+              <label
+                for=""
+                class="text-grey-400 text-14 lg:text-base font-semibold"
+                >Custom feed title</label
+              >
+              <input
+                placeholder="Type feed title"
+                type="text"
+                class="w-full p-3 mt-2 bg-grey-100 outline-none border-none rounded-xl"
+              />
+            </div>
+            <div class="w-full">
+              <label
+                for=""
+                class="text-grey-400 text-14 lg:text-base font-semibold"
+                >Category</label
+              >
+              <select
+                name=""
+                id=""
+                class="w-full p-3 mt-2 bg-grey-100 text-grey-300 outline-none border-none rounded-xl"
+              >
+                <option selected>Category</option>
+                <option>Viet Nam</option>
+                <option>America</option>
+              </select>
+            </div>
+            <div class="w-full">
+              <label
+                for=""
+                class="text-grey-400 text-14 lg:text-base font-semibold"
+                >Stats-service URL prefix</label
+              >
+              <input
+                placeholder="http://"
+                type="text"
+                class="w-full p-3 mt-2 bg-grey-100 outline-none border-none rounded-xl"
+              />
+            </div>
+            <div class="w-full">
+              <label
+                for=""
+                class="text-grey-400 text-14 lg:text-base font-semibold"
+                >Custom author name</label
+              >
+              <input
+                placeholder="Type author name"
+                type="text"
+                class="w-full p-3 mt-2 bg-grey-100 outline-none border-none rounded-xl"
+              />
+            </div>
+            <div class="w-full">
+              <label
+                for=""
+                class="text-grey-400 text-14 lg:text-base font-semibold"
+                >Language</label
+              >
+              <select
+                name=""
+                id=""
+                class="w-full p-3 mt-2 bg-grey-100 text-grey-300 outline-none border-none rounded-xl"
+              >
+                <option selected>Language</option>
+                <option>Viet Nam</option>
+                <option>America</option>
+              </select>
+            </div>
+            <div class="w-full">
+              <label
+                for=""
+                class="text-grey-400 text-14 lg:text-base font-semibold"
+                >Subscriber redirect</label
+              >
+              <input
+                placeholder="http://"
+                type="text"
+                class="w-full p-3 mt-2 bg-grey-100 outline-none border-none rounded-xl"
+              />
+            </div>
+          </div>
+          <div class="mt-8">
+            <h5 class="text-20 lg:text-24 font-semibold text-neutral-dark-500">
+              Upload Defaults
+            </h5>
+            <p class="text-grey-300 text-14 lg:text-base mt-2">
+              Save time during upload by setting defaults. Track options can be
+              changed at any time when uploading or editing.
+            </p>
+            <div class="mt-2 flex items-center gap-3 text-grey-400">
+              <input type="checkbox" class="text-12 lg:text-14" />
+              Include in RSS feed
+            </div>
+            <div class="mt-2 flex items-center gap-3 text-grey-400">
+              <input type="checkbox" class="text-12 lg:text-14" />
+              Include in RSS feed
+            </div>
+            <div class="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-x-24">
+              <div class="pb-4 border-b">
+                <div
+                  class="text-14 flex items-center justify-between lg:text-base text-grey-400 mb-2"
+                >
+                  Attribution
+                  <label class="relative inline-flex items-center cursor-pointer">
+                    <input type="checkbox" value="" class="sr-only peer" />
+                    <div
+                      class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                    ></div>
+                  </label>
+                </div>
+                <p class="text-12 lg:text-14 text-grey-400">
+                  Allow others to copy, distribute, display and perform your
+                  copyrighted work but only if they give credit the way you
+                  request.
+                </p>
+              </div>
+              <div class="pb-4 border-b">
+                <div
+                  class="text-14 flex items-center justify-between lg:text-base text-grey-400 mb-2"
+                >
+                  Attribution
+                  <label class="relative inline-flex items-center cursor-pointer">
+                    <input type="checkbox" value="" class="sr-only peer" />
+                    <div
+                      class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                    ></div>
+                  </label>
+                </div>
+                <p class="text-12 lg:text-14 text-grey-400">
+                  Allow others to copy, distribute, display and perform your
+                  copyrighted work but only if they give credit the way you
+                  request.
+                </p>
+              </div>
+            </div>
+            <div class="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-x-24">
+              <div class="pb-4 border-b">
+                <div
+                  class="text-14 flex items-center justify-between lg:text-base text-grey-400 mb-2"
+                >
+                  Attribution
+                  <label class="relative inline-flex items-center cursor-pointer">
+                    <input type="checkbox" value="" class="sr-only peer" />
+                    <div
+                      class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                    ></div>
+                  </label>
+                </div>
+                <p class="text-12 lg:text-14 text-grey-400">
+                  Allow others to copy, distribute, display and perform your
+                  copyrighted work but only if they give credit the way you
+                  request.
+                </p>
+              </div>
+              <div class="pb-4 border-b">
+                <div
+                  class="text-14 flex items-center justify-between lg:text-base text-grey-400 mb-2"
+                >
+                  Attribution
+                  <label class="relative inline-flex items-center cursor-pointer">
+                    <input type="checkbox" value="" class="sr-only peer" />
+                    <div
+                      class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                    ></div>
+                  </label>
+                </div>
+                <p class="text-12 lg:text-14 text-grey-400">
+                  Allow others to copy, distribute, display and perform your
+                  copyrighted work but only if they give credit the way you
+                  request.
+                </p>
+              </div>
+            </div>
+  
+            <div class="flex items-end justify-end gap-3 mt-6">
+              <button
+                class="text-grey-400 close-modal rounded-xl hover:opacity-80 transition-opacity duration-500 bg-grey-200 text-14 lg:text-base font-semibold px-4 py-3"
+              >
+                Cancel
+              </button>
+              <button
+                type="button"
+                class="text-[#fff] rounded-xl hover:opacity-80 transition-opacity duration-500 bg-[#1975ff] text-14 lg:text-base font-semibold px-4 py-3"
+              >
+                Delete Account
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer
+        class="mt-[100px] border-t border-t-grey-400 pb-6 pt-4 max-md:hidden"
       >
-        <a href="../setting/basic-information.html"
-          ><img src="../assets/svgs/arrow-left.png" alt=""
-        /></a>
-        <div class="text-18 font-semibold text-neutral-dark-500 px-4">
-          Content
-        </div>
-        <div></div>
-      </div>
-      <div class="px-4 md:px-0">
-        <div class="w-[550px]">
-          <h5 class="text-20 lg:text-24 font-semibold text-neutral-dark-500">
-            RSS feed
-          </h5>
-          <p class="text-grey-300 text-14 lg:text-base mt-2">
-            hare your uploads with an RSS feed to enable your listeners to
-            subscribe in Podcasting apps
-          </p>
-        </div>
-        <div class="my-6 flex flex-col gap-6">
-          <div class="w-full lg:w-[82%]">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >RSS feed</label
-            >
-            <input
-              placeholder="https://feeds.Clib.com/users/Clib:users:1213810303/Clib.rss"
-              type="text"
-              class="w-full p-3 mt-2 text-12 bg-grey-100 outline-none border-none rounded-xl"
-            />
-          </div>
-          <div class="w-full lg:w-[40%]">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >Email address displayed</label
-            >
-            <input
-              placeholder="Don’t display email address"
-              type="text"
-              class="w-full p-3 mt-2 text-12 bg-grey-100 outline-none border-none rounded-xl"
-            />
-          </div>
-        </div>
-        <div class="grid grid-cols-1 gap-6">
-          <div class="w-full">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >Custom feed title</label
-            >
-            <input
-              placeholder="Type feed title"
-              type="text"
-              class="w-full p-3 mt-2 text-12 bg-grey-100 outline-none border-none rounded-xl"
-            />
-          </div>
-          <div class="w-full">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >Category</label
-            >
-            <select
-              name=""
-              id=""
-              class="w-full p-3 mt-2 text-12 bg-grey-100 text-grey-300 outline-none border-none rounded-xl"
-            >
-              <option selected>Category</option>
-              <option>Viet Nam</option>
-              <option>America</option>
-            </select>
-          </div>
-          <div class="w-full">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >Stats-service URL prefix</label
-            >
-            <input
-              placeholder="http://"
-              type="text"
-              class="w-full p-3 mt-2 text-12 bg-grey-100 outline-none border-none rounded-xl"
-            />
-          </div>
-          <div class="w-full">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >Custom author name</label
-            >
-            <input
-              placeholder="Type author name"
-              type="text"
-              class="w-full p-3 mt-2 text-12 bg-grey-100 outline-none border-none rounded-xl"
-            />
-          </div>
-          <div class="w-full">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >Language</label
-            >
-            <select
-              name=""
-              id=""
-              class="w-full p-3 mt-2 text-12 bg-grey-100 text-grey-300 outline-none border-none rounded-xl"
-            >
-              <option selected>Language</option>
-              <option>Viet Nam</option>
-              <option>America</option>
-            </select>
-          </div>
-          <div class="w-full">
-            <label
-              for=""
-              class="text-grey-400 text-14 lg:text-base font-semibold"
-              >Subscriber redirect</label
-            >
-            <input
-              placeholder="http://"
-              type="text"
-              class="w-full p-3 mt-2 text-12 bg-grey-100 outline-none border-none rounded-xl"
-            />
-          </div>
-        </div>
-        <div class="mt-8">
-          <h5 class="text-base font-semibold text-neutral-dark-500">
-            Upload Defaults
-          </h5>
-          <p class="text-grey-300 text-12 lg:text-base mt-2">
-            Save time during upload by setting defaults. Track options can be
-            changed at any time when uploading or editing.
-          </p>
-          <div class="mt-2 text-12 flex items-center gap-3 text-grey-400">
-            <input type="checkbox" class="text-12 lg:text-14" />
-            Include in RSS feed
-          </div>
-          <div class="mt-2 text-12 flex items-center gap-3 text-grey-400">
-            <input type="checkbox" class="text-12 lg:text-14" />
-            Include in RSS feed
-          </div>
-          <div class="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-x-24">
-            <div class="pb-4 border-b">
-              <div
-                class="text-14 flex items-center justify-between lg:text-base text-grey-400 mb-2"
-              >
-                Attribution
-                <label class="relative inline-flex items-center cursor-pointer">
-                  <input type="checkbox" value="" class="sr-only peer" />
-                  <div
-                    class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
-                  ></div>
-                </label>
-              </div>
-              <p class="text-12 lg:text-14 text-grey-400">
-                Allow others to copy, distribute, display and perform your
-                copyrighted work but only if they give credit the way you
-                request.
-              </p>
+        <div class="container flex items-center justify-between">
+          <div class="flex items-center">
+            <div class="-mb-0.5 mr-6 text-14 text-grey-400">
+              Copyright © 2023 Clib Music. All rights reserved.
             </div>
-            <div class="pb-4 border-b">
-              <div
-                class="text-14 flex items-center justify-between lg:text-base text-grey-400 mb-2"
-              >
-                Attribution
-                <label class="relative inline-flex items-center cursor-pointer">
-                  <input type="checkbox" value="" class="sr-only peer" />
-                  <div
-                    class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
-                  ></div>
-                </label>
-              </div>
-              <p class="text-12 lg:text-14 text-grey-400">
-                Allow others to copy, distribute, display and perform your
-                copyrighted work but only if they give credit the way you
-                request.
-              </p>
-            </div>
+            <ul class="flex items-center gap-3">
+              <li>
+                <a href="#" class="text-14 text-grey-400">Privacy Policy</a>
+              </li>
+              <li>
+                <span class="footer-divider"></span>
+              </li>
+              <li>
+                <a href="#" class="text-14 text-grey-400">Terms of Use</a>
+              </li>
+              <li>
+                <span class="footer-divider"></span>
+              </li>
+              <li>
+                <a href="#" class="text-14 text-grey-400">Cookie Warning</a>
+              </li>
+              <li>
+                <span class="footer-divider"></span>
+              </li>
+              <li>
+                <a href="#" class="text-14 text-grey-400">Support</a>
+              </li>
+            </ul>
           </div>
-          <div class="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-x-24">
-            <div class="pb-4 border-b">
-              <div
-                class="text-14 flex items-center justify-between lg:text-base text-grey-400 mb-2"
-              >
-                Attribution
-                <label class="relative inline-flex items-center cursor-pointer">
-                  <input type="checkbox" value="" class="sr-only peer" />
-                  <div
-                    class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
-                  ></div>
-                </label>
-              </div>
-              <p class="text-12 lg:text-14 text-grey-400">
-                Allow others to copy, distribute, display and perform your
-                copyrighted work but only if they give credit the way you
-                request.
-              </p>
-            </div>
-            <div class="pb-4 border-b">
-              <div
-                class="text-14 flex items-center justify-between lg:text-base text-grey-400 mb-2"
-              >
-                Attribution
-                <label class="relative inline-flex items-center cursor-pointer">
-                  <input type="checkbox" value="" class="sr-only peer" />
-                  <div
-                    class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
-                  ></div>
-                </label>
-              </div>
-              <p class="text-12 lg:text-14 text-grey-400">
-                Allow others to copy, distribute, display and perform your
-                copyrighted work but only if they give credit the way you
-                request.
-              </p>
-            </div>
-          </div>
-
-          <div class="w-full gap-3 mt-6">
+          <ul class="flex items-center gap-3">
+            <li>
+              <a href="#" class="lang-footer-item active">English</a>
+            </li>
+            <li>
+              <span class="footer-divider"></span>
+            </li>
+            <li>
+              <a href="#" class="lang-footer-item">Tiếng Việt</a>
+            </li>
+            <li>
+              <span class="footer-divider"></span>
+            </li>
+            <li>
+              <a href="#" class="lang-footer-item">简体中文</a>
+            </li>
+            <li>
+              <span class="footer-divider"></span>
+            </li>
+            <li>
+              <a href="#" class="lang-footer-item">한국어</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+      <div id="header-tab-modal" class="overlay header-tab-modal">
+        <div class="header-tab-modal--inner">
+          <div class="flex-1">
             <button
-              type="button"
-              class="text-[#fff] w-full rounded-xl hover:opacity-80 transition-opacity duration-500 bg-[#1975ff] text-14 lg:text-base font-semibold px-4 py-3"
+              id="close-header-tab-modal"
+              class="flex w-full items-center justify-end"
             >
-              Sale
+              <img width="16" height="16" src="../assets/svgs/close.svg" alt="" />
+            </button>
+            <div class="mt-4 flex items-center gap-3 md:hidden">
+              <img
+                class="rounded-2xl object-cover"
+                width="64"
+                height="64"
+                loading="lazy"
+                src="../assets/images/artists/2.png"
+                alt=""
+              />
+              <div>
+                <div class="flex items-center gap-1 text-14 font-semibold">
+                  Son Tung M-TP <img src="../assets/svgs/verify.svg" alt="" />
+                </div>
+                <div class="mt-2 flex items-center gap-3 text-14 text-grey-400">
+                  <div><span class="font-semibold">53K</span> Followers</div>
+                  <div><span class="font-semibold">12,3K</span> Following</div>
+                </div>
+              </div>
+            </div>
+            <ul class="mt-[14px]">
+              <li class="header-link">
+                <a
+                  href="/voting/music-voting.html"
+                  class="flex items-center text-grey-400"
+                  ><img src="../assets/svgs/voting.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >Voting</span
+                  ></a
+                >
+              </li>
+              <li class="header-link">
+                <a href="/wallet.html" class="flex items-center text-grey-400"
+                  ><img src="../assets/svgs/wallet.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >Wallet</span
+                  ></a
+                >
+              </li>
+              <li class="header-link">
+                <a href="/about-us.html" class="flex items-center text-grey-400"
+                  ><img src="../assets/svgs/about-us.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >About us</span
+                  ></a
+                >
+              </li>
+              <li class="header-link">
+                <a href="/setting.html" class="flex items-center text-grey-400"
+                  ><img src="../assets/svgs/setting.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >Setting</span
+                  ></a
+                >
+              </li>
+              <li class="header-link">
+                <a href="/support.html" class="flex items-center text-grey-400"
+                  ><img src="../assets/svgs/support.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >Support</span
+                  ></a
+                >
+              </li>
+              <li class="header-link">
+                <a
+                  href="/privacy-police.html"
+                  class="flex items-center text-grey-400"
+                  ><img src="../assets/svgs/privacy-police.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >Privacy Police</span
+                  ></a
+                >
+              </li>
+            </ul>
+            <div class="mt-[30px] flex items-center justify-center gap-4">
+              <button class="btn-tertiary">Sign out</button>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-between border-t border-t-grey-200 pt-4"
+          >
+            <div class="flex items-center gap-x-2 text-base">
+              <img src="../assets/svgs/global.svg" alt="" />
+              Language
+            </div>
+            <button
+              class="flex items-center gap-2 rounded-xl bg-grey-100 px-4 py-2"
+            >
+              <img src="../assets/svgs/flags/us.svg" alt="" />
+              English
             </button>
           </div>
         </div>
       </div>
-    </section>
+      <!-- mobile -->
+      <section class="lg:p-6 rounded-xl bg-white lg:mt-6 block md:hidden">
+        <div
+          class="w-full flex items-center justify-between py-3 mb-6 md:hidden box-shadow"
+        >
+          <a href="../setting/basic-information.html"
+            ><img src="../assets/svgs/arrow-left.png" alt=""
+          /></a>
+          <div class="text-18 font-semibold text-neutral-dark-500 px-4">
+            Content
+          </div>
+          <div></div>
+        </div>
+        <div class="px-4 md:px-0">
+          <div class="w-[550px]">
+            <h5 class="text-20 lg:text-24 font-semibold text-neutral-dark-500">
+              RSS feed
+            </h5>
+            <p class="text-grey-300 text-14 lg:text-base mt-2">
+              hare your uploads with an RSS feed to enable your listeners to
+              subscribe in Podcasting apps
+            </p>
+          </div>
+          <div class="my-6 flex flex-col gap-6">
+            <div class="w-full lg:w-[82%]">
+              <label
+                for=""
+                class="text-grey-400 text-14 lg:text-base font-semibold"
+                >RSS feed</label
+              >
+              <input
+                placeholder="https://feeds.Clib.com/users/Clib:users:1213810303/Clib.rss"
+                type="text"
+                class="w-full p-3 mt-2 text-12 bg-grey-100 outline-none border-none rounded-xl"
+              />
+            </div>
+            <div class="w-full lg:w-[40%]">
+              <label
+                for=""
+                class="text-grey-400 text-14 lg:text-base font-semibold"
+                >Email address displayed</label
+              >
+              <input
+                placeholder="Don’t display email address"
+                type="text"
+                class="w-full p-3 mt-2 text-12 bg-grey-100 outline-none border-none rounded-xl"
+              />
+            </div>
+          </div>
+          <div class="grid grid-cols-1 gap-6">
+            <div class="w-full">
+              <label
+                for=""
+                class="text-grey-400 text-14 lg:text-base font-semibold"
+                >Custom feed title</label
+              >
+              <input
+                placeholder="Type feed title"
+                type="text"
+                class="w-full p-3 mt-2 text-12 bg-grey-100 outline-none border-none rounded-xl"
+              />
+            </div>
+            <div class="w-full">
+              <label
+                for=""
+                class="text-grey-400 text-14 lg:text-base font-semibold"
+                >Category</label
+              >
+              <select
+                name=""
+                id=""
+                class="w-full p-3 mt-2 text-12 bg-grey-100 text-grey-300 outline-none border-none rounded-xl"
+              >
+                <option selected>Category</option>
+                <option>Viet Nam</option>
+                <option>America</option>
+              </select>
+            </div>
+            <div class="w-full">
+              <label
+                for=""
+                class="text-grey-400 text-14 lg:text-base font-semibold"
+                >Stats-service URL prefix</label
+              >
+              <input
+                placeholder="http://"
+                type="text"
+                class="w-full p-3 mt-2 text-12 bg-grey-100 outline-none border-none rounded-xl"
+              />
+            </div>
+            <div class="w-full">
+              <label
+                for=""
+                class="text-grey-400 text-14 lg:text-base font-semibold"
+                >Custom author name</label
+              >
+              <input
+                placeholder="Type author name"
+                type="text"
+                class="w-full p-3 mt-2 text-12 bg-grey-100 outline-none border-none rounded-xl"
+              />
+            </div>
+            <div class="w-full">
+              <label
+                for=""
+                class="text-grey-400 text-14 lg:text-base font-semibold"
+                >Language</label
+              >
+              <select
+                name=""
+                id=""
+                class="w-full p-3 mt-2 text-12 bg-grey-100 text-grey-300 outline-none border-none rounded-xl"
+              >
+                <option selected>Language</option>
+                <option>Viet Nam</option>
+                <option>America</option>
+              </select>
+            </div>
+            <div class="w-full">
+              <label
+                for=""
+                class="text-grey-400 text-14 lg:text-base font-semibold"
+                >Subscriber redirect</label
+              >
+              <input
+                placeholder="http://"
+                type="text"
+                class="w-full p-3 mt-2 text-12 bg-grey-100 outline-none border-none rounded-xl"
+              />
+            </div>
+          </div>
+          <div class="mt-8">
+            <h5 class="text-base font-semibold text-neutral-dark-500">
+              Upload Defaults
+            </h5>
+            <p class="text-grey-300 text-12 lg:text-base mt-2">
+              Save time during upload by setting defaults. Track options can be
+              changed at any time when uploading or editing.
+            </p>
+            <div class="mt-2 text-12 flex items-center gap-3 text-grey-400">
+              <input type="checkbox" class="text-12 lg:text-14" />
+              Include in RSS feed
+            </div>
+            <div class="mt-2 text-12 flex items-center gap-3 text-grey-400">
+              <input type="checkbox" class="text-12 lg:text-14" />
+              Include in RSS feed
+            </div>
+            <div class="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-x-24">
+              <div class="pb-4 border-b">
+                <div
+                  class="text-14 flex items-center justify-between lg:text-base text-grey-400 mb-2"
+                >
+                  Attribution
+                  <label class="relative inline-flex items-center cursor-pointer">
+                    <input type="checkbox" value="" class="sr-only peer" />
+                    <div
+                      class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                    ></div>
+                  </label>
+                </div>
+                <p class="text-12 lg:text-14 text-grey-400">
+                  Allow others to copy, distribute, display and perform your
+                  copyrighted work but only if they give credit the way you
+                  request.
+                </p>
+              </div>
+              <div class="pb-4 border-b">
+                <div
+                  class="text-14 flex items-center justify-between lg:text-base text-grey-400 mb-2"
+                >
+                  Attribution
+                  <label class="relative inline-flex items-center cursor-pointer">
+                    <input type="checkbox" value="" class="sr-only peer" />
+                    <div
+                      class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                    ></div>
+                  </label>
+                </div>
+                <p class="text-12 lg:text-14 text-grey-400">
+                  Allow others to copy, distribute, display and perform your
+                  copyrighted work but only if they give credit the way you
+                  request.
+                </p>
+              </div>
+            </div>
+            <div class="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-x-24">
+              <div class="pb-4 border-b">
+                <div
+                  class="text-14 flex items-center justify-between lg:text-base text-grey-400 mb-2"
+                >
+                  Attribution
+                  <label class="relative inline-flex items-center cursor-pointer">
+                    <input type="checkbox" value="" class="sr-only peer" />
+                    <div
+                      class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                    ></div>
+                  </label>
+                </div>
+                <p class="text-12 lg:text-14 text-grey-400">
+                  Allow others to copy, distribute, display and perform your
+                  copyrighted work but only if they give credit the way you
+                  request.
+                </p>
+              </div>
+              <div class="pb-4 border-b">
+                <div
+                  class="text-14 flex items-center justify-between lg:text-base text-grey-400 mb-2"
+                >
+                  Attribution
+                  <label class="relative inline-flex items-center cursor-pointer">
+                    <input type="checkbox" value="" class="sr-only peer" />
+                    <div
+                      class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                    ></div>
+                  </label>
+                </div>
+                <p class="text-12 lg:text-14 text-grey-400">
+                  Allow others to copy, distribute, display and perform your
+                  copyrighted work but only if they give credit the way you
+                  request.
+                </p>
+              </div>
+            </div>
+  
+            <div class="w-full gap-3 mt-6">
+              <button
+                type="button"
+                class="text-[#fff] w-full rounded-xl hover:opacity-80 transition-opacity duration-500 bg-[#1975ff] text-14 lg:text-base font-semibold px-4 py-3"
+              >
+                Sale
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+</div>
+<!-- mobile -->
+<section class="lg:p-6 rounded-xl bg-white pb-6 lg:mt-6 block md:hidden">
+  <div
+    class="w-full flex items-center justify-between py-3 mb-6 md:hidden box-shadow"
+  >
+    <a href="../setting/basic-information.html"
+      ><img src="../assets/svgs/arrow-left.png" alt=""
+    /></a>
+    <div class="text-18 font-semibold text-neutral-dark-500 px-4">
+      Content
+    </div>
+    <div></div>
+  </div>
+  <div class="px-4 md:px-0">
+    <div class="w-[550px]">
+      <h5 class="text-20 lg:text-24 font-semibold text-neutral-dark-500">
+        RSS feed
+      </h5>
+      <p class="text-grey-300 text-14 lg:text-base mt-2">
+        hare your uploads with an RSS feed to enable your listeners to
+        subscribe in Podcasting apps
+      </p>
+    </div>
+    <div class="my-6 flex flex-col gap-6">
+      <div class="w-full lg:w-[82%]">
+        <label
+          for=""
+          class="text-grey-400 text-14 lg:text-base font-semibold"
+          >RSS feed</label
+        >
+        <input
+          placeholder="https://feeds.Clib.com/users/Clib:users:1213810303/Clib.rss"
+          type="text"
+          class="w-full p-3 mt-2 text-12 bg-grey-100 outline-none border-none rounded-xl"
+        />
+      </div>
+      <div class="w-full lg:w-[40%]">
+        <label
+          for=""
+          class="text-grey-400 text-14 lg:text-base font-semibold"
+          >Email address displayed</label
+        >
+        <input
+          placeholder="Don’t display email address"
+          type="text"
+          class="w-full p-3 mt-2 text-12 bg-grey-100 outline-none border-none rounded-xl"
+        />
+      </div>
+    </div>
+    <div class="grid grid-cols-1 gap-6">
+      <div class="w-full">
+        <label
+          for=""
+          class="text-grey-400 text-14 lg:text-base font-semibold"
+          >Custom feed title</label
+        >
+        <input
+          placeholder="Type feed title"
+          type="text"
+          class="w-full p-3 mt-2 text-12 bg-grey-100 outline-none border-none rounded-xl"
+        />
+      </div>
+      <div class="w-full">
+        <label
+          for=""
+          class="text-grey-400 text-14 lg:text-base font-semibold"
+          >Category</label
+        >
+        <select
+          name=""
+          id=""
+          class="w-full p-3 mt-2 text-12 bg-grey-100 text-grey-300 outline-none border-none rounded-xl"
+        >
+          <option selected>Category</option>
+          <option>Viet Nam</option>
+          <option>America</option>
+        </select>
+      </div>
+      <div class="w-full">
+        <label
+          for=""
+          class="text-grey-400 text-14 lg:text-base font-semibold"
+          >Stats-service URL prefix</label
+        >
+        <input
+          placeholder="http://"
+          type="text"
+          class="w-full p-3 mt-2 text-12 bg-grey-100 outline-none border-none rounded-xl"
+        />
+      </div>
+      <div class="w-full">
+        <label
+          for=""
+          class="text-grey-400 text-14 lg:text-base font-semibold"
+          >Custom author name</label
+        >
+        <input
+          placeholder="Type author name"
+          type="text"
+          class="w-full p-3 mt-2 text-12 bg-grey-100 outline-none border-none rounded-xl"
+        />
+      </div>
+      <div class="w-full">
+        <label
+          for=""
+          class="text-grey-400 text-14 lg:text-base font-semibold"
+          >Language</label
+        >
+        <select
+          name=""
+          id=""
+          class="w-full p-3 mt-2 text-12 bg-grey-100 text-grey-300 outline-none border-none rounded-xl"
+        >
+          <option selected>Language</option>
+          <option>Viet Nam</option>
+          <option>America</option>
+        </select>
+      </div>
+      <div class="w-full">
+        <label
+          for=""
+          class="text-grey-400 text-14 lg:text-base font-semibold"
+          >Subscriber redirect</label
+        >
+        <input
+          placeholder="http://"
+          type="text"
+          class="w-full p-3 mt-2 text-12 bg-grey-100 outline-none border-none rounded-xl"
+        />
+      </div>
+    </div>
+    <div class="mt-8">
+      <h5 class="text-base font-semibold text-neutral-dark-500">
+        Upload Defaults
+      </h5>
+      <p class="text-grey-300 text-12 lg:text-base mt-2">
+        Save time during upload by setting defaults. Track options can be
+        changed at any time when uploading or editing.
+      </p>
+      <div class="mt-2 text-12 flex items-center gap-3 text-grey-400">
+        <input type="checkbox" class="text-12 lg:text-14" />
+        Include in RSS feed
+      </div>
+      <div class="mt-2 text-12 flex items-center gap-3 text-grey-400">
+        <input type="checkbox" class="text-12 lg:text-14" />
+        Include in RSS feed
+      </div>
+      <div class="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-x-24">
+        <div class="pb-4 border-b">
+          <div
+            class="text-14 flex items-center justify-between lg:text-base text-grey-400 mb-2"
+          >
+            Attribution
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" value="" class="sr-only peer" />
+              <div
+                class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+              ></div>
+            </label>
+          </div>
+          <p class="text-12 lg:text-14 text-grey-400">
+            Allow others to copy, distribute, display and perform your
+            copyrighted work but only if they give credit the way you
+            request.
+          </p>
+        </div>
+        <div class="pb-4 border-b">
+          <div
+            class="text-14 flex items-center justify-between lg:text-base text-grey-400 mb-2"
+          >
+            Attribution
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" value="" class="sr-only peer" />
+              <div
+                class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+              ></div>
+            </label>
+          </div>
+          <p class="text-12 lg:text-14 text-grey-400">
+            Allow others to copy, distribute, display and perform your
+            copyrighted work but only if they give credit the way you
+            request.
+          </p>
+        </div>
+      </div>
+      <div class="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-x-24">
+        <div class="pb-4 border-b">
+          <div
+            class="text-14 flex items-center justify-between lg:text-base text-grey-400 mb-2"
+          >
+            Attribution
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" value="" class="sr-only peer" />
+              <div
+                class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+              ></div>
+            </label>
+          </div>
+          <p class="text-12 lg:text-14 text-grey-400">
+            Allow others to copy, distribute, display and perform your
+            copyrighted work but only if they give credit the way you
+            request.
+          </p>
+        </div>
+        <div class="pb-4 border-b">
+          <div
+            class="text-14 flex items-center justify-between lg:text-base text-grey-400 mb-2"
+          >
+            Attribution
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" value="" class="sr-only peer" />
+              <div
+                class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+              ></div>
+            </label>
+          </div>
+          <p class="text-12 lg:text-14 text-grey-400">
+            Allow others to copy, distribute, display and perform your
+            copyrighted work but only if they give credit the way you
+            request.
+          </p>
+        </div>
+      </div>
+
+      <div class="w-full gap-3 mt-6">
+        <button
+          type="button"
+          class="text-[#fff] w-full rounded-xl hover:opacity-80 transition-opacity duration-500 bg-[#1975ff] text-14 lg:text-base font-semibold px-4 py-3"
+        >
+          Sale
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="

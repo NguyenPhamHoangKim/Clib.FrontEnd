@@ -6,1073 +6,1282 @@
     <link href="./styles/index.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="fixed left-0 right-0 top-0 z-[999]">
-      <div class="bg-white py-2.5 shadow-[0px_2px_10px_0px_rgba(0,0,0,0.04)]">
-        <div class="container relative flex items-center justify-between">
-          <div class="flex items-center space-x-4">
-            <button id="toggle-mobile-menu">
-              <img src="./assets/svgs/menu.svg" alt="" />
-            </button>
-            <div
-              class="hidden w-fit items-center rounded-lg border border-grey-200 px-4 py-2 md:flex"
-            >
-              <img class="mr-2" src="./assets/svgs/search.svg" alt="" />
-              <input
-                class="h-full flex-1 text-base outline-none placeholder:text-grey-300 md:min-w-[260px]"
-                placeholder="What are you looking for?"
-              />
+<div class="hidden md:block">
+      <header class="fixed left-0 right-0 top-0 z-[999]">
+        <div class="bg-white py-2.5 shadow-[0px_2px_10px_0px_rgba(0,0,0,0.04)]">
+          <div class="container relative flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+              <button id="toggle-mobile-menu">
+                <img src="./assets/svgs/menu.svg" alt="" />
+              </button>
+              <div
+                class="hidden w-fit items-center rounded-lg border border-grey-200 px-4 py-2 md:flex"
+              >
+                <img class="mr-2" src="./assets/svgs/search.svg" alt="" />
+                <input
+                  class="h-full flex-1 text-base outline-none placeholder:text-grey-300 md:min-w-[260px]"
+                  placeholder="What are you looking for?"
+                />
+              </div>
             </div>
-          </div>
-
-          <a
-            href="/"
-            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden"
-          >
-            <img
-              class="object-contain w-8"
-              src="./assets/svgs/logo-mb.svg"
-              alt=""
-            />
-          </a>
-          <!-- SIGNED IN MOBILE -->
-          <div class="flex items-center space-x-4 md:hidden">
-            <button class="rounded-lg bg-grey-100 p-1.5">
+  
+            <a
+              href="/"
+              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden"
+            >
               <img
-                width="24"
-                height="24"
-                src="./assets/svgs/notification.svg"
+                class="object-contain w-8"
+                src="./assets/svgs/logo-mb.svg"
                 alt=""
               />
-            </button>
-            <button class="rounded-lg bg-grey-100 p-1.5">
-              <img src="./assets/svgs/messenger.svg" alt="" />
-            </button>
-          </div>
-          <!-- SIGNED IN -->
-
-          <!-- SIGNED IN PC-->
-          <div class="flex items-center space-x-4 max-md:hidden xl:space-x-6">
-            <button class="bg-grey-1 rounded-lg">
-              <img src="./assets/svgs/document.svg" alt="" />
-            </button>
-            <button class="">
-              <img src="./assets/svgs/sol.svg" alt="" />
-            </button>
-            <button class="">
-              <img src="./assets/svgs/export-pc.svg" alt="" />
-            </button>
-            <div
-              id="ms-wrapper"
-              class="relative flex items-center justify-center"
-            >
-              <button id="toggle-ms" class="toggle-ms">
+            </a>
+            <!-- SIGNED IN MOBILE -->
+            <div class="flex items-center space-x-4 md:hidden">
+              <button class="rounded-lg bg-grey-100 p-1.5">
                 <img
-                  class="ms-icon"
-                  src="./assets/svgs/messenger-pc.svg"
+                  width="24"
+                  height="24"
+                  src="./assets/svgs/notification.svg"
                   alt=""
                 />
               </button>
-              <div id="ms-popup" class="ms-popup">
-                <div class="flex items-center justify-between px-4 pb-2 pt-4">
-                  <span class="text-20 font-semibold">Message</span>
-                  <div class="flex items-center gap-2">
-                    <span class="text-14">New chat</span>
-                    <button class="rounded-xl bg-grey-200 p-1.5 duration-100">
+              <button class="rounded-lg bg-grey-100 p-1.5">
+                <img src="./assets/svgs/messenger.svg" alt="" />
+              </button>
+            </div>
+            <!-- SIGNED IN -->
+  
+            <!-- SIGNED IN PC-->
+            <div class="flex items-center space-x-4 max-md:hidden xl:space-x-6">
+              <button class="bg-grey-1 rounded-lg">
+                <img src="./assets/svgs/document.svg" alt="" />
+              </button>
+              <button class="">
+                <img src="./assets/svgs/sol.svg" alt="" />
+              </button>
+              <button class="">
+                <img src="./assets/svgs/export-pc.svg" alt="" />
+              </button>
+              <div
+                id="ms-wrapper"
+                class="relative flex items-center justify-center"
+              >
+                <button id="toggle-ms" class="toggle-ms">
+                  <img
+                    class="ms-icon"
+                    src="./assets/svgs/messenger-pc.svg"
+                    alt=""
+                  />
+                </button>
+                <div id="ms-popup" class="ms-popup">
+                  <div class="flex items-center justify-between px-4 pb-2 pt-4">
+                    <span class="text-20 font-semibold">Message</span>
+                    <div class="flex items-center gap-2">
+                      <span class="text-14">New chat</span>
+                      <button class="rounded-xl bg-grey-200 p-1.5 duration-100">
+                        <img
+                          class="h-6 w-6"
+                          src="./assets/svgs/edit.svg"
+                          alt=""
+                        />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="mt-2 px-4">
+                    <div
+                      class="flex items-center gap-2 rounded-xl bg-grey-100 p-3"
+                    >
+                      <img
+                        class="aspect-square w-5"
+                        src="./assets/svgs/search-people.svg"
+                        loading="lazy"
+                        alt=""
+                      />
+                      <input
+                        class="h-full flex-1 bg-transparent text-14 outline-none placeholder:text-grey-300"
+                        placeholder="Search people"
+                      />
+                    </div>
+                  </div>
+                  <ul class="mt-2 px-4">
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="Benny Andersson"
+                          />
+                          <div>
+                            <div class="line-clamp-1 text-14 font-semibold">
+                              Benny Andersson
+                            </div>
+                            <div class="line-clamp-1 text-14 font-semibold">
+                              aww
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">3d</div>
+                          <span class="dot !h-3 !w-3 !bg-branding"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between border-r-4 border-r-branding bg-[linear-gradient(270deg,#F3FCFF_0%,rgba(243,252,255,0.00)_103.09%)] px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="Son Tung M-TP"
+                          />
+                          <div>
+                            <div
+                              class="line-clamp-1 flex items-center gap-1 text-14 font-semibold"
+                            >
+                              Son Tung M-TP
+                              <img src="./assets/svgs/verify.svg" alt="" />
+                            </div>
+                            <div class="line-clamp-1 text-14">
+                              Send a playlist
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">3d</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="Donna Summer"
+                          />
+                          <div>
+                            <div class="line-clamp-1 text-14 font-semibold">
+                              Donna Summer
+                            </div>
+                            <div class="line-clamp-1 text-14">Hi</div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">3d</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="James"
+                          />
+                          <div>
+                            <div class="text-14 font-semibold">James</div>
+                            <div class="line-clamp-1 text-14">
+                              Wow, this is really epic
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">3w</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="James"
+                          />
+                          <div>
+                            <div class="text-14 font-semibold">Roger Daltrey</div>
+                            <div class="line-clamp-1 text-14">woohoooo</div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">17/03/2023</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="James"
+                          />
+                          <div>
+                            <div class="text-14 font-semibold">Big Star</div>
+                            <div class="line-clamp-1 text-14">
+                              Haha that's terrifying 😂
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">05/03/2023</div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="mt-2 py-3 text-center">
+                    <a
+                      href="#"
+                      class="text-14 font-semibold text-grey-400 hover:text-branding-secondary hover:underline"
+                      >View all message</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                id="noti-wrapper"
+                class="relative flex items-center justify-center"
+              >
+                <button id="toggle-notification" class="">
+                  <img
+                    class="noti-icon"
+                    src="./assets/svgs/notification-pc.svg"
+                    alt=""
+                  />
+                </button>
+                <div id="noti-popup" class="noti-popup">
+                  <div class="flex items-center justify-between px-4 pb-2 pt-4">
+                    <span class="text-20 font-semibold">Notification</span>
+                    <button
+                      class="transition-transform duration-100 hover:rotate-180"
+                    >
                       <img
                         class="h-6 w-6"
-                        src="./assets/svgs/edit.svg"
+                        src="./assets/svgs/setting.svg"
                         alt=""
                       />
                     </button>
                   </div>
-                </div>
-                <div class="mt-2 px-4">
-                  <div
-                    class="flex items-center gap-2 rounded-xl bg-grey-100 p-3"
-                  >
-                    <img
-                      class="aspect-square w-5"
-                      src="./assets/svgs/search-people.svg"
-                      loading="lazy"
-                      alt=""
-                    />
-                    <input
-                      class="h-full flex-1 bg-transparent text-14 outline-none placeholder:text-grey-300"
-                      placeholder="Search people"
-                    />
+                  <div class="px-4">
+                    <div class="grid grid-cols-3 items-center">
+                      <button
+                        class="h-[60px] border-b-4 border-b-branding-secondary text-center text-base font-semibold text-branding-secondary"
+                      >
+                        All
+                      </button>
+                      <button
+                        class="h-[60px] text-center text-base font-semibold text-grey-300"
+                      >
+                        Unread
+                      </button>
+                      <button
+                        class="h-[60px] text-center text-base font-semibold text-grey-300"
+                      >
+                        Following
+                      </button>
+                    </div>
+                  </div>
+                  <ul class="mt-4 px-2">
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Ariana Grande"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="./assets/svgs/ms-text.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Macos</span> commented
+                              on your post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                        <span class="dot !h-3 !w-3 !bg-branding"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Ariana Grande"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="./assets/svgs/react-noti.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Josh</span> commented on
+                              your post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Harry"
+                            />
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Harry</span> following
+                              you
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                        <button class="btn-primary">Follow</button>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Sona"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="./assets/svgs/ms-text.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Sona</span> commented on
+                              your post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Been"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="./assets/svgs/react-love.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Been</span> liked your
+                              post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                        <span class="dot !h-3 !w-3 !bg-branding"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Harry"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="./assets/svgs/react-love.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Harry</span> liked your
+                              post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                        <span class="dot !h-3 !w-3 !bg-branding"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Jean"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="./assets/svgs/ms-text.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Jean</span> commented on
+                              your post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="mt-2 py-3 text-center">
+                    <a
+                      href="#"
+                      class="text-14 font-semibold text-grey-400 hover:text-branding-secondary hover:underline"
+                      >View all notifications</a
+                    >
                   </div>
                 </div>
-                <ul class="mt-2 px-4">
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="Benny Andersson"
-                        />
-                        <div>
-                          <div class="line-clamp-1 text-14 font-semibold">
-                            Benny Andersson
-                          </div>
-                          <div class="line-clamp-1 text-14 font-semibold">
-                            aww
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">3d</div>
-                        <span class="dot !h-3 !w-3 !bg-branding"></span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between border-r-4 border-r-branding bg-[linear-gradient(270deg,#F3FCFF_0%,rgba(243,252,255,0.00)_103.09%)] px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="Son Tung M-TP"
-                        />
-                        <div>
-                          <div
-                            class="line-clamp-1 flex items-center gap-1 text-14 font-semibold"
-                          >
-                            Son Tung M-TP
-                            <img src="./assets/svgs/verify.svg" alt="" />
-                          </div>
-                          <div class="line-clamp-1 text-14">
-                            Send a playlist
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">3d</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="Donna Summer"
-                        />
-                        <div>
-                          <div class="line-clamp-1 text-14 font-semibold">
-                            Donna Summer
-                          </div>
-                          <div class="line-clamp-1 text-14">Hi</div>
-                        </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">3d</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="James"
-                        />
-                        <div>
-                          <div class="text-14 font-semibold">James</div>
-                          <div class="line-clamp-1 text-14">
-                            Wow, this is really epic
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">3w</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="James"
-                        />
-                        <div>
-                          <div class="text-14 font-semibold">Roger Daltrey</div>
-                          <div class="line-clamp-1 text-14">woohoooo</div>
-                        </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">17/03/2023</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="James"
-                        />
-                        <div>
-                          <div class="text-14 font-semibold">Big Star</div>
-                          <div class="line-clamp-1 text-14">
-                            Haha that's terrifying 😂
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">05/03/2023</div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-                <div class="mt-2 py-3 text-center">
-                  <a
-                    href="#"
-                    class="text-14 font-semibold text-grey-400 hover:text-branding-secondary hover:underline"
-                    >View all message</a
-                  >
-                </div>
               </div>
-            </div>
-            <div
-              id="noti-wrapper"
-              class="relative flex items-center justify-center"
-            >
-              <button id="toggle-notification" class="">
+              <button class="">
+                <img src="./assets/svgs/wallet-pc.svg" alt="" />
+              </button>
+              <a href="./profile" class="flex items-center gap-2">
                 <img
-                  class="noti-icon"
-                  src="./assets/svgs/notification-pc.svg"
+                  src="./assets/images/avatar1.jpg"
+                  class="h-11 w-11 rounded-lg object-cover"
+                  loading="lazy"
+                  alt="Iberd"
+                />
+                <span>Iberd</span>
+              </a>
+            </div>
+            <!-- SIGNED IN -->
+  
+            <!-- NOT SIGN IN <div class="flex items-center space-x-4">
+              <button>
+                <img src="./assets/svgs/export.svg" alt="" />
+              </button>
+              <a href="login.html" class="btn-secondary text-14 md:text-base"
+                >Sign in</a
+              >
+            </div> NOT SIGN IN -->
+          </div>
+        </div>
+        <div
+          class="border-b border-b-grey-200 bg-white md:border-none md:bg-grey-100 md:py-1.5 xl:py-2"
+        >
+          <ul
+            class="container relative grid grid-cols-2 items-center gap-[35px] md:grid-cols-5"
+          >
+            <li>
+              <a href="./music/index.html" class="header-item-link">music</a>
+            </li>
+            <li>
+              <a href="./videos/index.html" class="header-item-link">videos</a>
+            </li>
+            <li class="max-md:hidden">
+              <a
+                href="/"
+                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+              >
+                <img
+                  class="aspect-square w-20 lg:w-[116px] object-contain"
+                  src="./assets/svgs/logo.svg"
                   alt=""
                 />
-              </button>
-              <div id="noti-popup" class="noti-popup">
-                <div class="flex items-center justify-between px-4 pb-2 pt-4">
-                  <span class="text-20 font-semibold">Notification</span>
-                  <button
-                    class="transition-transform duration-100 hover:rotate-180"
-                  >
-                    <img
-                      class="h-6 w-6"
-                      src="./assets/svgs/setting.svg"
-                      alt=""
-                    />
-                  </button>
-                </div>
-                <div class="px-4">
-                  <div class="grid grid-cols-3 items-center">
-                    <button
-                      class="h-[60px] border-b-4 border-b-branding-secondary text-center text-base font-semibold text-branding-secondary"
-                    >
-                      All
-                    </button>
-                    <button
-                      class="h-[60px] text-center text-base font-semibold text-grey-300"
-                    >
-                      Unread
-                    </button>
-                    <button
-                      class="h-[60px] text-center text-base font-semibold text-grey-300"
-                    >
-                      Following
-                    </button>
-                  </div>
-                </div>
-                <ul class="mt-4 px-2">
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Ariana Grande"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="./assets/svgs/ms-text.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Macos</span> commented
-                            on your post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                      <span class="dot !h-3 !w-3 !bg-branding"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Ariana Grande"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="./assets/svgs/react-noti.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Josh</span> commented on
-                            your post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Harry"
-                          />
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Harry</span> following
-                            you
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                      <button class="btn-primary">Follow</button>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Sona"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="./assets/svgs/ms-text.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Sona</span> commented on
-                            your post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Been"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="./assets/svgs/react-love.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Been</span> liked your
-                            post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                      <span class="dot !h-3 !w-3 !bg-branding"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Harry"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="./assets/svgs/react-love.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Harry</span> liked your
-                            post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                      <span class="dot !h-3 !w-3 !bg-branding"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Jean"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="./assets/svgs/ms-text.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Jean</span> commented on
-                            your post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-                <div class="mt-2 py-3 text-center">
-                  <a
-                    href="#"
-                    class="text-14 font-semibold text-grey-400 hover:text-branding-secondary hover:underline"
-                    >View all notifications</a
-                  >
-                </div>
-              </div>
-            </div>
-            <button class="">
-              <img src="./assets/svgs/wallet-pc.svg" alt="" />
-            </button>
-            <a href="./profile" class="flex items-center gap-2">
-              <img
-                src="./assets/images/avatar1.jpg"
-                class="h-11 w-11 rounded-lg object-cover"
-                loading="lazy"
-                alt="Iberd"
-              />
-              <span>Iberd</span>
-            </a>
-          </div>
-          <!-- SIGNED IN -->
-
-          <!-- NOT SIGN IN <div class="flex items-center space-x-4">
-            <button>
-              <img src="./assets/svgs/export.svg" alt="" />
-            </button>
-            <a href="login.html" class="btn-secondary text-14 md:text-base"
-              >Sign in</a
-            >
-          </div> NOT SIGN IN -->
-        </div>
-      </div>
-      <div
-        class="border-b border-b-grey-200 bg-white md:border-none md:bg-grey-100 md:py-1.5 xl:py-2"
-      >
-        <ul
-          class="container relative grid grid-cols-2 items-center gap-[35px] md:grid-cols-5"
-        >
-          <li>
-            <a href="./music/index.html" class="header-item-link">music</a>
-          </li>
-          <li>
-            <a href="./videos/index.html" class="header-item-link">videos</a>
-          </li>
-          <li class="max-md:hidden">
-            <a
-              href="/"
-              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-            >
-              <img
-                class="aspect-square w-20 lg:w-[116px] object-contain"
-                src="./assets/svgs/logo.svg"
-                alt=""
-              />
-            </a>
-          </li>
-          <li class="max-md:hidden">
-            <a
-              href="./marketplace/marketplace-music-desktop.html"
-              class="header-item-link"
-              >marketplace</a
-            >
-          </li>
-          <li class="max-md:hidden">
-            <a href="./voting/music-voting.html" class="header-item-link"
-              >voting</a
-            >
-          </li>
-        </ul>
-      </div>
-    </header>
-    <main
-      class="relative w-full bg-grey-200 mt-[100px] md:mt-[135px] lg:mt-[165px] z-10 hidden md:block px-8"
-    >
-      <section
-        class="max-w-[1170px] w-full h-[744px] mx-auto bg-[#ffffff] rounded-xl flex items-start"
-      >
-        <div class="w-full max-w-[340px] py-6 border-r h-full">
-          <div class="flex flex-col px-4">
-            <div class="flex items-center justify-between mb-8">
-              <h4 class="text-[#222222] lg:text-2xl lg:font-bold">Message</h4>
-              <div class="flex items-center gap-4 cursor-pointer">
-                <p class="text-sm lg:text-base">New chat</p>
-                <img
-                  src="./assets/svgs/social-media/edit.svg"
-                  alt="icon create"
-                />
-              </div>
-            </div>
-            <div
-              id="search-people"
-              class="px-4 py-3 w-full bg-grey-100 flex items-center gap-2 rounded-lg"
-            >
-              <img src="../img/search.png" alt="" />
-              <input
-                type="text"
-                class="w-full bg-transparent border-none outline-none"
-                placeholder="Search people"
-              />
-            </div>
-            <div
-              class="mt-4 flex flex-col gap-4 max-h-[630px] overflow-y-auto scrollbar-custom"
-            >
-              <div class="w-full transition-all duration-200 border-branding">
-                <div
-                  class="flex items-center gap-2 w-full rounded-tl-xl rounded-bl-xl lg:hover:border-r-4 border-r-branding transition-all duration-200 person lg:hover:bg-[#f3fcff] lg:hover: lg:cursor-pointer"
-                >
-                  <img src="./assets/images/st.png" alt="" />
-                  <div class="flex flex-col gap-1 pr-3">
-                    <span
-                      class="text-lg font-semibold text-neutral-dark-500 flex items-center gap-1 lg:text-xl whitespace-nowrap overflow-ellipsis max-w-[200px]"
-                      >Sơn tùng MTP
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                      >
-                        <path
-                          d="M17.9667 8.94948L16.8334 7.63281C16.6167 7.38281 16.4417 6.91615 16.4417 6.58281V5.16615C16.4417 4.28281 15.7167 3.55781 14.8334 3.55781H13.4167C13.0917 3.55781 12.6167 3.38281 12.3667 3.16615L11.0501 2.03281C10.4751 1.54115 9.5334 1.54115 8.95007 2.03281L7.64173 3.17448C7.39173 3.38281 6.91673 3.55781 6.59173 3.55781H5.15006C4.26673 3.55781 3.54173 4.28281 3.54173 5.16615V6.59115C3.54173 6.91615 3.36673 7.38281 3.1584 7.63281L2.0334 8.95781C1.55007 9.53281 1.55007 10.4661 2.0334 11.0411L3.1584 12.3661C3.36673 12.6161 3.54173 13.0828 3.54173 13.4078V14.8328C3.54173 15.7161 4.26673 16.4411 5.15006 16.4411H6.59173C6.91673 16.4411 7.39173 16.6161 7.64173 16.8328L8.9584 17.9661C9.5334 18.4578 10.4751 18.4578 11.0584 17.9661L12.3751 16.8328C12.6251 16.6161 13.0917 16.4411 13.4251 16.4411H14.8417C15.7251 16.4411 16.4501 15.7161 16.4501 14.8328V13.4161C16.4501 13.0911 16.6251 12.6161 16.8417 12.3661L17.9751 11.0495C18.4584 10.4745 18.4584 9.52448 17.9667 8.94948ZM13.4667 8.42448L9.44173 12.4495C9.32507 12.5661 9.16673 12.6328 9.00007 12.6328C8.8334 12.6328 8.67507 12.5661 8.5584 12.4495L6.54173 10.4328C6.30007 10.1911 6.30007 9.79115 6.54173 9.54948C6.7834 9.30781 7.1834 9.30781 7.42507 9.54948L9.00007 11.1245L12.5834 7.54115C12.8251 7.29948 13.2251 7.29948 13.4667 7.54115C13.7084 7.78281 13.7084 8.18281 13.4667 8.42448Z"
-                          fill="#1A75FF"
-                        />
-                      </svg>
-                    </span>
-                    <span class="text-sm text-grey-400">Send playlist</span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="w-full transition-all flex items-center justify-between rounded-tl-xl rounded-bl-xl lg:hover:border-r-4 border-r-branding duration-200 person lg:hover:bg-[#f3fcff] lg:hover: lg:cursor-pointer"
-              >
-                <div
-                  class="flex items-center gap-2 w-full person lg:cursor-pointer"
-                >
-                  <img src="./assets/images/st.png" alt="" />
-                  <div class="flex flex-col gap-1 pr-3">
-                    <span
-                      class="text-lg font-semibold text-neutral-dark-500 flex items-center gap-1 lg:text-xl whitespace-nowrap overflow-ellipsis max-w-[200px]"
-                      >Jack97
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                      >
-                        <path
-                          d="M17.9667 8.94948L16.8334 7.63281C16.6167 7.38281 16.4417 6.91615 16.4417 6.58281V5.16615C16.4417 4.28281 15.7167 3.55781 14.8334 3.55781H13.4167C13.0917 3.55781 12.6167 3.38281 12.3667 3.16615L11.0501 2.03281C10.4751 1.54115 9.5334 1.54115 8.95007 2.03281L7.64173 3.17448C7.39173 3.38281 6.91673 3.55781 6.59173 3.55781H5.15006C4.26673 3.55781 3.54173 4.28281 3.54173 5.16615V6.59115C3.54173 6.91615 3.36673 7.38281 3.1584 7.63281L2.0334 8.95781C1.55007 9.53281 1.55007 10.4661 2.0334 11.0411L3.1584 12.3661C3.36673 12.6161 3.54173 13.0828 3.54173 13.4078V14.8328C3.54173 15.7161 4.26673 16.4411 5.15006 16.4411H6.59173C6.91673 16.4411 7.39173 16.6161 7.64173 16.8328L8.9584 17.9661C9.5334 18.4578 10.4751 18.4578 11.0584 17.9661L12.3751 16.8328C12.6251 16.6161 13.0917 16.4411 13.4251 16.4411H14.8417C15.7251 16.4411 16.4501 15.7161 16.4501 14.8328V13.4161C16.4501 13.0911 16.6251 12.6161 16.8417 12.3661L17.9751 11.0495C18.4584 10.4745 18.4584 9.52448 17.9667 8.94948ZM13.4667 8.42448L9.44173 12.4495C9.32507 12.5661 9.16673 12.6328 9.00007 12.6328C8.8334 12.6328 8.67507 12.5661 8.5584 12.4495L6.54173 10.4328C6.30007 10.1911 6.30007 9.79115 6.54173 9.54948C6.7834 9.30781 7.1834 9.30781 7.42507 9.54948L9.00007 11.1245L12.5834 7.54115C12.8251 7.29948 13.2251 7.29948 13.4667 7.54115C13.7084 7.78281 13.7084 8.18281 13.4667 8.42448Z"
-                          fill="#1A75FF"
-                        />
-                      </svg>
-                    </span>
-                    <span class="text-sm text-[#000] font-semibold">Awww</span>
-                  </div>
-                </div>
-                <div class="mr-3 flex flex-col gap-1">
-                  <p class="text-12">3d</p>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="8"
-                    height="8"
-                    viewBox="0 0 8 8"
-                    fill="none"
-                  >
-                    <circle cx="4" cy="4" r="4" fill="#1A75FF" />
-                  </svg>
-                </div>
-              </div>
-              <div
-                class="w-full flex items-center justify-between rounded-tl-xl rounded-bl-xl lg:hover:border-r-4 border-r-branding duration-200 person lg:hover:bg-[#f3fcff] lg:hover: lg:cursor-pointer"
-              >
-                <div
-                  class="flex items-center gap-2 w-full person lg:cursor-pointer"
-                >
-                  <img src="./assets/images/st.png" alt="" />
-                  <div class="flex flex-col gap-1 pr-3">
-                    <span
-                      class="text-lg font-semibold text-neutral-dark-500 flex items-center gap-1 lg:text-xl whitespace-nowrap overflow-ellipsis max-w-[200px]"
-                      >K-ICM
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                      >
-                        <path
-                          d="M17.9667 8.94948L16.8334 7.63281C16.6167 7.38281 16.4417 6.91615 16.4417 6.58281V5.16615C16.4417 4.28281 15.7167 3.55781 14.8334 3.55781H13.4167C13.0917 3.55781 12.6167 3.38281 12.3667 3.16615L11.0501 2.03281C10.4751 1.54115 9.5334 1.54115 8.95007 2.03281L7.64173 3.17448C7.39173 3.38281 6.91673 3.55781 6.59173 3.55781H5.15006C4.26673 3.55781 3.54173 4.28281 3.54173 5.16615V6.59115C3.54173 6.91615 3.36673 7.38281 3.1584 7.63281L2.0334 8.95781C1.55007 9.53281 1.55007 10.4661 2.0334 11.0411L3.1584 12.3661C3.36673 12.6161 3.54173 13.0828 3.54173 13.4078V14.8328C3.54173 15.7161 4.26673 16.4411 5.15006 16.4411H6.59173C6.91673 16.4411 7.39173 16.6161 7.64173 16.8328L8.9584 17.9661C9.5334 18.4578 10.4751 18.4578 11.0584 17.9661L12.3751 16.8328C12.6251 16.6161 13.0917 16.4411 13.4251 16.4411H14.8417C15.7251 16.4411 16.4501 15.7161 16.4501 14.8328V13.4161C16.4501 13.0911 16.6251 12.6161 16.8417 12.3661L17.9751 11.0495C18.4584 10.4745 18.4584 9.52448 17.9667 8.94948ZM13.4667 8.42448L9.44173 12.4495C9.32507 12.5661 9.16673 12.6328 9.00007 12.6328C8.8334 12.6328 8.67507 12.5661 8.5584 12.4495L6.54173 10.4328C6.30007 10.1911 6.30007 9.79115 6.54173 9.54948C6.7834 9.30781 7.1834 9.30781 7.42507 9.54948L9.00007 11.1245L12.5834 7.54115C12.8251 7.29948 13.2251 7.29948 13.4667 7.54115C13.7084 7.78281 13.7084 8.18281 13.4667 8.42448Z"
-                          fill="#1A75FF"
-                        />
-                      </svg>
-                    </span>
-                    <span class="text-sm text-grey-400">Send playlist</span>
-                  </div>
-                </div>
-                <div class="mr-3">
-                  <span class="text-12">17/08/2023</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          id="modal-content"
-          class="flex items-center justify-center w-full h-full"
-        >
-          <div class="text-center flex items-center justify-center flex-col">
-            <img src="./assets/images/message.png" alt="message" />
-            <h5 class="text-xl lg:text-2xl font-semibold mt-8">
-              Select a message
-            </h5>
-            <p
-              class="w-full max-w-[367px] font-medium text-grey-400 mt-2 mb-4 text-base lg:text-lg"
-            >
-              Choose from your existing conversations, start a new one, or just
-              keep swimming
-            </p>
-            <button
-              class="px-6 py-3 bg-[#1975ff] text-[#ffffff] rounded-xl text-base lg:text-lg"
-            >
-              New message
-            </button>
-          </div>
-        </div>
-        <div
-          id="chat-container"
-          class="chat-container w-full h-full relative"
-        ></div>
-      </section>
-      <!-- chat ở đây -->
-      <!-- Nội dung của modal search  ở đây -->
-      <div id="modal" class="hidden w-full h-full bg-[#666666] overlay">
-        <div
-          class="w-full max-w-[640px] h-[650px] px-6 pt-6 bg-[#ffffff] abs-center rounded-xl z-20"
-        >
-          <img
-            id="close-modal"
-            src="./assets/svgs/close.svg"
-            alt=""
-            class="absolute top-6 right-6 cursor-pointer"
-          />
-          <div>
-            <h4
-              class="text-center mb-4 text-base md:text-xl lg:text-2xl font-semibold"
-            >
-              Like by
-            </h4>
-            <div
-              class="px-4 py-3 w-full bg-grey-100 flex items-center gap-2 rounded-lg"
-            >
-              <img src="./assets/svgs/social-media/edit.svg" alt="" />
-              <input
-                type="text"
-                class="w-full bg-transparent border-none outline-none"
-                placeholder="Search people"
-              />
-            </div>
-            <!-- scroll people like by khi hết height còn bth ít thì không scroll -->
-            <div
-              class="mt-4 flex flex-col gap-4 max-h-[630px] overflow-y-auto scrollbar-custom overflow-hidden"
-            >
-              <div
-                class="flex items-center gap-2 transition-all duration-300 w-full rounded-xl lg:cursorbg-[#ebf7fc]"
-              >
-                <img src="./assets/images/likeby.png" alt="" />
-                <div class="flex flex-col gap-1">
-                  <p
-                    class="text-lg font-semibold text-neutral-dark-500 lg:text-xl"
-                  >
-                    Theresa Webb
-                  </p>
-                  <span class="text-sm text-grey-400">2.650 followers</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Nội dung của modal Play list  ở đây -->
-
-      <div
-        id="modal-playlist"
-        class="hidden w-full h-full bg-[#666666] overlay"
-      >
-        <div
-          class="w-full max-w-[640px] h-[650px] px-6 pt-6 bg-[#ffffff] abs-center rounded-xl z-20 overflow-hidden"
-        >
-          <img
-            id="close-modal-playlist"
-            src="./assets/svgs/close.svg"
-            alt=""
-            class="absolute top-6 right-6 cursor-pointer"
-          />
-          <div>
-            <h4
-              class="text-center mb-4 text-base md:text-xl lg:text-2xl font-semibold"
-            >
-              Add song or playlist
-            </h4>
-            <div
-              class="px-4 py-3 w-full bg-grey-100 flex items-center gap-2 rounded-lg"
-            >
-              <img src="./assets/svgs/social-media/edit.svg" alt="" />
-              <input
-                type="text"
-                class="w-full bg-transparent border-none outline-none"
-                placeholder="Search playlist"
-              />
-            </div>
-            <!-- scroll people like by khi hết height còn bth ít thì không scroll -->
-            <div
-              class="mt-4 flex flex-col gap-4 max-h-[630px] overflow-y-auto scrollbar-custom"
-            >
-              <div
-                class="flex justify-between transition-all duration-300 rounded-xl p-2 items-center w-full lg:cubg-[#ebf7fc]"
-              >
-                <div class="flex items-center gap-2">
-                  <img src="./assets/images/Rectangle 10.png" alt="" />
-                  <div class="flex flex-col gap-1">
-                    <p
-                      class="text-lg font-semibold text-neutral-dark-500 lg:text-xl"
-                    >
-                      Theresa Webb
-                    </p>
-                    <span class="text-sm text-grey-400">2.650 followers</span>
-                  </div>
-                </div>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 3H22"
-                    stroke="#52616B"
-                    stroke-width="1.5"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M2 9H11"
-                    stroke="#52616B"
-                    stroke-width="1.5"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M2 15H8"
-                    stroke="#52616B"
-                    stroke-width="1.5"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M2 21H6"
-                    stroke="#52616B"
-                    stroke-width="1.5"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M11.8402 22.0006C13.0441 22.0006 14.0202 21.0246 14.0202 19.8206C14.0202 18.6166 13.0441 17.6406 11.8402 17.6406C10.6362 17.6406 9.66016 18.6166 9.66016 19.8206C9.66016 21.0246 10.6362 22.0006 11.8402 22.0006Z"
-                    stroke="#52616B"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M22 18.3709V9.86091C22 8.05091 20.86 7.80091 19.71 8.11091L15.36 9.30091C14.57 9.52091 14.02 10.1409 14.02 11.0509V12.5709V13.5909V19.8209"
-                    stroke="#52616B"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M19.8201 20.5514C21.0241 20.5514 22.0001 19.5754 22.0001 18.3714C22.0001 17.1674 21.0241 16.1914 19.8201 16.1914C18.6162 16.1914 17.6401 17.1674 17.6401 18.3714C17.6401 19.5754 18.6162 20.5514 19.8201 20.5514Z"
-                    stroke="#52616B"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M14.02 13.6019L22 11.4219"
-                    stroke="#52616B"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-              <div
-                class="flex justify-between transition-all duration-300 rounded-xl p-2 items-center w-full lg:cubg-[#ebf7fc]"
-              >
-                <div class="flex items-center gap-2">
-                  <img src="./assets/images/Rectangle 10.png" alt="" />
-                  <div class="flex flex-col gap-1">
-                    <p
-                      class="text-lg font-semibold text-neutral-dark-500 lg:text-xl"
-                    >
-                      Theresa Webb
-                    </p>
-                    <span class="text-sm text-grey-400">2.650 followers</span>
-                  </div>
-                </div>
-                <img src="./assets/images/musicnote.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <div id="header-tab-modal" class="overlay header-tab-modal">
-      <div class="header-tab-modal--inner">
-        <div class="flex-1">
-          <button
-            id="close-header-tab-modal"
-            class="flex w-full items-center justify-end"
-          >
-            <img width="16" height="16" src="./assets/svgs/close.svg" alt="" />
-          </button>
-          <div class="mt-4 flex items-center gap-3 md:hidden">
-            <img
-              class="rounded-2xl object-cover"
-              width="64"
-              height="64"
-              loading="lazy"
-              src="./assets/images/artists/2.png"
-              alt=""
-            />
-            <div>
-              <div class="flex items-center gap-1 text-14 font-semibold">
-                Son Tung M-TP <img src="./assets/svgs/verify.svg" alt="" />
-              </div>
-              <div class="mt-2 flex items-center gap-3 text-14 text-grey-400">
-                <div><span class="font-semibold">53K</span> Followers</div>
-                <div><span class="font-semibold">12,3K</span> Following</div>
-              </div>
-            </div>
-          </div>
-          <ul class="mt-[14px]">
-            <li class="header-link">
+              </a>
+            </li>
+            <li class="max-md:hidden">
               <a
-                href="/voting/music-voting.html"
-                class="flex items-center text-grey-400"
-                ><img src="./assets/svgs/voting.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >Voting</span
-                ></a
+                href="./marketplace/marketplace-music-desktop.html"
+                class="header-item-link"
+                >marketplace</a
               >
             </li>
-            <li class="header-link">
-              <a href="/wallet.html" class="flex items-center text-grey-400"
-                ><img src="./assets/svgs/wallet.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >Wallet</span
-                ></a
-              >
-            </li>
-            <li class="header-link">
-              <a href="/about-us.html" class="flex items-center text-grey-400"
-                ><img src="./assets/svgs/about-us.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >About us</span
-                ></a
-              >
-            </li>
-            <li class="header-link">
-              <a href="/setting.html" class="flex items-center text-grey-400"
-                ><img src="./assets/svgs/setting.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >Setting</span
-                ></a
-              >
-            </li>
-            <li class="header-link">
-              <a href="/support.html" class="flex items-center text-grey-400"
-                ><img src="./assets/svgs/support.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >Support</span
-                ></a
-              >
-            </li>
-            <li class="header-link">
-              <a
-                href="/privacy-police.html"
-                class="flex items-center text-grey-400"
-                ><img src="./assets/svgs/privacy-police.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >Privacy Police</span
-                ></a
+            <li class="max-md:hidden">
+              <a href="./voting/music-voting.html" class="header-item-link"
+                >voting</a
               >
             </li>
           </ul>
-          <div class="mt-[30px] flex items-center justify-center gap-4">
-            <button class="btn-tertiary">Sign out</button>
+        </div>
+      </header>
+      <main
+        class="relative w-full bg-grey-200 mt-[100px] md:mt-[135px] lg:mt-[165px] z-10 hidden md:block px-8"
+      >
+        <section
+          class="max-w-[1170px] w-full h-[744px] mx-auto bg-[#ffffff] rounded-xl flex items-start"
+        >
+          <div class="w-full max-w-[340px] py-6 border-r h-full">
+            <div class="flex flex-col px-4">
+              <div class="flex items-center justify-between mb-8">
+                <h4 class="text-[#222222] lg:text-2xl lg:font-bold">Message</h4>
+                <div class="flex items-center gap-4 cursor-pointer">
+                  <p class="text-sm lg:text-base">New chat</p>
+                  <img
+                    src="./assets/svgs/social-media/edit.svg"
+                    alt="icon create"
+                  />
+                </div>
+              </div>
+              <div
+                id="search-people"
+                class="px-4 py-3 w-full bg-grey-100 flex items-center gap-2 rounded-lg"
+              >
+                <img src="../img/search.png" alt="" />
+                <input
+                  type="text"
+                  class="w-full bg-transparent border-none outline-none"
+                  placeholder="Search people"
+                />
+              </div>
+              <div
+                class="mt-4 flex flex-col gap-4 max-h-[630px] overflow-y-auto scrollbar-custom"
+              >
+                <div class="w-full transition-all duration-200 border-branding">
+                  <div
+                    class="flex items-center gap-2 w-full rounded-tl-xl rounded-bl-xl lg:hover:border-r-4 border-r-branding transition-all duration-200 person lg:hover:bg-[#f3fcff] lg:hover: lg:cursor-pointer"
+                  >
+                    <img src="./assets/images/st.png" alt="" />
+                    <div class="flex flex-col gap-1 pr-3">
+                      <span
+                        class="text-lg font-semibold text-neutral-dark-500 flex items-center gap-1 lg:text-xl whitespace-nowrap overflow-ellipsis max-w-[200px]"
+                        >Sơn tùng MTP
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                        >
+                          <path
+                            d="M17.9667 8.94948L16.8334 7.63281C16.6167 7.38281 16.4417 6.91615 16.4417 6.58281V5.16615C16.4417 4.28281 15.7167 3.55781 14.8334 3.55781H13.4167C13.0917 3.55781 12.6167 3.38281 12.3667 3.16615L11.0501 2.03281C10.4751 1.54115 9.5334 1.54115 8.95007 2.03281L7.64173 3.17448C7.39173 3.38281 6.91673 3.55781 6.59173 3.55781H5.15006C4.26673 3.55781 3.54173 4.28281 3.54173 5.16615V6.59115C3.54173 6.91615 3.36673 7.38281 3.1584 7.63281L2.0334 8.95781C1.55007 9.53281 1.55007 10.4661 2.0334 11.0411L3.1584 12.3661C3.36673 12.6161 3.54173 13.0828 3.54173 13.4078V14.8328C3.54173 15.7161 4.26673 16.4411 5.15006 16.4411H6.59173C6.91673 16.4411 7.39173 16.6161 7.64173 16.8328L8.9584 17.9661C9.5334 18.4578 10.4751 18.4578 11.0584 17.9661L12.3751 16.8328C12.6251 16.6161 13.0917 16.4411 13.4251 16.4411H14.8417C15.7251 16.4411 16.4501 15.7161 16.4501 14.8328V13.4161C16.4501 13.0911 16.6251 12.6161 16.8417 12.3661L17.9751 11.0495C18.4584 10.4745 18.4584 9.52448 17.9667 8.94948ZM13.4667 8.42448L9.44173 12.4495C9.32507 12.5661 9.16673 12.6328 9.00007 12.6328C8.8334 12.6328 8.67507 12.5661 8.5584 12.4495L6.54173 10.4328C6.30007 10.1911 6.30007 9.79115 6.54173 9.54948C6.7834 9.30781 7.1834 9.30781 7.42507 9.54948L9.00007 11.1245L12.5834 7.54115C12.8251 7.29948 13.2251 7.29948 13.4667 7.54115C13.7084 7.78281 13.7084 8.18281 13.4667 8.42448Z"
+                            fill="#1A75FF"
+                          />
+                        </svg>
+                      </span>
+                      <span class="text-sm text-grey-400">Send playlist</span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-full transition-all flex items-center justify-between rounded-tl-xl rounded-bl-xl lg:hover:border-r-4 border-r-branding duration-200 person lg:hover:bg-[#f3fcff] lg:hover: lg:cursor-pointer"
+                >
+                  <div
+                    class="flex items-center gap-2 w-full person lg:cursor-pointer"
+                  >
+                    <img src="./assets/images/st.png" alt="" />
+                    <div class="flex flex-col gap-1 pr-3">
+                      <span
+                        class="text-lg font-semibold text-neutral-dark-500 flex items-center gap-1 lg:text-xl whitespace-nowrap overflow-ellipsis max-w-[200px]"
+                        >Jack97
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                        >
+                          <path
+                            d="M17.9667 8.94948L16.8334 7.63281C16.6167 7.38281 16.4417 6.91615 16.4417 6.58281V5.16615C16.4417 4.28281 15.7167 3.55781 14.8334 3.55781H13.4167C13.0917 3.55781 12.6167 3.38281 12.3667 3.16615L11.0501 2.03281C10.4751 1.54115 9.5334 1.54115 8.95007 2.03281L7.64173 3.17448C7.39173 3.38281 6.91673 3.55781 6.59173 3.55781H5.15006C4.26673 3.55781 3.54173 4.28281 3.54173 5.16615V6.59115C3.54173 6.91615 3.36673 7.38281 3.1584 7.63281L2.0334 8.95781C1.55007 9.53281 1.55007 10.4661 2.0334 11.0411L3.1584 12.3661C3.36673 12.6161 3.54173 13.0828 3.54173 13.4078V14.8328C3.54173 15.7161 4.26673 16.4411 5.15006 16.4411H6.59173C6.91673 16.4411 7.39173 16.6161 7.64173 16.8328L8.9584 17.9661C9.5334 18.4578 10.4751 18.4578 11.0584 17.9661L12.3751 16.8328C12.6251 16.6161 13.0917 16.4411 13.4251 16.4411H14.8417C15.7251 16.4411 16.4501 15.7161 16.4501 14.8328V13.4161C16.4501 13.0911 16.6251 12.6161 16.8417 12.3661L17.9751 11.0495C18.4584 10.4745 18.4584 9.52448 17.9667 8.94948ZM13.4667 8.42448L9.44173 12.4495C9.32507 12.5661 9.16673 12.6328 9.00007 12.6328C8.8334 12.6328 8.67507 12.5661 8.5584 12.4495L6.54173 10.4328C6.30007 10.1911 6.30007 9.79115 6.54173 9.54948C6.7834 9.30781 7.1834 9.30781 7.42507 9.54948L9.00007 11.1245L12.5834 7.54115C12.8251 7.29948 13.2251 7.29948 13.4667 7.54115C13.7084 7.78281 13.7084 8.18281 13.4667 8.42448Z"
+                            fill="#1A75FF"
+                          />
+                        </svg>
+                      </span>
+                      <span class="text-sm text-[#000] font-semibold">Awww</span>
+                    </div>
+                  </div>
+                  <div class="mr-3 flex flex-col gap-1">
+                    <p class="text-12">3d</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="8"
+                      height="8"
+                      viewBox="0 0 8 8"
+                      fill="none"
+                    >
+                      <circle cx="4" cy="4" r="4" fill="#1A75FF" />
+                    </svg>
+                  </div>
+                </div>
+                <div
+                  class="w-full flex items-center justify-between rounded-tl-xl rounded-bl-xl lg:hover:border-r-4 border-r-branding duration-200 person lg:hover:bg-[#f3fcff] lg:hover: lg:cursor-pointer"
+                >
+                  <div
+                    class="flex items-center gap-2 w-full person lg:cursor-pointer"
+                  >
+                    <img src="./assets/images/st.png" alt="" />
+                    <div class="flex flex-col gap-1 pr-3">
+                      <span
+                        class="text-lg font-semibold text-neutral-dark-500 flex items-center gap-1 lg:text-xl whitespace-nowrap overflow-ellipsis max-w-[200px]"
+                        >K-ICM
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                        >
+                          <path
+                            d="M17.9667 8.94948L16.8334 7.63281C16.6167 7.38281 16.4417 6.91615 16.4417 6.58281V5.16615C16.4417 4.28281 15.7167 3.55781 14.8334 3.55781H13.4167C13.0917 3.55781 12.6167 3.38281 12.3667 3.16615L11.0501 2.03281C10.4751 1.54115 9.5334 1.54115 8.95007 2.03281L7.64173 3.17448C7.39173 3.38281 6.91673 3.55781 6.59173 3.55781H5.15006C4.26673 3.55781 3.54173 4.28281 3.54173 5.16615V6.59115C3.54173 6.91615 3.36673 7.38281 3.1584 7.63281L2.0334 8.95781C1.55007 9.53281 1.55007 10.4661 2.0334 11.0411L3.1584 12.3661C3.36673 12.6161 3.54173 13.0828 3.54173 13.4078V14.8328C3.54173 15.7161 4.26673 16.4411 5.15006 16.4411H6.59173C6.91673 16.4411 7.39173 16.6161 7.64173 16.8328L8.9584 17.9661C9.5334 18.4578 10.4751 18.4578 11.0584 17.9661L12.3751 16.8328C12.6251 16.6161 13.0917 16.4411 13.4251 16.4411H14.8417C15.7251 16.4411 16.4501 15.7161 16.4501 14.8328V13.4161C16.4501 13.0911 16.6251 12.6161 16.8417 12.3661L17.9751 11.0495C18.4584 10.4745 18.4584 9.52448 17.9667 8.94948ZM13.4667 8.42448L9.44173 12.4495C9.32507 12.5661 9.16673 12.6328 9.00007 12.6328C8.8334 12.6328 8.67507 12.5661 8.5584 12.4495L6.54173 10.4328C6.30007 10.1911 6.30007 9.79115 6.54173 9.54948C6.7834 9.30781 7.1834 9.30781 7.42507 9.54948L9.00007 11.1245L12.5834 7.54115C12.8251 7.29948 13.2251 7.29948 13.4667 7.54115C13.7084 7.78281 13.7084 8.18281 13.4667 8.42448Z"
+                            fill="#1A75FF"
+                          />
+                        </svg>
+                      </span>
+                      <span class="text-sm text-grey-400">Send playlist</span>
+                    </div>
+                  </div>
+                  <div class="mr-3">
+                    <span class="text-12">17/08/2023</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="modal-content"
+            class="flex items-center justify-center w-full h-full"
+          >
+            <div class="text-center flex items-center justify-center flex-col">
+              <img src="./assets/images/message.png" alt="message" />
+              <h5 class="text-xl lg:text-2xl font-semibold mt-8">
+                Select a message
+              </h5>
+              <p
+                class="w-full max-w-[367px] font-medium text-grey-400 mt-2 mb-4 text-base lg:text-lg"
+              >
+                Choose from your existing conversations, start a new one, or just
+                keep swimming
+              </p>
+              <button
+                class="px-6 py-3 bg-[#1975ff] text-[#ffffff] rounded-xl text-base lg:text-lg"
+              >
+                New message
+              </button>
+            </div>
+          </div>
+          <div
+            id="chat-container"
+            class="chat-container w-full h-full relative"
+          ></div>
+        </section>
+        <!-- chat ở đây -->
+        <!-- Nội dung của modal search  ở đây -->
+        <div id="modal" class="hidden w-full h-full bg-[#666666] overlay">
+          <div
+            class="w-full max-w-[640px] h-[650px] px-6 pt-6 bg-[#ffffff] abs-center rounded-xl z-20"
+          >
+            <img
+              id="close-modal"
+              src="./assets/svgs/close.svg"
+              alt=""
+              class="absolute top-6 right-6 cursor-pointer"
+            />
+            <div>
+              <h4
+                class="text-center mb-4 text-base md:text-xl lg:text-2xl font-semibold"
+              >
+                Like by
+              </h4>
+              <div
+                class="px-4 py-3 w-full bg-grey-100 flex items-center gap-2 rounded-lg"
+              >
+                <img src="./assets/svgs/social-media/edit.svg" alt="" />
+                <input
+                  type="text"
+                  class="w-full bg-transparent border-none outline-none"
+                  placeholder="Search people"
+                />
+              </div>
+              <!-- scroll people like by khi hết height còn bth ít thì không scroll -->
+              <div
+                class="mt-4 flex flex-col gap-4 max-h-[630px] overflow-y-auto scrollbar-custom overflow-hidden"
+              >
+                <div
+                  class="flex items-center gap-2 transition-all duration-300 w-full rounded-xl lg:cursorbg-[#ebf7fc]"
+                >
+                  <img src="./assets/images/likeby.png" alt="" />
+                  <div class="flex flex-col gap-1">
+                    <p
+                      class="text-lg font-semibold text-neutral-dark-500 lg:text-xl"
+                    >
+                      Theresa Webb
+                    </p>
+                    <span class="text-sm text-grey-400">2.650 followers</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        <!-- Nội dung của modal Play list  ở đây -->
+  
         <div
-          class="flex items-center justify-between border-t border-t-grey-200 pt-4"
+          id="modal-playlist"
+          class="hidden w-full h-full bg-[#666666] overlay"
         >
-          <div class="flex items-center gap-x-2 text-base">
-            <img src="./assets/svgs/global.svg" alt="" />
-            Language
-          </div>
-          <button
-            class="flex items-center gap-2 rounded-xl bg-grey-100 px-4 py-2"
+          <div
+            class="w-full max-w-[640px] h-[650px] px-6 pt-6 bg-[#ffffff] abs-center rounded-tl-xl rounded-tr-xl z-20 overflow-hidden"
           >
-            <img src="./assets/svgs/flags/us.svg" alt="" />
-            English
-          </button>
+            <img
+              id="close-modal-playlist"
+              src="./assets/svgs/close.svg"
+              alt=""
+              class="absolute top-6 right-6 cursor-pointer"
+            />
+            <div>
+              <h4
+                class="text-center mb-4 text-base md:text-xl lg:text-2xl font-semibold"
+              >
+                Add song or playlist
+              </h4>
+              <div
+                class="px-4 py-3 w-full bg-grey-100 flex items-center gap-2 rounded-lg"
+              >
+                <img src="./assets/svgs/social-media/edit.svg" alt="" />
+                <input
+                  type="text"
+                  class="w-full bg-transparent border-none outline-none"
+                  placeholder="Search playlist"
+                />
+              </div>
+              <!-- scroll people like by khi hết height còn bth ít thì không scroll -->
+              <div
+                class="mt-4 flex flex-col gap-4 max-h-[630px] overflow-y-auto scrollbar-custom"
+              >
+                <div
+                  class="flex justify-between transition-all duration-300 rounded-xl p-2 items-center w-full lg:cubg-[#ebf7fc]"
+                >
+                  <div class="flex items-center gap-2">
+                    <img src="./assets/images/Rectangle 10.png" alt="" />
+                    <div class="flex flex-col gap-1">
+                      <p
+                        class="text-lg font-semibold text-neutral-dark-500 lg:text-xl"
+                      >
+                        Theresa Webb
+                      </p>
+                      <span class="text-sm text-grey-400">2.650 followers</span>
+                    </div>
+                  </div>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2 3H22"
+                      stroke="#52616B"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2 9H11"
+                      stroke="#52616B"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2 15H8"
+                      stroke="#52616B"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2 21H6"
+                      stroke="#52616B"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11.8402 22.0006C13.0441 22.0006 14.0202 21.0246 14.0202 19.8206C14.0202 18.6166 13.0441 17.6406 11.8402 17.6406C10.6362 17.6406 9.66016 18.6166 9.66016 19.8206C9.66016 21.0246 10.6362 22.0006 11.8402 22.0006Z"
+                      stroke="#52616B"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M22 18.3709V9.86091C22 8.05091 20.86 7.80091 19.71 8.11091L15.36 9.30091C14.57 9.52091 14.02 10.1409 14.02 11.0509V12.5709V13.5909V19.8209"
+                      stroke="#52616B"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M19.8201 20.5514C21.0241 20.5514 22.0001 19.5754 22.0001 18.3714C22.0001 17.1674 21.0241 16.1914 19.8201 16.1914C18.6162 16.1914 17.6401 17.1674 17.6401 18.3714C17.6401 19.5754 18.6162 20.5514 19.8201 20.5514Z"
+                      stroke="#52616B"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M14.02 13.6019L22 11.4219"
+                      stroke="#52616B"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="flex justify-between transition-all duration-300 rounded-xl p-2 items-center w-full lg:cubg-[#ebf7fc]"
+                >
+                  <div class="flex items-center gap-2">
+                    <img src="./assets/images/Rectangle 10.png" alt="" />
+                    <div class="flex flex-col gap-1">
+                      <p
+                        class="text-lg font-semibold text-neutral-dark-500 lg:text-xl"
+                      >
+                        Theresa Webb
+                      </p>
+                      <span class="text-sm text-grey-400">2.650 followers</span>
+                    </div>
+                  </div>
+                  <img src="./assets/images/musicnote.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+  
+      <div id="header-tab-modal" class="overlay header-tab-modal">
+        <div class="header-tab-modal--inner">
+          <div class="flex-1">
+            <button
+              id="close-header-tab-modal"
+              class="flex w-full items-center justify-end"
+            >
+              <img width="16" height="16" src="./assets/svgs/close.svg" alt="" />
+            </button>
+            <div class="mt-4 flex items-center gap-3 md:hidden">
+              <img
+                class="rounded-2xl object-cover"
+                width="64"
+                height="64"
+                loading="lazy"
+                src="./assets/images/artists/2.png"
+                alt=""
+              />
+              <div>
+                <div class="flex items-center gap-1 text-14 font-semibold">
+                  Son Tung M-TP <img src="./assets/svgs/verify.svg" alt="" />
+                </div>
+                <div class="mt-2 flex items-center gap-3 text-14 text-grey-400">
+                  <div><span class="font-semibold">53K</span> Followers</div>
+                  <div><span class="font-semibold">12,3K</span> Following</div>
+                </div>
+              </div>
+            </div>
+            <ul class="mt-[14px]">
+              <li class="header-link">
+                <a
+                  href="/voting/music-voting.html"
+                  class="flex items-center text-grey-400"
+                  ><img src="./assets/svgs/voting.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >Voting</span
+                  ></a
+                >
+              </li>
+              <li class="header-link">
+                <a href="/wallet.html" class="flex items-center text-grey-400"
+                  ><img src="./assets/svgs/wallet.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >Wallet</span
+                  ></a
+                >
+              </li>
+              <li class="header-link">
+                <a href="/about-us.html" class="flex items-center text-grey-400"
+                  ><img src="./assets/svgs/about-us.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >About us</span
+                  ></a
+                >
+              </li>
+              <li class="header-link">
+                <a href="/setting.html" class="flex items-center text-grey-400"
+                  ><img src="./assets/svgs/setting.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >Setting</span
+                  ></a
+                >
+              </li>
+              <li class="header-link">
+                <a href="/support.html" class="flex items-center text-grey-400"
+                  ><img src="./assets/svgs/support.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >Support</span
+                  ></a
+                >
+              </li>
+              <li class="header-link">
+                <a
+                  href="/privacy-police.html"
+                  class="flex items-center text-grey-400"
+                  ><img src="./assets/svgs/privacy-police.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >Privacy Police</span
+                  ></a
+                >
+              </li>
+            </ul>
+            <div class="mt-[30px] flex items-center justify-center gap-4">
+              <button class="btn-tertiary">Sign out</button>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-between border-t border-t-grey-200 pt-4"
+          >
+            <div class="flex items-center gap-x-2 text-base">
+              <img src="./assets/svgs/global.svg" alt="" />
+              Language
+            </div>
+            <button
+              class="flex items-center gap-2 rounded-xl bg-grey-100 px-4 py-2"
+            >
+              <img src="./assets/svgs/flags/us.svg" alt="" />
+              English
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+</div>
     <!-- mobile -->
-
+    <main>
+      <section class="h-screen relative block md:hidden">
+        <!-- modal create new chat -->
+        <div class="modal-create w-full bg-[#666666] overlay">
+          <div
+            class="w-full max-w-[640px] p-4 bg-[#ffffff] absolute bottom-0 rounded-xl z-20"
+          >
+            <div class="h-[650px]">
+              <h4
+                class="text-center flex flex-col close-modal items-center gap-3 mb-4 text-18 font-semibold"
+              >
+                <button>
+                  <img
+                    src="./assets/images/playlists/Rectangle 4280.png"
+                    alt=" w-[64px] h-1"
+                  />
+                </button>
+                Create a new chat
+              </h4>
+              <div
+                class="px-4 py-3 w-full bg-grey-100 flex items-center gap-2 rounded-lg"
+              >
+                <img src="./assets/svgs/social-media/edit.svg" alt="" />
+                <input
+                  type="text"
+                  class="w-full bg-transparent text-14 border-none outline-none"
+                  placeholder="Search people"
+                />
+              </div>
+              <!-- scroll people like by khi hết height còn bth ít thì không scroll -->
+              <a
+                href="./message/chat-message-mobile.html"
+                class="mt-4 flex flex-col gap-4 max-h-[630px] overflow-y-auto scrollbar-custom overflow-hidden"
+              >
+                <div
+                  class="flex items-center gap-2 transition-all duration-300 w-full rounded-xl lg:cursorbg-[#ebf7fc]"
+                >
+                  <img src="./assets/images/likeby.png" alt="" />
+                  <div class="flex flex-col gap-1">
+                    <p
+                      class="text-14 font-semibold text-neutral-dark-500 lg:text-xl"
+                    >
+                      Theresa Webb
+                    </p>
+                    <span class="text-12 text-grey-400">2.650 followers</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="flex items-center justify-between py-3 box-shadow px-4">
+            <a href="./message/message-newchat-mobile.html">
+              <img src="./assets/svgs/arrow-left.png" alt=""
+            /></a>
+            <div class="text-lg font-semibold">Message</div>
+            <button class="create-chat">
+              <img class="" src="./assets/svgs/edit.svg" alt="" />
+            </button>
+          </div>
+          <div class="container">
+            <div class="flex items-center justify-center w-full h-full">
+              <div
+                class="text-center w-full flex items-center justify-center flex-col abs-center"
+              >
+                <div class="">
+                  <img
+                    src="./assets/images/message.png"
+                    alt="message"
+                    class="w-full h-full"
+                  />
+                </div>
+                <h5 class="text-18 font-semibold mt-6">Select a message</h5>
+                <p
+                  class="w-full max-w-[367px] text-14 font-normal text-grey-400 mt-2 mb-4"
+                >
+                  Choose from your existing conversations, start a new one, or
+                  just keep swimming
+                </p>
+                <a
+                  href="./message/list-message-mobile.html"
+                  class="new-message w-[85%] px-6 py-3 bg-[#1975ff] text-[#ffffff] rounded-xl text-base"
+                >
+                  New message
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- list message -->
+        <div
+          class="bg-[#ffffff] list-people hidden fixed top-12 left-0 right-0 bottom-0 z-20"
+        >
+          <div
+            class="px-4 py-3 w-[95%] mx-auto bg-grey-100 flex items-center gap-2 rounded-lg"
+          >
+            <img src="./assets/svgs/search-people.svg" alt="" />
+            <input
+              type="text"
+              class="w-full bg-transparent border-none outline-none"
+              placeholder="Search people"
+            />
+          </div>
+          <div
+            class="flex flex-col gap-4 max-h-[630px] overflow-y-auto mt-4 scrollbar-custom px-4"
+          >
+            <div class="w-full transition-all duration-200 border-none people">
+              <div
+                class="flex items-center gap-2 w-full person lg:cursor-pointer"
+              >
+                <img src="./assets/images/st.png" alt="" />
+                <div class="flex flex-col gap-1 pr-3">
+                  <span
+                    class="text-lg font-semibold text-neutral-dark-500 flex items-center gap-1 lg:text-xl whitespace-nowrap overflow-ellipsis max-w-[200px]"
+                    >Sơn tùng MTP
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M17.9667 8.94948L16.8334 7.63281C16.6167 7.38281 16.4417 6.91615 16.4417 6.58281V5.16615C16.4417 4.28281 15.7167 3.55781 14.8334 3.55781H13.4167C13.0917 3.55781 12.6167 3.38281 12.3667 3.16615L11.0501 2.03281C10.4751 1.54115 9.5334 1.54115 8.95007 2.03281L7.64173 3.17448C7.39173 3.38281 6.91673 3.55781 6.59173 3.55781H5.15006C4.26673 3.55781 3.54173 4.28281 3.54173 5.16615V6.59115C3.54173 6.91615 3.36673 7.38281 3.1584 7.63281L2.0334 8.95781C1.55007 9.53281 1.55007 10.4661 2.0334 11.0411L3.1584 12.3661C3.36673 12.6161 3.54173 13.0828 3.54173 13.4078V14.8328C3.54173 15.7161 4.26673 16.4411 5.15006 16.4411H6.59173C6.91673 16.4411 7.39173 16.6161 7.64173 16.8328L8.9584 17.9661C9.5334 18.4578 10.4751 18.4578 11.0584 17.9661L12.3751 16.8328C12.6251 16.6161 13.0917 16.4411 13.4251 16.4411H14.8417C15.7251 16.4411 16.4501 15.7161 16.4501 14.8328V13.4161C16.4501 13.0911 16.6251 12.6161 16.8417 12.3661L17.9751 11.0495C18.4584 10.4745 18.4584 9.52448 17.9667 8.94948ZM13.4667 8.42448L9.44173 12.4495C9.32507 12.5661 9.16673 12.6328 9.00007 12.6328C8.8334 12.6328 8.67507 12.5661 8.5584 12.4495L6.54173 10.4328C6.30007 10.1911 6.30007 9.79115 6.54173 9.54948C6.7834 9.30781 7.1834 9.30781 7.42507 9.54948L9.00007 11.1245L12.5834 7.54115C12.8251 7.29948 13.2251 7.29948 13.4667 7.54115C13.7084 7.78281 13.7084 8.18281 13.4667 8.42448Z"
+                        fill="#1A75FF"
+                      />
+                    </svg>
+                  </span>
+                  <span class="text-sm text-grey-400">Send playlist</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-full transition-all flex items-center justify-between border-branding"
+            >
+              <div
+                class="flex items-center gap-2 w-full person lg:cursor-pointer list-people"
+              >
+                <img src="../assets/images/st.png" alt="" />
+                <div class="flex flex-col gap-1 pr-3">
+                  <span
+                    class="text-lg font-semibold text-neutral-dark-500 flex items-center gap-1 lg:text-xl whitespace-nowrap overflow-ellipsis max-w-[200px]"
+                    >Jack97
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M17.9667 8.94948L16.8334 7.63281C16.6167 7.38281 16.4417 6.91615 16.4417 6.58281V5.16615C16.4417 4.28281 15.7167 3.55781 14.8334 3.55781H13.4167C13.0917 3.55781 12.6167 3.38281 12.3667 3.16615L11.0501 2.03281C10.4751 1.54115 9.5334 1.54115 8.95007 2.03281L7.64173 3.17448C7.39173 3.38281 6.91673 3.55781 6.59173 3.55781H5.15006C4.26673 3.55781 3.54173 4.28281 3.54173 5.16615V6.59115C3.54173 6.91615 3.36673 7.38281 3.1584 7.63281L2.0334 8.95781C1.55007 9.53281 1.55007 10.4661 2.0334 11.0411L3.1584 12.3661C3.36673 12.6161 3.54173 13.0828 3.54173 13.4078V14.8328C3.54173 15.7161 4.26673 16.4411 5.15006 16.4411H6.59173C6.91673 16.4411 7.39173 16.6161 7.64173 16.8328L8.9584 17.9661C9.5334 18.4578 10.4751 18.4578 11.0584 17.9661L12.3751 16.8328C12.6251 16.6161 13.0917 16.4411 13.4251 16.4411H14.8417C15.7251 16.4411 16.4501 15.7161 16.4501 14.8328V13.4161C16.4501 13.0911 16.6251 12.6161 16.8417 12.3661L17.9751 11.0495C18.4584 10.4745 18.4584 9.52448 17.9667 8.94948ZM13.4667 8.42448L9.44173 12.4495C9.32507 12.5661 9.16673 12.6328 9.00007 12.6328C8.8334 12.6328 8.67507 12.5661 8.5584 12.4495L6.54173 10.4328C6.30007 10.1911 6.30007 9.79115 6.54173 9.54948C6.7834 9.30781 7.1834 9.30781 7.42507 9.54948L9.00007 11.1245L12.5834 7.54115C12.8251 7.29948 13.2251 7.29948 13.4667 7.54115C13.7084 7.78281 13.7084 8.18281 13.4667 8.42448Z"
+                        fill="#1A75FF"
+                      />
+                    </svg>
+                  </span>
+                  <span class="text-sm text-[#000] font-semibold">Awww</span>
+                </div>
+              </div>
+              <div class="mr-3 flex flex-col gap-1">
+                <p class="text-12">3d</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="8"
+                  height="8"
+                  viewBox="0 0 8 8"
+                  fill="none"
+                >
+                  <circle cx="4" cy="4" r="4" fill="#1A75FF" />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="w-full flex items-center justify-between transition-all border-branding"
+            >
+              <div
+                class="flex items-center gap-2 w-full person lg:cursor-pointer people"
+              >
+                <img src="../assets/images/st.png" alt="" />
+                <div class="flex flex-col gap-1 pr-3">
+                  <span
+                    class="text-lg font-semibold text-neutral-dark-500 flex items-center gap-1 lg:text-xl whitespace-nowrap overflow-ellipsis max-w-[200px]"
+                    >K-ICM
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M17.9667 8.94948L16.8334 7.63281C16.6167 7.38281 16.4417 6.91615 16.4417 6.58281V5.16615C16.4417 4.28281 15.7167 3.55781 14.8334 3.55781H13.4167C13.0917 3.55781 12.6167 3.38281 12.3667 3.16615L11.0501 2.03281C10.4751 1.54115 9.5334 1.54115 8.95007 2.03281L7.64173 3.17448C7.39173 3.38281 6.91673 3.55781 6.59173 3.55781H5.15006C4.26673 3.55781 3.54173 4.28281 3.54173 5.16615V6.59115C3.54173 6.91615 3.36673 7.38281 3.1584 7.63281L2.0334 8.95781C1.55007 9.53281 1.55007 10.4661 2.0334 11.0411L3.1584 12.3661C3.36673 12.6161 3.54173 13.0828 3.54173 13.4078V14.8328C3.54173 15.7161 4.26673 16.4411 5.15006 16.4411H6.59173C6.91673 16.4411 7.39173 16.6161 7.64173 16.8328L8.9584 17.9661C9.5334 18.4578 10.4751 18.4578 11.0584 17.9661L12.3751 16.8328C12.6251 16.6161 13.0917 16.4411 13.4251 16.4411H14.8417C15.7251 16.4411 16.4501 15.7161 16.4501 14.8328V13.4161C16.4501 13.0911 16.6251 12.6161 16.8417 12.3661L17.9751 11.0495C18.4584 10.4745 18.4584 9.52448 17.9667 8.94948ZM13.4667 8.42448L9.44173 12.4495C9.32507 12.5661 9.16673 12.6328 9.00007 12.6328C8.8334 12.6328 8.67507 12.5661 8.5584 12.4495L6.54173 10.4328C6.30007 10.1911 6.30007 9.79115 6.54173 9.54948C6.7834 9.30781 7.1834 9.30781 7.42507 9.54948L9.00007 11.1245L12.5834 7.54115C12.8251 7.29948 13.2251 7.29948 13.4667 7.54115C13.7084 7.78281 13.7084 8.18281 13.4667 8.42448Z"
+                        fill="#1A75FF"
+                      />
+                    </svg>
+                  </span>
+                  <span class="text-sm text-grey-400">Send playlist</span>
+                </div>
+              </div>
+              <div class="mr-3">
+                <span class="text-12">17/08/2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="

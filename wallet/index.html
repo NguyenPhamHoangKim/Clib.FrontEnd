@@ -7,1246 +7,1758 @@
     <link rel="stylesheet" href="../styles/index.css" />
   </head>
   <body>
-    <header class="fixed left-0 right-0 top-0 z-[999]">
-      <div class="bg-white py-2.5 shadow-[0px_2px_10px_0px_rgba(0,0,0,0.04)]">
-        <div class="container relative flex items-center justify-between">
-          <div class="flex items-center space-x-4">
-            <button id="toggle-mobile-menu">
-              <img src="../assets/svgs/menu.svg" alt="" />
-            </button>
-            <div
-              class="hidden w-fit items-center rounded-lg border border-grey-200 px-4 py-2 md:flex"
-            >
-              <img class="mr-2" src="../assets/svgs/search.svg" alt="" />
-              <input
-                class="h-full flex-1 text-base outline-none placeholder:text-grey-300 md:min-w-[260px]"
-                placeholder="What are you looking for?"
-              />
-            </div>
-          </div>
-
-          <a
-            href="/"
-            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden"
-          >
-            <img
-              class="object-contain w-8"
-              src="../assets/svgs/logo-mb.svg"
-              alt=""
-            />
-          </a>
-          <!-- SIGNED IN MOBILE -->
-          <div class="flex items-center space-x-4 md:hidden">
-            <button class="rounded-lg bg-grey-100 p-1.5">
-              <img
-                width="24"
-                height="24"
-                src="../assets/svgs/notification.svg"
-                alt=""
-              />
-            </button>
-            <button class="rounded-lg bg-grey-100 p-1.5">
-              <img src="../assets/svgs/messenger.svg" alt="" />
-            </button>
-          </div>
-          <!-- SIGNED IN -->
-
-          <!-- SIGNED IN PC-->
-          <div class="flex items-center space-x-4 max-md:hidden xl:space-x-6">
-            <button class="bg-grey-1 rounded-lg">
-              <img src="../assets/svgs/document.svg" alt="" />
-            </button>
-            <button class="">
-              <img src="../assets/svgs/sol.svg" alt="" />
-            </button>
-            <button class="">
-              <img src="../assets/svgs/export-pc.svg" alt="" />
-            </button>
-            <div
-              id="ms-wrapper"
-              class="relative flex items-center justify-center"
-            >
-              <button id="toggle-ms" class="toggle-ms">
-                <img
-                  class="ms-icon"
-                  src="../assets/svgs/messenger-pc.svg"
-                  alt=""
-                />
+<div class="hidden md:block">
+      <header class="fixed left-0 right-0 top-0 z-[999]">
+        <div class="bg-white py-2.5 shadow-[0px_2px_10px_0px_rgba(0,0,0,0.04)]">
+          <div class="container relative flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+              <button id="toggle-mobile-menu">
+                <img src="../assets/svgs/menu.svg" alt="" />
               </button>
-              <div id="ms-popup" class="ms-popup">
-                <div class="flex items-center justify-between px-4 pb-2 pt-4">
-                  <span class="text-20 font-semibold">Message</span>
-                  <div class="flex items-center gap-2">
-                    <span class="text-14">New chat</span>
-                    <button class="rounded-xl bg-grey-200 p-1.5 duration-100">
-                      <img
-                        class="h-6 w-6"
-                        src="../assets/svgs/edit.svg"
-                        alt=""
-                      />
-                    </button>
-                  </div>
-                </div>
-                <div class="mt-2 px-4">
-                  <div
-                    class="flex items-center gap-2 rounded-xl bg-grey-100 p-3"
-                  >
-                    <img
-                      class="aspect-square w-5"
-                      src="../assets/svgs/search-people.svg"
-                      loading="lazy"
-                      alt=""
-                    />
-                    <input
-                      class="h-full flex-1 bg-transparent text-14 outline-none placeholder:text-grey-300"
-                      placeholder="Search people"
-                    />
-                  </div>
-                </div>
-                <ul class="mt-2 px-4">
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="../assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="Benny Andersson"
-                        />
-                        <div>
-                          <div class="line-clamp-1 text-14 font-semibold">
-                            Benny Andersson
-                          </div>
-                          <div class="line-clamp-1 text-14 font-semibold">
-                            aww
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">3d</div>
-                        <span class="dot !h-3 !w-3 !bg-branding"></span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between border-r-4 border-r-branding bg-[linear-gradient(270deg,#F3FCFF_0%,rgba(243,252,255,0.00)_103.09%)] px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="../assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="Son Tung M-TP"
-                        />
-                        <div>
-                          <div
-                            class="line-clamp-1 flex items-center gap-1 text-14 font-semibold"
-                          >
-                            Son Tung M-TP
-                            <img src="../assets/svgs/verify.svg" alt="" />
-                          </div>
-                          <div class="line-clamp-1 text-14">
-                            Send a playlist
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">3d</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="../assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="Donna Summer"
-                        />
-                        <div>
-                          <div class="line-clamp-1 text-14 font-semibold">
-                            Donna Summer
-                          </div>
-                          <div class="line-clamp-1 text-14">Hi</div>
-                        </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">3d</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="../assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="James"
-                        />
-                        <div>
-                          <div class="text-14 font-semibold">James</div>
-                          <div class="line-clamp-1 text-14">
-                            Wow, this is really epic
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">3w</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="../assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="James"
-                        />
-                        <div>
-                          <div class="text-14 font-semibold">Roger Daltrey</div>
-                          <div class="line-clamp-1 text-14">woohoooo</div>
-                        </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">17/03/2023</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="../assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="James"
-                        />
-                        <div>
-                          <div class="text-14 font-semibold">Big Star</div>
-                          <div class="line-clamp-1 text-14">
-                            Haha that's terrifying 😂
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">05/03/2023</div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-                <div class="mt-2 py-3 text-center">
-                  <a
-                    href="#"
-                    class="text-14 font-semibold text-grey-400 hover:text-branding-secondary hover:underline"
-                    >View all message</a
-                  >
-                </div>
+              <div
+                class="hidden w-fit items-center rounded-lg border border-grey-200 px-4 py-2 md:flex"
+              >
+                <img class="mr-2" src="../assets/svgs/search.svg" alt="" />
+                <input
+                  class="h-full flex-1 text-base outline-none placeholder:text-grey-300 md:min-w-[260px]"
+                  placeholder="What are you looking for?"
+                />
               </div>
             </div>
-            <div
-              id="noti-wrapper"
-              class="relative flex items-center justify-center"
-            >
-              <button id="toggle-notification" class="">
-                <img
-                  class="noti-icon"
-                  src="../assets/svgs/notification-pc.svg"
-                  alt=""
-                />
-              </button>
-              <div id="noti-popup" class="noti-popup">
-                <div class="flex items-center justify-between px-4 pb-2 pt-4">
-                  <span class="text-20 font-semibold">Notification</span>
-                  <button
-                    class="transition-transform duration-100 hover:rotate-180"
-                  >
-                    <img
-                      class="h-6 w-6"
-                      src="../assets/svgs/setting.svg"
-                      alt=""
-                    />
-                  </button>
-                </div>
-                <div class="px-4">
-                  <div class="grid grid-cols-3 items-center">
-                    <button
-                      class="h-[60px] border-b-4 border-b-branding-secondary text-center text-base font-semibold text-branding-secondary"
-                    >
-                      All
-                    </button>
-                    <button
-                      class="h-[60px] text-center text-base font-semibold text-grey-300"
-                    >
-                      Unread
-                    </button>
-                    <button
-                      class="h-[60px] text-center text-base font-semibold text-grey-300"
-                    >
-                      Following
-                    </button>
-                  </div>
-                </div>
-                <ul class="mt-4 px-2">
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="../assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Ariana Grande"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="../assets/svgs/ms-text.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Macos</span> commented
-                            on your post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                      <span class="dot !h-3 !w-3 !bg-branding"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="../assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Ariana Grande"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="../assets/svgs/react-noti.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Josh</span> commented on
-                            your post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="../assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Harry"
-                          />
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Harry</span> following
-                            you
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                      <button class="btn-primary">Follow</button>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="../assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Sona"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="../assets/svgs/ms-text.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Sona</span> commented on
-                            your post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="../assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Been"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="../assets/svgs/react-love.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Been</span> liked your
-                            post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                      <span class="dot !h-3 !w-3 !bg-branding"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="../assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Harry"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="../assets/svgs/react-love.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Harry</span> liked your
-                            post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                      <span class="dot !h-3 !w-3 !bg-branding"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="../assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Jean"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="../assets/svgs/ms-text.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Jean</span> commented on
-                            your post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-                <div class="mt-2 py-3 text-center">
-                  <a
-                    href="#"
-                    class="text-14 font-semibold text-grey-400 hover:text-branding-secondary hover:underline"
-                    >View all notifications</a
-                  >
-                </div>
-              </div>
-            </div>
-            <button class="">
-              <img src="../assets/svgs/wallet-pc.svg" alt="" />
-            </button>
-            <a href="./profile" class="flex items-center gap-2">
-              <img
-                src="../assets/images/avatar1.jpg"
-                class="h-11 w-11 rounded-lg object-cover"
-                loading="lazy"
-                alt="Iberd"
-              />
-              <span>Iberd</span>
-            </a>
-          </div>
-          <!-- SIGNED IN -->
-
-          <!-- NOT SIGN IN <div class="flex items-center space-x-4">
-            <button>
-              <img src="../assets/svgs/export.svg" alt="" />
-            </button>
-            <a href="login.html" class="btn-secondary text-14 md:text-base"
-              >Sign in</a
-            >
-          </div> NOT SIGN IN -->
-        </div>
-      </div>
-      <div
-        class="border-b border-b-grey-200 bg-white md:border-none md:bg-grey-100 md:py-1.5 xl:py-2"
-      >
-        <ul
-          class="container relative grid grid-cols-2 items-center gap-[35px] md:grid-cols-5"
-        >
-          <li>
-            <a href="../music/index.html" class="header-item-link">music</a>
-          </li>
-          <li>
-            <a href="../videos/index.html" class="header-item-link">videos</a>
-          </li>
-          <li class="max-md:hidden">
+  
             <a
               href="/"
-              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden"
             >
               <img
-                class="aspect-square w-20 lg:w-[116px] object-contain"
-                src="../assets/svgs/logo.svg"
+                class="object-contain w-8"
+                src="../assets/svgs/logo-mb.svg"
                 alt=""
               />
             </a>
-          </li>
-          <li class="max-md:hidden">
-            <a
-              href="../marketplace/marketplace-music-desktop.html"
-              class="header-item-link"
-              >marketplace</a
-            >
-          </li>
-          <li class="max-md:hidden">
-            <a href="../voting/music-voting.html" class="header-item-link"
-              >voting</a
-            >
-          </li>
-        </ul>
-      </div>
-    </header>
-    <main class="container relative">
-      <div class="modal-paypal hidden overlay px-4">
-        <div
-          id="modal-paypal"
-          class="abs-center bg-[#fff] p-6 rounded-xl flex flex-col justify-center items-center w-[590px] max-w-[95%]"
-        >
-          <img
-            src="../assets/svgs/close.svg"
-            alt=""
-            class="absolute top-4 right-4 w-4 close-modal"
-          />
-          <h5
-            class="text-18 lg:text-24 font-semibold text-neutral-dark-500 mb-2"
-          >
-            Top-up
-          </h5>
-          <p class="text-12 lg:text-base text-grey-400">
-            Select the amount you want to deposit in to your wallet
-          </p>
-          <div
-            class="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-3 xl:gap-4 my-4 lg:my-6 xl:my-8 w-full"
-          >
-            <button
-              class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
-            >
-              $100
-            </button>
-            <button
-              class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
-            >
-              $100
-            </button>
-            <button
-              class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
-            >
-              $100
-            </button>
-            <button
-              class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
-            >
-              $100
-            </button>
-            <button
-              class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
-            >
-              $100
-            </button>
-            <button
-              class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
-            >
-              $100
-            </button>
-            <button
-              class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
-            >
-              $100
-            </button>
-            <button
-              class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
-            >
-              $100
-            </button>
-          </div>
-          <button
-            type="button"
-            class="px-6 py-3 text-14 text-[#fff] justify-center bg-[#003087] rounded-xl flex items-center gap-2 text-center transition-opacity duration-300 hover:opacity-70 w-fit mx-auto"
-          >
-            <img src="../assets/svgs/image 167.png" alt="" />
-            Deposit via Paypal
-          </button>
-          <p class="text-12 lg:text-base text-grey-400 mt-8 line-clamp-1">
-            By clicking check out you agree to the
-            <a href="#" class="underline-offset-1 underline decoration-1"
-              >License Terms</a
-            >
-            and
-            <a href="#" class="underline-offset-1 underline decoration-1"
-              >User Terms.</a
-            >
-          </p>
-        </div>
-      </div>
-      <div class="modal-money hidden overlay px-4">
-        <div
-          id="modal-money"
-          class="abs-center bg-[#fff] p-6 rounded-xl flex flex-col justify-center items-center w-[590px] max-w-[95%]"
-        >
-          <img
-            src="../assets/svgs/close.svg"
-            alt=""
-            class="absolute top-4 right-4 w-4 close-modal"
-          />
-          <h5
-            class="text-20 lg:text-24 font-semibold text-neutral-dark-500 mb-2"
-          >
-            Withdraw money
-          </h5>
-          <p class="text-14 text-center lg:text-base text-grey-400">
-            Select the amount you want to withdraw into your Paypal
-          </p>
-          <div
-            class="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-3 xl:gap-4 my-4 lg:my-6 xl:my-8 w-full"
-          >
-            <button
-              class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
-            >
-              $100
-            </button>
-            <button
-              class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
-            >
-              $100
-            </button>
-            <button
-              class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
-            >
-              $100
-            </button>
-            <button
-              class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
-            >
-              $100
-            </button>
-            <button
-              class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
-            >
-              $100
-            </button>
-            <button
-              class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
-            >
-              $100
-            </button>
-            <button
-              class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
-            >
-              $100
-            </button>
-            <button
-              class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
-            >
-              $100
-            </button>
-          </div>
-          <button
-            type="button"
-            class="px-6 py-3 text-14 text-[#fff] justify-center bg-[#003087] rounded-xl flex items-center gap-2 text-center transition-opacity duration-300 hover:opacity-70 w-fit mx-auto"
-          >
-            <img src="../assets/svgs/image 167.png" alt="" />
-            Withdraw via Paypal
-          </button>
-          <p class="text-12 lg:text-base text-grey-400 mt-8 line-clamp-1">
-            By clicking check out you agree to the
-            <a href="#" class="underline-offset-1 underline decoration-1"
-              >License Terms</a
-            >
-            and
-            <a href="#" class="underline-offset-1 underline decoration-1"
-              >User Terms.</a
-            >
-          </p>
-        </div>
-      </div>
-      <section class="mt-[120px] md:mt-[135px] lg:mt-[165px]">
-        <div class="bg-[#fff] rounded-xl md:px-4 md:py-3.5">
-          <div class="grid grid-1 lg:grid-cols-2 gap-4">
-            <div class="relative group overflow-hidden rounded-xl">
-              <img
-                src="../assets/images/wallet-banner.jpg"
-                alt=""
-                class="w-full h-full"
-              />
+            <!-- SIGNED IN MOBILE -->
+            <div class="flex items-center space-x-4 md:hidden">
+              <button class="rounded-lg bg-grey-100 p-1.5">
+                <img
+                  width="24"
+                  height="24"
+                  src="../assets/svgs/notification.svg"
+                  alt=""
+                />
+              </button>
+              <button class="rounded-lg bg-grey-100 p-1.5">
+                <img src="../assets/svgs/messenger.svg" alt="" />
+              </button>
+            </div>
+            <!-- SIGNED IN -->
+  
+            <!-- SIGNED IN PC-->
+            <div class="flex items-center space-x-4 max-md:hidden xl:space-x-6">
+              <button class="bg-grey-1 rounded-lg">
+                <img src="../assets/svgs/document.svg" alt="" />
+              </button>
+              <button class="">
+                <img src="../assets/svgs/sol.svg" alt="" />
+              </button>
+              <button class="">
+                <img src="../assets/svgs/export-pc.svg" alt="" />
+              </button>
               <div
-                class="absolute bottom-0 left-0 right-0 w-full bg-black/10 backdrop-blur-10 py-8 h-fit md:h-[124px] px-6 flex items-center"
+                id="ms-wrapper"
+                class="relative flex items-center justify-center"
               >
-                <div class="">
-                  <p class="text-grey-200 text-14 lg:text-base font-semibold">
-                    Clib balance
-                  </p>
-                  <p
-                    class="text-[#fff] font-semibold text-26 lg:text-32 xl:text-40 mt-1"
-                  >
-                    $200.00
-                  </p>
+                <button id="toggle-ms" class="toggle-ms">
+                  <img
+                    class="ms-icon"
+                    src="../assets/svgs/messenger-pc.svg"
+                    alt=""
+                  />
+                </button>
+                <div id="ms-popup" class="ms-popup">
+                  <div class="flex items-center justify-between px-4 pb-2 pt-4">
+                    <span class="text-20 font-semibold">Message</span>
+                    <div class="flex items-center gap-2">
+                      <span class="text-14">New chat</span>
+                      <button class="rounded-xl bg-grey-200 p-1.5 duration-100">
+                        <img
+                          class="h-6 w-6"
+                          src="../assets/svgs/edit.svg"
+                          alt=""
+                        />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="mt-2 px-4">
+                    <div
+                      class="flex items-center gap-2 rounded-xl bg-grey-100 p-3"
+                    >
+                      <img
+                        class="aspect-square w-5"
+                        src="../assets/svgs/search-people.svg"
+                        loading="lazy"
+                        alt=""
+                      />
+                      <input
+                        class="h-full flex-1 bg-transparent text-14 outline-none placeholder:text-grey-300"
+                        placeholder="Search people"
+                      />
+                    </div>
+                  </div>
+                  <ul class="mt-2 px-4">
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="../assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="Benny Andersson"
+                          />
+                          <div>
+                            <div class="line-clamp-1 text-14 font-semibold">
+                              Benny Andersson
+                            </div>
+                            <div class="line-clamp-1 text-14 font-semibold">
+                              aww
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">3d</div>
+                          <span class="dot !h-3 !w-3 !bg-branding"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between border-r-4 border-r-branding bg-[linear-gradient(270deg,#F3FCFF_0%,rgba(243,252,255,0.00)_103.09%)] px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="../assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="Son Tung M-TP"
+                          />
+                          <div>
+                            <div
+                              class="line-clamp-1 flex items-center gap-1 text-14 font-semibold"
+                            >
+                              Son Tung M-TP
+                              <img src="../assets/svgs/verify.svg" alt="" />
+                            </div>
+                            <div class="line-clamp-1 text-14">
+                              Send a playlist
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">3d</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="../assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="Donna Summer"
+                          />
+                          <div>
+                            <div class="line-clamp-1 text-14 font-semibold">
+                              Donna Summer
+                            </div>
+                            <div class="line-clamp-1 text-14">Hi</div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">3d</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="../assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="James"
+                          />
+                          <div>
+                            <div class="text-14 font-semibold">James</div>
+                            <div class="line-clamp-1 text-14">
+                              Wow, this is really epic
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">3w</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="../assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="James"
+                          />
+                          <div>
+                            <div class="text-14 font-semibold">Roger Daltrey</div>
+                            <div class="line-clamp-1 text-14">woohoooo</div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">17/03/2023</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="../assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="James"
+                          />
+                          <div>
+                            <div class="text-14 font-semibold">Big Star</div>
+                            <div class="line-clamp-1 text-14">
+                              Haha that's terrifying 😂
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">05/03/2023</div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="mt-2 py-3 text-center">
+                    <a
+                      href="#"
+                      class="text-14 font-semibold text-grey-400 hover:text-branding-secondary hover:underline"
+                      >View all message</a
+                    >
+                  </div>
                 </div>
-                <svg
-                  class="absolute top-0 right-0"
-                  width="105"
-                  height="90"
-                  viewBox="0 0 105 90"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+              </div>
+              <div
+                id="noti-wrapper"
+                class="relative flex items-center justify-center"
+              >
+                <button id="toggle-notification" class="">
+                  <img
+                    class="noti-icon"
+                    src="../assets/svgs/notification-pc.svg"
+                    alt=""
+                  />
+                </button>
+                <div id="noti-popup" class="noti-popup">
+                  <div class="flex items-center justify-between px-4 pb-2 pt-4">
+                    <span class="text-20 font-semibold">Notification</span>
+                    <button
+                      class="transition-transform duration-100 hover:rotate-180"
+                    >
+                      <img
+                        class="h-6 w-6"
+                        src="../assets/svgs/setting.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                  <div class="px-4">
+                    <div class="grid grid-cols-3 items-center">
+                      <button
+                        class="h-[60px] border-b-4 border-b-branding-secondary text-center text-base font-semibold text-branding-secondary"
+                      >
+                        All
+                      </button>
+                      <button
+                        class="h-[60px] text-center text-base font-semibold text-grey-300"
+                      >
+                        Unread
+                      </button>
+                      <button
+                        class="h-[60px] text-center text-base font-semibold text-grey-300"
+                      >
+                        Following
+                      </button>
+                    </div>
+                  </div>
+                  <ul class="mt-4 px-2">
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Ariana Grande"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../assets/svgs/ms-text.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Macos</span> commented
+                              on your post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                        <span class="dot !h-3 !w-3 !bg-branding"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Ariana Grande"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../assets/svgs/react-noti.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Josh</span> commented on
+                              your post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Harry"
+                            />
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Harry</span> following
+                              you
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                        <button class="btn-primary">Follow</button>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Sona"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../assets/svgs/ms-text.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Sona</span> commented on
+                              your post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Been"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../assets/svgs/react-love.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Been</span> liked your
+                              post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                        <span class="dot !h-3 !w-3 !bg-branding"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Harry"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../assets/svgs/react-love.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Harry</span> liked your
+                              post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                        <span class="dot !h-3 !w-3 !bg-branding"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Jean"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../assets/svgs/ms-text.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Jean</span> commented on
+                              your post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="mt-2 py-3 text-center">
+                    <a
+                      href="#"
+                      class="text-14 font-semibold text-grey-400 hover:text-branding-secondary hover:underline"
+                      >View all notifications</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <button class="">
+                <img src="../assets/svgs/wallet-pc.svg" alt="" />
+              </button>
+              <a href="./profile" class="flex items-center gap-2">
+                <img
+                  src="../assets/images/avatar1.jpg"
+                  class="h-11 w-11 rounded-lg object-cover"
+                  loading="lazy"
+                  alt="Iberd"
+                />
+                <span>Iberd</span>
+              </a>
+            </div>
+            <!-- SIGNED IN -->
+  
+            <!-- NOT SIGN IN <div class="flex items-center space-x-4">
+              <button>
+                <img src="../assets/svgs/export.svg" alt="" />
+              </button>
+              <a href="login.html" class="btn-secondary text-14 md:text-base"
+                >Sign in</a
+              >
+            </div> NOT SIGN IN -->
+          </div>
+        </div>
+        <div
+          class="border-b border-b-grey-200 bg-white md:border-none md:bg-grey-100 md:py-1.5 xl:py-2"
+        >
+          <ul
+            class="container relative grid grid-cols-2 items-center gap-[35px] md:grid-cols-5"
+          >
+            <li>
+              <a href="../music/index.html" class="header-item-link">music</a>
+            </li>
+            <li>
+              <a href="../videos/index.html" class="header-item-link">videos</a>
+            </li>
+            <li class="max-md:hidden">
+              <a
+                href="/"
+                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+              >
+                <img
+                  class="aspect-square w-20 lg:w-[116px] object-contain"
+                  src="../assets/svgs/logo.svg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="max-md:hidden">
+              <a
+                href="../marketplace/marketplace-music-desktop.html"
+                class="header-item-link"
+                >marketplace</a
+              >
+            </li>
+            <li class="max-md:hidden">
+              <a href="../voting/music-voting.html" class="header-item-link"
+                >voting</a
+              >
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main class="container relative">
+        <div class="modal-paypal hidden overlay px-4">
+          <div
+            id="modal-paypal"
+            class="abs-center bg-[#fff] p-6 rounded-xl flex flex-col justify-center items-center w-[590px] max-w-[95%]"
+          >
+            <img
+              src="../assets/svgs/close.svg"
+              alt=""
+              class="absolute top-4 right-4 w-4 close-modal"
+            />
+            <h5
+              class="text-18 lg:text-24 font-semibold text-neutral-dark-500 mb-2"
+            >
+              Top-up
+            </h5>
+            <p class="text-12 lg:text-base text-grey-400">
+              Select the amount you want to deposit in to your wallet
+            </p>
+            <div
+              class="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-3 xl:gap-4 my-4 lg:my-6 xl:my-8 w-full"
+            >
+              <button
+                class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+              >
+                $100
+              </button>
+              <button
+                class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+              >
+                $100
+              </button>
+              <button
+                class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+              >
+                $100
+              </button>
+              <button
+                class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+              >
+                $100
+              </button>
+              <button
+                class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+              >
+                $100
+              </button>
+              <button
+                class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+              >
+                $100
+              </button>
+              <button
+                class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+              >
+                $100
+              </button>
+              <button
+                class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+              >
+                $100
+              </button>
+            </div>
+            <button
+              type="button"
+              class="px-6 py-3 text-14 text-[#fff] justify-center bg-[#003087] rounded-xl flex items-center gap-2 text-center transition-opacity duration-300 hover:opacity-70 w-fit mx-auto"
+            >
+              <img src="../assets/svgs/image 167.png" alt="" />
+              Deposit via Paypal
+            </button>
+            <p class="text-12 lg:text-base text-grey-400 mt-8 line-clamp-1">
+              By clicking check out you agree to the
+              <a href="#" class="underline-offset-1 underline decoration-1"
+                >License Terms</a
+              >
+              and
+              <a href="#" class="underline-offset-1 underline decoration-1"
+                >User Terms.</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="modal-money hidden overlay px-4">
+          <div
+            id="modal-money"
+            class="abs-center bg-[#fff] p-6 rounded-xl flex flex-col justify-center items-center w-[590px] max-w-[95%]"
+          >
+            <img
+              src="../assets/svgs/close.svg"
+              alt=""
+              class="absolute top-4 right-4 w-4 close-modal"
+            />
+            <h5
+              class="text-20 lg:text-24 font-semibold text-neutral-dark-500 mb-2"
+            >
+              Withdraw money
+            </h5>
+            <p class="text-14 text-center lg:text-base text-grey-400">
+              Select the amount you want to withdraw into your Paypal
+            </p>
+            <div
+              class="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-3 xl:gap-4 my-4 lg:my-6 xl:my-8 w-full"
+            >
+              <button
+                class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+              >
+                $100
+              </button>
+              <button
+                class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+              >
+                $100
+              </button>
+              <button
+                class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+              >
+                $100
+              </button>
+              <button
+                class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+              >
+                $100
+              </button>
+              <button
+                class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+              >
+                $100
+              </button>
+              <button
+                class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+              >
+                $100
+              </button>
+              <button
+                class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+              >
+                $100
+              </button>
+              <button
+                class="p-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+              >
+                $100
+              </button>
+            </div>
+            <button
+              type="button"
+              class="px-6 py-3 text-14 text-[#fff] justify-center bg-[#003087] rounded-xl flex items-center gap-2 text-center transition-opacity duration-300 hover:opacity-70 w-fit mx-auto"
+            >
+              <img src="../assets/svgs/image 167.png" alt="" />
+              Withdraw via Paypal
+            </button>
+            <p class="text-12 lg:text-base text-grey-400 mt-8 line-clamp-1">
+              By clicking check out you agree to the
+              <a href="#" class="underline-offset-1 underline decoration-1"
+                >License Terms</a
+              >
+              and
+              <a href="#" class="underline-offset-1 underline decoration-1"
+                >User Terms.</a
+              >
+            </p>
+          </div>
+        </div>
+        <section class="mt-[120px] md:mt-[135px] lg:mt-[165px]">
+          <div class="bg-[#fff] rounded-xl md:px-4 md:py-3.5">
+            <div class="grid grid-1 lg:grid-cols-2 gap-4">
+              <div class="relative group overflow-hidden rounded-xl">
+                <img
+                  src="../assets/images/wallet-banner.jpg"
+                  alt=""
+                  class="w-full h-full"
+                />
+                <div
+                  class="absolute bottom-0 left-0 right-0 w-full bg-black/10 backdrop-blur-10 py-8 h-fit md:h-[124px] px-6 flex items-center"
                 >
-                  <g opacity="0.2" clip-path="url(#clip0_2008_225985)">
-                    <path
-                      d="M19.2154 52.5773L39 41.1547L58.7846 52.5773V75.4226L39 86.8453L19.2154 75.4226V52.5773Z"
-                      stroke="#F7F7F7"
-                      stroke-width="2"
-                    />
-                    <path
-                      d="M46.2106 20.8273L59.5 13.1547L72.7894 20.8273V36.1726L59.5 43.8453L46.2106 36.1726V20.8273Z"
-                      stroke="#F7F7F7"
-                      stroke-width="2"
-                    />
-                    <path
-                      d="M33.2058 5.07735L40 1.1547L46.7942 5.07735V12.9227L40 16.8453L33.2058 12.9227V5.07735Z"
-                      stroke="#F7F7F7"
-                      stroke-width="2"
-                    />
-                    <path
-                      d="M15.6077 24.5774L25 19.1547L34.3923 24.5774V35.4226L25 40.8453L15.6077 35.4226V24.5774Z"
-                      stroke="#F7F7F7"
-                      stroke-width="2"
-                    />
-                    <path
-                      d="M71.2728 3.32735L78.5 -0.845299L85.7272 3.32735V11.6727L78.5 15.8453L71.2728 11.6727V3.32735Z"
-                      stroke="#F7F7F7"
-                      stroke-width="2"
-                    />
-                    <path
-                      d="M52.2728 -5.67265L59.5 -9.8453L66.7272 -5.67265V2.67265L59.5 6.8453L52.2728 2.67265V-5.67265Z"
-                      stroke="#F7F7F7"
-                      stroke-width="2"
-                    />
-                    <path
-                      d="M92.9378 4.07735L98 1.1547L103.062 4.07735V9.92265L98 12.8453L92.9378 9.92265V4.07735Z"
-                      stroke="#F7F7F7"
-                      stroke-width="2"
-                    />
-                    <path
-                      d="M80.8756 24.5774L92 18.1547L103.124 24.5774V37.4226L92 43.8453L80.8756 37.4226V24.5774Z"
-                      stroke="#F7F7F7"
-                      stroke-width="2"
-                    />
-                    <path
-                      d="M14.9378 4.07735L20 1.1547L25.0622 4.07735V9.92265L20 12.8453L14.9378 9.92265V4.07735Z"
-                      stroke="#F7F7F7"
-                      stroke-width="2"
-                    />
-                    <path
-                      d="M67.0766 53.3273L79.5 46.1547L91.9234 53.3273V67.6726L79.5 74.8453L67.0766 67.6726V53.3273Z"
-                      stroke="#F7F7F7"
-                      stroke-width="2"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_2008_225985">
-                      <rect width="105" height="90" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
+                  <div class="">
+                    <p class="text-grey-200 text-14 lg:text-base font-semibold">
+                      Clib balance
+                    </p>
+                    <p
+                      class="text-[#fff] font-semibold text-26 lg:text-32 xl:text-40 mt-1"
+                    >
+                      $200.00
+                    </p>
+                  </div>
+                  <svg
+                    class="absolute top-0 right-0"
+                    width="105"
+                    height="90"
+                    viewBox="0 0 105 90"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g opacity="0.2" clip-path="url(#clip0_2008_225985)">
+                      <path
+                        d="M19.2154 52.5773L39 41.1547L58.7846 52.5773V75.4226L39 86.8453L19.2154 75.4226V52.5773Z"
+                        stroke="#F7F7F7"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M46.2106 20.8273L59.5 13.1547L72.7894 20.8273V36.1726L59.5 43.8453L46.2106 36.1726V20.8273Z"
+                        stroke="#F7F7F7"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M33.2058 5.07735L40 1.1547L46.7942 5.07735V12.9227L40 16.8453L33.2058 12.9227V5.07735Z"
+                        stroke="#F7F7F7"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M15.6077 24.5774L25 19.1547L34.3923 24.5774V35.4226L25 40.8453L15.6077 35.4226V24.5774Z"
+                        stroke="#F7F7F7"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M71.2728 3.32735L78.5 -0.845299L85.7272 3.32735V11.6727L78.5 15.8453L71.2728 11.6727V3.32735Z"
+                        stroke="#F7F7F7"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M52.2728 -5.67265L59.5 -9.8453L66.7272 -5.67265V2.67265L59.5 6.8453L52.2728 2.67265V-5.67265Z"
+                        stroke="#F7F7F7"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M92.9378 4.07735L98 1.1547L103.062 4.07735V9.92265L98 12.8453L92.9378 9.92265V4.07735Z"
+                        stroke="#F7F7F7"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M80.8756 24.5774L92 18.1547L103.124 24.5774V37.4226L92 43.8453L80.8756 37.4226V24.5774Z"
+                        stroke="#F7F7F7"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M14.9378 4.07735L20 1.1547L25.0622 4.07735V9.92265L20 12.8453L14.9378 9.92265V4.07735Z"
+                        stroke="#F7F7F7"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M67.0766 53.3273L79.5 46.1547L91.9234 53.3273V67.6726L79.5 74.8453L67.0766 67.6726V53.3273Z"
+                        stroke="#F7F7F7"
+                        stroke-width="2"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2008_225985">
+                        <rect width="105" height="90" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="px-4 py-5 lg:py-7 xl:py-9 lg:px-6 border rounded-xl flex flex-col justify-center"
+              >
+                <p class="text-base lg:text-20 font-semibold">Transfer</p>
+                <button
+                  type="button"
+                  class="px-6 py-3 btn-paypal text-14 lg:text-base font-semibold w-full text-[#fff] justify-center bg-[#003087] rounded-xl mt-6 mb-2 lg:mb-4 flex items-center gap-2 text-center transition-opacity duration-300 hover:opacity-70"
+                >
+                  <img src="../assets/svgs/image 167.png" alt="" />
+                  Paypal to Clib wallet
+                </button>
+                <button
+                  type="button"
+                  class="px-6 py-3 btn-monney text-14 lg:text-base font-semibold w-full text-neutral-dark-500 justify-center bg-grey-200 rounded-xl flex text-center items-center gap-2 transition-opacity duration-300 hover:opacity-70"
+                >
+                  <img src="../assets/svgs/money-recive.png " alt="" />
+                  Withdraw money
+                </button>
               </div>
             </div>
-            <div
-              class="px-4 py-5 lg:py-7 xl:py-9 lg:px-6 border rounded-xl flex flex-col justify-center"
-            >
-              <p class="text-base lg:text-20 font-semibold">Transfer</p>
-              <button
-                type="button"
-                class="px-6 py-3 btn-paypal text-14 lg:text-base font-semibold w-full text-[#fff] justify-center bg-[#003087] rounded-xl mt-6 mb-2 lg:mb-4 flex items-center gap-2 text-center transition-opacity duration-300 hover:opacity-70"
+            <div class="bg-white rounded-xl">
+              <div
+                class="text-neutral-dark-500 text-base lg:text-20 font-semibold mb-3 mt-6"
               >
-                <img src="../assets/svgs/image 167.png" alt="" />
-                Paypal to Clib wallet
-              </button>
-              <button
-                type="button"
-                class="px-6 py-3 btn-monney text-14 lg:text-base font-semibold w-full text-neutral-dark-500 justify-center bg-grey-200 rounded-xl flex text-center items-center gap-2 transition-opacity duration-300 hover:opacity-70"
-              >
-                <img src="../assets/svgs/money-recive.png " alt="" />
-                Withdraw money
-              </button>
+                History activity
+              </div>
+  
+              <ul class="mt-2">
+                <li class="py-2 flex items-center gap-6">
+                  <div class="flex flex-[2] items-center">
+                    <div
+                      class="text-14 flex-1 flex items-center justify-between gap-2 lg:text-base text-grey-400"
+                    >
+                      <div class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
+                        <img
+                          class="w-10 lg:w-12 aspect-square rounded-lg"
+                          src="../assets/images/avatar-about.png"
+                          alt=""
+                        />
+                        <div>
+                          <div class="text-14 lg:text-base line-clamp-1">
+                            It's My Life
+                          </div>
+                          <div
+                            class="text-12 text-grey-400 lg:text-14 line-clamp-1"
+                          >
+                            The Marvelettes
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="text-14 flex-1 lg:text-base text-grey-400 line-clamp-1"
+                  >
+                    Jul 5 2023, 19:00 PM
+                  </div>
+  
+                  <div
+                    class="text-14 lg:text-20 text-[#02BA4B] w-14 font-semibold lg:w-20 text-right"
+                  >
+                    + $70
+                  </div>
+                </li>
+                <li class="py-2 flex items-center gap-6">
+                  <div class="flex flex-[2] items-center">
+                    <div
+                      class="text-14 flex-1 flex items-center justify-between gap-2 lg:text-base text-grey-400"
+                    >
+                      <div class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
+                        <img
+                          class="w-10 lg:w-12 aspect-square rounded-lg"
+                          src="../assets/images/avatar-about.png"
+                          alt=""
+                        />
+                        <div>
+                          <div class="text-14 lg:text-base line-clamp-1">
+                            It's My Life
+                          </div>
+                          <div
+                            class="text-12 text-grey-400 lg:text-14 line-clamp-1"
+                          >
+                            The Marvelettes
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="text-14 flex-1 lg:text-base text-grey-400 line-clamp-1"
+                  >
+                    Jul 5 2023, 19:00 PM
+                  </div>
+  
+                  <div
+                    class="text-14 lg:text-20 text-[#EF5350] w-14 font-semibold lg:w-20 text-right"
+                  >
+                    - $70
+                  </div>
+                </li>
+                <li class="py-2 flex items-center gap-6">
+                  <div class="flex flex-[2] items-center">
+                    <div
+                      class="text-14 flex-1 flex items-center justify-between gap-2 lg:text-base text-grey-400"
+                    >
+                      <div class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
+                        <img
+                          class="w-10 lg:w-12 aspect-square rounded-lg"
+                          src="../assets/images/avatar-about.png"
+                          alt=""
+                        />
+                        <div>
+                          <div class="text-14 lg:text-base line-clamp-1">
+                            It's My Life
+                          </div>
+                          <div
+                            class="text-12 text-grey-400 lg:text-14 line-clamp-1"
+                          >
+                            The Marvelettes
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="text-14 flex-1 lg:text-base text-grey-400 line-clamp-1"
+                  >
+                    Jul 5 2023, 19:00 PM
+                  </div>
+  
+                  <div
+                    class="text-14 lg:text-20 text-[#EF5350] w-14 font-semibold lg:w-20 text-right"
+                  >
+                    - $70
+                  </div>
+                </li>
+                <li class="py-2 flex items-center gap-6">
+                  <div class="flex flex-[2] items-center">
+                    <div
+                      class="text-14 flex-1 flex items-center justify-between gap-2 lg:text-base text-grey-400"
+                    >
+                      <div class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
+                        <img
+                          class="w-10 lg:w-12 aspect-square rounded-lg"
+                          src="../assets/images/avatar-about.png"
+                          alt=""
+                        />
+                        <div>
+                          <div class="text-14 lg:text-base line-clamp-1">
+                            It's My Life
+                          </div>
+                          <div
+                            class="text-12 text-grey-400 lg:text-14 line-clamp-1"
+                          >
+                            The Marvelettes
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="text-14 flex-1 lg:text-base text-grey-400 line-clamp-1"
+                  >
+                    Jul 5 2023, 19:00 PM
+                  </div>
+  
+                  <div
+                    class="text-14 lg:text-20 text-[#EF5350] w-14 font-semibold lg:w-20 text-right"
+                  >
+                    - $70
+                  </div>
+                </li>
+                <li class="py-2 flex items-center gap-6">
+                  <div class="flex flex-[2] items-center">
+                    <div
+                      class="text-14 flex-1 flex items-center justify-between gap-2 lg:text-base text-grey-400"
+                    >
+                      <div class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
+                        <img
+                          class="w-10 lg:w-12 aspect-square rounded-lg"
+                          src="../assets/images/avatar-about.png"
+                          alt=""
+                        />
+                        <div>
+                          <div class="text-14 lg:text-base line-clamp-1">
+                            It's My Life
+                          </div>
+                          <div
+                            class="text-12 text-grey-400 lg:text-14 line-clamp-1"
+                          >
+                            The Marvelettes
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="text-14 flex-1 lg:text-base text-grey-400 line-clamp-1"
+                  >
+                    Jul 5 2023, 19:00 PM
+                  </div>
+  
+                  <div
+                    class="text-14 lg:text-20 text-[#EF5350] w-14 font-semibold lg:w-20 text-right"
+                  >
+                    - $70
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="bg-white rounded-xl">
-            <div
-              class="text-neutral-dark-500 text-base lg:text-20 font-semibold mb-3 mt-6"
-            >
-              History activity
+        </section>
+      </main>
+      <footer
+        class="mt-[100px] border-t border-t-grey-400 pb-6 pt-4 max-md:hidden"
+      >
+        <div class="container flex items-center justify-between">
+          <div class="flex items-center">
+            <div class="-mb-0.5 mr-6 text-14 text-grey-400">
+              Copyright © 2023 Clib Music. All rights reserved.
             </div>
-
-            <ul class="mt-2">
-              <li class="py-2 flex items-center gap-6">
-                <div class="flex flex-[2] items-center">
-                  <div
-                    class="text-14 flex-1 flex items-center justify-between gap-2 lg:text-base text-grey-400"
-                  >
-                    <div class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
-                      <img
-                        class="w-10 lg:w-12 aspect-square rounded-lg"
-                        src="../assets/images/avatar-about.png"
-                        alt=""
-                      />
-                      <div>
-                        <div class="text-14 lg:text-base line-clamp-1">
-                          It's My Life
-                        </div>
-                        <div
-                          class="text-12 text-grey-400 lg:text-14 line-clamp-1"
-                        >
-                          The Marvelettes
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="text-14 flex-1 lg:text-base text-grey-400 line-clamp-1"
-                >
-                  Jul 5 2023, 19:00 PM
-                </div>
-
-                <div
-                  class="text-14 lg:text-20 text-[#02BA4B] w-14 font-semibold lg:w-20 text-right"
-                >
-                  + $70
-                </div>
+            <ul class="flex items-center gap-3">
+              <li>
+                <a href="#" class="text-14 text-grey-400">Privacy Policy</a>
               </li>
-              <li class="py-2 flex items-center gap-6">
-                <div class="flex flex-[2] items-center">
-                  <div
-                    class="text-14 flex-1 flex items-center justify-between gap-2 lg:text-base text-grey-400"
-                  >
-                    <div class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
-                      <img
-                        class="w-10 lg:w-12 aspect-square rounded-lg"
-                        src="../assets/images/avatar-about.png"
-                        alt=""
-                      />
-                      <div>
-                        <div class="text-14 lg:text-base line-clamp-1">
-                          It's My Life
-                        </div>
-                        <div
-                          class="text-12 text-grey-400 lg:text-14 line-clamp-1"
-                        >
-                          The Marvelettes
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="text-14 flex-1 lg:text-base text-grey-400 line-clamp-1"
-                >
-                  Jul 5 2023, 19:00 PM
-                </div>
-
-                <div
-                  class="text-14 lg:text-20 text-[#EF5350] w-14 font-semibold lg:w-20 text-right"
-                >
-                  - $70
-                </div>
+              <li>
+                <span class="footer-divider"></span>
               </li>
-              <li class="py-2 flex items-center gap-6">
-                <div class="flex flex-[2] items-center">
-                  <div
-                    class="text-14 flex-1 flex items-center justify-between gap-2 lg:text-base text-grey-400"
-                  >
-                    <div class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
-                      <img
-                        class="w-10 lg:w-12 aspect-square rounded-lg"
-                        src="../assets/images/avatar-about.png"
-                        alt=""
-                      />
-                      <div>
-                        <div class="text-14 lg:text-base line-clamp-1">
-                          It's My Life
-                        </div>
-                        <div
-                          class="text-12 text-grey-400 lg:text-14 line-clamp-1"
-                        >
-                          The Marvelettes
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="text-14 flex-1 lg:text-base text-grey-400 line-clamp-1"
-                >
-                  Jul 5 2023, 19:00 PM
-                </div>
-
-                <div
-                  class="text-14 lg:text-20 text-[#EF5350] w-14 font-semibold lg:w-20 text-right"
-                >
-                  - $70
-                </div>
+              <li>
+                <a href="#" class="text-14 text-grey-400">Terms of Use</a>
               </li>
-              <li class="py-2 flex items-center gap-6">
-                <div class="flex flex-[2] items-center">
-                  <div
-                    class="text-14 flex-1 flex items-center justify-between gap-2 lg:text-base text-grey-400"
-                  >
-                    <div class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
-                      <img
-                        class="w-10 lg:w-12 aspect-square rounded-lg"
-                        src="../assets/images/avatar-about.png"
-                        alt=""
-                      />
-                      <div>
-                        <div class="text-14 lg:text-base line-clamp-1">
-                          It's My Life
-                        </div>
-                        <div
-                          class="text-12 text-grey-400 lg:text-14 line-clamp-1"
-                        >
-                          The Marvelettes
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="text-14 flex-1 lg:text-base text-grey-400 line-clamp-1"
-                >
-                  Jul 5 2023, 19:00 PM
-                </div>
-
-                <div
-                  class="text-14 lg:text-20 text-[#EF5350] w-14 font-semibold lg:w-20 text-right"
-                >
-                  - $70
-                </div>
+              <li>
+                <span class="footer-divider"></span>
               </li>
-              <li class="py-2 flex items-center gap-6">
-                <div class="flex flex-[2] items-center">
-                  <div
-                    class="text-14 flex-1 flex items-center justify-between gap-2 lg:text-base text-grey-400"
-                  >
-                    <div class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
-                      <img
-                        class="w-10 lg:w-12 aspect-square rounded-lg"
-                        src="../assets/images/avatar-about.png"
-                        alt=""
-                      />
-                      <div>
-                        <div class="text-14 lg:text-base line-clamp-1">
-                          It's My Life
-                        </div>
-                        <div
-                          class="text-12 text-grey-400 lg:text-14 line-clamp-1"
-                        >
-                          The Marvelettes
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="text-14 flex-1 lg:text-base text-grey-400 line-clamp-1"
-                >
-                  Jul 5 2023, 19:00 PM
-                </div>
-
-                <div
-                  class="text-14 lg:text-20 text-[#EF5350] w-14 font-semibold lg:w-20 text-right"
-                >
-                  - $70
-                </div>
+              <li>
+                <a href="#" class="text-14 text-grey-400">Cookie Warning</a>
+              </li>
+              <li>
+                <span class="footer-divider"></span>
+              </li>
+              <li>
+                <a href="#" class="text-14 text-grey-400">Support</a>
               </li>
             </ul>
           </div>
-        </div>
-      </section>
-    </main>
-    <footer
-      class="mt-[100px] border-t border-t-grey-400 pb-6 pt-4 max-md:hidden"
-    >
-      <div class="container flex items-center justify-between">
-        <div class="flex items-center">
-          <div class="-mb-0.5 mr-6 text-14 text-grey-400">
-            Copyright © 2023 Clib Music. All rights reserved.
-          </div>
           <ul class="flex items-center gap-3">
             <li>
-              <a href="#" class="text-14 text-grey-400">Privacy Policy</a>
+              <a href="#" class="lang-footer-item active">English</a>
             </li>
             <li>
               <span class="footer-divider"></span>
             </li>
             <li>
-              <a href="#" class="text-14 text-grey-400">Terms of Use</a>
+              <a href="#" class="lang-footer-item">Tiếng Việt</a>
             </li>
             <li>
               <span class="footer-divider"></span>
             </li>
             <li>
-              <a href="#" class="text-14 text-grey-400">Cookie Warning</a>
+              <a href="#" class="lang-footer-item">简体中文</a>
             </li>
             <li>
               <span class="footer-divider"></span>
             </li>
             <li>
-              <a href="#" class="text-14 text-grey-400">Support</a>
+              <a href="#" class="lang-footer-item">한국어</a>
             </li>
           </ul>
         </div>
-        <ul class="flex items-center gap-3">
-          <li>
-            <a href="#" class="lang-footer-item active">English</a>
-          </li>
-          <li>
-            <span class="footer-divider"></span>
-          </li>
-          <li>
-            <a href="#" class="lang-footer-item">Tiếng Việt</a>
-          </li>
-          <li>
-            <span class="footer-divider"></span>
-          </li>
-          <li>
-            <a href="#" class="lang-footer-item">简体中文</a>
-          </li>
-          <li>
-            <span class="footer-divider"></span>
-          </li>
-          <li>
-            <a href="#" class="lang-footer-item">한국어</a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-    <div id="header-tab-modal" class="overlay header-tab-modal">
-      <div class="header-tab-modal--inner">
-        <div class="flex-1">
-          <button
-            id="close-header-tab-modal"
-            class="flex w-full items-center justify-end"
-          >
-            <img width="16" height="16" src="../assets/svgs/close.svg" alt="" />
-          </button>
-          <div class="mt-4 flex items-center gap-3 md:hidden">
-            <img
-              class="rounded-2xl object-cover"
-              width="64"
-              height="64"
-              loading="lazy"
-              src="../assets/images/artists/2.png"
-              alt=""
-            />
-            <div>
-              <div class="flex items-center gap-1 text-14 font-semibold">
-                Son Tung M-TP <img src="../assets/svgs/verify.svg" alt="" />
-              </div>
-              <div class="mt-2 flex items-center gap-3 text-14 text-grey-400">
-                <div><span class="font-semibold">53K</span> Followers</div>
-                <div><span class="font-semibold">12,3K</span> Following</div>
+      </footer>
+      <div id="header-tab-modal" class="overlay header-tab-modal">
+        <div class="header-tab-modal--inner">
+          <div class="flex-1">
+            <button
+              id="close-header-tab-modal"
+              class="flex w-full items-center justify-end"
+            >
+              <img width="16" height="16" src="../assets/svgs/close.svg" alt="" />
+            </button>
+            <div class="mt-4 flex items-center gap-3 md:hidden">
+              <img
+                class="rounded-2xl object-cover"
+                width="64"
+                height="64"
+                loading="lazy"
+                src="../assets/images/artists/2.png"
+                alt=""
+              />
+              <div>
+                <div class="flex items-center gap-1 text-14 font-semibold">
+                  Son Tung M-TP <img src="../assets/svgs/verify.svg" alt="" />
+                </div>
+                <div class="mt-2 flex items-center gap-3 text-14 text-grey-400">
+                  <div><span class="font-semibold">53K</span> Followers</div>
+                  <div><span class="font-semibold">12,3K</span> Following</div>
+                </div>
               </div>
             </div>
+            <ul class="mt-[14px]">
+              <li class="header-link">
+                <a
+                  href="/voting/music-voting.html"
+                  class="flex items-center text-grey-400"
+                  ><img src="../assets/svgs/voting.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >Voting</span
+                  ></a
+                >
+              </li>
+              <li class="header-link">
+                <a href="/wallet.html" class="flex items-center text-grey-400"
+                  ><img src="../assets/svgs/wallet.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >Wallet</span
+                  ></a
+                >
+              </li>
+              <li class="header-link">
+                <a href="/about-us.html" class="flex items-center text-grey-400"
+                  ><img src="../assets/svgs/about-us.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >About us</span
+                  ></a
+                >
+              </li>
+              <li class="header-link">
+                <a href="/setting.html" class="flex items-center text-grey-400"
+                  ><img src="../assets/svgs/setting.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >Setting</span
+                  ></a
+                >
+              </li>
+              <li class="header-link">
+                <a href="/support.html" class="flex items-center text-grey-400"
+                  ><img src="../assets/svgs/support.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >Support</span
+                  ></a
+                >
+              </li>
+              <li class="header-link">
+                <a
+                  href="/privacy-police.html"
+                  class="flex items-center text-grey-400"
+                  ><img src="../assets/svgs/privacy-police.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >Privacy Police</span
+                  ></a
+                >
+              </li>
+            </ul>
+            <div class="mt-[30px] flex items-center justify-center gap-4">
+              <button class="btn-tertiary">Sign out</button>
+            </div>
           </div>
-          <ul class="mt-[14px]">
-            <li class="header-link">
-              <a
-                href="/voting/music-voting.html"
-                class="flex items-center text-grey-400"
-                ><img src="../assets/svgs/voting.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >Voting</span
-                ></a
+          <div
+            class="flex items-center justify-between border-t border-t-grey-200 pt-4"
+          >
+            <div class="flex items-center gap-x-2 text-base">
+              <img src="../assets/svgs/global.svg" alt="" />
+              Language
+            </div>
+            <button
+              class="flex items-center gap-2 rounded-xl bg-grey-100 px-4 py-2"
+            >
+              <img src="../assets/svgs/flags/us.svg" alt="" />
+              English
+            </button>
+          </div>
+        </div>
+      </div>
+</div>
+<!-- mobile -->
+<main class="relative block md:hidden">
+  <div
+    class="container fixed z-50 top-0 left-0 right-0 py-3 bg-white box-shadow flex items-center justify-between"
+  >
+    <div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+      >
+        <path
+          d="M14.9998 19.9201L8.47984 13.4001C7.70984 12.6301 7.70984 11.3701 8.47984 10.6001L14.9998 4.08008"
+          stroke="#52616B"
+          stroke-width="1.5"
+          stroke-miterlimit="10"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
+    <h2 class="text-neutral-dark-500 text-18 font-semibold">Wallet</h2>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+    >
+      <path
+        d="M5 10C3.9 10 3 10.9 3 12C3 13.1 3.9 14 5 14C6.1 14 7 13.1 7 12C7 10.9 6.1 10 5 10Z"
+        fill="#52616B"
+      />
+      <path
+        d="M19 10C17.9 10 17 10.9 17 12C17 13.1 17.9 14 19 14C20.1 14 21 13.1 21 12C21 10.9 20.1 10 19 10Z"
+        fill="#52616B"
+      />
+      <path
+        d="M12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"
+        fill="#52616B"
+      />
+    </svg>
+  </div>
+  <div class="modal-paypal overlay">
+    <div
+      id="modal-paypal"
+      class="fixed bottom-0 md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 bg-[#fff] w-full lg:w-[40%] px-6 pb-6 pt-3 rounded-tr-3xl rounded-tl-3xl md:rounded-xl flex flex-col justify-center items-center"
+    >
+      <div class="flex flex-col justify-center items-center gap-3">
+        <img
+          src="../assets/images/topic/Rectangle 4280.jpg "
+          alt=""
+          class="close-modal"
+        />
+        <h5
+          class="text-18 lg:text-24 font-semibold text-neutral-dark-500 mb-2"
+        >
+          Top-up
+        </h5>
+      </div>
+      <p class="text-12 text-center lg:text-base text-[#52616B]">
+        Select the amount you want to deposit in to your wallet
+      </p>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 my-6 w-full">
+        <button
+          class="py-3 px-8 md:px-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+        >
+          $100
+        </button>
+        <button
+          class="py-3 px-8 md:px-[10px] md:py-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+        >
+          $100
+        </button>
+        <button
+          class="py-3 px-8 md:px-[10px] md:py-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+        >
+          $100
+        </button>
+        <button
+          class="py-3 px-8 md:px-[10px] md:py-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+        >
+          $100
+        </button>
+        <button
+          class="py-3 px-8 md:px-[10px] md:py-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+        >
+          $100
+        </button>
+        <button
+          class="py-3 px-8 md:px-[10px] md:py-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+        >
+          $100
+        </button>
+        <button
+          class="py-3 px-8 md:px-[10px] md:py-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+        >
+          $100
+        </button>
+        <button
+          class="py-3 px-8 md:px-[10px] md:py-[10px] bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+        >
+          $100
+        </button>
+      </div>
+      <button
+        type="button"
+        class="px-6 py-3 text-14 w-full text-[#fff] justify-center bg-[#003087] rounded-xl flex items-center gap-2 text-center transition-opacity duration-300 hover:opacity-70"
+      >
+        <img src="../assets/svgs/image 167.png" alt="" />
+        Paypal to Clib wallet
+      </button>
+      <p class="text-12 lg:text-base text-[#52616B] mt-8">
+        By clicking check out you agree to the License Terms and User Terms.
+      </p>
+    </div>
+  </div>
+  <div class="modal-money overlay">
+    <div
+      class="fixed bottom-0 md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 bg-[#fff] px-6 pb-6 pt-3 rounded-xl flex flex-col justify-center items-center w-full lg:w-[40%]"
+    >
+      <div class="flex flex-col justify-center items-center gap-3">
+        <img
+          src="../assets/images/topic/Rectangle 4280.jpg "
+          alt=""
+          class="close-modal"
+        />
+        <h5
+          class="text-18 lg:text-24 font-semibold text-neutral-dark-500 mb-2"
+        >
+          Withdraw money
+        </h5>
+      </div>
+      <p class="text-12 text-center lg:text-base text-[#52616B]">
+        Select the amount you want to deposit in to your wallet
+      </p>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 my-6 w-full">
+        <button
+          class="py-3 px-8 bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+        >
+          $100
+        </button>
+        <button
+          class="py-3 px-8 bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+        >
+          $100
+        </button>
+        <button
+          class="py-3 px-8 bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+        >
+          $100
+        </button>
+        <button
+          class="py-3 px-8 bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+        >
+          $100
+        </button>
+        <button
+          class="py-3 px-8 bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+        >
+          $100
+        </button>
+        <button
+          class="py-3 px-8 bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+        >
+          $100
+        </button>
+        <button
+          class="py-3 px-8 bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+        >
+          $100
+        </button>
+        <button
+          class="py-3 px-8 bg-grey-200 text-neutral-dark-500 text-14 lg:text-base font-semibold rounded-xl"
+        >
+          $100
+        </button>
+      </div>
+      <button
+        type="button"
+        class="px-6 text-14 md:text-base py-3 w-full text-[#fff] justify-center bg-[#003087] rounded-xl flex items-center gap-2 text-center transition-opacity duration-300 hover:opacity-70"
+      >
+        <img src="../assets/svgs/image 167.png" alt="" />
+        Paypal to Clib wallet
+      </button>
+      <p class="text-12 lg:text-base text-[#52616B] mt-8 line-clamp-1">
+        By clicking check out you agree to the License Terms and User Terms.
+      </p>
+    </div>
+  </div>
+  <section class="container mt-16 mb-8">
+    <div class="md:p-4 bg-[#fff] rounded-xl">
+      <div class="grid grid-1 md:grid-cols-2 gap-4">
+        <div
+          class="relative md:h-[240px] h-[200px] overflow-hidden rounded-xl"
+        >
+          <img
+            src="../assets/images/wallet-banner.jpg"
+            alt=""
+            class="rounded-lg object-cover w-full h-full"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 w-full bg-black/10 backdrop-blur-10 py-8 h-fit md:h-[124px] px-6 flex items-center"
+          >
+            <div class="">
+              <p class="text-grey-200 text-14 lg:text-base font-semibold">
+                Clib balance
+              </p>
+              <p
+                class="text-[#fff] font-semibold text-26 lg:text-32 xl:text-40 mt-1"
               >
-            </li>
-            <li class="header-link">
-              <a href="/wallet.html" class="flex items-center text-grey-400"
-                ><img src="../assets/svgs/wallet.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >Wallet</span
-                ></a
-              >
-            </li>
-            <li class="header-link">
-              <a href="/about-us.html" class="flex items-center text-grey-400"
-                ><img src="../assets/svgs/about-us.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >About us</span
-                ></a
-              >
-            </li>
-            <li class="header-link">
-              <a href="/setting.html" class="flex items-center text-grey-400"
-                ><img src="../assets/svgs/setting.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >Setting</span
-                ></a
-              >
-            </li>
-            <li class="header-link">
-              <a href="/support.html" class="flex items-center text-grey-400"
-                ><img src="../assets/svgs/support.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >Support</span
-                ></a
-              >
-            </li>
-            <li class="header-link">
-              <a
-                href="/privacy-police.html"
-                class="flex items-center text-grey-400"
-                ><img src="../assets/svgs/privacy-police.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >Privacy Police</span
-                ></a
-              >
-            </li>
-          </ul>
-          <div class="mt-[30px] flex items-center justify-center gap-4">
-            <button class="btn-tertiary">Sign out</button>
+                $200.00
+              </p>
+            </div>
+            <svg
+              class="absolute top-0 right-0"
+              width="105"
+              height="90"
+              viewBox="0 0 105 90"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g opacity="0.2" clip-path="url(#clip0_2008_225985)">
+                <path
+                  d="M19.2154 52.5773L39 41.1547L58.7846 52.5773V75.4226L39 86.8453L19.2154 75.4226V52.5773Z"
+                  stroke="#F7F7F7"
+                  stroke-width="2"
+                />
+                <path
+                  d="M46.2106 20.8273L59.5 13.1547L72.7894 20.8273V36.1726L59.5 43.8453L46.2106 36.1726V20.8273Z"
+                  stroke="#F7F7F7"
+                  stroke-width="2"
+                />
+                <path
+                  d="M33.2058 5.07735L40 1.1547L46.7942 5.07735V12.9227L40 16.8453L33.2058 12.9227V5.07735Z"
+                  stroke="#F7F7F7"
+                  stroke-width="2"
+                />
+                <path
+                  d="M15.6077 24.5774L25 19.1547L34.3923 24.5774V35.4226L25 40.8453L15.6077 35.4226V24.5774Z"
+                  stroke="#F7F7F7"
+                  stroke-width="2"
+                />
+                <path
+                  d="M71.2728 3.32735L78.5 -0.845299L85.7272 3.32735V11.6727L78.5 15.8453L71.2728 11.6727V3.32735Z"
+                  stroke="#F7F7F7"
+                  stroke-width="2"
+                />
+                <path
+                  d="M52.2728 -5.67265L59.5 -9.8453L66.7272 -5.67265V2.67265L59.5 6.8453L52.2728 2.67265V-5.67265Z"
+                  stroke="#F7F7F7"
+                  stroke-width="2"
+                />
+                <path
+                  d="M92.9378 4.07735L98 1.1547L103.062 4.07735V9.92265L98 12.8453L92.9378 9.92265V4.07735Z"
+                  stroke="#F7F7F7"
+                  stroke-width="2"
+                />
+                <path
+                  d="M80.8756 24.5774L92 18.1547L103.124 24.5774V37.4226L92 43.8453L80.8756 37.4226V24.5774Z"
+                  stroke="#F7F7F7"
+                  stroke-width="2"
+                />
+                <path
+                  d="M14.9378 4.07735L20 1.1547L25.0622 4.07735V9.92265L20 12.8453L14.9378 9.92265V4.07735Z"
+                  stroke="#F7F7F7"
+                  stroke-width="2"
+                />
+                <path
+                  d="M67.0766 53.3273L79.5 46.1547L91.9234 53.3273V67.6726L79.5 74.8453L67.0766 67.6726V53.3273Z"
+                  stroke="#F7F7F7"
+                  stroke-width="2"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_2008_225985">
+                  <rect width="105" height="90" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
           </div>
         </div>
         <div
-          class="flex items-center justify-between border-t border-t-grey-200 pt-4"
+          class="md:py-9 md:px-6 md:border rounded-xl flex flex-col justify-center"
         >
-          <div class="flex items-center gap-x-2 text-base">
-            <img src="../assets/svgs/global.svg" alt="" />
-            Language
-          </div>
-          <button
-            class="flex items-center gap-2 rounded-xl bg-grey-100 px-4 py-2"
+          <p class="text-base lg:text-20 font-semibold">Transfer</p>
+          <div
+            class="flex mt-3 md:mt-0 items-center gap-3 flex-row md:flex-col md:gap-0 justify-center"
           >
-            <img src="../assets/svgs/flags/us.svg" alt="" />
-            English
-          </button>
+            <button
+              type="button"
+              class="px-6 py-8 md:py-3 flex-col md:flex-row btn-paypal text-14 lg:text-base font-semibold w-full text-[#fff] justify-center bg-[#003087] rounded-xl md:mt-6 md:mb-4 flex items-center gap-2 text-center transition-opacity duration-300 hover:opacity-70"
+            >
+              <img src="../assets/svgs/image 167.png" alt="" />
+              <p class="hidden md:block">Paypal to Clib wallet</p>
+              <p class="block md:hidden">Top-up</p>
+            </button>
+            <button
+              type="button"
+              class="px-6 py-8 md:py-3 btn-monney flex-col md:flex-row text-14 lg:text-base font-semibold w-full text-neutral-dark-500 justify-center bg-grey-200 rounded-xl flex text-center items-center gap-2 transition-opacity duration-300 hover:opacity-70"
+            >
+              <img src="../assets/svgs/money-recive.png " alt="" />
+              <p class="hidden md:block">Paypal to Clib wallet</p>
+              <p class="block md:hidden">Withdraw</p>
+            </button>
+          </div>
         </div>
       </div>
+      <div class="bg-white rounded-xl">
+        <div
+          class="text-neutral-dark-500 text-base lg:text-20 font-semibold mb-3 mt-6"
+        >
+          History activity
+        </div>
+
+        <ul class="mt-2 flex flex-col gap-3 md:gap-0">
+          <li
+            class="flex items-center gap-6 py-1 pl-1 pr-3 rounded-lg bg-white box-shadow md:py-2 md:pl-0 md:pr-0 md:bg-transparent md:shadow-none"
+          >
+            <div class="flex flex-[2] items-center">
+              <div
+                class="text-14 flex-1 flex items-center justify-between gap-2 lg:text-base text-grey-400"
+              >
+                <div class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
+                  <img
+                    class="w-10 lg:w-12 aspect-square rounded-lg"
+                    src="../assets/images/artists/1.png"
+                    alt=""
+                  />
+                  <div>
+                    <div
+                      class="text-14 lg:text-base text-neutral-dark-500 font-semibold line-clamp-1"
+                    >
+                      It's My Life
+                    </div>
+                    <div
+                      class="text-12 text-grey-400 lg:text-14 line-clamp-1"
+                    >
+                      To your Paypal
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="text-14 lg:text-20 text-[#02BA4B] w-14 font-semibold lg:w-20 text-right"
+            >
+              + $70
+            </div>
+          </li>
+          <li
+            class="flex items-center gap-6 py-1 pl-1 pr-3 rounded-lg bg-white box-shadow md:py-2 md:pl-0 md:pr-0 md:bg-transparent md:shadow-none"
+          >
+            <div class="flex flex-[2] items-center">
+              <div
+                class="text-14 flex-1 flex items-center justify-between gap-2 lg:text-base text-grey-400"
+              >
+                <div class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
+                  <img
+                    class="w-10 lg:w-12 aspect-square rounded-lg"
+                    src="../assets/images/artists/1.png"
+                    alt=""
+                  />
+                  <div>
+                    <div
+                      class="text-14 lg:text-base text-neutral-dark-500 font-semibold line-clamp-1"
+                    >
+                      It's My Life
+                    </div>
+                    <div
+                      class="text-12 text-grey-400 lg:text-14 line-clamp-1"
+                    >
+                      From
+                      <span class="text-14 text-[#1A75FF] underline"
+                        >Iberd</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="text-14 lg:text-20 text-[#02BA4B] w-14 font-semibold lg:w-20 text-right"
+            >
+              + $70
+            </div>
+          </li>
+          <li
+            class="flex items-center gap-6 py-1 pl-1 pr-3 rounded-lg bg-white box-shadow md:py-2 md:pl-0 md:pr-0 md:bg-transparent md:shadow-none"
+          >
+            <div class="flex flex-[2] items-center">
+              <div
+                class="text-14 flex-1 flex items-center justify-between gap-2 lg:text-base text-grey-400"
+              >
+                <div class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
+                  <img
+                    class="w-10 lg:w-12 aspect-square rounded-lg"
+                    src="../assets/images/artists/1.png"
+                    alt=""
+                  />
+                  <div>
+                    <div
+                      class="text-14 lg:text-base text-neutral-dark-500 font-semibold line-clamp-1"
+                    >
+                      It's My Life
+                    </div>
+                    <div
+                      class="text-12 text-grey-400 lg:text-14 line-clamp-1"
+                    >
+                      From
+                      <span class="text-14 text-[#1A75FF] underline"
+                        >Iberd</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="text-14 lg:text-20 text-[#EF5350] w-14 font-semibold lg:w-20 text-right"
+            >
+              - $70
+            </div>
+          </li>
+          <li
+            class="flex items-center gap-6 py-1 pl-1 pr-3 rounded-lg bg-white box-shadow md:py-2 md:pl-0 md:pr-0 md:bg-transparent md:shadow-none"
+          >
+            <div class="flex flex-[2] items-center">
+              <div
+                class="text-14 flex-1 flex items-center justify-between gap-2 lg:text-base text-grey-400"
+              >
+                <div class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
+                  <img
+                    class="w-10 lg:w-12 aspect-square rounded-lg"
+                    src="../assets/images/artists/1.png"
+                    alt=""
+                  />
+                  <div>
+                    <div
+                      class="text-14 lg:text-base text-neutral-dark-500 font-semibold line-clamp-1"
+                    >
+                      It's My Life
+                    </div>
+                    <div
+                      class="text-12 text-grey-400 lg:text-14 line-clamp-1"
+                    >
+                      From
+                      <span class="text-14 text-[#52616B] underline"
+                        >Iberd</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="text-14 lg:text-20 text-[#02BA4B] w-14 font-semibold lg:w-20 text-right"
+            >
+              + $70
+            </div>
+          </li>
+          <li
+            class="flex items-center gap-6 py-1 pl-1 pr-3 rounded-lg bg-white box-shadow md:py-2 md:pl-0 md:pr-0 md:bg-transparent md:shadow-none"
+          >
+            <div class="flex flex-[2] items-center">
+              <div
+                class="text-14 flex-1 flex items-center justify-between gap-2 lg:text-base text-grey-400"
+              >
+                <div class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
+                  <img
+                    class="w-10 lg:w-12 aspect-square rounded-lg"
+                    src="../assets/images/artists/1.png"
+                    alt=""
+                  />
+                  <div>
+                    <div
+                      class="text-14 lg:text-base text-neutral-dark-500 font-semibold line-clamp-1"
+                    >
+                      It's My Life
+                    </div>
+                    <div
+                      class="text-12 text-grey-400 lg:text-14 line-clamp-1"
+                    >
+                      From
+                      <span class="text-14 text-[#1A75FF] underline"
+                        >Iberd</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="text-14 lg:text-20 text-[#02BA4B] w-14 font-semibold lg:w-20 text-right"
+            >
+              + $70
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
+  </section>
+</main>
   </body>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"

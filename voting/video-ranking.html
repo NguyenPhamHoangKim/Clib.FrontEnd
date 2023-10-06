@@ -11,1211 +11,1798 @@
     <link rel="stylesheet" href="../styles/index.css" />
   </head>
   <body>
-    <header class="fixed left-0 right-0 top-0 z-[999]">
-      <div class="bg-white py-2.5 shadow-[0px_2px_10px_0px_rgba(0,0,0,0.04)]">
-        <div class="container relative flex items-center justify-between">
-          <div class="flex items-center space-x-4">
-            <button id="toggle-mobile-menu">
-              <img src="../assets/svgs/menu.svg" alt="" />
-            </button>
-            <div
-              class="hidden w-fit items-center rounded-lg border border-grey-200 px-4 py-2 md:flex"
-            >
-              <img class="mr-2" src="../assets/svgs/search.svg" alt="" />
-              <input
-                class="h-full flex-1 text-base outline-none placeholder:text-grey-300 md:min-w-[260px]"
-                placeholder="What are you looking for?"
-              />
+<div class="hidden md:block">
+      <header class="fixed left-0 right-0 top-0 z-[999]">
+        <div class="bg-white py-2.5 shadow-[0px_2px_10px_0px_rgba(0,0,0,0.04)]">
+          <div class="container relative flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+              <button id="toggle-mobile-menu">
+                <img src="../assets/svgs/menu.svg" alt="" />
+              </button>
+              <div
+                class="hidden w-fit items-center rounded-lg border border-grey-200 px-4 py-2 md:flex"
+              >
+                <img class="mr-2" src="../assets/svgs/search.svg" alt="" />
+                <input
+                  class="h-full flex-1 text-base outline-none placeholder:text-grey-300 md:min-w-[260px]"
+                  placeholder="What are you looking for?"
+                />
+              </div>
             </div>
-          </div>
-
-          <a
-            href="/"
-            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden"
-          >
-            <img
-              class="object-contain w-8"
-              src="../assets/svgs/logo-mb.svg"
-              alt=""
-            />
-          </a>
-          <!-- SIGNED IN MOBILE -->
-          <div class="flex items-center space-x-4 md:hidden">
-            <button class="rounded-lg bg-grey-100 p-1.5">
+  
+            <a
+              href="/"
+              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden"
+            >
               <img
-                width="24"
-                height="24"
-                src="../assets/svgs/notification.svg"
+                class="object-contain w-8"
+                src="../assets/svgs/logo-mb.svg"
                 alt=""
               />
-            </button>
-            <button class="rounded-lg bg-grey-100 p-1.5">
-              <img src="../assets/svgs/messenger.svg" alt="" />
-            </button>
-          </div>
-          <!-- SIGNED IN -->
-
-          <!-- SIGNED IN PC-->
-          <div class="flex items-center space-x-4 max-md:hidden xl:space-x-6">
-            <button class="bg-grey-1 rounded-lg">
-              <img src="../assets/svgs/document.svg" alt="" />
-            </button>
-            <button class="">
-              <img src="../assets/svgs/sol.svg" alt="" />
-            </button>
-            <button class="">
-              <img src="../assets/svgs/export-pc.svg" alt="" />
-            </button>
-            <div
-              id="ms-wrapper"
-              class="relative flex items-center justify-center"
-            >
-              <button id="toggle-ms" class="toggle-ms">
+            </a>
+            <!-- SIGNED IN MOBILE -->
+            <div class="flex items-center space-x-4 md:hidden">
+              <button class="rounded-lg bg-grey-100 p-1.5">
                 <img
-                  class="ms-icon"
-                  src="../assets/svgs/messenger-pc.svg"
+                  width="24"
+                  height="24"
+                  src="../assets/svgs/notification.svg"
                   alt=""
                 />
               </button>
-              <div id="ms-popup" class="ms-popup">
-                <div class="flex items-center justify-between px-4 pb-2 pt-4">
-                  <span class="text-20 font-semibold">Message</span>
-                  <div class="flex items-center gap-2">
-                    <span class="text-14">New chat</span>
-                    <button class="rounded-xl bg-grey-200 p-1.5 duration-100">
+              <button class="rounded-lg bg-grey-100 p-1.5">
+                <img src="../assets/svgs/messenger.svg" alt="" />
+              </button>
+            </div>
+            <!-- SIGNED IN -->
+  
+            <!-- SIGNED IN PC-->
+            <div class="flex items-center space-x-4 max-md:hidden xl:space-x-6">
+              <button class="bg-grey-1 rounded-lg">
+                <img src="../assets/svgs/document.svg" alt="" />
+              </button>
+              <button class="">
+                <img src="../assets/svgs/sol.svg" alt="" />
+              </button>
+              <button class="">
+                <img src="../assets/svgs/export-pc.svg" alt="" />
+              </button>
+              <div
+                id="ms-wrapper"
+                class="relative flex items-center justify-center"
+              >
+                <button id="toggle-ms" class="toggle-ms">
+                  <img
+                    class="ms-icon"
+                    src="../assets/svgs/messenger-pc.svg"
+                    alt=""
+                  />
+                </button>
+                <div id="ms-popup" class="ms-popup">
+                  <div class="flex items-center justify-between px-4 pb-2 pt-4">
+                    <span class="text-20 font-semibold">Message</span>
+                    <div class="flex items-center gap-2">
+                      <span class="text-14">New chat</span>
+                      <button class="rounded-xl bg-grey-200 p-1.5 duration-100">
+                        <img
+                          class="h-6 w-6"
+                          src="../assets/svgs/edit.svg"
+                          alt=""
+                        />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="mt-2 px-4">
+                    <div
+                      class="flex items-center gap-2 rounded-xl bg-grey-100 p-3"
+                    >
+                      <img
+                        class="aspect-square w-5"
+                        src="../assets/svgs/search-people.svg"
+                        loading="lazy"
+                        alt=""
+                      />
+                      <input
+                        class="h-full flex-1 bg-transparent text-14 outline-none placeholder:text-grey-300"
+                        placeholder="Search people"
+                      />
+                    </div>
+                  </div>
+                  <ul class="mt-2 px-4">
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="Benny Andersson"
+                          />
+                          <div>
+                            <div class="line-clamp-1 text-14 font-semibold">
+                              Benny Andersson
+                            </div>
+                            <div class="line-clamp-1 text-14 font-semibold">
+                              aww
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">3d</div>
+                          <span class="dot !h-3 !w-3 !bg-branding"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between border-r-4 border-r-branding bg-[linear-gradient(270deg,#F3FCFF_0%,rgba(243,252,255,0.00)_103.09%)] px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="Son Tung M-TP"
+                          />
+                          <div>
+                            <div
+                              class="line-clamp-1 flex items-center gap-1 text-14 font-semibold"
+                            >
+                              Son Tung M-TP
+                              <img src="../assets/svgs/verify.svg" alt="" />
+                            </div>
+                            <div class="line-clamp-1 text-14">
+                              Send a playlist
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">3d</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="Donna Summer"
+                          />
+                          <div>
+                            <div class="line-clamp-1 text-14 font-semibold">
+                              Donna Summer
+                            </div>
+                            <div class="line-clamp-1 text-14">Hi</div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">3d</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="James"
+                          />
+                          <div>
+                            <div class="text-14 font-semibold">James</div>
+                            <div class="line-clamp-1 text-14">
+                              Wow, this is really epic
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">3w</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="James"
+                          />
+                          <div>
+                            <div class="text-14 font-semibold">Roger Daltrey</div>
+                            <div class="line-clamp-1 text-14">woohoooo</div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">17/03/2023</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="James"
+                          />
+                          <div>
+                            <div class="text-14 font-semibold">Big Star</div>
+                            <div class="line-clamp-1 text-14">
+                              Haha that's terrifying 😂
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">05/03/2023</div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="mt-2 py-3 text-center">
+                    <a
+                      href="#"
+                      class="text-14 font-semibold text-grey-400 hover:text-branding-secondary hover:underline"
+                      >View all message</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                id="noti-wrapper"
+                class="relative flex items-center justify-center"
+              >
+                <button id="toggle-notification" class="">
+                  <img
+                    class="noti-icon"
+                    src="../assets/svgs/notification-pc.svg"
+                    alt=""
+                  />
+                </button>
+                <div id="noti-popup" class="noti-popup">
+                  <div class="flex items-center justify-between px-4 pb-2 pt-4">
+                    <span class="text-20 font-semibold">Notification</span>
+                    <button
+                      class="transition-transform duration-100 hover:rotate-180"
+                    >
                       <img
                         class="h-6 w-6"
-                        src="../assets/svgs/edit.svg"
+                        src="../assets/svgs/setting.svg"
                         alt=""
                       />
                     </button>
                   </div>
-                </div>
-                <div class="mt-2 px-4">
-                  <div
-                    class="flex items-center gap-2 rounded-xl bg-grey-100 p-3"
-                  >
-                    <img
-                      class="aspect-square w-5"
-                      src="../assets/svgs/search-people.svg"
-                      loading="lazy"
-                      alt=""
-                    />
-                    <input
-                      class="h-full flex-1 bg-transparent text-14 outline-none placeholder:text-grey-300"
-                      placeholder="Search people"
-                    />
+                  <div class="px-4">
+                    <div class="grid grid-cols-3 items-center">
+                      <button
+                        class="h-[60px] border-b-4 border-b-branding-secondary text-center text-base font-semibold text-branding-secondary"
+                      >
+                        All
+                      </button>
+                      <button
+                        class="h-[60px] text-center text-base font-semibold text-grey-300"
+                      >
+                        Unread
+                      </button>
+                      <button
+                        class="h-[60px] text-center text-base font-semibold text-grey-300"
+                      >
+                        Following
+                      </button>
+                    </div>
                   </div>
-                </div>
-                <ul class="mt-2 px-4">
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="Benny Andersson"
-                        />
-                        <div>
-                          <div class="line-clamp-1 text-14 font-semibold">
-                            Benny Andersson
+                  <ul class="mt-4 px-2">
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Ariana Grande"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../assets/svgs/ms-text.svg"
+                                alt=""
+                              />
+                            </span>
                           </div>
-                          <div class="line-clamp-1 text-14 font-semibold">
-                            aww
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Macos</span> commented
+                              on your post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">3d</div>
                         <span class="dot !h-3 !w-3 !bg-branding"></span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between border-r-4 border-r-branding bg-[linear-gradient(270deg,#F3FCFF_0%,rgba(243,252,255,0.00)_103.09%)] px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="Son Tung M-TP"
-                        />
-                        <div>
-                          <div
-                            class="line-clamp-1 flex items-center gap-1 text-14 font-semibold"
-                          >
-                            Son Tung M-TP
-                            <img src="../assets/svgs/verify.svg" alt="" />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Ariana Grande"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../assets/svgs/react-noti.svg"
+                                alt=""
+                              />
+                            </span>
                           </div>
-                          <div class="line-clamp-1 text-14">
-                            Send a playlist
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">3d</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="Donna Summer"
-                        />
-                        <div>
-                          <div class="line-clamp-1 text-14 font-semibold">
-                            Donna Summer
-                          </div>
-                          <div class="line-clamp-1 text-14">Hi</div>
-                        </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">3d</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="James"
-                        />
-                        <div>
-                          <div class="text-14 font-semibold">James</div>
-                          <div class="line-clamp-1 text-14">
-                            Wow, this is really epic
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Josh</span> commented on
+                              your post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">3w</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="James"
-                        />
-                        <div>
-                          <div class="text-14 font-semibold">Roger Daltrey</div>
-                          <div class="line-clamp-1 text-14">woohoooo</div>
-                        </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">17/03/2023</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="James"
-                        />
-                        <div>
-                          <div class="text-14 font-semibold">Big Star</div>
-                          <div class="line-clamp-1 text-14">
-                            Haha that's terrifying 😂
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Harry"
+                            />
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Harry</span> following
+                              you
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">05/03/2023</div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-                <div class="mt-2 py-3 text-center">
-                  <a
-                    href="#"
-                    class="text-14 font-semibold text-grey-400 hover:text-branding-secondary hover:underline"
-                    >View all message</a
-                  >
+                        <button class="btn-primary">Follow</button>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Sona"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../assets/svgs/ms-text.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Sona</span> commented on
+                              your post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Been"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../assets/svgs/react-love.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Been</span> liked your
+                              post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                        <span class="dot !h-3 !w-3 !bg-branding"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Harry"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../assets/svgs/react-love.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Harry</span> liked your
+                              post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                        <span class="dot !h-3 !w-3 !bg-branding"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Jean"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../assets/svgs/ms-text.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Jean</span> commented on
+                              your post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="mt-2 py-3 text-center">
+                    <a
+                      href="#"
+                      class="text-14 font-semibold text-grey-400 hover:text-branding-secondary hover:underline"
+                      >View all notifications</a
+                    >
+                  </div>
                 </div>
               </div>
-            </div>
-            <div
-              id="noti-wrapper"
-              class="relative flex items-center justify-center"
-            >
-              <button id="toggle-notification" class="">
-                <img
-                  class="noti-icon"
-                  src="../assets/svgs/notification-pc.svg"
-                  alt=""
-                />
+              <button class="">
+                <img src="../assets/svgs/wallet-pc.svg" alt="" />
               </button>
-              <div id="noti-popup" class="noti-popup">
-                <div class="flex items-center justify-between px-4 pb-2 pt-4">
-                  <span class="text-20 font-semibold">Notification</span>
-                  <button
-                    class="transition-transform duration-100 hover:rotate-180"
-                  >
-                    <img
-                      class="h-6 w-6"
-                      src="../assets/svgs/setting.svg"
-                      alt=""
-                    />
-                  </button>
-                </div>
-                <div class="px-4">
-                  <div class="grid grid-cols-3 items-center">
-                    <button
-                      class="h-[60px] border-b-4 border-b-branding-secondary text-center text-base font-semibold text-branding-secondary"
-                    >
-                      All
-                    </button>
-                    <button
-                      class="h-[60px] text-center text-base font-semibold text-grey-300"
-                    >
-                      Unread
-                    </button>
-                    <button
-                      class="h-[60px] text-center text-base font-semibold text-grey-300"
-                    >
-                      Following
-                    </button>
-                  </div>
-                </div>
-                <ul class="mt-4 px-2">
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Ariana Grande"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="../assets/svgs/ms-text.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Macos</span> commented
-                            on your post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                      <span class="dot !h-3 !w-3 !bg-branding"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Ariana Grande"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="../assets/svgs/react-noti.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Josh</span> commented on
-                            your post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Harry"
-                          />
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Harry</span> following
-                            you
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                      <button class="btn-primary">Follow</button>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Sona"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="../assets/svgs/ms-text.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Sona</span> commented on
-                            your post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Been"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="../assets/svgs/react-love.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Been</span> liked your
-                            post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                      <span class="dot !h-3 !w-3 !bg-branding"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Harry"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="../assets/svgs/react-love.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Harry</span> liked your
-                            post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                      <span class="dot !h-3 !w-3 !bg-branding"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Jean"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="../assets/svgs/ms-text.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Jean</span> commented on
-                            your post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-                <div class="mt-2 py-3 text-center">
-                  <a
-                    href="#"
-                    class="text-14 font-semibold text-grey-400 hover:text-branding-secondary hover:underline"
-                    >View all notifications</a
-                  >
-                </div>
-              </div>
+              <a href="./profile" class="flex items-center gap-2">
+                <img
+                  src="../assets/images/avatar1.jpg"
+                  class="h-11 w-11 rounded-lg object-cover"
+                  loading="lazy"
+                  alt="Iberd"
+                />
+                <span>Iberd</span>
+              </a>
             </div>
-            <button class="">
-              <img src="../assets/svgs/wallet-pc.svg" alt="" />
-            </button>
-            <a href="./profile" class="flex items-center gap-2">
-              <img
-                src="../assets/images/avatar1.jpg"
-                class="h-11 w-11 rounded-lg object-cover"
-                loading="lazy"
-                alt="Iberd"
-              />
-              <span>Iberd</span>
-            </a>
-          </div>
-          <!-- SIGNED IN -->
-
-          <!-- NOT SIGN IN <div class="flex items-center space-x-4">
-            <button>
-              <img src="../assets/svgs/export.svg" alt="" />
-            </button>
-            <a href="login.html" class="btn-secondary text-14 md:text-base"
-              >Sign in</a
-            >
-          </div> NOT SIGN IN -->
-        </div>
-      </div>
-      <div
-        class="border-b border-b-grey-200 bg-white md:border-none md:bg-grey-100 md:py-1.5 xl:py-2"
-      >
-        <ul
-          class="container relative grid grid-cols-2 items-center gap-[35px] md:grid-cols-5"
-        >
-          <li>
-            <a href="../music/index.html" class="header-item-link">music</a>
-          </li>
-          <li>
-            <a href="../videos/index.html" class="header-item-link">videos</a>
-          </li>
-          <li class="max-md:hidden">
-            <a
-              href="/"
-              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-            >
-              <img
-                class="aspect-square w-20 lg:w-[116px] object-contain"
-                src="../assets/svgs/logo.svg"
-                alt=""
-              />
-            </a>
-          </li>
-          <li class="max-md:hidden">
-            <a
-              href="../marketplace/marketplace-music-desktop.html"
-              class="header-item-link"
-              >marketplace</a
-            >
-          </li>
-          <li class="max-md:hidden">
-            <a href=".music-voting.html" class="header-item-link">voting</a>
-          </li>
-        </ul>
-      </div>
-    </header>
-    <div class="container mt-[100px] md:mt-[135px] lg:mt-[165px]">
-      <div class="md:p-2 lg:p-4 rounded-xl bg-white">
-        <div class="flex items-center">
-          <a href="#" class="flex items-center text-18 font-semibold md:text-24"
-            >Top video 30
-          </a>
-        </div>
-        <ul
-          class="mt-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 lg:gap-4"
-        >
-          <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
-            <a href="#">
-              <img
-                class="rounded-lg aspect-video object-cover w-full"
-                src="../assets/svgs/Rectangle 10.png"
-                loading="lazy"
-                alt=""
-              />
-              <div class="flex items-center gap-5">
-                <p class="text-base lg:text-18 font-semibold">1</p>
-                <div>
-                  <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
-                    I Love You 3000
-                  </div>
-                  <div class="mt-1 text-12 lg:text-14 text-grey-400">
-                    Stephanie Poetri
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
-            <a href="#">
-              <img
-                class="rounded-lg aspect-video object-cover w-full"
-                src="../assets/svgs/Rectangle 10.png"
-                loading="lazy"
-                alt=""
-              />
-              <div class="flex items-center gap-5">
-                <p class="text-base lg:text-18 font-semibold">1</p>
-                <div>
-                  <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
-                    I Love You 3000
-                  </div>
-                  <div class="mt-1 text-12 lg:text-14 text-grey-400">
-                    Stephanie Poetri
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
-            <a href="#">
-              <img
-                class="rounded-lg aspect-video object-cover w-full"
-                src="../assets/svgs/Rectangle 10.png"
-                loading="lazy"
-                alt=""
-              />
-              <div class="flex items-center gap-5">
-                <p class="text-base lg:text-18 font-semibold">1</p>
-                <div>
-                  <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
-                    I Love You 3000
-                  </div>
-                  <div class="mt-1 text-12 lg:text-14 text-grey-400">
-                    Stephanie Poetri
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
-            <a href="#">
-              <img
-                class="rounded-lg aspect-video object-cover w-full"
-                src="../assets/svgs/Rectangle 10.png"
-                loading="lazy"
-                alt=""
-              />
-              <div class="flex items-center gap-5">
-                <p class="text-base lg:text-18 font-semibold">1</p>
-                <div>
-                  <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
-                    I Love You 3000
-                  </div>
-                  <div class="mt-1 text-12 lg:text-14 text-grey-400">
-                    Stephanie Poetri
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
-            <a href="#">
-              <img
-                class="rounded-lg aspect-video object-cover w-full"
-                src="../assets/svgs/Rectangle 10.png"
-                loading="lazy"
-                alt=""
-              />
-              <div class="flex items-center gap-5">
-                <p class="text-base lg:text-18 font-semibold">1</p>
-                <div>
-                  <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
-                    I Love You 3000
-                  </div>
-                  <div class="mt-1 text-12 lg:text-14 text-grey-400">
-                    Stephanie Poetri
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
-            <a href="#">
-              <img
-                class="rounded-lg aspect-video object-cover w-full"
-                src="../assets/svgs/Rectangle 10.png"
-                loading="lazy"
-                alt=""
-              />
-              <div class="flex items-center gap-5">
-                <p class="text-base lg:text-18 font-semibold">1</p>
-                <div>
-                  <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
-                    I Love You 3000
-                  </div>
-                  <div class="mt-1 text-12 lg:text-14 text-grey-400">
-                    Stephanie Poetri
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
-            <a href="#">
-              <img
-                class="rounded-lg aspect-video object-cover w-full"
-                src="../assets/svgs/Rectangle 10.png"
-                loading="lazy"
-                alt=""
-              />
-              <div class="flex items-center gap-5">
-                <p class="text-base lg:text-18 font-semibold">1</p>
-                <div>
-                  <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
-                    I Love You 3000
-                  </div>
-                  <div class="mt-1 text-12 lg:text-14 text-grey-400">
-                    Stephanie Poetri
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
-            <a href="#">
-              <img
-                class="rounded-lg aspect-video object-cover w-full"
-                src="../assets/svgs/Rectangle 10.png"
-                loading="lazy"
-                alt=""
-              />
-              <div class="flex items-center gap-5">
-                <p class="text-base lg:text-18 font-semibold">1</p>
-                <div>
-                  <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
-                    I Love You 3000
-                  </div>
-                  <div class="mt-1 text-12 lg:text-14 text-grey-400">
-                    Stephanie Poetri
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
-            <a href="#">
-              <img
-                class="rounded-lg aspect-video object-cover w-full"
-                src="../assets/svgs/Rectangle 10.png"
-                loading="lazy"
-                alt=""
-              />
-              <div class="flex items-center gap-5">
-                <p class="text-base lg:text-18 font-semibold">1</p>
-                <div>
-                  <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
-                    I Love You 3000
-                  </div>
-                  <div class="mt-1 text-12 lg:text-14 text-grey-400">
-                    Stephanie Poetri
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
-            <a href="#">
-              <img
-                class="rounded-lg aspect-video object-cover w-full"
-                src="../assets/svgs/Rectangle 10.png"
-                loading="lazy"
-                alt=""
-              />
-              <div class="flex items-center gap-5">
-                <p class="text-base lg:text-18 font-semibold">1</p>
-                <div>
-                  <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
-                    I Love You 3000
-                  </div>
-                  <div class="mt-1 text-12 lg:text-14 text-grey-400">
-                    Stephanie Poetri
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
-            <a href="#">
-              <img
-                class="rounded-lg aspect-video object-cover w-full"
-                src="../assets/svgs/Rectangle 10.png"
-                loading="lazy"
-                alt=""
-              />
-              <div class="flex items-center gap-5">
-                <p class="text-base lg:text-18 font-semibold">1</p>
-                <div>
-                  <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
-                    I Love You 3000
-                  </div>
-                  <div class="mt-1 text-12 lg:text-14 text-grey-400">
-                    Stephanie Poetri
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
-            <a href="#">
-              <img
-                class="rounded-lg aspect-video object-cover w-full"
-                src="../assets/svgs/Rectangle 10.png"
-                loading="lazy"
-                alt=""
-              />
-              <div class="flex items-center gap-5">
-                <p class="text-base lg:text-18 font-semibold">1</p>
-                <div>
-                  <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
-                    I Love You 3000
-                  </div>
-                  <div class="mt-1 text-12 lg:text-14 text-grey-400">
-                    Stephanie Poetri
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
-            <a href="#">
-              <img
-                class="rounded-lg aspect-video object-cover w-full"
-                src="../assets/svgs/Rectangle 10.png"
-                loading="lazy"
-                alt=""
-              />
-              <div class="flex items-center gap-5">
-                <p class="text-base lg:text-18 font-semibold">1</p>
-                <div>
-                  <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
-                    I Love You 3000
-                  </div>
-                  <div class="mt-1 text-12 lg:text-14 text-grey-400">
-                    Stephanie Poetri
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
-            <a href="#">
-              <img
-                class="rounded-lg aspect-video object-cover w-full"
-                src="../assets/svgs/Rectangle 10.png"
-                loading="lazy"
-                alt=""
-              />
-              <div class="flex items-center gap-5">
-                <p class="text-base lg:text-18 font-semibold">1</p>
-                <div>
-                  <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
-                    I Love You 3000
-                  </div>
-                  <div class="mt-1 text-12 lg:text-14 text-grey-400">
-                    Stephanie Poetri
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
-            <a href="#">
-              <img
-                class="rounded-lg aspect-video object-cover w-full"
-                src="../assets/svgs/Rectangle 10.png"
-                loading="lazy"
-                alt=""
-              />
-              <div class="flex items-center gap-5">
-                <p class="text-base lg:text-18 font-semibold">1</p>
-                <div>
-                  <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
-                    I Love You 3000
-                  </div>
-                  <div class="mt-1 text-12 lg:text-14 text-grey-400">
-                    Stephanie Poetri
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
-            <a href="#">
-              <img
-                class="rounded-lg aspect-video object-cover w-full"
-                src="../assets/svgs/Rectangle 10.png"
-                loading="lazy"
-                alt=""
-              />
-              <div class="flex items-center gap-5">
-                <p class="text-base lg:text-18 font-semibold">1</p>
-                <div>
-                  <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
-                    I Love You 3000
-                  </div>
-                  <div class="mt-1 text-12 lg:text-14 text-grey-400">
-                    Stephanie Poetri
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
-            <a href="#">
-              <img
-                class="rounded-lg aspect-video object-cover w-full"
-                src="../assets/svgs/Rectangle 10.png"
-                loading="lazy"
-                alt=""
-              />
-              <div class="flex items-center gap-5">
-                <p class="text-base lg:text-18 font-semibold">1</p>
-                <div>
-                  <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
-                    I Love You 3000
-                  </div>
-                  <div class="mt-1 text-12 lg:text-14 text-grey-400">
-                    Stephanie Poetri
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
-            <a href="#">
-              <img
-                class="rounded-lg aspect-video object-cover w-full"
-                src="../assets/svgs/Rectangle 10.png"
-                loading="lazy"
-                alt=""
-              />
-              <div class="flex items-center gap-5">
-                <p class="text-base lg:text-18 font-semibold">1</p>
-                <div>
-                  <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
-                    I Love You 3000
-                  </div>
-                  <div class="mt-1 text-12 lg:text-14 text-grey-400">
-                    Stephanie Poetri
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
-            <a href="#">
-              <img
-                class="rounded-lg aspect-video object-cover w-full"
-                src="../assets/svgs/Rectangle 10.png"
-                loading="lazy"
-                alt=""
-              />
-              <div class="flex items-center gap-5">
-                <p class="text-base lg:text-18 font-semibold">1</p>
-                <div>
-                  <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
-                    I Love You 3000
-                  </div>
-                  <div class="mt-1 text-12 lg:text-14 text-grey-400">
-                    Stephanie Poetri
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
-            <a href="#">
-              <img
-                class="rounded-lg aspect-video object-cover w-full"
-                src="../assets/svgs/Rectangle 10.png"
-                loading="lazy"
-                alt=""
-              />
-              <div class="flex items-center gap-5">
-                <p class="text-base lg:text-18 font-semibold">1</p>
-                <div>
-                  <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
-                    I Love You 3000
-                  </div>
-                  <div class="mt-1 text-12 lg:text-14 text-grey-400">
-                    Stephanie Poetri
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <footer
-      class="mt-[100px] border-t border-t-grey-400 pb-6 pt-4 max-md:hidden"
-    >
-      <div class="container flex items-center justify-between">
-        <div class="flex items-center">
-          <div class="-mb-0.5 mr-6 text-14 text-grey-400">
-            Copyright © 2023 Clib Music. All rights reserved.
-          </div>
-          <ul class="flex items-center gap-3">
-            <li>
-              <a href="#" class="text-14 text-grey-400">Privacy Policy</a>
-            </li>
-            <li>
-              <span class="footer-divider"></span>
-            </li>
-            <li>
-              <a href="#" class="text-14 text-grey-400">Terms of Use</a>
-            </li>
-            <li>
-              <span class="footer-divider"></span>
-            </li>
-            <li>
-              <a href="#" class="text-14 text-grey-400">Cookie Warning</a>
-            </li>
-            <li>
-              <span class="footer-divider"></span>
-            </li>
-            <li>
-              <a href="#" class="text-14 text-grey-400">Support</a>
-            </li>
-          </ul>
-        </div>
-        <ul class="flex items-center gap-3">
-          <li>
-            <a href="#" class="lang-footer-item active">English</a>
-          </li>
-          <li>
-            <span class="footer-divider"></span>
-          </li>
-          <li>
-            <a href="#" class="lang-footer-item">Tiếng Việt</a>
-          </li>
-          <li>
-            <span class="footer-divider"></span>
-          </li>
-          <li>
-            <a href="#" class="lang-footer-item">简体中文</a>
-          </li>
-          <li>
-            <span class="footer-divider"></span>
-          </li>
-          <li>
-            <a href="#" class="lang-footer-item">한국어</a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-    <div id="header-tab-modal" class="overlay header-tab-modal">
-      <div class="header-tab-modal--inner">
-        <div class="flex-1">
-          <button
-            id="close-header-tab-modal"
-            class="flex w-full items-center justify-end"
-          >
-            <img width="16" height="16" src="../assets/svgs/close.svg" alt="" />
-          </button>
-          <div class="mt-4 flex items-center gap-3 md:hidden">
-            <img
-              class="rounded-2xl object-cover"
-              width="64"
-              height="64"
-              loading="lazy"
-              src="../assets/images/artists/2.png"
-              alt=""
-            />
-            <div>
-              <div class="flex items-center gap-1 text-14 font-semibold">
-                Son Tung M-TP <img src="../assets/svgs/verify.svg" alt="" />
-              </div>
-              <div class="mt-2 flex items-center gap-3 text-14 text-grey-400">
-                <div><span class="font-semibold">53K</span> Followers</div>
-                <div><span class="font-semibold">12,3K</span> Following</div>
-              </div>
-            </div>
-          </div>
-          <ul class="mt-[14px]">
-            <li class="header-link">
-              <a
-                href="/voting/music-voting.html"
-                class="flex items-center text-grey-400"
-                ><img src="../assets/svgs/voting.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >Voting</span
-                ></a
+            <!-- SIGNED IN -->
+  
+            <!-- NOT SIGN IN <div class="flex items-center space-x-4">
+              <button>
+                <img src="../assets/svgs/export.svg" alt="" />
+              </button>
+              <a href="login.html" class="btn-secondary text-14 md:text-base"
+                >Sign in</a
               >
-            </li>
-            <li class="header-link">
-              <a href="/wallet.html" class="flex items-center text-grey-400"
-                ><img src="../assets/svgs/wallet.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >Wallet</span
-                ></a
-              >
-            </li>
-            <li class="header-link">
-              <a href="/about-us.html" class="flex items-center text-grey-400"
-                ><img src="../assets/svgs/about-us.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >About us</span
-                ></a
-              >
-            </li>
-            <li class="header-link">
-              <a href="/setting.html" class="flex items-center text-grey-400"
-                ><img src="../assets/svgs/setting.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >Setting</span
-                ></a
-              >
-            </li>
-            <li class="header-link">
-              <a href="/support.html" class="flex items-center text-grey-400"
-                ><img src="../assets/svgs/support.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >Support</span
-                ></a
-              >
-            </li>
-            <li class="header-link">
-              <a
-                href="/privacy-police.html"
-                class="flex items-center text-grey-400"
-                ><img src="../assets/svgs/privacy-police.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >Privacy Police</span
-                ></a
-              >
-            </li>
-          </ul>
-          <div class="mt-[30px] flex items-center justify-center gap-4">
-            <button class="btn-tertiary">Sign out</button>
+            </div> NOT SIGN IN -->
           </div>
         </div>
         <div
-          class="flex items-center justify-between border-t border-t-grey-200 pt-4"
+          class="border-b border-b-grey-200 bg-white md:border-none md:bg-grey-100 md:py-1.5 xl:py-2"
         >
-          <div class="flex items-center gap-x-2 text-base">
-            <img src="../assets/svgs/global.svg" alt="" />
-            Language
-          </div>
-          <button
-            class="flex items-center gap-2 rounded-xl bg-grey-100 px-4 py-2"
+          <ul
+            class="container relative grid grid-cols-2 items-center gap-[35px] md:grid-cols-5"
           >
-            <img src="../assets/svgs/flags/us.svg" alt="" />
-            English
-          </button>
+            <li>
+              <a href="../music/index.html" class="header-item-link">music</a>
+            </li>
+            <li>
+              <a href="../videos/index.html" class="header-item-link">videos</a>
+            </li>
+            <li class="max-md:hidden">
+              <a
+                href="/"
+                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+              >
+                <img
+                  class="aspect-square w-20 lg:w-[116px] object-contain"
+                  src="../assets/svgs/logo.svg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="max-md:hidden">
+              <a
+                href="../marketplace/marketplace-music-desktop.html"
+                class="header-item-link"
+                >marketplace</a
+              >
+            </li>
+            <li class="max-md:hidden">
+              <a href=".music-voting.html" class="header-item-link">voting</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="container mt-[100px] md:mt-[135px] lg:mt-[165px]">
+        <div class="md:p-2 lg:p-4 rounded-xl bg-white">
+          <div class="flex items-center">
+            <a href="#" class="flex items-center text-18 font-semibold md:text-24"
+              >Top video 30
+            </a>
+          </div>
+          <ul
+            class="mt-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 lg:gap-4"
+          >
+            <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
+              <a href="#">
+                <img
+                  class="rounded-lg aspect-video object-cover w-full"
+                  src="../assets/svgs/Rectangle 10.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div class="flex items-center gap-5">
+                  <p class="text-base lg:text-18 font-semibold">1</p>
+                  <div>
+                    <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
+                      I Love You 3000
+                    </div>
+                    <div class="mt-1 text-12 lg:text-14 text-grey-400">
+                      Stephanie Poetri
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
+              <a href="#">
+                <img
+                  class="rounded-lg aspect-video object-cover w-full"
+                  src="../assets/svgs/Rectangle 10.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div class="flex items-center gap-5">
+                  <p class="text-base lg:text-18 font-semibold">1</p>
+                  <div>
+                    <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
+                      I Love You 3000
+                    </div>
+                    <div class="mt-1 text-12 lg:text-14 text-grey-400">
+                      Stephanie Poetri
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
+              <a href="#">
+                <img
+                  class="rounded-lg aspect-video object-cover w-full"
+                  src="../assets/svgs/Rectangle 10.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div class="flex items-center gap-5">
+                  <p class="text-base lg:text-18 font-semibold">1</p>
+                  <div>
+                    <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
+                      I Love You 3000
+                    </div>
+                    <div class="mt-1 text-12 lg:text-14 text-grey-400">
+                      Stephanie Poetri
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
+              <a href="#">
+                <img
+                  class="rounded-lg aspect-video object-cover w-full"
+                  src="../assets/svgs/Rectangle 10.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div class="flex items-center gap-5">
+                  <p class="text-base lg:text-18 font-semibold">1</p>
+                  <div>
+                    <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
+                      I Love You 3000
+                    </div>
+                    <div class="mt-1 text-12 lg:text-14 text-grey-400">
+                      Stephanie Poetri
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
+              <a href="#">
+                <img
+                  class="rounded-lg aspect-video object-cover w-full"
+                  src="../assets/svgs/Rectangle 10.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div class="flex items-center gap-5">
+                  <p class="text-base lg:text-18 font-semibold">1</p>
+                  <div>
+                    <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
+                      I Love You 3000
+                    </div>
+                    <div class="mt-1 text-12 lg:text-14 text-grey-400">
+                      Stephanie Poetri
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
+              <a href="#">
+                <img
+                  class="rounded-lg aspect-video object-cover w-full"
+                  src="../assets/svgs/Rectangle 10.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div class="flex items-center gap-5">
+                  <p class="text-base lg:text-18 font-semibold">1</p>
+                  <div>
+                    <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
+                      I Love You 3000
+                    </div>
+                    <div class="mt-1 text-12 lg:text-14 text-grey-400">
+                      Stephanie Poetri
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
+              <a href="#">
+                <img
+                  class="rounded-lg aspect-video object-cover w-full"
+                  src="../assets/svgs/Rectangle 10.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div class="flex items-center gap-5">
+                  <p class="text-base lg:text-18 font-semibold">1</p>
+                  <div>
+                    <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
+                      I Love You 3000
+                    </div>
+                    <div class="mt-1 text-12 lg:text-14 text-grey-400">
+                      Stephanie Poetri
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
+              <a href="#">
+                <img
+                  class="rounded-lg aspect-video object-cover w-full"
+                  src="../assets/svgs/Rectangle 10.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div class="flex items-center gap-5">
+                  <p class="text-base lg:text-18 font-semibold">1</p>
+                  <div>
+                    <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
+                      I Love You 3000
+                    </div>
+                    <div class="mt-1 text-12 lg:text-14 text-grey-400">
+                      Stephanie Poetri
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
+              <a href="#">
+                <img
+                  class="rounded-lg aspect-video object-cover w-full"
+                  src="../assets/svgs/Rectangle 10.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div class="flex items-center gap-5">
+                  <p class="text-base lg:text-18 font-semibold">1</p>
+                  <div>
+                    <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
+                      I Love You 3000
+                    </div>
+                    <div class="mt-1 text-12 lg:text-14 text-grey-400">
+                      Stephanie Poetri
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
+              <a href="#">
+                <img
+                  class="rounded-lg aspect-video object-cover w-full"
+                  src="../assets/svgs/Rectangle 10.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div class="flex items-center gap-5">
+                  <p class="text-base lg:text-18 font-semibold">1</p>
+                  <div>
+                    <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
+                      I Love You 3000
+                    </div>
+                    <div class="mt-1 text-12 lg:text-14 text-grey-400">
+                      Stephanie Poetri
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
+              <a href="#">
+                <img
+                  class="rounded-lg aspect-video object-cover w-full"
+                  src="../assets/svgs/Rectangle 10.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div class="flex items-center gap-5">
+                  <p class="text-base lg:text-18 font-semibold">1</p>
+                  <div>
+                    <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
+                      I Love You 3000
+                    </div>
+                    <div class="mt-1 text-12 lg:text-14 text-grey-400">
+                      Stephanie Poetri
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
+              <a href="#">
+                <img
+                  class="rounded-lg aspect-video object-cover w-full"
+                  src="../assets/svgs/Rectangle 10.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div class="flex items-center gap-5">
+                  <p class="text-base lg:text-18 font-semibold">1</p>
+                  <div>
+                    <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
+                      I Love You 3000
+                    </div>
+                    <div class="mt-1 text-12 lg:text-14 text-grey-400">
+                      Stephanie Poetri
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
+              <a href="#">
+                <img
+                  class="rounded-lg aspect-video object-cover w-full"
+                  src="../assets/svgs/Rectangle 10.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div class="flex items-center gap-5">
+                  <p class="text-base lg:text-18 font-semibold">1</p>
+                  <div>
+                    <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
+                      I Love You 3000
+                    </div>
+                    <div class="mt-1 text-12 lg:text-14 text-grey-400">
+                      Stephanie Poetri
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
+              <a href="#">
+                <img
+                  class="rounded-lg aspect-video object-cover w-full"
+                  src="../assets/svgs/Rectangle 10.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div class="flex items-center gap-5">
+                  <p class="text-base lg:text-18 font-semibold">1</p>
+                  <div>
+                    <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
+                      I Love You 3000
+                    </div>
+                    <div class="mt-1 text-12 lg:text-14 text-grey-400">
+                      Stephanie Poetri
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
+              <a href="#">
+                <img
+                  class="rounded-lg aspect-video object-cover w-full"
+                  src="../assets/svgs/Rectangle 10.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div class="flex items-center gap-5">
+                  <p class="text-base lg:text-18 font-semibold">1</p>
+                  <div>
+                    <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
+                      I Love You 3000
+                    </div>
+                    <div class="mt-1 text-12 lg:text-14 text-grey-400">
+                      Stephanie Poetri
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
+              <a href="#">
+                <img
+                  class="rounded-lg aspect-video object-cover w-full"
+                  src="../assets/svgs/Rectangle 10.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div class="flex items-center gap-5">
+                  <p class="text-base lg:text-18 font-semibold">1</p>
+                  <div>
+                    <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
+                      I Love You 3000
+                    </div>
+                    <div class="mt-1 text-12 lg:text-14 text-grey-400">
+                      Stephanie Poetri
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
+              <a href="#">
+                <img
+                  class="rounded-lg aspect-video object-cover w-full"
+                  src="../assets/svgs/Rectangle 10.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div class="flex items-center gap-5">
+                  <p class="text-base lg:text-18 font-semibold">1</p>
+                  <div>
+                    <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
+                      I Love You 3000
+                    </div>
+                    <div class="mt-1 text-12 lg:text-14 text-grey-400">
+                      Stephanie Poetri
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
+              <a href="#">
+                <img
+                  class="rounded-lg aspect-video object-cover w-full"
+                  src="../assets/svgs/Rectangle 10.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div class="flex items-center gap-5">
+                  <p class="text-base lg:text-18 font-semibold">1</p>
+                  <div>
+                    <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
+                      I Love You 3000
+                    </div>
+                    <div class="mt-1 text-12 lg:text-14 text-grey-400">
+                      Stephanie Poetri
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
+              <a href="#">
+                <img
+                  class="rounded-lg aspect-video object-cover w-full"
+                  src="../assets/svgs/Rectangle 10.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div class="flex items-center gap-5">
+                  <p class="text-base lg:text-18 font-semibold">1</p>
+                  <div>
+                    <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
+                      I Love You 3000
+                    </div>
+                    <div class="mt-1 text-12 lg:text-14 text-grey-400">
+                      Stephanie Poetri
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="hover:bg-bg p-1 duration-100 rounded-lg transition-colors">
+              <a href="#">
+                <img
+                  class="rounded-lg aspect-video object-cover w-full"
+                  src="../assets/svgs/Rectangle 10.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div class="flex items-center gap-5">
+                  <p class="text-base lg:text-18 font-semibold">1</p>
+                  <div>
+                    <div class="mt-2 lg:mt-3 font-semibold text-14 lg:text-base">
+                      I Love You 3000
+                    </div>
+                    <div class="mt-1 text-12 lg:text-14 text-grey-400">
+                      Stephanie Poetri
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <footer
+        class="mt-[100px] border-t border-t-grey-400 pb-6 pt-4 max-md:hidden"
+      >
+        <div class="container flex items-center justify-between">
+          <div class="flex items-center">
+            <div class="-mb-0.5 mr-6 text-14 text-grey-400">
+              Copyright © 2023 Clib Music. All rights reserved.
+            </div>
+            <ul class="flex items-center gap-3">
+              <li>
+                <a href="#" class="text-14 text-grey-400">Privacy Policy</a>
+              </li>
+              <li>
+                <span class="footer-divider"></span>
+              </li>
+              <li>
+                <a href="#" class="text-14 text-grey-400">Terms of Use</a>
+              </li>
+              <li>
+                <span class="footer-divider"></span>
+              </li>
+              <li>
+                <a href="#" class="text-14 text-grey-400">Cookie Warning</a>
+              </li>
+              <li>
+                <span class="footer-divider"></span>
+              </li>
+              <li>
+                <a href="#" class="text-14 text-grey-400">Support</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="flex items-center gap-3">
+            <li>
+              <a href="#" class="lang-footer-item active">English</a>
+            </li>
+            <li>
+              <span class="footer-divider"></span>
+            </li>
+            <li>
+              <a href="#" class="lang-footer-item">Tiếng Việt</a>
+            </li>
+            <li>
+              <span class="footer-divider"></span>
+            </li>
+            <li>
+              <a href="#" class="lang-footer-item">简体中文</a>
+            </li>
+            <li>
+              <span class="footer-divider"></span>
+            </li>
+            <li>
+              <a href="#" class="lang-footer-item">한국어</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+      <div id="header-tab-modal" class="overlay header-tab-modal">
+        <div class="header-tab-modal--inner">
+          <div class="flex-1">
+            <button
+              id="close-header-tab-modal"
+              class="flex w-full items-center justify-end"
+            >
+              <img width="16" height="16" src="../assets/svgs/close.svg" alt="" />
+            </button>
+            <div class="mt-4 flex items-center gap-3 md:hidden">
+              <img
+                class="rounded-2xl object-cover"
+                width="64"
+                height="64"
+                loading="lazy"
+                src="../assets/images/artists/2.png"
+                alt=""
+              />
+              <div>
+                <div class="flex items-center gap-1 text-14 font-semibold">
+                  Son Tung M-TP <img src="../assets/svgs/verify.svg" alt="" />
+                </div>
+                <div class="mt-2 flex items-center gap-3 text-14 text-grey-400">
+                  <div><span class="font-semibold">53K</span> Followers</div>
+                  <div><span class="font-semibold">12,3K</span> Following</div>
+                </div>
+              </div>
+            </div>
+            <ul class="mt-[14px]">
+              <li class="header-link">
+                <a
+                  href="/voting/music-voting.html"
+                  class="flex items-center text-grey-400"
+                  ><img src="../assets/svgs/voting.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >Voting</span
+                  ></a
+                >
+              </li>
+              <li class="header-link">
+                <a href="/wallet.html" class="flex items-center text-grey-400"
+                  ><img src="../assets/svgs/wallet.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >Wallet</span
+                  ></a
+                >
+              </li>
+              <li class="header-link">
+                <a href="/about-us.html" class="flex items-center text-grey-400"
+                  ><img src="../assets/svgs/about-us.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >About us</span
+                  ></a
+                >
+              </li>
+              <li class="header-link">
+                <a href="/setting.html" class="flex items-center text-grey-400"
+                  ><img src="../assets/svgs/setting.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >Setting</span
+                  ></a
+                >
+              </li>
+              <li class="header-link">
+                <a href="/support.html" class="flex items-center text-grey-400"
+                  ><img src="../assets/svgs/support.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >Support</span
+                  ></a
+                >
+              </li>
+              <li class="header-link">
+                <a
+                  href="/privacy-police.html"
+                  class="flex items-center text-grey-400"
+                  ><img src="../assets/svgs/privacy-police.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >Privacy Police</span
+                  ></a
+                >
+              </li>
+            </ul>
+            <div class="mt-[30px] flex items-center justify-center gap-4">
+              <button class="btn-tertiary">Sign out</button>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-between border-t border-t-grey-200 pt-4"
+          >
+            <div class="flex items-center gap-x-2 text-base">
+              <img src="../assets/svgs/global.svg" alt="" />
+              Language
+            </div>
+            <button
+              class="flex items-center gap-2 rounded-xl bg-grey-100 px-4 py-2"
+            >
+              <img src="../assets/svgs/flags/us.svg" alt="" />
+              English
+            </button>
+          </div>
+        </div>
+      </div>
+</div>
+<!-- mobile -->
+<main class="block md:hidden relative">
+  <!-- modal choose -->
+  <div class="modal-voting hidden overlay">
+    <div
+      class="pt-4 px-3 absolute bottom-0 w-full h-[690px] bg-white rounded-tl-3xl rounded-tr-3xl"
+    >
+      <div class="flex flex-col items-center w-full gap-3">
+        <button class="close-modal">
+          <img src="../assets/images/playlists/Rectangle 4280.png" alt="" />
+        </button>
+        <div class="flex items-center text-center865 open-modal-voting">
+          <h4 class="text-18 text-neutral-dark-500 font-semibold">
+            Nominate
+          </h4>
+        </div>
+      </div>
+      <select
+        name=""
+        id=""
+        class="text-14 text-grey-400 w-full mt-3 bg-grey-100 py-3 px-4 outline-none border-none rounded-xl"
+      >
+        <option selected>Select the nomination</option>
+        <option value="">Viet Nam</option>
+        <option value="">Singapore</option>
+      </select>
+      <div
+        class="w-full bg-grey-100 px-4 py-3 flex items-center gap-2 rounded-xl my-3"
+      >
+        <img src="../assets/svgs/search-people.svg" alt="" />
+        <input
+          type="text"
+          placeholder="Search"
+          class="text-14 w-full bg-inherit"
+        />
+      </div>
+      <!-- list -->
+      <div
+        class="mt-3 flex flex-col gap-[18px] h-[500px] overflow-y-auto scrollbar-custom"
+      >
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <div class="overflow-hidden w-11 h-11 rounded-lg">
+              <img
+                class="h-full w-full rounded-lg object-cover"
+                src="../assets/images/songs/1.jpg"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <div class="">
+              <div class="text-14 font-semibold md:text-base line-clamp-1">
+                Bridge Over Slippery Curtains
+              </div>
+              <div class="mt-1 text-12 text-grey-400 md:text-14">
+                1.344 followers
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <div class="overflow-hidden w-11 h-11 rounded-lg">
+              <img
+                class="h-full w-full rounded-lg object-cover"
+                src="../assets/images/songs/1.jpg"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <div class="">
+              <div class="text-14 font-semibold md:text-base line-clamp-1">
+                Bridge Over Slippery Curtains
+              </div>
+              <div class="mt-1 text-12 text-grey-400 md:text-14">
+                1.344 followers
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <div class="overflow-hidden w-11 h-11 rounded-lg">
+              <img
+                class="h-full w-full rounded-lg object-cover"
+                src="../assets/images/songs/1.jpg"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <div class="">
+              <div class="text-14 font-semibold md:text-base line-clamp-1">
+                Bridge Over Slippery Curtains
+              </div>
+              <div class="mt-1 text-12 text-grey-400 md:text-14">
+                1.344 followers
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <div class="overflow-hidden w-11 h-11 rounded-lg">
+              <img
+                class="h-full w-full rounded-lg object-cover"
+                src="../assets/images/songs/1.jpg"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <div class="">
+              <div class="text-14 font-semibold md:text-base line-clamp-1">
+                Bridge Over Slippery Curtains
+              </div>
+              <div class="mt-1 text-12 text-grey-400 md:text-14">
+                1.344 followers
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <div class="overflow-hidden w-11 h-11 rounded-lg">
+              <img
+                class="h-full w-full rounded-lg object-cover"
+                src="../assets/images/songs/1.jpg"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <div class="">
+              <div class="text-14 font-semibold md:text-base line-clamp-1">
+                Bridge Over Slippery Curtains
+              </div>
+              <div class="mt-1 text-12 text-grey-400 md:text-14">
+                1.344 followers
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <div class="overflow-hidden w-11 h-11 rounded-lg">
+              <img
+                class="h-full w-full rounded-lg object-cover"
+                src="../assets/images/songs/1.jpg"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <div class="">
+              <div class="text-14 font-semibold md:text-base line-clamp-1">
+                Bridge Over Slippery Curtains
+              </div>
+              <div class="mt-1 text-12 text-grey-400 md:text-14">
+                1.344 followers
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <div class="overflow-hidden w-11 h-11 rounded-lg">
+              <img
+                class="h-full w-full rounded-lg object-cover"
+                src="../assets/images/songs/1.jpg"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <div class="">
+              <div class="text-14 font-semibold md:text-base line-clamp-1">
+                Bridge Over Slippery Curtains
+              </div>
+              <div class="mt-1 text-12 text-grey-400 md:text-14">
+                1.344 followers
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <div class="overflow-hidden w-11 h-11 rounded-lg">
+              <img
+                class="h-full w-full rounded-lg object-cover"
+                src="../assets/images/songs/1.jpg"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <div class="">
+              <div class="text-14 font-semibold md:text-base line-clamp-1">
+                Bridge Over Slippery Curtains
+              </div>
+              <div class="mt-1 text-12 text-grey-400 md:text-14">
+                1.344 followers
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <div class="overflow-hidden w-11 h-11 rounded-lg">
+              <img
+                class="h-full w-full rounded-lg object-cover"
+                src="../assets/images/songs/1.jpg"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <div class="">
+              <div class="text-14 font-semibold md:text-base line-clamp-1">
+                Bridge Over Slippery Curtains
+              </div>
+              <div class="mt-1 text-12 text-grey-400 md:text-14">
+                1.344 followers
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <div class="overflow-hidden w-11 h-11 rounded-lg">
+              <img
+                class="h-full w-full rounded-lg object-cover"
+                src="../assets/images/songs/1.jpg"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <div class="">
+              <div class="text-14 font-semibold md:text-base line-clamp-1">
+                Bridge Over Slippery Curtains
+              </div>
+              <div class="mt-1 text-12 text-grey-400 md:text-14">
+                1.344 followers
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <div class="overflow-hidden w-11 h-11 rounded-lg">
+              <img
+                class="h-full w-full rounded-lg object-cover"
+                src="../assets/images/songs/1.jpg"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <div class="">
+              <div class="text-14 font-semibold md:text-base line-clamp-1">
+                Bridge Over Slippery Curtains
+              </div>
+              <div class="mt-1 text-12 text-grey-400 md:text-14">
+                1.344 followers
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <div class="overflow-hidden w-11 h-11 rounded-lg">
+              <img
+                class="h-full w-full rounded-lg object-cover"
+                src="../assets/images/songs/1.jpg"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <div class="">
+              <div class="text-14 font-semibold md:text-base line-clamp-1">
+                Bridge Over Slippery Curtains
+              </div>
+              <div class="mt-1 text-12 text-grey-400 md:text-14">
+                1.344 followers
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
+  <!-- modal edit -->
+  <div class="box-shadow">
+    <div class="flex container items-center justify-between py-3">
+      <div class="flex w-[70px] items-center gap-3">
+        <img
+          src="../assets/images/arrow-left.svg"
+          alt=""
+          class="w-6 h-6 rounded-xl"
+        />
+      </div>
+      <div
+        class="flex items-center gap-2 text-18 font-semibold text-neutral-dark-500"
+      >
+        Voting
+      </div>
+      <button
+        class="text-[#1975FF] text-14 font-semibold open-modal-voting"
+      >
+        Nominate
+      </button>
+    </div>
+    <!-- navigation -->
+    <div
+          class="grid container grid-cols-2 text-14 place-items-center font-semibold text-grey-300"
+        >
+          <a
+            href="../voting/music-voting.html"
+            class="w-full text-center  py-2"
+            >Music</a
+          >
+          <a
+            href="../voting/video-ranking.html"
+            class="w-full text-center active-mobile py-2"
+            >Video</a
+          >
+        </div>
+  </div>
+  <section id="tabs" class="container">
+    <div class="grid grid-cols-3 p-1 mt-5 bg-grey-100 rounded-xl">
+      <a
+        href="#trending"
+        class="px-4 py-2 text-grey-300 w-full flex justify-center items-center text-14 font-semibold rounded-xl text-center active-setting"
+        >Trending</a
+      >
+      <a
+        href="#artist"
+        class="px-4 py-2 text-grey-300 w-full flex justify-center items-center text-14 font-semibold rounded-xl text-center"
+        >Creator 30</a
+      >
+      <a
+        href="#composers"
+        class="px-4 py-2 text-grey-300 w-full flex justify-center items-center text-14 font-semibold rounded-xl text-center"
+        >Top 30
+      </a>
+    </div>
+    <!-- list trending  -->
+    <div id="trending" class="relative mt-4">
+      <div class="flex flex-col mt-4 gap-4">
+        <a href="#" class="flex items-center w-full gap-2">
+          <div
+            class="text-grey-400 w-[20px] h-[20px] text-14 items-center font-semibold flex flex-col"
+          >
+            1
+            <img src="../assets/svgs/up.svg" alt="" class="w-3 h-3" />
+          </div>
+          <div class="relative max-w-[118px]">
+            <img
+              class="h-full w-full rounded-lg object-cover"
+              src="../assets/images/videos/1.jpg"
+              loading="lazy"
+              alt=""
+            />
+            <span
+              class="absolute bottom-2 right-2 z-10 block rounded-full bg-video px-1.5 py-0.5 text-12 text-white"
+              >03:20</span
+            >
+          </div>
+          <div class="flex gap-2">
+            <div class="w-[80%]">
+              <div class="text-14 font-semibold md:text-base line-clamp-1">
+                The Apple Where Your Heart Should Be
+              </div>
+              <div class="mt-1 text-12 text-grey-400 md:text-14">
+                Audioslave
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="flex items-center w-full gap-2">
+          <div
+            class="text-grey-400 w-[20px] h-[20px] text-14 items-center font-semibold flex flex-col"
+          >
+            2
+            <img src="../assets/svgs/down.svg" alt="" class="w-3 h-3" />
+          </div>
+          <div class="relative max-w-[118px]">
+            <img
+              class="h-full w-full rounded-lg object-cover"
+              src="../assets/images/videos/1.jpg"
+              loading="lazy"
+              alt=""
+            />
+            <span
+              class="absolute bottom-2 right-2 z-10 block rounded-full bg-video px-1.5 py-0.5 text-12 text-white"
+              >03:20</span
+            >
+          </div>
+          <div class="flex gap-2">
+            <div class="w-[80%]">
+              <div class="text-14 font-semibold md:text-base line-clamp-1">
+                The Apple Where Your Heart Should Be
+              </div>
+              <div class="mt-1 text-12 text-grey-400 md:text-14">
+                Audioslave
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="flex items-center w-full gap-2">
+          <div
+            class="text-grey-400 w-[20px] h-[20px] text-14 items-center font-semibold flex flex-col"
+          >
+            3
+            <img src="../assets/svgs/stand.svg  " alt="" class="w-3 h-3" />
+          </div>
+          <div class="relative max-w-[118px]">
+            <img
+              class="h-full w-full rounded-lg object-cover"
+              src="../assets/images/videos/1.jpg"
+              loading="lazy"
+              alt=""
+            />
+            <span
+              class="absolute bottom-2 right-2 z-10 block rounded-full bg-video px-1.5 py-0.5 text-12 text-white"
+              >03:20</span
+            >
+          </div>
+          <div class="flex gap-2">
+            <div class="w-[80%]">
+              <div class="text-14 font-semibold md:text-base line-clamp-1">
+                The Apple Where Your Heart Should Be
+              </div>
+              <div class="mt-1 text-12 text-grey-400 md:text-14">
+                Audioslave
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- list artist   -->
+    <div id="artist" class="relative mt-4">
+      <div class="flex flex-col gap-4">
+        <div class="flex items-center gap-2">
+          <div
+            class="text-grey-400 text-14 items-center font-semibold flex flex-col"
+          >
+            1
+            <img src="../assets/svgs/up.svg" alt="" class="w-full h-full" />
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="overflow-hidden w-12 h-12 rounded-lg">
+              <img
+                class="h-full w-full rounded-lg object-cover"
+                src="../assets/images/songs/1.jpg"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <div class="">
+              <div class="text-14 font-semibold md:text-base line-clamp-1">
+                Bridge Over Slippery Curtains
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <div
+            class="text-grey-400 text-14 items-center font-semibold flex flex-col gap-"
+          >
+            2
+            <img src="../assets/svgs/down.svg" alt="" />
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="overflow-hidden w-12 h-12 rounded-lg">
+              <img
+                class="h-full w-full rounded-lg object-cover"
+                src="../assets/images/songs/1.jpg"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <div class="">
+              <div class="text-14 font-semibold md:text-base line-clamp-1">
+                Bridge Over Slippery Curtains
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <div
+            class="text-grey-400 text-14 items-center font-semibold flex flex-col gap-"
+          >
+            3
+            <img src="../assets/svgs/stand.svg" alt="" class="w-3 h-3" />
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="overflow-hidden w-12 h-12 rounded-lg">
+              <img
+                class="h-full w-full rounded-lg object-cover"
+                src="../assets/images/songs/1.jpg"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <div class="">
+              <div class="text-14 font-semibold md:text-base line-clamp-1">
+                Bridge Over Slippery Curtains
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- list composer   -->
+    <div id="composers" class="relative mt-4">
+      <div class="flex flex-col gap-4">
+        <div class="flex items-center gap-2">
+          <div
+            class="text-grey-400 text-14 items-center font-semibold flex flex-col"
+          >
+            1
+            <img src="../assets/svgs/up.svg" alt="" class="w-full h-full" />
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="overflow-hidden w-12 h-12 rounded-lg">
+              <img
+                class="h-full w-full rounded-lg object-cover"
+                src="../assets/images/songs/1.jpg"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <div class="">
+              <div class="text-14 font-semibold md:text-base line-clamp-1">
+                Bridge Over Slippery Curtains
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <div
+            class="text-grey-400 text-14 items-center font-semibold flex flex-col gap-"
+          >
+            2
+            <img src="../assets/svgs/down.svg" alt="" />
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="overflow-hidden w-12 h-12 rounded-lg">
+              <img
+                class="h-full w-full rounded-lg object-cover"
+                src="../assets/images/songs/1.jpg"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <div class="">
+              <div class="text-14 font-semibold md:text-base line-clamp-1">
+                Bridge Over Slippery Curtains
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <div
+            class="text-grey-400 text-14 items-center font-semibold flex flex-col gap-"
+          >
+            3
+            <img src="../assets/svgs/stand.svg" alt="" class="w-3 h-3" />
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="overflow-hidden w-12 h-12 rounded-lg">
+              <img
+                class="h-full w-full rounded-lg object-cover"
+                src="../assets/images/songs/1.jpg"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <div class="">
+              <div class="text-14 font-semibold md:text-base line-clamp-1">
+                Bridge Over Slippery Curtains
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
   </body>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -1226,4 +1813,6 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="js/index.js"></script>
   <script src="js/new-song-release.js"></script>
+  <script src="../js/vote.js"></script>
+
 </html>

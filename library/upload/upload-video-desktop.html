@@ -3,15 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clib - Playlist Albums</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
+    <title>Clib - Login</title>
     <link rel="stylesheet" href="../../styles/index.css" />
   </head>
   <body>
-  <div class="hidden md:block">
+<div class="hidden md:block">
       <header class="fixed left-0 right-0 top-0 z-[999]">
         <div class="bg-white py-2.5 shadow-[0px_2px_10px_0px_rgba(0,0,0,0.04)]">
           <div class="container relative flex items-center justify-between">
@@ -566,7 +562,7 @@
               <button class="">
                 <img src="../../assets/svgs/wallet-pc.svg" alt="" />
               </button>
-              <a href="./profile" class="flex items-center gap-2">
+              <a href="../profile" class="flex items-center gap-2">
                 <img
                   src="../../assets/images/avatar1.jpg"
                   class="h-11 w-11 rounded-lg object-cover"
@@ -595,12 +591,10 @@
             class="container relative grid grid-cols-2 items-center gap-[35px] md:grid-cols-5"
           >
             <li>
-              <a href="../../music/index.html" class="header-item-link">music</a>
+              <a href="../music/index.html" class="header-item-link">music</a>
             </li>
             <li>
-              <a href="../../videos/index.html" class="header-item-link"
-                >videos</a
-              >
+              <a href="../videos/index.html" class="header-item-link">videos</a>
             </li>
             <li class="max-md:hidden">
               <a
@@ -616,376 +610,315 @@
             </li>
             <li class="max-md:hidden">
               <a
-                href="../../marketplace/marketplace-music-desktop.html"
+                href="../marketplace/marketplace-music-desktop.html"
                 class="header-item-link"
                 >marketplace</a
               >
             </li>
             <li class="max-md:hidden">
-              <a href="../../voting/music-voting.html" class="header-item-link"
+              <a href="../voting/music-voting.html" class="header-item-link"
                 >voting</a
               >
             </li>
           </ul>
         </div>
       </header>
-      <main class="container mt-[100px] md:mt-[135px] lg:mt-[165px]">
-        <div
-          class="bg-white rounded-xl overflow-hidden shadow-[0px_2px_20px_0px_rgba(0,0,0,0.08)]"
-        >
-          <div
-            class="grid w-full grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 p-1 bg-grey-100 rounded-xl mx-auto shadow-[0px_2px_20px_0px_rgba(0,0,0,0.08)]"
-          >
-            <a
-              href="../../library/overview/music.html"
-              class="flex btn-upload items-center justify-center font-semibold w-full text-14 lg:text-16 gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl"
+      <main class="container mt-[120px] md:mt-[135px] lg:mt-[165px]">
+        <section class="my-12 relative">
+          <!-- video -->
+          <div class="modal-upload-video hidden overlay overflow-hidden">
+            <div
+              class="abs-center w-full lg:w-[78%] max-h-full scrollbar-custom overflow-y-auto lg:max-h-none bg-[#fff] rounded-xl p-6"
             >
-              <svg
-                width="25"
-                height="24"
-                viewBox="0 0 25 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                class="w-full rounded-lg border py-2 px-4 hidden justify-between lg:flex items-center mb-6"
               >
-                <path
-                  d="M13.42 2.25984L19.93 5.76984C20.69 6.17984 20.69 7.34984 19.93 7.75984L13.42 11.2698C12.84 11.5798 12.16 11.5798 11.58 11.2698L5.07 7.75984C4.31 7.34984 4.31 6.17984 5.07 5.76984L11.58 2.25984C12.16 1.94984 12.84 1.94984 13.42 2.25984Z"
-                  stroke="#A1ABB3"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M4.11 10.1297L10.16 13.1597C10.91 13.5397 11.39 14.3097 11.39 15.1497V20.8697C11.39 21.6997 10.52 22.2297 9.78 21.8597L3.73 18.8297C2.98 18.4497 2.5 17.6797 2.5 16.8397V11.1197C2.5 10.2897 3.37 9.75968 4.11 10.1297Z"
-                  stroke="#A1ABB3"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M20.89 10.1297L14.84 13.1597C14.09 13.5397 13.61 14.3097 13.61 15.1497V20.8697C13.61 21.6997 14.48 22.2297 15.22 21.8597L21.27 18.8297C22.02 18.4497 22.5 17.6797 22.5 16.8397V11.1197C22.5 10.2897 21.63 9.75968 20.89 10.1297Z"
-                  stroke="#A1ABB3"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
+                <div class="flex items-center gap-2">
+                  <p class="text-14 lg:text-base font-semibold">file</p>
+                  <p class="px-6 py-2 bg-grey-100 rounded-xl text-grey-400">
+                    demosong.mp3
+                  </p>
+                </div>
+                <div class="px-6 py-2 bg-grey-100 rounded-xl text-grey-400">
+                  Replace
+                </div>
+              </div>
+              <div class="flex flex-col lg:flex-row lg:items-center gap-8">
+                <div class="lg:w-[40%]">
+                  <img
+                    src="../../assets/svgs/Frame 48096929.png"
+                    alt=""
+                    class="w-full lg:h-[280px] object-cover rounded-xl"
+                  />
+                </div>
+                <form class="lg:w-[60%] flex flex-col gap-3 text-grey-400">
+                  <div class="flex flex-col gap-2">
+                    <label class="text-14 lg:text-base font-semibold"
+                      >Title</label
+                    >
+                    <input
+                      type="text"
+                      placeholder="Title"
+                      class="w-full px-4 py-3 titile bg-grey-100 rounded-xl outline-none border-none"
+                    />
+                  </div>
   
-              Overview
-            </a>
-            <a
-              href="../../library/likes/liked-songs.html"
-              class="flex btn-upload items-center justify-center font-semibold w-full text-14 lg:text-16 gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl"
-            >
-              <svg
-                width="25"
-                height="24"
-                viewBox="0 0 25 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M13.12 20.8096C12.78 20.9296 12.22 20.9296 11.88 20.8096C8.98 19.8196 2.5 15.6896 2.5 8.68961C2.5 5.59961 4.99 3.09961 8.06 3.09961C9.88 3.09961 11.49 3.97961 12.5 5.33961C13.51 3.97961 15.13 3.09961 16.94 3.09961C20.01 3.09961 22.5 5.59961 22.5 8.68961C22.5 15.6896 16.02 19.8196 13.12 20.8096Z"
-                  stroke="#A1ABB3"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              Likes
-            </a>
-            <a
-              href="../../library/playlists/music.html"
-              class="flex btn-upload items-center justify-center font-semibold w-full text-14 lg:text-16 gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl"
-            >
-              <svg
-                width="25"
-                height="24"
-                viewBox="0 0 25 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M22.5 3.75H2.5C2.09 3.75 1.75 3.41 1.75 3C1.75 2.59 2.09 2.25 2.5 2.25H22.5C22.91 2.25 23.25 2.59 23.25 3C23.25 3.41 22.91 3.75 22.5 3.75Z"
-                  fill="white"
-                />
-                <path
-                  d="M11.5 9.75H2.5C2.09 9.75 1.75 9.41 1.75 9C1.75 8.59 2.09 8.25 2.5 8.25H11.5C11.91 8.25 12.25 8.59 12.25 9C12.25 9.41 11.91 9.75 11.5 9.75Z"
-                  fill="white"
-                />
-                <path
-                  d="M8.5 15.75H2.5C2.09 15.75 1.75 15.41 1.75 15C1.75 14.59 2.09 14.25 2.5 14.25H8.5C8.91 14.25 9.25 14.59 9.25 15C9.25 15.41 8.91 15.75 8.5 15.75Z"
-                  fill="white"
-                />
-                <path
-                  d="M6.5 21.75H2.5C2.09 21.75 1.75 21.41 1.75 21C1.75 20.59 2.09 20.25 2.5 20.25H6.5C6.91 20.25 7.25 20.59 7.25 21C7.25 21.41 6.91 21.75 6.5 21.75Z"
-                  fill="white"
-                />
-                <path
-                  d="M22.3602 7.68021C21.7702 7.23021 20.9602 7.14021 20.0102 7.40021L15.6602 8.58021C14.4902 8.90021 13.7702 9.85021 13.7702 11.0502V13.6002V17.2802C13.3502 17.0402 12.8602 16.8902 12.3402 16.8902C10.7302 16.8902 9.41016 18.2002 9.41016 19.8202C9.41016 21.4302 10.7202 22.7502 12.3402 22.7502C13.9602 22.7502 15.2702 21.4402 15.2702 19.8202V14.1702L21.7502 12.4002V15.8302C21.3302 15.5902 20.8402 15.4402 20.3202 15.4402C18.7102 15.4402 17.3902 16.7502 17.3902 18.3702C17.3902 19.9802 18.7002 21.3002 20.3202 21.3002C21.9402 21.3002 23.2502 19.9902 23.2502 18.3702V11.4202V9.87021C23.2502 8.86021 22.9502 8.12021 22.3602 7.68021ZM12.3402 21.2502C11.5502 21.2502 10.9102 20.6102 10.9102 19.8202C10.9102 19.0302 11.5502 18.3902 12.3402 18.3902C13.1302 18.3902 13.7702 19.0302 13.7702 19.8202C13.7702 20.6102 13.1302 21.2502 12.3402 21.2502ZM20.3202 19.8002C19.5302 19.8002 18.8902 19.1602 18.8902 18.3702C18.8902 17.5802 19.5302 16.9402 20.3202 16.9402C21.1102 16.9402 21.7502 17.5802 21.7502 18.3702C21.7502 19.1602 21.1102 19.8002 20.3202 19.8002Z"
-                  fill="white"
-                />
-              </svg>
-              Playlists
-            </a>
-            <a
-              href="../../library/albums/index.html"
-              class="flex btn-upload items-center justify-center font-semibold w-full text-14 lg:text-16 gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl active-upload"
-            >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M17 4.75H16V3.26C16 2.43 15.32 1.75 14.49 1.75H9.51C8.68 1.75 8 2.43 8 3.26V4.75H7C5.9 4.75 5 5.65 5 6.75V6.88C5.32 6.79 5.65 6.75 6 6.75H18C18.35 6.75 18.68 6.79 19 6.88V6.75C19 5.65 18.1 4.75 17 4.75Z"
-                  fill="white"
-                />
-                <path
-                  d="M13.9304 16.9297C13.6104 16.9297 13.3604 17.1897 13.3604 17.4997C13.3604 17.8097 13.6204 18.0697 13.9304 18.0697C14.2404 18.0697 14.5004 17.8097 14.5004 17.4997C14.5004 17.1897 14.2404 16.9297 13.9304 16.9297Z"
-                  fill="white"
-                />
-                <path
-                  d="M9.07 17.8096C8.75 17.8096 8.5 18.0696 8.5 18.3796C8.5 18.6896 8.76 18.9496 9.07 18.9496C9.38 18.9496 9.64 18.6896 9.64 18.3796C9.64 18.0696 9.39 17.8096 9.07 17.8096Z"
-                  fill="white"
-                />
-                <path
-                  d="M19 8.38C18.68 8.29 18.35 8.25 18 8.25H6C5.65 8.25 5.32 8.29 5 8.38C3.28 8.83 2 10.4 2 12.25V18.25C2 20.45 3.8 22.25 6 22.25H18C20.2 22.25 22 20.45 22 18.25V12.25C22 10.4 20.72 8.83 19 8.38ZM16 13.28V17.5C16 18.64 15.07 19.57 13.93 19.57C12.79 19.57 11.86 18.64 11.86 17.5C11.86 16.36 12.79 15.43 13.93 15.43C14.13 15.43 14.32 15.47 14.5 15.52V14.26L11.15 15.17V18.38C11.15 18.39 11.15 18.4 11.14 18.41C11.13 19.54 10.2 20.46 9.07 20.46C7.93 20.46 7 19.53 7 18.38C7 17.23 7.93 16.31 9.07 16.31C9.27 16.31 9.46 16.35 9.65 16.4V14.6V13.05C9.65 12.19 10.19 11.49 11.01 11.27L13.66 10.54C14.51 10.31 15.05 10.53 15.35 10.76C15.65 10.99 16 11.44 16 12.33V13.28Z"
-                  fill="white"
-                />
-              </svg>
-  
-              Albums
-            </a>
-            <a
-              href="../../library/follow/artists.html"
-              class="flex btn-upload items-center justify-center font-semibold w-full text-14 lg:text-16 gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl"
-            >
-              <svg
-                width="25"
-                height="24"
-                viewBox="0 0 25 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.65957 10.87C9.55957 10.86 9.43957 10.86 9.32957 10.87C6.94957 10.79 5.05957 8.84 5.05957 6.44C5.05957 3.99 7.03957 2 9.49957 2C11.9496 2 13.9396 3.99 13.9396 6.44C13.9296 8.84 12.0396 10.79 9.65957 10.87Z"
-                  stroke="#A1ABB3"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M16.9103 4C18.8503 4 20.4103 5.57 20.4103 7.5C20.4103 9.39 18.9103 10.93 17.0403 11C16.9603 10.99 16.8703 10.99 16.7803 11"
-                  stroke="#A1ABB3"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M4.65973 14.56C2.23973 16.18 2.23973 18.82 4.65973 20.43C7.40973 22.27 11.9197 22.27 14.6697 20.43C17.0897 18.81 17.0897 16.17 14.6697 14.56C11.9297 12.73 7.41973 12.73 4.65973 14.56Z"
-                  stroke="#A1ABB3"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M18.8398 20C19.5598 19.85 20.2398 19.56 20.7998 19.13C22.3598 17.96 22.3598 16.03 20.7998 14.86C20.2498 14.44 19.5798 14.16 18.8698 14"
-                  stroke="#A1ABB3"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-  
-              Follow
-            </a>
-            <a
-              href="../../library/history/recent-listening.html"
-              class="flex btn-upload items-center justify-center font-semibold w-full text-14 lg:text-16 gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl"
-            >
-              <svg
-                width="25"
-                height="24"
-                viewBox="0 0 25 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M22.5 12C22.5 17.52 18.02 22 12.5 22C6.98 22 2.5 17.52 2.5 12C2.5 6.48 6.98 2 12.5 2C18.02 2 22.5 6.48 22.5 12Z"
-                  stroke="#A1ABB3"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M16.2109 15.1798L13.1109 13.3298C12.5709 13.0098 12.1309 12.2398 12.1309 11.6098V7.50977"
-                  stroke="#A1ABB3"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-  
-              History
-            </a>
+                  <div class="flex flex-col gap-2">
+                    <label class="text-14 lg:text-base font-semibold"
+                      >Description</label
+                    >
+                    <textarea
+                      class="bg-grey-100 description rounded-xl min-h-[96px] h-[96px] outline-none border-none px-4 py-3"
+                      name="Description"
+                      id=""
+                      cols="30"
+                      rows="10"
+                      placeholder="Description your song"
+                    ></textarea>
+                  </div>
+                  <div
+                    class="text-14 lg:text-base font-semibold flex items-center gap-3"
+                  >
+                    Privacy
+                    <div class="flex items-center gap-1 font-normal ml-12">
+                      <input type="radio" />Public
+                    </div>
+                    <div class="flex items-center gap-1 font-normal">
+                      <input type="radio" />Private
+                    </div>
+                  </div>
+                  <div
+                    class="text-14 lg:text-base font-semibold flex gap-3 items-center"
+                  >
+                    Sell
+                    <div
+                      class="flex text-14 items-center font-normal line-clamp-1 ml-20 gap-1 text-grey-300"
+                    >
+                      <input type="radio" />No, It’s free
+                    </div>
+                    <div
+                      class="flex text-14 items-center font-normal line-clamp-1 gap-1 text-grey-300"
+                    >
+                      <input type="radio" />Yes, It’s for sell
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center py-2 w-[50%] justify-between rounded-xl px-4 text-16 font-semibold text-neutral-dark-500 border border-grey-200 md:hidden"
+                  >
+                    <p>$</p>
+                    <span>78</span>
+                    <p class="invisible">$</p>
+                  </div>
+                  <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 mt-9">
+                    <button
+                      type="button"
+                      class="px-6 close-modal hidden md:block py-3 rounded-xl text-center bg-grey-200 font-semibold text-grey-400 transition-opacity duration-300 lg:hover:opacity-70"
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      type="button"
+                      class="px-6 uploadButton py-3 rounded-xl text-center bg-grey-300 font-semibold text-[#fff] transition-opacity duration-300 lg:hover:opacity-70"
+                    >
+                      Upload
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
-        </div>
-        <ul
-          class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-x-4 gap-y-6 mt-4 xl:mt-6 md:p-4 rounded-xl bg-white"
-        >
-          <li class="">
-            <a href="#" class="">
-              <img
-                class="w-full aspect-square rounded-lg object-cover"
-                src="../../assets/images/songs/starboy.jpg"
-                alt=""
-              />
-              <div class="mt-2 text-14 lg:text-base font-semibold line-clamp-1">
-                I Love You 3000
+          <!-- your shop -->
+          <div
+            class="w-full bg-[#fff] lg:p-6 flex flex-col justify-center items-center rounded-xl"
+          >
+            <div
+              class="grid grid-cols-1 w-full lg:grid-cols-3 p-1 bg-grey-100 rounded-xl lg:w-[570px] place-content-between mx-auto"
+            >
+              <a
+                href="../upload/upload-music-desktop.html"
+                class="flex btn-upload items-center justify-center font-semibold w-full text-14 lg:text-16 gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="24"
+                  viewBox="0 0 25 24"
+                  fill="none"
+                >
+                  <path
+                    d="M21.5 8.65002V14.35C21.5 14.69 21.49 15.02 21.47 15.33C20.75 14.51 19.68 14 18.5 14C16.29 14 14.5 15.79 14.5 18C14.5 18.75 14.71 19.46 15.08 20.06C15.28 20.4 15.54 20.71 15.84 20.97C15.53 20.99 15.2 21 14.85 21H9.14999C4.39999 21 2.5 19.1 2.5 14.35V8.65002C2.5 3.90002 4.39999 2 9.14999 2H14.85C19.6 2 21.5 3.90002 21.5 8.65002Z"
+                    stroke="#A1ABB3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.21953 14.4195C8.02034 14.4195 8.66953 13.7703 8.66953 12.9695C8.66953 12.1687 8.02034 11.5195 7.21953 11.5195C6.41872 11.5195 5.76953 12.1687 5.76953 12.9695C5.76953 13.7703 6.41872 14.4195 7.21953 14.4195Z"
+                    stroke="#A1ABB3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M13.9797 11.9995V6.33952C13.9797 5.12952 13.2197 4.96949 12.4597 5.17949L9.5697 5.96946C9.0497 6.10946 8.67969 6.5295 8.67969 7.1295V8.13951V8.8195V12.9695"
+                    stroke="#A1ABB3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12.5291 13.4508C13.3299 13.4508 13.9791 12.8016 13.9791 12.0008C13.9791 11.2 13.3299 10.5508 12.5291 10.5508C11.7283 10.5508 11.0791 11.2 11.0791 12.0008C11.0791 12.8016 11.7283 13.4508 12.5291 13.4508Z"
+                    stroke="#A1ABB3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8.66992 8.82892L13.9799 7.37891"
+                    stroke="#A1ABB3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M22.5 18C22.5 18.75 22.29 19.46 21.92 20.06C21.23 21.22 19.96 22 18.5 22C17.04 22 15.77 21.22 15.08 20.06C14.71 19.46 14.5 18.75 14.5 18C14.5 15.79 16.29 14 18.5 14C20.71 14 22.5 15.79 22.5 18Z"
+                    stroke="#A1ABB3"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M19.9898 17.9805H17.0098"
+                    stroke="#A1ABB3"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M18.5 16.5195V19.5095"
+                    stroke="#A1ABB3"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Upload Music
+              </a>
+              <a
+                href="../upload/upload-video-desktop.html"
+                class="flex btn-upload btn-upload-video items-center active-upload text-14 font-semibold lg:text-16 justify-center gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M14.2295 2.5V5.86H9.76953V2.5H14.2295Z"
+                    fill="white"
+                    stroke="white"
+                  />
+                  <path
+                    d="M4.35297 3.49663C5.09793 2.94152 6.07364 2.5971 7.26975 2.52048C7.26999 2.5209 7.27019 2.5213 7.27035 2.52168C7.2704 2.52178 7.27043 2.52187 7.27047 2.52195V5.8607H2.77047C2.77033 5.8607 2.77021 5.8607 2.77009 5.8607C2.77001 5.86059 2.76992 5.86048 2.76983 5.86036C2.76875 5.85887 2.76803 5.85713 2.76775 5.85553C2.76762 5.85479 2.76753 5.85387 2.7676 5.85262C2.76767 5.85142 2.76793 5.84917 2.76898 5.8457L2.76899 5.8457L2.76998 5.84237C3.06695 4.83723 3.60802 4.05173 4.35297 3.49663Z"
+                    fill="white"
+                    stroke="white"
+                  />
+                  <path
+                    d="M16.7306 2.50996C16.7307 2.50958 16.731 2.50918 16.7312 2.50876C17.9273 2.58538 18.903 2.9298 19.648 3.48491C20.3929 4.04001 20.934 4.82551 21.231 5.83065L21.2309 5.83066L21.232 5.83398C21.233 5.83745 21.2333 5.8397 21.2333 5.8409C21.2334 5.84215 21.2333 5.84307 21.2332 5.84381C21.2329 5.84541 21.2322 5.84715 21.2311 5.84864C21.231 5.84876 21.2309 5.84887 21.2308 5.84898C21.2307 5.84898 21.2306 5.84898 21.2305 5.84898H16.7305V2.51023C16.7305 2.51015 16.7305 2.51006 16.7306 2.50996Z"
+                    fill="white"
+                    stroke="white"
+                  />
+                  <path
+                    d="M21.4864 15.8536C21.4709 15.838 21.4586 15.8238 21.4497 15.813C21.4407 15.802 21.4334 15.7923 21.4281 15.785C21.4259 15.7819 21.4238 15.779 21.4219 15.7764C20.7057 14.9907 19.6572 14.5 18.5 14.5C17.3796 14.5 16.3573 14.9621 15.6279 15.7091L21.4864 15.8536ZM21.4864 15.8536C21.4864 15.8536 21.4865 15.8536 21.4865 15.8536C21.4865 15.8536 21.4864 15.8536 21.4864 15.8536ZM21.5 15.8676V15.8803L21.6151 16.0191C22.1714 16.6903 22.5 17.5577 22.5 18.5C22.5 18.8227 22.4642 19.1292 22.3866 19.4221L22.3866 19.422L22.3843 19.4313C22.2868 19.8303 22.1265 20.2144 21.9203 20.5643C21.2265 21.7195 19.9561 22.5 18.5 22.5C17.5477 22.5 16.6916 22.1715 16.0316 21.6171L15.9857 21.5786L15.8871 21.48H15.8571C15.841 21.4641 15.8122 21.4368 15.7701 21.4079C15.5033 21.1688 15.2671 20.8796 15.0798 20.5645L15.0798 20.5645L15.0782 20.5618C14.7128 19.9558 14.5 19.2445 14.5 18.5C14.5 17.4135 14.9269 16.428 15.6278 15.7093L21.5 15.8676ZM16.0336 21.6265L16.0328 21.6257C16.0375 21.6302 16.0384 21.6312 16.0336 21.6265ZM15.5222 21.8278L15.67 21.68L15.5222 21.8278ZM21.6265 16.0236C21.6312 16.0284 21.6302 16.0275 21.6257 16.0228L21.6265 16.0236ZM19.75 20.2V19.73H20.18C20.8805 19.73 21.43 19.1618 21.43 18.48C21.43 17.7939 20.8661 17.23 20.18 17.23H19.75V16.84C19.75 16.1539 19.1861 15.59 18.5 15.59C17.8139 15.59 17.25 16.1539 17.25 16.84V17.23H16.82C16.1339 17.23 15.57 17.7939 15.57 18.48C15.57 19.1661 16.1339 19.73 16.82 19.73H17.25V20.2C17.25 20.8861 17.8139 21.45 18.5 21.45C19.1861 21.45 19.75 20.8861 19.75 20.2Z"
+                    fill="white"
+                    stroke="white"
+                  />
+                  <path
+                    d="M21.5 8.35937V12.7302C20.5913 12.2567 19.5561 11.9994 18.5 11.9994C16.7562 11.9994 15.0571 12.7131 13.8425 13.9598C12.6494 15.1749 12 16.7912 12 18.4994C12 19.4137 12.3528 20.5299 12.7653 21.4274C12.7723 21.4427 12.7728 21.4658 12.76 21.4876C12.756 21.4944 12.7524 21.4979 12.7506 21.4994C12.7504 21.4994 12.7502 21.4994 12.75 21.4994H7.81C4.87614 21.4994 2.5 19.1232 2.5 16.1894V8.35937H21.5Z"
+                    fill="white"
+                    stroke="white"
+                  />
+                </svg>
+                Upload Video
+              </a>
+              <a
+                href="../upload/upload-your-upload-music-desktop.html"
+                class="flex btn-upload btn-upload-yourshop text-14 font-semibold lg:text-16 items-center justify-center gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="24"
+                  viewBox="0 0 25 24"
+                  fill="none"
+                >
+                  <path
+                    d="M16.9405 8.89844C20.5405 9.20844 22.0105 11.0584 22.0105 15.1084V15.2384C22.0105 19.7084 20.2205 21.4984 15.7505 21.4984H9.24047C4.77047 21.4984 2.98047 19.7084 2.98047 15.2384V15.1084C2.98047 11.0884 4.43047 9.23844 7.97047 8.90844"
+                    stroke="#A1ABB3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12.5 15.0011V3.62109"
+                    stroke="#A1ABB3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15.8504 5.85L12.5004 2.5L9.15039 5.85"
+                    stroke="#A1ABB3"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Your Upload
+              </a>
+            </div>
+            <div
+              class="px-4 lg:px-[100px] max-w-full py-12 border border-dashed lg:max-w-[640px] mx-auto mt-8 mb-6 rounded-xl"
+            >
+              <div class="flex items-center flex-col justify-center">
+                <img src="../../assets/svgs/Frame 48097757.png" alt="" />
+                <p class="text-12 lg:text-14 text-center text-grey-400 mt-4 mb-6">
+                  Drag and drop your tracks & albums here. <br />
+                  Provide MP4, MOV for highest audio quality.
+                </p>
+                <button
+                  type="button"
+                  class="text-grey-400 btn-upload-video px-6 py-3 bg-grey-200 text-14 lg:text-base font-semibold rounded-xl"
+                >
+                  or choose files to upload
+                </button>
               </div>
-              <div class="mt-1 text-12 lg:text-14 text-grey-400">
-                Stephanie Poetri
-              </div>
-            </a>
-          </li>
-          <li class="">
-            <a href="#" class="">
-              <img
-                class="w-full aspect-square rounded-lg object-cover"
-                src="../../assets/images/songs/starboy.jpg"
-                alt=""
-              />
-              <div class="mt-2 text-14 lg:text-base font-semibold line-clamp-1">
-                I Love You 3000
-              </div>
-              <div class="mt-1 text-12 lg:text-14 text-grey-400">
-                Stephanie Poetri
-              </div>
-            </a>
-          </li>
-          <li class="">
-            <a href="#" class="">
-              <img
-                class="w-full aspect-square rounded-lg object-cover"
-                src="../../assets/images/songs/starboy.jpg"
-                alt=""
-              />
-              <div class="mt-2 text-14 lg:text-base font-semibold line-clamp-1">
-                I Love You 3000
-              </div>
-              <div class="mt-1 text-12 lg:text-14 text-grey-400">
-                Stephanie Poetri
-              </div>
-            </a>
-          </li>
-          <li class="">
-            <a href="#" class="">
-              <img
-                class="w-full aspect-square rounded-lg object-cover"
-                src="../../assets/images/songs/starboy.jpg"
-                alt=""
-              />
-              <div class="mt-2 text-14 lg:text-base font-semibold line-clamp-1">
-                I Love You 3000
-              </div>
-              <div class="mt-1 text-12 lg:text-14 text-grey-400">
-                Stephanie Poetri
-              </div>
-            </a>
-          </li>
-          <li class="">
-            <a href="#" class="">
-              <img
-                class="w-full aspect-square rounded-lg object-cover"
-                src="../../assets/images/songs/starboy.jpg"
-                alt=""
-              />
-              <div class="mt-2 text-14 lg:text-base font-semibold line-clamp-1">
-                I Love You 3000
-              </div>
-              <div class="mt-1 text-12 lg:text-14 text-grey-400">
-                Stephanie Poetri
-              </div>
-            </a>
-          </li>
-          <li class="">
-            <a href="#" class="">
-              <img
-                class="w-full aspect-square rounded-lg object-cover"
-                src="../../assets/images/songs/starboy.jpg"
-                alt=""
-              />
-              <div class="mt-2 text-14 lg:text-base font-semibold line-clamp-1">
-                I Love You 3000
-              </div>
-              <div class="mt-1 text-12 lg:text-14 text-grey-400">
-                Stephanie Poetri
-              </div>
-            </a>
-          </li>
-          <li class="">
-            <a href="#" class="">
-              <img
-                class="w-full aspect-square rounded-lg object-cover"
-                src="../../assets/images/songs/starboy.jpg"
-                alt=""
-              />
-              <div class="mt-2 text-14 lg:text-base font-semibold line-clamp-1">
-                I Love You 3000
-              </div>
-              <div class="mt-1 text-12 lg:text-14 text-grey-400">
-                Stephanie Poetri
-              </div>
-            </a>
-          </li>
-          <li class="">
-            <a href="#" class="">
-              <img
-                class="w-full aspect-square rounded-lg object-cover"
-                src="../../assets/images/songs/starboy.jpg"
-                alt=""
-              />
-              <div class="mt-2 text-14 lg:text-base font-semibold line-clamp-1">
-                I Love You 3000
-              </div>
-              <div class="mt-1 text-12 lg:text-14 text-grey-400">
-                Stephanie Poetri
-              </div>
-            </a>
-          </li>
-          <li class="">
-            <a href="#" class="">
-              <img
-                class="w-full aspect-square rounded-lg object-cover"
-                src="../../assets/images/songs/starboy.jpg"
-                alt=""
-              />
-              <div class="mt-2 text-14 lg:text-base font-semibold line-clamp-1">
-                I Love You 3000
-              </div>
-              <div class="mt-1 text-12 lg:text-14 text-grey-400">
-                Stephanie Poetri
-              </div>
-            </a>
-          </li>
-          <li class="">
-            <a href="#" class="">
-              <img
-                class="w-full aspect-square rounded-lg object-cover"
-                src="../../assets/images/songs/starboy.jpg"
-                alt=""
-              />
-              <div class="mt-2 text-14 lg:text-base font-semibold line-clamp-1">
-                I Love You 3000
-              </div>
-              <div class="mt-1 text-12 lg:text-14 text-grey-400">
-                Stephanie Poetri
-              </div>
-            </a>
-          </li>
-        </ul>
+            </div>
+            <div
+              class="flex items-center gap-2 mb-8 lg:mb-16 text-14 lg:text-base text-grey-400"
+            >
+              <input type="checkbox" />Make a playlist when multiple files are
+              selected
+            </div>
+            <div
+              class="text-12 lg:text-14 text-grey-400 lg:max-w-[900px] flex flex-col text-center justify-center"
+            >
+              <p>
+                Supported file types and sizes ⁃ Upload troubleshooting tips ⁃
+                Copyright FAQs
+              </p>
+              <p>
+                By uploading, you confirm that your sounds comply with our Terms
+                of Use and you don't infringe anyone else's rights.
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
       <footer
         class="mt-[100px] border-t border-t-grey-400 pb-6 pt-4 max-md:hidden"
@@ -1051,12 +984,7 @@
               id="close-header-tab-modal"
               class="flex w-full items-center justify-end"
             >
-              <img
-                width="16"
-                height="16"
-                src="../../assets/svgs/close.svg"
-                alt=""
-              />
+              <img width="16" height="16" src="../../assets/svgs/close.svg" alt="" />
             </button>
             <div class="mt-4 flex items-center gap-3 md:hidden">
               <img
@@ -1151,10 +1079,11 @@
           </div>
         </div>
       </div>
-  </div>
-  <!-- mobile -->
-  <main class="block md:hidden">
-    <div class="flex items-center justify-between py-3 box-shadow">
+</div>
+<!-- mobile -->
+<main class="relative block md:hidden pb-4">
+  <div class="box-shadow">
+    <div class="flex items-center justify-between py-3">
       <div class="flex items-center gap-3">
         <img
           src="../../assets/images/arrow-left.svg"
@@ -1165,63 +1094,123 @@
       <div
         class="flex items-center gap-2 text-18 font-semibold text-neutral-dark-500"
       >
-        Tittle
+        Add detail
       </div>
       <div class="invisible w-6 h-6"></div>
     </div>
-    <section class="container mt-3">
-      <div class="grid grid-cols-2 gap-x-3 gap-y-4">
-        <a href="#" class="">
-          <div class="overflow-hidden max-w-[158px] rounded-lg">
-            <img
-              class="h-full w-full rounded-lg object-cover"
-              src="../../assets/images/playlists/1.png"
-              loading="lazy"
-              alt=""
+  </div>
+
+  <div class="container mt-4">
+    <div class="w-full">
+      <div class="flex flex-col lg:flex-row lg:items-center gap-8">
+        <div class="h-[200px] w-[200px] mx-auto md:w-[500px] md:h-[500px]">
+          <img
+            src="../../assets/svgs/Frame 48096929.png"
+            alt=""
+            class="w-full rounded-xl object-cover h-full"
+          />
+        </div>
+        <form class="lg:w-[60%] flex flex-col gap-3 text-grey-400">
+          <div class="flex flex-col gap-2">
+            <label class="text-14 lg:text-base font-semibold">Tittle</label>
+            <input
+              type="text"
+              placeholder="Title"
+              class="w-full px-4 text-14 py-3 titile bg-grey-100 rounded-xl outline-none border-none"
             />
           </div>
-          <div class="text-14 font-semibold md:text-base mt-2">
-            Chill with me!
+          <div>
+            <label class="text-14 lg:text-base font-semibold" for="Genre"
+              >Topic</label
+            >
+            <select
+              data-te-select-init
+              class="w-full genre text-14 custom-select outline-none border-none px-4 py-3 bg-grey-100 rounded-xl mt-2"
+            >
+              <option
+                class="outline-none border-none px-4 py-3 bg-grey-100 rounded-xl"
+                value="1"
+              >
+                Pop
+              </option>
+              <option
+                class="outline-none border-none px-4 py-3 bg-grey-100 rounded-xl"
+                value="5"
+              >
+                Rock
+              </option>
+            </select>
           </div>
-          <div class="mt-1 text-12 text-grey-400 md:text-14">
-            Robbie Williams
+          <div class="flex flex-col gap-2">
+            <label class="text-14 lg:text-base font-semibold"
+              >Description</label
+            >
+            <textarea
+              class="bg-grey-100 text-14 description rounded-xl min-h-[96px] h-[96px] outline-none border-none px-4 py-3"
+              name="Description"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Description your song"
+            ></textarea>
           </div>
-        </a>
-        <a href="#" class="">
-          <div class="overflow-hidden max-w-[158px] rounded-lg">
-            <img
-              class="h-full w-full rounded-lg object-cover"
-              src="../../assets/images/playlists/1.png"
-              loading="lazy"
-              alt=""
-            />
+          <div
+            class="text-14 text-grey-400 lg:text-base font-semibold flex flex-col gap-3"
+          >
+            Privacy
+            <div class="flex items-center gap-3">
+              <div
+                class="flex items-center gap-1 font-normal text-neutral-dark-500 lg:ml-12"
+              >
+                <input type="radio" />Public
+              </div>
+              <div
+                class="flex items-center gap-1 text-neutral-dark-500 font-normal"
+              >
+                <input type="radio" />Private
+              </div>
+            </div>
           </div>
-          <div class="text-14 font-semibold md:text-base mt-2">
-            Chill with me!
+          <div
+            class="text-14 lg:text-base font-semibold flex flex-col md:flex-row gap-3 md:items-center"
+          >
+            Sell
+            <div class="flex items-center gap-3">
+              <div
+                class="flex items-center font-normal lg:ml-20 gap-1 text-neutral-dark-500"
+              >
+                <input type="radio" />No, It’s free
+              </div>
+              <div
+                class="flex items-center font-normal gap-1 text-neutral-dark-500"
+              >
+                <input type="radio" />Yes, It’s for sell
+              </div>
+            </div>
           </div>
-          <div class="mt-1 text-12 text-grey-400 md:text-14">
-            Robbie Williams
+          <div
+            class="flex items-center py-2 w-[50%] justify-between rounded-xl px-4 text-16 font-semibold text-neutral-dark-500 border border-grey-200 md:hidden"
+          >
+            <p>$</p>
+            <span>78</span>
+            <p class="invisible">$</p>
           </div>
-        </a>
-        <a href="#" class="">
-          <div class="overflow-hidden max-w-[158px] rounded-lg">
-            <img
-              class="h-full w-full rounded-lg object-cover"
-              src="../../assets/images/playlists/1.png"
-              loading="lazy"
-              alt=""
-            />
+          <p class="text-12 text-neutral-dark-500">
+            If you choose Yes, your product will appear on Martketplace
+          </p>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 mt-3">
+            <button
+              type="button"
+              class="px-6 uploadButton py-3 rounded-xl text-center bg-[#1975ff] font-semibold text-[#fff] transition-opacity duration-300 lg:hover:opacity-70"
+            >
+              Upload
+            </button>
           </div>
-          <div class="text-14 font-semibold md:text-base mt-2">
-            Chill with me!
-          </div>
-          <div class="mt-1 text-12 text-grey-400 md:text-14">
-            Robbie Williams
-          </div>
-        </a>
+        </form>
       </div>
-    </section>
-  </main>
+    </div>
+  </div>
+</main>
   </body>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -1229,7 +1218,6 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   ></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="../../js/index.js"></script>
-  <script src="../../js/library.js"></script>
+  <script src="../../js/upload.js"></script>
 </html>

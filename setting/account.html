@@ -15,1140 +15,1208 @@
     ></script>
   </head>
   <body>
-    <header class="fixed left-0 right-0 top-0 z-[999]">
-      <div class="bg-white py-2.5 shadow-[0px_2px_10px_0px_rgba(0,0,0,0.04)]">
-        <div class="container relative flex items-center justify-between">
-          <div class="flex items-center space-x-4">
-            <button id="toggle-mobile-menu">
-              <img src="../assets/svgs/menu.svg" alt="" />
-            </button>
-            <div
-              class="hidden w-fit items-center rounded-lg border border-grey-200 px-4 py-2 md:flex"
-            >
-              <img class="mr-2" src="../assets/svgs/search.svg" alt="" />
-              <input
-                class="h-full flex-1 text-base outline-none placeholder:text-grey-300 md:min-w-[260px]"
-                placeholder="What are you looking for?"
-              />
+<div class="hidden md:block">
+      <header class="fixed left-0 right-0 top-0 z-[999]">
+        <div class="bg-white py-2.5 shadow-[0px_2px_10px_0px_rgba(0,0,0,0.04)]">
+          <div class="container relative flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+              <button id="toggle-mobile-menu">
+                <img src="../assets/svgs/menu.svg" alt="" />
+              </button>
+              <div
+                class="hidden w-fit items-center rounded-lg border border-grey-200 px-4 py-2 md:flex"
+              >
+                <img class="mr-2" src="../assets/svgs/search.svg" alt="" />
+                <input
+                  class="h-full flex-1 text-base outline-none placeholder:text-grey-300 md:min-w-[260px]"
+                  placeholder="What are you looking for?"
+                />
+              </div>
             </div>
-          </div>
-
-          <a
-            href="/"
-            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden"
-          >
-            <img
-              class="object-contain w-8"
-              src="../assets/svgs/logo-mb.svg"
-              alt=""
-            />
-          </a>
-          <!-- SIGNED IN MOBILE -->
-          <div class="flex items-center space-x-4 md:hidden">
-            <button class="rounded-lg bg-grey-100 p-1.5">
+  
+            <a
+              href="/"
+              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden"
+            >
               <img
-                width="24"
-                height="24"
-                src="../assets/svgs/notification.svg"
+                class="object-contain w-8"
+                src="../assets/svgs/logo-mb.svg"
                 alt=""
               />
-            </button>
-            <button class="rounded-lg bg-grey-100 p-1.5">
-              <img src="../assets/svgs/messenger.svg" alt="" />
-            </button>
-          </div>
-          <!-- SIGNED IN -->
-
-          <!-- SIGNED IN PC-->
-          <div class="flex items-center space-x-4 max-md:hidden xl:space-x-6">
-            <button class="bg-grey-1 rounded-lg">
-              <img src="../assets/svgs/document.svg" alt="" />
-            </button>
-            <button class="">
-              <img src="../assets/svgs/sol.svg" alt="" />
-            </button>
-            <button class="">
-              <img src="../assets/svgs/export-pc.svg" alt="" />
-            </button>
-            <div
-              id="ms-wrapper"
-              class="relative flex items-center justify-center"
-            >
-              <button id="toggle-ms" class="toggle-ms">
+            </a>
+            <!-- SIGNED IN MOBILE -->
+            <div class="flex items-center space-x-4 md:hidden">
+              <button class="rounded-lg bg-grey-100 p-1.5">
                 <img
-                  class="ms-icon"
-                  src="../assets/svgs/messenger-pc.svg"
+                  width="24"
+                  height="24"
+                  src="../assets/svgs/notification.svg"
                   alt=""
                 />
               </button>
-              <div id="ms-popup" class="ms-popup">
-                <div class="flex items-center justify-between px-4 pb-2 pt-4">
-                  <span class="text-20 font-semibold">Message</span>
-                  <div class="flex items-center gap-2">
-                    <span class="text-14">New chat</span>
-                    <button class="rounded-xl bg-grey-200 p-1.5 duration-100">
+              <button class="rounded-lg bg-grey-100 p-1.5">
+                <img src="../assets/svgs/messenger.svg" alt="" />
+              </button>
+            </div>
+            <!-- SIGNED IN -->
+  
+            <!-- SIGNED IN PC-->
+            <div class="flex items-center space-x-4 max-md:hidden xl:space-x-6">
+              <button class="bg-grey-1 rounded-lg">
+                <img src="../assets/svgs/document.svg" alt="" />
+              </button>
+              <button class="">
+                <img src="../assets/svgs/sol.svg" alt="" />
+              </button>
+              <button class="">
+                <img src="../assets/svgs/export-pc.svg" alt="" />
+              </button>
+              <div
+                id="ms-wrapper"
+                class="relative flex items-center justify-center"
+              >
+                <button id="toggle-ms" class="toggle-ms">
+                  <img
+                    class="ms-icon"
+                    src="../assets/svgs/messenger-pc.svg"
+                    alt=""
+                  />
+                </button>
+                <div id="ms-popup" class="ms-popup">
+                  <div class="flex items-center justify-between px-4 pb-2 pt-4">
+                    <span class="text-20 font-semibold">Message</span>
+                    <div class="flex items-center gap-2">
+                      <span class="text-14">New chat</span>
+                      <button class="rounded-xl bg-grey-200 p-1.5 duration-100">
+                        <img
+                          class="h-6 w-6"
+                          src="../assets/svgs/edit.svg"
+                          alt=""
+                        />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="mt-2 px-4">
+                    <div
+                      class="flex items-center gap-2 rounded-xl bg-grey-100 p-3"
+                    >
+                      <img
+                        class="aspect-square w-5"
+                        src="../assets/svgs/search-people.svg"
+                        loading="lazy"
+                        alt=""
+                      />
+                      <input
+                        class="h-full flex-1 bg-transparent text-14 outline-none placeholder:text-grey-300"
+                        placeholder="Search people"
+                      />
+                    </div>
+                  </div>
+                  <ul class="mt-2 px-4">
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="../assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="Benny Andersson"
+                          />
+                          <div>
+                            <div class="line-clamp-1 text-14 font-semibold">
+                              Benny Andersson
+                            </div>
+                            <div class="line-clamp-1 text-14 font-semibold">
+                              aww
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">3d</div>
+                          <span class="dot !h-3 !w-3 !bg-branding"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between border-r-4 border-r-branding bg-[linear-gradient(270deg,#F3FCFF_0%,rgba(243,252,255,0.00)_103.09%)] px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="../assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="Son Tung M-TP"
+                          />
+                          <div>
+                            <div
+                              class="line-clamp-1 flex items-center gap-1 text-14 font-semibold"
+                            >
+                              Son Tung M-TP
+                              <img src="../assets/svgs/verify.svg" alt="" />
+                            </div>
+                            <div class="line-clamp-1 text-14">
+                              Send a playlist
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">3d</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="../assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="Donna Summer"
+                          />
+                          <div>
+                            <div class="line-clamp-1 text-14 font-semibold">
+                              Donna Summer
+                            </div>
+                            <div class="line-clamp-1 text-14">Hi</div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">3d</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="../assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="James"
+                          />
+                          <div>
+                            <div class="text-14 font-semibold">James</div>
+                            <div class="line-clamp-1 text-14">
+                              Wow, this is really epic
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">3w</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="../assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="James"
+                          />
+                          <div>
+                            <div class="text-14 font-semibold">Roger Daltrey</div>
+                            <div class="line-clamp-1 text-14">woohoooo</div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">17/03/2023</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="../assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="James"
+                          />
+                          <div>
+                            <div class="text-14 font-semibold">Big Star</div>
+                            <div class="line-clamp-1 text-14">
+                              Haha that's terrifying 😂
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">05/03/2023</div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="mt-2 py-3 text-center">
+                    <a
+                      href="#"
+                      class="text-14 font-semibold text-grey-400 hover:text-branding-secondary hover:underline"
+                      >View all message</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                id="noti-wrapper"
+                class="relative flex items-center justify-center"
+              >
+                <button id="toggle-notification" class="">
+                  <img
+                    class="noti-icon"
+                    src="../assets/svgs/notification-pc.svg"
+                    alt=""
+                  />
+                </button>
+                <div id="noti-popup" class="noti-popup">
+                  <div class="flex items-center justify-between px-4 pb-2 pt-4">
+                    <span class="text-20 font-semibold">Notification</span>
+                    <button
+                      class="transition-transform duration-100 hover:rotate-180"
+                    >
                       <img
                         class="h-6 w-6"
-                        src="../assets/svgs/edit.svg"
+                        src="../assets/svgs/setting.svg"
                         alt=""
                       />
                     </button>
                   </div>
-                </div>
-                <div class="mt-2 px-4">
-                  <div
-                    class="flex items-center gap-2 rounded-xl bg-grey-100 p-3"
-                  >
-                    <img
-                      class="aspect-square w-5"
-                      src="../assets/svgs/search-people.svg"
-                      loading="lazy"
-                      alt=""
-                    />
-                    <input
-                      class="h-full flex-1 bg-transparent text-14 outline-none placeholder:text-grey-300"
-                      placeholder="Search people"
-                    />
+                  <div class="px-4">
+                    <div class="grid grid-cols-3 items-center">
+                      <button
+                        class="h-[60px] border-b-4 border-b-branding-secondary text-center text-base font-semibold text-branding-secondary"
+                      >
+                        All
+                      </button>
+                      <button
+                        class="h-[60px] text-center text-base font-semibold text-grey-300"
+                      >
+                        Unread
+                      </button>
+                      <button
+                        class="h-[60px] text-center text-base font-semibold text-grey-300"
+                      >
+                        Following
+                      </button>
+                    </div>
                   </div>
-                </div>
-                <ul class="mt-2 px-4">
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="../assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="Benny Andersson"
-                        />
-                        <div>
-                          <div class="line-clamp-1 text-14 font-semibold">
-                            Benny Andersson
+                  <ul class="mt-4 px-2">
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Ariana Grande"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../assets/svgs/ms-text.svg"
+                                alt=""
+                              />
+                            </span>
                           </div>
-                          <div class="line-clamp-1 text-14 font-semibold">
-                            aww
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Macos</span> commented
+                              on your post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">3d</div>
                         <span class="dot !h-3 !w-3 !bg-branding"></span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between border-r-4 border-r-branding bg-[linear-gradient(270deg,#F3FCFF_0%,rgba(243,252,255,0.00)_103.09%)] px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="../assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="Son Tung M-TP"
-                        />
-                        <div>
-                          <div
-                            class="line-clamp-1 flex items-center gap-1 text-14 font-semibold"
-                          >
-                            Son Tung M-TP
-                            <img src="../assets/svgs/verify.svg" alt="" />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Ariana Grande"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../assets/svgs/react-noti.svg"
+                                alt=""
+                              />
+                            </span>
                           </div>
-                          <div class="line-clamp-1 text-14">
-                            Send a playlist
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">3d</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="../assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="Donna Summer"
-                        />
-                        <div>
-                          <div class="line-clamp-1 text-14 font-semibold">
-                            Donna Summer
-                          </div>
-                          <div class="line-clamp-1 text-14">Hi</div>
-                        </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">3d</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="../assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="James"
-                        />
-                        <div>
-                          <div class="text-14 font-semibold">James</div>
-                          <div class="line-clamp-1 text-14">
-                            Wow, this is really epic
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Josh</span> commented on
+                              your post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">3w</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="../assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="James"
-                        />
-                        <div>
-                          <div class="text-14 font-semibold">Roger Daltrey</div>
-                          <div class="line-clamp-1 text-14">woohoooo</div>
-                        </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">17/03/2023</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="../assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="James"
-                        />
-                        <div>
-                          <div class="text-14 font-semibold">Big Star</div>
-                          <div class="line-clamp-1 text-14">
-                            Haha that's terrifying 😂
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Harry"
+                            />
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Harry</span> following
+                              you
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">05/03/2023</div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-                <div class="mt-2 py-3 text-center">
-                  <a
-                    href="#"
-                    class="text-14 font-semibold text-grey-400 hover:text-branding-secondary hover:underline"
-                    >View all message</a
-                  >
+                        <button class="btn-primary">Follow</button>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Sona"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../assets/svgs/ms-text.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Sona</span> commented on
+                              your post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Been"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../assets/svgs/react-love.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Been</span> liked your
+                              post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                        <span class="dot !h-3 !w-3 !bg-branding"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Harry"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../assets/svgs/react-love.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Harry</span> liked your
+                              post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                        <span class="dot !h-3 !w-3 !bg-branding"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Jean"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../assets/svgs/ms-text.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Jean</span> commented on
+                              your post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="mt-2 py-3 text-center">
+                    <a
+                      href="#"
+                      class="text-14 font-semibold text-grey-400 hover:text-branding-secondary hover:underline"
+                      >View all notifications</a
+                    >
+                  </div>
                 </div>
               </div>
-            </div>
-            <div
-              id="noti-wrapper"
-              class="relative flex items-center justify-center"
-            >
-              <button id="toggle-notification" class="">
+              <button class="">
+                <img src="../assets/svgs/wallet-pc.svg" alt="" />
+              </button>
+              <a href="../profile" class="flex items-center gap-2">
                 <img
-                  class="noti-icon"
-                  src="../assets/svgs/notification-pc.svg"
-                  alt=""
+                  src="../assets/images/avatar1.jpg"
+                  class="h-11 w-11 rounded-lg object-cover"
+                  loading="lazy"
+                  alt="Iberd"
                 />
+                <span>Iberd</span>
+              </a>
+            </div>
+            <!-- SIGNED IN -->
+  
+            <!-- NOT SIGN IN <div class="flex items-center space-x-4">
+              <button>
+                <img src="../assets/svgs/export.svg" alt="" />
               </button>
-              <div id="noti-popup" class="noti-popup">
-                <div class="flex items-center justify-between px-4 pb-2 pt-4">
-                  <span class="text-20 font-semibold">Notification</span>
-                  <button
-                    class="transition-transform duration-100 hover:rotate-180"
-                  >
-                    <img
-                      class="h-6 w-6"
-                      src="../assets/svgs/setting.svg"
-                      alt=""
-                    />
-                  </button>
-                </div>
-                <div class="px-4">
-                  <div class="grid grid-cols-3 items-center">
-                    <button
-                      class="h-[60px] border-b-4 border-b-branding-secondary text-center text-base font-semibold text-branding-secondary"
-                    >
-                      All
-                    </button>
-                    <button
-                      class="h-[60px] text-center text-base font-semibold text-grey-300"
-                    >
-                      Unread
-                    </button>
-                    <button
-                      class="h-[60px] text-center text-base font-semibold text-grey-300"
-                    >
-                      Following
-                    </button>
-                  </div>
-                </div>
-                <ul class="mt-4 px-2">
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="../assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Ariana Grande"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="../assets/svgs/ms-text.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Macos</span> commented
-                            on your post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                      <span class="dot !h-3 !w-3 !bg-branding"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="../assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Ariana Grande"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="../assets/svgs/react-noti.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Josh</span> commented on
-                            your post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="../assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Harry"
-                          />
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Harry</span> following
-                            you
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                      <button class="btn-primary">Follow</button>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="../assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Sona"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="../assets/svgs/ms-text.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Sona</span> commented on
-                            your post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="../assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Been"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="../assets/svgs/react-love.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Been</span> liked your
-                            post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                      <span class="dot !h-3 !w-3 !bg-branding"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="../assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Harry"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="../assets/svgs/react-love.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Harry</span> liked your
-                            post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                      <span class="dot !h-3 !w-3 !bg-branding"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="../assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Jean"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="../assets/svgs/ms-text.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Jean</span> commented on
-                            your post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-                <div class="mt-2 py-3 text-center">
-                  <a
-                    href="#"
-                    class="text-14 font-semibold text-grey-400 hover:text-branding-secondary hover:underline"
-                    >View all notifications</a
-                  >
-                </div>
-              </div>
-            </div>
-            <button class="">
-              <img src="../assets/svgs/wallet-pc.svg" alt="" />
-            </button>
-            <a href="../profile" class="flex items-center gap-2">
-              <img
-                src="../assets/images/avatar1.jpg"
-                class="h-11 w-11 rounded-lg object-cover"
-                loading="lazy"
-                alt="Iberd"
-              />
-              <span>Iberd</span>
-            </a>
-          </div>
-          <!-- SIGNED IN -->
-
-          <!-- NOT SIGN IN <div class="flex items-center space-x-4">
-            <button>
-              <img src="../assets/svgs/export.svg" alt="" />
-            </button>
-            <a href="login.html" class="btn-secondary text-14 md:text-base"
-              >Sign in</a
-            >
-          </div> NOT SIGN IN -->
-        </div>
-      </div>
-      <div
-        class="border-b border-b-grey-200 bg-white md:border-none md:bg-grey-100 md:py-1.5 xl:py-2"
-      >
-        <ul
-          class="container relative grid grid-cols-2 items-center gap-[35px] md:grid-cols-5"
-        >
-          <li>
-            <a href="../music/index.html" class="header-item-link">music</a>
-          </li>
-          <li>
-            <a href="../videos/index.html" class="header-item-link">videos</a>
-          </li>
-          <li class="max-md:hidden">
-            <a
-              href="/"
-              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-            >
-              <img
-                class="aspect-square w-20 lg:w-[116px] object-contain"
-                src="../assets/svgs/logo.svg"
-                alt=""
-              />
-            </a>
-          </li>
-          <li class="max-md:hidden">
-            <a
-              href="../marketplace/marketplace-music-desktop.html"
-              class="header-item-link"
-              >marketplace</a
-            >
-          </li>
-          <li class="max-md:hidden">
-            <a href="../voting/music-voting.html" class="header-item-link"
-              >voting</a
-            >
-          </li>
-        </ul>
-      </div>
-    </header>
-    <main class="container mt-[120px] md:mt-[135px] lg:mt-[165px]">
-      <div class="modal-delete overlay">
-        <div class="p-6 w-[600px] bg-[#fff] abs-center rounded-xl">
-          <img
-            src="../assets/svgs/close.svg"
-            class="absolute top-5 close-modal right-5"
-            alt=""
-          />
-          <h5
-            class="text-neutral-dark-500 text-20 font-semibold text-center mb-4 lg:text-24"
-          >
-            Delete account
-          </h5>
-          <div class="flex flex-col gap-4">
-            <div class="flex items-center gap-3">
-              <input type="checkbox" name="" id="" />
-              <label for="" class="text-14 text-grey-400"
-                >I have another account</label
+              <a href="login.html" class="btn-secondary text-14 md:text-base"
+                >Sign in</a
               >
-            </div>
-            <div class="flex items-center gap-3">
-              <input type="checkbox" name="" id="" />
-              <label for="" class="text-14 text-grey-400"
-                >I want to make a new account</label
-              >
-            </div>
-            <div class="flex items-center gap-3">
-              <input type="checkbox" name="" id="" />
-              <label for="" class="text-14 text-grey-400"
-                >I am no longer creating content for this account</label
-              >
-            </div>
-            <div class="flex items-center gap-3">
-              <input type="checkbox" name="" id="" />
-              <label for="" class="text-14 text-grey-400"
-                >I had copyright issues with a track or tracks</label
-              >
-            </div>
-            <div class="flex items-center gap-3">
-              <input type="checkbox" name="" id="" />
-              <label for="" class="text-14 text-grey-400"
-                >I don’t want to subscribe to Clib Pro anymore</label
-              >
-            </div>
-            <div class="flex items-center gap-3">
-              <input type="checkbox" name="" id="" />
-              <label for="" class="text-14 text-grey-400"
-                >I switched to another music or audio service</label
-              >
-            </div>
-            <div class="flex items-center gap-3">
-              <input type="checkbox" name="" id="" />
-              <label for="" class="text-14 text-grey-400"
-                >My account got hacked</label
-              >
-            </div>
-            <div class="flex items-center gap-3">
-              <input type="checkbox" name="" id="" />
-              <label for="" class="text-14 text-grey-400"
-                >I can’t remove my tracks</label
-              >
-            </div>
-            <div class="flex items-center gap-3">
-              <input type="checkbox" name="" id="" />
-              <label for="" class="text-14 text-grey-400"
-                >People are harassing me</label
-              >
-            </div>
-            <div class="flex items-center gap-3">
-              <input type="checkbox" name="" id="" />
-              <label for="" class="text-14 text-grey-400"
-                >Too much spam on the platform</label
-              >
-            </div>
-            <div class="flex items-center gap-3">
-              <input type="checkbox" name="" id="" />
-              <label for="" class="text-14 text-grey-400"
-                >Other, please specify</label
-              >
-            </div>
-          </div>
-          <div class="w-full bg-grey-100 px-4 py-3 rounded-xl mt-4">
-            <input
-              type="text"
-              class="w-full bg-grey-100"
-              placeholder="Type your reason"
-            />
-          </div>
-          <div class="flex items-center gap-3 mt-4">
-            <input type="checkbox" name="" id="" />
-            <label for="" class="text-14 text-grey-400"
-              >Yes, I want to delete my account and all my music, videos,
-              marketplace, comments and stats.</label
-            >
-          </div>
-          <div class="flex items-end justify-end gap-3">
-            <button
-              class="text-grey-400 close-modal rounded-xl hover:opacity-80 transition-opacity duration-500 bg-grey-200 text-14 lg:text-base font-semibold px-4 py-3"
-            >
-              Cancel
-            </button>
-            <button
-              type="button"
-              class="text-[#fff] rounded-xl hover:opacity-80 transition-opacity duration-500 bg-[#ef5350] text-14 lg:text-base font-semibold px-4 py-3"
-            >
-              Delete Account
-            </button>
-          </div>
-        </div>
-      </div>
-      <header
-        class="grid place-items-center grid-cols-2 lg:grid-cols-5 gap-1 p-1 rounded-xl mx-auto bg-grey-100 box-shadow"
-      >
-        <a
-          href="../setting/account.html"
-          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-grey-300 font-semibold"
-          id="account-link"
-        >
-          <ion-icon name="person-outline" class="w-[20px] h-[20px]"></ion-icon>
-          Account
-        </a>
-        <a
-          href="../setting/content.html"
-          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-grey-300 font-semibold"
-          id="content-link"
-        >
-          <ion-icon name="document-text-outline" class="w-5 h-5"> </ion-icon>
-          Content
-        </a>
-        <a
-          href="../setting/notifications.html"
-          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-grey-300 font-semibold"
-          id="notifications-link"
-        >
-          <ion-icon name="notifications-outline" class="w-5 h-5"></ion-icon>
-          Notifications
-        </a>
-        <a
-          href="../setting/privacy.html"
-          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-grey-300 font-semibold"
-          id="privacy-link"
-        >
-          <ion-icon name="shield-outline" class="w-5 h-5"></ion-icon>
-          Privacy
-        </a>
-        <a
-          href="../setting/advertising.html"
-          class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-grey-300 font-semibold"
-          id="advertising-link"
-        >
-          <ion-icon name="volume-high"></ion-icon>
-          Advertising
-        </a>
-      </header>
-      <section class="flex items-start flex-col lg:flex-row gap-6 mt-6">
-        <div class="p-6 bg-white box-shadow w-full lg:w-[70%] mx-0 rounded-xl">
-          <h5 class="text-20 lg:text-24 font-semibold mb-6">Profile</h5>
-          <div class="flex items-start flex-col lg:flex-row gap-3">
-            <label
-              for=""
-              class="w-[30%] lg:w-[20%] text-14 mt-3 lg:text-base font-semibold text-grey-400"
-              >Email addresses</label
-            >
-            <div class="flex flex-col gap-4 w-full">
-              <input
-                type="text"
-                placeholder="iberd@gmail.com (Primary) "
-                class="w-full px-4 py-3 bg-grey-100 rounded-xl"
-              />
-              <div
-                class="flex items-center gap-2 w-full px-4 py-3 bg-grey-100 rounded-xl"
-              >
-                <input
-                  type="text"
-                  placeholder="ngocson@gmail.com (Not confirmed - Resend confirm email)"
-                  class="w-full bg-grey-100 outline-none border-none"
-                />
-                <img src="../assets/svgs/trash.png" alt="" />
-              </div>
-              <div>
-                <div
-                  class="flex items-center gap-2 p-1.5 w-full bg-grey-100 rounded-xl"
-                >
-                  <input
-                    type="text"
-                    placeholder="Please enter your email address"
-                    class="w-full bg-grey-100 outline-none border-none"
-                  />
-                  <div class="flex items-center gap-2">
-                    <button
-                      class="text-14 lg:text-base font-semibold text-grey-400 bg-grey-200 px-6 py-2 rounded-xl"
-                    >
-                      Cancel
-                    </button>
-                    <button
-                      class="text-14 lg:text-base font-semibold text-[#fff] bg-[#1975ff] px-6 py-2 rounded-xl"
-                    >
-                      Add
-                    </button>
-                  </div>
-                </div>
-                <div
-                  class="mt-2 text-12 lg:text-14 font-semibold text-[#EF5350]"
-                >
-                  That email addresses is already in use
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="w-full lg:w-[60%] flex items-center gap-[72px] mt-6">
-            <div>
-              <label
-                for=""
-                class="w-[20%] text-14 mt-3 lg:text-base font-semibold text-grey-400"
-                >Password</label
-              >
-            </div>
-            <input
-              type="password"
-              placeholder="Send password-reset link"
-              class="w-full px-4 py-3 bg-grey-100 rounded-xl"
-            />
-          </div>
-          <div class="w-full lg:w-[62%] flex items-center gap-[50px] mt-6">
-            <div class="flex items-center gap-2">
-              <div>
-                <label
-                  for=""
-                  class="text-14 mt-3 lg:text-base font-semibold text-grey-400"
-                  >Verification
-                </label>
-              </div>
-              <img src="../assets/svgs/verify.svg" alt="" />
-            </div>
-            <input
-              type="password"
-              placeholder="Send password-reset link"
-              class="w-full px-4 py-3 bg-grey-100 rounded-xl"
-            />
-          </div>
-          <div class="">
-            <h5 class="text-20 lg:text-24 font-semibold my-6">
-              Basic informaiton
-            </h5>
-            <div class="items-center flex gap-[40px]">
-              <div>
-                <label
-                  for=""
-                  class="w-[20%] text-14 mt-3 lg:text-base font-semibold text-grey-400"
-                  >Your birthday</label
-                >
-              </div>
-              <div class="flex items-center gap-3">
-                <select
-                  id="countries"
-                  class="w-full lg:w-[240px] bg-grey-100 px-6 py-3 border-none outline-none rounded-xl"
-                >
-                  <option selected>january</option>
-                  <option value="US">May</option>
-                  <option value="CA">July</option>
-                  <option value="FR">September</option>
-                  <option value="DE">October</option>
-                </select>
-                <select
-                  id="countries"
-                  class="w-full lg:w-[240px] bg-grey-100 px-6 py-3 border-none outline-none rounded-xl"
-                >
-                  <option selected>1990</option>
-                  <option value="FR">2001</option>
-                  <option value="CA">2002</option>
-                  <option value="US">2003</option>
-                  <option value="DE">2004</option>
-                </select>
-              </div>
-            </div>
-            <div class="items-center flex gap-[90px] mt-6 mb-8">
-              <div>
-                <label
-                  for=""
-                  class="w-[20%] text-14 mt-3 lg:text-base font-semibold text-grey-400"
-                  >Gender</label
-                >
-              </div>
-              <div class="flex items-center gap-3">
-                <input type="radio" name="" id="" />
-                Male
-              </div>
-              <div class="flex items-center gap-3">
-                <input type="radio" name="" id="" />
-                Female
-              </div>
-              <div class="flex items-center gap-3">
-                <input type="radio" name="" id="" />
-                Prefer to not answer
-              </div>
-            </div>
-            <button
-              type="button"
-              id="open-modal"
-              class="w-[200px] mx-auto opacity-100 hover:opacity-70 transition-all duration-500 text-center flex justify-center px-6 py-3 bg-grey-200 text-14 lg:text-base text-[#EF5350] rounded-xl"
-            >
-              Delete Account
-            </button>
-          </div>
-        </div>
-        <div class="p-4 bg-white box-shadow w-full lg:w-[30%] mx-0 rounded-xl">
-          <h6 class="text-base lg:text-20 font-semibold text-grey-400 mb-4">
-            Log in with social networks
-          </h6>
-          <div
-            class="px-4 py-3 bg-grey-100 flex items-center justify-between rounded-xl"
-          >
-            <div class="flex items-center gap-3">
-              <img src="../assets/images/gg.png" alt="" />
-              Iberd
-            </div>
-            <button class="py-2 px-4 bg-grey-400 text-[#fff] rounded-xl">
-              Disconnect
-            </button>
-          </div>
-          <div
-            class="px-4 py-3 bg-grey-100 flex items-center justify-between rounded-xl mt-3 mb-4"
-          >
-            <div class="flex items-center gap-3">
-              <img src="../assets/images/face.png" alt="" />
-              Iberd
-            </div>
-            <button class="py-2 px-4 bg-grey-400 text-[#fff] rounded-xl">
-              Disconnect
-            </button>
-          </div>
-          <div>
-            <h6 class="text-base lg:text-20 font-semibold text-grey-400 mb-4">
-              Add account
-            </h6>
-
-            <div class="grid grid-cols-3 place-items-center gap-3">
-              <button
-                class="w-full py-6 flex items-center flex-col bg-grey-100 rounded-xl"
-              >
-                <img src="../assets/images/gg.png" alt="" class="w-6 h-6" />
-                <p class="text-14 text-center lg:text-base mt-2">Google</p>
-              </button>
-              <button
-                class="w-full py-6 flex items-center flex-col bg-grey-100 rounded-xl"
-              >
-                <img src="../assets/images/apple.png" class="w-6 h-6" alt="" />
-                <p class="text-14 text-center lg:text-base mt-2">Apple</p>
-              </button>
-              <button
-                class="w-full py-6 flex items-center flex-col bg-grey-100 rounded-xl"
-              >
-                <img src="../assets/images/face.png" alt="" class="w-6 h-6" />
-                <p class="text-14 text-center lg:text-base mt-2">Facebook</p>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer
-      class="mt-[100px] border-t border-t-grey-400 pb-6 pt-4 max-md:hidden"
-    >
-      <div class="container flex items-center justify-between">
-        <div class="flex items-center">
-          <div class="-mb-0.5 mr-6 text-14 text-grey-400">
-            Copyright © 2023 Clib Music. All rights reserved.
-          </div>
-          <ul class="flex items-center gap-3">
-            <li>
-              <a href="#" class="text-14 text-grey-400">Privacy Policy</a>
-            </li>
-            <li>
-              <span class="footer-divider"></span>
-            </li>
-            <li>
-              <a href="#" class="text-14 text-grey-400">Terms of Use</a>
-            </li>
-            <li>
-              <span class="footer-divider"></span>
-            </li>
-            <li>
-              <a href="#" class="text-14 text-grey-400">Cookie Warning</a>
-            </li>
-            <li>
-              <span class="footer-divider"></span>
-            </li>
-            <li>
-              <a href="#" class="text-14 text-grey-400">Support</a>
-            </li>
-          </ul>
-        </div>
-        <ul class="flex items-center gap-3">
-          <li>
-            <a href="#" class="lang-footer-item active">English</a>
-          </li>
-          <li>
-            <span class="footer-divider"></span>
-          </li>
-          <li>
-            <a href="#" class="lang-footer-item">Tiếng Việt</a>
-          </li>
-          <li>
-            <span class="footer-divider"></span>
-          </li>
-          <li>
-            <a href="#" class="lang-footer-item">简体中文</a>
-          </li>
-          <li>
-            <span class="footer-divider"></span>
-          </li>
-          <li>
-            <a href="#" class="lang-footer-item">한국어</a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-    <div id="header-tab-modal" class="overlay header-tab-modal">
-      <div class="header-tab-modal--inner">
-        <div class="flex-1">
-          <button
-            id="close-header-tab-modal"
-            class="flex w-full items-center justify-end"
-          >
-            <img width="16" height="16" src="../assets/svgs/close.svg" alt="" />
-          </button>
-          <div class="mt-4 flex items-center gap-3 md:hidden">
-            <img
-              class="rounded-2xl object-cover"
-              width="64"
-              height="64"
-              loading="lazy"
-              src="../assets/images/artists/2.png"
-              alt=""
-            />
-            <div>
-              <div class="flex items-center gap-1 text-14 font-semibold">
-                Son Tung M-TP <img src="../assets/svgs/verify.svg" alt="" />
-              </div>
-              <div class="mt-2 flex items-center gap-3 text-14 text-grey-400">
-                <div><span class="font-semibold">53K</span> Followers</div>
-                <div><span class="font-semibold">12,3K</span> Following</div>
-              </div>
-            </div>
-          </div>
-          <ul class="mt-[14px]">
-            <li class="header-link">
-              <a
-                href="/voting/music-voting.html"
-                class="flex items-center text-grey-400"
-                ><img src="../assets/svgs/voting.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >Voting</span
-                ></a
-              >
-            </li>
-            <li class="header-link">
-              <a href="/wallet.html" class="flex items-center text-grey-400"
-                ><img src="../assets/svgs/wallet.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >Wallet</span
-                ></a
-              >
-            </li>
-            <li class="header-link">
-              <a href="/about-us.html" class="flex items-center text-grey-400"
-                ><img src="../assets/svgs/about-us.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >About us</span
-                ></a
-              >
-            </li>
-            <li class="header-link">
-              <a href="/setting.html" class="flex items-center text-grey-400"
-                ><img src="../assets/svgs/setting.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >Setting</span
-                ></a
-              >
-            </li>
-            <li class="header-link">
-              <a href="/support.html" class="flex items-center text-grey-400"
-                ><img src="../assets/svgs/support.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >Support</span
-                ></a
-              >
-            </li>
-            <li class="header-link">
-              <a
-                href="/privacy-police.html"
-                class="flex items-center text-grey-400"
-                ><img src="../assets/svgs/privacy-police.svg" alt="" />
-                <span class="flex-1 text-center text-18 font-semibold"
-                  >Privacy Police</span
-                ></a
-              >
-            </li>
-          </ul>
-          <div class="mt-[30px] flex items-center justify-center gap-4">
-            <button class="btn-tertiary">Sign out</button>
+            </div> NOT SIGN IN -->
           </div>
         </div>
         <div
-          class="flex items-center justify-between border-t border-t-grey-200 pt-4"
+          class="border-b border-b-grey-200 bg-white md:border-none md:bg-grey-100 md:py-1.5 xl:py-2"
         >
-          <div class="flex items-center gap-x-2 text-base">
-            <img src="../assets/svgs/global.svg" alt="" />
-            Language
-          </div>
-          <button
-            class="flex items-center gap-2 rounded-xl bg-grey-100 px-4 py-2"
+          <ul
+            class="container relative grid grid-cols-2 items-center gap-[35px] md:grid-cols-5"
           >
-            <img src="../assets/svgs/flags/us.svg" alt="" />
-            English
-          </button>
+            <li>
+              <a href="../music/index.html" class="header-item-link">music</a>
+            </li>
+            <li>
+              <a href="../videos/index.html" class="header-item-link">videos</a>
+            </li>
+            <li class="max-md:hidden">
+              <a
+                href="/"
+                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+              >
+                <img
+                  class="aspect-square w-20 lg:w-[116px] object-contain"
+                  src="../assets/svgs/logo.svg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="max-md:hidden">
+              <a
+                href="../marketplace/marketplace-music-desktop.html"
+                class="header-item-link"
+                >marketplace</a
+              >
+            </li>
+            <li class="max-md:hidden">
+              <a href="../voting/music-voting.html" class="header-item-link"
+                >voting</a
+              >
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main class="container mt-[120px] md:mt-[135px] lg:mt-[165px]">
+        <div class="modal-delete overlay">
+          <div class="p-6 w-[600px] bg-[#fff] abs-center rounded-xl">
+            <img
+              src="../assets/svgs/close.svg"
+              class="absolute top-5 close-modal right-5"
+              alt=""
+            />
+            <h5
+              class="text-neutral-dark-500 text-20 font-semibold text-center mb-4 lg:text-24"
+            >
+              Delete account
+            </h5>
+            <div class="flex flex-col gap-4">
+              <div class="flex items-center gap-3">
+                <input type="checkbox" name="" id="" />
+                <label for="" class="text-14 text-grey-400"
+                  >I have another account</label
+                >
+              </div>
+              <div class="flex items-center gap-3">
+                <input type="checkbox" name="" id="" />
+                <label for="" class="text-14 text-grey-400"
+                  >I want to make a new account</label
+                >
+              </div>
+              <div class="flex items-center gap-3">
+                <input type="checkbox" name="" id="" />
+                <label for="" class="text-14 text-grey-400"
+                  >I am no longer creating content for this account</label
+                >
+              </div>
+              <div class="flex items-center gap-3">
+                <input type="checkbox" name="" id="" />
+                <label for="" class="text-14 text-grey-400"
+                  >I had copyright issues with a track or tracks</label
+                >
+              </div>
+              <div class="flex items-center gap-3">
+                <input type="checkbox" name="" id="" />
+                <label for="" class="text-14 text-grey-400"
+                  >I don’t want to subscribe to Clib Pro anymore</label
+                >
+              </div>
+              <div class="flex items-center gap-3">
+                <input type="checkbox" name="" id="" />
+                <label for="" class="text-14 text-grey-400"
+                  >I switched to another music or audio service</label
+                >
+              </div>
+              <div class="flex items-center gap-3">
+                <input type="checkbox" name="" id="" />
+                <label for="" class="text-14 text-grey-400"
+                  >My account got hacked</label
+                >
+              </div>
+              <div class="flex items-center gap-3">
+                <input type="checkbox" name="" id="" />
+                <label for="" class="text-14 text-grey-400"
+                  >I can’t remove my tracks</label
+                >
+              </div>
+              <div class="flex items-center gap-3">
+                <input type="checkbox" name="" id="" />
+                <label for="" class="text-14 text-grey-400"
+                  >People are harassing me</label
+                >
+              </div>
+              <div class="flex items-center gap-3">
+                <input type="checkbox" name="" id="" />
+                <label for="" class="text-14 text-grey-400"
+                  >Too much spam on the platform</label
+                >
+              </div>
+              <div class="flex items-center gap-3">
+                <input type="checkbox" name="" id="" />
+                <label for="" class="text-14 text-grey-400"
+                  >Other, please specify</label
+                >
+              </div>
+            </div>
+            <div class="w-full bg-grey-100 px-4 py-3 rounded-xl mt-4">
+              <input
+                type="text"
+                class="w-full bg-grey-100"
+                placeholder="Type your reason"
+              />
+            </div>
+            <div class="flex items-center gap-3 mt-4">
+              <input type="checkbox" name="" id="" />
+              <label for="" class="text-14 text-grey-400"
+                >Yes, I want to delete my account and all my music, videos,
+                marketplace, comments and stats.</label
+              >
+            </div>
+            <div class="flex items-end justify-end gap-3">
+              <button
+                class="text-grey-400 close-modal rounded-xl hover:opacity-80 transition-opacity duration-500 bg-grey-200 text-14 lg:text-base font-semibold px-4 py-3"
+              >
+                Cancel
+              </button>
+              <button
+                type="button"
+                class="text-[#fff] rounded-xl hover:opacity-80 transition-opacity duration-500 bg-[#ef5350] text-14 lg:text-base font-semibold px-4 py-3"
+              >
+                Delete Account
+              </button>
+            </div>
+          </div>
+        </div>
+        <header
+          class="grid place-items-center grid-cols-2 lg:grid-cols-5 gap-1 p-1 rounded-xl mx-auto bg-grey-100 box-shadow"
+        >
+          <a
+            href="../setting/account.html"
+            class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-grey-300 font-semibold"
+            id="account-link"
+          >
+            <ion-icon name="person-outline" class="w-[20px] h-[20px]"></ion-icon>
+            Account
+          </a>
+          <a
+            href="../setting/content.html"
+            class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-grey-300 font-semibold"
+            id="content-link"
+          >
+            <ion-icon name="document-text-outline" class="w-5 h-5"> </ion-icon>
+            Content
+          </a>
+          <a
+            href="../setting/notifications.html"
+            class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-grey-300 font-semibold"
+            id="notifications-link"
+          >
+            <ion-icon name="notifications-outline" class="w-5 h-5"></ion-icon>
+            Notifications
+          </a>
+          <a
+            href="../setting/privacy.html"
+            class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-grey-300 font-semibold"
+            id="privacy-link"
+          >
+            <ion-icon name="shield-outline" class="w-5 h-5"></ion-icon>
+            Privacy
+          </a>
+          <a
+            href="../setting/advertising.html"
+            class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-grey-300 font-semibold"
+            id="advertising-link"
+          >
+            <ion-icon name="volume-high"></ion-icon>
+            Advertising
+          </a>
+        </header>
+        <section class="flex items-start flex-col lg:flex-row gap-6 mt-6">
+          <div class="p-6 bg-white box-shadow w-full lg:w-[70%] mx-0 rounded-xl">
+            <h5 class="text-20 lg:text-24 font-semibold mb-6">Profile</h5>
+            <div class="flex items-start flex-col lg:flex-row gap-3">
+              <label
+                for=""
+                class="w-[30%] lg:w-[20%] text-14 mt-3 lg:text-base font-semibold text-grey-400"
+                >Email addresses</label
+              >
+              <div class="flex flex-col gap-4 w-full">
+                <input
+                  type="text"
+                  placeholder="iberd@gmail.com (Primary) "
+                  class="w-full px-4 py-3 bg-grey-100 rounded-xl"
+                />
+                <div
+                  class="flex items-center gap-2 w-full px-4 py-3 bg-grey-100 rounded-xl"
+                >
+                  <input
+                    type="text"
+                    placeholder="ngocson@gmail.com (Not confirmed - Resend confirm email)"
+                    class="w-full bg-grey-100 outline-none border-none"
+                  />
+                  <img src="../assets/svgs/trash.png" alt="" />
+                </div>
+                <div>
+                  <div
+                    class="flex items-center gap-2 p-1.5 w-full bg-grey-100 rounded-xl"
+                  >
+                    <input
+                      type="text"
+                      placeholder="Please enter your email address"
+                      class="w-full bg-grey-100 outline-none border-none"
+                    />
+                    <div class="flex items-center gap-2">
+                      <button
+                        class="text-14 lg:text-base font-semibold text-grey-400 bg-grey-200 px-6 py-2 rounded-xl"
+                      >
+                        Cancel
+                      </button>
+                      <button
+                        class="text-14 lg:text-base font-semibold text-[#fff] bg-[#1975ff] px-6 py-2 rounded-xl"
+                      >
+                        Add
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="mt-2 text-12 lg:text-14 font-semibold text-[#EF5350]"
+                  >
+                    That email addresses is already in use
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-[60%] flex items-center gap-[72px] mt-6">
+              <div>
+                <label
+                  for=""
+                  class="w-[20%] text-14 mt-3 lg:text-base font-semibold text-grey-400"
+                  >Password</label
+                >
+              </div>
+              <input
+                type="password"
+                placeholder="Send password-reset link"
+                class="w-full px-4 py-3 bg-grey-100 rounded-xl"
+              />
+            </div>
+            <div class="w-full lg:w-[62%] flex items-center gap-[50px] mt-6">
+              <div class="flex items-center gap-2">
+                <div>
+                  <label
+                    for=""
+                    class="text-14 mt-3 lg:text-base font-semibold text-grey-400"
+                    >Verification
+                  </label>
+                </div>
+                <img src="../assets/svgs/verify.svg" alt="" />
+              </div>
+              <input
+                type="password"
+                placeholder="Send password-reset link"
+                class="w-full px-4 py-3 bg-grey-100 rounded-xl"
+              />
+            </div>
+            <div class="">
+              <h5 class="text-20 lg:text-24 font-semibold my-6">
+                Basic informaiton
+              </h5>
+              <div class="items-center flex gap-[40px]">
+                <div>
+                  <label
+                    for=""
+                    class="w-[20%] text-14 mt-3 lg:text-base font-semibold text-grey-400"
+                    >Your birthday</label
+                  >
+                </div>
+                <div class="flex items-center gap-3">
+                  <select
+                    id="countries"
+                    class="w-full lg:w-[240px] bg-grey-100 px-6 py-3 border-none outline-none rounded-xl"
+                  >
+                    <option selected>january</option>
+                    <option value="US">May</option>
+                    <option value="CA">July</option>
+                    <option value="FR">September</option>
+                    <option value="DE">October</option>
+                  </select>
+                  <select
+                    id="countries"
+                    class="w-full lg:w-[240px] bg-grey-100 px-6 py-3 border-none outline-none rounded-xl"
+                  >
+                    <option selected>1990</option>
+                    <option value="FR">2001</option>
+                    <option value="CA">2002</option>
+                    <option value="US">2003</option>
+                    <option value="DE">2004</option>
+                  </select>
+                </div>
+              </div>
+              <div class="items-center flex gap-[90px] mt-6 mb-8">
+                <div>
+                  <label
+                    for=""
+                    class="w-[20%] text-14 mt-3 lg:text-base font-semibold text-grey-400"
+                    >Gender</label
+                  >
+                </div>
+                <div class="flex items-center gap-3">
+                  <input type="radio" name="" id="" />
+                  Male
+                </div>
+                <div class="flex items-center gap-3">
+                  <input type="radio" name="" id="" />
+                  Female
+                </div>
+                <div class="flex items-center gap-3">
+                  <input type="radio" name="" id="" />
+                  Prefer to not answer
+                </div>
+              </div>
+              <button
+                type="button"
+                id="open-modal"
+                class="w-[200px] mx-auto opacity-100 hover:opacity-70 transition-all duration-500 text-center flex justify-center px-6 py-3 bg-grey-200 text-14 lg:text-base text-[#EF5350] rounded-xl"
+              >
+                Delete Account
+              </button>
+            </div>
+          </div>
+          <div class="p-4 bg-white box-shadow w-full lg:w-[30%] mx-0 rounded-xl">
+            <h6 class="text-base lg:text-20 font-semibold text-grey-400 mb-4">
+              Log in with social networks
+            </h6>
+            <div
+              class="px-4 py-3 bg-grey-100 flex items-center justify-between rounded-xl"
+            >
+              <div class="flex items-center gap-3">
+                <img src="../assets/images/gg.png" alt="" />
+                Iberd
+              </div>
+              <button class="py-2 px-4 bg-grey-400 text-[#fff] rounded-xl">
+                Disconnect
+              </button>
+            </div>
+            <div
+              class="px-4 py-3 bg-grey-100 flex items-center justify-between rounded-xl mt-3 mb-4"
+            >
+              <div class="flex items-center gap-3">
+                <img src="../assets/images/face.png" alt="" />
+                Iberd
+              </div>
+              <button class="py-2 px-4 bg-grey-400 text-[#fff] rounded-xl">
+                Disconnect
+              </button>
+            </div>
+            <div>
+              <h6 class="text-base lg:text-20 font-semibold text-grey-400 mb-4">
+                Add account
+              </h6>
+  
+              <div class="grid grid-cols-3 place-items-center gap-3">
+                <button
+                  class="w-full py-6 flex items-center flex-col bg-grey-100 rounded-xl"
+                >
+                  <img src="../assets/images/gg.png" alt="" class="w-6 h-6" />
+                  <p class="text-14 text-center lg:text-base mt-2">Google</p>
+                </button>
+                <button
+                  class="w-full py-6 flex items-center flex-col bg-grey-100 rounded-xl"
+                >
+                  <img src="../assets/images/apple.png" class="w-6 h-6" alt="" />
+                  <p class="text-14 text-center lg:text-base mt-2">Apple</p>
+                </button>
+                <button
+                  class="w-full py-6 flex items-center flex-col bg-grey-100 rounded-xl"
+                >
+                  <img src="../assets/images/face.png" alt="" class="w-6 h-6" />
+                  <p class="text-14 text-center lg:text-base mt-2">Facebook</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer
+        class="mt-[100px] border-t border-t-grey-400 pb-6 pt-4 max-md:hidden"
+      >
+        <div class="container flex items-center justify-between">
+          <div class="flex items-center">
+            <div class="-mb-0.5 mr-6 text-14 text-grey-400">
+              Copyright © 2023 Clib Music. All rights reserved.
+            </div>
+            <ul class="flex items-center gap-3">
+              <li>
+                <a href="#" class="text-14 text-grey-400">Privacy Policy</a>
+              </li>
+              <li>
+                <span class="footer-divider"></span>
+              </li>
+              <li>
+                <a href="#" class="text-14 text-grey-400">Terms of Use</a>
+              </li>
+              <li>
+                <span class="footer-divider"></span>
+              </li>
+              <li>
+                <a href="#" class="text-14 text-grey-400">Cookie Warning</a>
+              </li>
+              <li>
+                <span class="footer-divider"></span>
+              </li>
+              <li>
+                <a href="#" class="text-14 text-grey-400">Support</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="flex items-center gap-3">
+            <li>
+              <a href="#" class="lang-footer-item active">English</a>
+            </li>
+            <li>
+              <span class="footer-divider"></span>
+            </li>
+            <li>
+              <a href="#" class="lang-footer-item">Tiếng Việt</a>
+            </li>
+            <li>
+              <span class="footer-divider"></span>
+            </li>
+            <li>
+              <a href="#" class="lang-footer-item">简体中文</a>
+            </li>
+            <li>
+              <span class="footer-divider"></span>
+            </li>
+            <li>
+              <a href="#" class="lang-footer-item">한국어</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+      <div id="header-tab-modal" class="overlay header-tab-modal">
+        <div class="header-tab-modal--inner">
+          <div class="flex-1">
+            <button
+              id="close-header-tab-modal"
+              class="flex w-full items-center justify-end"
+            >
+              <img width="16" height="16" src="../assets/svgs/close.svg" alt="" />
+            </button>
+            <div class="mt-4 flex items-center gap-3 md:hidden">
+              <img
+                class="rounded-2xl object-cover"
+                width="64"
+                height="64"
+                loading="lazy"
+                src="../assets/images/artists/2.png"
+                alt=""
+              />
+              <div>
+                <div class="flex items-center gap-1 text-14 font-semibold">
+                  Son Tung M-TP <img src="../assets/svgs/verify.svg" alt="" />
+                </div>
+                <div class="mt-2 flex items-center gap-3 text-14 text-grey-400">
+                  <div><span class="font-semibold">53K</span> Followers</div>
+                  <div><span class="font-semibold">12,3K</span> Following</div>
+                </div>
+              </div>
+            </div>
+            <ul class="mt-[14px]">
+              <li class="header-link">
+                <a
+                  href="/voting/music-voting.html"
+                  class="flex items-center text-grey-400"
+                  ><img src="../assets/svgs/voting.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >Voting</span
+                  ></a
+                >
+              </li>
+              <li class="header-link">
+                <a href="/wallet.html" class="flex items-center text-grey-400"
+                  ><img src="../assets/svgs/wallet.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >Wallet</span
+                  ></a
+                >
+              </li>
+              <li class="header-link">
+                <a href="/about-us.html" class="flex items-center text-grey-400"
+                  ><img src="../assets/svgs/about-us.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >About us</span
+                  ></a
+                >
+              </li>
+              <li class="header-link">
+                <a href="/setting.html" class="flex items-center text-grey-400"
+                  ><img src="../assets/svgs/setting.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >Setting</span
+                  ></a
+                >
+              </li>
+              <li class="header-link">
+                <a href="/support.html" class="flex items-center text-grey-400"
+                  ><img src="../assets/svgs/support.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >Support</span
+                  ></a
+                >
+              </li>
+              <li class="header-link">
+                <a
+                  href="/privacy-police.html"
+                  class="flex items-center text-grey-400"
+                  ><img src="../assets/svgs/privacy-police.svg" alt="" />
+                  <span class="flex-1 text-center text-18 font-semibold"
+                    >Privacy Police</span
+                  ></a
+                >
+              </li>
+            </ul>
+            <div class="mt-[30px] flex items-center justify-center gap-4">
+              <button class="btn-tertiary">Sign out</button>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-between border-t border-t-grey-200 pt-4"
+          >
+            <div class="flex items-center gap-x-2 text-base">
+              <img src="../assets/svgs/global.svg" alt="" />
+              Language
+            </div>
+            <button
+              class="flex items-center gap-2 rounded-xl bg-grey-100 px-4 py-2"
+            >
+              <img src="../assets/svgs/flags/us.svg" alt="" />
+              English
+            </button>
+          </div>
         </div>
       </div>
+</div>
+<!-- mobile -->
+<section class="h-full md:hidden">
+  <div class="">
+    <div class="w-full flex items-center justify-between py-3 box-shadow">
+      <a href="../setting/account.html">
+        <img src="../assets/svgs/arrow-left.png" alt=""
+      /></a>
+      <div class="text-18 font-semibold text-neutral-dark-500 px-4">
+        Setting
+      </div>
+      <div></div>
     </div>
+    <div class="mt-4 px-4 flex flex-col gap-3">
+      <a
+        href="../setting/basic-information.html"
+        class="py-3 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-3 text-14 text-neutral-dark-500">
+          <img src="../assets/images/user.png" alt="" />
+          Basic information
+        </div>
+        <img src="../assets/images/arrow-right.png" alt="" />
+      </a>
+      <a
+        href="../setting/connect-mobile.html"
+        class="py-3 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-3 text-14 text-neutral-dark-500">
+          <img src="../assets/images/user-square.png" alt="" />
+          Connected accounts
+        </div>
+        <img src="../assets/images/arrow-right.png" alt="" />
+      </a>
+      <a
+        href="../setting/reset-password.html"
+        class="py-3 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-3 text-14 text-neutral-dark-500">
+          <img src="../assets/images/key (1).png" alt="" />
+          Password
+        </div>
+        <img src="../assets/images/arrow-right.png" alt="" />
+      </a>
+      <a
+        href="../setting/verify-mobile.html"
+        class="py-3 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-3 text-14 text-neutral-dark-500">
+          <img src="../assets/images/verify.png" alt="" />
+          Verification
+        </div>
+        <img src="../assets/images/arrow-right.png" alt="" />
+      </a>
+      <a
+        href="../setting/delete-accout-mobile.html"
+        class="py-3 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-3 text-14 text-neutral-dark-500">
+          <img src="../assets/images/trash.png" alt="" />
+          Delete account
+        </div>
+        <img src="../assets/images/arrow-right.png" alt="" />
+      </a>
+    </div>
+  </div>
+</section>
   </body>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
