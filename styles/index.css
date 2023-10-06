@@ -2802,10 +2802,6 @@ body{
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
-.grid-cols-\[1\.2fr\2c 2fr\2c 1\.2fr\]{
-  grid-template-columns: 1.2fr 2fr 1.2fr;
-}
-
 .grid-cols-\[256px\2c 1fr\]{
   grid-template-columns: 256px 1fr;
 }
@@ -6987,6 +6983,10 @@ input {
     grid-template-columns: 1fr 1fr;
   }
 
+  .md\:grid-cols-\[1fr_2fr\]{
+    grid-template-columns: 1fr 2fr;
+  }
+
   .md\:flex-row{
     flex-direction: row;
   }
@@ -7752,6 +7752,10 @@ input {
 
   .xl\:grid-cols-\[1\.1fr\2c 2fr\2c 1\.1fr\]{
     grid-template-columns: 1.1fr 2fr 1.1fr;
+  }
+
+  .xl\:grid-cols-\[1\.2fr\2c 2fr\2c 1\.2fr\]{
+    grid-template-columns: 1.2fr 2fr 1.2fr;
   }
 
   .xl\:grid-cols-\[1fr_360px\]{
