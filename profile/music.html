@@ -832,7 +832,10 @@
             >View all</a
           >
         </div>
-        <div class="fluid song-swiper swiper container relative mt-4">
+        <div
+          id="new-swiper"
+          class="fluid song-swiper swiper container relative mt-4"
+        >
           <div class="swiper-wrapper">
             <a href="#" class="swiper-slide">
               <div class="overflow-hidden rounded-lg">
@@ -1034,10 +1037,14 @@
             </a>
           </div>
 
-          <div class="swiper-song-navigation swiper-song-next max-lg:hidden">
+          <div
+            class="swiper-song-navigation swiper-new-next swiper-song-next max-lg:hidden"
+          >
             <img src="../assets/svgs/arrow-next.svg" alt="" />
           </div>
-          <div class="swiper-song-navigation swiper-song-prev max-lg:hidden">
+          <div
+            class="swiper-song-navigation swiper-new-prev swiper-song-prev max-lg:hidden"
+          >
             <img
               class="rotate-180"
               src="../assets/svgs/arrow-next.svg"

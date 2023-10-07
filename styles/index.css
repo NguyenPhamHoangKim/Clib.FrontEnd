@@ -5934,13 +5934,6 @@ a.swiper-slide.digital-item:hover .digital-thumb{
   color: rgb(161 171 178 / var(--tw-text-opacity));
 }
 
-.profile-nav:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(26 117 255 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 @media (min-width: 1280px){
   .profile-nav{
     height: 3rem;

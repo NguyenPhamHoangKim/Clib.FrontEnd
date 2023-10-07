@@ -359,7 +359,7 @@ a.swiper-slide.digital-item:hover .digital-thumb {
   @apply hidden;
 }
 .profile-nav {
-  @apply flex h-10 xl:h-12 px-2 w-[180px] items-center justify-center gap-2 rounded-lg text-base font-semibold text-grey-300 hover:bg-branding hover:text-white;
+  @apply flex h-10 xl:h-12 px-2 w-[180px] items-center justify-center gap-2 rounded-lg text-base font-semibold text-grey-300;
 }
 .profile-nav.active {
   @apply bg-branding text-white;
