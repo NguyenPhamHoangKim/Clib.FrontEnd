@@ -785,8 +785,12 @@
           <option value="art">Art</option>
         </select>
       </div>
-      <div class="mt-4 grid gap-6 md:container xl:grid-cols-[1.1fr,2fr,1.1fr]">
-        <div class="hidden h-[690px] flex-col rounded-xl bg-white md:flex">
+      <div
+        class="mt-4 grid gap-4 xl:gap-6 md:container grid-col-2 xl:grid-cols-[1.1fr,2fr,1.1fr]"
+      >
+        <div
+          class="hidden max-xl:order-1 h-[690px] flex-col rounded-xl bg-white md:flex"
+        >
           <div class="relative p-4 text-20 font-semibold">Creator 30</div>
           <ul
             class="scrollbar-custom flex flex-1 flex-col overflow-y-auto overflow-x-hidden px-2 pb-2"
@@ -1184,7 +1188,7 @@
           </ul>
         </div>
         <div
-          class="fluid container flex flex-col rounded-xl bg-white md:h-[690px]"
+          class="fluid max-xl:order-3 max-xl:col-span-2 container flex flex-col rounded-xl bg-white md:h-[690px]"
         >
           <div
             class="flex max-w-full items-center p-4 max-md:justify-between max-md:px-0 max-md:pr-8 max-md:pt-0"
@@ -1442,7 +1446,9 @@
             </ul>
           </div>
         </div>
-        <div class="hidden h-[690px] flex-col rounded-xl bg-white md:flex">
+        <div
+          class="hidden max-xl:order-2 h-[690px] flex-col rounded-xl bg-white md:flex"
+        >
           <div class="relative p-4 text-20 font-semibold">Creator 30</div>
           <ul
             class="scrollbar-custom flex flex-1 flex-col overflow-y-auto overflow-x-hidden px-2 pb-2"

@@ -6663,6 +6663,22 @@ input {
 }
 
 @media not all and (min-width: 1280px){
+  .max-xl\:order-1{
+    order: 1;
+  }
+
+  .max-xl\:order-2{
+    order: 2;
+  }
+
+  .max-xl\:order-3{
+    order: 3;
+  }
+
+  .max-xl\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+
   .max-xl\:hidden{
     display: none;
   }
@@ -6674,6 +6690,22 @@ input {
 }
 
 @media not all and (min-width: 1024px){
+  .max-lg\:order-1{
+    order: 1;
+  }
+
+  .max-lg\:order-2{
+    order: 2;
+  }
+
+  .max-lg\:order-3{
+    order: 3;
+  }
+
+  .max-lg\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+
   .max-lg\:block{
     display: block;
   }
