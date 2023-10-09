@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap");
 
 /*
 ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
@@ -1153,6 +1153,10 @@ body{
   top: 115px;
 }
 
+.right-\[60px\]{
+  right: 60px;
+}
+
 .isolate{
   isolation: isolate;
 }
@@ -2286,6 +2290,22 @@ body{
   width: 100%;
 }
 
+.w-\[190px\]{
+  width: 190px;
+}
+
+.w-\[235px\]{
+  width: 235px;
+}
+
+.w-\[10\%\]{
+  width: 10%;
+}
+
+.w-\[241px\]{
+  width: 241px;
+}
+
 .max-w-\[100px\]{
   max-width: 100px;
 }
@@ -3086,10 +3106,6 @@ body{
   gap: 3px;
 }
 
-.gap-\[40px\]{
-  gap: 40px;
-}
-
 .gap-\[50px\]{
   gap: 50px;
 }
@@ -3104,10 +3120,6 @@ body{
 
 .gap-\[72px\]{
   gap: 72px;
-}
-
-.gap-\[90px\]{
-  gap: 90px;
 }
 
 .gap-x-0{
@@ -6383,6 +6395,10 @@ input {
   background-color: transparent !important;
 }
 
+.iti__selected-flag{
+  gap: 0.5rem !important;
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
@@ -6485,6 +6501,16 @@ input {
 .placeholder\:text-grey-400::placeholder{
   --tw-text-opacity: 1;
   color: rgb(82 97 107 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-neutral-dark-500::-moz-placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(44 47 51 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-neutral-dark-500::placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(44 47 51 / var(--tw-text-opacity));
 }
 
 .after\:absolute::after{
@@ -7789,6 +7815,10 @@ input {
 
   .xl\:grid-cols-\[340px\2c 2fr\2c 1\.2fr\]{
     grid-template-columns: 340px 2fr 1.2fr;
+  }
+
+  .xl\:flex-row{
+    flex-direction: row;
   }
 
   .xl\:gap-4{

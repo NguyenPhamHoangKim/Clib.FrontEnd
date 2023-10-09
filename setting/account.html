@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clib - Login</title>
+    <title>Clib - Account</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css"
+    />
     <link rel="stylesheet" href="../styles/index.css" />
     <script
       type="module"
@@ -15,7 +19,7 @@
     ></script>
   </head>
   <body>
-<div class="hidden md:block">
+    <div class="hidden md:block">
       <header class="fixed left-0 right-0 top-0 z-[999]">
         <div class="bg-white py-2.5 shadow-[0px_2px_10px_0px_rgba(0,0,0,0.04)]">
           <div class="container relative flex items-center justify-between">
@@ -33,7 +37,7 @@
                 />
               </div>
             </div>
-  
+
             <a
               href="/"
               class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden"
@@ -59,7 +63,7 @@
               </button>
             </div>
             <!-- SIGNED IN -->
-  
+
             <!-- SIGNED IN PC-->
             <div class="flex items-center space-x-4 max-md:hidden xl:space-x-6">
               <button class="bg-grey-1 rounded-lg">
@@ -230,7 +234,9 @@
                             alt="James"
                           />
                           <div>
-                            <div class="text-14 font-semibold">Roger Daltrey</div>
+                            <div class="text-14 font-semibold">
+                              Roger Daltrey
+                            </div>
                             <div class="line-clamp-1 text-14">woohoooo</div>
                           </div>
                         </div>
@@ -378,8 +384,8 @@
                           </div>
                           <div>
                             <div class="text-14">
-                              <span class="font-semibold">Josh</span> commented on
-                              your post
+                              <span class="font-semibold">Josh</span> commented
+                              on your post
                             </div>
                             <div class="mt-1 text-12 text-grey-400">
                               2 day ago
@@ -440,8 +446,8 @@
                           </div>
                           <div>
                             <div class="text-14">
-                              <span class="font-semibold">Sona</span> commented on
-                              your post
+                              <span class="font-semibold">Sona</span> commented
+                              on your post
                             </div>
                             <div class="mt-1 text-12 text-grey-400">
                               2 day ago
@@ -511,8 +517,8 @@
                           </div>
                           <div>
                             <div class="text-14">
-                              <span class="font-semibold">Harry</span> liked your
-                              post
+                              <span class="font-semibold">Harry</span> liked
+                              your post
                             </div>
                             <div class="mt-1 text-12 text-grey-400">
                               2 day ago
@@ -547,8 +553,8 @@
                           </div>
                           <div>
                             <div class="text-14">
-                              <span class="font-semibold">Jean</span> commented on
-                              your post
+                              <span class="font-semibold">Jean</span> commented
+                              on your post
                             </div>
                             <div class="mt-1 text-12 text-grey-400">
                               2 day ago
@@ -581,7 +587,7 @@
               </a>
             </div>
             <!-- SIGNED IN -->
-  
+
             <!-- NOT SIGN IN <div class="flex items-center space-x-4">
               <button>
                 <img src="../assets/svgs/export.svg" alt="" />
@@ -632,7 +638,7 @@
         </div>
       </header>
       <main class="container mt-[120px] md:mt-[135px] lg:mt-[165px]">
-        <div class="modal-delete overlay">
+        <div class="modal-delete overlay hidden">
           <div class="p-6 w-[600px] bg-[#fff] abs-center rounded-xl">
             <img
               src="../assets/svgs/close.svg"
@@ -734,7 +740,7 @@
               </button>
               <button
                 type="button"
-                class="text-[#fff] rounded-xl hover:opacity-80 transition-opacity duration-500 bg-[#ef5350] text-14 lg:text-base font-semibold px-4 py-3"
+                class="text-white font-semibold rounded-xl hover:opacity-80 transition-opacity duration-100 bg-[#ef5350] text-14 lg:text-base px-4 py-3"
               >
                 Delete Account
               </button>
@@ -749,7 +755,10 @@
             class="flex w-full p-2 items-center link justify-center gap-2 text-14 lg:text-base text-grey-300 font-semibold"
             id="account-link"
           >
-            <ion-icon name="person-outline" class="w-[20px] h-[20px]"></ion-icon>
+            <ion-icon
+              name="person-outline"
+              class="w-[20px] h-[20px]"
+            ></ion-icon>
             Account
           </a>
           <a
@@ -786,33 +795,73 @@
           </a>
         </header>
         <section class="flex items-start flex-col lg:flex-row gap-6 mt-6">
-          <div class="p-6 bg-white box-shadow w-full lg:w-[70%] mx-0 rounded-xl">
+          <div
+            class="p-6 bg-white box-shadow w-full lg:w-[70%] mx-0 rounded-xl"
+          >
             <h5 class="text-20 lg:text-24 font-semibold mb-6">Profile</h5>
-            <div class="flex items-start flex-col lg:flex-row gap-3">
-              <label
-                for=""
-                class="w-[30%] lg:w-[20%] text-14 mt-3 lg:text-base font-semibold text-grey-400"
-                >Email addresses</label
-              >
-              <div class="flex flex-col gap-4 w-full">
-                <input
-                  type="text"
-                  placeholder="iberd@gmail.com (Primary) "
-                  class="w-full px-4 py-3 bg-grey-100 rounded-xl"
-                />
-                <div
-                  class="flex items-center gap-2 w-full px-4 py-3 bg-grey-100 rounded-xl"
+            <div class="flex items-start flex-col lg:flex-row gap-x-2">
+              <div class="w-[140px] flex-shrink-0">
+                <label
+                  for=""
+                  class="text-14 mt-3 lg:text-base font-semibold text-grey-400"
+                  >Email addresses</label
                 >
-                  <input
-                    type="text"
-                    placeholder="ngocson@gmail.com (Not confirmed - Resend confirm email)"
-                    class="w-full bg-grey-100 outline-none border-none"
-                  />
+              </div>
+              <div class="flex flex-col gap-4 w-full">
+                <div
+                  class="bg-grey-100 text-grey-400 flex-1 px-4 py-3 rounded-xl"
+                >
+                  <span class="font-semibold">iberd@gmail.com</span>
+                  (Primary)
+                </div>
+                <div
+                  class="flex relative items-center gap-2 w-full px-4 py-3 bg-grey-100 rounded-xl"
+                >
+                  <span
+                    class="bg-grey-100 text-grey-400 font-semibold outline-none border-none flex-1"
+                    >ngocson@gmail.com</span
+                  >
+
+                  <div class="absolute right-[60px]">
+                    (Not confirmed -
+                    <button
+                      class="underline-offset-1 underline decoration-1 text-branding"
+                    >
+                      Resend confirm email</button
+                    >)
+                  </div>
                   <img src="../assets/svgs/trash.png" alt="" />
                 </div>
+                <button
+                  class="flex items-center gap-x-2 bg-grey-100 rounded-xl px-4 py-3 w-[241px]"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 12H18"
+                      stroke="#52616B"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 18V6"
+                      stroke="#52616B"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span>Add an email address</span>
+                </button>
                 <div>
                   <div
-                    class="flex items-center gap-2 p-1.5 w-full bg-grey-100 rounded-xl"
+                    class="flex items-center gap-2 px-4 py-1.5 w-full bg-grey-100 rounded-xl"
                   >
                     <input
                       type="text"
@@ -832,31 +881,34 @@
                       </button>
                     </div>
                   </div>
-                  <div
-                    class="mt-2 text-12 lg:text-14 font-semibold text-[#EF5350]"
-                  >
+                  <div class="mt-2 text-14 text-[#EF5350]">
                     That email addresses is already in use
+                  </div>
+                  <div class="mt-2 text-14 text-branding">
+                    Thanks! We’ve sent a confirmation email to
+                    lengocson155@gmail.com. Click the link in the email to
+                    confirm this address.
                   </div>
                 </div>
               </div>
             </div>
-            <div class="w-full lg:w-[60%] flex items-center gap-[72px] mt-6">
-              <div>
+            <div class="w-full flex items-center mt-6 gap-x-2">
+              <div class="w-[140px]">
                 <label
                   for=""
-                  class="w-[20%] text-14 mt-3 lg:text-base font-semibold text-grey-400"
+                  class="text-14 mt-3 lg:text-base font-semibold text-grey-400"
                   >Password</label
                 >
               </div>
-              <input
-                type="password"
-                placeholder="Send password-reset link"
-                class="w-full px-4 py-3 bg-grey-100 rounded-xl"
-              />
+              <button
+                class="px-4 w-[235px] max-w-full py-3 bg-grey-100 rounded-xl"
+              >
+                Send password-reset link
+              </button>
             </div>
-            <div class="w-full lg:w-[62%] flex items-center gap-[50px] mt-6">
-              <div class="flex items-center gap-2">
-                <div>
+            <div class="w-full flex items-center mt-6 gap-x-2">
+              <div class="flex items-center gap-2 w-[140px]">
+                <div class="">
                   <label
                     for=""
                     class="text-14 mt-3 lg:text-base font-semibold text-grey-400"
@@ -865,66 +917,166 @@
                 </div>
                 <img src="../assets/svgs/verify.svg" alt="" />
               </div>
-              <input
-                type="password"
-                placeholder="Send password-reset link"
-                class="w-full px-4 py-3 bg-grey-100 rounded-xl"
-              />
+              <button
+                class="px-4 w-[190px] max-w-full py-3 bg-grey-100 rounded-xl"
+              >
+                Request verification
+              </button>
             </div>
-            <div class="">
+            <div class="w-[600px] max-w-full">
               <h5 class="text-20 lg:text-24 font-semibold my-6">
                 Basic informaiton
               </h5>
-              <div class="items-center flex gap-[40px]">
-                <div>
+              <div class="flex flex-col gap-4 xl:gap-6">
+                <div class="flex flex-col">
                   <label
-                    for=""
-                    class="w-[20%] text-14 mt-3 lg:text-base font-semibold text-grey-400"
-                    >Your birthday</label
+                    class="font-semibold leading-6 text-grey-400 text-14 lg:text-base"
+                    for="email"
+                    >Display name</label
                   >
+                  <input
+                    id="display-name"
+                    name="display-name"
+                    class="form-input bg-grey-100 mt-1 rounded-xl px-4 py-3 outline-none placeholder:text-grey-300"
+                    type="display-name"
+                    placeholder="Enter your display name"
+                  />
+                  <span
+                    id="email-error"
+                    class="text-warning text-14 mt-1 leading-5"
+                  ></span>
                 </div>
-                <div class="flex items-center gap-3">
-                  <select
-                    id="countries"
-                    class="w-full lg:w-[240px] bg-grey-100 px-6 py-3 border-none outline-none rounded-xl"
-                  >
-                    <option selected>january</option>
-                    <option value="US">May</option>
-                    <option value="CA">July</option>
-                    <option value="FR">September</option>
-                    <option value="DE">October</option>
-                  </select>
-                  <select
-                    id="countries"
-                    class="w-full lg:w-[240px] bg-grey-100 px-6 py-3 border-none outline-none rounded-xl"
-                  >
-                    <option selected>1990</option>
-                    <option value="FR">2001</option>
-                    <option value="CA">2002</option>
-                    <option value="US">2003</option>
-                    <option value="DE">2004</option>
-                  </select>
+                <div class="grid grid-cols-2 gap-3">
+                  <div class="flex flex-col">
+                    <label
+                      class="font-semibold leading-6 text-grey-400 text-14 lg:text-base"
+                      for="first-name"
+                      >First name</label
+                    >
+                    <div class="mt-1 w-full">
+                      <input
+                        id="first-name"
+                        name="first-name"
+                        class="form-input bg-grey-100 w-full rounded-xl px-4 py-3 pr-10 outline-none placeholder:text-grey-300"
+                        type="text"
+                        placeholder="Enter your first name"
+                      />
+                    </div>
+                  </div>
+                  <div class="flex flex-col">
+                    <label
+                      class="font-semibold leading-6 text-grey-400 text-14 lg:text-base"
+                      for="last-name"
+                      >Last name</label
+                    >
+                    <div class="mt-1 w-full">
+                      <input
+                        id="last-name"
+                        name="last-name"
+                        class="form-input bg-grey-100 w-full rounded-xl px-4 py-3 pr-10 outline-none placeholder:text-grey-300"
+                        type="text"
+                        placeholder="Enter your last name"
+                      />
+                    </div>
+                    <span
+                      id="password-error"
+                      class="text-warning text-14 mt-1 leading-5"
+                    ></span>
+                  </div>
                 </div>
-              </div>
-              <div class="items-center flex gap-[90px] mt-6 mb-8">
-                <div>
+                <div class="flex flex-col">
                   <label
-                    for=""
-                    class="w-[20%] text-14 mt-3 lg:text-base font-semibold text-grey-400"
-                    >Gender</label
+                    class="font-semibold leading-6 text-grey-400 text-14 lg:text-base"
+                    for="gender"
+                    >Phone number</label
                   >
+                  <div class="rounded-xl bg-grey-100 mt-1">
+                    <input
+                      id="phone-number"
+                      name="phone-number"
+                      class="form-input bg-transparent w-full flex-1 outline-none placeholder:text-grey-300 px-4 py-3"
+                      type="phone-number"
+                      placeholder="000-000-0000"
+                    />
+                  </div>
                 </div>
-                <div class="flex items-center gap-3">
-                  <input type="radio" name="" id="" />
-                  Male
+                <div class="flex flex-col xl:flex-row">
+                  <div
+                    class="font-semibold leading-6 text-grey-400 text-14 lg:text-base"
+                  >
+                    Your birthday
+                  </div>
+                  <div class="mt-1 w-full grid grid-cols-3 gap-3">
+                    <select
+                      name="date-of-birth"
+                      id="date-of-birth"
+                      class="form-input bg-grey-100 w-full rounded-xl px-4 py-3 pr-10 outline-none placeholder:text-grey-300"
+                    >
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+                      <option value="23">23</option>
+                    </select>
+                    <select
+                      name="date-of-birth"
+                      id="date-of-birth"
+                      class="form-input bg-grey-100 w-full rounded-xl px-4 py-3 pr-10 outline-none placeholder:text-grey-300"
+                    >
+                      <option value="January">January</option>
+                      <option value="February">February</option>
+                      <option value="March">March</option>
+                      <option value="April">April</option>
+                      <option value="May">May</option>
+                      <option value="June">June</option>
+                      <option value="July">July</option>
+                      <option value="August">August</option>
+                      <option value="September">September</option>
+                      <option value="October">October</option>
+                      <option value="November">November</option>
+                      <option value="December">December</option>
+                    </select>
+                    <select
+                      name="date-of-birth"
+                      id="date-of-birth"
+                      class="form-input bg-grey-100 w-full rounded-xl px-4 py-3 pr-10 outline-none placeholder:text-grey-300"
+                    >
+                      <option value="1990" selected>1990</option>
+                      <option value="1991">1991</option>
+                      <option value="1992">1992</option>
+                      <option value="1993">1993</option>
+                      <option value="1994">1994</option>
+                      <option value="1995">1995</option>
+                      <option value="1996">1996</option>
+                      <option value="1997">1997</option>
+                      <option value="1998">1998</option>
+                      <option value="1999">1999</option>
+                      <option value="2000">2000</option>
+                      <option value="2001">2001</option>
+                      <option value="2002">2002</option>
+                      <option value="2003">2003</option>
+                    </select>
+                  </div>
                 </div>
-                <div class="flex items-center gap-3">
-                  <input type="radio" name="" id="" />
-                  Female
-                </div>
-                <div class="flex items-center gap-3">
-                  <input type="radio" name="" id="" />
-                  Prefer to not answer
+                <div class="items-center flex mt-6 mb-8">
+                  <div
+                    class="w-[20%] text-14 mt-3 lg:text-base font-semibold text-grey-400"
+                  >
+                    Gender
+                  </div>
+                  <div class="flex items-center gap-x-6">
+                    <div class="flex items-center gap-3">
+                      <input type="radio" name="" id="" />
+                      Male
+                    </div>
+                    <div class="flex items-center gap-3">
+                      <input type="radio" name="" id="" />
+                      Female
+                    </div>
+                    <div class="flex items-center gap-3">
+                      <input type="radio" name="" id="" />
+                      Prefer to not answer
+                    </div>
+                  </div>
                 </div>
               </div>
               <button
@@ -936,7 +1088,9 @@
               </button>
             </div>
           </div>
-          <div class="p-4 bg-white box-shadow w-full lg:w-[30%] mx-0 rounded-xl">
+          <div
+            class="p-4 bg-white box-shadow w-full lg:w-[30%] mx-0 rounded-xl"
+          >
             <h6 class="text-base lg:text-20 font-semibold text-grey-400 mb-4">
               Log in with social networks
             </h6>
@@ -966,7 +1120,7 @@
               <h6 class="text-base lg:text-20 font-semibold text-grey-400 mb-4">
                 Add account
               </h6>
-  
+
               <div class="grid grid-cols-3 place-items-center gap-3">
                 <button
                   class="w-full py-6 flex items-center flex-col bg-grey-100 rounded-xl"
@@ -977,7 +1131,11 @@
                 <button
                   class="w-full py-6 flex items-center flex-col bg-grey-100 rounded-xl"
                 >
-                  <img src="../assets/images/apple.png" class="w-6 h-6" alt="" />
+                  <img
+                    src="../assets/images/apple.png"
+                    class="w-6 h-6"
+                    alt=""
+                  />
                   <p class="text-14 text-center lg:text-base mt-2">Apple</p>
                 </button>
                 <button
@@ -1055,7 +1213,12 @@
               id="close-header-tab-modal"
               class="flex w-full items-center justify-end"
             >
-              <img width="16" height="16" src="../assets/svgs/close.svg" alt="" />
+              <img
+                width="16"
+                height="16"
+                src="../assets/svgs/close.svg"
+                alt=""
+              />
             </button>
             <div class="mt-4 flex items-center gap-3 md:hidden">
               <img
@@ -1150,73 +1313,73 @@
           </div>
         </div>
       </div>
-</div>
-<!-- mobile -->
-<section class="h-full md:hidden">
-  <div class="">
-    <div class="w-full flex items-center justify-between py-3 box-shadow">
-      <a href="../setting/account.html">
-        <img src="../assets/svgs/arrow-left.png" alt=""
-      /></a>
-      <div class="text-18 font-semibold text-neutral-dark-500 px-4">
-        Setting
+    </div>
+    <!-- mobile -->
+    <section class="h-full md:hidden">
+      <div class="">
+        <div class="w-full flex items-center justify-between py-3 box-shadow">
+          <a href="../setting/account.html">
+            <img src="../assets/svgs/arrow-left.png" alt=""
+          /></a>
+          <div class="text-18 font-semibold text-neutral-dark-500 px-4">
+            Setting
+          </div>
+          <div></div>
+        </div>
+        <div class="mt-4 px-4 flex flex-col gap-3">
+          <a
+            href="../setting/basic-information.html"
+            class="py-3 flex items-center justify-between"
+          >
+            <div class="flex items-center gap-3 text-14 text-neutral-dark-500">
+              <img src="../assets/images/user.png" alt="" />
+              Basic information
+            </div>
+            <img src="../assets/images/arrow-right.png" alt="" />
+          </a>
+          <a
+            href="../setting/connect-mobile.html"
+            class="py-3 flex items-center justify-between"
+          >
+            <div class="flex items-center gap-3 text-14 text-neutral-dark-500">
+              <img src="../assets/images/user-square.png" alt="" />
+              Connected accounts
+            </div>
+            <img src="../assets/images/arrow-right.png" alt="" />
+          </a>
+          <a
+            href="../setting/reset-password.html"
+            class="py-3 flex items-center justify-between"
+          >
+            <div class="flex items-center gap-3 text-14 text-neutral-dark-500">
+              <img src="../assets/images/key (1).png" alt="" />
+              Password
+            </div>
+            <img src="../assets/images/arrow-right.png" alt="" />
+          </a>
+          <a
+            href="../setting/verify-mobile.html"
+            class="py-3 flex items-center justify-between"
+          >
+            <div class="flex items-center gap-3 text-14 text-neutral-dark-500">
+              <img src="../assets/images/verify.png" alt="" />
+              Verification
+            </div>
+            <img src="../assets/images/arrow-right.png" alt="" />
+          </a>
+          <a
+            href="../setting/delete-accout-mobile.html"
+            class="py-3 flex items-center justify-between"
+          >
+            <div class="flex items-center gap-3 text-14 text-neutral-dark-500">
+              <img src="../assets/images/trash.png" alt="" />
+              Delete account
+            </div>
+            <img src="../assets/images/arrow-right.png" alt="" />
+          </a>
+        </div>
       </div>
-      <div></div>
-    </div>
-    <div class="mt-4 px-4 flex flex-col gap-3">
-      <a
-        href="../setting/basic-information.html"
-        class="py-3 flex items-center justify-between"
-      >
-        <div class="flex items-center gap-3 text-14 text-neutral-dark-500">
-          <img src="../assets/images/user.png" alt="" />
-          Basic information
-        </div>
-        <img src="../assets/images/arrow-right.png" alt="" />
-      </a>
-      <a
-        href="../setting/connect-mobile.html"
-        class="py-3 flex items-center justify-between"
-      >
-        <div class="flex items-center gap-3 text-14 text-neutral-dark-500">
-          <img src="../assets/images/user-square.png" alt="" />
-          Connected accounts
-        </div>
-        <img src="../assets/images/arrow-right.png" alt="" />
-      </a>
-      <a
-        href="../setting/reset-password.html"
-        class="py-3 flex items-center justify-between"
-      >
-        <div class="flex items-center gap-3 text-14 text-neutral-dark-500">
-          <img src="../assets/images/key (1).png" alt="" />
-          Password
-        </div>
-        <img src="../assets/images/arrow-right.png" alt="" />
-      </a>
-      <a
-        href="../setting/verify-mobile.html"
-        class="py-3 flex items-center justify-between"
-      >
-        <div class="flex items-center gap-3 text-14 text-neutral-dark-500">
-          <img src="../assets/images/verify.png" alt="" />
-          Verification
-        </div>
-        <img src="../assets/images/arrow-right.png" alt="" />
-      </a>
-      <a
-        href="../setting/delete-accout-mobile.html"
-        class="py-3 flex items-center justify-between"
-      >
-        <div class="flex items-center gap-3 text-14 text-neutral-dark-500">
-          <img src="../assets/images/trash.png" alt="" />
-          Delete account
-        </div>
-        <img src="../assets/images/arrow-right.png" alt="" />
-      </a>
-    </div>
-  </div>
-</section>
+    </section>
   </body>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -1224,5 +1387,15 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   ></script>
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
   <script src="../js/login.js"></script>
+  <script>
+    const input = document.querySelector("#phone-number");
+    window.intlTelInput(input, {
+      initialCountry: "in",
+      separateDialCode: true,
+      utilsScript:
+        "https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
+    });
+  </script>
 </html>

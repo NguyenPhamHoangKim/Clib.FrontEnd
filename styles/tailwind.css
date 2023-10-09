@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap");
 
 @tailwind base;
 @layer base {
@@ -89,7 +89,9 @@
 .login-divider {
   @apply relative my-5 h-[1px] w-full bg-grey-200 before:absolute before:left-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:bg-white before:px-0.5 before:text-grey-400 before:content-['or'];
 }
-
+.form-input {
+  @apply text-14 lg:text-base;
+}
 .form-input.error {
   @apply border border-warning;
 }
@@ -640,4 +642,7 @@ input {
 }
 .iti--separate-dial-code .iti__selected-flag {
   @apply !bg-transparent;
+}
+.iti__selected-flag {
+  @apply !gap-2;
 }
