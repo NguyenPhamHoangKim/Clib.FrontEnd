@@ -2205,6 +2205,10 @@ body{
   width: 50%;
 }
 
+.w-\[524px\]{
+  width: 524px;
+}
+
 .w-\[550px\]{
   width: 550px;
 }
@@ -6375,6 +6379,10 @@ input {
   background-color: rgb(235 247 252 / var(--tw-bg-opacity));
 }
 
+.iti--separate-dial-code .iti__selected-flag{
+  background-color: transparent !important;
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
@@ -6690,22 +6698,6 @@ input {
 }
 
 @media not all and (min-width: 1024px){
-  .max-lg\:order-1{
-    order: 1;
-  }
-
-  .max-lg\:order-2{
-    order: 2;
-  }
-
-  .max-lg\:order-3{
-    order: 3;
-  }
-
-  .max-lg\:col-span-2{
-    grid-column: span 2 / span 2;
-  }
-
   .max-lg\:block{
     display: block;
   }
@@ -7303,6 +7295,10 @@ input {
     margin-top: 1rem;
   }
 
+  .lg\:mt-5{
+    margin-top: 1.25rem;
+  }
+
   .lg\:mt-6{
     margin-top: 1.5rem;
   }
@@ -7600,6 +7596,10 @@ input {
     padding: 1rem;
   }
 
+  .lg\:p-5{
+    padding: 1.25rem;
+  }
+
   .lg\:p-6{
     padding: 1.5rem;
   }
@@ -7885,5 +7885,9 @@ input {
 
   .\32xl\:gap-6{
     gap: 1.5rem;
+  }
+
+  .\32xl\:p-8{
+    padding: 2rem;
   }
 }

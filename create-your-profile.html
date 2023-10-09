@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clib - Create your profile</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <div
+      class="flex h-full min-h-screen w-full items-center justify-center bg-[url('../assets/images/login-bg.jpg')] bg-cover bg-center px-4 py-10"
+    >
+      <div
+        class="h-fit max-h-full w-[524px] max-w-full gap-8 rounded-xl bg-white p-3 lg:p-5 xl:p-6 2xl:p-8"
+      >
+        <div class="">
+          <h1 class="text-center text-24 font-semibold mt-3">
+            Create your profile
+          </h1>
+          <form class="flex flex-col gap-3 mt-4 lg:mt-5 xl:mt-6">
+            <div class="grid grid-cols-2 gap-3">
+              <div class="flex flex-col">
+                <label
+                  class="font-semibold leading-6 text-grey-400"
+                  for="first-name"
+                  >First name</label
+                >
+                <div class="mt-1 w-full">
+                  <input
+                    id="first-name"
+                    name="first-name"
+                    class="form-input bg-grey-100 w-full rounded-xl px-4 py-3 pr-10 outline-none placeholder:text-grey-300"
+                    type="text"
+                    placeholder="Enter your first name"
+                  />
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <label
+                  class="font-semibold leading-6 text-grey-400"
+                  for="last-name"
+                  >Last name</label
+                >
+                <div class="mt-1 w-full">
+                  <input
+                    id="last-name"
+                    name="last-name"
+                    class="form-input bg-grey-100 w-full rounded-xl px-4 py-3 pr-10 outline-none placeholder:text-grey-300"
+                    type="text"
+                    placeholder="Enter your last name"
+                  />
+                </div>
+                <span
+                  id="password-error"
+                  class="text-warning text-14 mt-1 leading-5"
+                ></span>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <label class="font-semibold leading-6 text-grey-400" for="email"
+                >Display name</label
+              >
+              <input
+                id="display-name"
+                name="display-name"
+                class="form-input bg-grey-100 mt-1 rounded-xl px-4 py-3 outline-none placeholder:text-grey-300"
+                type="display-name"
+                placeholder="Enter your display name"
+              />
+              <span
+                id="email-error"
+                class="text-warning text-14 mt-1 leading-5"
+              ></span>
+            </div>
+            <div class="flex flex-col">
+              <div class="font-semibold leading-6 text-grey-400">
+                Date of birth
+              </div>
+              <div class="mt-1 w-full grid grid-cols-3 gap-3">
+                <select
+                  name="date-of-birth"
+                  id="date-of-birth"
+                  class="form-input bg-grey-100 w-full rounded-xl px-4 py-3 pr-10 outline-none placeholder:text-grey-300"
+                >
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                </select>
+                <select
+                  name="date-of-birth"
+                  id="date-of-birth"
+                  class="form-input bg-grey-100 w-full rounded-xl px-4 py-3 pr-10 outline-none placeholder:text-grey-300"
+                >
+                  <option value="January">January</option>
+                  <option value="February">February</option>
+                  <option value="March">March</option>
+                  <option value="April">April</option>
+                  <option value="May">May</option>
+                  <option value="June">June</option>
+                  <option value="July">July</option>
+                  <option value="August">August</option>
+                  <option value="September">September</option>
+                  <option value="October">October</option>
+                  <option value="November">November</option>
+                  <option value="December">December</option>
+                </select>
+                <select
+                  name="date-of-birth"
+                  id="date-of-birth"
+                  class="form-input bg-grey-100 w-full rounded-xl px-4 py-3 pr-10 outline-none placeholder:text-grey-300"
+                >
+                  <option value="1990" selected>1990</option>
+                  <option value="1991">1991</option>
+                  <option value="1992">1992</option>
+                  <option value="1993">1993</option>
+                  <option value="1994">1994</option>
+                  <option value="1995">1995</option>
+                  <option value="1996">1996</option>
+                  <option value="1997">1997</option>
+                  <option value="1998">1998</option>
+                  <option value="1999">1999</option>
+                  <option value="2000">2000</option>
+                  <option value="2001">2001</option>
+                  <option value="2002">2002</option>
+                  <option value="2003">2003</option>
+                </select>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <label class="font-semibold leading-6 text-grey-400" for="gender"
+                >Gender</label
+              >
+              <select
+                id="gender"
+                name="gender"
+                class="form-input w-full bg-grey-100 mt-1 rounded-xl px-4 py-3 outline-none placeholder:text-grey-300"
+                type="gender"
+                placeholder="Enter your display name"
+              >
+                <option value="" selected>Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+            <div class="flex flex-col">
+              <label class="font-semibold leading-6 text-grey-400" for="gender"
+                >Phone number</label
+              >
+              <div class="rounded-xl bg-grey-100 mt-1">
+                <input
+                  id="phone-number"
+                  name="phone-number"
+                  class="form-input bg-transparent w-full flex-1 outline-none placeholder:text-grey-300 px-4 py-3"
+                  type="phone-number"
+                  placeholder="000-000-0000"
+                />
+              </div>
+            </div>
+          </form>
+          <a
+            href="#"
+            class="login-submit mt-6 flex w-full items-center justify-center rounded-xl py-3 font-semibold leading-6"
+          >
+            Complete
+          </a>
+          <div class="text-14 mt-4 text-grey-400">
+            By signing up, I agree to Clib’s
+            <a
+              class="mt-4 underline transition hover:text-branding-secondary"
+              href="#"
+              >Terms of Service</a
+            >
+            &
+            <a
+              class="mt-4 underline transition hover:text-branding-secondary"
+              href="#"
+              >Privacy Policy</a
+            >.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+
+  <script src="/js/sign-up.js"></script>
+  <script>
+    const input = document.querySelector("#phone-number");
+    window.intlTelInput(input, {
+      initialCountry: "in",
+      separateDialCode: true,
+      utilsScript:
+        "https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
+    });
+  </script>
+</html>

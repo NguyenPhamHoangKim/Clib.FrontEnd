@@ -638,3 +638,6 @@ input {
 .sidebar-video-item.isPlaying {
   @apply bg-bg;
 }
+.iti--separate-dial-code .iti__selected-flag {
+  @apply !bg-transparent;
+}
