@@ -33,3 +33,11 @@ $(".close-modal").each(function () {
     $(".modal-voting").hide();
   });
 });
+
+checkClickOutside(
+  "modal-voting--inner",
+  function () {
+    $(".modal-voting").hide();
+  },
+  "open-modal-voting",
+);

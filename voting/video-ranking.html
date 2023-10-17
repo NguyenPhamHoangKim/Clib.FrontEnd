@@ -1312,7 +1312,8 @@
       <!-- modal choose -->
       <div class="modal-voting hidden overlay">
         <div
-          class="pt-4 px-3 absolute bottom-0 w-full h-[690px] bg-white rounded-tl-3xl rounded-tr-3xl"
+          id="modal-voting--inner"
+          class="modal-voting--inner pt-2 px-3 absolute bottom-0 w-full h-[690px] bg-white rounded-tl-3xl rounded-tr-3xl"
         >
           <div class="flex flex-col items-center w-full gap-3">
             <button class="close-modal">
@@ -1644,8 +1645,16 @@
           </a>
         </div>
         <!-- list trending  -->
-        <div id="trending" class="relative mt-4">
-          <div class="flex flex-col mt-4 gap-4">
+        <div
+          id="trending"
+          class="relative mt-4 rounded-xl hidden overflow-hidden shadow-[0px_2px_20px_0px_rgba(0,0,0,0.08)]"
+        >
+          <div
+            class="px-3 flex items-center justify-center pb-2 pt-2 border-t-8 border-t-branding-secondary bg-grey-200 font-semibold"
+          >
+            Trending
+          </div>
+          <div class="flex flex-col gap-3 py-3.5 px-4">
             <a href="#" class="flex items-center w-full gap-2">
               <div
                 class="text-grey-400 w-[20px] h-[20px] text-14 items-center font-semibold flex flex-col"
@@ -1739,9 +1748,17 @@
           </div>
         </div>
         <!-- list artist   -->
-        <div id="artist" class="relative mt-4">
-          <div class="flex flex-col gap-4">
-            <div class="flex items-center gap-2">
+        <div
+          id="artist"
+          class="relative mt-4 rounded-xl hidden overflow-hidden shadow-[0px_2px_20px_0px_rgba(0,0,0,0.08)]"
+        >
+          <div
+            class="px-3 flex items-center justify-center pb-2 pt-2 border-t-8 border-t-branding-secondary bg-grey-200 font-semibold"
+          >
+            Creator 30
+          </div>
+          <div class="flex flex-col gap-3 py-3.5 px-4">
+            <a href="#" class="flex items-center gap-2">
               <div
                 class="text-grey-400 text-14 items-center font-semibold flex flex-col"
               >
@@ -1763,8 +1780,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="flex items-center gap-2">
+            </a>
+            <a href="#" class="flex items-center gap-2">
               <div
                 class="text-grey-400 text-14 items-center font-semibold flex flex-col gap-"
               >
@@ -1786,9 +1803,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="flex items-center gap-2">
+            </a>
+            <a href="#" class="flex items-center gap-2">
               <div
                 class="text-grey-400 text-14 items-center font-semibold flex flex-col gap-"
               >
@@ -1810,13 +1826,21 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
         <!-- list composer   -->
-        <div id="composers" class="relative mt-4">
-          <div class="flex flex-col gap-4">
-            <div class="flex items-center gap-2">
+        <div
+          id="composers"
+          class="relative mt-4 rounded-xl hidden overflow-hidden shadow-[0px_2px_20px_0px_rgba(0,0,0,0.08)]"
+        >
+          <div
+            class="px-3 flex items-center justify-center pb-2 pt-2 border-t-8 border-t-branding-secondary bg-grey-200 font-semibold"
+          >
+            Top 30
+          </div>
+          <div class="flex flex-col gap-3 py-3.5 px-4">
+            <a href="#" class="flex items-center gap-2">
               <div
                 class="text-grey-400 text-14 items-center font-semibold flex flex-col"
               >
@@ -1838,8 +1862,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="flex items-center gap-2">
+            </a>
+            <a href="#" class="flex items-center gap-2">
               <div
                 class="text-grey-400 text-14 items-center font-semibold flex flex-col gap-"
               >
@@ -1861,9 +1885,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="flex items-center gap-2">
+            </a>
+            <a href="#" class="flex items-center gap-2">
               <div
                 class="text-grey-400 text-14 items-center font-semibold flex flex-col gap-"
               >
@@ -1885,7 +1908,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>

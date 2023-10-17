@@ -4359,6 +4359,11 @@ body{
   padding-bottom: 46px;
 }
 
+.py-3\.5{
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+}
+
 .pb-2{
   padding-bottom: 0.5rem;
 }
