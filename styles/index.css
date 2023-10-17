@@ -7208,6 +7208,10 @@ input {
     padding-top: 0.5rem;
   }
 
+  .md\:pr-10{
+    padding-right: 2.5rem;
+  }
+
   .md\:text-14{
     font-size: 14px;
     line-height: 20px;
