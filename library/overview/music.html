@@ -2603,33 +2603,24 @@
     <main class="relative block md:hidden">
       <div class="modal-more hidden w-full h-full bg-[#666666] overlay">
         <div
-          class="w-full px-4 py-6 bg-[#ffffff] absolute rounded-tl-[24px] rounded-tr-[24px] bottom-0 z-20 overflow-hidden"
+          id="modal-more--inner"
+          class="w-full px-4 py-6 bg-[#ffffff] absolute rounded-tl-[24px] rounded-tr-[24px] bottom-0 z-20 overflow-hidden p"
         >
+          <button class="absolute left-1/2 -translate-x-1/2 top-2">
+            <img
+              src="../../assets/images/playlists/Rectangle 4280.png"
+              alt=" w-[64px] h-1"
+            />
+          </button>
           <div class="text-neutral-dark-500">
-            <div class="flex items-center justify-between">
-              <div
-                class="close-modal font-semibold text-18 text-neutral-dark-500 text-center mb-3"
-              >
-                <img src="../../assets/svgs/close.svg" alt="" />
-              </div>
-              <h4
-                class="text-center flex flex-col close-modal items-center gap-3 mb-4 text-18 font-semibold"
-              >
-                <button>
-                  <img
-                    src="../../assets/images/playlists/Rectangle 4280.png"
-                    alt=" w-[64px] h-1"
-                  />
-                </button>
-                Upload
-              </h4>
-              <div
-                class="font-semibold text-18 text-neutral-dark-500 text-center mb-3"
-              ></div>
-            </div>
+            <h4
+              class="text-center flex flex-col close-modal items-center gap-3 mb-4 text-18 font-semibold"
+            >
+              Upload
+            </h4>
 
             <a
-              href="../../upload/upload-music.html"
+              href="../upload/upload-music.html"
               class="flex items-center mb-2"
             >
               <div
@@ -2642,7 +2633,7 @@
               </div>
             </a>
             <a
-              href="../../upload/upload-video.html"
+              href="../upload/upload-video.html"
               class="flex items-center gap-2 text-14 font-semibold text-neutral-dark-500"
             >
               <div class="p-[10px] bg-grey-100 rounded-xl">
