@@ -52,28 +52,7 @@ new Swiper("#following-swiper", {
     },
   },
 });
-new Swiper("#recent-swiper", {
-  slidesPerView: 2.5,
-  spaceBetween: 12,
-  navigation: {
-    nextEl: ".swiper-recent-next",
-    prevEl: ".swiper-recent-prev",
-  },
-  autoResize: false,
-  breakpoints: {
-    480: {
-      slidesPerView: 3.5,
-    },
-    680: {
-      slidesPerView: 4.5,
-      spaceBetween: 14,
-    },
-    1024: {
-      slidesPerView: 6.5,
-      spaceBetween: 16,
-    },
-  },
-});
+
 new Swiper("#listen-swiper", {
   slidesPerView: 2.5,
   spaceBetween: 12,

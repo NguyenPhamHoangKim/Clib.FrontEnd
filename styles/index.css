@@ -1125,6 +1125,10 @@ body{
   top: 3rem;
 }
 
+.top-2{
+  top: 0.5rem;
+}
+
 .top-3{
   top: 0.75rem;
 }
@@ -1155,10 +1159,6 @@ body{
 
 .top-\[115px\]{
   top: 115px;
-}
-
-.top-2{
-  top: 0.5rem;
 }
 
 .isolate{
@@ -6892,12 +6892,6 @@ input {
   }
 }
 
-@media not all and (min-width: 375px){
-  .max-xs\:hidden{
-    display: none;
-  }
-}
-
 @media (min-width: 375px){
   .xs\:block{
     display: block;
@@ -6925,10 +6919,6 @@ input {
 
   .sm\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .sm\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sm\:underline{
