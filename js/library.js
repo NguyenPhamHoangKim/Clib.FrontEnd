@@ -216,3 +216,17 @@ new Swiper(".digital-swiper", {
     },
   },
 });
+new Swiper(".services-swiper", {
+  slidesPerView: 1.1,
+  spaceBetween: 16,
+  navigation: {
+    nextEl: ".swiper-services-next",
+    prevEl: ".swiper-services-prev",
+  },
+  autoResize: false,
+  breakpoints: {
+    400: {
+      slidesPerView: 1.5,
+    },
+  },
+});

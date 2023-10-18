@@ -1564,6 +1564,10 @@ body{
   margin-top: auto;
 }
 
+.mt-7{
+  margin-top: 1.75rem;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -7037,6 +7041,10 @@ input {
 
   .md\:flex{
     display: flex;
+  }
+
+  .md\:grid{
+    display: grid;
   }
 
   .md\:hidden{

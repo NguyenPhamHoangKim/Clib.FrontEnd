@@ -11,1492 +11,1502 @@
     <link rel="stylesheet" href="../../styles/index.css" />
   </head>
   <body>
-    <header class="fixed left-0 right-0 top-0 z-[999]">
-      <div class="bg-white py-2.5 shadow-[0px_2px_10px_0px_rgba(0,0,0,0.04)]">
-        <div class="container relative flex items-center justify-between">
-          <div class="flex items-center space-x-4">
-            <button id="toggle-mobile-menu">
-              <img src="../../assets/svgs/menu.svg" alt="" />
-            </button>
-            <div
-              class="hidden w-fit items-center rounded-lg border border-grey-200 px-4 py-2 md:flex"
-            >
-              <img class="mr-2" src="../../assets/svgs/search.svg" alt="" />
-              <input
-                class="h-full flex-1 text-base outline-none placeholder:text-grey-300 md:min-w-[260px]"
-                placeholder="What are you looking for?"
-              />
-            </div>
-          </div>
-
-          <a
-            href="/"
-            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden"
-          >
-            <img
-              class="object-contain w-8"
-              src="../../assets/svgs/logo-mb.svg"
-              alt=""
-            />
-          </a>
-          <!-- SIGNED IN MOBILE -->
-          <div class="flex items-center space-x-4 md:hidden">
-            <button class="rounded-lg bg-grey-100 p-1.5">
-              <img
-                width="24"
-                height="24"
-                src="../../assets/svgs/notification.svg"
-                alt=""
-              />
-            </button>
-            <button class="rounded-lg bg-grey-100 p-1.5">
-              <img src="../../assets/svgs/messenger.svg" alt="" />
-            </button>
-          </div>
-          <!-- SIGNED IN -->
-
-          <!-- SIGNED IN PC-->
-          <div class="flex items-center space-x-4 max-md:hidden xl:space-x-6">
-            <button class="bg-grey-1 rounded-lg">
-              <img src="../../assets/svgs/document.svg" alt="" />
-            </button>
-            <button class="">
-              <img src="../../assets/svgs/sol.svg" alt="" />
-            </button>
-            <button class="">
-              <img src="../../assets/svgs/export-pc.svg" alt="" />
-            </button>
-            <div
-              id="ms-wrapper"
-              class="relative flex items-center justify-center"
-            >
-              <button id="toggle-ms" class="toggle-ms">
-                <img
-                  class="ms-icon"
-                  src="../../assets/svgs/messenger-pc.svg"
-                  alt=""
-                />
+    <div class="hidden md:block">
+      <header class="fixed left-0 right-0 top-0 z-[999]">
+        <div class="bg-white py-2.5 shadow-[0px_2px_10px_0px_rgba(0,0,0,0.04)]">
+          <div class="container relative flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+              <button id="toggle-mobile-menu">
+                <img src="../../assets/svgs/menu.svg" alt="" />
               </button>
-              <div id="ms-popup" class="ms-popup">
-                <div class="flex items-center justify-between px-4 pb-2 pt-4">
-                  <span class="text-20 font-semibold">Message</span>
-                  <div class="flex items-center gap-2">
-                    <span class="text-14">New chat</span>
-                    <button class="rounded-xl bg-grey-200 p-1.5 duration-100">
-                      <img
-                        class="h-6 w-6"
-                        src="../../assets/svgs/edit.svg"
-                        alt=""
-                      />
-                    </button>
-                  </div>
-                </div>
-                <div class="mt-2 px-4">
-                  <div
-                    class="flex items-center gap-2 rounded-xl bg-grey-100 p-3"
-                  >
-                    <img
-                      class="aspect-square w-5"
-                      src="../../assets/svgs/search-people.svg"
-                      loading="lazy"
-                      alt=""
-                    />
-                    <input
-                      class="h-full flex-1 bg-transparent text-14 outline-none placeholder:text-grey-300"
-                      placeholder="Search people"
-                    />
-                  </div>
-                </div>
-                <ul class="mt-2 px-4">
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="../../assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="Benny Andersson"
-                        />
-                        <div>
-                          <div class="line-clamp-1 text-14 font-semibold">
-                            Benny Andersson
-                          </div>
-                          <div class="line-clamp-1 text-14 font-semibold">
-                            aww
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">3d</div>
-                        <span class="dot !h-3 !w-3 !bg-branding"></span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between border-r-4 border-r-branding bg-[linear-gradient(270deg,#F3FCFF_0%,rgba(243,252,255,0.00)_103.09%)] px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="../../assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="Son Tung M-TP"
-                        />
-                        <div>
-                          <div
-                            class="line-clamp-1 flex items-center gap-1 text-14 font-semibold"
-                          >
-                            Son Tung M-TP
-                            <img src="../../assets/svgs/verify.svg" alt="" />
-                          </div>
-                          <div class="line-clamp-1 text-14">
-                            Send a playlist
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">3d</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="../../assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="Donna Summer"
-                        />
-                        <div>
-                          <div class="line-clamp-1 text-14 font-semibold">
-                            Donna Summer
-                          </div>
-                          <div class="line-clamp-1 text-14">Hi</div>
-                        </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">3d</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="../../assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="James"
-                        />
-                        <div>
-                          <div class="text-14 font-semibold">James</div>
-                          <div class="line-clamp-1 text-14">
-                            Wow, this is really epic
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">3w</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="../../assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="James"
-                        />
-                        <div>
-                          <div class="text-14 font-semibold">Roger Daltrey</div>
-                          <div class="line-clamp-1 text-14">woohoooo</div>
-                        </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">17/03/2023</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center gap-2">
-                        <img
-                          class="aspect-square w-10 rounded-lg object-cover"
-                          src="../../assets/images/artists/1.png"
-                          loading="lazy"
-                          alt="James"
-                        />
-                        <div>
-                          <div class="text-14 font-semibold">Big Star</div>
-                          <div class="line-clamp-1 text-14">
-                            Haha that's terrifying 😂
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex flex-col items-end gap-2.5">
-                        <div class="text-12 text-grey-400">05/03/2023</div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-                <div class="mt-2 py-3 text-center">
-                  <a
-                    href="#"
-                    class="text-14 font-semibold text-grey-400 hover:text-branding-secondary hover:underline"
-                    >View all message</a
-                  >
-                </div>
+              <div
+                class="hidden w-fit items-center rounded-lg border border-grey-200 px-4 py-2 md:flex"
+              >
+                <img class="mr-2" src="../../assets/svgs/search.svg" alt="" />
+                <input
+                  class="h-full flex-1 text-base outline-none placeholder:text-grey-300 md:min-w-[260px]"
+                  placeholder="What are you looking for?"
+                />
               </div>
             </div>
-            <div
-              id="noti-wrapper"
-              class="relative flex items-center justify-center"
-            >
-              <button id="toggle-notification" class="">
-                <img
-                  class="noti-icon"
-                  src="../../assets/svgs/notification-pc.svg"
-                  alt=""
-                />
-              </button>
-              <div id="noti-popup" class="noti-popup">
-                <div class="flex items-center justify-between px-4 pb-2 pt-4">
-                  <span class="text-20 font-semibold">Notification</span>
-                  <button
-                    class="transition-transform duration-100 hover:rotate-180"
-                  >
-                    <img
-                      class="h-6 w-6"
-                      src="../../assets/svgs/setting.svg"
-                      alt=""
-                    />
-                  </button>
-                </div>
-                <div class="px-4">
-                  <div class="grid grid-cols-3 items-center">
-                    <button
-                      class="h-[60px] border-b-4 border-b-branding-secondary text-center text-base font-semibold text-branding-secondary"
-                    >
-                      All
-                    </button>
-                    <button
-                      class="h-[60px] text-center text-base font-semibold text-grey-300"
-                    >
-                      Unread
-                    </button>
-                    <button
-                      class="h-[60px] text-center text-base font-semibold text-grey-300"
-                    >
-                      Following
-                    </button>
-                  </div>
-                </div>
-                <ul class="mt-4 px-2">
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="../../assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Ariana Grande"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="../../assets/svgs/ms-text.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Macos</span> commented
-                            on your post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                      <span class="dot !h-3 !w-3 !bg-branding"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="../../assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Ariana Grande"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="../../assets/svgs/react-noti.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Josh</span> commented on
-                            your post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="../../assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Harry"
-                          />
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Harry</span> following
-                            you
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                      <button class="btn-primary">Follow</button>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="../../assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Sona"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="../../assets/svgs/ms-text.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Sona</span> commented on
-                            your post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="../../assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Been"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="../../assets/svgs/react-love.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Been</span> liked your
-                            post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                      <span class="dot !h-3 !w-3 !bg-branding"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="../../assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Harry"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="../../assets/svgs/react-love.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Harry</span> liked your
-                            post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                      <span class="dot !h-3 !w-3 !bg-branding"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
-                    >
-                      <div class="mr-2 flex items-center">
-                        <div class="relative mr-3">
-                          <img
-                            class="aspect-square w-12 rounded-lg object-cover"
-                            src="../../assets/images/artists/1.png"
-                            loading="lazy"
-                            alt="Jean"
-                          />
-                          <span
-                            class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
-                          >
-                            <img
-                              class="aspect-square w-6 rounded-lg object-cover"
-                              src="../../assets/svgs/ms-text.svg"
-                              alt=""
-                            />
-                          </span>
-                        </div>
-                        <div>
-                          <div class="text-14">
-                            <span class="font-semibold">Jean</span> commented on
-                            your post
-                          </div>
-                          <div class="mt-1 text-12 text-grey-400">
-                            2 day ago
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-                <div class="mt-2 py-3 text-center">
-                  <a
-                    href="#"
-                    class="text-14 font-semibold text-grey-400 hover:text-branding-secondary hover:underline"
-                    >View all notifications</a
-                  >
-                </div>
-              </div>
-            </div>
-            <button class="">
-              <img src="../../assets/svgs/wallet-pc.svg" alt="" />
-            </button>
-            <a href="./profile" class="flex items-center gap-2">
-              <img
-                src="../../assets/images/avatar1.jpg"
-                class="h-11 w-11 rounded-lg object-cover"
-                loading="lazy"
-                alt="Iberd"
-              />
-              <span>Iberd</span>
-            </a>
-          </div>
-          <!-- SIGNED IN -->
 
-          <!-- NOT SIGN IN <div class="flex items-center space-x-4">
-            <button>
-              <img src="../../assets/svgs/export.svg" alt="" />
-            </button>
-            <a href="login.html" class="btn-secondary text-14 md:text-base"
-              >Sign in</a
-            >
-          </div> NOT SIGN IN -->
-        </div>
-      </div>
-      <div
-        class="border-b border-b-grey-200 bg-white md:border-none md:bg-grey-100 md:py-1.5 xl:py-2"
-      >
-        <ul
-          class="container relative grid grid-cols-2 items-center gap-[35px] md:grid-cols-5"
-        >
-          <li>
-            <a href="../../music/index.html" class="header-item-link">music</a>
-          </li>
-          <li>
-            <a href="../../videos/index.html" class="header-item-link"
-              >videos</a
-            >
-          </li>
-          <li class="max-md:hidden">
             <a
               href="/"
-              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden"
             >
               <img
-                class="aspect-square w-20 lg:w-[116px] object-contain"
-                src="../../assets/svgs/logo.svg"
+                class="object-contain w-8"
+                src="../../assets/svgs/logo-mb.svg"
                 alt=""
               />
             </a>
-          </li>
-          <li class="max-md:hidden">
-            <a href="../../marketplace/music.html" class="header-item-link"
-              >marketplace</a
-            >
-          </li>
-          <li class="max-md:hidden">
-            <a href="../../voting/music-voting.html" class="header-item-link"
-              >voting</a
-            >
-          </li>
-        </ul>
-      </div>
-    </header>
-    <main class="container mt-[100px] md:mt-[135px] lg:mt-[165px]">
-      <div
-        class="bg-white rounded-xl overflow-hidden shadow-[0px_2px_20px_0px_rgba(0,0,0,0.08)]"
-      >
+            <!-- SIGNED IN MOBILE -->
+            <div class="flex items-center space-x-4 md:hidden">
+              <button class="rounded-lg bg-grey-100 p-1.5">
+                <img
+                  width="24"
+                  height="24"
+                  src="../../assets/svgs/notification.svg"
+                  alt=""
+                />
+              </button>
+              <button class="rounded-lg bg-grey-100 p-1.5">
+                <img src="../../assets/svgs/messenger.svg" alt="" />
+              </button>
+            </div>
+            <!-- SIGNED IN -->
+
+            <!-- SIGNED IN PC-->
+            <div class="flex items-center space-x-4 max-md:hidden xl:space-x-6">
+              <button class="bg-grey-1 rounded-lg">
+                <img src="../../assets/svgs/document.svg" alt="" />
+              </button>
+              <button class="">
+                <img src="../../assets/svgs/sol.svg" alt="" />
+              </button>
+              <button class="">
+                <img src="../../assets/svgs/export-pc.svg" alt="" />
+              </button>
+              <div
+                id="ms-wrapper"
+                class="relative flex items-center justify-center"
+              >
+                <button id="toggle-ms" class="toggle-ms">
+                  <img
+                    class="ms-icon"
+                    src="../../assets/svgs/messenger-pc.svg"
+                    alt=""
+                  />
+                </button>
+                <div id="ms-popup" class="ms-popup">
+                  <div class="flex items-center justify-between px-4 pb-2 pt-4">
+                    <span class="text-20 font-semibold">Message</span>
+                    <div class="flex items-center gap-2">
+                      <span class="text-14">New chat</span>
+                      <button class="rounded-xl bg-grey-200 p-1.5 duration-100">
+                        <img
+                          class="h-6 w-6"
+                          src="../../assets/svgs/edit.svg"
+                          alt=""
+                        />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="mt-2 px-4">
+                    <div
+                      class="flex items-center gap-2 rounded-xl bg-grey-100 p-3"
+                    >
+                      <img
+                        class="aspect-square w-5"
+                        src="../../assets/svgs/search-people.svg"
+                        loading="lazy"
+                        alt=""
+                      />
+                      <input
+                        class="h-full flex-1 bg-transparent text-14 outline-none placeholder:text-grey-300"
+                        placeholder="Search people"
+                      />
+                    </div>
+                  </div>
+                  <ul class="mt-2 px-4">
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="../../assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="Benny Andersson"
+                          />
+                          <div>
+                            <div class="line-clamp-1 text-14 font-semibold">
+                              Benny Andersson
+                            </div>
+                            <div class="line-clamp-1 text-14 font-semibold">
+                              aww
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">3d</div>
+                          <span class="dot !h-3 !w-3 !bg-branding"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between border-r-4 border-r-branding bg-[linear-gradient(270deg,#F3FCFF_0%,rgba(243,252,255,0.00)_103.09%)] px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="../../assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="Son Tung M-TP"
+                          />
+                          <div>
+                            <div
+                              class="line-clamp-1 flex items-center gap-1 text-14 font-semibold"
+                            >
+                              Son Tung M-TP
+                              <img src="../../assets/svgs/verify.svg" alt="" />
+                            </div>
+                            <div class="line-clamp-1 text-14">
+                              Send a playlist
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">3d</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="../../assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="Donna Summer"
+                          />
+                          <div>
+                            <div class="line-clamp-1 text-14 font-semibold">
+                              Donna Summer
+                            </div>
+                            <div class="line-clamp-1 text-14">Hi</div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">3d</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="../../assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="James"
+                          />
+                          <div>
+                            <div class="text-14 font-semibold">James</div>
+                            <div class="line-clamp-1 text-14">
+                              Wow, this is really epic
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">3w</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="../../assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="James"
+                          />
+                          <div>
+                            <div class="text-14 font-semibold">
+                              Roger Daltrey
+                            </div>
+                            <div class="line-clamp-1 text-14">woohoooo</div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">17/03/2023</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2.5 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center gap-2">
+                          <img
+                            class="aspect-square w-10 rounded-lg object-cover"
+                            src="../../assets/images/artists/1.png"
+                            loading="lazy"
+                            alt="James"
+                          />
+                          <div>
+                            <div class="text-14 font-semibold">Big Star</div>
+                            <div class="line-clamp-1 text-14">
+                              Haha that's terrifying 😂
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-end gap-2.5">
+                          <div class="text-12 text-grey-400">05/03/2023</div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="mt-2 py-3 text-center">
+                    <a
+                      href="#"
+                      class="text-14 font-semibold text-grey-400 hover:text-branding-secondary hover:underline"
+                      >View all message</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                id="noti-wrapper"
+                class="relative flex items-center justify-center"
+              >
+                <button id="toggle-notification" class="">
+                  <img
+                    class="noti-icon"
+                    src="../../assets/svgs/notification-pc.svg"
+                    alt=""
+                  />
+                </button>
+                <div id="noti-popup" class="noti-popup">
+                  <div class="flex items-center justify-between px-4 pb-2 pt-4">
+                    <span class="text-20 font-semibold">Notification</span>
+                    <button
+                      class="transition-transform duration-100 hover:rotate-180"
+                    >
+                      <img
+                        class="h-6 w-6"
+                        src="../../assets/svgs/setting.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                  <div class="px-4">
+                    <div class="grid grid-cols-3 items-center">
+                      <button
+                        class="h-[60px] border-b-4 border-b-branding-secondary text-center text-base font-semibold text-branding-secondary"
+                      >
+                        All
+                      </button>
+                      <button
+                        class="h-[60px] text-center text-base font-semibold text-grey-300"
+                      >
+                        Unread
+                      </button>
+                      <button
+                        class="h-[60px] text-center text-base font-semibold text-grey-300"
+                      >
+                        Following
+                      </button>
+                    </div>
+                  </div>
+                  <ul class="mt-4 px-2">
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Ariana Grande"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../../assets/svgs/ms-text.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Macos</span> commented
+                              on your post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                        <span class="dot !h-3 !w-3 !bg-branding"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Ariana Grande"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../../assets/svgs/react-noti.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Josh</span> commented
+                              on your post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Harry"
+                            />
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Harry</span> following
+                              you
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                        <button class="btn-primary">Follow</button>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Sona"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../../assets/svgs/ms-text.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Sona</span> commented
+                              on your post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Been"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../../assets/svgs/react-love.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Been</span> liked your
+                              post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                        <span class="dot !h-3 !w-3 !bg-branding"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Harry"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../../assets/svgs/react-love.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Harry</span> liked
+                              your post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                        <span class="dot !h-3 !w-3 !bg-branding"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center justify-between rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+                      >
+                        <div class="mr-2 flex items-center">
+                          <div class="relative mr-3">
+                            <img
+                              class="aspect-square w-12 rounded-lg object-cover"
+                              src="../../assets/images/artists/1.png"
+                              loading="lazy"
+                              alt="Jean"
+                            />
+                            <span
+                              class="absolute bottom-0 right-0 translate-x-[20%] translate-y-[20%]"
+                            >
+                              <img
+                                class="aspect-square w-6 rounded-lg object-cover"
+                                src="../../assets/svgs/ms-text.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                          <div>
+                            <div class="text-14">
+                              <span class="font-semibold">Jean</span> commented
+                              on your post
+                            </div>
+                            <div class="mt-1 text-12 text-grey-400">
+                              2 day ago
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="mt-2 py-3 text-center">
+                    <a
+                      href="#"
+                      class="text-14 font-semibold text-grey-400 hover:text-branding-secondary hover:underline"
+                      >View all notifications</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <button class="">
+                <img src="../../assets/svgs/wallet-pc.svg" alt="" />
+              </button>
+              <a href="./profile" class="flex items-center gap-2">
+                <img
+                  src="../../assets/images/avatar1.jpg"
+                  class="h-11 w-11 rounded-lg object-cover"
+                  loading="lazy"
+                  alt="Iberd"
+                />
+                <span>Iberd</span>
+              </a>
+            </div>
+            <!-- SIGNED IN -->
+
+            <!-- NOT SIGN IN <div class="flex items-center space-x-4">
+              <button>
+                <img src="../../assets/svgs/export.svg" alt="" />
+              </button>
+              <a href="login.html" class="btn-secondary text-14 md:text-base"
+                >Sign in</a
+              >
+            </div> NOT SIGN IN -->
+          </div>
+        </div>
         <div
-          class="grid w-full grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 p-1 bg-grey-100 rounded-xl mx-auto shadow-[0px_2px_20px_0px_rgba(0,0,0,0.08)]"
+          class="border-b border-b-grey-200 bg-white md:border-none md:bg-grey-100 md:py-1.5 xl:py-2"
         >
-          <a
-            href="../../library/overview/music.html"
-            class="flex btn-upload items-center justify-center font-semibold w-full text-14 lg:text-16 gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl"
+          <ul
+            class="container relative grid grid-cols-2 items-center gap-[35px] md:grid-cols-5"
           >
-            <svg
-              width="25"
-              height="24"
-              viewBox="0 0 25 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M13.42 2.25984L19.93 5.76984C20.69 6.17984 20.69 7.34984 19.93 7.75984L13.42 11.2698C12.84 11.5798 12.16 11.5798 11.58 11.2698L5.07 7.75984C4.31 7.34984 4.31 6.17984 5.07 5.76984L11.58 2.25984C12.16 1.94984 12.84 1.94984 13.42 2.25984Z"
-                stroke="#A1ABB3"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M4.11 10.1297L10.16 13.1597C10.91 13.5397 11.39 14.3097 11.39 15.1497V20.8697C11.39 21.6997 10.52 22.2297 9.78 21.8597L3.73 18.8297C2.98 18.4497 2.5 17.6797 2.5 16.8397V11.1197C2.5 10.2897 3.37 9.75968 4.11 10.1297Z"
-                stroke="#A1ABB3"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M20.89 10.1297L14.84 13.1597C14.09 13.5397 13.61 14.3097 13.61 15.1497V20.8697C13.61 21.6997 14.48 22.2297 15.22 21.8597L21.27 18.8297C22.02 18.4497 22.5 17.6797 22.5 16.8397V11.1197C22.5 10.2897 21.63 9.75968 20.89 10.1297Z"
-                stroke="#A1ABB3"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-
-            Overview
-          </a>
-          <a
-            href="../../library/likes/liked-songs.html"
-            class="flex btn-upload items-center justify-center font-semibold w-full text-14 lg:text-16 gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl active-upload"
-          >
-            <svg
-              width="25"
-              height="24"
-              viewBox="0 0 25 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M16.94 3.09961C15.13 3.09961 13.51 3.97961 12.5 5.32961C11.49 3.97961 9.87 3.09961 8.06 3.09961C4.99 3.09961 2.5 5.59961 2.5 8.68961C2.5 9.87961 2.69 10.9796 3.02 11.9996C4.6 16.9996 9.47 19.9896 11.88 20.8096C12.22 20.9296 12.78 20.9296 13.12 20.8096C15.53 19.9896 20.4 16.9996 21.98 11.9996C22.31 10.9796 22.5 9.87961 22.5 8.68961C22.5 5.59961 20.01 3.09961 16.94 3.09961Z"
-                fill="white"
-              />
-            </svg>
-
-            Likes
-          </a>
-          <a
-            href="../../library/playlists/music.html"
-            class="flex btn-upload items-center justify-center font-semibold w-full text-14 lg:text-16 gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl"
-          >
-            <svg
-              width="25"
-              height="24"
-              viewBox="0 0 25 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M2.5 3H22.5"
-                stroke="#A1ABB3"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M2.5 9H11.5"
-                stroke="#A1ABB3"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M2.5 15H8.5"
-                stroke="#A1ABB3"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M2.5 21H6.5"
-                stroke="#A1ABB3"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M12.34 21.9996C13.544 21.9996 14.52 21.0236 14.52 19.8196C14.52 18.6157 13.544 17.6396 12.34 17.6396C11.136 17.6396 10.16 18.6157 10.16 19.8196C10.16 21.0236 11.136 21.9996 12.34 21.9996Z"
-                stroke="#A1ABB3"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M22.5 18.3699V9.85993C22.5 8.04993 21.36 7.79993 20.21 8.10993L15.86 9.29993C15.07 9.51993 14.52 10.1399 14.52 11.0499V12.57V13.59V19.82"
-                stroke="#A1ABB3"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M20.32 20.5494C21.524 20.5494 22.5 19.5734 22.5 18.3694C22.5 17.1655 21.524 16.1895 20.32 16.1895C19.116 16.1895 18.14 17.1655 18.14 18.3694C18.14 19.5734 19.116 20.5494 20.32 20.5494Z"
-                stroke="#A1ABB3"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M14.52 13.5999L22.5 11.4199"
-                stroke="#A1ABB3"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-
-            Playlists
-          </a>
-          <a
-            href="../../library/albums/index.html"
-            class="flex btn-upload items-center justify-center font-semibold w-full text-14 lg:text-16 gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl"
-          >
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M22 13V17C22 20.5 20 22 17 22H7C4 22 2 20.5 2 17V13C2 10.35 3.15 8.85003 5 8.28003C5.6 8.09003 6.27 8 7 8H17C17.73 8 18.4 8.09003 19 8.28003C20.85 8.85003 22 10.35 22 13Z"
-                stroke="#A1ABB3"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M19 7V8.28003C18.4 8.09003 17.73 8 17 8H7C6.27 8 5.6 8.09003 5 8.28003V7C5 5.9 5.9 5 7 5H17C18.1 5 19 5.9 19 7Z"
-                stroke="#A1ABB3"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M16 3.51001V5H8V3.51001C8 2.68001 8.68001 2 9.51001 2H14.49C15.32 2 16 2.68001 16 3.51001Z"
-                stroke="#A1ABB3"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M9.07001 19.4506C9.79902 19.4506 10.39 18.8596 10.39 18.1306C10.39 17.4015 9.79902 16.8105 9.07001 16.8105C8.34099 16.8105 7.75 17.4015 7.75 18.1306C7.75 18.8596 8.34099 19.4506 9.07001 19.4506Z"
-                stroke="#A1ABB3"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M15.2499 17.2501V12.0801C15.2499 10.9801 14.5599 10.8201 13.8599 11.0201L11.2099 11.7401C10.7299 11.8701 10.3999 12.2501 10.3999 12.8001V13.7201V14.3401V18.1301"
-                stroke="#A1ABB3"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M13.9299 18.5697C14.6589 18.5697 15.2499 17.9787 15.2499 17.2497C15.2499 16.5207 14.6589 15.9297 13.9299 15.9297C13.2009 15.9297 12.6099 16.5207 12.6099 17.2497C12.6099 17.9787 13.2009 18.5697 13.9299 18.5697Z"
-                stroke="#A1ABB3"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M10.3999 14.3502L15.2499 13.0303"
-                stroke="#A1ABB3"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-
-            Albums
-          </a>
-          <a
-            href="../../library/follow/artists.html"
-            class="flex btn-upload items-center justify-center font-semibold w-full text-14 lg:text-16 gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl"
-          >
-            <svg
-              width="25"
-              height="24"
-              viewBox="0 0 25 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9.65957 10.87C9.55957 10.86 9.43957 10.86 9.32957 10.87C6.94957 10.79 5.05957 8.84 5.05957 6.44C5.05957 3.99 7.03957 2 9.49957 2C11.9496 2 13.9396 3.99 13.9396 6.44C13.9296 8.84 12.0396 10.79 9.65957 10.87Z"
-                stroke="#A1ABB3"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M16.9103 4C18.8503 4 20.4103 5.57 20.4103 7.5C20.4103 9.39 18.9103 10.93 17.0403 11C16.9603 10.99 16.8703 10.99 16.7803 11"
-                stroke="#A1ABB3"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M4.65973 14.56C2.23973 16.18 2.23973 18.82 4.65973 20.43C7.40973 22.27 11.9197 22.27 14.6697 20.43C17.0897 18.81 17.0897 16.17 14.6697 14.56C11.9297 12.73 7.41973 12.73 4.65973 14.56Z"
-                stroke="#A1ABB3"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M18.8398 20C19.5598 19.85 20.2398 19.56 20.7998 19.13C22.3598 17.96 22.3598 16.03 20.7998 14.86C20.2498 14.44 19.5798 14.16 18.8698 14"
-                stroke="#A1ABB3"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-
-            Follow
-          </a>
-          <a
-            href="../../library/history/recent-listening.html"
-            class="flex btn-upload items-center justify-center font-semibold w-full text-14 lg:text-16 gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl"
-          >
-            <svg
-              width="25"
-              height="24"
-              viewBox="0 0 25 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M22.5 12C22.5 17.52 18.02 22 12.5 22C6.98 22 2.5 17.52 2.5 12C2.5 6.48 6.98 2 12.5 2C18.02 2 22.5 6.48 22.5 12Z"
-                stroke="#A1ABB3"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M16.2109 15.1798L13.1109 13.3298C12.5709 13.0098 12.1309 12.2398 12.1309 11.6098V7.50977"
-                stroke="#A1ABB3"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-
-            History
-          </a>
-        </div>
-        <div class="mt-3 flex justify-center overflow-x-auto">
-          <a
-            href="./liked-songs.html"
-            class="px-6 py-3 text-grey-300 font-semibold"
-            >Liked songs</a
-          >
-          <a
-            href="./liked-videos.html"
-            class="px-6 py-3 text-grey-300 font-semibold"
-          >
-            Liked videos
-          </a>
-          <a
-            href="./marketplace.html"
-            class="px-6 py-3 border-b-4 border-b-branding-secondary text-branding-secondary font-semibold"
-          >
-            Marketplace
-          </a>
-        </div>
-      </div>
-      <div class="mt-8">
-        <section class="md:rounded-xl bg-white p-0 md:p-4 md:mt-6 md:pb-0">
-          <div class="flex items-center justify-between max-md:pt-4">
-            <div class="flex items-center">
-              <img
-                class="mr-1.5"
-                src="../../assets/svgs/digital-goods.svg"
-                alt=""
-              />
+            <li>
+              <a href="../../music/index.html" class="header-item-link"
+                >music</a
+              >
+            </li>
+            <li>
+              <a href="../../videos/index.html" class="header-item-link"
+                >videos</a
+              >
+            </li>
+            <li class="max-md:hidden">
               <a
-                href="#"
-                class="flex items-center text-18 font-semibold md:text-24"
-                >Digital goods
-              </a>
-            </div>
-            <a
-              href="#"
-              class="hover:scale-110 duration-75 max-md:hidden transition-transform px-4 py-2 text-14 text-branding font-semibold bg-grey-100 rounded-2xl"
-              >+ Sell</a
-            >
-            <a
-              href="#"
-              class="text-right text-14 text-branding hover:underline md:hidden"
-              >View all</a
-            >
-          </div>
-          <div class="digital-swiper swiper relative mt-4">
-            <div class="swiper-wrapper">
-              <a href="#" class="swiper-slide pb-4 digital-item">
-                <div
-                  class="relative overflow-hidden rounded-lg aspect-square w-full"
-                >
-                  <img
-                    class="h-full w-full digital-thumb rounded-lg object-cover"
-                    src="../../assets/images/videos/1.jpg"
-                    loading="lazy"
-                    alt=""
-                  />
-                </div>
-                <div
-                  class="text-14 mt-3 font-semibold md:text-base line-clamp-1"
-                >
-                  Speak of the demon
-                </div>
-                <div class="flex items-center mt-2 justify-between">
-                  <div class="flex items-center gap-1.5">
-                    <div class="relative">
-                      <img
-                        class="w-8 aspect-square rounded-lg"
-                        src="../../assets/images/artists/2.png"
-                        loading="lazy"
-                        alt=""
-                      />
-                      <img
-                        class="w-4 h-4 absolute bottom-0 right-0 translate-x-0.5 translate-y-0.5"
-                        src="../../assets/svgs/digital-verify.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="text-grey-400">
-                      <div class="text-12">Owner</div>
-                      <div class="text-14 line-clamp-1">James Brown</div>
-                    </div>
-                  </div>
-                  <div
-                    class="border-l border-l-grey-200 pl-3 text-18 font-semibold"
-                  >
-                    $9
-                  </div>
-                </div>
-              </a>
-              <a href="#" class="swiper-slide pb-4 digital-item">
-                <div
-                  class="relative overflow-hidden rounded-lg aspect-square w-full"
-                >
-                  <img
-                    class="h-full w-full digital-thumb rounded-lg object-cover"
-                    src="../../assets/images/videos/1.jpg"
-                    loading="lazy"
-                    alt=""
-                  />
-                </div>
-                <div
-                  class="text-14 mt-3 font-semibold md:text-base line-clamp-1"
-                >
-                  Speak of the demon
-                </div>
-                <div class="flex items-center mt-2 justify-between">
-                  <div class="flex items-center gap-1.5">
-                    <div class="relative">
-                      <img
-                        class="w-8 aspect-square rounded-lg"
-                        src="../../assets/images/artists/2.png"
-                        loading="lazy"
-                        alt=""
-                      />
-                      <img
-                        class="w-4 h-4 absolute bottom-0 right-0 translate-x-0.5 translate-y-0.5"
-                        src="../../assets/svgs/digital-verify.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="text-grey-400">
-                      <div class="text-12">Owner</div>
-                      <div class="text-14 line-clamp-1">James Brown</div>
-                    </div>
-                  </div>
-                  <div
-                    class="border-l border-l-grey-200 pl-3 text-18 font-semibold"
-                  >
-                    $9
-                  </div>
-                </div>
-              </a>
-              <a href="#" class="swiper-slide pb-4 digital-item">
-                <div
-                  class="relative overflow-hidden rounded-lg aspect-square w-full"
-                >
-                  <img
-                    class="h-full w-full digital-thumb rounded-lg object-cover"
-                    src="../../assets/images/videos/1.jpg"
-                    loading="lazy"
-                    alt=""
-                  />
-                </div>
-                <div
-                  class="text-14 mt-3 font-semibold md:text-base line-clamp-1"
-                >
-                  Speak of the demon
-                </div>
-                <div class="flex items-center mt-2 justify-between">
-                  <div class="flex items-center gap-1.5">
-                    <div class="relative">
-                      <img
-                        class="w-8 aspect-square rounded-lg"
-                        src="../../assets/images/artists/2.png"
-                        loading="lazy"
-                        alt=""
-                      />
-                      <img
-                        class="w-4 h-4 absolute bottom-0 right-0 translate-x-0.5 translate-y-0.5"
-                        src="../../assets/svgs/digital-verify.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="text-grey-400">
-                      <div class="text-12">Owner</div>
-                      <div class="text-14 line-clamp-1">James Brown</div>
-                    </div>
-                  </div>
-                  <div
-                    class="border-l border-l-grey-200 pl-3 text-18 font-semibold"
-                  >
-                    $9
-                  </div>
-                </div>
-              </a>
-              <a href="#" class="swiper-slide pb-4 digital-item">
-                <div
-                  class="relative overflow-hidden rounded-lg aspect-square w-full"
-                >
-                  <img
-                    class="h-full w-full digital-thumb rounded-lg object-cover"
-                    src="../../assets/images/videos/1.jpg"
-                    loading="lazy"
-                    alt=""
-                  />
-                </div>
-                <div
-                  class="text-14 mt-3 font-semibold md:text-base line-clamp-1"
-                >
-                  Speak of the demon
-                </div>
-                <div class="flex items-center mt-2 justify-between">
-                  <div class="flex items-center gap-1.5">
-                    <div class="relative">
-                      <img
-                        class="w-8 aspect-square rounded-lg"
-                        src="../../assets/images/artists/2.png"
-                        loading="lazy"
-                        alt=""
-                      />
-                      <img
-                        class="w-4 h-4 absolute bottom-0 right-0 translate-x-0.5 translate-y-0.5"
-                        src="../../assets/svgs/digital-verify.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="text-grey-400">
-                      <div class="text-12">Owner</div>
-                      <div class="text-14 line-clamp-1">James Brown</div>
-                    </div>
-                  </div>
-                  <div
-                    class="border-l border-l-grey-200 pl-3 text-18 font-semibold"
-                  >
-                    $9
-                  </div>
-                </div>
-              </a>
-              <a href="#" class="swiper-slide pb-4 digital-item">
-                <div
-                  class="relative overflow-hidden rounded-lg aspect-square w-full"
-                >
-                  <img
-                    class="h-full w-full digital-thumb rounded-lg object-cover"
-                    src="../../assets/images/videos/1.jpg"
-                    loading="lazy"
-                    alt=""
-                  />
-                </div>
-                <div
-                  class="text-14 mt-3 font-semibold md:text-base line-clamp-1"
-                >
-                  Speak of the demon
-                </div>
-                <div class="flex items-center mt-2 justify-between">
-                  <div class="flex items-center gap-1.5">
-                    <div class="relative">
-                      <img
-                        class="w-8 aspect-square rounded-lg"
-                        src="../../assets/images/artists/2.png"
-                        loading="lazy"
-                        alt=""
-                      />
-                      <img
-                        class="w-4 h-4 absolute bottom-0 right-0 translate-x-0.5 translate-y-0.5"
-                        src="../../assets/svgs/digital-verify.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="text-grey-400">
-                      <div class="text-12">Owner</div>
-                      <div class="text-14 line-clamp-1">James Brown</div>
-                    </div>
-                  </div>
-                  <div
-                    class="border-l border-l-grey-200 pl-3 text-18 font-semibold"
-                  >
-                    $9
-                  </div>
-                </div>
-              </a>
-              <a href="#" class="swiper-slide pb-4 digital-item">
-                <div
-                  class="relative overflow-hidden rounded-lg aspect-square w-full"
-                >
-                  <img
-                    class="h-full w-full digital-thumb rounded-lg object-cover"
-                    src="../../assets/images/videos/1.jpg"
-                    loading="lazy"
-                    alt=""
-                  />
-                </div>
-                <div
-                  class="text-14 mt-3 font-semibold md:text-base line-clamp-1"
-                >
-                  Speak of the demon
-                </div>
-                <div class="flex items-center mt-2 justify-between">
-                  <div class="flex items-center gap-1.5">
-                    <div class="relative">
-                      <img
-                        class="w-8 aspect-square rounded-lg"
-                        src="../../assets/images/artists/2.png"
-                        loading="lazy"
-                        alt=""
-                      />
-                      <img
-                        class="w-4 h-4 absolute bottom-0 right-0 translate-x-0.5 translate-y-0.5"
-                        src="../../assets/svgs/digital-verify.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="text-grey-400">
-                      <div class="text-12">Owner</div>
-                      <div class="text-14 line-clamp-1">James Brown</div>
-                    </div>
-                  </div>
-                  <div
-                    class="border-l border-l-grey-200 pl-3 text-18 font-semibold"
-                  >
-                    $9
-                  </div>
-                </div>
-              </a>
-              <a href="#" class="swiper-slide pb-4 digital-item">
-                <div
-                  class="relative overflow-hidden rounded-lg aspect-square w-full"
-                >
-                  <img
-                    class="h-full w-full digital-thumb rounded-lg object-cover"
-                    src="../../assets/images/videos/1.jpg"
-                    loading="lazy"
-                    alt=""
-                  />
-                </div>
-                <div
-                  class="text-14 mt-3 font-semibold md:text-base line-clamp-1"
-                >
-                  Speak of the demon
-                </div>
-                <div class="flex items-center mt-2 justify-between">
-                  <div class="flex items-center gap-1.5">
-                    <div class="relative">
-                      <img
-                        class="w-8 aspect-square rounded-lg"
-                        src="../../assets/images/artists/2.png"
-                        loading="lazy"
-                        alt=""
-                      />
-                      <img
-                        class="w-4 h-4 absolute bottom-0 right-0 translate-x-0.5 translate-y-0.5"
-                        src="../../assets/svgs/digital-verify.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="text-grey-400">
-                      <div class="text-12">Owner</div>
-                      <div class="text-14 line-clamp-1">James Brown</div>
-                    </div>
-                  </div>
-                  <div
-                    class="border-l border-l-grey-200 pl-3 text-18 font-semibold"
-                  >
-                    $9
-                  </div>
-                </div>
-              </a>
-              <a href="#" class="swiper-slide pb-4 digital-item">
-                <div
-                  class="relative overflow-hidden rounded-lg aspect-square w-full"
-                >
-                  <img
-                    class="h-full w-full digital-thumb rounded-lg object-cover"
-                    src="../../assets/images/videos/1.jpg"
-                    loading="lazy"
-                    alt=""
-                  />
-                </div>
-                <div
-                  class="text-14 mt-3 font-semibold md:text-base line-clamp-1"
-                >
-                  Speak of the demon
-                </div>
-                <div class="flex items-center mt-2 justify-between">
-                  <div class="flex items-center gap-1.5">
-                    <div class="relative">
-                      <img
-                        class="w-8 aspect-square rounded-lg"
-                        src="../../assets/images/artists/2.png"
-                        loading="lazy"
-                        alt=""
-                      />
-                      <img
-                        class="w-4 h-4 absolute bottom-0 right-0 translate-x-0.5 translate-y-0.5"
-                        src="../../assets/svgs/digital-verify.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="text-grey-400">
-                      <div class="text-12">Owner</div>
-                      <div class="text-14 line-clamp-1">James Brown</div>
-                    </div>
-                  </div>
-                  <div
-                    class="border-l border-l-grey-200 pl-3 text-18 font-semibold"
-                  >
-                    $9
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div
-              class="swiper-digital-navigation swiper-digital-next max-md:hidden"
-            >
-              <img src="../../assets/svgs/arrow-next.svg" alt="" />
-            </div>
-            <div
-              class="swiper-digital-navigation swiper-digital-prev max-md:hidden"
-            >
-              <img
-                class="rotate-180"
-                src="../../assets/svgs/arrow-next.svg"
-                alt=""
-              />
-            </div>
-          </div>
-        </section>
-        <section
-          class="md:mt-2 md:block hidden lg:mt-4 xl:mt-6 md:rounded-xl py-4 bg-white p-0 md:p-4"
-        >
-          <div class="flex items-center justify-between">
-            <div class="flex items-center">
-              <img class="mr-1.5" src="../../assets/svgs/services.svg" alt="" />
-              <div class="flex items-center text-18 font-semibold md:text-24">
-                Services
-              </div>
-            </div>
-            <a
-              href="#"
-              class="hover:scale-110 duration-75 max-md:hidden transition-transform px-4 py-2 text-14 text-branding font-semibold bg-grey-100 rounded-2xl"
-              >+ Sell</a
-            >
-          </div>
-          <div
-            class="grid lg:grid-cols-2 gap-x-12 gap-y-4 lg:gap-y-6 relative mt-4"
-          >
-            <div class="flex items-center gap-4">
-              <div
-                class="relative overflow-hidden rounded-lg aspect-square w-full max-w-[160px] flex-shrink-0"
+                href="/"
+                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
               >
                 <img
-                  class="h-full w-full rounded-lg object-cover"
-                  src="../../assets/images/videos/1.jpg"
-                  loading="lazy"
+                  class="aspect-square w-20 lg:w-[116px] object-contain"
+                  src="../../assets/svgs/logo.svg"
                   alt=""
                 />
-              </div>
-              <div class="">
-                <div class="text-base font-semibold line-clamp-1">
-                  Producer | Mixing | Mastering
-                </div>
-                <div class="mt-1 text-14 text-grey-400 line-clamp-1">
-                  by ALOU Productions
-                </div>
-                <div class="mt-1 text-14 text-grey-400 flex items-center">
-                  <img src="../../assets/svgs/yellow-star.svg" alt="" />
-                  <span class="ml-1">4.3 (168)</span>
-                </div>
-                <p class="line-clamp-2 mt-2">
-                  I am an open book. Ask me anything music or mixing and I'll
-                  give you direct feedback that you can easily understand and
-                  act upon. I live in the real world, I'm
-                </p>
-                <a
-                  href="#"
-                  class="hover:underline text-branding-fourth mt-3 flex items-center gap-1"
-                  >View service
-                  <img src="../../assets/svgs/arrow-right-blue.svg" alt="" />
-                </a>
-              </div>
-            </div>
-            <div class="flex items-center gap-4">
-              <div
-                class="relative overflow-hidden rounded-lg aspect-square w-full max-w-[160px] flex-shrink-0"
+              </a>
+            </li>
+            <li class="max-md:hidden">
+              <a href="../../marketplace/music.html" class="header-item-link"
+                >marketplace</a
               >
-                <img
-                  class="h-full w-full rounded-lg object-cover"
-                  src="../../assets/images/videos/1.jpg"
-                  loading="lazy"
-                  alt=""
-                />
-              </div>
-              <div class="">
-                <div class="text-base font-semibold line-clamp-1">
-                  Producer | Mixing | Mastering
-                </div>
-                <div class="mt-1 text-14 text-grey-400 line-clamp-1">
-                  by ALOU Productions
-                </div>
-                <div class="mt-1 text-14 text-grey-400 flex items-center">
-                  <img src="../../assets/svgs/yellow-star.svg" alt="" />
-                  <span class="ml-1">4.3 (168)</span>
-                </div>
-                <p class="line-clamp-2 mt-2">
-                  I am an open book. Ask me anything music or mixing and I'll
-                  give you direct feedback that you can easily understand and
-                  act upon. I live in the real world, I'm
-                </p>
-                <a
-                  href="#"
-                  class="hover:underline text-branding-fourth mt-3 flex items-center gap-1"
-                  >View service
-                  <img src="../../assets/svgs/arrow-right-blue.svg" alt="" />
-                </a>
-              </div>
-            </div>
-            <div class="flex items-center gap-4">
-              <div
-                class="relative overflow-hidden rounded-lg aspect-square w-full max-w-[160px] flex-shrink-0"
+            </li>
+            <li class="max-md:hidden">
+              <a href="../../voting/music-voting.html" class="header-item-link"
+                >voting</a
               >
-                <img
-                  class="h-full w-full rounded-lg object-cover"
-                  src="../../assets/images/videos/1.jpg"
-                  loading="lazy"
-                  alt=""
-                />
-              </div>
-              <div class="">
-                <div class="text-base font-semibold line-clamp-1">
-                  Producer | Mixing | Mastering
-                </div>
-                <div class="mt-1 text-14 text-grey-400 line-clamp-1">
-                  by ALOU Productions
-                </div>
-                <div class="mt-1 text-14 text-grey-400 flex items-center">
-                  <img src="../../assets/svgs/yellow-star.svg" alt="" />
-                  <span class="ml-1">4.3 (168)</span>
-                </div>
-                <p class="line-clamp-2 mt-2">
-                  I am an open book. Ask me anything music or mixing and I'll
-                  give you direct feedback that you can easily understand and
-                  act upon. I live in the real world, I'm
-                </p>
-                <a
-                  href="#"
-                  class="hover:underline text-branding-fourth mt-3 flex items-center gap-1"
-                  >View service
-                  <img src="../../assets/svgs/arrow-right-blue.svg" alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
-    <footer
-      class="mt-[100px] border-t border-t-grey-400 pb-6 pt-4 max-md:hidden"
-    >
-      <div class="container flex items-center justify-between">
-        <div class="flex items-center">
-          <div class="-mb-0.5 mr-6 text-14 text-grey-400">
-            Copyright © 2023 Clib Music. All rights reserved.
-          </div>
-          <ul class="flex items-center gap-3">
-            <li>
-              <a href="#" class="text-14 text-grey-400">Privacy Policy</a>
-            </li>
-            <li>
-              <span class="footer-divider"></span>
-            </li>
-            <li>
-              <a href="#" class="text-14 text-grey-400">Terms of Use</a>
-            </li>
-            <li>
-              <span class="footer-divider"></span>
-            </li>
-            <li>
-              <a href="#" class="text-14 text-grey-400">Cookie Warning</a>
-            </li>
-            <li>
-              <span class="footer-divider"></span>
-            </li>
-            <li>
-              <a href="#" class="text-14 text-grey-400">Support</a>
             </li>
           </ul>
         </div>
-        <ul class="flex items-center gap-3">
-          <li>
-            <a href="#" class="lang-footer-item active">English</a>
-          </li>
-          <li>
-            <span class="footer-divider"></span>
-          </li>
-          <li>
-            <a href="#" class="lang-footer-item">Tiếng Việt</a>
-          </li>
-          <li>
-            <span class="footer-divider"></span>
-          </li>
-          <li>
-            <a href="#" class="lang-footer-item">简体中文</a>
-          </li>
-          <li>
-            <span class="footer-divider"></span>
-          </li>
-          <li>
-            <a href="#" class="lang-footer-item">한국어</a>
-          </li>
-        </ul>
-      </div>
-    </footer>
+      </header>
+      <main class="container mt-[100px] md:mt-[135px] lg:mt-[165px]">
+        <div
+          class="bg-white rounded-xl overflow-hidden shadow-[0px_2px_20px_0px_rgba(0,0,0,0.08)]"
+        >
+          <div
+            class="md:grid w-full grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 p-1 bg-grey-100 rounded-xl mx-auto shadow-[0px_2px_20px_0px_rgba(0,0,0,0.08)]"
+          >
+            <a
+              href="../../library/overview/music.html"
+              class="flex btn-upload items-center justify-center font-semibold w-full text-14 lg:text-16 gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl"
+            >
+              <svg
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.42 2.25984L19.93 5.76984C20.69 6.17984 20.69 7.34984 19.93 7.75984L13.42 11.2698C12.84 11.5798 12.16 11.5798 11.58 11.2698L5.07 7.75984C4.31 7.34984 4.31 6.17984 5.07 5.76984L11.58 2.25984C12.16 1.94984 12.84 1.94984 13.42 2.25984Z"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M4.11 10.1297L10.16 13.1597C10.91 13.5397 11.39 14.3097 11.39 15.1497V20.8697C11.39 21.6997 10.52 22.2297 9.78 21.8597L3.73 18.8297C2.98 18.4497 2.5 17.6797 2.5 16.8397V11.1197C2.5 10.2897 3.37 9.75968 4.11 10.1297Z"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M20.89 10.1297L14.84 13.1597C14.09 13.5397 13.61 14.3097 13.61 15.1497V20.8697C13.61 21.6997 14.48 22.2297 15.22 21.8597L21.27 18.8297C22.02 18.4497 22.5 17.6797 22.5 16.8397V11.1197C22.5 10.2897 21.63 9.75968 20.89 10.1297Z"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              Overview
+            </a>
+            <a
+              href="../../library/likes/liked-songs.html"
+              class="flex btn-upload items-center justify-center font-semibold w-full text-14 lg:text-16 gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl active-upload"
+            >
+              <svg
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.94 3.09961C15.13 3.09961 13.51 3.97961 12.5 5.32961C11.49 3.97961 9.87 3.09961 8.06 3.09961C4.99 3.09961 2.5 5.59961 2.5 8.68961C2.5 9.87961 2.69 10.9796 3.02 11.9996C4.6 16.9996 9.47 19.9896 11.88 20.8096C12.22 20.9296 12.78 20.9296 13.12 20.8096C15.53 19.9896 20.4 16.9996 21.98 11.9996C22.31 10.9796 22.5 9.87961 22.5 8.68961C22.5 5.59961 20.01 3.09961 16.94 3.09961Z"
+                  fill="white"
+                />
+              </svg>
+
+              Likes
+            </a>
+            <a
+              href="../../library/playlists/music.html"
+              class="flex btn-upload items-center justify-center font-semibold w-full text-14 lg:text-16 gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl"
+            >
+              <svg
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.5 3H22.5"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M2.5 9H11.5"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M2.5 15H8.5"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M2.5 21H6.5"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12.34 21.9996C13.544 21.9996 14.52 21.0236 14.52 19.8196C14.52 18.6157 13.544 17.6396 12.34 17.6396C11.136 17.6396 10.16 18.6157 10.16 19.8196C10.16 21.0236 11.136 21.9996 12.34 21.9996Z"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M22.5 18.3699V9.85993C22.5 8.04993 21.36 7.79993 20.21 8.10993L15.86 9.29993C15.07 9.51993 14.52 10.1399 14.52 11.0499V12.57V13.59V19.82"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M20.32 20.5494C21.524 20.5494 22.5 19.5734 22.5 18.3694C22.5 17.1655 21.524 16.1895 20.32 16.1895C19.116 16.1895 18.14 17.1655 18.14 18.3694C18.14 19.5734 19.116 20.5494 20.32 20.5494Z"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14.52 13.5999L22.5 11.4199"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              Playlists
+            </a>
+            <a
+              href="../../library/albums/index.html"
+              class="flex btn-upload items-center justify-center font-semibold w-full text-14 lg:text-16 gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22 13V17C22 20.5 20 22 17 22H7C4 22 2 20.5 2 17V13C2 10.35 3.15 8.85003 5 8.28003C5.6 8.09003 6.27 8 7 8H17C17.73 8 18.4 8.09003 19 8.28003C20.85 8.85003 22 10.35 22 13Z"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M19 7V8.28003C18.4 8.09003 17.73 8 17 8H7C6.27 8 5.6 8.09003 5 8.28003V7C5 5.9 5.9 5 7 5H17C18.1 5 19 5.9 19 7Z"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M16 3.51001V5H8V3.51001C8 2.68001 8.68001 2 9.51001 2H14.49C15.32 2 16 2.68001 16 3.51001Z"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9.07001 19.4506C9.79902 19.4506 10.39 18.8596 10.39 18.1306C10.39 17.4015 9.79902 16.8105 9.07001 16.8105C8.34099 16.8105 7.75 17.4015 7.75 18.1306C7.75 18.8596 8.34099 19.4506 9.07001 19.4506Z"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.2499 17.2501V12.0801C15.2499 10.9801 14.5599 10.8201 13.8599 11.0201L11.2099 11.7401C10.7299 11.8701 10.3999 12.2501 10.3999 12.8001V13.7201V14.3401V18.1301"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M13.9299 18.5697C14.6589 18.5697 15.2499 17.9787 15.2499 17.2497C15.2499 16.5207 14.6589 15.9297 13.9299 15.9297C13.2009 15.9297 12.6099 16.5207 12.6099 17.2497C12.6099 17.9787 13.2009 18.5697 13.9299 18.5697Z"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10.3999 14.3502L15.2499 13.0303"
+                  stroke="#A1ABB3"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              Albums
+            </a>
+            <a
+              href="../../library/follow/artists.html"
+              class="flex btn-upload items-center justify-center font-semibold w-full text-14 lg:text-16 gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl"
+            >
+              <svg
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.65957 10.87C9.55957 10.86 9.43957 10.86 9.32957 10.87C6.94957 10.79 5.05957 8.84 5.05957 6.44C5.05957 3.99 7.03957 2 9.49957 2C11.9496 2 13.9396 3.99 13.9396 6.44C13.9296 8.84 12.0396 10.79 9.65957 10.87Z"
+                  stroke="#A1ABB3"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M16.9103 4C18.8503 4 20.4103 5.57 20.4103 7.5C20.4103 9.39 18.9103 10.93 17.0403 11C16.9603 10.99 16.8703 10.99 16.7803 11"
+                  stroke="#A1ABB3"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M4.65973 14.56C2.23973 16.18 2.23973 18.82 4.65973 20.43C7.40973 22.27 11.9197 22.27 14.6697 20.43C17.0897 18.81 17.0897 16.17 14.6697 14.56C11.9297 12.73 7.41973 12.73 4.65973 14.56Z"
+                  stroke="#A1ABB3"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18.8398 20C19.5598 19.85 20.2398 19.56 20.7998 19.13C22.3598 17.96 22.3598 16.03 20.7998 14.86C20.2498 14.44 19.5798 14.16 18.8698 14"
+                  stroke="#A1ABB3"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              Follow
+            </a>
+            <a
+              href="../../library/history/recent-listening.html"
+              class="flex btn-upload items-center justify-center font-semibold w-full text-14 lg:text-16 gap-3 px-6 py-3 bg-grey-100 text-grey-300 rounded-xl"
+            >
+              <svg
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22.5 12C22.5 17.52 18.02 22 12.5 22C6.98 22 2.5 17.52 2.5 12C2.5 6.48 6.98 2 12.5 2C18.02 2 22.5 6.48 22.5 12Z"
+                  stroke="#A1ABB3"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M16.2109 15.1798L13.1109 13.3298C12.5709 13.0098 12.1309 12.2398 12.1309 11.6098V7.50977"
+                  stroke="#A1ABB3"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              History
+            </a>
+          </div>
+          <div class="mt-3 flex justify-center overflow-x-auto">
+            <a
+              href="./liked-songs.html"
+              class="px-6 py-3 text-grey-300 font-semibold"
+              >Liked songs</a
+            >
+            <a
+              href="./liked-videos.html"
+              class="px-6 py-3 text-grey-300 font-semibold"
+            >
+              Liked videos
+            </a>
+            <a
+              href="./marketplace.html"
+              class="px-6 py-3 border-b-4 border-b-branding-secondary text-branding-secondary font-semibold"
+            >
+              Marketplace
+            </a>
+          </div>
+        </div>
+        <div class="mt-7">
+          <section class="md:rounded-xl bg-white p-0 md:p-4 md:pb-0">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <img
+                  class="mr-1.5"
+                  src="../../assets/svgs/digital-goods.svg"
+                  alt=""
+                />
+                <a
+                  href="#"
+                  class="flex items-center text-18 font-semibold md:text-24"
+                  >Digital goods
+                </a>
+              </div>
+              <a
+                href="#"
+                class="hover:scale-110 duration-75 max-md:hidden transition-transform px-4 py-2 text-14 text-branding font-semibold bg-grey-100 rounded-2xl"
+                >+ Sell</a
+              >
+              <a
+                href="#"
+                class="text-right text-14 text-branding hover:underline md:hidden"
+                >View all</a
+              >
+            </div>
+            <div class="digital-swiper swiper relative mt-4">
+              <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide pb-4 digital-item">
+                  <div
+                    class="relative overflow-hidden rounded-lg aspect-square w-full"
+                  >
+                    <img
+                      class="h-full w-full digital-thumb rounded-lg object-cover"
+                      src="../../assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="text-14 mt-3 font-semibold md:text-base line-clamp-1"
+                  >
+                    Speak of the demon
+                  </div>
+                  <div class="flex items-center mt-2 justify-between">
+                    <div class="flex items-center gap-1.5">
+                      <div class="relative">
+                        <img
+                          class="w-8 aspect-square rounded-lg"
+                          src="../../assets/images/artists/2.png"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          class="w-4 h-4 absolute bottom-0 right-0 translate-x-0.5 translate-y-0.5"
+                          src="../../assets/svgs/digital-verify.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="text-grey-400">
+                        <div class="text-12">Owner</div>
+                        <div class="text-14 line-clamp-1">James Brown</div>
+                      </div>
+                    </div>
+                    <div
+                      class="border-l border-l-grey-200 pl-3 text-18 font-semibold"
+                    >
+                      $9
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="swiper-slide pb-4 digital-item">
+                  <div
+                    class="relative overflow-hidden rounded-lg aspect-square w-full"
+                  >
+                    <img
+                      class="h-full w-full digital-thumb rounded-lg object-cover"
+                      src="../../assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="text-14 mt-3 font-semibold md:text-base line-clamp-1"
+                  >
+                    Speak of the demon
+                  </div>
+                  <div class="flex items-center mt-2 justify-between">
+                    <div class="flex items-center gap-1.5">
+                      <div class="relative">
+                        <img
+                          class="w-8 aspect-square rounded-lg"
+                          src="../../assets/images/artists/2.png"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          class="w-4 h-4 absolute bottom-0 right-0 translate-x-0.5 translate-y-0.5"
+                          src="../../assets/svgs/digital-verify.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="text-grey-400">
+                        <div class="text-12">Owner</div>
+                        <div class="text-14 line-clamp-1">James Brown</div>
+                      </div>
+                    </div>
+                    <div
+                      class="border-l border-l-grey-200 pl-3 text-18 font-semibold"
+                    >
+                      $9
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="swiper-slide pb-4 digital-item">
+                  <div
+                    class="relative overflow-hidden rounded-lg aspect-square w-full"
+                  >
+                    <img
+                      class="h-full w-full digital-thumb rounded-lg object-cover"
+                      src="../../assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="text-14 mt-3 font-semibold md:text-base line-clamp-1"
+                  >
+                    Speak of the demon
+                  </div>
+                  <div class="flex items-center mt-2 justify-between">
+                    <div class="flex items-center gap-1.5">
+                      <div class="relative">
+                        <img
+                          class="w-8 aspect-square rounded-lg"
+                          src="../../assets/images/artists/2.png"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          class="w-4 h-4 absolute bottom-0 right-0 translate-x-0.5 translate-y-0.5"
+                          src="../../assets/svgs/digital-verify.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="text-grey-400">
+                        <div class="text-12">Owner</div>
+                        <div class="text-14 line-clamp-1">James Brown</div>
+                      </div>
+                    </div>
+                    <div
+                      class="border-l border-l-grey-200 pl-3 text-18 font-semibold"
+                    >
+                      $9
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="swiper-slide pb-4 digital-item">
+                  <div
+                    class="relative overflow-hidden rounded-lg aspect-square w-full"
+                  >
+                    <img
+                      class="h-full w-full digital-thumb rounded-lg object-cover"
+                      src="../../assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="text-14 mt-3 font-semibold md:text-base line-clamp-1"
+                  >
+                    Speak of the demon
+                  </div>
+                  <div class="flex items-center mt-2 justify-between">
+                    <div class="flex items-center gap-1.5">
+                      <div class="relative">
+                        <img
+                          class="w-8 aspect-square rounded-lg"
+                          src="../../assets/images/artists/2.png"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          class="w-4 h-4 absolute bottom-0 right-0 translate-x-0.5 translate-y-0.5"
+                          src="../../assets/svgs/digital-verify.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="text-grey-400">
+                        <div class="text-12">Owner</div>
+                        <div class="text-14 line-clamp-1">James Brown</div>
+                      </div>
+                    </div>
+                    <div
+                      class="border-l border-l-grey-200 pl-3 text-18 font-semibold"
+                    >
+                      $9
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="swiper-slide pb-4 digital-item">
+                  <div
+                    class="relative overflow-hidden rounded-lg aspect-square w-full"
+                  >
+                    <img
+                      class="h-full w-full digital-thumb rounded-lg object-cover"
+                      src="../../assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="text-14 mt-3 font-semibold md:text-base line-clamp-1"
+                  >
+                    Speak of the demon
+                  </div>
+                  <div class="flex items-center mt-2 justify-between">
+                    <div class="flex items-center gap-1.5">
+                      <div class="relative">
+                        <img
+                          class="w-8 aspect-square rounded-lg"
+                          src="../../assets/images/artists/2.png"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          class="w-4 h-4 absolute bottom-0 right-0 translate-x-0.5 translate-y-0.5"
+                          src="../../assets/svgs/digital-verify.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="text-grey-400">
+                        <div class="text-12">Owner</div>
+                        <div class="text-14 line-clamp-1">James Brown</div>
+                      </div>
+                    </div>
+                    <div
+                      class="border-l border-l-grey-200 pl-3 text-18 font-semibold"
+                    >
+                      $9
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="swiper-slide pb-4 digital-item">
+                  <div
+                    class="relative overflow-hidden rounded-lg aspect-square w-full"
+                  >
+                    <img
+                      class="h-full w-full digital-thumb rounded-lg object-cover"
+                      src="../../assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="text-14 mt-3 font-semibold md:text-base line-clamp-1"
+                  >
+                    Speak of the demon
+                  </div>
+                  <div class="flex items-center mt-2 justify-between">
+                    <div class="flex items-center gap-1.5">
+                      <div class="relative">
+                        <img
+                          class="w-8 aspect-square rounded-lg"
+                          src="../../assets/images/artists/2.png"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          class="w-4 h-4 absolute bottom-0 right-0 translate-x-0.5 translate-y-0.5"
+                          src="../../assets/svgs/digital-verify.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="text-grey-400">
+                        <div class="text-12">Owner</div>
+                        <div class="text-14 line-clamp-1">James Brown</div>
+                      </div>
+                    </div>
+                    <div
+                      class="border-l border-l-grey-200 pl-3 text-18 font-semibold"
+                    >
+                      $9
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="swiper-slide pb-4 digital-item">
+                  <div
+                    class="relative overflow-hidden rounded-lg aspect-square w-full"
+                  >
+                    <img
+                      class="h-full w-full digital-thumb rounded-lg object-cover"
+                      src="../../assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="text-14 mt-3 font-semibold md:text-base line-clamp-1"
+                  >
+                    Speak of the demon
+                  </div>
+                  <div class="flex items-center mt-2 justify-between">
+                    <div class="flex items-center gap-1.5">
+                      <div class="relative">
+                        <img
+                          class="w-8 aspect-square rounded-lg"
+                          src="../../assets/images/artists/2.png"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          class="w-4 h-4 absolute bottom-0 right-0 translate-x-0.5 translate-y-0.5"
+                          src="../../assets/svgs/digital-verify.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="text-grey-400">
+                        <div class="text-12">Owner</div>
+                        <div class="text-14 line-clamp-1">James Brown</div>
+                      </div>
+                    </div>
+                    <div
+                      class="border-l border-l-grey-200 pl-3 text-18 font-semibold"
+                    >
+                      $9
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="swiper-slide pb-4 digital-item">
+                  <div
+                    class="relative overflow-hidden rounded-lg aspect-square w-full"
+                  >
+                    <img
+                      class="h-full w-full digital-thumb rounded-lg object-cover"
+                      src="../../assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="text-14 mt-3 font-semibold md:text-base line-clamp-1"
+                  >
+                    Speak of the demon
+                  </div>
+                  <div class="flex items-center mt-2 justify-between">
+                    <div class="flex items-center gap-1.5">
+                      <div class="relative">
+                        <img
+                          class="w-8 aspect-square rounded-lg"
+                          src="../../assets/images/artists/2.png"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          class="w-4 h-4 absolute bottom-0 right-0 translate-x-0.5 translate-y-0.5"
+                          src="../../assets/svgs/digital-verify.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="text-grey-400">
+                        <div class="text-12">Owner</div>
+                        <div class="text-14 line-clamp-1">James Brown</div>
+                      </div>
+                    </div>
+                    <div
+                      class="border-l border-l-grey-200 pl-3 text-18 font-semibold"
+                    >
+                      $9
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="swiper-digital-navigation swiper-digital-next max-md:hidden"
+              >
+                <img src="../../assets/svgs/arrow-next.svg" alt="" />
+              </div>
+              <div
+                class="swiper-digital-navigation swiper-digital-prev max-md:hidden"
+              >
+                <img
+                  class="rotate-180"
+                  src="../../assets/svgs/arrow-next.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </section>
+          <section
+            class="md:mt-2 md:block hidden lg:mt-4 xl:mt-6 md:rounded-xl py-4 bg-white p-0 md:p-4"
+          >
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <img
+                  class="mr-1.5"
+                  src="../../assets/svgs/services.svg"
+                  alt=""
+                />
+                <div class="flex items-center text-18 font-semibold md:text-24">
+                  Services
+                </div>
+              </div>
+              <a
+                href="#"
+                class="hover:scale-110 duration-75 max-md:hidden transition-transform px-4 py-2 text-14 text-branding font-semibold bg-grey-100 rounded-2xl"
+                >+ Sell</a
+              >
+            </div>
+            <div
+              class="grid lg:grid-cols-2 gap-x-12 gap-y-4 lg:gap-y-6 relative mt-4"
+            >
+              <div class="flex items-center gap-4">
+                <div
+                  class="relative overflow-hidden rounded-lg aspect-square w-full max-w-[160px] flex-shrink-0"
+                >
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/videos/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-base font-semibold line-clamp-1">
+                    Producer | Mixing | Mastering
+                  </div>
+                  <div class="mt-1 text-14 text-grey-400 line-clamp-1">
+                    by ALOU Productions
+                  </div>
+                  <div class="mt-1 text-14 text-grey-400 flex items-center">
+                    <img src="../../assets/svgs/yellow-star.svg" alt="" />
+                    <span class="ml-1">4.3 (168)</span>
+                  </div>
+                  <p class="line-clamp-2 mt-2 text-14 lg:text-base">
+                    I am an open book. Ask me anything music or mixing and I'll
+                    give you direct feedback that you can easily understand and
+                    act upon. I live in the real world, I'm
+                  </p>
+                  <a
+                    href="#"
+                    class="hover:underline text-branding-fourth mt-3 flex items-center gap-1"
+                    >View service
+                    <img src="../../assets/svgs/arrow-right-blue.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div
+                  class="relative overflow-hidden rounded-lg aspect-square w-full max-w-[160px] flex-shrink-0"
+                >
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/videos/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-base font-semibold line-clamp-1">
+                    Producer | Mixing | Mastering
+                  </div>
+                  <div class="mt-1 text-14 text-grey-400 line-clamp-1">
+                    by ALOU Productions
+                  </div>
+                  <div class="mt-1 text-14 text-grey-400 flex items-center">
+                    <img src="../../assets/svgs/yellow-star.svg" alt="" />
+                    <span class="ml-1">4.3 (168)</span>
+                  </div>
+                  <p class="line-clamp-2 mt-2 text-14 lg:text-base">
+                    I am an open book. Ask me anything music or mixing and I'll
+                    give you direct feedback that you can easily understand and
+                    act upon. I live in the real world, I'm
+                  </p>
+                  <a
+                    href="#"
+                    class="hover:underline text-branding-fourth mt-3 flex items-center gap-1"
+                    >View service
+                    <img src="../../assets/svgs/arrow-right-blue.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div
+                  class="relative overflow-hidden rounded-lg aspect-square w-full max-w-[160px] flex-shrink-0"
+                >
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/videos/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-base font-semibold line-clamp-1">
+                    Producer | Mixing | Mastering
+                  </div>
+                  <div class="mt-1 text-14 text-grey-400 line-clamp-1">
+                    by ALOU Productions
+                  </div>
+                  <div class="mt-1 text-14 text-grey-400 flex items-center">
+                    <img src="../../assets/svgs/yellow-star.svg" alt="" />
+                    <span class="ml-1">4.3 (168)</span>
+                  </div>
+                  <p class="line-clamp-2 mt-2 text-14 lg:text-base">
+                    I am an open book. Ask me anything music or mixing and I'll
+                    give you direct feedback that you can easily understand and
+                    act upon. I live in the real world, I'm
+                  </p>
+                  <a
+                    href="#"
+                    class="hover:underline text-branding-fourth mt-3 flex items-center gap-1"
+                    >View service
+                    <img src="../../assets/svgs/arrow-right-blue.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer
+        class="mt-[100px] border-t border-t-grey-400 pb-6 pt-4 max-md:hidden"
+      >
+        <div class="container flex items-center justify-between">
+          <div class="flex items-center">
+            <div class="-mb-0.5 mr-6 text-14 text-grey-400">
+              Copyright © 2023 Clib Music. All rights reserved.
+            </div>
+            <ul class="flex items-center gap-3">
+              <li>
+                <a href="#" class="text-14 text-grey-400">Privacy Policy</a>
+              </li>
+              <li>
+                <span class="footer-divider"></span>
+              </li>
+              <li>
+                <a href="#" class="text-14 text-grey-400">Terms of Use</a>
+              </li>
+              <li>
+                <span class="footer-divider"></span>
+              </li>
+              <li>
+                <a href="#" class="text-14 text-grey-400">Cookie Warning</a>
+              </li>
+              <li>
+                <span class="footer-divider"></span>
+              </li>
+              <li>
+                <a href="#" class="text-14 text-grey-400">Support</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="flex items-center gap-3">
+            <li>
+              <a href="#" class="lang-footer-item active">English</a>
+            </li>
+            <li>
+              <span class="footer-divider"></span>
+            </li>
+            <li>
+              <a href="#" class="lang-footer-item">Tiếng Việt</a>
+            </li>
+            <li>
+              <span class="footer-divider"></span>
+            </li>
+            <li>
+              <a href="#" class="lang-footer-item">简体中文</a>
+            </li>
+            <li>
+              <span class="footer-divider"></span>
+            </li>
+            <li>
+              <a href="#" class="lang-footer-item">한국어</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
     <div id="header-tab-modal" class="overlay header-tab-modal">
       <div class="header-tab-modal--inner">
         <div class="flex-1">
@@ -1604,6 +1614,1070 @@
         </div>
       </div>
     </div>
+    <!-- mobile -->
+    <main class="block md:hidden relative">
+      <!-- modal choose -->
+      <div class="modal-choose hidden overlay">
+        <div
+          class="pt-4 px-3 absolute bottom-0 w-full h-[690px] bg-white rounded-tl-3xl rounded-tr-3xl"
+        >
+          <div class="flex flex-col items-center gap-3">
+            <button class="close-modal">
+              <img
+                src="../../assets/images/playlists/Rectangle 4280.png"
+                alt=""
+              />
+            </button>
+            <div class="flex items-center justify-between w-full">
+              <button class="text-12 font-semibold text-[#1975FF]">
+                Check all
+              </button>
+              <h4 class="text-18 text-neutral-dark-500 font-semibold">
+                Choose song
+              </h4>
+              <button class="text-12 invisible font-semibold text-[#1975FF]">
+                Check all
+              </button>
+            </div>
+          </div>
+          <!-- list -->
+          <div
+            class="mt-3 flex flex-col gap-[18px] h-[520px] overflow-y-auto scrollbar-custom"
+          >
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <input type="checkbox" />
+                <div class="overflow-hidden w-11 h-11 rounded-lg">
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/songs/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-14 font-semibold md:text-base line-clamp-1">
+                    Bridge Over Slippery Curtains
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400 md:text-14">
+                    Stephanie Poetri
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <input type="checkbox" />
+                <div class="overflow-hidden w-11 h-11 rounded-lg">
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/songs/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-14 font-semibold md:text-base line-clamp-1">
+                    Bridge Over Slippery Curtains
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400 md:text-14">
+                    Stephanie Poetri
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <input type="checkbox" />
+                <div class="overflow-hidden w-11 h-11 rounded-lg">
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/songs/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-14 font-semibold md:text-base line-clamp-1">
+                    Bridge Over Slippery Curtains
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400 md:text-14">
+                    Stephanie Poetri
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <input type="checkbox" />
+                <div class="overflow-hidden w-11 h-11 rounded-lg">
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/songs/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-14 font-semibold md:text-base line-clamp-1">
+                    Bridge Over Slippery Curtains
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400 md:text-14">
+                    Stephanie Poetri
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <input type="checkbox" />
+                <div class="overflow-hidden w-11 h-11 rounded-lg">
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/songs/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-14 font-semibold md:text-base line-clamp-1">
+                    Bridge Over Slippery Curtains
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400 md:text-14">
+                    Stephanie Poetri
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <input type="checkbox" />
+                <div class="overflow-hidden w-11 h-11 rounded-lg">
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/songs/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-14 font-semibold md:text-base line-clamp-1">
+                    Bridge Over Slippery Curtains
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400 md:text-14">
+                    Stephanie Poetri
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <input type="checkbox" />
+                <div class="overflow-hidden w-11 h-11 rounded-lg">
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/songs/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-14 font-semibold md:text-base line-clamp-1">
+                    Bridge Over Slippery Curtains
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400 md:text-14">
+                    Stephanie Poetri
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <input type="checkbox" />
+                <div class="overflow-hidden w-11 h-11 rounded-lg">
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/songs/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-14 font-semibold md:text-base line-clamp-1">
+                    Bridge Over Slippery Curtains
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400 md:text-14">
+                    Stephanie Poetri
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <input type="checkbox" />
+                <div class="overflow-hidden w-11 h-11 rounded-lg">
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/songs/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-14 font-semibold md:text-base line-clamp-1">
+                    Bridge Over Slippery Curtains
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400 md:text-14">
+                    Stephanie Poetri
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <input type="checkbox" />
+                <div class="overflow-hidden w-11 h-11 rounded-lg">
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/songs/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-14 font-semibold md:text-base line-clamp-1">
+                    Bridge Over Slippery Curtains
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400 md:text-14">
+                    Stephanie Poetri
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="grid grid-cols-2 gap-3 px-4 pt-3 border-t border-t-grey-200"
+          >
+            <button
+              class="flex flex-col items-center gap-1 py-3 bg-grey-100 text-neutral-dark-500 text-12 rounded-xl"
+            >
+              <img src="../../assets/images/trash.svg" alt="" class="w-6 h-6" />
+              Delete
+            </button>
+            <button
+              class="flex flex-col items-center gap-1 py-3 bg-grey-100 text-neutral-dark-500 text-12 rounded-xl"
+            >
+              <img
+                src="../../assets/images/play-add.svg"
+                alt=""
+                class="w-6 h-6"
+              />
+              Add to playlist
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- modal edit -->
+      <div class="modal-edit hidden overlay">
+        <div
+          class="px-6 pt-3 pb-7 absolute bottom-0 w-full bg-white rounded-tl-3xl rounded-tr-3xl"
+        >
+          <button
+            class="close-modal flex pb-3 justify-center items-center w-full"
+          >
+            <img
+              src="../../assets/images/playlists/Rectangle 4280.png"
+              alt=""
+            />
+          </button>
+          <div
+            class="flex items-center pb-3 border-b border-b-grey-200 justify-between"
+          >
+            <div class="flex items-center gap-2">
+              <div class="overflow-hidden w-11 h-11 rounded-lg">
+                <img
+                  class="h-full w-full rounded-lg object-cover"
+                  src="../../assets/images/songs/1.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
+              <div class="">
+                <div class="text-14 font-semibold md:text-base line-clamp-1">
+                  Bridge Over Slippery Curtains
+                </div>
+                <div class="mt-1 text-12 text-grey-400 md:text-14">
+                  Stephanie Poetri
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4 mt-3">
+            <a href="#" class="flex items-center gap-2 text-14 text-grey-400">
+              <img src="../../assets/images/heart (2).svg" alt="" />
+              Unlike
+            </a>
+            <a href="#" class="flex items-center gap-2 text-14 text-grey-400">
+              <img src="../../assets/images/repeat.svg " alt="" />
+              Repost
+            </a>
+            <a href="#" class="flex items-center gap-2 text-14 text-grey-400">
+              <img src="../../assets/images/music-square-add.svg " alt="" />
+              Add to next up
+            </a>
+            <a href="#" class="flex items-center gap-2 text-14 text-grey-400">
+              <img src="../../assets/images/music-filter.svg " alt="" />
+              Add to playlist
+            </a>
+            <a href="#" class="flex items-center gap-2 text-14 text-grey-400">
+              <img src="../../assets/images/export (2).svg" alt="" />
+              Share
+            </a>
+            <a href="#" class="flex items-center gap-2 text-14 text-grey-400">
+              <img src="../../assets/images/warning-2.svg" alt="" />
+              Report
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="box-shadow">
+        <div class="flex items-center justify-between py-3">
+          <div class="flex items-center gap-3">
+            <img
+              src="../../assets/images/arrow-left.svg"
+              alt=""
+              class="w-6 h-6 rounded-xl"
+            />
+          </div>
+          <div
+            class="flex items-center gap-2 text-18 font-semibold text-neutral-dark-500"
+          >
+            Liked
+          </div>
+          <div class="invisible w-6 h-6"></div>
+        </div>
+        <!-- navigation -->
+        <div
+          class="grid container grid-cols-3 text-14 place-items-center font-semibold text-grey-300"
+        >
+          <a href="../likes/liked-songs.html" class="w-full text-center py-2"
+            >Music</a
+          >
+          <a href="../likes/liked-videos.html" class="w-full text-center py-2"
+            >Video</a
+          >
+          <a
+            href="../likes/marketplace.html"
+            class="w-full text-center active-mobile py-2"
+            >Marketplace</a
+          >
+        </div>
+      </div>
+
+      <section class="container mt-8">
+        <div>
+          <section class="md:rounded-xl bg-white p-0 md:p-4 md:mt-6 md:pb-0">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <img
+                  class="mr-1.5"
+                  src="../../assets/svgs/digital-goods.svg"
+                  alt=""
+                />
+                <a
+                  href="#"
+                  class="flex items-center text-18 font-semibold md:text-24"
+                  >Digital goods
+                </a>
+              </div>
+              <a
+                href="#"
+                class="hover:scale-110 duration-75 max-md:hidden transition-transform px-4 py-2 text-14 text-branding font-semibold bg-grey-100 rounded-2xl"
+                >+ Sell</a
+              >
+              <a
+                href="#"
+                class="text-right text-14 text-branding hover:underline md:hidden"
+                >View all</a
+              >
+            </div>
+            <div class="digital-swiper swiper relative mt-4">
+              <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide pb-4 digital-item">
+                  <div
+                    class="relative overflow-hidden rounded-lg aspect-square w-full"
+                  >
+                    <img
+                      class="h-full w-full digital-thumb rounded-lg object-cover"
+                      src="../../assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="text-14 mt-3 font-semibold md:text-base line-clamp-1"
+                  >
+                    Speak of the demon
+                  </div>
+                  <div class="flex items-center mt-2 justify-between">
+                    <div class="flex items-center gap-1.5">
+                      <div class="relative">
+                        <img
+                          class="w-8 aspect-square rounded-lg"
+                          src="../../assets/images/artists/2.png"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          class="w-4 h-4 absolute bottom-0 right-0 translate-x-0.5 translate-y-0.5"
+                          src="../../assets/svgs/digital-verify.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="text-grey-400">
+                        <div class="text-12">Owner</div>
+                        <div class="text-14 line-clamp-1">James Brown</div>
+                      </div>
+                    </div>
+                    <div
+                      class="border-l border-l-grey-200 pl-3 text-18 font-semibold"
+                    >
+                      $9
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="swiper-slide pb-4 digital-item">
+                  <div
+                    class="relative overflow-hidden rounded-lg aspect-square w-full"
+                  >
+                    <img
+                      class="h-full w-full digital-thumb rounded-lg object-cover"
+                      src="../../assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="text-14 mt-3 font-semibold md:text-base line-clamp-1"
+                  >
+                    Speak of the demon
+                  </div>
+                  <div class="flex items-center mt-2 justify-between">
+                    <div class="flex items-center gap-1.5">
+                      <div class="relative">
+                        <img
+                          class="w-8 aspect-square rounded-lg"
+                          src="../../assets/images/artists/2.png"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          class="w-4 h-4 absolute bottom-0 right-0 translate-x-0.5 translate-y-0.5"
+                          src="../../assets/svgs/digital-verify.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="text-grey-400">
+                        <div class="text-12">Owner</div>
+                        <div class="text-14 line-clamp-1">James Brown</div>
+                      </div>
+                    </div>
+                    <div
+                      class="border-l border-l-grey-200 pl-3 text-18 font-semibold"
+                    >
+                      $9
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="swiper-slide pb-4 digital-item">
+                  <div
+                    class="relative overflow-hidden rounded-lg aspect-square w-full"
+                  >
+                    <img
+                      class="h-full w-full digital-thumb rounded-lg object-cover"
+                      src="../../assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="text-14 mt-3 font-semibold md:text-base line-clamp-1"
+                  >
+                    Speak of the demon
+                  </div>
+                  <div class="flex items-center mt-2 justify-between">
+                    <div class="flex items-center gap-1.5">
+                      <div class="relative">
+                        <img
+                          class="w-8 aspect-square rounded-lg"
+                          src="../../assets/images/artists/2.png"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          class="w-4 h-4 absolute bottom-0 right-0 translate-x-0.5 translate-y-0.5"
+                          src="../../assets/svgs/digital-verify.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="text-grey-400">
+                        <div class="text-12">Owner</div>
+                        <div class="text-14 line-clamp-1">James Brown</div>
+                      </div>
+                    </div>
+                    <div
+                      class="border-l border-l-grey-200 pl-3 text-18 font-semibold"
+                    >
+                      $9
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="swiper-slide pb-4 digital-item">
+                  <div
+                    class="relative overflow-hidden rounded-lg aspect-square w-full"
+                  >
+                    <img
+                      class="h-full w-full digital-thumb rounded-lg object-cover"
+                      src="../../assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="text-14 mt-3 font-semibold md:text-base line-clamp-1"
+                  >
+                    Speak of the demon
+                  </div>
+                  <div class="flex items-center mt-2 justify-between">
+                    <div class="flex items-center gap-1.5">
+                      <div class="relative">
+                        <img
+                          class="w-8 aspect-square rounded-lg"
+                          src="../../assets/images/artists/2.png"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          class="w-4 h-4 absolute bottom-0 right-0 translate-x-0.5 translate-y-0.5"
+                          src="../../assets/svgs/digital-verify.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="text-grey-400">
+                        <div class="text-12">Owner</div>
+                        <div class="text-14 line-clamp-1">James Brown</div>
+                      </div>
+                    </div>
+                    <div
+                      class="border-l border-l-grey-200 pl-3 text-18 font-semibold"
+                    >
+                      $9
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="swiper-slide pb-4 digital-item">
+                  <div
+                    class="relative overflow-hidden rounded-lg aspect-square w-full"
+                  >
+                    <img
+                      class="h-full w-full digital-thumb rounded-lg object-cover"
+                      src="../../assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="text-14 mt-3 font-semibold md:text-base line-clamp-1"
+                  >
+                    Speak of the demon
+                  </div>
+                  <div class="flex items-center mt-2 justify-between">
+                    <div class="flex items-center gap-1.5">
+                      <div class="relative">
+                        <img
+                          class="w-8 aspect-square rounded-lg"
+                          src="../../assets/images/artists/2.png"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          class="w-4 h-4 absolute bottom-0 right-0 translate-x-0.5 translate-y-0.5"
+                          src="../../assets/svgs/digital-verify.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="text-grey-400">
+                        <div class="text-12">Owner</div>
+                        <div class="text-14 line-clamp-1">James Brown</div>
+                      </div>
+                    </div>
+                    <div
+                      class="border-l border-l-grey-200 pl-3 text-18 font-semibold"
+                    >
+                      $9
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="swiper-slide pb-4 digital-item">
+                  <div
+                    class="relative overflow-hidden rounded-lg aspect-square w-full"
+                  >
+                    <img
+                      class="h-full w-full digital-thumb rounded-lg object-cover"
+                      src="../../assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="text-14 mt-3 font-semibold md:text-base line-clamp-1"
+                  >
+                    Speak of the demon
+                  </div>
+                  <div class="flex items-center mt-2 justify-between">
+                    <div class="flex items-center gap-1.5">
+                      <div class="relative">
+                        <img
+                          class="w-8 aspect-square rounded-lg"
+                          src="../../assets/images/artists/2.png"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          class="w-4 h-4 absolute bottom-0 right-0 translate-x-0.5 translate-y-0.5"
+                          src="../../assets/svgs/digital-verify.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="text-grey-400">
+                        <div class="text-12">Owner</div>
+                        <div class="text-14 line-clamp-1">James Brown</div>
+                      </div>
+                    </div>
+                    <div
+                      class="border-l border-l-grey-200 pl-3 text-18 font-semibold"
+                    >
+                      $9
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="swiper-slide pb-4 digital-item">
+                  <div
+                    class="relative overflow-hidden rounded-lg aspect-square w-full"
+                  >
+                    <img
+                      class="h-full w-full digital-thumb rounded-lg object-cover"
+                      src="../../assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="text-14 mt-3 font-semibold md:text-base line-clamp-1"
+                  >
+                    Speak of the demon
+                  </div>
+                  <div class="flex items-center mt-2 justify-between">
+                    <div class="flex items-center gap-1.5">
+                      <div class="relative">
+                        <img
+                          class="w-8 aspect-square rounded-lg"
+                          src="../../assets/images/artists/2.png"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          class="w-4 h-4 absolute bottom-0 right-0 translate-x-0.5 translate-y-0.5"
+                          src="../../assets/svgs/digital-verify.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="text-grey-400">
+                        <div class="text-12">Owner</div>
+                        <div class="text-14 line-clamp-1">James Brown</div>
+                      </div>
+                    </div>
+                    <div
+                      class="border-l border-l-grey-200 pl-3 text-18 font-semibold"
+                    >
+                      $9
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="swiper-slide pb-4 digital-item">
+                  <div
+                    class="relative overflow-hidden rounded-lg aspect-square w-full"
+                  >
+                    <img
+                      class="h-full w-full digital-thumb rounded-lg object-cover"
+                      src="../../assets/images/videos/1.jpg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="text-14 mt-3 font-semibold md:text-base line-clamp-1"
+                  >
+                    Speak of the demon
+                  </div>
+                  <div class="flex items-center mt-2 justify-between">
+                    <div class="flex items-center gap-1.5">
+                      <div class="relative">
+                        <img
+                          class="w-8 aspect-square rounded-lg"
+                          src="../../assets/images/artists/2.png"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          class="w-4 h-4 absolute bottom-0 right-0 translate-x-0.5 translate-y-0.5"
+                          src="../../assets/svgs/digital-verify.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="text-grey-400">
+                        <div class="text-12">Owner</div>
+                        <div class="text-14 line-clamp-1">James Brown</div>
+                      </div>
+                    </div>
+                    <div
+                      class="border-l border-l-grey-200 pl-3 text-18 font-semibold"
+                    >
+                      $9
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="swiper-digital-navigation swiper-digital-next max-md:hidden"
+              >
+                <img src="../../assets/svgs/arrow-next.svg" alt="" />
+              </div>
+              <div
+                class="swiper-digital-navigation swiper-digital-prev max-md:hidden"
+              >
+                <img
+                  class="rotate-180"
+                  src="../../assets/svgs/arrow-next.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </section>
+          <section
+            class="md:mt-2 md:block hidden lg:mt-4 xl:mt-6 md:rounded-xl py-4 bg-white p-0 md:p-4"
+          >
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <img
+                  class="mr-1.5"
+                  src="../../assets/svgs/services.svg"
+                  alt=""
+                />
+                <div class="flex items-center text-18 font-semibold md:text-24">
+                  Services
+                </div>
+              </div>
+              <a
+                href="#"
+                class="hover:scale-110 duration-75 max-md:hidden transition-transform px-4 py-2 text-14 text-branding font-semibold bg-grey-100 rounded-2xl"
+                >+ Sell</a
+              >
+            </div>
+            <div
+              class="grid lg:grid-cols-2 gap-x-12 gap-y-4 lg:gap-y-6 relative mt-4"
+            >
+              <div class="flex items-center gap-4">
+                <div
+                  class="relative overflow-hidden rounded-lg aspect-square w-full max-w-[160px] flex-shrink-0"
+                >
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/videos/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-base font-semibold line-clamp-1">
+                    Producer | Mixing | Mastering
+                  </div>
+                  <div class="mt-1 text-14 text-grey-400 line-clamp-1">
+                    by ALOU Productions
+                  </div>
+                  <div class="mt-1 text-14 text-grey-400 flex items-center">
+                    <img src="../../assets/svgs/yellow-star.svg" alt="" />
+                    <span class="ml-1">4.3 (168)</span>
+                  </div>
+                  <p class="line-clamp-2 mt-2 text-14 lg:text-base">
+                    I am an open book. Ask me anything music or mixing and I'll
+                    give you direct feedback that you can easily understand and
+                    act upon. I live in the real world, I'm
+                  </p>
+                  <a
+                    href="#"
+                    class="hover:underline text-branding-fourth mt-3 flex items-center gap-1"
+                    >View service
+                    <img src="../../assets/svgs/arrow-right-blue.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div
+                  class="relative overflow-hidden rounded-lg aspect-square w-full max-w-[160px] flex-shrink-0"
+                >
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/videos/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-base font-semibold line-clamp-1">
+                    Producer | Mixing | Mastering
+                  </div>
+                  <div class="mt-1 text-14 text-grey-400 line-clamp-1">
+                    by ALOU Productions
+                  </div>
+                  <div class="mt-1 text-14 text-grey-400 flex items-center">
+                    <img src="../../assets/svgs/yellow-star.svg" alt="" />
+                    <span class="ml-1">4.3 (168)</span>
+                  </div>
+                  <p class="line-clamp-2 mt-2 text-14 lg:text-base">
+                    I am an open book. Ask me anything music or mixing and I'll
+                    give you direct feedback that you can easily understand and
+                    act upon. I live in the real world, I'm
+                  </p>
+                  <a
+                    href="#"
+                    class="hover:underline text-branding-fourth mt-3 flex items-center gap-1"
+                    >View service
+                    <img src="../../assets/svgs/arrow-right-blue.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div
+                  class="relative overflow-hidden rounded-lg aspect-square w-full max-w-[160px] flex-shrink-0"
+                >
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/videos/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-base font-semibold line-clamp-1">
+                    Producer | Mixing | Mastering
+                  </div>
+                  <div class="mt-1 text-14 text-grey-400 line-clamp-1">
+                    by ALOU Productions
+                  </div>
+                  <div class="mt-1 text-14 text-grey-400 flex items-center">
+                    <img src="../../assets/svgs/yellow-star.svg" alt="" />
+                    <span class="ml-1">4.3 (168)</span>
+                  </div>
+                  <p class="line-clamp-2 mt-2 text-14 lg:text-base">
+                    I am an open book. Ask me anything music or mixing and I'll
+                    give you direct feedback that you can easily understand and
+                    act upon. I live in the real world, I'm
+                  </p>
+                  <a
+                    href="#"
+                    class="hover:underline text-branding-fourth mt-3 flex items-center gap-1"
+                    >View service
+                    <img src="../../assets/svgs/arrow-right-blue.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="bg-white mt-6 p-0">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center">
+              <img class="mr-1.5" src="../../assets/svgs/services.svg" alt="" />
+              <a
+                href="#"
+                class="flex items-center text-18 font-semibold md:text-24"
+                >Services
+                <img
+                  class="ml-2 -rotate-90 rounded-lg object-cover"
+                  src="../../assets/svgs/arrow-down.svg"
+                  loading="lazy"
+                  alt=""
+                />
+              </a>
+            </div>
+            <a
+              href="#"
+              class="text-right text-14 text-branding hover:underline md:hidden"
+              >View all</a
+            >
+          </div>
+          <div class="services-swiper swiper relative mt-3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide flex items-center gap-3">
+                <div
+                  class="relative overflow-hidden rounded-lg aspect-square w-full max-w-[100px] flex-shrink-0"
+                >
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/videos/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-14 font-semibold line-clamp-1">
+                    Producer | Mixing | Mastering
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400 line-clamp-1">
+                    by ALOU Productions
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400 flex items-center">
+                    <img
+                      class="w-4"
+                      src="../../assets/svgs/yellow-star.svg"
+                      alt=""
+                    />
+                    <span class="ml-1">4.3 (168)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide flex items-center gap-3">
+                <div
+                  class="relative overflow-hidden rounded-lg aspect-square w-full max-w-[100px] flex-shrink-0"
+                >
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/videos/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-14 font-semibold line-clamp-1">
+                    Producer | Mixing | Mastering
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400 line-clamp-1">
+                    by ALOU Productions
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400 flex items-center">
+                    <img
+                      class="w-4"
+                      src="../../assets/svgs/yellow-star.svg"
+                      alt=""
+                    />
+                    <span class="ml-1">4.3 (168)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide flex items-center gap-3">
+                <div
+                  class="relative overflow-hidden rounded-lg aspect-square w-full max-w-[100px] flex-shrink-0"
+                >
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/videos/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-14 font-semibold line-clamp-1">
+                    Producer | Mixing | Mastering
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400 line-clamp-1">
+                    by ALOU Productions
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400 flex items-center">
+                    <img
+                      class="w-4"
+                      src="../../assets/svgs/yellow-star.svg"
+                      alt=""
+                    />
+                    <span class="ml-1">4.3 (168)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide flex items-center gap-3">
+                <div
+                  class="relative overflow-hidden rounded-lg aspect-square w-full max-w-[100px] flex-shrink-0"
+                >
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/videos/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-14 font-semibold line-clamp-1">
+                    Producer | Mixing | Mastering
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400 line-clamp-1">
+                    by ALOU Productions
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400 flex items-center">
+                    <img
+                      class="w-4"
+                      src="../../assets/svgs/yellow-star.svg"
+                      alt=""
+                    />
+                    <span class="ml-1">4.3 (168)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide flex items-center gap-3">
+                <div
+                  class="relative overflow-hidden rounded-lg aspect-square w-full max-w-[100px] flex-shrink-0"
+                >
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/videos/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-14 font-semibold line-clamp-1">
+                    Producer | Mixing | Mastering
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400 line-clamp-1">
+                    by ALOU Productions
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400 flex items-center">
+                    <img
+                      class="w-4"
+                      src="../../assets/svgs/yellow-star.svg"
+                      alt=""
+                    />
+                    <span class="ml-1">4.3 (168)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-services-navigation swiper-services-next max-md:hidden"
+            >
+              <img src="../../assets/svgs/arrow-next.svg" alt="" />
+            </div>
+            <div
+              class="swiper-services-navigation swiper-services-prev max-md:hidden"
+            >
+              <img
+                class="rotate-180"
+                src="../../assets/svgs/arrow-next.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
