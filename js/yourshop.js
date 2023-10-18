@@ -4,7 +4,13 @@ $(".btn-upload").click(function () {
 $(".close-upload").click(function () {
   $(".upload").hide();
 });
-
+checkClickOutside(
+  "upload--inner",
+  function () {
+    $(".upload").hide();
+  },
+  "btn-upload",
+);
 new Swiper(".albums-swiper", {
   slidesPerView: 1.8,
   spaceBetween: 12,
