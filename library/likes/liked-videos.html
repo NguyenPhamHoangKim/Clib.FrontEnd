@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../styles/index.css" />
   </head>
   <body>
-<div class="hidden md:block">
+    <div class="hidden md:block">
       <header class="fixed left-0 right-0 top-0 z-[999]">
         <div class="bg-white py-2.5 shadow-[0px_2px_10px_0px_rgba(0,0,0,0.04)]">
           <div class="container relative flex items-center justify-between">
@@ -29,7 +29,7 @@
                 />
               </div>
             </div>
-  
+
             <a
               href="/"
               class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden"
@@ -55,7 +55,7 @@
               </button>
             </div>
             <!-- SIGNED IN -->
-  
+
             <!-- SIGNED IN PC-->
             <div class="flex items-center space-x-4 max-md:hidden xl:space-x-6">
               <button class="bg-grey-1 rounded-lg">
@@ -226,7 +226,9 @@
                             alt="James"
                           />
                           <div>
-                            <div class="text-14 font-semibold">Roger Daltrey</div>
+                            <div class="text-14 font-semibold">
+                              Roger Daltrey
+                            </div>
                             <div class="line-clamp-1 text-14">woohoooo</div>
                           </div>
                         </div>
@@ -374,8 +376,8 @@
                           </div>
                           <div>
                             <div class="text-14">
-                              <span class="font-semibold">Josh</span> commented on
-                              your post
+                              <span class="font-semibold">Josh</span> commented
+                              on your post
                             </div>
                             <div class="mt-1 text-12 text-grey-400">
                               2 day ago
@@ -436,8 +438,8 @@
                           </div>
                           <div>
                             <div class="text-14">
-                              <span class="font-semibold">Sona</span> commented on
-                              your post
+                              <span class="font-semibold">Sona</span> commented
+                              on your post
                             </div>
                             <div class="mt-1 text-12 text-grey-400">
                               2 day ago
@@ -507,8 +509,8 @@
                           </div>
                           <div>
                             <div class="text-14">
-                              <span class="font-semibold">Harry</span> liked your
-                              post
+                              <span class="font-semibold">Harry</span> liked
+                              your post
                             </div>
                             <div class="mt-1 text-12 text-grey-400">
                               2 day ago
@@ -543,8 +545,8 @@
                           </div>
                           <div>
                             <div class="text-14">
-                              <span class="font-semibold">Jean</span> commented on
-                              your post
+                              <span class="font-semibold">Jean</span> commented
+                              on your post
                             </div>
                             <div class="mt-1 text-12 text-grey-400">
                               2 day ago
@@ -577,7 +579,7 @@
               </a>
             </div>
             <!-- SIGNED IN -->
-  
+
             <!-- NOT SIGN IN <div class="flex items-center space-x-4">
               <button>
                 <img src="../../assets/svgs/export.svg" alt="" />
@@ -595,7 +597,9 @@
             class="container relative grid grid-cols-2 items-center gap-[35px] md:grid-cols-5"
           >
             <li>
-              <a href="../../music/index.html" class="header-item-link">music</a>
+              <a href="../../music/index.html" class="header-item-link"
+                >music</a
+              >
             </li>
             <li>
               <a href="../../videos/index.html" class="header-item-link"
@@ -669,7 +673,7 @@
                   stroke-linejoin="round"
                 />
               </svg>
-  
+
               Overview
             </a>
             <a
@@ -688,7 +692,7 @@
                   fill="white"
                 />
               </svg>
-  
+
               Likes
             </a>
             <a
@@ -763,7 +767,7 @@
                   stroke-linejoin="round"
                 />
               </svg>
-  
+
               Playlists
             </a>
             <a
@@ -830,7 +834,7 @@
                   stroke-linejoin="round"
                 />
               </svg>
-  
+
               Albums
             </a>
             <a
@@ -873,7 +877,7 @@
                   stroke-linejoin="round"
                 />
               </svg>
-  
+
               Follow
             </a>
             <a
@@ -902,7 +906,7 @@
                   stroke-linejoin="round"
                 />
               </svg>
-  
+
               History
             </a>
           </div>
@@ -1301,7 +1305,8 @@
               />
               <div>
                 <div class="flex items-center gap-1 text-14 font-semibold">
-                  Son Tung M-TP <img src="../../assets/svgs/verify.svg" alt="" />
+                  Son Tung M-TP
+                  <img src="../../assets/svgs/verify.svg" alt="" />
                 </div>
                 <div class="mt-2 flex items-center gap-3 text-14 text-grey-400">
                   <div><span class="font-semibold">53K</span> Followers</div>
@@ -1383,557 +1388,609 @@
           </div>
         </div>
       </div>
-</div>
-<!-- mobile -->
-<main class="block md:hidden relative">
-  <!-- modal choose -->
-  <div class="modal-choose hidden overlay">
-    <div
-      class="pt-4 px-3 absolute bottom-0 w-full h-[690px] bg-white rounded-tl-3xl rounded-tr-3xl"
-    >
-      <div class="flex flex-col items-center gap-3">
-        <button class="close-modal">
-          <img src="../../assets/images/playlists/Rectangle 4280.png" alt="" />
-        </button>
-        <div class="flex items-center justify-between w-full">
-          <button class="text-12 font-semibold text-[#1975FF]">
-            Check all
-          </button>
-          <h4 class="text-18 text-neutral-dark-500 font-semibold">
-            Choose song
-          </h4>
-          <button class="text-12 invisible font-semibold text-[#1975FF]">
-            Check all
-          </button>
-        </div>
-      </div>
-      <!-- list -->
-      <div
-        class="mt-3 flex flex-col gap-[18px] h-[520px] overflow-y-auto scrollbar-custom"
-      >
-        <div class="flex items-center justify-between">
-          <div class="flex items-center gap-2">
-            <input type="checkbox" />
-            <div class="overflow-hidden w-11 h-11 rounded-lg">
-              <img
-                class="h-full w-full rounded-lg object-cover"
-                src="../../assets/images/songs/1.jpg"
-                loading="lazy"
-                alt=""
-              />
-            </div>
-            <div class="">
-              <div class="text-14 font-semibold md:text-base line-clamp-1">
-                Bridge Over Slippery Curtains
-              </div>
-              <div class="mt-1 text-12 text-grey-400 md:text-14">
-                Stephanie Poetri
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex items-center justify-between">
-          <div class="flex items-center gap-2">
-            <input type="checkbox" />
-            <div class="overflow-hidden w-11 h-11 rounded-lg">
-              <img
-                class="h-full w-full rounded-lg object-cover"
-                src="../../assets/images/songs/1.jpg"
-                loading="lazy"
-                alt=""
-              />
-            </div>
-            <div class="">
-              <div class="text-14 font-semibold md:text-base line-clamp-1">
-                Bridge Over Slippery Curtains
-              </div>
-              <div class="mt-1 text-12 text-grey-400 md:text-14">
-                Stephanie Poetri
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex items-center justify-between">
-          <div class="flex items-center gap-2">
-            <input type="checkbox" />
-            <div class="overflow-hidden w-11 h-11 rounded-lg">
-              <img
-                class="h-full w-full rounded-lg object-cover"
-                src="../../assets/images/songs/1.jpg"
-                loading="lazy"
-                alt=""
-              />
-            </div>
-            <div class="">
-              <div class="text-14 font-semibold md:text-base line-clamp-1">
-                Bridge Over Slippery Curtains
-              </div>
-              <div class="mt-1 text-12 text-grey-400 md:text-14">
-                Stephanie Poetri
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex items-center justify-between">
-          <div class="flex items-center gap-2">
-            <input type="checkbox" />
-            <div class="overflow-hidden w-11 h-11 rounded-lg">
-              <img
-                class="h-full w-full rounded-lg object-cover"
-                src="../../assets/images/songs/1.jpg"
-                loading="lazy"
-                alt=""
-              />
-            </div>
-            <div class="">
-              <div class="text-14 font-semibold md:text-base line-clamp-1">
-                Bridge Over Slippery Curtains
-              </div>
-              <div class="mt-1 text-12 text-grey-400 md:text-14">
-                Stephanie Poetri
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex items-center justify-between">
-          <div class="flex items-center gap-2">
-            <input type="checkbox" />
-            <div class="overflow-hidden w-11 h-11 rounded-lg">
-              <img
-                class="h-full w-full rounded-lg object-cover"
-                src="../../assets/images/songs/1.jpg"
-                loading="lazy"
-                alt=""
-              />
-            </div>
-            <div class="">
-              <div class="text-14 font-semibold md:text-base line-clamp-1">
-                Bridge Over Slippery Curtains
-              </div>
-              <div class="mt-1 text-12 text-grey-400 md:text-14">
-                Stephanie Poetri
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex items-center justify-between">
-          <div class="flex items-center gap-2">
-            <input type="checkbox" />
-            <div class="overflow-hidden w-11 h-11 rounded-lg">
-              <img
-                class="h-full w-full rounded-lg object-cover"
-                src="../../assets/images/songs/1.jpg"
-                loading="lazy"
-                alt=""
-              />
-            </div>
-            <div class="">
-              <div class="text-14 font-semibold md:text-base line-clamp-1">
-                Bridge Over Slippery Curtains
-              </div>
-              <div class="mt-1 text-12 text-grey-400 md:text-14">
-                Stephanie Poetri
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex items-center justify-between">
-          <div class="flex items-center gap-2">
-            <input type="checkbox" />
-            <div class="overflow-hidden w-11 h-11 rounded-lg">
-              <img
-                class="h-full w-full rounded-lg object-cover"
-                src="../../assets/images/songs/1.jpg"
-                loading="lazy"
-                alt=""
-              />
-            </div>
-            <div class="">
-              <div class="text-14 font-semibold md:text-base line-clamp-1">
-                Bridge Over Slippery Curtains
-              </div>
-              <div class="mt-1 text-12 text-grey-400 md:text-14">
-                Stephanie Poetri
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex items-center justify-between">
-          <div class="flex items-center gap-2">
-            <input type="checkbox" />
-            <div class="overflow-hidden w-11 h-11 rounded-lg">
-              <img
-                class="h-full w-full rounded-lg object-cover"
-                src="../../assets/images/songs/1.jpg"
-                loading="lazy"
-                alt=""
-              />
-            </div>
-            <div class="">
-              <div class="text-14 font-semibold md:text-base line-clamp-1">
-                Bridge Over Slippery Curtains
-              </div>
-              <div class="mt-1 text-12 text-grey-400 md:text-14">
-                Stephanie Poetri
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex items-center justify-between">
-          <div class="flex items-center gap-2">
-            <input type="checkbox" />
-            <div class="overflow-hidden w-11 h-11 rounded-lg">
-              <img
-                class="h-full w-full rounded-lg object-cover"
-                src="../../assets/images/songs/1.jpg"
-                loading="lazy"
-                alt=""
-              />
-            </div>
-            <div class="">
-              <div class="text-14 font-semibold md:text-base line-clamp-1">
-                Bridge Over Slippery Curtains
-              </div>
-              <div class="mt-1 text-12 text-grey-400 md:text-14">
-                Stephanie Poetri
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex items-center justify-between">
-          <div class="flex items-center gap-2">
-            <input type="checkbox" />
-            <div class="overflow-hidden w-11 h-11 rounded-lg">
-              <img
-                class="h-full w-full rounded-lg object-cover"
-                src="../../assets/images/songs/1.jpg"
-                loading="lazy"
-                alt=""
-              />
-            </div>
-            <div class="">
-              <div class="text-14 font-semibold md:text-base line-clamp-1">
-                Bridge Over Slippery Curtains
-              </div>
-              <div class="mt-1 text-12 text-grey-400 md:text-14">
-                Stephanie Poetri
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="grid grid-cols-2 gap-3 px-4 pt-3 border-t border-t-grey-200"
-      >
-        <button
-          class="flex flex-col items-center gap-1 py-3 bg-grey-100 text-neutral-dark-500 text-12 rounded-xl"
-        >
-          <img src="../../assets/images/trash.svg" alt="" class="w-6 h-6" />
-          Delete
-        </button>
-        <button
-          class="flex flex-col items-center gap-1 py-3 bg-grey-100 text-neutral-dark-500 text-12 rounded-xl"
-        >
-          <img src="../../assets/images/play-add.svg" alt="" class="w-6 h-6" />
-          Add to playlist
-        </button>
-      </div>
     </div>
-  </div>
-  <!-- modal edit -->
-  <div class="modal-edit hidden overlay">
-    <div
-      class="px-6 pt-3 pb-7 absolute bottom-0 w-full bg-white rounded-tl-3xl rounded-tr-3xl"
-    >
-      <button
-        class="close-modal flex pb-3 justify-center items-center w-full"
-      >
-        <img src="../../assets/images/playlists/Rectangle 4280.png" alt="" />
-      </button>
-      <div
-        class="flex items-center pb-3 border-b border-b-grey-200 justify-between"
-      >
-        <div class="flex items-center gap-2">
-          <div class="overflow-hidden w-11 h-11 rounded-lg">
+    <!-- mobile -->
+    <main class="block md:hidden relative">
+      <!-- modal choose -->
+      <div class="modal-choose hidden overlay">
+        <div
+          class="pt-4 px-3 absolute bottom-0 w-full h-[690px] bg-white rounded-tl-3xl rounded-tr-3xl"
+        >
+          <div class="flex flex-col items-center gap-3">
+            <button class="close-modal">
+              <img
+                src="../../assets/images/playlists/Rectangle 4280.png"
+                alt=""
+              />
+            </button>
+            <div class="flex items-center justify-between w-full">
+              <button class="text-12 font-semibold text-[#1975FF]">
+                Check all
+              </button>
+              <h4 class="text-18 text-neutral-dark-500 font-semibold">
+                Choose song
+              </h4>
+              <button class="text-12 invisible font-semibold text-[#1975FF]">
+                Check all
+              </button>
+            </div>
+          </div>
+          <!-- list -->
+          <div
+            class="mt-3 flex flex-col gap-[18px] h-[520px] overflow-y-auto scrollbar-custom"
+          >
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <input type="checkbox" />
+                <div class="overflow-hidden w-11 h-11 rounded-lg">
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/songs/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-14 font-semibold md:text-base line-clamp-1">
+                    Bridge Over Slippery Curtains
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400 md:text-14">
+                    Stephanie Poetri
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <input type="checkbox" />
+                <div class="overflow-hidden w-11 h-11 rounded-lg">
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/songs/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-14 font-semibold md:text-base line-clamp-1">
+                    Bridge Over Slippery Curtains
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400 md:text-14">
+                    Stephanie Poetri
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <input type="checkbox" />
+                <div class="overflow-hidden w-11 h-11 rounded-lg">
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/songs/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-14 font-semibold md:text-base line-clamp-1">
+                    Bridge Over Slippery Curtains
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400 md:text-14">
+                    Stephanie Poetri
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <input type="checkbox" />
+                <div class="overflow-hidden w-11 h-11 rounded-lg">
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/songs/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-14 font-semibold md:text-base line-clamp-1">
+                    Bridge Over Slippery Curtains
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400 md:text-14">
+                    Stephanie Poetri
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <input type="checkbox" />
+                <div class="overflow-hidden w-11 h-11 rounded-lg">
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/songs/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-14 font-semibold md:text-base line-clamp-1">
+                    Bridge Over Slippery Curtains
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400 md:text-14">
+                    Stephanie Poetri
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <input type="checkbox" />
+                <div class="overflow-hidden w-11 h-11 rounded-lg">
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/songs/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-14 font-semibold md:text-base line-clamp-1">
+                    Bridge Over Slippery Curtains
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400 md:text-14">
+                    Stephanie Poetri
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <input type="checkbox" />
+                <div class="overflow-hidden w-11 h-11 rounded-lg">
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/songs/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-14 font-semibold md:text-base line-clamp-1">
+                    Bridge Over Slippery Curtains
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400 md:text-14">
+                    Stephanie Poetri
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <input type="checkbox" />
+                <div class="overflow-hidden w-11 h-11 rounded-lg">
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/songs/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-14 font-semibold md:text-base line-clamp-1">
+                    Bridge Over Slippery Curtains
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400 md:text-14">
+                    Stephanie Poetri
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <input type="checkbox" />
+                <div class="overflow-hidden w-11 h-11 rounded-lg">
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/songs/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-14 font-semibold md:text-base line-clamp-1">
+                    Bridge Over Slippery Curtains
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400 md:text-14">
+                    Stephanie Poetri
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <input type="checkbox" />
+                <div class="overflow-hidden w-11 h-11 rounded-lg">
+                  <img
+                    class="h-full w-full rounded-lg object-cover"
+                    src="../../assets/images/songs/1.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <div class="text-14 font-semibold md:text-base line-clamp-1">
+                    Bridge Over Slippery Curtains
+                  </div>
+                  <div class="mt-1 text-12 text-grey-400 md:text-14">
+                    Stephanie Poetri
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="grid grid-cols-2 gap-3 px-4 pt-3 border-t border-t-grey-200"
+          >
+            <button
+              class="flex flex-col items-center gap-1 py-3 bg-grey-100 text-neutral-dark-500 text-12 rounded-xl"
+            >
+              <img src="../../assets/images/trash.svg" alt="" class="w-6 h-6" />
+              Delete
+            </button>
+            <button
+              class="flex flex-col items-center gap-1 py-3 bg-grey-100 text-neutral-dark-500 text-12 rounded-xl"
+            >
+              <img
+                src="../../assets/images/play-add.svg"
+                alt=""
+                class="w-6 h-6"
+              />
+              Add to playlist
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- modal edit -->
+      <div class="modal-edit hidden overlay">
+        <div
+          class="px-6 pt-3 pb-7 absolute bottom-0 w-full bg-white rounded-tl-3xl rounded-tr-3xl"
+        >
+          <button
+            class="close-modal flex pb-3 justify-center items-center w-full"
+          >
             <img
-              class="h-full w-full rounded-lg object-cover"
-              src="../../assets/images/songs/1.jpg"
-              loading="lazy"
+              src="../../assets/images/playlists/Rectangle 4280.png"
               alt=""
             />
+          </button>
+          <div
+            class="flex items-center pb-3 border-b border-b-grey-200 justify-between"
+          >
+            <div class="flex items-center gap-2">
+              <div class="overflow-hidden w-11 h-11 rounded-lg">
+                <img
+                  class="h-full w-full rounded-lg object-cover"
+                  src="../../assets/images/songs/1.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
+              <div class="">
+                <div class="text-14 font-semibold md:text-base line-clamp-1">
+                  Bridge Over Slippery Curtains
+                </div>
+                <div class="mt-1 text-12 text-grey-400 md:text-14">
+                  Stephanie Poetri
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="">
-            <div class="text-14 font-semibold md:text-base line-clamp-1">
-              Bridge Over Slippery Curtains
-            </div>
-            <div class="mt-1 text-12 text-grey-400 md:text-14">
-              Stephanie Poetri
-            </div>
+          <div class="flex flex-col gap-4 mt-3">
+            <a href="#" class="flex items-center gap-2 text-14 text-grey-400">
+              <img src="../../assets/images/heart (2).svg" alt="" />
+              Unlike
+            </a>
+            <a href="#" class="flex items-center gap-2 text-14 text-grey-400">
+              <img src="../../assets/images/repeat.svg " alt="" />
+              Repost
+            </a>
+            <a href="#" class="flex items-center gap-2 text-14 text-grey-400">
+              <img src="../../assets/images/music-square-add.svg " alt="" />
+              Add to next up
+            </a>
+            <a href="#" class="flex items-center gap-2 text-14 text-grey-400">
+              <img src="../../assets/images/music-filter.svg " alt="" />
+              Add to playlist
+            </a>
+            <a href="#" class="flex items-center gap-2 text-14 text-grey-400">
+              <img src="../../assets/images/export (2).svg" alt="" />
+              Share
+            </a>
+            <a href="#" class="flex items-center gap-2 text-14 text-grey-400">
+              <img src="../../assets/images/warning-2.svg" alt="" />
+              Report
+            </a>
           </div>
         </div>
       </div>
-      <div class="flex flex-col gap-4 mt-3">
-        <a href="#" class="flex items-center gap-2 text-14 text-grey-400">
-          <img src="../../assets/images/heart (2).svg" alt="" />
-          Unlike
-        </a>
-        <a href="#" class="flex items-center gap-2 text-14 text-grey-400">
-          <img src="../../assets/images/repeat.svg " alt="" />
-          Repost
-        </a>
-        <a href="#" class="flex items-center gap-2 text-14 text-grey-400">
-          <img src="../../assets/images/music-square-add.svg " alt="" />
-          Add to next up
-        </a>
-        <a href="#" class="flex items-center gap-2 text-14 text-grey-400">
-          <img src="../../assets/images/music-filter.svg " alt="" />
-          Add to playlist
-        </a>
-        <a href="#" class="flex items-center gap-2 text-14 text-grey-400">
-          <img src="../../assets/images/export (2).svg" alt="" />
-          Share
-        </a>
-        <a href="#" class="flex items-center gap-2 text-14 text-grey-400">
-          <img src="../../assets/images/warning-2.svg" alt="" />
-          Report
-        </a>
+      <div class="box-shadow">
+        <div class="flex items-center justify-between py-3">
+          <div class="flex items-center gap-3">
+            <img
+              src="../../assets/images/arrow-left.svg"
+              alt=""
+              class="w-6 h-6 rounded-xl"
+            />
+          </div>
+          <div
+            class="flex items-center gap-2 text-18 font-semibold text-neutral-dark-500"
+          >
+            My favorite
+          </div>
+          <div class="invisible w-6 h-6"></div>
+        </div>
+        <!-- navigation -->
+        <div
+          class="grid container grid-cols-2 text-14 place-items-center font-semibold text-grey-300"
+        >
+          <a href="../likes/liked-songs.html" class="w-full text-center py-2"
+            >Music</a
+          >
+          <a
+            href="../likes/liked-videos.html"
+            class="w-full text-center active-mobile py-2"
+            >Video</a
+          >
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="box-shadow">
-    <div class="flex items-center justify-between py-3">
-      <div class="flex items-center gap-3">
-        <img
-          src="../../assets/images/arrow-left.svg"
-          alt=""
-          class="w-6 h-6 rounded-xl"
-        />
-      </div>
-      <div
-        class="flex items-center gap-2 text-18 font-semibold text-neutral-dark-500"
-      >
-        My favorite
-      </div>
-      <div class="invisible w-6 h-6"></div>
-    </div>
-    <!-- navigation -->
-    <div
-      class="grid container grid-cols-2 text-14 place-items-center font-semibold text-grey-300"
-    >
-      <a
-        href="../likes/liked-songs.html"
-        class="w-full text-center py-2"
-        >Music</a
-      >
-      <a
-        href="../likes/liked-videos.html"
-        class="w-full text-center active-mobile py-2"
-        >Video</a
-      >
-    </div>
-  </div>
 
-  <section class="container">
-    <div
-      class="pt-4 pb-3 border-b flex items-center justify-between border-b-grey-200"
-    >
-      <div class="flex items-center gap-2">
-        <button
-          class="flex open-modal items-center py-2 px-3 bg-grey-100 rounded-lg gap-1 text-14 font-semibold text-grey-400"
+      <section class="container">
+        <div
+          class="pt-4 pb-3 border-b flex items-center justify-between border-b-grey-200"
         >
-          <img src="../../assets/images/play (1).svg" alt="" />Play all
-        </button>
-        <p class="text-12 text-grey-400 font-semibold">8 Videos</p>
-      </div>
-      <div>
-        <img src="../../assets/images/tick-circle.svg" alt="" />
-      </div>
-    </div>
-    <!-- list  -->
-    <div class="flex flex-col mt-4 gap-4">
-      <a href="#" class="flex w-full gap-2">
-        <div class="relative">
-          <img
-            class="h-full w-full rounded-lg object-cover"
-            src="../../assets/images/videos/1.jpg"
-            loading="lazy"
-            alt=""
-          />
-          <span
-            class="absolute bottom-2 right-2 z-10 block rounded-full bg-video px-1.5 py-0.5 text-12 text-white"
-            >03:20</span
-          >
-        </div>
-        <div class="flex gap-2">
-          <div class="w-[90%]">
-            <div class="text-14 font-semibold md:text-base line-clamp-2">
-              Social Media Marketing MASTERY | Learn Ads on 10+ Platforms
-            </div>
-            <div class="mt-1 text-12 text-grey-400 md:text-14">
-              Audioslave
-            </div>
-            <div class="mt-1 flex items-center">
-              <div
-                class="mr-3 line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-              >
-                <img src="../../assets/svgs/views.svg" alt="" />
-                150K views
-              </div>
-              <div
-                class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-              >
-                <img src="../../assets/svgs/clock.svg" alt="" />
-                1 days ago
-              </div>
-            </div>
+          <div class="flex items-center gap-2">
+            <button
+              class="flex open-modal items-center py-2 px-3 bg-grey-100 rounded-lg gap-1 text-14 font-semibold text-grey-400"
+            >
+              <img src="../../assets/images/play (1).svg" alt="" />Play all
+            </button>
+            <p class="text-12 text-grey-400 font-semibold">8 Videos</p>
           </div>
-          <button class="w-6 h-6">
-            <img
-              src="../../assets/images/more (1).svg"
-              alt=""
-              class="w-full h-full"
-            />
-          </button>
-        </div>
-      </a>
-      <a href="#" class="flex w-full gap-2">
-        <div class="relative">
-          <img
-            class="h-full w-full rounded-lg object-cover"
-            src="../../assets/images/videos/1.jpg"
-            loading="lazy"
-            alt=""
-          />
-          <span
-            class="absolute bottom-2 right-2 z-10 block rounded-full bg-video px-1.5 py-0.5 text-12 text-white"
-            >03:20</span
-          >
-        </div>
-        <div class="flex gap-2">
-          <div class="w-[90%]">
-            <div class="text-14 font-semibold md:text-base line-clamp-2">
-              Social Media Marketing MASTERY | Learn Ads on 10+ Platforms
-            </div>
-            <div class="mt-1 text-12 text-grey-400 md:text-14">
-              Audioslave
-            </div>
-            <div class="mt-1 flex items-center">
-              <div
-                class="mr-3 line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-              >
-                <img src="../../assets/svgs/views.svg" alt="" />
-                150K views
-              </div>
-              <div
-                class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-              >
-                <img src="../../assets/svgs/clock.svg" alt="" />
-                1 days ago
-              </div>
-            </div>
+          <div>
+            <img src="../../assets/images/tick-circle.svg" alt="" />
           </div>
-          <button class="w-6 h-6">
-            <img
-              src="../../assets/images/more (1).svg"
-              alt=""
-              class="w-full h-full"
-            />
-          </button>
         </div>
-      </a>
-      <a href="#" class="flex w-full gap-2">
-        <div class="relative">
-          <img
-            class="h-full w-full rounded-lg object-cover"
-            src="../../assets/images/videos/1.jpg"
-            loading="lazy"
-            alt=""
-          />
-          <span
-            class="absolute bottom-2 right-2 z-10 block rounded-full bg-video px-1.5 py-0.5 text-12 text-white"
-            >03:20</span
-          >
-        </div>
-        <div class="flex gap-2">
-          <div class="w-[90%]">
-            <div class="text-14 font-semibold md:text-base line-clamp-2">
-              Social Media Marketing MASTERY | Learn Ads on 10+ Platforms
-            </div>
-            <div class="mt-1 text-12 text-grey-400 md:text-14">
-              Audioslave
-            </div>
-            <div class="mt-1 flex items-center">
-              <div
-                class="mr-3 line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
+        <!-- list  -->
+        <div class="flex flex-col mt-4 gap-3">
+          <a href="#" class="flex w-full gap-2">
+            <div class="relative">
+              <img
+                class="h-full w-full rounded-lg object-cover"
+                src="../../assets/images/videos/1.jpg"
+                loading="lazy"
+                alt=""
+              />
+              <span
+                class="absolute bottom-2 right-2 z-10 block rounded-full bg-video px-1.5 py-0.5 text-12 text-white"
+                >03:20</span
               >
-                <img src="../../assets/svgs/views.svg" alt="" />
-                150K views
+            </div>
+            <div class="flex gap-2">
+              <div class="w-[90%]">
+                <div class="text-14 font-semibold md:text-base line-clamp-2">
+                  Social Media Marketing MASTERY | Learn Ads on 10+ Platforms
+                </div>
+                <div class="mt-1 text-12 text-grey-400 md:text-14">
+                  Audioslave
+                </div>
+                <div class="mt-1 flex items-center gap-1 xs:gap-3">
+                  <div
+                    class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
+                  >
+                    <img
+                      class="xs:block hidden"
+                      src="../../assets/svgs/views.svg"
+                      alt=""
+                    />
+                    150K views
+                  </div>
+                  <div
+                    class="w-0.5 xs:hidden h-0.5 flex-shrink-0 bg-grey-300 rounded-full"
+                  ></div>
+                  <div
+                    class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
+                  >
+                    <img
+                      class="xs:block hidden"
+                      src="../../assets/svgs/clock.svg"
+                      alt=""
+                    />
+                    1 days ago
+                  </div>
+                </div>
               </div>
-              <div
-                class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
+              <button class="w-6 h-6">
+                <img
+                  src="../../assets/images/more (1).svg"
+                  alt=""
+                  class="w-full h-full"
+                />
+              </button>
+            </div>
+          </a>
+          <a href="#" class="flex w-full gap-2">
+            <div class="relative">
+              <img
+                class="h-full w-full rounded-lg object-cover"
+                src="../../assets/images/videos/1.jpg"
+                loading="lazy"
+                alt=""
+              />
+              <span
+                class="absolute bottom-2 right-2 z-10 block rounded-full bg-video px-1.5 py-0.5 text-12 text-white"
+                >03:20</span
               >
-                <img src="../../assets/svgs/clock.svg" alt="" />
-                1 days ago
+            </div>
+            <div class="flex gap-2">
+              <div class="w-[90%]">
+                <div class="text-14 font-semibold md:text-base line-clamp-2">
+                  Social Media Marketing MASTERY | Learn Ads on 10+ Platforms
+                </div>
+                <div class="mt-1 text-12 text-grey-400 md:text-14">
+                  Audioslave
+                </div>
+                <div class="mt-1 flex items-center gap-1 xs:gap-3">
+                  <div
+                    class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
+                  >
+                    <img
+                      class="xs:block hidden"
+                      src="../../assets/svgs/views.svg"
+                      alt=""
+                    />
+                    150K views
+                  </div>
+                  <div
+                    class="w-0.5 xs:hidden h-0.5 flex-shrink-0 bg-grey-300 rounded-full"
+                  ></div>
+                  <div
+                    class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
+                  >
+                    <img
+                      class="xs:block hidden"
+                      src="../../assets/svgs/clock.svg"
+                      alt=""
+                    />
+                    1 days ago
+                  </div>
+                </div>
               </div>
+              <button class="w-6 h-6">
+                <img
+                  src="../../assets/images/more (1).svg"
+                  alt=""
+                  class="w-full h-full"
+                />
+              </button>
             </div>
-          </div>
-          <button class="w-6 h-6">
-            <img
-              src="../../assets/images/more (1).svg"
-              alt=""
-              class="w-full h-full"
-            />
-          </button>
-        </div>
-      </a>
-      <a href="#" class="flex w-full gap-2">
-        <div class="relative">
-          <img
-            class="h-full w-full rounded-lg object-cover"
-            src="../../assets/images/videos/1.jpg"
-            loading="lazy"
-            alt=""
-          />
-          <span
-            class="absolute bottom-2 right-2 z-10 block rounded-full bg-video px-1.5 py-0.5 text-12 text-white"
-            >03:20</span
-          >
-        </div>
-        <div class="flex gap-2">
-          <div class="w-[90%]">
-            <div class="text-14 font-semibold md:text-base line-clamp-2">
-              Social Media Marketing MASTERY | Learn Ads on 10+ Platforms
-            </div>
-            <div class="mt-1 text-12 text-grey-400 md:text-14">
-              Audioslave
-            </div>
-            <div class="mt-1 flex items-center">
-              <div
-                class="mr-3 line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
+          </a>
+          <a href="#" class="flex w-full gap-2">
+            <div class="relative">
+              <img
+                class="h-full w-full rounded-lg object-cover"
+                src="../../assets/images/videos/1.jpg"
+                loading="lazy"
+                alt=""
+              />
+              <span
+                class="absolute bottom-2 right-2 z-10 block rounded-full bg-video px-1.5 py-0.5 text-12 text-white"
+                >03:20</span
               >
-                <img src="../../assets/svgs/views.svg" alt="" />
-                150K views
-              </div>
-              <div
-                class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-              >
-                <img src="../../assets/svgs/clock.svg" alt="" />
-                1 days ago
-              </div>
             </div>
-          </div>
-          <button class="w-6 h-6">
-            <img
-              src="../../assets/images/more (1).svg"
-              alt=""
-              class="w-full h-full"
-            />
-          </button>
+            <div class="flex gap-2">
+              <div class="w-[90%]">
+                <div class="text-14 font-semibold md:text-base line-clamp-2">
+                  Social Media Marketing MASTERY | Learn Ads on 10+ Platforms
+                </div>
+                <div class="mt-1 text-12 text-grey-400 md:text-14">
+                  Audioslave
+                </div>
+                <div class="mt-1 flex items-center gap-1 xs:gap-3">
+                  <div
+                    class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
+                  >
+                    <img
+                      class="xs:block hidden"
+                      src="../../assets/svgs/views.svg"
+                      alt=""
+                    />
+                    150K views
+                  </div>
+                  <div
+                    class="w-0.5 xs:hidden h-0.5 flex-shrink-0 bg-grey-300 rounded-full"
+                  ></div>
+                  <div
+                    class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
+                  >
+                    <img
+                      class="xs:block hidden"
+                      src="../../assets/svgs/clock.svg"
+                      alt=""
+                    />
+                    1 days ago
+                  </div>
+                </div>
+              </div>
+              <button class="w-6 h-6">
+                <img
+                  src="../../assets/images/more (1).svg"
+                  alt=""
+                  class="w-full h-full"
+                />
+              </button>
+            </div>
+          </a>
+          <a href="#" class="flex w-full gap-2">
+            <div class="relative">
+              <img
+                class="h-full w-full rounded-lg object-cover"
+                src="../../assets/images/videos/1.jpg"
+                loading="lazy"
+                alt=""
+              />
+              <span
+                class="absolute bottom-2 right-2 z-10 block rounded-full bg-video px-1.5 py-0.5 text-12 text-white"
+                >03:20</span
+              >
+            </div>
+            <div class="flex gap-2">
+              <div class="w-[90%]">
+                <div class="text-14 font-semibold md:text-base line-clamp-2">
+                  Social Media Marketing MASTERY | Learn Ads on 10+ Platforms
+                </div>
+                <div class="mt-1 text-12 text-grey-400 md:text-14">
+                  Audioslave
+                </div>
+                <div class="mt-1 flex items-center gap-1 xs:gap-3">
+                  <div
+                    class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
+                  >
+                    <img
+                      class="xs:block hidden"
+                      src="../../assets/svgs/views.svg"
+                      alt=""
+                    />
+                    150K views
+                  </div>
+                  <div
+                    class="w-0.5 xs:hidden h-0.5 flex-shrink-0 bg-grey-300 rounded-full"
+                  ></div>
+                  <div
+                    class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
+                  >
+                    <img
+                      class="xs:block hidden"
+                      src="../../assets/svgs/clock.svg"
+                      alt=""
+                    />
+                    1 days ago
+                  </div>
+                </div>
+              </div>
+              <button class="w-6 h-6">
+                <img
+                  src="../../assets/images/more (1).svg"
+                  alt=""
+                  class="w-full h-full"
+                />
+              </button>
+            </div>
+          </a>
         </div>
-      </a>
-    </div>
-  </section>
-</main>
+      </section>
+    </main>
   </body>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
