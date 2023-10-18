@@ -2850,6 +2850,18 @@ body{
   grid-template-columns: 456px 1fr;
 }
 
+.grid-cols-\[90vw\2c 90vw\]{
+  grid-template-columns: 90vw 90vw;
+}
+
+.grid-cols-\[280px\2c 280px\]{
+  grid-template-columns: 280px 280px;
+}
+
+.grid-cols-\[260px\2c 260px\]{
+  grid-template-columns: 260px 260px;
+}
+
 .flex-row{
   flex-direction: row;
 }
@@ -6919,6 +6931,10 @@ input {
 
   .sm\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-\[300px\2c 300px\]{
+    grid-template-columns: 300px 300px;
   }
 
   .sm\:underline{
