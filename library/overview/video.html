@@ -2125,57 +2125,46 @@
     </div>
     <!-- mobile -->
     <main class="block md:hidden relative">
-      <div class="flex items-center justify-between py-3 px-4">
-        <div class="modal-more hidden w-full h-full bg-[#666666] overlay">
-          <div
-            class="w-full px-4 py-6 bg-[#ffffff] absolute rounded-tl-[24px] rounded-tr-[24px] bottom-0 z-20 overflow-hidden p"
-          >
-            <div class="text-neutral-dark-500">
-              <div class="flex items-center justify-between">
-                <div
-                  class="close-modal font-semibold text-18 text-neutral-dark-500 text-center mb-3"
-                >
-                  <img src="../../assets/svgs/close.svg" alt="" />
-                </div>
-                <h4
-                  class="text-center flex flex-col close-modal items-center gap-3 mb-4 text-18 font-semibold"
-                >
-                  <button>
-                    <img
-                      src="../../assets/images/playlists/Rectangle 4280.png"
-                      alt=" w-[64px] h-1"
-                    />
-                  </button>
-                  Upload
-                </h4>
-                <div
-                  class="font-semibold text-18 text-neutral-dark-500 text-center mb-3"
-                ></div>
-              </div>
+      <div class="modal-more hidden w-full h-full bg-[#666666] overlay">
+        <div
+          id="modal-more--inner"
+          class="w-full px-4 py-6 bg-[#ffffff] absolute rounded-tl-[24px] rounded-tr-[24px] bottom-0 z-20 overflow-hidden p"
+        >
+          <button class="absolute left-1/2 -translate-x-1/2 top-2">
+            <img
+              src="../../assets/images/playlists/Rectangle 4280.png"
+              alt=" w-[64px] h-1"
+            />
+          </button>
+          <div class="text-neutral-dark-500">
+            <h4
+              class="text-center flex flex-col close-modal items-center gap-3 mb-4 text-18 font-semibold"
+            >
+              Upload
+            </h4>
 
-              <a
-                href="../upload/upload-music.html"
-                class="flex items-center mb-2"
-              >
-                <div
-                  class="flex items-center gap-2 text-14 font-semibold text-neutral-dark-500"
-                >
-                  <div class="p-[10px] bg-grey-100 rounded-xl">
-                    <img src="../assets/images/music-square-add.svg" alt="" />
-                  </div>
-                  Upload music
-                </div>
-              </a>
-              <a
-                href="../upload/upload-video.html"
+            <a
+              href="../upload/upload-music.html"
+              class="flex items-center mb-2"
+            >
+              <div
                 class="flex items-center gap-2 text-14 font-semibold text-neutral-dark-500"
               >
                 <div class="p-[10px] bg-grey-100 rounded-xl">
-                  <img src="../assets/images/play-add.svg" alt="" />
+                  <img src="../../assets/images/music-square-add.svg" alt="" />
                 </div>
-                Upload video
-              </a>
-            </div>
+                Upload music
+              </div>
+            </a>
+            <a
+              href="../upload/upload-video.html"
+              class="flex items-center gap-2 text-14 font-semibold text-neutral-dark-500"
+            >
+              <div class="p-[10px] bg-grey-100 rounded-xl">
+                <img src="../../assets/images/play-add.svg" alt="" />
+              </div>
+              Upload video
+            </a>
           </div>
         </div>
       </div>
@@ -2446,7 +2435,7 @@
           <a href="#" class="text-14 text-branding font-normal">View All</a>
         </div>
         <!--list recent watching -->
-        <div class="flex flex-col mt-4 gap-4">
+        <div class="flex flex-col mt-3 gap-4">
           <a href="#" class="flex w-full gap-2">
             <div class="relative">
               <img
@@ -2468,17 +2457,28 @@
                 <div class="mt-1 text-12 text-grey-400 md:text-14">
                   Audioslave
                 </div>
-                <div class="mt-1 flex items-center">
-                  <div
-                    class="mr-3 line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                  >
-                    <img src="../../assets/svgs/views.svg" alt="" />
-                    150K views
-                  </div>
+                <div class="mt-1 flex items-center gap-1 xs:gap-3">
                   <div
                     class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
                   >
-                    <img src="../../assets/svgs/clock.svg" alt="" />
+                    <img
+                      class="xs:block hidden"
+                      src="../../assets/svgs/views.svg"
+                      alt=""
+                    />
+                    150K views
+                  </div>
+                  <div
+                    class="w-0.5 xs:hidden h-0.5 flex-shrink-0 bg-grey-300 rounded-full"
+                  ></div>
+                  <div
+                    class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
+                  >
+                    <img
+                      class="xs:block hidden"
+                      src="../../assets/svgs/clock.svg"
+                      alt=""
+                    />
                     1 days ago
                   </div>
                 </div>
@@ -2513,17 +2513,28 @@
                 <div class="mt-1 text-12 text-grey-400 md:text-14">
                   Audioslave
                 </div>
-                <div class="mt-1 flex items-center">
-                  <div
-                    class="mr-3 line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                  >
-                    <img src="../../assets/svgs/views.svg" alt="" />
-                    150K views
-                  </div>
+                <div class="mt-1 flex items-center gap-1 xs:gap-3">
                   <div
                     class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
                   >
-                    <img src="../../assets/svgs/clock.svg" alt="" />
+                    <img
+                      class="xs:block hidden"
+                      src="../../assets/svgs/views.svg"
+                      alt=""
+                    />
+                    150K views
+                  </div>
+                  <div
+                    class="w-0.5 xs:hidden h-0.5 flex-shrink-0 bg-grey-300 rounded-full"
+                  ></div>
+                  <div
+                    class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
+                  >
+                    <img
+                      class="xs:block hidden"
+                      src="../../assets/svgs/clock.svg"
+                      alt=""
+                    />
                     1 days ago
                   </div>
                 </div>
@@ -2558,62 +2569,28 @@
                 <div class="mt-1 text-12 text-grey-400 md:text-14">
                   Audioslave
                 </div>
-                <div class="mt-1 flex items-center">
-                  <div
-                    class="mr-3 line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                  >
-                    <img src="../../assets/svgs/views.svg" alt="" />
-                    150K views
-                  </div>
+                <div class="mt-1 flex items-center gap-1 xs:gap-3">
                   <div
                     class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
                   >
-                    <img src="../../assets/svgs/clock.svg" alt="" />
-                    1 days ago
-                  </div>
-                </div>
-              </div>
-              <button class="w-6 h-6">
-                <img
-                  src="../../assets/images/more (1).svg"
-                  alt=""
-                  class="w-full h-full"
-                />
-              </button>
-            </div>
-          </a>
-          <a href="#" class="flex w-full gap-2">
-            <div class="relative">
-              <img
-                class="h-full w-full rounded-lg object-cover"
-                src="../../assets/images/videos/1.jpg"
-                loading="lazy"
-                alt=""
-              />
-              <span
-                class="absolute bottom-2 right-2 z-10 block rounded-full bg-video px-1.5 py-0.5 text-12 text-white"
-                >03:20</span
-              >
-            </div>
-            <div class="flex gap-2">
-              <div class="w-[90%]">
-                <div class="text-14 font-semibold md:text-base line-clamp-2">
-                  Social Media Marketing MASTERY | Learn Ads on 10+ Platforms
-                </div>
-                <div class="mt-1 text-12 text-grey-400 md:text-14">
-                  Audioslave
-                </div>
-                <div class="mt-1 flex items-center">
-                  <div
-                    class="mr-3 line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
-                  >
-                    <img src="../../assets/svgs/views.svg" alt="" />
+                    <img
+                      class="xs:block hidden"
+                      src="../../assets/svgs/views.svg"
+                      alt=""
+                    />
                     150K views
                   </div>
                   <div
+                    class="w-0.5 xs:hidden h-0.5 flex-shrink-0 bg-grey-300 rounded-full"
+                  ></div>
+                  <div
                     class="line-clamp-1 flex items-center gap-1 text-12 text-grey-400 md:text-14"
                   >
-                    <img src="../../assets/svgs/clock.svg" alt="" />
+                    <img
+                      class="xs:block hidden"
+                      src="../../assets/svgs/clock.svg"
+                      alt=""
+                    />
                     1 days ago
                   </div>
                 </div>

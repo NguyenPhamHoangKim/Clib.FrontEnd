@@ -203,3 +203,11 @@ if ($(".close-modal")) {
     "open-modal-edit",
   );
 }
+
+checkClickOutside(
+  "modal-more--inner",
+  function () {
+    $(".modal-more").hide();
+  },
+  "open-modal-more",
+);

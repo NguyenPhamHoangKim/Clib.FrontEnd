@@ -1157,6 +1157,10 @@ body{
   top: 115px;
 }
 
+.top-2{
+  top: 0.5rem;
+}
+
 .isolate{
   isolation: isolate;
 }
