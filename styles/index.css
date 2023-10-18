@@ -1560,6 +1560,10 @@ body{
   margin-top: 94px;
 }
 
+.mt-auto{
+  margin-top: auto;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -2304,6 +2308,10 @@ body{
 
 .w-full{
   width: 100%;
+}
+
+.w-\[180px\]{
+  width: 180px;
 }
 
 .max-w-\[100px\]{

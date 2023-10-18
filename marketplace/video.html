@@ -11,7 +11,7 @@
     />
   </head>
   <body>
-<div class="hidden md:block">
+    <div class="hidden md:flex flex-col">
       <header class="fixed left-0 right-0 top-0 z-[999]">
         <div class="bg-white py-2.5 shadow-[0px_2px_10px_0px_rgba(0,0,0,0.04)]">
           <div class="container relative flex items-center justify-between">
@@ -29,7 +29,7 @@
                 />
               </div>
             </div>
-  
+
             <a
               href="/"
               class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:hidden"
@@ -55,7 +55,7 @@
               </button>
             </div>
             <!-- SIGNED IN -->
-  
+
             <!-- SIGNED IN PC-->
             <div class="flex items-center space-x-4 max-md:hidden xl:space-x-6">
               <button class="bg-grey-1 rounded-lg">
@@ -226,7 +226,9 @@
                             alt="James"
                           />
                           <div>
-                            <div class="text-14 font-semibold">Roger Daltrey</div>
+                            <div class="text-14 font-semibold">
+                              Roger Daltrey
+                            </div>
                             <div class="line-clamp-1 text-14">woohoooo</div>
                           </div>
                         </div>
@@ -374,8 +376,8 @@
                           </div>
                           <div>
                             <div class="text-14">
-                              <span class="font-semibold">Josh</span> commented on
-                              your post
+                              <span class="font-semibold">Josh</span> commented
+                              on your post
                             </div>
                             <div class="mt-1 text-12 text-grey-400">
                               2 day ago
@@ -436,8 +438,8 @@
                           </div>
                           <div>
                             <div class="text-14">
-                              <span class="font-semibold">Sona</span> commented on
-                              your post
+                              <span class="font-semibold">Sona</span> commented
+                              on your post
                             </div>
                             <div class="mt-1 text-12 text-grey-400">
                               2 day ago
@@ -507,8 +509,8 @@
                           </div>
                           <div>
                             <div class="text-14">
-                              <span class="font-semibold">Harry</span> liked your
-                              post
+                              <span class="font-semibold">Harry</span> liked
+                              your post
                             </div>
                             <div class="mt-1 text-12 text-grey-400">
                               2 day ago
@@ -543,8 +545,8 @@
                           </div>
                           <div>
                             <div class="text-14">
-                              <span class="font-semibold">Jean</span> commented on
-                              your post
+                              <span class="font-semibold">Jean</span> commented
+                              on your post
                             </div>
                             <div class="mt-1 text-12 text-grey-400">
                               2 day ago
@@ -577,7 +579,7 @@
               </a>
             </div>
             <!-- SIGNED IN -->
-  
+
             <!-- NOT SIGN IN <div class="flex items-center space-x-4">
               <button>
                 <img src="../assets/svgs/export.svg" alt="" />
@@ -613,9 +615,7 @@
               </a>
             </li>
             <li class="max-md:hidden">
-              <a
-                href="./marketplace/music.html"
-                class="header-item-link active"
+              <a href="./marketplace/music.html" class="header-item-link active"
                 >marketplace</a
               >
             </li>
@@ -723,7 +723,7 @@
               >
                 <a
                   href="../marketplace/music.html"
-                  class="flex items-center gap-2 px-5 py-2 rounded-lg text-white bg-branding-fourth"
+                  class="flex items-center gap-2 px-5 py-2 rounded-lg text-white bg-branding-fourth w-[180px] justify-center"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -753,11 +753,11 @@
                       fill="white"
                     />
                   </svg>
-                  Digital food
+                  Digital goods
                 </a>
                 <a
                   href="../marketplace/service.html"
-                  class="flex items-center gap-2 px-5 py-2 rounded-xl text-grey-300"
+                  class="flex items-center gap-2 px-5 py-2 rounded-xl text-grey-300 w-[180px] justify-center"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -773,8 +773,34 @@
                   </svg>
                   Services
                 </a>
+                <a
+                  href="../marketplace/your-shop.html"
+                  class="flex items-center gap-2 px-5 py-2 rounded-xl text-grey-300 w-[180px] justify-center"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22.3596 8.27L22.0696 5.5C21.6496 2.48 20.2796 1.25 17.3497 1.25H14.9896H13.5097H10.4697H8.98965H6.58965C3.64965 1.25 2.28965 2.48 1.85965 5.53L1.58965 8.28C1.48965 9.35 1.77965 10.39 2.40965 11.2C3.16965 12.19 4.33965 12.75 5.63965 12.75C6.89965 12.75 8.10965 12.12 8.86965 11.11C9.54965 12.12 10.7097 12.75 11.9997 12.75C13.2896 12.75 14.4197 12.15 15.1096 11.15C15.8797 12.14 17.0696 12.75 18.3096 12.75C19.6396 12.75 20.8396 12.16 21.5896 11.12C22.1896 10.32 22.4597 9.31 22.3596 8.27Z"
+                      fill="#A1ABB3"
+                    />
+                    <path
+                      d="M11.3501 16.6602C10.0801 16.7902 9.12012 17.8702 9.12012 19.1502V21.8902C9.12012 22.1602 9.34012 22.3802 9.61012 22.3802H14.3801C14.6501 22.3802 14.8701 22.1602 14.8701 21.8902V19.5002C14.8801 17.4102 13.6501 16.4202 11.3501 16.6602Z"
+                      fill="#A1ABB3"
+                    />
+                    <path
+                      d="M21.3699 14.4001V17.3801C21.3699 20.1401 19.1299 22.3801 16.3699 22.3801C16.0999 22.3801 15.8799 22.1601 15.8799 21.8901V19.5001C15.8799 18.2201 15.4899 17.2201 14.7299 16.5401C14.0599 15.9301 13.1499 15.6301 12.0199 15.6301C11.7699 15.6301 11.5199 15.6401 11.2499 15.6701C9.46988 15.8501 8.11988 17.3501 8.11988 19.1501V21.8901C8.11988 22.1601 7.89988 22.3801 7.62988 22.3801C4.86988 22.3801 2.62988 20.1401 2.62988 17.3801V14.4201C2.62988 13.7201 3.31988 13.2501 3.96988 13.4801C4.23988 13.5701 4.50988 13.6401 4.78988 13.6801C4.90988 13.7001 5.03988 13.7201 5.15988 13.7201C5.31988 13.7401 5.47988 13.7501 5.63988 13.7501C6.79988 13.7501 7.93988 13.3201 8.83988 12.5801C9.69988 13.3201 10.8199 13.7501 11.9999 13.7501C13.1899 13.7501 14.2899 13.3401 15.1499 12.6001C16.0499 13.3301 17.1699 13.7501 18.3099 13.7501C18.4899 13.7501 18.6699 13.7401 18.8399 13.7201C18.9599 13.7101 19.0699 13.7001 19.1799 13.6801C19.4899 13.6401 19.7699 13.5501 20.0499 13.4601C20.6999 13.2401 21.3699 13.7201 21.3699 14.4001Z"
+                      fill="#A1ABB3"
+                    />
+                  </svg>
+                  Your shop
+                </a>
               </div>
-  
+
               <div
                 class="flex items-center btn-upload gap-2 px-5 py-2 bg-grey-400 rounded-lg text-[#fff] cursor-pointer font-16 font-semibold"
               >
@@ -854,7 +880,9 @@
                   </div>
                 </div>
                 <div class="w-full">
-                  <h5 class="text-18 font-semibold mt-5 text-[#52616B]">Price</h5>
+                  <h5 class="text-18 font-semibold mt-5 text-[#52616B]">
+                    Price
+                  </h5>
                   <div
                     class="flex text-[#52616B] text-18 font-semibold items-center gap-2 mt-3"
                   >
@@ -918,7 +946,7 @@
                   </button>
                 </div>
               </div>
-  
+
               <!-- right -->
               <!-- list items video-->
               <div class="w-full bg-[#fff] rounded-xl p-4">
@@ -949,7 +977,7 @@
                   </div>
                 </div>
                 <!-- list items music-->
-  
+
                 <!-- list items videos-->
                 <div
                   class="grid md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-6 mt-4"
@@ -991,7 +1019,7 @@
                             src="../assets/images/st.png"
                             alt=""
                           />
-  
+
                           <div>
                             <p
                               class="text-12 text-grey-400 truncate overflow-ellipsis"
@@ -1130,7 +1158,7 @@
                             src="../assets/images/st.png"
                             alt=""
                           />
-  
+
                           <div>
                             <p
                               class="text-12 text-grey-400 truncate overflow-ellipsis"
@@ -1195,7 +1223,7 @@
                             src="../assets/images/st.png"
                             alt=""
                           />
-  
+
                           <div>
                             <p
                               class="text-12 text-grey-400 truncate overflow-ellipsis"
@@ -1260,7 +1288,7 @@
                             src="../assets/images/st.png"
                             alt=""
                           />
-  
+
                           <div>
                             <p
                               class="text-12 text-grey-400 truncate overflow-ellipsis"
@@ -1325,7 +1353,7 @@
                             src="../assets/images/st.png"
                             alt=""
                           />
-  
+
                           <div>
                             <p
                               class="text-12 text-grey-400 truncate overflow-ellipsis"
@@ -1390,7 +1418,7 @@
                             src="../assets/images/st.png"
                             alt=""
                           />
-  
+
                           <div>
                             <p
                               class="text-12 text-grey-400 truncate overflow-ellipsis"
@@ -1455,7 +1483,7 @@
                             src="../assets/images/st.png"
                             alt=""
                           />
-  
+
                           <div>
                             <p
                               class="text-12 text-grey-400 truncate overflow-ellipsis"
@@ -1520,7 +1548,7 @@
                             src="../assets/images/st.png"
                             alt=""
                           />
-  
+
                           <div>
                             <p
                               class="text-12 text-grey-400 truncate overflow-ellipsis"
@@ -1654,7 +1682,7 @@
                             src="../assets/images/st.png"
                             alt=""
                           />
-  
+
                           <div>
                             <p
                               class="text-12 text-grey-400 truncate overflow-ellipsis"
@@ -1719,7 +1747,7 @@
                             src="../assets/images/st.png"
                             alt=""
                           />
-  
+
                           <div>
                             <p
                               class="text-12 text-grey-400 truncate overflow-ellipsis"
@@ -1754,741 +1782,708 @@
           </div>
         </div>
       </section>
-</div>
-<!-- mobile -->
-<section class="relative container block md:hidden">
-  <!-- filter -->
-  <div
-    class="filter-digital hidden p-6 w-full fixed bg-[#fff] rounded-xl top-0 left-0 bottom-0 z-[9999999]"
-  >
-    <h4
-      class="close-filter text-sm flex items-center justify-between font-semibold md:text-base lg:text-2xl mb-4"
-    >
-      Filter
-      <img
-        class="block lg:hidden hiden-filter"
-        src="../assets/svgs/close.svg"
-        alt=""
-      />
-    </h4>
-    <div>
-      <h5 class="text-lg font-semibold">Category</h5>
+      <div class="mt-auto">
+        <footer
+          class="mt-[100px] border-t border-t-grey-400 pb-6 pt-4 max-md:hidden"
+        >
+          <div class="container flex items-center justify-between">
+            <div class="flex items-center">
+              <div class="-mb-0.5 mr-6 text-14 text-grey-400">
+                Copyright © 2023 Clib Music. All rights reserved.
+              </div>
+              <ul class="flex items-center gap-3">
+                <li>
+                  <a href="#" class="text-14 text-grey-400">Privacy Policy</a>
+                </li>
+                <li>
+                  <span class="footer-divider"></span>
+                </li>
+                <li>
+                  <a href="#" class="text-14 text-grey-400">Terms of Use</a>
+                </li>
+                <li>
+                  <span class="footer-divider"></span>
+                </li>
+                <li>
+                  <a href="#" class="text-14 text-grey-400">Cookie Warning</a>
+                </li>
+                <li>
+                  <span class="footer-divider"></span>
+                </li>
+                <li>
+                  <a href="#" class="text-14 text-grey-400">Support</a>
+                </li>
+              </ul>
+            </div>
+            <ul class="flex items-center gap-3">
+              <li>
+                <a href="#" class="lang-footer-item active">English</a>
+              </li>
+              <li>
+                <span class="footer-divider"></span>
+              </li>
+              <li>
+                <a href="#" class="lang-footer-item">Tiếng Việt</a>
+              </li>
+              <li>
+                <span class="footer-divider"></span>
+              </li>
+              <li>
+                <a href="#" class="lang-footer-item">简体中文</a>
+              </li>
+              <li>
+                <span class="footer-divider"></span>
+              </li>
+              <li>
+                <a href="#" class="lang-footer-item">한국어</a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!-- mobile -->
+    <section class="relative container block md:hidden">
+      <!-- filter -->
       <div
-        class="grid grid-cols-2 w-full bg-grey-100 font-semibold rounded-lg mt-2 text-12 md:text-14 lg:text-16 transition-all duration-500"
+        class="filter-digital hidden p-6 w-full fixed bg-[#fff] rounded-xl top-0 left-0 bottom-0 z-[9999999]"
+      >
+        <h4
+          class="close-filter text-sm flex items-center justify-between font-semibold md:text-base lg:text-2xl mb-4"
+        >
+          Filter
+          <img
+            class="block lg:hidden hiden-filter"
+            src="../assets/svgs/close.svg"
+            alt=""
+          />
+        </h4>
+        <div>
+          <h5 class="text-lg font-semibold">Category</h5>
+          <div
+            class="grid grid-cols-2 w-full bg-grey-100 font-semibold rounded-lg mt-2 text-12 md:text-14 lg:text-16 transition-all duration-500"
+          >
+            <a
+              href="../marketplace/music.html"
+              class="px-4 text-center text-grey-300 py-2 rounded-lg"
+            >
+              Music
+            </a>
+            <a
+              href="../marketplace/video.html"
+              class="px-4 text-center py-2 rounded-lg active"
+            >
+              Videos
+            </a>
+          </div>
+        </div>
+        <div>
+          <h5 class="text-lg font-semibold mt-5">Seller</h5>
+          <div class="flex items-center gap-8 mt-3">
+            <div class="flex items-center gap-4">
+              <input type="radio" /> All
+            </div>
+            <div class="flex items-center gap-4">
+              <input type="radio" /> Following
+            </div>
+          </div>
+        </div>
+        <div class="w-full">
+          <h5 class="text-lg font-semibold mt-5">Price</h5>
+          <div class="flex items-center gap-2 mt-3">
+            <div
+              class="flex border items-center justify-center gap-3 w-full max-w-[120px] rounded-xl px-3 py-2"
+            >
+              $
+              <input
+                type="text"
+                class="border outline-none w-full border-none"
+                placeholder="Min"
+              />
+            </div>
+            <span class="w-3 h-[2px] bg-grey-200"></span>
+            <div
+              class="flex border items-center justify-center gap-3 w-full max-w-[120px] rounded-xl px-3 py-2"
+            >
+              $
+              <input
+                type="text"
+                class="outline-none border w-full border-none"
+                placeholder="Max"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="w-full">
+          <h5 class="text-lg font-semibold mt-5">Product</h5>
+          <div class="flex flex-col gap-4 mt-3">
+            <div class="flex items-center gap-3">
+              <input type="checkbox" /> Option 1
+            </div>
+            <div class="flex items-center gap-3">
+              <input type="checkbox" /> Option 2
+            </div>
+            <div class="flex items-center gap-3">
+              <input type="checkbox" /> Option 3
+            </div>
+            <div class="flex items-center gap-3">
+              <input type="checkbox" /> Option 4
+            </div>
+            <div class="flex items-center gap-3">
+              <input type="checkbox" /> Option 5
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-3 mt-9 font-semibold">
+          <button
+            id="videosBtn"
+            class="px-4 py-2 border text-grey-400 rounded-lg"
+          >
+            Clear
+          </button>
+          <button
+            id="musicBtn"
+            class="px-4 py-2 bg-[#0ecad5] text-[#fff] rounded-lg"
+          >
+            Apply All
+          </button>
+        </div>
+      </div>
+      <!-- button -->
+      <div
+        class="grid grid-cols-3 items-center justify-center w-full bg-[#fff]"
       >
         <a
           href="../marketplace/music.html"
-          class="px-4 text-center text-grey-300 py-2 rounded-lg "
+          class="text-14 active-mobile text-center font-semibold text-grey-300 py-2"
         >
-          Music
+          Digital goods
         </a>
         <a
-          href="../marketplace/video.html"
-          class="px-4 text-center  py-2 rounded-lg active"
+          href="../marketplace/service.html"
+          class="text-center text-14 font-semibold text-grey-300 py-2"
         >
-          Videos
+          Service
+        </a>
+        <a
+          href="../marketplace/your-shop.html"
+          class="text-center text-14 font-semibold text-grey-300 py-2"
+        >
+          Your shop
         </a>
       </div>
-    </div>
-    <div>
-      <h5 class="text-lg font-semibold mt-5">Seller</h5>
-      <div class="flex items-center gap-8 mt-3">
-        <div class="flex items-center gap-4">
-          <input type="radio" /> All
-        </div>
-        <div class="flex items-center gap-4">
-          <input type="radio" /> Following
+      <!-- Hero-->
+      <div class="digital block md:hidden bg-[#fff]">
+        <div class="grid grid-cols-2 p-1 rounded-lg my-5 bg-grey-100">
+          <a
+            href="../marketplace/music.html"
+            class="text-grey-300 text-14 text-center font-semibold px-4 py-2 rounded-lg"
+          >
+            Musics
+          </a>
+          <a
+            href="../marketplace/music.html"
+            class="text-grey-300 text-14 text-center font-semibold px-4 py-2 rounded-lg active-hero"
+          >
+            Videos
+          </a>
         </div>
       </div>
-    </div>
-    <div class="w-full">
-      <h5 class="text-lg font-semibold mt-5">Price</h5>
-      <div class="flex items-center gap-2 mt-3">
+      <!-- search -->
+      <div class="flex items-center justify-between gap-2 mb-3">
         <div
-          class="flex border items-center justify-center gap-3 w-full max-w-[120px] rounded-xl px-3 py-2"
+          class="px-4 w-[75%] py-3 bg-grey-100 flex items-center gap-2 rounded-lg"
         >
-          $
+          <img src="../assets/svgs/search.svg" alt="" />
           <input
             type="text"
-            class="border outline-none w-full border-none"
-            placeholder="Min"
+            class="lg:w-full text-14 bg-transparent border-none outline-none"
+            placeholder="Finding in marketplace"
           />
         </div>
-        <span class="w-3 h-[2px] bg-grey-200"></span>
-        <div
-          class="flex border items-center justify-center gap-3 w-full max-w-[120px] rounded-xl px-3 py-2"
-        >
-          $
-          <input
-            type="text"
-            class="outline-none border w-full border-none"
-            placeholder="Max"
+        <div class="flex items-center gap-2">
+          <img src="../assets/svgs/frame.png" alt="" />
+          <img
+            src="../assets/svgs/filter.png"
+            alt=""
+            class="filter-music-mobile"
           />
         </div>
       </div>
-    </div>
-    <div class="w-full">
-      <h5 class="text-lg font-semibold mt-5">Product</h5>
-      <div class="flex flex-col gap-4 mt-3">
-        <div class="flex items-center gap-3">
-          <input type="checkbox" /> Option 1
+      <div class="grid grid-cols-2 gap-x-4 gap-y-6 mt-4 mb-[100px]">
+        <div class="overflow-hidden group transition-transform duration-500">
+          <a
+            href="../marketplace/video-detail.html"
+            class="transition-all w-full duration-500 cursor-pointer"
+          >
+            <div class="relative overflow-hidden">
+              <div class="relative">
+                <img
+                  src="../assets/images/playlists/video.png"
+                  alt=""
+                  class="transition-all w-full duration-300 rounded-xl"
+                />
+                <div
+                  class="absolute bottom-[10px] right-[10px] bg-[#151a26] rounded-xl text-12 text-white py-1 px-[6px]"
+                >
+                  03:20
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="mt-2">
+            <h6 class="text-14 font-semibold mb-1 line-clamp-1">
+              Speak of the demon
+            </h6>
+            <div class="flex items-center justify-between gap-5 relative">
+              <div class="flex items-center gap-[6px]">
+                <img class="w-8 h-8" src="../assets/images/st.png" alt="" />
+                <img
+                  src="../assets/svgs/verify.svg"
+                  alt=""
+                  class="absolute bottom-[-4px] left-[1.5rem]"
+                />
+                <div>
+                  <p class="text-12 text-grey-400 truncate overflow-ellipsis">
+                    Owner
+                  </p>
+                  <p class="text-14 text-grey-400 truncate overflow-ellipsis">
+                    Audioslave
+                  </p>
+                </div>
+              </div>
+              <div
+                class="text-base xl:text-18 pl-3 border-l border-l-grey-200 font-bold"
+              >
+                $29
+              </div>
+            </div>
+            <div
+              class="flex items-center h-0 justify-center gap-2 bg-[#0ecad5] rounded-br-2xl rounded-bl-2xl mt-4 text-[#fff]"
+            >
+              <img src="../assets/svgs/shopping-cart.svg" alt="" />
+              <button>Buy now</button>
+            </div>
+          </div>
         </div>
-        <div class="flex items-center gap-3">
-          <input type="checkbox" /> Option 2
+        <div class="overflow-hidden group transition-transform duration-500">
+          <a
+            href="../marketplace/video-detail.html"
+            class="transition-all w-full duration-500 cursor-pointer"
+          >
+            <div class="relative overflow-hidden">
+              <div class="relative">
+                <img
+                  src="../assets/images/playlists/video.png"
+                  alt=""
+                  class="transition-all w-full duration-300 rounded-xl"
+                />
+                <div
+                  class="absolute bottom-[10px] right-[10px] bg-[#151a26] rounded-xl text-12 text-white py-1 px-[6px]"
+                >
+                  03:20
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="mt-2">
+            <h6 class="text-14 font-semibold mb-1 line-clamp-1">
+              Speak of the demon
+            </h6>
+            <div class="flex items-center justify-between gap-5 relative">
+              <div class="flex items-center gap-[6px]">
+                <img class="w-8 h-8" src="../assets/images/st.png" alt="" />
+                <img
+                  src="../assets/svgs/verify.svg"
+                  alt=""
+                  class="absolute bottom-[-4px] left-[1.5rem]"
+                />
+                <div>
+                  <p class="text-12 text-grey-400 truncate overflow-ellipsis">
+                    Owner
+                  </p>
+                  <p class="text-14 text-grey-400 truncate overflow-ellipsis">
+                    Audioslave
+                  </p>
+                </div>
+              </div>
+              <div
+                class="text-base xl:text-18 pl-3 border-l border-l-grey-200 font-bold"
+              >
+                $29
+              </div>
+            </div>
+            <div
+              class="flex items-center h-0 justify-center gap-2 bg-[#0ecad5] rounded-br-2xl rounded-bl-2xl mt-4 text-[#fff]"
+            >
+              <img src="../assets/svgs/shopping-cart.svg" alt="" />
+              <button>Buy now</button>
+            </div>
+          </div>
         </div>
-        <div class="flex items-center gap-3">
-          <input type="checkbox" /> Option 3
+        <div class="overflow-hidden group transition-transform duration-500">
+          <a
+            href="../marketplace/video-detail.html"
+            class="transition-all w-full duration-500 cursor-pointer"
+          >
+            <div class="relative overflow-hidden">
+              <div class="relative">
+                <img
+                  src="../assets/images/playlists/video.png"
+                  alt=""
+                  class="transition-all w-full duration-300 rounded-xl"
+                />
+                <div
+                  class="absolute bottom-[10px] right-[10px] bg-[#151a26] rounded-xl text-12 text-white py-1 px-[6px]"
+                >
+                  03:20
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="mt-2">
+            <h6 class="text-14 font-semibold mb-1 line-clamp-1">
+              Speak of the demon
+            </h6>
+            <div class="flex items-center justify-between gap-5 relative">
+              <div class="flex items-center gap-[6px]">
+                <img class="w-8 h-8" src="../assets/images/st.png" alt="" />
+                <img
+                  src="../assets/svgs/verify.svg"
+                  alt=""
+                  class="absolute bottom-[-4px] left-[1.5rem]"
+                />
+                <div>
+                  <p class="text-12 text-grey-400 truncate overflow-ellipsis">
+                    Owner
+                  </p>
+                  <p class="text-14 text-grey-400 truncate overflow-ellipsis">
+                    Audioslave
+                  </p>
+                </div>
+              </div>
+              <div
+                class="text-base xl:text-18 pl-3 border-l border-l-grey-200 font-bold"
+              >
+                $29
+              </div>
+            </div>
+            <div
+              class="flex items-center h-0 justify-center gap-2 bg-[#0ecad5] rounded-br-2xl rounded-bl-2xl mt-4 text-[#fff]"
+            >
+              <img src="../assets/svgs/shopping-cart.svg" alt="" />
+              <button>Buy now</button>
+            </div>
+          </div>
         </div>
-        <div class="flex items-center gap-3">
-          <input type="checkbox" /> Option 4
+        <div class="overflow-hidden group transition-transform duration-500">
+          <a
+            href="../marketplace/video-detail.html"
+            class="transition-all w-full duration-500 cursor-pointer"
+          >
+            <div class="relative overflow-hidden">
+              <div class="relative">
+                <img
+                  src="../assets/images/playlists/video.png"
+                  alt=""
+                  class="transition-all w-full duration-300 rounded-xl"
+                />
+                <div
+                  class="absolute bottom-[10px] right-[10px] bg-[#151a26] rounded-xl text-12 text-white py-1 px-[6px]"
+                >
+                  03:20
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="mt-2">
+            <h6 class="text-14 font-semibold mb-1 line-clamp-1">
+              Speak of the demon
+            </h6>
+            <div class="flex items-center justify-between gap-5 relative">
+              <div class="flex items-center gap-[6px]">
+                <img class="w-8 h-8" src="../assets/images/st.png" alt="" />
+                <img
+                  src="../assets/svgs/verify.svg"
+                  alt=""
+                  class="absolute bottom-[-4px] left-[1.5rem]"
+                />
+                <div>
+                  <p class="text-12 text-grey-400 truncate overflow-ellipsis">
+                    Owner
+                  </p>
+                  <p class="text-14 text-grey-400 truncate overflow-ellipsis">
+                    Audioslave
+                  </p>
+                </div>
+              </div>
+              <div
+                class="text-base xl:text-18 pl-3 border-l border-l-grey-200 font-bold"
+              >
+                $29
+              </div>
+            </div>
+            <div
+              class="flex items-center h-0 justify-center gap-2 bg-[#0ecad5] rounded-br-2xl rounded-bl-2xl mt-4 text-[#fff]"
+            >
+              <img src="../assets/svgs/shopping-cart.svg" alt="" />
+              <button>Buy now</button>
+            </div>
+          </div>
         </div>
-        <div class="flex items-center gap-3">
-          <input type="checkbox" /> Option 5
+        <div class="overflow-hidden group transition-transform duration-500">
+          <a
+            href="../marketplace/video-detail.html"
+            class="transition-all w-full duration-500 cursor-pointer"
+          >
+            <div class="relative overflow-hidden">
+              <div class="relative">
+                <img
+                  src="../assets/images/playlists/video.png"
+                  alt=""
+                  class="transition-all w-full duration-300 rounded-xl"
+                />
+                <div
+                  class="absolute bottom-[10px] right-[10px] bg-[#151a26] rounded-xl text-12 text-white py-1 px-[6px]"
+                >
+                  03:20
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="mt-2">
+            <h6 class="text-14 font-semibold mb-1 line-clamp-1">
+              Speak of the demon
+            </h6>
+            <div class="flex items-center justify-between gap-5 relative">
+              <div class="flex items-center gap-[6px]">
+                <img class="w-8 h-8" src="../assets/images/st.png" alt="" />
+                <img
+                  src="../assets/svgs/verify.svg"
+                  alt=""
+                  class="absolute bottom-[-4px] left-[1.5rem]"
+                />
+                <div>
+                  <p class="text-12 text-grey-400 truncate overflow-ellipsis">
+                    Owner
+                  </p>
+                  <p class="text-14 text-grey-400 truncate overflow-ellipsis">
+                    Audioslave
+                  </p>
+                </div>
+              </div>
+              <div
+                class="text-base xl:text-18 pl-3 border-l border-l-grey-200 font-bold"
+              >
+                $29
+              </div>
+            </div>
+            <div
+              class="flex items-center h-0 justify-center gap-2 bg-[#0ecad5] rounded-br-2xl rounded-bl-2xl mt-4 text-[#fff]"
+            >
+              <img src="../assets/svgs/shopping-cart.svg" alt="" />
+              <button>Buy now</button>
+            </div>
+          </div>
+        </div>
+        <div class="overflow-hidden group transition-transform duration-500">
+          <a
+            href="../marketplace/video-detail.html"
+            class="transition-all w-full duration-500 cursor-pointer"
+          >
+            <div class="relative overflow-hidden">
+              <div class="relative">
+                <img
+                  src="../assets/images/playlists/video.png"
+                  alt=""
+                  class="transition-all w-full duration-300 rounded-xl"
+                />
+                <div
+                  class="absolute bottom-[10px] right-[10px] bg-[#151a26] rounded-xl text-12 text-white py-1 px-[6px]"
+                >
+                  03:20
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="mt-2">
+            <h6 class="text-14 font-semibold mb-1 line-clamp-1">
+              Speak of the demon
+            </h6>
+            <div class="flex items-center justify-between gap-5 relative">
+              <div class="flex items-center gap-[6px]">
+                <img class="w-8 h-8" src="../assets/images/st.png" alt="" />
+                <img
+                  src="../assets/svgs/verify.svg"
+                  alt=""
+                  class="absolute bottom-[-4px] left-[1.5rem]"
+                />
+                <div>
+                  <p class="text-12 text-grey-400 truncate overflow-ellipsis">
+                    Owner
+                  </p>
+                  <p class="text-14 text-grey-400 truncate overflow-ellipsis">
+                    Audioslave
+                  </p>
+                </div>
+              </div>
+              <div
+                class="text-base xl:text-18 pl-3 border-l border-l-grey-200 font-bold"
+              >
+                $29
+              </div>
+            </div>
+            <div
+              class="flex items-center h-0 justify-center gap-2 bg-[#0ecad5] rounded-br-2xl rounded-bl-2xl mt-4 text-[#fff]"
+            >
+              <img src="../assets/svgs/shopping-cart.svg" alt="" />
+              <button>Buy now</button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="grid grid-cols-2 gap-3 mt-9 font-semibold">
-      <button
-        id="videosBtn"
-        class="px-4 py-2 border text-grey-400 rounded-lg"
-      >
-        Clear
-      </button>
-      <button
-        id="musicBtn"
-        class="px-4 py-2 bg-[#0ecad5] text-[#fff] rounded-lg"
-      >
-        Apply All
-      </button>
-    </div>
-  </div>
-  <!-- button -->
-  <div
-    class="grid grid-cols-3 items-center justify-center w-full bg-[#fff]"
-  >
-    <a
-      href="../marketplace/music.html"
-      class="text-14 active-mobile text-center font-semibold text-grey-300 py-2"
-    >
-      Digital goods
-    </a>
-    <a
-      href="../marketplace/service.html"
-      class="text-center text-14 font-semibold text-grey-300 py-2"
-    >
-      Service
-    </a>
-    <a
-      href="../marketplace/your-shop.html"
-      class="text-center text-14 font-semibold text-grey-300 py-2 "
-    >
-      Your shop
-    </a>
-  </div>
-  <!-- Hero-->
-  <div class="digital block md:hidden  bg-[#fff]">
-    <div class="grid grid-cols-2 p-1 rounded-lg my-5 bg-grey-100">
-      <a
-        href="../marketplace/music.html"
-        class="text-grey-300 text-14 text-center font-semibold px-4 py-2 rounded-lg "
-      >
-        Musics
-      </a>
-      <a
-        href="../marketplace/music.html"
-        class="text-grey-300 text-14 text-center font-semibold px-4 py-2 rounded-lg active-hero"
-      >
-        Videos
-      </a>
-    </div>
-    <!-- search -->
-    <div class="flex items-center justify-between gap-2 mb-3">
       <div
-        class="px-4 w-[75%] py-3  bg-grey-100 flex items-center gap-2 rounded-lg"
+        class="w-full bg-[#fff] py-4 grid grid-cols-5 fixed left-0 bottom-0 box-shadow z-50"
       >
-        <img src="../assets/svgs/search.svg" alt="" />
-        <input
-          type="text"
-          class="lg:w-full text-14 bg-transparent border-none outline-none"
-          placeholder="Finding in marketplace"
-        />
-      </div>
-      <div class="flex items-center gap-2">
-        <img src="../assets/svgs/frame.png" alt="" />
-        <img
-          src="../assets/svgs/filter.png"
-          alt=""
-          class="filter-music-mobile"
-        />
-      </div>
-    </div>
-    <div
-    class="grid grid-cols-2 gap-x-4 gap-y-6 mt-4 mb-[100px]"
-  >
-    
-    <div
-      class="overflow-hidden group transition-transform duration-500"
-    >
-      <a
-        href="../marketplace/video-detail.html"
-        class="transition-all w-full duration-500 cursor-pointer"
-      >
-        <div class="relative overflow-hidden">
-          <div class="relative">
-            <img
-              src="../assets/images/playlists/video.png"
-              alt=""
-              class="transition-all w-full  duration-300 rounded-xl "
-            />
-            <div
-              class="absolute bottom-[10px] right-[10px] bg-[#151a26] rounded-xl text-12 text-white py-1 px-[6px]"
-            >
-              03:20
-            </div>
-          </div>
-        
-        </div>
-      </a>
-      <div class="mt-2">
-        <h6
-          class="text-14 font-semibold mb-1 line-clamp-1"
-        >
-          Speak of the demon
-        </h6>
-        <div
-          class="flex items-center justify-between gap-5 relative"
-        >
-          <div class="flex items-center gap-[6px]">
-            <img
-              class="w-8 h-8"
-              src="../assets/images/st.png"
-              alt=""
-            />
-            <img
-              src="../assets/svgs/verify.svg"
-              alt=""
-              class="absolute bottom-[-4px] left-[1.5rem]"
-            />
-            <div>
-              <p
-                class="text-12 text-grey-400 truncate overflow-ellipsis"
-              >
-                Owner
-              </p>
-              <p
-                class="text-14 text-grey-400 truncate overflow-ellipsis"
-              >
-                Audioslave
-              </p>
-            </div>
-          </div>
-          <div
-            class="text-base xl:text-18 pl-3 border-l border-l-grey-200 font-bold"
+        <div class="flex flex-col items-center gap-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="24"
+            viewBox="0 0 25 24"
+            fill="none"
           >
-            $29
-          </div>
-        </div>
-        <div
-          class="flex items-center h-0 justify-center gap-2 bg-[#0ecad5] rounded-br-2xl rounded-bl-2xl mt-4 text-[#fff]"
-        >
-          <img src="../assets/svgs/shopping-cart.svg" alt="" />
-          <button>Buy now</button>
-        </div>
-      </div>
-    </div>
-    <div
-      class="overflow-hidden group transition-transform duration-500"
-    >
-      <a
-        href="../marketplace/video-detail.html"
-        class="transition-all w-full duration-500 cursor-pointer"
-      >
-        <div class="relative overflow-hidden">
-          <div class="relative">
-            <img
-              src="../assets/images/playlists/video.png"
-              alt=""
-              class="transition-all w-full  duration-300 rounded-xl "
+            <path
+              d="M18.2991 2.10049L8.36912 4.59049C6.91912 4.95049 5.44912 6.42049 5.08912 7.87049L2.59912 17.8005C1.84912 20.8005 3.68912 22.6505 6.69912 21.9005L16.6291 19.4205C18.0691 19.0605 19.5491 17.5805 19.9091 16.1405L22.3991 6.20049C23.1491 3.20049 21.2991 1.35049 18.2991 2.10049Z"
+              stroke="#A1ABB3"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
             />
-            <div
-              class="absolute bottom-[10px] right-[10px] bg-[#151a26] rounded-xl text-12 text-white py-1 px-[6px]"
-            >
-              03:20
-            </div>
-          </div>
-        
+            <path
+              d="M12.5 15.5C14.433 15.5 16 13.933 16 12C16 10.067 14.433 8.5 12.5 8.5C10.567 8.5 9 10.067 9 12C9 13.933 10.567 15.5 12.5 15.5Z"
+              stroke="#A1ABB3"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <p class="text-grey-300 text-[10px]">Discover</p>
         </div>
-      </a>
-      <div class="mt-2">
-        <h6
-          class="text-14 font-semibold mb-1 line-clamp-1"
-        >
-          Speak of the demon
-        </h6>
-        <div
-          class="flex items-center justify-between gap-5 relative"
-        >
-          <div class="flex items-center gap-[6px]">
-            <img
-              class="w-8 h-8"
-              src="../assets/images/st.png"
-              alt=""
-            />
-            <img
-              src="../assets/svgs/verify.svg"
-              alt=""
-              class="absolute bottom-[-4px] left-[1.5rem]"
-            />
-            <div>
-              <p
-                class="text-12 text-grey-400 truncate overflow-ellipsis"
-              >
-                Owner
-              </p>
-              <p
-                class="text-14 text-grey-400 truncate overflow-ellipsis"
-              >
-                Audioslave
-              </p>
-            </div>
-          </div>
-          <div
-            class="text-base xl:text-18 pl-3 border-l border-l-grey-200 font-bold"
+        <div class="flex flex-col items-center gap-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="24"
+            viewBox="0 0 25 24"
+            fill="none"
           >
-            $29
-          </div>
-        </div>
-        <div
-          class="flex items-center h-0 justify-center gap-2 bg-[#0ecad5] rounded-br-2xl rounded-bl-2xl mt-4 text-[#fff]"
-        >
-          <img src="../assets/svgs/shopping-cart.svg" alt="" />
-          <button>Buy now</button>
-        </div>
-      </div>
-    </div>
-    <div
-      class="overflow-hidden group transition-transform duration-500"
-    >
-      <a
-        href="../marketplace/video-detail.html"
-        class="transition-all w-full duration-500 cursor-pointer"
-      >
-        <div class="relative overflow-hidden">
-          <div class="relative">
-            <img
-              src="../assets/images/playlists/video.png"
-              alt=""
-              class="transition-all w-full  duration-300 rounded-xl "
+            <path
+              d="M9.5 22H15.5C20.5 22 22.5 20 22.5 15V9C22.5 4 20.5 2 15.5 2H9.5C4.5 2 2.5 4 2.5 9V15C2.5 20 4.5 22 9.5 22Z"
+              stroke="#A1ABB3"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
             />
-            <div
-              class="absolute bottom-[10px] right-[10px] bg-[#151a26] rounded-xl text-12 text-white py-1 px-[6px]"
-            >
-              03:20
-            </div>
-          </div>
-        
+            <path
+              d="M16.25 9H8.75"
+              stroke="#A1ABB3"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M16.25 15H8.75"
+              stroke="#A1ABB3"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <p class="text-grey-300 text-[10px]">Newsfeed</p>
         </div>
-      </a>
-      <div class="mt-2">
-        <h6
-          class="text-14 font-semibold mb-1 line-clamp-1"
-        >
-          Speak of the demon
-        </h6>
-        <div
-          class="flex items-center justify-between gap-5 relative"
-        >
-          <div class="flex items-center gap-[6px]">
-            <img
-              class="w-8 h-8"
-              src="../assets/images/st.png"
-              alt=""
-            />
-            <img
-              src="../assets/svgs/verify.svg"
-              alt=""
-              class="absolute bottom-[-4px] left-[1.5rem]"
-            />
-            <div>
-              <p
-                class="text-12 text-grey-400 truncate overflow-ellipsis"
-              >
-                Owner
-              </p>
-              <p
-                class="text-14 text-grey-400 truncate overflow-ellipsis"
-              >
-                Audioslave
-              </p>
-            </div>
-          </div>
-          <div
-            class="text-base xl:text-18 pl-3 border-l border-l-grey-200 font-bold"
+        <div class="flex flex-col items-center gap-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="24"
+            viewBox="0 0 25 24"
+            fill="none"
           >
-            $29
-          </div>
-        </div>
-        <div
-          class="flex items-center h-0 justify-center gap-2 bg-[#0ecad5] rounded-br-2xl rounded-bl-2xl mt-4 text-[#fff]"
-        >
-          <img src="../assets/svgs/shopping-cart.svg" alt="" />
-          <button>Buy now</button>
-        </div>
-      </div>
-    </div>
-    <div
-      class="overflow-hidden group transition-transform duration-500"
-    >
-      <a
-        href="../marketplace/video-detail.html"
-        class="transition-all w-full duration-500 cursor-pointer"
-      >
-        <div class="relative overflow-hidden">
-          <div class="relative">
-            <img
-              src="../assets/images/playlists/video.png"
-              alt=""
-              class="transition-all w-full  duration-300 rounded-xl "
+            <path
+              d="M12 21C17.2467 21 21.5 16.7467 21.5 11.5C21.5 6.25329 17.2467 2 12 2C6.75329 2 2.5 6.25329 2.5 11.5C2.5 16.7467 6.75329 21 12 21Z"
+              stroke="#A1ABB3"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
             />
-            <div
-              class="absolute bottom-[10px] right-[10px] bg-[#151a26] rounded-xl text-12 text-white py-1 px-[6px]"
-            >
-              03:20
-            </div>
-          </div>
-        
+            <path
+              d="M22.5 22L20.5 20"
+              stroke="#A1ABB3"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <p class="text-grey-300 text-[10px]">Search</p>
         </div>
-      </a>
-      <div class="mt-2">
-        <h6
-          class="text-14 font-semibold mb-1 line-clamp-1"
-        >
-          Speak of the demon
-        </h6>
-        <div
-          class="flex items-center justify-between gap-5 relative"
-        >
-          <div class="flex items-center gap-[6px]">
-            <img
-              class="w-8 h-8"
-              src="../assets/images/st.png"
-              alt=""
-            />
-            <img
-              src="../assets/svgs/verify.svg"
-              alt=""
-              class="absolute bottom-[-4px] left-[1.5rem]"
-            />
-            <div>
-              <p
-                class="text-12 text-grey-400 truncate overflow-ellipsis"
-              >
-                Owner
-              </p>
-              <p
-                class="text-14 text-grey-400 truncate overflow-ellipsis"
-              >
-                Audioslave
-              </p>
-            </div>
-          </div>
-          <div
-            class="text-base xl:text-18 pl-3 border-l border-l-grey-200 font-bold"
+        <div class="flex flex-col items-center gap-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="24"
+            viewBox="0 0 25 24"
+            fill="none"
           >
-            $29
-          </div>
-        </div>
-        <div
-          class="flex items-center h-0 justify-center gap-2 bg-[#0ecad5] rounded-br-2xl rounded-bl-2xl mt-4 text-[#fff]"
-        >
-          <img src="../assets/svgs/shopping-cart.svg" alt="" />
-          <button>Buy now</button>
-        </div>
-      </div>
-    </div>
-    <div
-      class="overflow-hidden group transition-transform duration-500"
-    >
-      <a
-        href="../marketplace/video-detail.html"
-        class="transition-all w-full duration-500 cursor-pointer"
-      >
-        <div class="relative overflow-hidden">
-          <div class="relative">
-            <img
-              src="../assets/images/playlists/video.png"
-              alt=""
-              class="transition-all w-full  duration-300 rounded-xl "
+            <path
+              d="M3.30626 10.8955L3.30627 10.8955L3.30433 10.893C2.75727 10.1897 2.4988 9.27828 2.58738 8.32765C2.58741 8.32728 2.58745 8.3269 2.58748 8.32653L2.85622 5.58947C3.06438 4.12252 3.48401 3.19141 4.11886 2.61702C4.75087 2.0452 5.6819 1.75 7.08965 1.75H9.48965H10.9697H14.0097H15.4896H17.8497C19.2521 1.75 20.184 2.04507 20.8165 2.61418C21.4512 3.18536 21.8703 4.10946 22.0733 5.56058L22.3619 8.31786C22.362 8.31857 22.3621 8.31928 22.3622 8.31999C22.4504 9.24282 22.21 10.1263 21.6896 10.82L21.6896 10.8199L21.6841 10.8275C21.0337 11.7295 19.9888 12.25 18.8096 12.25C17.7324 12.25 16.6849 11.7181 16.0043 10.843L15.5855 10.3046L15.1981 10.866C14.6035 11.7278 13.6289 12.25 12.4997 12.25C11.3742 12.25 10.3705 11.7012 9.78441 10.8308L9.39228 10.2483L8.97013 10.8094C8.30017 11.6997 7.23535 12.25 6.13965 12.25C4.98687 12.25 3.96675 11.7559 3.30626 10.8955Z"
+              fill="#1A75FF"
+              stroke="#1A75FF"
             />
-            <div
-              class="absolute bottom-[10px] right-[10px] bg-[#151a26] rounded-xl text-12 text-white py-1 px-[6px]"
-            >
-              03:20
-            </div>
-          </div>
-        
+            <path
+              d="M11.9001 17.1576L11.901 17.1575C12.9835 17.0446 13.7117 17.233 14.1615 17.5957C14.5992 17.9486 14.8737 18.5488 14.8691 19.4979H14.8691V19.5002V21.8802H10.1191V19.1502C10.1191 18.122 10.8897 17.2611 11.9001 17.1576Z"
+              fill="#1A75FF"
+              stroke="#1A75FF"
+            />
+            <path
+              d="M4.30407 13.9514L4.30404 13.9515L4.31275 13.9544C4.60198 14.0508 4.89989 14.1289 5.21425 14.1742C5.32351 14.1924 5.47473 14.2166 5.62771 14.2197C5.79853 14.2399 5.96961 14.2501 6.14086 14.2501C7.28638 14.2501 8.40691 13.8715 9.33476 13.2136C10.2339 13.8736 11.3411 14.2501 12.5009 14.2501C13.6666 14.2501 14.7601 13.8911 15.6587 13.2321C16.5817 13.8795 17.6833 14.2501 18.8109 14.2501C19.0058 14.2501 19.2024 14.2394 19.3906 14.2177C19.5039 14.2082 19.6285 14.197 19.7574 14.1743C20.108 14.1277 20.4207 14.0271 20.6888 13.9409L20.7039 13.9361L20.7039 13.9361L20.7112 13.9337C21.0396 13.8225 21.3709 14.0651 21.3709 14.4001V17.3801C21.3709 19.8606 19.3601 21.8747 16.8809 21.8801V19.5001C16.8809 18.1168 16.4562 16.9665 15.5659 16.1689C14.7808 15.455 13.7392 15.1301 12.5209 15.1301C12.2576 15.1301 11.9894 15.1406 11.6981 15.1729C9.66179 15.38 8.12086 17.0964 8.12086 19.1501V21.8801C5.64159 21.8747 3.63086 19.8606 3.63086 17.3801V14.4201C3.63086 14.0747 3.97042 13.8334 4.30407 13.9514Z"
+              fill="#1A75FF"
+              stroke="#1A75FF"
+            />
+          </svg>
+          <p class="text-[#1975ff] text-[10px]">Marketplace</p>
         </div>
-      </a>
-      <div class="mt-2">
-        <h6
-          class="text-14 font-semibold mb-1 line-clamp-1"
-        >
-          Speak of the demon
-        </h6>
-        <div
-          class="flex items-center justify-between gap-5 relative"
-        >
-          <div class="flex items-center gap-[6px]">
-            <img
-              class="w-8 h-8"
-              src="../assets/images/st.png"
-              alt=""
-            />
-            <img
-              src="../assets/svgs/verify.svg"
-              alt=""
-              class="absolute bottom-[-4px] left-[1.5rem]"
-            />
-            <div>
-              <p
-                class="text-12 text-grey-400 truncate overflow-ellipsis"
-              >
-                Owner
-              </p>
-              <p
-                class="text-14 text-grey-400 truncate overflow-ellipsis"
-              >
-                Audioslave
-              </p>
-            </div>
-          </div>
-          <div
-            class="text-base xl:text-18 pl-3 border-l border-l-grey-200 font-bold"
+        <div class="flex flex-col items-center gap-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="24"
+            viewBox="0 0 25 24"
+            fill="none"
           >
-            $29
-          </div>
-        </div>
-        <div
-          class="flex items-center h-0 justify-center gap-2 bg-[#0ecad5] rounded-br-2xl rounded-bl-2xl mt-4 text-[#fff]"
-        >
-          <img src="../assets/svgs/shopping-cart.svg" alt="" />
-          <button>Buy now</button>
+            <path
+              d="M21 3.99981L21 18.4998C21 18.7998 20.9 19.0998 20.6 19.2998L18.6 20.7998C17.9 21.2998 17 20.7998 17 19.9998L17 5.49981C17 5.19981 17.1 4.89981 17.4 4.69981L19.4 3.19981C20.1 2.69981 21 3.19981 21 3.99981Z"
+              stroke="#A1ABB3"
+              stroke-width="1.5"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M14.5 19.9998L14.5 5.49981C14.5 5.19981 14.4 4.89981 14.1 4.69981L12.1 3.19981C11.4 2.69981 10.5 3.19981 10.5 3.99981L10.5 18.4998C10.5 18.7998 10.6 19.0998 10.9 19.2998L12.9 20.7998C13.6 21.2998 14.5 20.7998 14.5 19.9998Z"
+              stroke="#A1ABB3"
+              stroke-width="1.5"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M8 3.99981L8 18.4998C8 18.7998 7.9 19.0998 7.6 19.2998L5.6 20.7998C4.9 21.2998 4 20.7998 4 19.9998L4 5.49981C4 5.19981 4.1 4.89981 4.4 4.69981L6.4 3.19981C7.1 2.69981 8 3.19981 8 3.99981Z"
+              stroke="#A1ABB3"
+              stroke-width="1.5"
+              stroke-miterlimit="10"
+            />
+          </svg>
+          <p class="text-grey-300 text-[10px]">Library</p>
         </div>
       </div>
-    </div>
-    <div
-      class="overflow-hidden group transition-transform duration-500"
-    >
-      <a
-        href="../marketplace/video-detail.html"
-        class="transition-all w-full duration-500 cursor-pointer"
-      >
-        <div class="relative overflow-hidden">
-          <div class="relative">
-            <img
-              src="../assets/images/playlists/video.png"
-              alt=""
-              class="transition-all w-full  duration-300 rounded-xl "
-            />
-            <div
-              class="absolute bottom-[10px] right-[10px] bg-[#151a26] rounded-xl text-12 text-white py-1 px-[6px]"
-            >
-              03:20
-            </div>
-          </div>
-        
-        </div>
-      </a>
-      <div class="mt-2">
-        <h6
-          class="text-14 font-semibold mb-1 line-clamp-1"
-        >
-          Speak of the demon
-        </h6>
-        <div
-          class="flex items-center justify-between gap-5 relative"
-        >
-          <div class="flex items-center gap-[6px]">
-            <img
-              class="w-8 h-8"
-              src="../assets/images/st.png"
-              alt=""
-            />
-            <img
-              src="../assets/svgs/verify.svg"
-              alt=""
-              class="absolute bottom-[-4px] left-[1.5rem]"
-            />
-            <div>
-              <p
-                class="text-12 text-grey-400 truncate overflow-ellipsis"
-              >
-                Owner
-              </p>
-              <p
-                class="text-14 text-grey-400 truncate overflow-ellipsis"
-              >
-                Audioslave
-              </p>
-            </div>
-          </div>
-          <div
-            class="text-base xl:text-18 pl-3 border-l border-l-grey-200 font-bold"
-          >
-            $29
-          </div>
-        </div>
-        <div
-          class="flex items-center h-0 justify-center gap-2 bg-[#0ecad5] rounded-br-2xl rounded-bl-2xl mt-4 text-[#fff]"
-        >
-          <img src="../assets/svgs/shopping-cart.svg" alt="" />
-          <button>Buy now</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    class="w-full bg-[#fff] py-4 grid grid-cols-5 fixed left-0 bottom-0 box-shadow z-50"
-  >
-    <div class="flex flex-col items-center gap-1">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="25"
-        height="24"
-        viewBox="0 0 25 24"
-        fill="none"
-      >
-        <path
-          d="M18.2991 2.10049L8.36912 4.59049C6.91912 4.95049 5.44912 6.42049 5.08912 7.87049L2.59912 17.8005C1.84912 20.8005 3.68912 22.6505 6.69912 21.9005L16.6291 19.4205C18.0691 19.0605 19.5491 17.5805 19.9091 16.1405L22.3991 6.20049C23.1491 3.20049 21.2991 1.35049 18.2991 2.10049Z"
-          stroke="#A1ABB3"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M12.5 15.5C14.433 15.5 16 13.933 16 12C16 10.067 14.433 8.5 12.5 8.5C10.567 8.5 9 10.067 9 12C9 13.933 10.567 15.5 12.5 15.5Z"
-          stroke="#A1ABB3"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
-      <p class="text-grey-300 text-[10px]">Discover</p>
-    </div>
-    <div class="flex flex-col items-center gap-1">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="25"
-        height="24"
-        viewBox="0 0 25 24"
-        fill="none"
-      >
-        <path
-          d="M9.5 22H15.5C20.5 22 22.5 20 22.5 15V9C22.5 4 20.5 2 15.5 2H9.5C4.5 2 2.5 4 2.5 9V15C2.5 20 4.5 22 9.5 22Z"
-          stroke="#A1ABB3"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M16.25 9H8.75"
-          stroke="#A1ABB3"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M16.25 15H8.75"
-          stroke="#A1ABB3"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
-      <p class="text-grey-300 text-[10px]">Newsfeed</p>
-    </div>
-    <div class="flex flex-col items-center gap-1">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="25"
-        height="24"
-        viewBox="0 0 25 24"
-        fill="none"
-      >
-        <path
-          d="M12 21C17.2467 21 21.5 16.7467 21.5 11.5C21.5 6.25329 17.2467 2 12 2C6.75329 2 2.5 6.25329 2.5 11.5C2.5 16.7467 6.75329 21 12 21Z"
-          stroke="#A1ABB3"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M22.5 22L20.5 20"
-          stroke="#A1ABB3"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
-      <p class="text-grey-300 text-[10px]">Search</p>
-    </div>
-    <div class="flex flex-col items-center gap-1">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="25"
-        height="24"
-        viewBox="0 0 25 24"
-        fill="none"
-      >
-        <path
-          d="M3.30626 10.8955L3.30627 10.8955L3.30433 10.893C2.75727 10.1897 2.4988 9.27828 2.58738 8.32765C2.58741 8.32728 2.58745 8.3269 2.58748 8.32653L2.85622 5.58947C3.06438 4.12252 3.48401 3.19141 4.11886 2.61702C4.75087 2.0452 5.6819 1.75 7.08965 1.75H9.48965H10.9697H14.0097H15.4896H17.8497C19.2521 1.75 20.184 2.04507 20.8165 2.61418C21.4512 3.18536 21.8703 4.10946 22.0733 5.56058L22.3619 8.31786C22.362 8.31857 22.3621 8.31928 22.3622 8.31999C22.4504 9.24282 22.21 10.1263 21.6896 10.82L21.6896 10.8199L21.6841 10.8275C21.0337 11.7295 19.9888 12.25 18.8096 12.25C17.7324 12.25 16.6849 11.7181 16.0043 10.843L15.5855 10.3046L15.1981 10.866C14.6035 11.7278 13.6289 12.25 12.4997 12.25C11.3742 12.25 10.3705 11.7012 9.78441 10.8308L9.39228 10.2483L8.97013 10.8094C8.30017 11.6997 7.23535 12.25 6.13965 12.25C4.98687 12.25 3.96675 11.7559 3.30626 10.8955Z"
-          fill="#1A75FF"
-          stroke="#1A75FF"
-        />
-        <path
-          d="M11.9001 17.1576L11.901 17.1575C12.9835 17.0446 13.7117 17.233 14.1615 17.5957C14.5992 17.9486 14.8737 18.5488 14.8691 19.4979H14.8691V19.5002V21.8802H10.1191V19.1502C10.1191 18.122 10.8897 17.2611 11.9001 17.1576Z"
-          fill="#1A75FF"
-          stroke="#1A75FF"
-        />
-        <path
-          d="M4.30407 13.9514L4.30404 13.9515L4.31275 13.9544C4.60198 14.0508 4.89989 14.1289 5.21425 14.1742C5.32351 14.1924 5.47473 14.2166 5.62771 14.2197C5.79853 14.2399 5.96961 14.2501 6.14086 14.2501C7.28638 14.2501 8.40691 13.8715 9.33476 13.2136C10.2339 13.8736 11.3411 14.2501 12.5009 14.2501C13.6666 14.2501 14.7601 13.8911 15.6587 13.2321C16.5817 13.8795 17.6833 14.2501 18.8109 14.2501C19.0058 14.2501 19.2024 14.2394 19.3906 14.2177C19.5039 14.2082 19.6285 14.197 19.7574 14.1743C20.108 14.1277 20.4207 14.0271 20.6888 13.9409L20.7039 13.9361L20.7039 13.9361L20.7112 13.9337C21.0396 13.8225 21.3709 14.0651 21.3709 14.4001V17.3801C21.3709 19.8606 19.3601 21.8747 16.8809 21.8801V19.5001C16.8809 18.1168 16.4562 16.9665 15.5659 16.1689C14.7808 15.455 13.7392 15.1301 12.5209 15.1301C12.2576 15.1301 11.9894 15.1406 11.6981 15.1729C9.66179 15.38 8.12086 17.0964 8.12086 19.1501V21.8801C5.64159 21.8747 3.63086 19.8606 3.63086 17.3801V14.4201C3.63086 14.0747 3.97042 13.8334 4.30407 13.9514Z"
-          fill="#1A75FF"
-          stroke="#1A75FF"
-        />
-      </svg>
-      <p class="text-[#1975ff] text-[10px]">Marketplace</p>
-    </div>
-    <div class="flex flex-col items-center gap-1">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="25"
-        height="24"
-        viewBox="0 0 25 24"
-        fill="none"
-      >
-        <path
-          d="M21 3.99981L21 18.4998C21 18.7998 20.9 19.0998 20.6 19.2998L18.6 20.7998C17.9 21.2998 17 20.7998 17 19.9998L17 5.49981C17 5.19981 17.1 4.89981 17.4 4.69981L19.4 3.19981C20.1 2.69981 21 3.19981 21 3.99981Z"
-          stroke="#A1ABB3"
-          stroke-width="1.5"
-          stroke-miterlimit="10"
-        />
-        <path
-          d="M14.5 19.9998L14.5 5.49981C14.5 5.19981 14.4 4.89981 14.1 4.69981L12.1 3.19981C11.4 2.69981 10.5 3.19981 10.5 3.99981L10.5 18.4998C10.5 18.7998 10.6 19.0998 10.9 19.2998L12.9 20.7998C13.6 21.2998 14.5 20.7998 14.5 19.9998Z"
-          stroke="#A1ABB3"
-          stroke-width="1.5"
-          stroke-miterlimit="10"
-        />
-        <path
-          d="M8 3.99981L8 18.4998C8 18.7998 7.9 19.0998 7.6 19.2998L5.6 20.7998C4.9 21.2998 4 20.7998 4 19.9998L4 5.49981C4 5.19981 4.1 4.89981 4.4 4.69981L6.4 3.19981C7.1 2.69981 8 3.19981 8 3.99981Z"
-          stroke="#A1ABB3"
-          stroke-width="1.5"
-          stroke-miterlimit="10"
-        />
-      </svg>
-      <p class="text-grey-300 text-[10px]">Library</p>
-    </div>
-  </div>
-</section>
+    </section>
   </body>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
