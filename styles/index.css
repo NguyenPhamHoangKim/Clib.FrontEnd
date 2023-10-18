@@ -2157,6 +2157,10 @@ body{
   width: 165px;
 }
 
+.w-\[180px\]{
+  width: 180px;
+}
+
 .w-\[190px\]{
   width: 190px;
 }
@@ -2308,10 +2312,6 @@ body{
 
 .w-full{
   width: 100%;
-}
-
-.w-\[180px\]{
-  width: 180px;
 }
 
 .max-w-\[100px\]{
@@ -2838,6 +2838,10 @@ body{
   grid-template-columns: 256px 1fr;
 }
 
+.grid-cols-\[260px\2c 260px\]{
+  grid-template-columns: 260px 260px;
+}
+
 .grid-cols-\[300px\2c 300px\]{
   grid-template-columns: 300px 300px;
 }
@@ -2856,18 +2860,6 @@ body{
 
 .grid-cols-\[456px_1fr\]{
   grid-template-columns: 456px 1fr;
-}
-
-.grid-cols-\[90vw\2c 90vw\]{
-  grid-template-columns: 90vw 90vw;
-}
-
-.grid-cols-\[280px\2c 280px\]{
-  grid-template-columns: 280px 280px;
-}
-
-.grid-cols-\[260px\2c 260px\]{
-  grid-template-columns: 260px 260px;
 }
 
 .flex-row{
