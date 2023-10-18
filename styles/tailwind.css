@@ -266,14 +266,6 @@
   @apply text-grey-400;
 }
 
-a.swiper-slide img {
-  @apply transition-transform duration-700;
-}
-
-a.swiper-slide:not(.video-item):not(.digital-item):hover img {
-  @apply scale-125;
-}
-
 a.swiper-slide.digital-item:hover .digital-thumb {
   @apply scale-125;
 }
