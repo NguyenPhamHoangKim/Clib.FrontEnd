@@ -4388,6 +4388,11 @@ body{
   padding-bottom: 46px;
 }
 
+.py-\[7px\]{
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
 .pb-2{
   padding-bottom: 0.5rem;
 }
@@ -4890,6 +4895,10 @@ body{
 
 .underline-offset-1{
   text-underline-offset: 1px;
+}
+
+.underline-offset-2{
+  text-underline-offset: 2px;
 }
 
 .antialiased{
@@ -6500,6 +6509,14 @@ input {
   }
 }
 
+.placeholder\:text-center::-moz-placeholder{
+  text-align: center;
+}
+
+.placeholder\:text-center::placeholder{
+  text-align: center;
+}
+
 .placeholder\:text-grey-300::-moz-placeholder{
   --tw-text-opacity: 1;
   color: rgb(161 171 178 / var(--tw-text-opacity));
@@ -7073,6 +7090,10 @@ input {
 
   .md\:h-auto{
     height: auto;
+  }
+
+  .md\:h-\[280px\]{
+    height: 280px;
   }
 
   .md\:w-16{

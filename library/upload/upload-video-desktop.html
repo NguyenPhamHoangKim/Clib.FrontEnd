@@ -636,22 +636,36 @@
                 <div class="flex items-center gap-2">
                   <p class="text-14 lg:text-base font-semibold">file</p>
                   <p class="px-6 py-2 bg-grey-100 rounded-xl text-grey-400">
-                    demosong.mp3
+                    demosong.mp4
                   </p>
                 </div>
-                <div class="px-6 py-2 bg-grey-100 rounded-xl text-grey-400">
+                <button class="px-6 py-2 bg-grey-100 rounded-xl text-grey-400">
                   Replace
-                </div>
+                </button>
               </div>
-              <div class="flex flex-col lg:flex-row lg:items-center gap-8">
-                <div class="lg:w-[40%]">
-                  <img
-                    src="../../assets/svgs/Frame 48096929.png"
-                    alt=""
-                    class="w-full lg:h-[280px] object-cover rounded-xl"
-                  />
-                </div>
-                <form class="lg:w-[60%] flex flex-col gap-3 text-grey-400">
+              <div class="grid lg:grid-cols-2 lg:items-center gap-8">
+                <button
+                  class="w-full md:h-[280px] bg-grey-200 rounded-xl relative"
+                >
+                  <div class="flex flex-col gap-2 items-center">
+                    <svg
+                      width="49"
+                      height="48"
+                      viewBox="0 0 49 48"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M36.4998 12C35.2798 12 34.1598 11.3 33.5998 10.22L32.1598 7.32C31.2398 5.5 28.8398 4 26.7998 4H22.2198C20.1598 4 17.7598 5.5 16.8398 7.32L15.3998 10.22C14.8398 11.3 13.7198 12 12.4998 12C8.15985 12 4.71985 15.66 4.99985 19.98L6.03985 36.5C6.27985 40.62 8.49985 44 14.0198 44H34.9798C40.4998 44 42.6998 40.62 42.9598 36.5L43.9998 19.98C44.2798 15.66 40.8398 12 36.4998 12ZM21.4998 14.5H27.4998C28.3198 14.5 28.9998 15.18 28.9998 16C28.9998 16.82 28.3198 17.5 27.4998 17.5H21.4998C20.6798 17.5 19.9998 16.82 19.9998 16C19.9998 15.18 20.6798 14.5 21.4998 14.5ZM24.4998 36.24C20.7798 36.24 17.7398 33.22 17.7398 29.48C17.7398 25.74 20.7598 22.72 24.4998 22.72C28.2398 22.72 31.2598 25.74 31.2598 29.48C31.2598 33.22 28.2198 36.24 24.4998 36.24Z"
+                        fill="#A1ABB3"
+                      />
+                    </svg>
+                    <span class="font-semibold text-grey-400"
+                      >Upload thumnail</span
+                    >
+                  </div>
+                </button>
+                <form class="flex flex-col gap-3 text-grey-400">
                   <div class="flex flex-col gap-2">
                     <label class="text-14 lg:text-base font-semibold"
                       >Title</label
@@ -662,13 +676,36 @@
                       class="w-full px-4 py-3 titile bg-grey-100 rounded-xl outline-none border-none"
                     />
                   </div>
-
+                  <div>
+                    <label
+                      class="text-14 lg:text-base font-semibold"
+                      for="Genre"
+                      >Genre</label
+                    >
+                    <select
+                      data-te-select-init
+                      class="w-full genre custom-select outline-none border-none px-4 py-3 bg-grey-100 rounded-xl mt-2"
+                    >
+                      <option
+                        class="outline-none border-none px-4 py-3 bg-grey-100 rounded-xl"
+                        value="1"
+                      >
+                        Pop
+                      </option>
+                      <option
+                        class="outline-none border-none px-4 py-3 bg-grey-100 rounded-xl"
+                        value="5"
+                      >
+                        Rock
+                      </option>
+                    </select>
+                  </div>
                   <div class="flex flex-col gap-2">
                     <label class="text-14 lg:text-base font-semibold"
                       >Description</label
                     >
                     <textarea
-                      class="bg-grey-100 description rounded-xl min-h-[96px] h-[96px] outline-none border-none px-4 py-3"
+                      class="bg-grey-100 description rounded-xl min-h-[96px] h-[96px] outline-none border-none px-4 py-3 resize-none"
                       name="Description"
                       id=""
                       cols="30"
@@ -677,10 +714,10 @@
                     ></textarea>
                   </div>
                   <div
-                    class="text-14 lg:text-base font-semibold flex items-center gap-3"
+                    class="text-14 lg:text-base font-semibold flex items-center gap-4"
                   >
-                    Privacy
-                    <div class="flex items-center gap-1 font-normal ml-12">
+                    <div class="lg:w-20">Privacy</div>
+                    <div class="flex items-center gap-1 font-normal">
                       <input type="radio" />Public
                     </div>
                     <div class="flex items-center gap-1 font-normal">
@@ -688,26 +725,46 @@
                     </div>
                   </div>
                   <div
-                    class="text-14 lg:text-base font-semibold flex gap-3 items-center"
+                    class="text-14 lg:text-base font-semibold flex flex-col md:flex-row gap-4 md:items-center"
                   >
-                    Sell
-                    <div
-                      class="flex text-14 items-center font-normal line-clamp-1 ml-20 gap-1 text-grey-300"
-                    >
+                    <div class="lg:w-20">Sell</div>
+                    <div class="flex items-center font-normal gap-1">
                       <input type="radio" />No, It’s free
                     </div>
-                    <div
-                      class="flex text-14 items-center font-normal line-clamp-1 gap-1 text-grey-300"
-                    >
+                    <div class="flex items-center font-normal gap-1">
                       <input type="radio" />Yes, It’s for sell
                     </div>
                   </div>
-                  <div
-                    class="flex items-center py-2 w-[50%] justify-between rounded-xl px-4 text-16 font-semibold text-neutral-dark-500 border border-grey-200 md:hidden"
-                  >
-                    <p>$</p>
-                    <span>78</span>
-                    <p class="invisible">$</p>
+                  <div class="flex items-center gap-4">
+                    <div class="lg:w-20"></div>
+                    <div
+                      class="text-grey-400 px-4 py-[7px] rounded-xl border border-grey-200 flex items-center font-semibold text-18 gap-4"
+                    >
+                      <svg
+                        class="flex-shrink-0"
+                        width="11"
+                        height="17"
+                        viewBox="0 0 11 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.206 11.382C10.206 12.006 10.044 12.594 9.72 13.146C9.408 13.686 8.94 14.136 8.316 14.496C7.704 14.844 6.978 15.048 6.138 15.108V16.566H4.986V15.09C3.786 14.982 2.82 14.622 2.088 14.01C1.356 13.386 0.978 12.546 0.954 11.49H3.654C3.726 12.354 4.17 12.876 4.986 13.056V9.618C4.122 9.402 3.426 9.186 2.898 8.97C2.37 8.754 1.914 8.406 1.53 7.926C1.146 7.446 0.954 6.792 0.954 5.964C0.954 4.92 1.326 4.068 2.07 3.408C2.826 2.748 3.798 2.37 4.986 2.274V0.815999H6.138V2.274C7.29 2.37 8.208 2.718 8.892 3.318C9.588 3.918 9.978 4.746 10.062 5.802H7.344C7.308 5.454 7.182 5.154 6.966 4.902C6.762 4.638 6.486 4.452 6.138 4.344V7.746C7.038 7.974 7.746 8.196 8.262 8.412C8.79 8.616 9.246 8.958 9.63 9.438C10.014 9.906 10.206 10.554 10.206 11.382ZM3.582 5.838C3.582 6.234 3.702 6.558 3.942 6.81C4.182 7.05 4.53 7.248 4.986 7.404V4.29C4.554 4.35 4.212 4.512 3.96 4.776C3.708 5.04 3.582 5.394 3.582 5.838ZM6.138 13.092C6.594 13.008 6.948 12.822 7.2 12.534C7.464 12.246 7.596 11.898 7.596 11.49C7.596 11.094 7.47 10.776 7.218 10.536C6.966 10.296 6.606 10.098 6.138 9.942V13.092Z"
+                          fill="#2C2F33"
+                        />
+                      </svg>
+                      <input
+                        type="text"
+                        class="flex-1 placeholder:text-grey-300 placeholder:text-center text-center"
+                        placeholder="Price"
+                      />
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="lg:w-20"></div>
+                    <div class="text-14 text-grey-400">
+                      If you choose Yes, your product will appear on Marketplace
+                    </div>
                   </div>
                   <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 mt-9">
                     <button
@@ -1111,16 +1168,33 @@
       <div class="container mt-4">
         <div class="w-full">
           <div class="flex flex-col lg:flex-row lg:items-center gap-8">
-            <div class="h-[200px] w-[200px] mx-auto md:w-[500px] md:h-[500px]">
-              <img
-                src="../../assets/svgs/Frame 48096929.png"
-                alt=""
-                class="w-full rounded-xl object-cover h-full"
-              />
-            </div>
+            <button
+              class="h-[200px] w-[200px] mx-auto rounded-xl bg-grey-200 relative"
+            >
+              <div
+                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-2"
+              >
+                <svg
+                  width="33"
+                  height="32"
+                  viewBox="0 0 33 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M24.5009 7.99935C23.6875 7.99935 22.9409 7.53268 22.5675 6.81268L21.6075 4.87935C20.9942 3.66602 19.3942 2.66602 18.0342 2.66602H14.9809C13.6075 2.66602 12.0075 3.66602 11.3942 4.87935L10.4342 6.81268C10.0609 7.53268 9.31421 7.99935 8.50087 7.99935C5.60754 7.99935 3.31421 10.4393 3.50087 13.3193L4.19421 24.3327C4.35421 27.0793 5.83421 29.3327 9.51421 29.3327H23.4875C27.1675 29.3327 28.6342 27.0793 28.8075 24.3327L29.5009 13.3193C29.6875 10.4393 27.3942 7.99935 24.5009 7.99935ZM14.5009 9.66602H18.5009C19.0475 9.66602 19.5009 10.1193 19.5009 10.666C19.5009 11.2127 19.0475 11.666 18.5009 11.666H14.5009C13.9542 11.666 13.5009 11.2127 13.5009 10.666C13.5009 10.1193 13.9542 9.66602 14.5009 9.66602ZM16.5009 24.1594C14.0209 24.1594 11.9942 22.146 11.9942 19.6527C11.9942 17.1593 14.0075 15.146 16.5009 15.146C18.9942 15.146 21.0075 17.1593 21.0075 19.6527C21.0075 22.146 18.9809 24.1594 16.5009 24.1594Z"
+                    fill="#A1ABB3"
+                  />
+                </svg>
+                <span
+                  class="underline font-semibold text-14 text-grey-400 underline-offset-1"
+                  >Upload thumbnail</span
+                >
+              </div>
+            </button>
             <form class="lg:w-[60%] flex flex-col gap-3 text-grey-400">
               <div class="flex flex-col gap-2">
-                <label class="text-14 lg:text-base font-semibold">Tittle</label>
+                <label class="text-14 lg:text-base font-semibold">Title</label>
                 <input
                   type="text"
                   placeholder="Title"

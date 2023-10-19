@@ -639,20 +639,57 @@
                     demosong.mp3
                   </p>
                 </div>
-                <div class="px-6 py-2 bg-grey-100 rounded-xl text-grey-400">
+                <button class="px-6 py-2 bg-grey-100 rounded-xl text-grey-400">
                   Replace
-                </div>
+                </button>
               </div>
               <div class="flex flex-col lg:flex-row lg:items-center gap-8">
-                <div
-                  class="h-[200px] w-[200px] mx-auto md:w-[500px] md:h-[500px]"
+                <button
+                  class="h-[200px] w-[200px] mx-auto md:w-[500px] md:h-[500px] relative"
                 >
                   <img
-                    src="../../assets/svgs/Frame 48096929.png"
+                    src="../../assets/images/upload-sample.jpg"
                     alt=""
                     class="w-full rounded-xl object-cover h-full"
                   />
-                </div>
+                  <div
+                    class="absolute right-3 top-3 px-4 py-2.5 flex items-center gap-2 text-white backdrop-blur-[10px] bg-black/40 rounded-full"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.31982 6.49945L11.8798 3.93945L14.4398 6.49945"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M11.8799 14.1798V4.00977"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M4 12C4 16.42 7 20 12 20C17 20 20 16.42 20 12"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    Replace
+                  </div>
+                </button>
                 <form class="lg:w-[60%] flex flex-col gap-3 text-grey-400">
                   <div class="flex flex-col gap-2">
                     <label class="text-14 lg:text-base font-semibold"
@@ -693,7 +730,7 @@
                       >Description</label
                     >
                     <textarea
-                      class="bg-grey-100 description rounded-xl min-h-[96px] h-[96px] outline-none border-none px-4 py-3"
+                      class="bg-grey-100 description rounded-xl min-h-[96px] h-[96px] outline-none border-none px-4 py-3 resize-none"
                       name="Description"
                       id=""
                       cols="30"
@@ -702,10 +739,10 @@
                     ></textarea>
                   </div>
                   <div
-                    class="text-14 lg:text-base font-semibold flex items-center gap-3"
+                    class="text-14 lg:text-base font-semibold flex items-center gap-4"
                   >
-                    Privacy
-                    <div class="flex items-center gap-1 font-normal lg:ml-12">
+                    <div class="lg:w-20">Privacy</div>
+                    <div class="flex items-center gap-1 font-normal">
                       <input type="radio" />Public
                     </div>
                     <div class="flex items-center gap-1 font-normal">
@@ -713,18 +750,45 @@
                     </div>
                   </div>
                   <div
-                    class="text-14 lg:text-base font-semibold flex flex-col md:flex-row gap-3 md:items-center"
+                    class="text-14 lg:text-base font-semibold flex flex-col md:flex-row gap-4 md:items-center"
                   >
-                    Sell
-                    <div
-                      class="flex items-center font-normal lg:ml-20 gap-1 text-grey-300"
-                    >
+                    <div class="lg:w-20">Sell</div>
+                    <div class="flex items-center font-normal gap-1">
                       <input type="radio" />No, It’s free
                     </div>
-                    <div
-                      class="flex items-center font-normal gap-1 text-grey-300"
-                    >
+                    <div class="flex items-center font-normal gap-1">
                       <input type="radio" />Yes, It’s for sell
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="lg:w-20"></div>
+                    <div
+                      class="text-grey-400 px-4 py-[7px] rounded-xl border border-grey-200 flex items-center font-semibold text-18 gap-4"
+                    >
+                      <svg
+                        class="flex-shrink-0"
+                        width="11"
+                        height="17"
+                        viewBox="0 0 11 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.206 11.382C10.206 12.006 10.044 12.594 9.72 13.146C9.408 13.686 8.94 14.136 8.316 14.496C7.704 14.844 6.978 15.048 6.138 15.108V16.566H4.986V15.09C3.786 14.982 2.82 14.622 2.088 14.01C1.356 13.386 0.978 12.546 0.954 11.49H3.654C3.726 12.354 4.17 12.876 4.986 13.056V9.618C4.122 9.402 3.426 9.186 2.898 8.97C2.37 8.754 1.914 8.406 1.53 7.926C1.146 7.446 0.954 6.792 0.954 5.964C0.954 4.92 1.326 4.068 2.07 3.408C2.826 2.748 3.798 2.37 4.986 2.274V0.815999H6.138V2.274C7.29 2.37 8.208 2.718 8.892 3.318C9.588 3.918 9.978 4.746 10.062 5.802H7.344C7.308 5.454 7.182 5.154 6.966 4.902C6.762 4.638 6.486 4.452 6.138 4.344V7.746C7.038 7.974 7.746 8.196 8.262 8.412C8.79 8.616 9.246 8.958 9.63 9.438C10.014 9.906 10.206 10.554 10.206 11.382ZM3.582 5.838C3.582 6.234 3.702 6.558 3.942 6.81C4.182 7.05 4.53 7.248 4.986 7.404V4.29C4.554 4.35 4.212 4.512 3.96 4.776C3.708 5.04 3.582 5.394 3.582 5.838ZM6.138 13.092C6.594 13.008 6.948 12.822 7.2 12.534C7.464 12.246 7.596 11.898 7.596 11.49C7.596 11.094 7.47 10.776 7.218 10.536C6.966 10.296 6.606 10.098 6.138 9.942V13.092Z"
+                          fill="#2C2F33"
+                        />
+                      </svg>
+                      <input
+                        type="text"
+                        class="flex-1 placeholder:text-grey-300 placeholder:text-center text-center"
+                        placeholder="Price"
+                      />
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="lg:w-20"></div>
+                    <div class="text-14 text-grey-400">
+                      If you choose Yes, your product will appear on Marketplace
                     </div>
                   </div>
                   <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 mt-9">
@@ -1112,20 +1176,74 @@
       <div class="container mt-4">
         <div class="w-full">
           <div class="flex flex-col lg:flex-row lg:items-center gap-8">
-            <div class="h-[200px] w-[200px] mx-auto md:w-[500px] md:h-[500px]">
+            <button
+              class="h-[200px] w-[200px] mx-auto rounded-xl overflow-hidden relative"
+            >
               <img
-                src="../../assets/svgs/Frame 48096929.png"
+                class="w-full h-full"
+                src="../../assets/images/upload-sample.jpg"
                 alt=""
-                class="w-full rounded-xl object-cover h-full"
               />
-            </div>
+              <div
+                class="absolute inset-0 flex items-center justify-center flex-col w-full h-full bg-black/60"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.76017 22H17.2402C20.0002 22 21.1002 20.31 21.2302 18.25L21.7502 9.99C21.8902 7.83 20.1702 6 18.0002 6C17.3902 6 16.8302 5.65 16.5502 5.11L15.8302 3.66C15.3702 2.75 14.1702 2 13.1502 2H10.8602C9.83017 2 8.63017 2.75 8.17017 3.66L7.45017 5.11C7.17017 5.65 6.61017 6 6.00017 6C3.83017 6 2.11017 7.83 2.25017 9.99L2.77017 18.25C2.89017 20.31 4.00017 22 6.76017 22Z"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.5 8H13.5"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 18C13.79 18 15.25 16.54 15.25 14.75C15.25 12.96 13.79 11.5 12 11.5C10.21 11.5 8.75 12.96 8.75 14.75C8.75 16.54 10.21 18 12 18Z"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span class="text-14 text-white font-semibold">Replace</span>
+              </div>
+            </button>
             <form class="lg:w-[60%] flex flex-col gap-3 text-grey-400">
               <div class="flex flex-col gap-2">
-                <label class="text-14 lg:text-base font-semibold">Tittle</label>
+                <label class="text-14 lg:text-base font-semibold">Title</label>
                 <input
                   type="text"
                   placeholder="Title"
-                  class="w-full px-4 text-14 py-3 titile bg-[#f7f7f7] rounded-xl outline-none border-none"
+                  class="w-full px-4 text-14 py-3 titile bg-grey-100 rounded-xl outline-none border-none"
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <label class="text-14 lg:text-base font-semibold">Artist</label>
+                <input
+                  type="text"
+                  placeholder="Artist"
+                  class="w-full px-4 text-14 py-3 titile bg-grey-100 rounded-xl outline-none border-none"
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <label class="text-14 lg:text-base font-semibold"
+                  >Composer</label
+                >
+                <input
+                  type="text"
+                  placeholder="Composer"
+                  class="w-full px-4 text-14 py-3 titile bg-grey-100 rounded-xl outline-none border-none"
                 />
               </div>
               <div>
@@ -1134,16 +1252,16 @@
                 >
                 <select
                   data-te-select-init
-                  class="w-full genre text-14 custom-select outline-none border-none px-4 py-3 bg-[#f7f7f7] rounded-xl mt-2"
+                  class="w-full genre text-14 custom-select outline-none border-none px-4 py-3 bg-grey-100 rounded-xl mt-2"
                 >
                   <option
-                    class="outline-none border-none px-4 py-3 bg-[#f7f7f7] rounded-xl"
+                    class="outline-none border-none px-4 py-3 bg-grey-100 rounded-xl"
                     value="1"
                   >
                     Pop
                   </option>
                   <option
-                    class="outline-none border-none px-4 py-3 bg-[#f7f7f7] rounded-xl"
+                    class="outline-none border-none px-4 py-3 bg-grey-100 rounded-xl"
                     value="5"
                   >
                     Rock
@@ -1155,7 +1273,7 @@
                   >Description</label
                 >
                 <textarea
-                  class="bg-[#f7f7f7] text-14 description rounded-xl min-h-[96px] h-[96px] outline-none border-none px-4 py-3"
+                  class="bg-grey-100 text-14 description rounded-xl min-h-[96px] h-[96px] outline-none border-none px-4 py-3"
                   name="Description"
                   id=""
                   cols="30"
