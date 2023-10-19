@@ -7096,6 +7096,14 @@ input {
     height: 280px;
   }
 
+  .md\:h-\[350px\]{
+    height: 350px;
+  }
+
+  .md\:h-\[300px\]{
+    height: 300px;
+  }
+
   .md\:w-16{
     width: 4rem;
   }
@@ -7126,6 +7134,14 @@ input {
 
   .md\:w-auto{
     width: auto;
+  }
+
+  .md\:w-\[350px\]{
+    width: 350px;
+  }
+
+  .md\:w-\[300px\]{
+    width: 300px;
   }
 
   .md\:min-w-\[260px\]{
@@ -7643,6 +7659,10 @@ input {
 
   .lg\:w-full{
     width: 100%;
+  }
+
+  .lg\:w-\[500px\]{
+    width: 500px;
   }
 
   .lg\:max-w-\[308px\]{

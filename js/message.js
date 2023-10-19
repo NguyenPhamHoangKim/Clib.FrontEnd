@@ -215,7 +215,7 @@ $(document).ready(function () {
         </div>
       </div>
       <div
-        class="w-full flex items-center justify-between bg-[#fff] border-t p-1"
+        class="w-full flex items-center justify-between bg-white border-t p-1"
       >
         <div
           class="flex items-center gap-2 w-full person lg:cursor-pointer"
@@ -246,7 +246,7 @@ $(document).ready(function () {
         </div>
       </div>
       <div
-        class="w-full flex items-center justify-between bg-[#fff] border-t p-1"
+        class="w-full flex items-center justify-between bg-white border-t p-1"
       >
         <div
           class="flex items-center gap-2 w-full person lg:cursor-pointer"
@@ -324,8 +324,6 @@ $(document).ready(function () {
     });
   });
 });
-
-
 
 $(".modal-create").hide();
 $(".modal-playlist").hide();
