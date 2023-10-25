@@ -1161,6 +1161,10 @@ body{
   top: 115px;
 }
 
+.top-1{
+  top: 0.25rem;
+}
+
 .isolate{
   isolation: isolate;
 }
@@ -1179,10 +1183,6 @@ body{
 
 .z-20{
   z-index: 20;
-}
-
-.z-30{
-  z-index: 30;
 }
 
 .z-50{
@@ -1936,6 +1936,10 @@ body{
   height: 680px;
 }
 
+.h-\[68px\]{
+  height: 68px;
+}
+
 .h-\[690px\]{
   height: 690px;
 }
@@ -1963,6 +1967,10 @@ body{
 
 .h-screen{
   height: 100vh;
+}
+
+.h-\[72px\]{
+  height: 72px;
 }
 
 .max-h-12{
@@ -2320,6 +2328,10 @@ body{
 
 .w-full{
   width: 100%;
+}
+
+.w-\[72px\]{
+  width: 72px;
 }
 
 .max-w-\[100px\]{
