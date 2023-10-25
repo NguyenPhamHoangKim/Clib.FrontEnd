@@ -2169,6 +2169,10 @@ body{
   width: 120px;
 }
 
+.w-\[128px\]{
+  width: 128px;
+}
+
 .w-\[140px\]{
   width: 140px;
 }
@@ -2344,10 +2348,6 @@ body{
 
 .w-full{
   width: 100%;
-}
-
-.w-\[128px\]{
-  width: 128px;
 }
 
 .max-w-\[100px\]{
