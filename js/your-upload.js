@@ -171,6 +171,21 @@ $(".close-modal-artwork-mb").each(function () {
   });
 });
 
+$("#show-modal-permissions-mb").click(function () {
+  $("#modal-permissions-mb").addClass("flex");
+  $("#modal-permissions-mb").removeClass("hidden");
+
+  $("#modal-edit-mb").removeClass("flex");
+  $("#modal-edit-mb").addClass("hidden");
+});
+
+$(".close-modal-permissions-mb").each(function () {
+  $(this).click(function () {
+    $("#modal-permissions-mb").removeClass("flex");
+    $("#modal-permissions-mb").addClass("hidden");
+  });
+});
+
 checkClickOutside(
   "modal-delete-mb--inner",
   function () {
@@ -196,6 +211,15 @@ checkClickOutside(
     $("#modal-artwork-mb").addClass("hidden");
   },
   "show-modal-artwork-mb",
+);
+
+checkClickOutside(
+  "modal-permissions-mb--inner",
+  function () {
+    $("#modal-permissions-mb").removeClass("flex");
+    $("#modal-permissions-mb").addClass("hidden");
+  },
+  "show-modal-permissions-mb",
 );
 
 // checkClickOutside(

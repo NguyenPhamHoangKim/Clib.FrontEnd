@@ -1952,6 +1952,10 @@ body{
   height: 744px;
 }
 
+.h-\[90vh\]{
+  height: 90vh;
+}
+
 .h-\[96px\]{
   height: 96px;
 }
@@ -1971,10 +1975,6 @@ body{
 
 .h-screen{
   height: 100vh;
-}
-
-.h-\[90vh\]{
-  height: 90vh;
 }
 
 .max-h-12{
@@ -3152,10 +3152,6 @@ body{
 
 .gap-\[5px\]{
   gap: 5px;
-}
-
-.gap-\[6px\]{
-  gap: 6px;
 }
 
 .gap-x-0{
@@ -4800,11 +4796,6 @@ body{
 .text-\[\#FF6464\]{
   --tw-text-opacity: 1;
   color: rgb(255 100 100 / var(--tw-text-opacity));
-}
-
-.text-\[\#fff\]{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-\[\#ffffff\]{
@@ -7422,11 +7413,6 @@ input {
   .md\:text-base{
     font-size: 16px;
     line-height: 24px;
-  }
-
-  .md\:text-\[\#fff\]{
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 
   .md\:text-white{

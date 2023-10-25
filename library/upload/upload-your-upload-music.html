@@ -2388,7 +2388,9 @@
             </ul>
           </div>
         </div>
-        <div class="container mt-auto sticky bottom-0 right-0 left-0 bg-white">
+        <div
+          class="container mt-auto sticky bottom-0 right-0 left-0 bg-white z-[999]"
+        >
           <div
             class="pt-3 pb-8 grid grid-cols-3 gap-x-3 border-t border-t-grey-200"
           >
@@ -3116,13 +3118,13 @@
             <div
               class="px-4 py-3 mt-3 rounded-xl bg-grey-100 text-14 text-grey-400"
             >
-              2 videos is about to be deleted
+              2 songs is about to be deleted
             </div>
             <ul class="mt-3 flex flex-col gap-y-4 pb-4">
               <li class="flex items-center justify-between w-full">
                 <div class="flex items-center gap-3">
                   <img
-                    class="w-[114px] flex-shrink-0 object-cover rounded-lg"
+                    class="w-12 h-12 flex-shrink-0 object-cover rounded-lg"
                     src="../../assets/images/a2.png"
                     alt=""
                   />
@@ -3147,7 +3149,7 @@
               <li class="flex items-center justify-between w-full">
                 <div class="flex items-center gap-3">
                   <img
-                    class="w-[114px] flex-shrink-0 object-cover rounded-lg"
+                    class="w-12 h-12 flex-shrink-0 object-cover rounded-lg"
                     src="../../assets/images/a2.png"
                     alt=""
                   />
@@ -3312,6 +3314,144 @@
             <div class="grid grid-cols-2 items-end gap-x-4 mt-5">
               <button
                 class="close-modal-artwork-mb text-base rounded-xl close-modal font-semibold text-grey-400 py-2.5 px-6 bg-grey-200"
+              >
+                Cancel
+              </button>
+              <button
+                class="text-base rounded-xl font-semibold text-white py-2.5 px-6 bg-branding"
+              >
+                Save
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="modal-permissions-mb"
+        class="overlay modal-permissions-mb hidden md:hidden items-end"
+      >
+        <div
+          id="modal-permissions-mb--inner"
+          class="modal-permissions-mb--inner h-[90vh] relative flex flex-col bg-white w-full rounded-t-3xl pt-2"
+        >
+          <div class="flex-1 px-3">
+            <div>
+              <button
+                class="close-modal-artwork-mb rounded-lg w-16 h-1 bg-grey-100 mx-auto block"
+              ></button>
+              <div
+                class="text-center my-3 text-18 font-semibold text-neutral-dark-500"
+              >
+                Permissions
+              </div>
+            </div>
+            <div class="mt-3 flex flex-col gap-4">
+              <div
+                class="flex items-start gap-2 text-base text-grey-400 w-full justify-between pb-4 border-b border-b-grey-200"
+              >
+                <div class="">
+                  <div class="font-semibold text-14">
+                    Enable direct downloads
+                  </div>
+                  <p class="text-12 mt-2 text-grey-400">
+                    All songs will be available for direct download in the
+                    original format they were uploaded.
+                  </p>
+                </div>
+                <label class="relative inline-flex items-center cursor-pointer">
+                  <input type="checkbox" value="" class="sr-only peer" />
+                  <div
+                    class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                  ></div>
+                </label>
+              </div>
+              <div
+                class="flex items-start gap-2 text-base text-grey-400 w-full justify-between pb-4 border-b border-b-grey-200"
+              >
+                <div class="">
+                  <div class="font-semibold text-14">
+                    Enable direct downloads
+                  </div>
+                  <p class="text-12 mt-2 text-grey-400">
+                    All songs will play on devices without an internet
+                    connection.
+                  </p>
+                </div>
+                <label class="relative inline-flex items-center cursor-pointer">
+                  <input type="checkbox" value="" class="sr-only peer" />
+                  <div
+                    class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                  ></div>
+                </label>
+              </div>
+
+              <div
+                class="flex items-start gap-2 text-base text-grey-400 w-full justify-between pb-4 border-b border-b-grey-200"
+              >
+                <div class="">
+                  <div class="font-semibold text-14">Display embed code</div>
+                  <p class="text-12 mt-2 text-grey-400">
+                    No songs will be included in your RSS feed.
+                  </p>
+                </div>
+                <label class="relative inline-flex items-center cursor-pointer">
+                  <input type="checkbox" value="" class="sr-only peer" />
+                  <div
+                    class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                  ></div>
+                </label>
+              </div>
+              <div
+                class="flex items-start gap-2 text-base text-grey-400 w-full justify-between"
+              >
+                <div class="">
+                  <div class="font-semibold text-14">Enable app playback</div>
+                  <p class="text-12 mt-2 text-grey-400">
+                    All songs will be playable outside of Clib and its apps.
+                  </p>
+                </div>
+                <label class="relative inline-flex items-center cursor-pointer">
+                  <input type="checkbox" value="" class="sr-only peer" />
+                  <div
+                    class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                  ></div>
+                </label>
+              </div>
+              <div
+                class="flex items-start gap-2 text-base text-grey-400 w-full justify-between"
+              >
+                <div class="">
+                  <div class="font-semibold text-14">Include in RSS feed</div>
+                  <p class="text-12 mt-2 text-grey-400">
+                    No songs will be included in your RSS feed.
+                  </p>
+                </div>
+                <label class="relative inline-flex items-center cursor-pointer">
+                  <input type="checkbox" value="" class="sr-only peer" />
+                  <div
+                    class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                  ></div>
+                </label>
+              </div>
+              <div class="px-4 mt-3 py-3 bg-grey-100 rounded-xl">
+                <p class="text-14 font-semibold text-grey-400">
+                  Important:
+                  <span class="font-normal text-12 text-grey-400">
+                    By sharing, you confirm that your tracks comply with our
+                    Terms of use and you don’t infringe anyone else’s rights. If
+                    in doubt, refer to the Copyright information pages and FAQs
+                    before uploading.</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="sticky mt-auto bottom-0 left-0 right-0 px-3 py-4 bg-white shadow-[0px_-4px_60px_0px_rgba(0,0,0,0.06)]"
+          >
+            <div class="grid grid-cols-2 items-end gap-x-4">
+              <button
+                class="close-modal-permissions-mb text-base rounded-xl close-modal font-semibold text-grey-400 py-2.5 px-6 bg-grey-200"
               >
                 Cancel
               </button>
