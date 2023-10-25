@@ -216,6 +216,13 @@ checkClickOutside(
 //   "show-modal-create-mb",
 // );
 // checkClickOutside(
+//   "modal-add-video-inner",
+//   function () {
+//     $(".modal-add").hide();
+//   },
+//   "open-modal-add",
+// );
+// checkClickOutside(
 //   "modal-add-mb--inner",
 //   function () {
 //     console.log(3);
