@@ -891,6 +891,7 @@
           <!-- modal add list -->
           <div class="overlay hidden modal-add">
             <div
+              id="modal-add-inner"
               class="abs-center px-6 bg-white w-[592px] max-w-full rounded-xl"
             >
               <button class="close-modal absolute right-4 top-4">
@@ -1057,12 +1058,13 @@
           <!-- modal Create list -->
           <div class="overlay hidden modal-create">
             <div
+              id="modal-create-inner"
               class="rounded-xl w-[592px] max-w-full abs-center bg-white px-4 pb-3"
             >
               <button class="close-modal absolute right-4 top-4">
                 <img src="../../assets/svgs/close.svg" alt="" />
               </button>
-              <div class="h-[590px] mb-14 overflow-y-auto scrollbar-custom">
+              <div class="h-[590px] mb-14 flex flex-col">
                 <div class="flex items-center justify-center mt-3 mb-4">
                   <button
                     href="#"
@@ -1077,122 +1079,126 @@
                     Create to playlist
                   </button>
                 </div>
-                <div class="flex flex-col gap-1">
-                  <label class="text-base font-semibold text-grey-400" for=""
-                    >Playlist tittle</label
-                  >
-                  <input
-                    type="text"
-                    class="px-4 py-3 rounded-xl bg-grey-100"
-                    placeholder="playlist tittle"
-                  />
-                </div>
-                <div class="flex mt-4 flex-col gap-1">
-                  <label class="text-base font-semibold text-grey-400" for=""
-                    >Description</label
-                  >
-                  <textarea
-                    class="border-none px-4 outline-none py-3 bg-grey-100 rounded-xl min-h-[96px] max-h-[96px]"
-                  >
-                  </textarea>
-                </div>
                 <div
-                  class="flex text-base mt-4 font-semibold text-grey-400 items-center gap-4"
+                  class="flex-1 overflow-y-auto overflow-x-hidden scrollbar-custom"
                 >
-                  Privacy
-                  <div class="flex items-center gap-4">
-                    <div
-                      class="flex font-normal items-center text-neutral-dark-500 gap-[6px]"
+                  <div class="flex flex-col gap-1">
+                    <label class="text-base font-semibold text-grey-400" for=""
+                      >Playlist title</label
                     >
-                      <input type="radio" />
-                      <label for="">Public</label>
-                    </div>
-                    <div
-                      class="flex font-normal text-neutral-dark-500 items-center gap-[6px]"
+                    <input
+                      type="text"
+                      class="px-4 py-3 rounded-xl bg-grey-100"
+                      placeholder="playlist title"
+                    />
+                  </div>
+                  <div class="flex mt-4 flex-col gap-1">
+                    <label
+                      class="text-base font-semibold text-grey-400 placeholder:text-grey-300"
+                      for=""
+                      >Description</label
                     >
-                      <input type="radio" />
-                      <label for="">Private</label>
-                    </div>
+                    <textarea
+                      placeholder="Description"
+                      class="border-none px-4 outline-none py-3 bg-grey-100 text-grey-400 placeholder:text-grey-300 rounded-xl min-h-[96px] max-h-[96px]"
+                    ></textarea>
                   </div>
-                </div>
-                <!-- list -->
-                <div
-                  class="flex flex-col gap-4 py-4 border-b border-b-grey-200"
-                >
-                  <div class="flex items-center justify-between w-full">
-                    <div class="flex items-center gap-3">
-                      <img
-                        src="../../assets/images/Avatar.png"
-                        class="w-12 h-12"
-                        alt=""
-                      />
-                      <div class="flex flex-col">
-                        <h6
-                          class="text-base font-semibold text-neutral-dark-500"
-                        >
-                          Songs for breakup
-                        </h6>
-                        <p class="flex items-center gap-1">18 songs</p>
+                  <div
+                    class="flex text-base mt-4 font-semibold text-grey-400 items-center gap-4"
+                  >
+                    Privacy
+                    <div class="flex items-center gap-4">
+                      <div
+                        class="flex font-normal items-center text-neutral-dark-500 gap-[6px]"
+                      >
+                        <input type="radio" />
+                        <label for="">Public</label>
+                      </div>
+                      <div
+                        class="flex font-normal text-neutral-dark-500 items-center gap-[6px]"
+                      >
+                        <input type="radio" />
+                        <label for="">Private</label>
                       </div>
                     </div>
-                    <button>
-                      <img src="../../assets/svgs/close.svg" alt="" />
-                    </button>
                   </div>
-                  <div class="flex items-center justify-between w-full">
-                    <div class="flex items-center gap-3">
-                      <img
-                        src="../../assets/images/Avatar.png"
-                        class="w-12 h-12"
-                        alt=""
-                      />
-                      <div class="flex flex-col">
-                        <h6
-                          class="text-base font-semibold text-neutral-dark-500"
-                        >
-                          Songs for breakup
-                        </h6>
-                        <p class="flex items-center gap-1">18 songs</p>
+                  <div
+                    class="flex flex-col gap-4 py-4 border-b border-b-grey-200"
+                  >
+                    <div class="flex items-center justify-between w-full">
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="../../assets/images/Avatar.png"
+                          class="w-12 h-12"
+                          alt=""
+                        />
+                        <div class="flex flex-col">
+                          <h6
+                            class="text-base font-semibold text-neutral-dark-500"
+                          >
+                            Songs for breakup
+                          </h6>
+                          <p class="flex items-center gap-1">18 songs</p>
+                        </div>
                       </div>
+                      <button>
+                        <img src="../../assets/svgs/close.svg" alt="" />
+                      </button>
                     </div>
-                    <button>
-                      <img src="../../assets/svgs/close.svg" alt="" />
-                    </button>
-                  </div>
-                  <div class="flex items-center justify-between w-full">
-                    <div class="flex items-center gap-3">
-                      <img
-                        src="../../assets/images/Avatar.png"
-                        class="w-12 h-12"
-                        alt=""
-                      />
-                      <div class="flex flex-col">
-                        <h6
-                          class="text-base font-semibold text-neutral-dark-500"
-                        >
-                          Songs for breakup
-                        </h6>
-                        <p class="flex items-center gap-1">18 songs</p>
+                    <div class="flex items-center justify-between w-full">
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="../../assets/images/Avatar.png"
+                          class="w-12 h-12"
+                          alt=""
+                        />
+                        <div class="flex flex-col">
+                          <h6
+                            class="text-base font-semibold text-neutral-dark-500"
+                          >
+                            Songs for breakup
+                          </h6>
+                          <p class="flex items-center gap-1">18 songs</p>
+                        </div>
                       </div>
+                      <button>
+                        <img src="../../assets/svgs/close.svg" alt="" />
+                      </button>
                     </div>
-                    <button>
-                      <img src="../../assets/svgs/close.svg" alt="" />
-                    </button>
+                    <div class="flex items-center justify-between w-full">
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="../../assets/images/Avatar.png"
+                          class="w-12 h-12"
+                          alt=""
+                        />
+                        <div class="flex flex-col">
+                          <h6
+                            class="text-base font-semibold text-neutral-dark-500"
+                          >
+                            Songs for breakup
+                          </h6>
+                          <p class="flex items-center gap-1">18 songs</p>
+                        </div>
+                      </div>
+                      <button>
+                        <img src="../../assets/svgs/close.svg" alt="" />
+                      </button>
+                    </div>
                   </div>
-                </div>
-                <!-- find-->
-                <h5 class="text-base text-grey-400 mb-4 font-semibold">
-                  Let's find something for your playlist
-                </h5>
-                <div
-                  class="flex items-center gap-2 bg-grey-100 px-4 py-3 rounded-xl mb-6"
-                >
-                  <img src="../../assets/svgs/search.svg" alt="" />
-                  <input
-                    type="text"
-                    placeholder="Find your playlist music "
-                    class="bg-inherit flex-1"
-                  />
+                  <h5 class="text-base text-grey-400 mb-4 font-semibold mt-4">
+                    Let's find something for your playlist
+                  </h5>
+                  <div
+                    class="flex items-center gap-2 bg-grey-100 px-4 py-3 rounded-xl mb-6"
+                  >
+                    <img src="../../assets/svgs/search.svg" alt="" />
+                    <input
+                      type="text"
+                      placeholder="Find your playlist music "
+                      class="bg-inherit flex-1"
+                    />
+                  </div>
                 </div>
               </div>
               <!-- fixed -->

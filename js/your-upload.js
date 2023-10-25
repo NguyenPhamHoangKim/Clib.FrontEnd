@@ -4,6 +4,22 @@ $(".open-modal-add").each(function () {
   });
 });
 
+checkClickOutside(
+  "modal-add-inner",
+  function () {
+    $(".modal-add").hide();
+  },
+  "open-modal-add",
+);
+
+checkClickOutside(
+  "modal-add-video-inner",
+  function () {
+    $(".modal-add").hide();
+  },
+  "open-modal-add",
+);
+
 $(".open-modal-delete").each(function () {
   $(this).click(function () {
     $(".modal-delete").show();
@@ -24,6 +40,14 @@ $(".create-btn").click(function () {
   $(".modal-add").hide();
   $(".modal-create").show();
 });
+
+checkClickOutside(
+  "modal-create-inner",
+  function () {
+    $(".modal-create").hide();
+  },
+  "create-btn",
+);
 
 $(".btn-add").click(function () {
   $(".modal-create").hide();
