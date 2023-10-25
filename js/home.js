@@ -160,3 +160,5 @@ new Swiper(".new-video-swiper", {
     },
   },
 });
+
+$("#show-upload-modal").click(() => {});

@@ -1148,154 +1148,234 @@
       </div>
     </div>
     <!-- mobile -->
-    <main class="relative block md:hidden pb-4">
-      <div class="box-shadow">
-        <div class="flex items-center justify-between py-3 container">
-          <div class="flex items-center gap-3">
-            <img
-              src="../../assets/images/arrow-left.svg"
-              alt=""
-              class="w-6 h-6 rounded-xl"
-            />
-          </div>
-          <div
-            class="flex items-center gap-2 text-18 font-semibold text-neutral-dark-500"
-          >
-            Add detail
-          </div>
-          <div class="invisible w-6 h-6"></div>
-        </div>
-      </div>
-
-      <div class="container mt-4">
-        <div class="w-full">
-          <div class="flex flex-col lg:flex-row lg:items-center gap-8">
-            <button
-              class="h-[200px] w-[200px] mx-auto rounded-xl bg-grey-200 relative"
+    <div class="md:hidden">
+      <main class="relative pb-4">
+        <div class="box-shadow">
+          <div class="flex items-center justify-between py-3 container">
+            <div class="flex items-center gap-3">
+              <img
+                src="../../assets/images/arrow-left.svg"
+                alt=""
+                class="w-6 h-6 rounded-xl"
+              />
+            </div>
+            <div
+              class="flex items-center gap-2 text-18 font-semibold text-neutral-dark-500"
             >
-              <div
-                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-2"
+              Add detail
+            </div>
+            <div class="invisible w-6 h-6"></div>
+          </div>
+        </div>
+        <div class="container mt-4">
+          <div class="w-full">
+            <div class="flex flex-col lg:flex-row lg:items-center gap-8">
+              <button
+                class="h-[200px] w-[200px] mx-auto rounded-xl bg-grey-200 relative"
               >
+                <div
+                  class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-2"
+                >
+                  <svg
+                    width="33"
+                    height="32"
+                    viewBox="0 0 33 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24.5009 7.99935C23.6875 7.99935 22.9409 7.53268 22.5675 6.81268L21.6075 4.87935C20.9942 3.66602 19.3942 2.66602 18.0342 2.66602H14.9809C13.6075 2.66602 12.0075 3.66602 11.3942 4.87935L10.4342 6.81268C10.0609 7.53268 9.31421 7.99935 8.50087 7.99935C5.60754 7.99935 3.31421 10.4393 3.50087 13.3193L4.19421 24.3327C4.35421 27.0793 5.83421 29.3327 9.51421 29.3327H23.4875C27.1675 29.3327 28.6342 27.0793 28.8075 24.3327L29.5009 13.3193C29.6875 10.4393 27.3942 7.99935 24.5009 7.99935ZM14.5009 9.66602H18.5009C19.0475 9.66602 19.5009 10.1193 19.5009 10.666C19.5009 11.2127 19.0475 11.666 18.5009 11.666H14.5009C13.9542 11.666 13.5009 11.2127 13.5009 10.666C13.5009 10.1193 13.9542 9.66602 14.5009 9.66602ZM16.5009 24.1594C14.0209 24.1594 11.9942 22.146 11.9942 19.6527C11.9942 17.1593 14.0075 15.146 16.5009 15.146C18.9942 15.146 21.0075 17.1593 21.0075 19.6527C21.0075 22.146 18.9809 24.1594 16.5009 24.1594Z"
+                      fill="#A1ABB3"
+                    />
+                  </svg>
+                  <span
+                    class="underline font-semibold text-14 text-grey-400 underline-offset-1"
+                    >Upload thumbnail</span
+                  >
+                </div>
+              </button>
+              <form class="lg:w-[60%] flex flex-col gap-3 text-grey-400">
+                <div class="flex flex-col gap-2">
+                  <label class="text-14 lg:text-base font-semibold"
+                    >Title</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Title"
+                    class="w-full px-4 text-14 py-3 titile bg-grey-100 rounded-xl outline-none border-none"
+                  />
+                </div>
+                <div>
+                  <label class="text-14 lg:text-base font-semibold" for="Genre"
+                    >Genre</label
+                  >
+                  <div
+                    id="show-select-genre"
+                    class="w-full genre flex items-center justify-between text-14 custom-select outline-none border-none px-4 py-3 bg-grey-100 text-grey-300 rounded-xl mt-2 gap-2.5"
+                  >
+                    <span>Select</span>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.94922 4.07992L15.4692 10.5999C16.2392 11.3699 16.2392 12.6299 15.4692 13.3999L8.94922 19.9199"
+                        stroke="#52616B"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label class="text-14 lg:text-base font-semibold"
+                    >Description</label
+                  >
+                  <div class="bg-grey-100 rounded-xl">
+                    <textarea
+                      class="w-full bg-transparent flex-grow-0 flex-shrink-0 outline-none border-none px-4 py-3 resize-none"
+                      name="Description"
+                      rows="4"
+                      id=""
+                      placeholder="Description your video"
+                    ></textarea>
+                  </div>
+                </div>
+                <div
+                  class="text-14 text-grey-400 lg:text-base font-semibold flex flex-col gap-3"
+                >
+                  Privacy
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="flex items-center gap-1 font-normal text-neutral-dark-500 lg:ml-12"
+                    >
+                      <input type="radio" />Public
+                    </div>
+                    <div
+                      class="flex items-center gap-1 text-neutral-dark-500 font-normal"
+                    >
+                      <input type="radio" />Private
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="text-14 lg:text-base font-semibold flex flex-col md:flex-row gap-3 md:items-center"
+                >
+                  Sell
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="flex items-center font-normal lg:ml-20 gap-1 text-neutral-dark-500"
+                    >
+                      <input type="radio" />No, It’s free
+                    </div>
+                    <div
+                      class="flex items-center font-normal gap-1 text-neutral-dark-500"
+                    >
+                      <input type="radio" />Yes, It’s for sell
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center py-2 w-[50%] justify-between rounded-xl px-4 text-16 font-semibold text-neutral-dark-500 border border-grey-200 md:hidden"
+                >
+                  <p>$</p>
+                  <span>78</span>
+                  <p class="invisible">$</p>
+                </div>
+                <p class="text-12 text-neutral-dark-500">
+                  If you choose Yes, your product will appear on Martketplace
+                </p>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 mt-3">
+                  <button
+                    type="button"
+                    class="px-6 uploadButton py-3 rounded-xl text-center bg-[#1975ff] font-semibold text-white transition-opacity duration-300 lg:hover:opacity-70"
+                  >
+                    Upload
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div
+        id="select-genre"
+        class="fixed h-screen z-100 hidden inset-0 bg-white"
+      >
+        <div class="flex flex-col h-full">
+          <div class="box-shadow">
+            <div class="flex items-center justify-between py-3 container">
+              <div id="close-select-genre" class="flex items-center gap-3">
+                <img
+                  src="../../assets/images/arrow-left.svg"
+                  alt=""
+                  class="w-6 h-6 rounded-xl"
+                />
+              </div>
+              <div
+                class="flex items-center gap-2 text-18 font-semibold text-neutral-dark-500"
+              >
+                Select genre
+              </div>
+              <div class="invisible w-6 h-6"></div>
+            </div>
+          </div>
+          <div class="mt-4 px-4 pb-4 flex-1 overflow-y-auto">
+            <div
+              class="flex sticky top-0 left-0 items-center gap-2 rounded-xl bg-grey-100 px-3 py-3.5"
+            >
+              <img
+                class="aspect-square w-4"
+                src="../../assets/svgs/search-people.svg"
+                loading="lazy"
+                alt=""
+              />
+              <input
+                class="h-full flex-1 bg-transparent text-14 outline-none placeholder:text-grey-300"
+                placeholder="Finding in marketplace"
+              />
+            </div>
+            <ul class="mt-3 flex flex-col">
+              <li
+                class="px-2 py-3 flex items-center justify-between gap-2 cursor-pointer hover:bg-bg transition-colors duration-200 rounded-lg"
+              >
+                <div class="text-14 flex-1">Pop</div>
                 <svg
-                  width="33"
-                  height="32"
-                  viewBox="0 0 33 32"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M24.5009 7.99935C23.6875 7.99935 22.9409 7.53268 22.5675 6.81268L21.6075 4.87935C20.9942 3.66602 19.3942 2.66602 18.0342 2.66602H14.9809C13.6075 2.66602 12.0075 3.66602 11.3942 4.87935L10.4342 6.81268C10.0609 7.53268 9.31421 7.99935 8.50087 7.99935C5.60754 7.99935 3.31421 10.4393 3.50087 13.3193L4.19421 24.3327C4.35421 27.0793 5.83421 29.3327 9.51421 29.3327H23.4875C27.1675 29.3327 28.6342 27.0793 28.8075 24.3327L29.5009 13.3193C29.6875 10.4393 27.3942 7.99935 24.5009 7.99935ZM14.5009 9.66602H18.5009C19.0475 9.66602 19.5009 10.1193 19.5009 10.666C19.5009 11.2127 19.0475 11.666 18.5009 11.666H14.5009C13.9542 11.666 13.5009 11.2127 13.5009 10.666C13.5009 10.1193 13.9542 9.66602 14.5009 9.66602ZM16.5009 24.1594C14.0209 24.1594 11.9942 22.146 11.9942 19.6527C11.9942 17.1593 14.0075 15.146 16.5009 15.146C18.9942 15.146 21.0075 17.1593 21.0075 19.6527C21.0075 22.146 18.9809 24.1594 16.5009 24.1594Z"
-                    fill="#A1ABB3"
+                    d="M1.33398 7.99976L5.7732 12.439L14.6673 3.56055"
+                    stroke="#1A75FF"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                   />
                 </svg>
-                <span
-                  class="underline font-semibold text-14 text-grey-400 underline-offset-1"
-                  >Upload thumbnail</span
-                >
-              </div>
-            </button>
-            <form class="lg:w-[60%] flex flex-col gap-3 text-grey-400">
-              <div class="flex flex-col gap-2">
-                <label class="text-14 lg:text-base font-semibold">Title</label>
-                <input
-                  type="text"
-                  placeholder="Title"
-                  class="w-full px-4 text-14 py-3 titile bg-grey-100 rounded-xl outline-none border-none"
-                />
-              </div>
-              <div>
-                <label class="text-14 lg:text-base font-semibold" for="Genre"
-                  >Topic</label
-                >
-                <select
-                  data-te-select-init
-                  class="w-full genre text-14 custom-select outline-none border-none px-4 py-3 bg-grey-100 rounded-xl mt-2"
-                >
-                  <option
-                    class="outline-none border-none px-4 py-3 bg-grey-100 rounded-xl"
-                    value="1"
-                  >
-                    Pop
-                  </option>
-                  <option
-                    class="outline-none border-none px-4 py-3 bg-grey-100 rounded-xl"
-                    value="5"
-                  >
-                    Rock
-                  </option>
-                </select>
-              </div>
-              <div class="flex flex-col gap-2">
-                <label class="text-14 lg:text-base font-semibold"
-                  >Description</label
-                >
-                <div class="bg-grey-100 rounded-xl">
-                  <textarea
-                    class="w-full bg-transparent flex-grow-0 flex-shrink-0 outline-none border-none px-4 py-3 resize-none"
-                    name="Description"
-                    rows="4"
-                    id=""
-                    placeholder="Description your video"
-                  ></textarea>
-                </div>
-              </div>
-              <div
-                class="text-14 text-grey-400 lg:text-base font-semibold flex flex-col gap-3"
+              </li>
+              <li
+                class="px-2 py-3 flex items-center justify-between gap-2 cursor-pointer hover:bg-bg transition-colors duration-200 rounded-lg"
               >
-                Privacy
-                <div class="flex items-center gap-3">
-                  <div
-                    class="flex items-center gap-1 font-normal text-neutral-dark-500 lg:ml-12"
-                  >
-                    <input type="radio" />Public
-                  </div>
-                  <div
-                    class="flex items-center gap-1 text-neutral-dark-500 font-normal"
-                  >
-                    <input type="radio" />Private
-                  </div>
-                </div>
-              </div>
-              <div
-                class="text-14 lg:text-base font-semibold flex flex-col md:flex-row gap-3 md:items-center"
+                <div class="text-14 flex-1">R&B</div>
+              </li>
+              <li
+                class="px-2 py-3 flex items-center justify-between gap-2 cursor-pointer hover:bg-bg transition-colors duration-200 rounded-lg"
               >
-                Sell
-                <div class="flex items-center gap-3">
-                  <div
-                    class="flex items-center font-normal lg:ml-20 gap-1 text-neutral-dark-500"
-                  >
-                    <input type="radio" />No, It’s free
-                  </div>
-                  <div
-                    class="flex items-center font-normal gap-1 text-neutral-dark-500"
-                  >
-                    <input type="radio" />Yes, It’s for sell
-                  </div>
-                </div>
-              </div>
-              <div
-                class="flex items-center py-2 w-[50%] justify-between rounded-xl px-4 text-16 font-semibold text-neutral-dark-500 border border-grey-200 md:hidden"
-              >
-                <p>$</p>
-                <span>78</span>
-                <p class="invisible">$</p>
-              </div>
-              <p class="text-12 text-neutral-dark-500">
-                If you choose Yes, your product will appear on Martketplace
-              </p>
-              <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 mt-3">
-                <button
-                  type="button"
-                  class="px-6 uploadButton py-3 rounded-xl text-center bg-[#1975ff] font-semibold text-white transition-opacity duration-300 lg:hover:opacity-70"
-                >
-                  Upload
-                </button>
-              </div>
-            </form>
+                <div class="text-14 flex-1">Country&B</div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </main>
+    </div>
   </body>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"

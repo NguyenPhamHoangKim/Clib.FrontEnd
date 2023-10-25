@@ -48,3 +48,13 @@ $(".close-modal").each(function () {
     $(".modal-upload-yourshop").hide();
   });
 });
+
+if ($("#select-genre")) {
+  $("#show-select-genre").click(() => {
+    $("#select-genre").show();
+  });
+
+  $("#close-select-genre").click(() => {
+    $("#select-genre").hide();
+  });
+}

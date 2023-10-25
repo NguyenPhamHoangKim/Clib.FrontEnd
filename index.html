@@ -797,6 +797,9 @@
           </a>
           <!-- SIGNED IN MOBILE -->
           <div class="flex items-center space-x-4 md:hidden">
+            <button id="show-upload-modal" class="rounded-lg bg-grey-100 p-1.5">
+              <img class="w-5 h-5" src="./assets/svgs/export-pc.svg" alt="" />
+            </button>
             <button class="rounded-lg bg-grey-100 p-1.5">
               <img
                 class="w-5 h-5"
@@ -8556,6 +8559,163 @@
               </a>
             </li>
           </ul>
+        </div>
+      </div>
+    </div>
+    <div id="modal-upload-mb" class="overlay md:hidden items-end flex">
+      <div
+        id="upload-modal-mb-inner"
+        class="upload-modal-mb-inner rounded-t-3xl bg-white pt-2 px-3 pb-6 w-full"
+      >
+        <button
+          id="close-modal-upload-mb"
+          class="rounded-lg w-16 h-1 bg-grey-200 mx-auto block"
+        ></button>
+        <div
+          class="text-center my-3 text-18 font-semibold text-neutral-dark-500"
+        >
+          Upload
+        </div>
+        <div class="flex flex-col gap-4 text-neutral-dark-500">
+          <a
+            href="./library/upload/upload-video.html"
+            class="flex items-center gap-x-2"
+          >
+            <div class="rounded-xl p-2.5 bg-grey-100">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.4993 7.2077V11.9577C17.4993 12.241 17.491 12.516 17.4743 12.7744C16.8743 12.091 15.9827 11.666 14.9993 11.666C13.1577 11.666 11.666 13.1577 11.666 14.9993C11.666 15.6243 11.841 16.216 12.1494 16.716C12.316 16.9993 12.5327 17.2577 12.7827 17.4743C12.5243 17.491 12.2494 17.4993 11.9577 17.4993H7.20768C3.24934 17.4993 1.66602 15.916 1.66602 11.9577V7.2077C1.66602 3.24937 3.24934 1.66602 7.20768 1.66602H11.9577C15.916 1.66602 17.4993 3.24937 17.4993 7.2077Z"
+                  stroke="#52616B"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M5.60091 12.0162C6.26825 12.0162 6.80924 11.4752 6.80924 10.8079C6.80924 10.1406 6.26825 9.59961 5.60091 9.59961C4.93356 9.59961 4.39258 10.1406 4.39258 10.8079C4.39258 11.4752 4.93356 12.0162 5.60091 12.0162Z"
+                  stroke="#52616B"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M11.235 10.0002V5.28358C11.235 4.27525 10.6017 4.14189 9.96837 4.31689L7.56004 4.9752C7.1267 5.09187 6.81836 5.4419 6.81836 5.9419V6.78357V7.35024V10.8085"
+                  stroke="#52616B"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10.0267 11.2077C10.694 11.2077 11.235 10.6667 11.235 9.99936C11.235 9.33202 10.694 8.79102 10.0267 8.79102C9.35935 8.79102 8.81836 9.33202 8.81836 9.99936C8.81836 10.6667 9.35935 11.2077 10.0267 11.2077Z"
+                  stroke="#52616B"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M6.80859 7.35873L11.2336 6.15039"
+                  stroke="#52616B"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18.3327 14.9993C18.3327 15.6243 18.1577 16.216 17.8493 16.716C17.2743 17.6827 16.216 18.3327 14.9993 18.3327C13.7827 18.3327 12.7244 17.6827 12.1494 16.716C11.841 16.216 11.666 15.6243 11.666 14.9993C11.666 13.1577 13.1577 11.666 14.9993 11.666C16.841 11.666 18.3327 13.1577 18.3327 14.9993Z"
+                  stroke="#52616B"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M16.2412 14.9824H13.7578"
+                  stroke="#52616B"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15 13.7656V16.2573"
+                  stroke="#52616B"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="font-semibold text-14">Upload video</div>
+          </a>
+          <a
+            href="./library/upload/upload-music.html"
+            class="flex items-center gap-x-2"
+          >
+            <div class="rounded-xl p-2.5 bg-grey-100">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18.3327 9.99935C18.3327 11.091 18.1243 12.141 17.7327 13.0993C17.191 12.7243 16.5327 12.4993 15.8327 12.4993C15.0493 12.4993 14.3243 12.7744 13.7493 13.2327C12.9827 13.841 12.4993 14.7827 12.4993 15.8327C12.4993 16.4577 12.6743 17.0493 12.9827 17.5493C13.016 17.6077 13.0577 17.666 13.1077 17.7244C12.1494 18.116 11.0993 18.3327 9.99935 18.3327C5.39935 18.3327 1.66602 14.5993 1.66602 9.99935C1.66602 5.39935 5.39935 1.66602 9.99935 1.66602C14.5993 1.66602 18.3327 5.39935 18.3327 9.99935Z"
+                  stroke="#52616B"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7.81641 9.99804V8.8397C7.81641 7.40636 8.83307 6.81469 10.0747 7.53136L11.0747 8.10636L12.0747 8.68136C13.3164 9.39803 13.3164 10.573 12.0747 11.2897L11.0747 11.8647L10.0747 12.4397C8.83307 13.1564 7.81641 12.573 7.81641 11.1314V9.99804Z"
+                  stroke="#52616B"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M19.1667 15.8333C19.1667 16.4583 18.9917 17.05 18.6833 17.55C18.5083 17.85 18.2833 18.1167 18.025 18.3333C17.4417 18.8583 16.675 19.1667 15.8333 19.1667C14.6167 19.1667 13.5583 18.5167 12.9833 17.55C12.675 17.05 12.5 16.4583 12.5 15.8333C12.5 14.7833 12.9833 13.8417 13.75 13.2333C14.325 12.775 15.05 12.5 15.8333 12.5C17.675 12.5 19.1667 13.9917 19.1667 15.8333Z"
+                  stroke="#52616B"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M17.0751 15.8164H14.5918"
+                  stroke="#52616B"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.834 14.6016V17.0932"
+                  stroke="#52616B"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="font-semibold text-14">Upload music</div>
+          </a>
+          <a
+            href="./library/upload/upload-your-upload-music.html"
+            class="flex items-center gap-x-2"
+          >
+            <div class="rounded-xl p-2.5 bg-grey-100">
+              <img class="w-5 h-5" src="./assets/svgs/export-pc.svg" alt="" />
+            </div>
+            <div class="font-semibold text-14">Your upload</div>
+          </a>
         </div>
       </div>
     </div>

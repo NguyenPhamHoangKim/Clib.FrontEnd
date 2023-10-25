@@ -1156,181 +1156,263 @@
       </div>
     </div>
     <!-- mobile -->
-    <main class="relative block md:hidden pb-4">
-      <div class="box-shadow">
-        <div class="flex items-center justify-between py-3 container">
-          <div class="flex items-center gap-3">
-            <img
-              src="../../assets/images/arrow-left.svg"
-              alt=""
-              class="w-6 h-6 rounded-xl"
-            />
+    <div class="md:hidden">
+      <main class="relative pb-4">
+        <div class="box-shadow">
+          <div class="flex items-center justify-between py-3 container">
+            <div class="flex items-center gap-3">
+              <img
+                src="../../assets/images/arrow-left.svg"
+                alt=""
+                class="w-6 h-6 rounded-xl"
+              />
+            </div>
+            <div
+              class="flex items-center gap-2 text-18 font-semibold text-neutral-dark-500"
+            >
+              Add detail
+            </div>
+            <div class="invisible w-6 h-6"></div>
           </div>
-          <div
-            class="flex items-center gap-2 text-18 font-semibold text-neutral-dark-500"
-          >
-            Add detail
-          </div>
-          <div class="invisible w-6 h-6"></div>
         </div>
-      </div>
-
-      <div class="container mt-4">
-        <div class="w-full">
-          <div class="flex flex-col lg:flex-row lg:items-center gap-8">
-            <button
-              class="h-[200px] w-[200px] mx-auto rounded-xl overflow-hidden relative"
+        <div class="container mt-4">
+          <div class="w-full">
+            <div class="flex flex-col lg:flex-row lg:items-center gap-8">
+              <button
+                class="h-[200px] w-[200px] mx-auto rounded-xl overflow-hidden relative"
+              >
+                <img
+                  class="w-full h-full"
+                  src="../../assets/images/upload-sample.jpg"
+                  alt=""
+                />
+                <div
+                  class="absolute inset-0 flex items-center justify-center flex-col w-full h-full bg-black/60"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.76017 22H17.2402C20.0002 22 21.1002 20.31 21.2302 18.25L21.7502 9.99C21.8902 7.83 20.1702 6 18.0002 6C17.3902 6 16.8302 5.65 16.5502 5.11L15.8302 3.66C15.3702 2.75 14.1702 2 13.1502 2H10.8602C9.83017 2 8.63017 2.75 8.17017 3.66L7.45017 5.11C7.17017 5.65 6.61017 6 6.00017 6C3.83017 6 2.11017 7.83 2.25017 9.99L2.77017 18.25C2.89017 20.31 4.00017 22 6.76017 22Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.5 8H13.5"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 18C13.79 18 15.25 16.54 15.25 14.75C15.25 12.96 13.79 11.5 12 11.5C10.21 11.5 8.75 12.96 8.75 14.75C8.75 16.54 10.21 18 12 18Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span class="text-14 text-white font-semibold">Replace</span>
+                </div>
+              </button>
+              <form class="lg:w-[60%] flex flex-col gap-3 text-grey-400">
+                <div class="flex flex-col gap-2">
+                  <label class="text-14 lg:text-base font-semibold"
+                    >Title</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Title"
+                    class="w-full px-4 text-14 py-3 titile bg-grey-100 rounded-xl outline-none border-none"
+                  />
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label class="text-14 lg:text-base font-semibold"
+                    >Artist</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Artist"
+                    class="w-full px-4 text-14 py-3 titile bg-grey-100 rounded-xl outline-none border-none"
+                  />
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label class="text-14 lg:text-base font-semibold"
+                    >Composer</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Composer"
+                    class="w-full px-4 text-14 py-3 titile bg-grey-100 rounded-xl outline-none border-none"
+                  />
+                </div>
+                <div>
+                  <label class="text-14 lg:text-base font-semibold" for="Genre"
+                    >Genre</label
+                  >
+                  <div
+                    id="show-select-genre"
+                    class="w-full genre flex items-center justify-between text-14 custom-select outline-none border-none px-4 py-3 bg-grey-100 text-grey-300 rounded-xl mt-2 gap-2.5"
+                  >
+                    <span>Select</span>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.94922 4.07992L15.4692 10.5999C16.2392 11.3699 16.2392 12.6299 15.4692 13.3999L8.94922 19.9199"
+                        stroke="#52616B"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label class="text-14 lg:text-base font-semibold"
+                    >Description</label
+                  >
+                  <div class="bg-grey-100 rounded-xl">
+                    <textarea
+                      class="bg-transparent text-14 description min-h-[96px] h-[96px] outline-none border-none px-4 py-3 w-full resize-none"
+                      name="Description"
+                      id=""
+                      cols="30"
+                      rows="10"
+                      placeholder="Description your song"
+                    ></textarea>
+                  </div>
+                </div>
+                <div
+                  class="text-14 lg:text-base font-semibold flex flex-col gap-3"
+                >
+                  Privacy
+                  <div class="flex items-center gap-3">
+                    <div class="flex items-center gap-1 font-normal lg:ml-12">
+                      <input type="radio" />Public
+                    </div>
+                    <div class="flex items-center gap-1 font-normal">
+                      <input type="radio" />Private
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="text-14 lg:text-base font-semibold flex flex-col md:flex-row gap-3 mditems-center"
+                >
+                  Sell
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="flex items-center font-normal lg:ml-20 gap-1 text-grey-300"
+                    >
+                      <input type="radio" />No, It’s free
+                    </div>
+                    <div
+                      class="flex items-center font-normal gap-1 text-grey-300"
+                    >
+                      <input type="radio" />Yes, It’s for sell
+                    </div>
+                  </div>
+                </div>
+                <p class="text-12 text-grey-300">
+                  If you choose Yes, your product will appear on Martketplace
+                </p>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 mt-3">
+                  <button
+                    type="button"
+                    class="px-6 uploadButton py-3 rounded-xl text-center bg-grey-300 font-semibold text-white transition-opacity duration-300 lg:hover:opacity-70"
+                  >
+                    Upload
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div
+        id="select-genre"
+        class="fixed h-screen z-100 hidden inset-0 bg-white"
+      >
+        <div class="flex flex-col h-full">
+          <div class="box-shadow">
+            <div class="flex items-center justify-between py-3 container">
+              <div id="close-select-genre" class="flex items-center gap-3">
+                <img
+                  src="../../assets/images/arrow-left.svg"
+                  alt=""
+                  class="w-6 h-6 rounded-xl"
+                />
+              </div>
+              <div
+                class="flex items-center gap-2 text-18 font-semibold text-neutral-dark-500"
+              >
+                Select genre
+              </div>
+              <div class="invisible w-6 h-6"></div>
+            </div>
+          </div>
+          <div class="mt-4 px-4 pb-4 flex-1 overflow-y-auto">
+            <div
+              class="flex sticky top-0 left-0 items-center gap-2 rounded-xl bg-grey-100 px-3 py-3.5"
             >
               <img
-                class="w-full h-full"
-                src="../../assets/images/upload-sample.jpg"
+                class="aspect-square w-4"
+                src="../../assets/svgs/search-people.svg"
+                loading="lazy"
                 alt=""
               />
-              <div
-                class="absolute inset-0 flex items-center justify-center flex-col w-full h-full bg-black/60"
+              <input
+                class="h-full flex-1 bg-transparent text-14 outline-none placeholder:text-grey-300"
+                placeholder="Finding in marketplace"
+              />
+            </div>
+            <ul class="mt-3 flex flex-col">
+              <li
+                class="px-2 py-3 flex items-center justify-between gap-2 cursor-pointer hover:bg-bg transition-colors duration-200 rounded-lg"
               >
+                <div class="text-14 flex-1">Pop</div>
                 <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M6.76017 22H17.2402C20.0002 22 21.1002 20.31 21.2302 18.25L21.7502 9.99C21.8902 7.83 20.1702 6 18.0002 6C17.3902 6 16.8302 5.65 16.5502 5.11L15.8302 3.66C15.3702 2.75 14.1702 2 13.1502 2H10.8602C9.83017 2 8.63017 2.75 8.17017 3.66L7.45017 5.11C7.17017 5.65 6.61017 6 6.00017 6C3.83017 6 2.11017 7.83 2.25017 9.99L2.77017 18.25C2.89017 20.31 4.00017 22 6.76017 22Z"
-                    stroke="white"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M10.5 8H13.5"
-                    stroke="white"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M12 18C13.79 18 15.25 16.54 15.25 14.75C15.25 12.96 13.79 11.5 12 11.5C10.21 11.5 8.75 12.96 8.75 14.75C8.75 16.54 10.21 18 12 18Z"
-                    stroke="white"
+                    d="M1.33398 7.99976L5.7732 12.439L14.6673 3.56055"
+                    stroke="#1A75FF"
                     stroke-width="1.5"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   />
                 </svg>
-                <span class="text-14 text-white font-semibold">Replace</span>
-              </div>
-            </button>
-            <form class="lg:w-[60%] flex flex-col gap-3 text-grey-400">
-              <div class="flex flex-col gap-2">
-                <label class="text-14 lg:text-base font-semibold">Title</label>
-                <input
-                  type="text"
-                  placeholder="Title"
-                  class="w-full px-4 text-14 py-3 titile bg-grey-100 rounded-xl outline-none border-none"
-                />
-              </div>
-              <div class="flex flex-col gap-2">
-                <label class="text-14 lg:text-base font-semibold">Artist</label>
-                <input
-                  type="text"
-                  placeholder="Artist"
-                  class="w-full px-4 text-14 py-3 titile bg-grey-100 rounded-xl outline-none border-none"
-                />
-              </div>
-              <div class="flex flex-col gap-2">
-                <label class="text-14 lg:text-base font-semibold"
-                  >Composer</label
-                >
-                <input
-                  type="text"
-                  placeholder="Composer"
-                  class="w-full px-4 text-14 py-3 titile bg-grey-100 rounded-xl outline-none border-none"
-                />
-              </div>
-              <div>
-                <label class="text-14 lg:text-base font-semibold" for="Genre"
-                  >Genre</label
-                >
-                <select
-                  data-te-select-init
-                  class="w-full genre text-14 custom-select outline-none border-none px-4 py-3 bg-grey-100 rounded-xl mt-2"
-                >
-                  <option
-                    class="outline-none border-none px-4 py-3 bg-grey-100 rounded-xl"
-                    value="1"
-                  >
-                    Pop
-                  </option>
-                  <option
-                    class="outline-none border-none px-4 py-3 bg-grey-100 rounded-xl"
-                    value="5"
-                  >
-                    Rock
-                  </option>
-                </select>
-              </div>
-              <div class="flex flex-col gap-2">
-                <label class="text-14 lg:text-base font-semibold"
-                  >Description</label
-                >
-                <div class="bg-grey-100 rounded-xl">
-                  <textarea
-                    class="bg-transparent text-14 description min-h-[96px] h-[96px] outline-none border-none px-4 py-3 w-full resize-none"
-                    name="Description"
-                    id=""
-                    cols="30"
-                    rows="10"
-                    placeholder="Description your song"
-                  ></textarea>
-                </div>
-              </div>
-              <div
-                class="text-14 lg:text-base font-semibold flex flex-col gap-3"
+              </li>
+              <li
+                class="px-2 py-3 flex items-center justify-between gap-2 cursor-pointer hover:bg-bg transition-colors duration-200 rounded-lg"
               >
-                Privacy
-                <div class="flex items-center gap-3">
-                  <div class="flex items-center gap-1 font-normal lg:ml-12">
-                    <input type="radio" />Public
-                  </div>
-                  <div class="flex items-center gap-1 font-normal">
-                    <input type="radio" />Private
-                  </div>
-                </div>
-              </div>
-              <div
-                class="text-14 lg:text-base font-semibold flex flex-col md:flex-row gap-3 mditems-center"
+                <div class="text-14 flex-1">R&B</div>
+              </li>
+              <li
+                class="px-2 py-3 flex items-center justify-between gap-2 cursor-pointer hover:bg-bg transition-colors duration-200 rounded-lg"
               >
-                Sell
-                <div class="flex items-center gap-3">
-                  <div
-                    class="flex items-center font-normal lg:ml-20 gap-1 text-grey-300"
-                  >
-                    <input type="radio" />No, It’s free
-                  </div>
-                  <div
-                    class="flex items-center font-normal gap-1 text-grey-300"
-                  >
-                    <input type="radio" />Yes, It’s for sell
-                  </div>
-                </div>
-              </div>
-              <p class="text-12 text-grey-300">
-                If you choose Yes, your product will appear on Martketplace
-              </p>
-              <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 mt-3">
-                <button
-                  type="button"
-                  class="px-6 uploadButton py-3 rounded-xl text-center bg-grey-300 font-semibold text-white transition-opacity duration-300 lg:hover:opacity-70"
-                >
-                  Upload
-                </button>
-              </div>
-            </form>
+                <div class="text-14 flex-1">Country&B</div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </main>
+    </div>
   </body>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
