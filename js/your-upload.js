@@ -71,3 +71,41 @@ $dropdown.change(function () {
     $(".modal-per").hide();
   }
 });
+
+$("#show-modal-edit-mb").click(function () {
+  $("#modal-edit-mb").addClass("flex");
+  $("#modal-edit-mb").removeClass("hidden");
+});
+
+$("#close-modal-edit-mb").click(function () {
+  $("#modal-edit-mb").removeClass("flex");
+  $("#modal-edit-mb").addClass("hidden");
+});
+
+checkClickOutside(
+  "edit-modal-mb-inner",
+  function () {
+    $("#modal-edit-mb").removeClass("flex");
+    $("#modal-edit-mb").addClass("hidden");
+  },
+  "show-modal-edit-mb",
+);
+
+$("#show-modal-add-mb").click(function () {
+  $("#modal-add-mb").addClass("flex");
+  $("#modal-add-mb").removeClass("hidden");
+});
+
+$("#close-modal-add-mb").click(function () {
+  $("#modal-add-mb").removeClass("flex");
+  $("#modal-add-mb").addClass("hidden");
+});
+
+checkClickOutside(
+  "modal-add-mb--inner",
+  function () {
+    $("#modal-add-mb").removeClass("flex");
+    $("#modal-add-mb").addClass("hidden");
+  },
+  "show-modal-add-mb",
+);

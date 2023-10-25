@@ -2025,6 +2025,14 @@ body{
   max-height: 100%;
 }
 
+.max-h-\[80vh\]{
+  max-height: 80vh;
+}
+
+.max-h-\[90vh\]{
+  max-height: 90vh;
+}
+
 .min-h-\[100px\]{
   min-height: 100px;
 }
@@ -2332,6 +2340,10 @@ body{
 
 .w-\[72px\]{
   width: 72px;
+}
+
+.w-16{
+  width: 4rem;
 }
 
 .max-w-\[100px\]{
@@ -3611,6 +3623,11 @@ body{
 .rounded-t-xl{
   border-top-left-radius: 0.75rem;
   border-top-right-radius: 0.75rem;
+}
+
+.rounded-t-3xl{
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
 }
 
 .rounded-bl{

@@ -1767,646 +1767,1073 @@
       </div>
     </div>
     <!-- mobile -->
-    <main class="relative flex flex-col md:hidden">
-      <div class="flex-1 pb-3">
-        <div class="bg-white box-shadow">
-          <div>
-            <div class="flex items-center justify-between py-3">
-              <div class="flex items-center gap-3">
-                <img
-                  src="../../assets/images/arrow-left.svg"
-                  alt=""
-                  class="w-6 h-6 rounded-xl"
-                />
+    <main class="relative md:hidden">
+      <div>
+        <div class="flex-1 pb-3">
+          <div class="bg-white box-shadow">
+            <div>
+              <div class="flex items-center justify-between py-3">
+                <div class="flex items-center gap-3">
+                  <img
+                    src="../../assets/images/arrow-left.svg"
+                    alt=""
+                    class="w-6 h-6 rounded-xl"
+                  />
+                </div>
+                <div
+                  class="flex items-center gap-2 text-18 font-semibold text-neutral-dark-500"
+                >
+                  Your upload
+                </div>
+                <div class="invisible w-6 h-6"></div>
               </div>
-              <div
-                class="flex items-center gap-2 text-18 font-semibold text-neutral-dark-500"
+            </div>
+            <div class="grid grid-cols-2 items-center container">
+              <a
+                href="./upload-your-upload-music.html"
+                class="text-center block py-2 border-b-2 border-b-branding-secondary text-branding-secondary font-semibold text-14"
+                >Your songs</a
               >
-                Your upload
-              </div>
-              <div class="invisible w-6 h-6"></div>
+              <a
+                href="./upload-your-upload-video.html"
+                class="text-center block py-2 text-grey-300 font-semibold text-14"
+                >Your videos</a
+              >
             </div>
           </div>
-          <div class="grid grid-cols-2 items-center container">
-            <a
-              href="./upload-your-upload-music.html"
-              class="text-center block py-2 border-b-2 border-b-branding-secondary text-branding-secondary font-semibold text-14"
-              >Your songs</a
+          <div class="container mt-4">
+            <div class="flex items-center gap-2.5 text-14 text-grey-400">
+              <input class="w-5 h-5" type="checkbox" /> Select all
+            </div>
+            <ul
+              class="mt-3 pt-4 border-t border-t-grey-200 flex flex-col gap-4"
             >
-            <a
-              href="./upload-your-upload-video.html"
-              class="text-center block py-2 text-grey-300 font-semibold text-14"
-              >Your videos</a
-            >
+              <li class="flex gap-2">
+                <input class="w-5 h-5" type="checkbox" />
+                <div class="flex-1 flex gap-2">
+                  <div
+                    class="relative w-[72px] h-[72px] rounded-lg overflow-hidden"
+                  >
+                    <img
+                      class="w-full h-full object-cover"
+                      src="../../assets/images/albums/1.jpg"
+                      alt=""
+                    />
+                    <div
+                      class="absolute top-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-full flex items-center justify-center p-1"
+                    >
+                      <img
+                        class="w-4 h-4"
+                        src="../../assets/svgs/global-2.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="text-12 py-0.5 px-1.5 text-white absolute bottom-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-xl"
+                    >
+                      03:20
+                    </div>
+                  </div>
+                  <div class="text-grey-400 flex flex-col gap-1">
+                    <div class="text-14 font-semibold text-neutral-dark-500">
+                      My Name is Will
+                    </div>
+                    <div class="text-12">Ngoc son</div>
+                    <div class="text-12">5 days ago</div>
+                    <div class="flex items-center gap-4 text-12">
+                      <div class="flex items-center gap-1 text-grey-400">
+                        <img src="../../assets/svgs/video-circle.svg" alt="" />
+                        15k
+                      </div>
+                      <div class="flex items-center gap-1 text-grey-400">
+                        <img src="../../assets/svgs/heart-grey.svg" alt="" />
+                        820
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="h-fit">
+                  <img class="w-6" src="../../assets/svgs/more.svg" alt="" />
+                </button>
+              </li>
+              <li class="flex gap-2">
+                <input class="w-5 h-5" type="checkbox" />
+                <div class="flex-1 flex gap-2">
+                  <div
+                    class="relative w-[72px] h-[72px] rounded-lg overflow-hidden"
+                  >
+                    <img
+                      class="w-full h-full object-cover"
+                      src="../../assets/images/albums/1.jpg"
+                      alt=""
+                    />
+                    <div
+                      class="absolute top-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-full flex items-center justify-center p-1"
+                    >
+                      <img
+                        class="w-4 h-4"
+                        src="../../assets/svgs/lock.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="text-12 py-0.5 px-1.5 text-white absolute bottom-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-xl"
+                    >
+                      03:20
+                    </div>
+                  </div>
+                  <div class="text-grey-400 flex flex-col gap-1">
+                    <div class="text-14 font-semibold text-neutral-dark-500">
+                      My Name is Will
+                    </div>
+                    <div class="text-12">Hoang Khan</div>
+                    <div class="text-12">5 days ago</div>
+                    <div class="flex items-center gap-4 text-12">
+                      <div class="flex items-center gap-1 text-grey-400">
+                        <img src="../../assets/svgs/video-circle.svg" alt="" />
+                        15k
+                      </div>
+                      <div class="flex items-center gap-1 text-grey-400">
+                        <img src="../../assets/svgs/heart-grey.svg" alt="" />
+                        820
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="h-fit">
+                  <img class="w-6" src="../../assets/svgs/more.svg" alt="" />
+                </button>
+              </li>
+              <li class="flex gap-2">
+                <input class="w-5 h-5" type="checkbox" />
+                <div class="flex-1 flex gap-2">
+                  <div
+                    class="relative w-[72px] h-[72px] rounded-lg overflow-hidden"
+                  >
+                    <img
+                      class="w-full h-full object-cover"
+                      src="../../assets/images/albums/1.jpg"
+                      alt=""
+                    />
+                    <div
+                      class="absolute top-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-full flex items-center justify-center p-1"
+                    >
+                      <img
+                        class="w-4 h-4"
+                        src="../../assets/svgs/global-2.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="text-12 py-0.5 px-1.5 text-white absolute bottom-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-xl"
+                    >
+                      03:20
+                    </div>
+                  </div>
+                  <div class="text-grey-400 flex flex-col gap-1">
+                    <div class="text-14 font-semibold text-neutral-dark-500">
+                      My Name is Will
+                    </div>
+                    <div class="text-12">Ngoc son</div>
+                    <div class="text-12">5 days ago</div>
+                    <div class="flex items-center gap-4 text-12">
+                      <div class="flex items-center gap-1 text-grey-400">
+                        <img src="../../assets/svgs/video-circle.svg" alt="" />
+                        15k
+                      </div>
+                      <div class="flex items-center gap-1 text-grey-400">
+                        <img src="../../assets/svgs/heart-grey.svg" alt="" />
+                        820
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="h-fit">
+                  <img class="w-6" src="../../assets/svgs/more.svg" alt="" />
+                </button>
+              </li>
+              <li class="flex gap-2">
+                <input class="w-5 h-5" type="checkbox" />
+                <div class="flex-1 flex gap-2">
+                  <div
+                    class="relative w-[72px] h-[72px] rounded-lg overflow-hidden"
+                  >
+                    <img
+                      class="w-full h-full object-cover"
+                      src="../../assets/images/albums/1.jpg"
+                      alt=""
+                    />
+                    <div
+                      class="absolute top-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-full flex items-center justify-center p-1"
+                    >
+                      <img
+                        class="w-4 h-4"
+                        src="../../assets/svgs/lock.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="text-12 py-0.5 px-1.5 text-white absolute bottom-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-xl"
+                    >
+                      03:20
+                    </div>
+                  </div>
+                  <div class="text-grey-400 flex flex-col gap-1">
+                    <div class="text-14 font-semibold text-neutral-dark-500">
+                      My Name is Will
+                    </div>
+                    <div class="text-12">Hoang Khan</div>
+                    <div class="text-12">5 days ago</div>
+                    <div class="flex items-center gap-4 text-12">
+                      <div class="flex items-center gap-1 text-grey-400">
+                        <img src="../../assets/svgs/video-circle.svg" alt="" />
+                        15k
+                      </div>
+                      <div class="flex items-center gap-1 text-grey-400">
+                        <img src="../../assets/svgs/heart-grey.svg" alt="" />
+                        820
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="h-fit">
+                  <img class="w-6" src="../../assets/svgs/more.svg" alt="" />
+                </button>
+              </li>
+              <li class="flex gap-2">
+                <input class="w-5 h-5" type="checkbox" />
+                <div class="flex-1 flex gap-2">
+                  <div
+                    class="relative w-[72px] h-[72px] rounded-lg overflow-hidden"
+                  >
+                    <img
+                      class="w-full h-full object-cover"
+                      src="../../assets/images/albums/1.jpg"
+                      alt=""
+                    />
+                    <div
+                      class="absolute top-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-full flex items-center justify-center p-1"
+                    >
+                      <img
+                        class="w-4 h-4"
+                        src="../../assets/svgs/global-2.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="text-12 py-0.5 px-1.5 text-white absolute bottom-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-xl"
+                    >
+                      03:20
+                    </div>
+                  </div>
+                  <div class="text-grey-400 flex flex-col gap-1">
+                    <div class="text-14 font-semibold text-neutral-dark-500">
+                      My Name is Will
+                    </div>
+                    <div class="text-12">Ngoc son</div>
+                    <div class="text-12">5 days ago</div>
+                    <div class="flex items-center gap-4 text-12">
+                      <div class="flex items-center gap-1 text-grey-400">
+                        <img src="../../assets/svgs/video-circle.svg" alt="" />
+                        15k
+                      </div>
+                      <div class="flex items-center gap-1 text-grey-400">
+                        <img src="../../assets/svgs/heart-grey.svg" alt="" />
+                        820
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="h-fit">
+                  <img class="w-6" src="../../assets/svgs/more.svg" alt="" />
+                </button>
+              </li>
+              <li class="flex gap-2">
+                <input class="w-5 h-5" type="checkbox" />
+                <div class="flex-1 flex gap-2">
+                  <div
+                    class="relative w-[72px] h-[72px] rounded-lg overflow-hidden"
+                  >
+                    <img
+                      class="w-full h-full object-cover"
+                      src="../../assets/images/albums/1.jpg"
+                      alt=""
+                    />
+                    <div
+                      class="absolute top-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-full flex items-center justify-center p-1"
+                    >
+                      <img
+                        class="w-4 h-4"
+                        src="../../assets/svgs/lock.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="text-12 py-0.5 px-1.5 text-white absolute bottom-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-xl"
+                    >
+                      03:20
+                    </div>
+                  </div>
+                  <div class="text-grey-400 flex flex-col gap-1">
+                    <div class="text-14 font-semibold text-neutral-dark-500">
+                      My Name is Will
+                    </div>
+                    <div class="text-12">Hoang Khan</div>
+                    <div class="text-12">5 days ago</div>
+                    <div class="flex items-center gap-4 text-12">
+                      <div class="flex items-center gap-1 text-grey-400">
+                        <img src="../../assets/svgs/video-circle.svg" alt="" />
+                        15k
+                      </div>
+                      <div class="flex items-center gap-1 text-grey-400">
+                        <img src="../../assets/svgs/heart-grey.svg" alt="" />
+                        820
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="h-fit">
+                  <img class="w-6" src="../../assets/svgs/more.svg" alt="" />
+                </button>
+              </li>
+
+              <li class="flex gap-2">
+                <input class="w-5 h-5" type="checkbox" />
+                <div class="flex-1 flex gap-2">
+                  <div
+                    class="relative w-[72px] h-[72px] rounded-lg overflow-hidden"
+                  >
+                    <img
+                      class="w-full h-full object-cover"
+                      src="../../assets/images/albums/1.jpg"
+                      alt=""
+                    />
+                    <div
+                      class="absolute top-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-full flex items-center justify-center p-1"
+                    >
+                      <img
+                        class="w-4 h-4"
+                        src="../../assets/svgs/global-2.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="text-12 py-0.5 px-1.5 text-white absolute bottom-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-xl"
+                    >
+                      03:20
+                    </div>
+                  </div>
+                  <div class="text-grey-400 flex flex-col gap-1">
+                    <div class="text-14 font-semibold text-neutral-dark-500">
+                      My Name is Will
+                    </div>
+                    <div class="text-12">Ngoc son</div>
+                    <div class="text-12">5 days ago</div>
+                    <div class="flex items-center gap-4 text-12">
+                      <div class="flex items-center gap-1 text-grey-400">
+                        <img src="../../assets/svgs/video-circle.svg" alt="" />
+                        15k
+                      </div>
+                      <div class="flex items-center gap-1 text-grey-400">
+                        <img src="../../assets/svgs/heart-grey.svg" alt="" />
+                        820
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="h-fit">
+                  <img class="w-6" src="../../assets/svgs/more.svg" alt="" />
+                </button>
+              </li>
+              <li class="flex gap-2">
+                <input class="w-5 h-5" type="checkbox" />
+                <div class="flex-1 flex gap-2">
+                  <div
+                    class="relative w-[72px] h-[72px] rounded-lg overflow-hidden"
+                  >
+                    <img
+                      class="w-full h-full object-cover"
+                      src="../../assets/images/albums/1.jpg"
+                      alt=""
+                    />
+                    <div
+                      class="absolute top-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-full flex items-center justify-center p-1"
+                    >
+                      <img
+                        class="w-4 h-4"
+                        src="../../assets/svgs/lock.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="text-12 py-0.5 px-1.5 text-white absolute bottom-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-xl"
+                    >
+                      03:20
+                    </div>
+                  </div>
+                  <div class="text-grey-400 flex flex-col gap-1">
+                    <div class="text-14 font-semibold text-neutral-dark-500">
+                      My Name is Will
+                    </div>
+                    <div class="text-12">Hoang Khan</div>
+                    <div class="text-12">5 days ago</div>
+                    <div class="flex items-center gap-4 text-12">
+                      <div class="flex items-center gap-1 text-grey-400">
+                        <img src="../../assets/svgs/video-circle.svg" alt="" />
+                        15k
+                      </div>
+                      <div class="flex items-center gap-1 text-grey-400">
+                        <img src="../../assets/svgs/heart-grey.svg" alt="" />
+                        820
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="h-fit">
+                  <img class="w-6" src="../../assets/svgs/more.svg" alt="" />
+                </button>
+              </li>
+              <li class="flex gap-2">
+                <input class="w-5 h-5" type="checkbox" />
+                <div class="flex-1 flex gap-2">
+                  <div
+                    class="relative w-[72px] h-[72px] rounded-lg overflow-hidden"
+                  >
+                    <img
+                      class="w-full h-full object-cover"
+                      src="../../assets/images/albums/1.jpg"
+                      alt=""
+                    />
+                    <div
+                      class="absolute top-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-full flex items-center justify-center p-1"
+                    >
+                      <img
+                        class="w-4 h-4"
+                        src="../../assets/svgs/global-2.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="text-12 py-0.5 px-1.5 text-white absolute bottom-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-xl"
+                    >
+                      03:20
+                    </div>
+                  </div>
+                  <div class="text-grey-400 flex flex-col gap-1">
+                    <div class="text-14 font-semibold text-neutral-dark-500">
+                      My Name is Will
+                    </div>
+                    <div class="text-12">Ngoc son</div>
+                    <div class="text-12">5 days ago</div>
+                    <div class="flex items-center gap-4 text-12">
+                      <div class="flex items-center gap-1 text-grey-400">
+                        <img src="../../assets/svgs/video-circle.svg" alt="" />
+                        15k
+                      </div>
+                      <div class="flex items-center gap-1 text-grey-400">
+                        <img src="../../assets/svgs/heart-grey.svg" alt="" />
+                        820
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="h-fit">
+                  <img class="w-6" src="../../assets/svgs/more.svg" alt="" />
+                </button>
+              </li>
+              <li class="flex gap-2">
+                <input class="w-5 h-5" type="checkbox" />
+                <div class="flex-1 flex gap-2">
+                  <div
+                    class="relative w-[72px] h-[72px] rounded-lg overflow-hidden"
+                  >
+                    <img
+                      class="w-full h-full object-cover"
+                      src="../../assets/images/albums/1.jpg"
+                      alt=""
+                    />
+                    <div
+                      class="absolute top-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-full flex items-center justify-center p-1"
+                    >
+                      <img
+                        class="w-4 h-4"
+                        src="../../assets/svgs/lock.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="text-12 py-0.5 px-1.5 text-white absolute bottom-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-xl"
+                    >
+                      03:20
+                    </div>
+                  </div>
+                  <div class="text-grey-400 flex flex-col gap-1">
+                    <div class="text-14 font-semibold text-neutral-dark-500">
+                      My Name is Will
+                    </div>
+                    <div class="text-12">Hoang Khan</div>
+                    <div class="text-12">5 days ago</div>
+                    <div class="flex items-center gap-4 text-12">
+                      <div class="flex items-center gap-1 text-grey-400">
+                        <img src="../../assets/svgs/video-circle.svg" alt="" />
+                        15k
+                      </div>
+                      <div class="flex items-center gap-1 text-grey-400">
+                        <img src="../../assets/svgs/heart-grey.svg" alt="" />
+                        820
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="h-fit">
+                  <img class="w-6" src="../../assets/svgs/more.svg" alt="" />
+                </button>
+              </li>
+              <li class="flex gap-2">
+                <input class="w-5 h-5" type="checkbox" />
+                <div class="flex-1 flex gap-2">
+                  <div
+                    class="relative w-[72px] h-[72px] rounded-lg overflow-hidden"
+                  >
+                    <img
+                      class="w-full h-full object-cover"
+                      src="../../assets/images/albums/1.jpg"
+                      alt=""
+                    />
+                    <div
+                      class="absolute top-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-full flex items-center justify-center p-1"
+                    >
+                      <img
+                        class="w-4 h-4"
+                        src="../../assets/svgs/global-2.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="text-12 py-0.5 px-1.5 text-white absolute bottom-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-xl"
+                    >
+                      03:20
+                    </div>
+                  </div>
+                  <div class="text-grey-400 flex flex-col gap-1">
+                    <div class="text-14 font-semibold text-neutral-dark-500">
+                      My Name is Will
+                    </div>
+                    <div class="text-12">Ngoc son</div>
+                    <div class="text-12">5 days ago</div>
+                    <div class="flex items-center gap-4 text-12">
+                      <div class="flex items-center gap-1 text-grey-400">
+                        <img src="../../assets/svgs/video-circle.svg" alt="" />
+                        15k
+                      </div>
+                      <div class="flex items-center gap-1 text-grey-400">
+                        <img src="../../assets/svgs/heart-grey.svg" alt="" />
+                        820
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="h-fit">
+                  <img class="w-6" src="../../assets/svgs/more.svg" alt="" />
+                </button>
+              </li>
+              <li class="flex gap-2">
+                <input class="w-5 h-5" type="checkbox" />
+                <div class="flex-1 flex gap-2">
+                  <div
+                    class="relative w-[72px] h-[72px] rounded-lg overflow-hidden"
+                  >
+                    <img
+                      class="w-full h-full object-cover"
+                      src="../../assets/images/albums/1.jpg"
+                      alt=""
+                    />
+                    <div
+                      class="absolute top-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-full flex items-center justify-center p-1"
+                    >
+                      <img
+                        class="w-4 h-4"
+                        src="../../assets/svgs/lock.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="text-12 py-0.5 px-1.5 text-white absolute bottom-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-xl"
+                    >
+                      03:20
+                    </div>
+                  </div>
+                  <div class="text-grey-400 flex flex-col gap-1">
+                    <div class="text-14 font-semibold text-neutral-dark-500">
+                      My Name is Will
+                    </div>
+                    <div class="text-12">Hoang Khan</div>
+                    <div class="text-12">5 days ago</div>
+                    <div class="flex items-center gap-4 text-12">
+                      <div class="flex items-center gap-1 text-grey-400">
+                        <img src="../../assets/svgs/video-circle.svg" alt="" />
+                        15k
+                      </div>
+                      <div class="flex items-center gap-1 text-grey-400">
+                        <img src="../../assets/svgs/heart-grey.svg" alt="" />
+                        820
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="h-fit">
+                  <img class="w-6" src="../../assets/svgs/more.svg" alt="" />
+                </button>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="container mt-4">
-          <div class="flex items-center gap-2.5 text-14 text-grey-400">
-            <input class="w-5 h-5" type="checkbox" /> Select all
+        <div class="container mt-auto sticky bottom-0 right-0 left-0 bg-white">
+          <div
+            class="pt-3 pb-8 grid grid-cols-3 gap-x-3 border-t border-t-grey-200"
+          >
+            <button
+              id="show-modal-edit-mb"
+              class="show-modal-edit-mb w-full flex flex-col items-center justify-center gap-1 text-12 rounded-xl bg-grey-100 h-[68px] p-2"
+            >
+              <img src="../../assets/svgs/edit-profile.svg" alt="" />
+              Edit
+            </button>
+            <button
+              id="show-modal-add-mb"
+              class="show-modal-add-mb w-full flex flex-col items-center justify-center gap-1 text-12 rounded-xl bg-grey-100 h-[68px] p-2"
+            >
+              <img src="../../assets/svgs/play-add.svg" alt="" />
+              Add to playlist
+            </button>
+            <button
+              class="w-full flex flex-col items-center justify-center gap-1 text-12 rounded-xl bg-grey-100 h-[68px] p-2"
+            >
+              <img src="../../assets/svgs/trash.svg" alt="" />
+              Delete
+            </button>
           </div>
-          <ul class="mt-3 pt-4 border-t border-t-grey-200 flex flex-col gap-4">
-            <li class="flex gap-2">
-              <input class="w-5 h-5" type="checkbox" />
-              <div class="flex-1 flex gap-2">
-                <div
-                  class="relative w-[72px] h-[72px] rounded-lg overflow-hidden"
-                >
-                  <img
-                    class="w-full h-full object-cover"
-                    src="../../assets/images/albums/1.jpg"
-                    alt=""
-                  />
-                  <div
-                    class="absolute top-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-full flex items-center justify-center p-1"
-                  >
-                    <img
-                      class="w-4 h-4"
-                      src="../../assets/svgs/global-2.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div
-                    class="text-12 py-0.5 px-1.5 text-white absolute bottom-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-xl"
-                  >
-                    03:20
-                  </div>
-                </div>
-                <div class="text-grey-400 flex flex-col gap-1">
-                  <div class="text-14 font-semibold text-neutral-dark-500">
-                    My Name is Will
-                  </div>
-                  <div class="text-12">Ngoc son</div>
-                  <div class="text-12">5 days ago</div>
-                  <div class="flex items-center gap-4 text-12">
-                    <div class="flex items-center gap-1 text-grey-400">
-                      <img src="../../assets/svgs/video-circle.svg" alt="" />
-                      15k
-                    </div>
-                    <div class="flex items-center gap-1 text-grey-400">
-                      <img src="../../assets/svgs/heart-grey.svg" alt="" />
-                      820
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button class="h-fit">
-                <img class="w-6" src="../../assets/svgs/more.svg" alt="" />
-              </button>
-            </li>
-            <li class="flex gap-2">
-              <input class="w-5 h-5" type="checkbox" />
-              <div class="flex-1 flex gap-2">
-                <div
-                  class="relative w-[72px] h-[72px] rounded-lg overflow-hidden"
-                >
-                  <img
-                    class="w-full h-full object-cover"
-                    src="../../assets/images/albums/1.jpg"
-                    alt=""
-                  />
-                  <div
-                    class="absolute top-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-full flex items-center justify-center p-1"
-                  >
-                    <img
-                      class="w-4 h-4"
-                      src="../../assets/svgs/lock.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div
-                    class="text-12 py-0.5 px-1.5 text-white absolute bottom-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-xl"
-                  >
-                    03:20
-                  </div>
-                </div>
-                <div class="text-grey-400 flex flex-col gap-1">
-                  <div class="text-14 font-semibold text-neutral-dark-500">
-                    My Name is Will
-                  </div>
-                  <div class="text-12">Hoang Khan</div>
-                  <div class="text-12">5 days ago</div>
-                  <div class="flex items-center gap-4 text-12">
-                    <div class="flex items-center gap-1 text-grey-400">
-                      <img src="../../assets/svgs/video-circle.svg" alt="" />
-                      15k
-                    </div>
-                    <div class="flex items-center gap-1 text-grey-400">
-                      <img src="../../assets/svgs/heart-grey.svg" alt="" />
-                      820
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button class="h-fit">
-                <img class="w-6" src="../../assets/svgs/more.svg" alt="" />
-              </button>
-            </li>
-            <li class="flex gap-2">
-              <input class="w-5 h-5" type="checkbox" />
-              <div class="flex-1 flex gap-2">
-                <div
-                  class="relative w-[72px] h-[72px] rounded-lg overflow-hidden"
-                >
-                  <img
-                    class="w-full h-full object-cover"
-                    src="../../assets/images/albums/1.jpg"
-                    alt=""
-                  />
-                  <div
-                    class="absolute top-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-full flex items-center justify-center p-1"
-                  >
-                    <img
-                      class="w-4 h-4"
-                      src="../../assets/svgs/global-2.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div
-                    class="text-12 py-0.5 px-1.5 text-white absolute bottom-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-xl"
-                  >
-                    03:20
-                  </div>
-                </div>
-                <div class="text-grey-400 flex flex-col gap-1">
-                  <div class="text-14 font-semibold text-neutral-dark-500">
-                    My Name is Will
-                  </div>
-                  <div class="text-12">Ngoc son</div>
-                  <div class="text-12">5 days ago</div>
-                  <div class="flex items-center gap-4 text-12">
-                    <div class="flex items-center gap-1 text-grey-400">
-                      <img src="../../assets/svgs/video-circle.svg" alt="" />
-                      15k
-                    </div>
-                    <div class="flex items-center gap-1 text-grey-400">
-                      <img src="../../assets/svgs/heart-grey.svg" alt="" />
-                      820
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button class="h-fit">
-                <img class="w-6" src="../../assets/svgs/more.svg" alt="" />
-              </button>
-            </li>
-            <li class="flex gap-2">
-              <input class="w-5 h-5" type="checkbox" />
-              <div class="flex-1 flex gap-2">
-                <div
-                  class="relative w-[72px] h-[72px] rounded-lg overflow-hidden"
-                >
-                  <img
-                    class="w-full h-full object-cover"
-                    src="../../assets/images/albums/1.jpg"
-                    alt=""
-                  />
-                  <div
-                    class="absolute top-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-full flex items-center justify-center p-1"
-                  >
-                    <img
-                      class="w-4 h-4"
-                      src="../../assets/svgs/lock.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div
-                    class="text-12 py-0.5 px-1.5 text-white absolute bottom-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-xl"
-                  >
-                    03:20
-                  </div>
-                </div>
-                <div class="text-grey-400 flex flex-col gap-1">
-                  <div class="text-14 font-semibold text-neutral-dark-500">
-                    My Name is Will
-                  </div>
-                  <div class="text-12">Hoang Khan</div>
-                  <div class="text-12">5 days ago</div>
-                  <div class="flex items-center gap-4 text-12">
-                    <div class="flex items-center gap-1 text-grey-400">
-                      <img src="../../assets/svgs/video-circle.svg" alt="" />
-                      15k
-                    </div>
-                    <div class="flex items-center gap-1 text-grey-400">
-                      <img src="../../assets/svgs/heart-grey.svg" alt="" />
-                      820
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button class="h-fit">
-                <img class="w-6" src="../../assets/svgs/more.svg" alt="" />
-              </button>
-            </li>
-            <li class="flex gap-2">
-              <input class="w-5 h-5" type="checkbox" />
-              <div class="flex-1 flex gap-2">
-                <div
-                  class="relative w-[72px] h-[72px] rounded-lg overflow-hidden"
-                >
-                  <img
-                    class="w-full h-full object-cover"
-                    src="../../assets/images/albums/1.jpg"
-                    alt=""
-                  />
-                  <div
-                    class="absolute top-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-full flex items-center justify-center p-1"
-                  >
-                    <img
-                      class="w-4 h-4"
-                      src="../../assets/svgs/global-2.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div
-                    class="text-12 py-0.5 px-1.5 text-white absolute bottom-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-xl"
-                  >
-                    03:20
-                  </div>
-                </div>
-                <div class="text-grey-400 flex flex-col gap-1">
-                  <div class="text-14 font-semibold text-neutral-dark-500">
-                    My Name is Will
-                  </div>
-                  <div class="text-12">Ngoc son</div>
-                  <div class="text-12">5 days ago</div>
-                  <div class="flex items-center gap-4 text-12">
-                    <div class="flex items-center gap-1 text-grey-400">
-                      <img src="../../assets/svgs/video-circle.svg" alt="" />
-                      15k
-                    </div>
-                    <div class="flex items-center gap-1 text-grey-400">
-                      <img src="../../assets/svgs/heart-grey.svg" alt="" />
-                      820
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button class="h-fit">
-                <img class="w-6" src="../../assets/svgs/more.svg" alt="" />
-              </button>
-            </li>
-            <li class="flex gap-2">
-              <input class="w-5 h-5" type="checkbox" />
-              <div class="flex-1 flex gap-2">
-                <div
-                  class="relative w-[72px] h-[72px] rounded-lg overflow-hidden"
-                >
-                  <img
-                    class="w-full h-full object-cover"
-                    src="../../assets/images/albums/1.jpg"
-                    alt=""
-                  />
-                  <div
-                    class="absolute top-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-full flex items-center justify-center p-1"
-                  >
-                    <img
-                      class="w-4 h-4"
-                      src="../../assets/svgs/lock.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div
-                    class="text-12 py-0.5 px-1.5 text-white absolute bottom-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-xl"
-                  >
-                    03:20
-                  </div>
-                </div>
-                <div class="text-grey-400 flex flex-col gap-1">
-                  <div class="text-14 font-semibold text-neutral-dark-500">
-                    My Name is Will
-                  </div>
-                  <div class="text-12">Hoang Khan</div>
-                  <div class="text-12">5 days ago</div>
-                  <div class="flex items-center gap-4 text-12">
-                    <div class="flex items-center gap-1 text-grey-400">
-                      <img src="../../assets/svgs/video-circle.svg" alt="" />
-                      15k
-                    </div>
-                    <div class="flex items-center gap-1 text-grey-400">
-                      <img src="../../assets/svgs/heart-grey.svg" alt="" />
-                      820
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button class="h-fit">
-                <img class="w-6" src="../../assets/svgs/more.svg" alt="" />
-              </button>
-            </li>
-
-            <li class="flex gap-2">
-              <input class="w-5 h-5" type="checkbox" />
-              <div class="flex-1 flex gap-2">
-                <div
-                  class="relative w-[72px] h-[72px] rounded-lg overflow-hidden"
-                >
-                  <img
-                    class="w-full h-full object-cover"
-                    src="../../assets/images/albums/1.jpg"
-                    alt=""
-                  />
-                  <div
-                    class="absolute top-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-full flex items-center justify-center p-1"
-                  >
-                    <img
-                      class="w-4 h-4"
-                      src="../../assets/svgs/global-2.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div
-                    class="text-12 py-0.5 px-1.5 text-white absolute bottom-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-xl"
-                  >
-                    03:20
-                  </div>
-                </div>
-                <div class="text-grey-400 flex flex-col gap-1">
-                  <div class="text-14 font-semibold text-neutral-dark-500">
-                    My Name is Will
-                  </div>
-                  <div class="text-12">Ngoc son</div>
-                  <div class="text-12">5 days ago</div>
-                  <div class="flex items-center gap-4 text-12">
-                    <div class="flex items-center gap-1 text-grey-400">
-                      <img src="../../assets/svgs/video-circle.svg" alt="" />
-                      15k
-                    </div>
-                    <div class="flex items-center gap-1 text-grey-400">
-                      <img src="../../assets/svgs/heart-grey.svg" alt="" />
-                      820
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button class="h-fit">
-                <img class="w-6" src="../../assets/svgs/more.svg" alt="" />
-              </button>
-            </li>
-            <li class="flex gap-2">
-              <input class="w-5 h-5" type="checkbox" />
-              <div class="flex-1 flex gap-2">
-                <div
-                  class="relative w-[72px] h-[72px] rounded-lg overflow-hidden"
-                >
-                  <img
-                    class="w-full h-full object-cover"
-                    src="../../assets/images/albums/1.jpg"
-                    alt=""
-                  />
-                  <div
-                    class="absolute top-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-full flex items-center justify-center p-1"
-                  >
-                    <img
-                      class="w-4 h-4"
-                      src="../../assets/svgs/lock.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div
-                    class="text-12 py-0.5 px-1.5 text-white absolute bottom-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-xl"
-                  >
-                    03:20
-                  </div>
-                </div>
-                <div class="text-grey-400 flex flex-col gap-1">
-                  <div class="text-14 font-semibold text-neutral-dark-500">
-                    My Name is Will
-                  </div>
-                  <div class="text-12">Hoang Khan</div>
-                  <div class="text-12">5 days ago</div>
-                  <div class="flex items-center gap-4 text-12">
-                    <div class="flex items-center gap-1 text-grey-400">
-                      <img src="../../assets/svgs/video-circle.svg" alt="" />
-                      15k
-                    </div>
-                    <div class="flex items-center gap-1 text-grey-400">
-                      <img src="../../assets/svgs/heart-grey.svg" alt="" />
-                      820
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button class="h-fit">
-                <img class="w-6" src="../../assets/svgs/more.svg" alt="" />
-              </button>
-            </li>
-            <li class="flex gap-2">
-              <input class="w-5 h-5" type="checkbox" />
-              <div class="flex-1 flex gap-2">
-                <div
-                  class="relative w-[72px] h-[72px] rounded-lg overflow-hidden"
-                >
-                  <img
-                    class="w-full h-full object-cover"
-                    src="../../assets/images/albums/1.jpg"
-                    alt=""
-                  />
-                  <div
-                    class="absolute top-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-full flex items-center justify-center p-1"
-                  >
-                    <img
-                      class="w-4 h-4"
-                      src="../../assets/svgs/global-2.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div
-                    class="text-12 py-0.5 px-1.5 text-white absolute bottom-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-xl"
-                  >
-                    03:20
-                  </div>
-                </div>
-                <div class="text-grey-400 flex flex-col gap-1">
-                  <div class="text-14 font-semibold text-neutral-dark-500">
-                    My Name is Will
-                  </div>
-                  <div class="text-12">Ngoc son</div>
-                  <div class="text-12">5 days ago</div>
-                  <div class="flex items-center gap-4 text-12">
-                    <div class="flex items-center gap-1 text-grey-400">
-                      <img src="../../assets/svgs/video-circle.svg" alt="" />
-                      15k
-                    </div>
-                    <div class="flex items-center gap-1 text-grey-400">
-                      <img src="../../assets/svgs/heart-grey.svg" alt="" />
-                      820
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button class="h-fit">
-                <img class="w-6" src="../../assets/svgs/more.svg" alt="" />
-              </button>
-            </li>
-            <li class="flex gap-2">
-              <input class="w-5 h-5" type="checkbox" />
-              <div class="flex-1 flex gap-2">
-                <div
-                  class="relative w-[72px] h-[72px] rounded-lg overflow-hidden"
-                >
-                  <img
-                    class="w-full h-full object-cover"
-                    src="../../assets/images/albums/1.jpg"
-                    alt=""
-                  />
-                  <div
-                    class="absolute top-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-full flex items-center justify-center p-1"
-                  >
-                    <img
-                      class="w-4 h-4"
-                      src="../../assets/svgs/lock.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div
-                    class="text-12 py-0.5 px-1.5 text-white absolute bottom-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-xl"
-                  >
-                    03:20
-                  </div>
-                </div>
-                <div class="text-grey-400 flex flex-col gap-1">
-                  <div class="text-14 font-semibold text-neutral-dark-500">
-                    My Name is Will
-                  </div>
-                  <div class="text-12">Hoang Khan</div>
-                  <div class="text-12">5 days ago</div>
-                  <div class="flex items-center gap-4 text-12">
-                    <div class="flex items-center gap-1 text-grey-400">
-                      <img src="../../assets/svgs/video-circle.svg" alt="" />
-                      15k
-                    </div>
-                    <div class="flex items-center gap-1 text-grey-400">
-                      <img src="../../assets/svgs/heart-grey.svg" alt="" />
-                      820
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button class="h-fit">
-                <img class="w-6" src="../../assets/svgs/more.svg" alt="" />
-              </button>
-            </li>
-            <li class="flex gap-2">
-              <input class="w-5 h-5" type="checkbox" />
-              <div class="flex-1 flex gap-2">
-                <div
-                  class="relative w-[72px] h-[72px] rounded-lg overflow-hidden"
-                >
-                  <img
-                    class="w-full h-full object-cover"
-                    src="../../assets/images/albums/1.jpg"
-                    alt=""
-                  />
-                  <div
-                    class="absolute top-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-full flex items-center justify-center p-1"
-                  >
-                    <img
-                      class="w-4 h-4"
-                      src="../../assets/svgs/global-2.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div
-                    class="text-12 py-0.5 px-1.5 text-white absolute bottom-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-xl"
-                  >
-                    03:20
-                  </div>
-                </div>
-                <div class="text-grey-400 flex flex-col gap-1">
-                  <div class="text-14 font-semibold text-neutral-dark-500">
-                    My Name is Will
-                  </div>
-                  <div class="text-12">Ngoc son</div>
-                  <div class="text-12">5 days ago</div>
-                  <div class="flex items-center gap-4 text-12">
-                    <div class="flex items-center gap-1 text-grey-400">
-                      <img src="../../assets/svgs/video-circle.svg" alt="" />
-                      15k
-                    </div>
-                    <div class="flex items-center gap-1 text-grey-400">
-                      <img src="../../assets/svgs/heart-grey.svg" alt="" />
-                      820
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button class="h-fit">
-                <img class="w-6" src="../../assets/svgs/more.svg" alt="" />
-              </button>
-            </li>
-            <li class="flex gap-2">
-              <input class="w-5 h-5" type="checkbox" />
-              <div class="flex-1 flex gap-2">
-                <div
-                  class="relative w-[72px] h-[72px] rounded-lg overflow-hidden"
-                >
-                  <img
-                    class="w-full h-full object-cover"
-                    src="../../assets/images/albums/1.jpg"
-                    alt=""
-                  />
-                  <div
-                    class="absolute top-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-full flex items-center justify-center p-1"
-                  >
-                    <img
-                      class="w-4 h-4"
-                      src="../../assets/svgs/lock.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div
-                    class="text-12 py-0.5 px-1.5 text-white absolute bottom-1 right-1 bg-black/40 backdrop-blur-[10px] rounded-xl"
-                  >
-                    03:20
-                  </div>
-                </div>
-                <div class="text-grey-400 flex flex-col gap-1">
-                  <div class="text-14 font-semibold text-neutral-dark-500">
-                    My Name is Will
-                  </div>
-                  <div class="text-12">Hoang Khan</div>
-                  <div class="text-12">5 days ago</div>
-                  <div class="flex items-center gap-4 text-12">
-                    <div class="flex items-center gap-1 text-grey-400">
-                      <img src="../../assets/svgs/video-circle.svg" alt="" />
-                      15k
-                    </div>
-                    <div class="flex items-center gap-1 text-grey-400">
-                      <img src="../../assets/svgs/heart-grey.svg" alt="" />
-                      820
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button class="h-fit">
-                <img class="w-6" src="../../assets/svgs/more.svg" alt="" />
-              </button>
-            </li>
-          </ul>
         </div>
       </div>
-      <div class="container mt-auto sticky bottom-0 right-0 left-0 bg-white">
+      <div id="modal-edit-mb" class="overlay md:hidden items-end hidden">
         <div
-          class="pt-3 pb-8 grid grid-cols-3 gap-x-3 border-t border-t-grey-200"
+          id="edit-modal-mb-inner"
+          class="edit-modal-mb-inner rounded-t-3xl bg-white pt-2 px-3 pb-6 w-full"
         >
           <button
-            class="w-full flex flex-col items-center justify-center gap-1 text-12 rounded-xl bg-grey-100 h-[68px]"
+            id="close-modal-edit-mb"
+            class="rounded-lg w-16 h-1 bg-grey-200 mx-auto block"
+          ></button>
+          <div
+            class="text-center my-3 text-18 font-semibold text-neutral-dark-500"
           >
-            <img src="../../assets/svgs/edit-profile.svg" alt="" />
             Edit
-          </button>
-          <button
-            class="w-full flex flex-col items-center justify-center gap-1 text-12 rounded-xl bg-grey-100 h-[68px]"
+          </div>
+          <div class="flex flex-col gap-4 text-neutral-dark-500">
+            <button class="flex items-center gap-x-2">
+              <div class="rounded-xl p-2.5 bg-grey-100">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.67063 12.9386L7.44563 16.7136C8.99563 18.2636 11.5123 18.2636 13.0706 16.7136L16.729 13.0553C18.279 11.5053 18.279 8.98864 16.729 7.43031L12.9456 3.66364C12.154 2.87197 11.0623 2.44697 9.94563 2.50531L5.77896 2.70531C4.1123 2.78031 2.7873 4.10531 2.70396 5.76364L2.50396 9.93031C2.45396 11.0553 2.87896 12.147 3.67063 12.9386Z"
+                    stroke="#52616B"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8.11263 10.1901C9.26322 10.1901 10.196 9.25736 10.196 8.10677C10.196 6.95618 9.26322 6.02344 8.11263 6.02344C6.96204 6.02344 6.0293 6.95618 6.0293 8.10677C6.0293 9.25736 6.96204 10.1901 8.11263 10.1901Z"
+                    stroke="#52616B"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M11.0293 14.3568L14.3626 11.0234"
+                    stroke="#52616B"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="font-semibold text-14">Privacy and tag</div>
+            </button>
+            <button class="flex items-center gap-x-2">
+              <div class="rounded-xl p-2.5 bg-grey-100">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.63412 18.3346H14.3675C16.6675 18.3346 17.5841 16.9263 17.6925 15.2096L18.1258 8.3263C18.2425 6.5263 16.8091 5.0013 15.0008 5.0013C14.4925 5.0013 14.0258 4.70964 13.7925 4.25964L13.1925 3.0513C12.8091 2.29297 11.8091 1.66797 10.9591 1.66797H9.05079C8.19246 1.66797 7.19246 2.29297 6.80912 3.0513L6.20912 4.25964C5.97579 4.70964 5.50912 5.0013 5.00079 5.0013C3.19246 5.0013 1.75912 6.5263 1.87579 8.3263L2.30912 15.2096C2.40912 16.9263 3.33412 18.3346 5.63412 18.3346Z"
+                    stroke="#52616B"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8.75 6.66797H11.25"
+                    stroke="#52616B"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9.99935 14.9987C11.491 14.9987 12.7077 13.782 12.7077 12.2904C12.7077 10.7987 11.491 9.58203 9.99935 9.58203C8.50768 9.58203 7.29102 10.7987 7.29102 12.2904C7.29102 13.782 8.50768 14.9987 9.99935 14.9987Z"
+                    stroke="#52616B"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="font-semibold text-14">Artwork</div>
+            </button>
+            <button class="flex items-center gap-x-2">
+              <div class="rounded-xl p-2.5 bg-grey-100">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.0007 10.0013C12.3018 10.0013 14.1673 8.13582 14.1673 5.83464C14.1673 3.53345 12.3018 1.66797 10.0007 1.66797C7.69946 1.66797 5.83398 3.53345 5.83398 5.83464C5.83398 8.13582 7.69946 10.0013 10.0007 10.0013Z"
+                    stroke="#52616B"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M2.8418 18.3333C2.8418 15.1083 6.05013 12.5 10.0001 12.5C10.8001 12.5 11.5751 12.6083 12.3001 12.8083"
+                    stroke="#52616B"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M18.3327 15.0013C18.3327 15.6263 18.1577 16.218 17.8494 16.718C17.6744 17.018 17.4494 17.2846 17.191 17.5013C16.6077 18.0263 15.841 18.3346 14.9993 18.3346C13.7827 18.3346 12.7243 17.6846 12.1493 16.718C11.841 16.218 11.666 15.6263 11.666 15.0013C11.666 13.9513 12.1493 13.0096 12.916 12.4013C13.491 11.943 14.216 11.668 14.9993 11.668C16.841 11.668 18.3327 13.1596 18.3327 15.0013Z"
+                    stroke="#52616B"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M13.6992 15.0002L14.5242 15.8252L16.2992 14.1836"
+                    stroke="#52616B"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="font-semibold text-14">Permissions</div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="modal-add-mb" class="overlay modal-add-mb flex items-end">
+        <div
+          id="modal-add-mb--inner"
+          class="modal-add-mb--inner relative flex flex-col bg-white max-h-[90vh] w-full rounded-t-3xl pt-2 px-3"
+        >
+          <div>
+            <div>
+              <button
+                class="absolute w-8 h-8 top-6 right-3 p-1 rounded-xl bg-grey-200"
+              >
+                <img src="../../assets/svgs/add-circle.svg" alt="" />
+              </button>
+              <button
+                id="close-modal-add-mb"
+                class="rounded-lg w-16 h-1 bg-grey-200 mx-auto block"
+              ></button>
+              <div
+                class="text-center my-3 text-18 font-semibold text-neutral-dark-500"
+              >
+                Add to playlist
+              </div>
+            </div>
+            <div
+              class="mt-4 flex items-center gap-2 rounded-xl bg-grey-100 px-4 py-2"
+            >
+              <img
+                class="aspect-square w-5"
+                src="../../assets/svgs/search-people.svg"
+                loading="lazy"
+                alt=""
+              />
+              <input
+                class="h-full flex-1 bg-transparent text-base outline-none placeholder:text-grey-300"
+                placeholder="Find your playlist music"
+              />
+            </div>
+          </div>
+          <ul
+            class="mt-4 flex flex-1 flex-col gap-2 overflow-y-auto pb-4 overflow-x-hidden"
           >
-            <img src="../../assets/svgs/play-add.svg" alt="" />
-            Add to playlist
-          </button>
-          <button
-            class="w-full flex flex-col items-center justify-center gap-1 text-12 rounded-xl bg-grey-100 h-[68px]"
-          >
-            <img src="../../assets/svgs/trash.svg" alt="" />
-            Delete
-          </button>
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-3 rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+              >
+                <img
+                  class="aspect-square w-12 rounded-lg object-cover"
+                  src="../../assets/images/playlists/1.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div>
+                  <div class="text-base font-semibold">Study song</div>
+                  <div class="flex items-center gap-1 text-14 text-grey-400">
+                    <img
+                      class="aspect-square w-4 rounded-lg object-cover"
+                      src="../../assets/svgs/music-grey.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                    18 songs
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-3 rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+              >
+                <img
+                  class="aspect-square w-12 rounded-lg object-cover"
+                  src="../../assets/images/playlists/1.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div>
+                  <div class="text-base font-semibold">Study song</div>
+                  <div class="flex items-center gap-1 text-14 text-grey-400">
+                    <img
+                      class="aspect-square w-4 rounded-lg object-cover"
+                      src="../../assets/svgs/music-grey.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                    18 songs
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-3 rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+              >
+                <img
+                  class="aspect-square w-12 rounded-lg object-cover"
+                  src="../../assets/images/playlists/1.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div>
+                  <div class="text-base font-semibold">Study song</div>
+                  <div class="flex items-center gap-1 text-14 text-grey-400">
+                    <img
+                      class="aspect-square w-4 rounded-lg object-cover"
+                      src="../../assets/svgs/music-grey.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                    18 songs
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-3 rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+              >
+                <img
+                  class="aspect-square w-12 rounded-lg object-cover"
+                  src="../../assets/images/playlists/1.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div>
+                  <div class="text-base font-semibold">Study song</div>
+                  <div class="flex items-center gap-1 text-14 text-grey-400">
+                    <img
+                      class="aspect-square w-4 rounded-lg object-cover"
+                      src="../../assets/svgs/music-grey.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                    18 songs
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-3 rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+              >
+                <img
+                  class="aspect-square w-12 rounded-lg object-cover"
+                  src="../../assets/images/playlists/1.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div>
+                  <div class="text-base font-semibold">Study song</div>
+                  <div class="flex items-center gap-1 text-14 text-grey-400">
+                    <img
+                      class="aspect-square w-4 rounded-lg object-cover"
+                      src="../../assets/svgs/music-grey.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                    18 songs
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-3 rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+              >
+                <img
+                  class="aspect-square w-12 rounded-lg object-cover"
+                  src="../../assets/images/playlists/1.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div>
+                  <div class="text-base font-semibold">Study song</div>
+                  <div class="flex items-center gap-1 text-14 text-grey-400">
+                    <img
+                      class="aspect-square w-4 rounded-lg object-cover"
+                      src="../../assets/svgs/music-grey.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                    18 songs
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-3 rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+              >
+                <img
+                  class="aspect-square w-12 rounded-lg object-cover"
+                  src="../../assets/images/playlists/1.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div>
+                  <div class="text-base font-semibold">Study song</div>
+                  <div class="flex items-center gap-1 text-14 text-grey-400">
+                    <img
+                      class="aspect-square w-4 rounded-lg object-cover"
+                      src="../../assets/svgs/music-grey.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                    18 songs
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-3 rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+              >
+                <img
+                  class="aspect-square w-12 rounded-lg object-cover"
+                  src="../../assets/images/playlists/1.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div>
+                  <div class="text-base font-semibold">Study song</div>
+                  <div class="flex items-center gap-1 text-14 text-grey-400">
+                    <img
+                      class="aspect-square w-4 rounded-lg object-cover"
+                      src="../../assets/svgs/music-grey.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                    18 songs
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-3 rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+              >
+                <img
+                  class="aspect-square w-12 rounded-lg object-cover"
+                  src="../../assets/images/playlists/1.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div>
+                  <div class="text-base font-semibold">Study song</div>
+                  <div class="flex items-center gap-1 text-14 text-grey-400">
+                    <img
+                      class="aspect-square w-4 rounded-lg object-cover"
+                      src="../../assets/svgs/music-grey.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                    18 songs
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-3 rounded-lg p-2 transition-colors duration-75 hover:bg-bg"
+              >
+                <img
+                  class="aspect-square w-12 rounded-lg object-cover"
+                  src="../../assets/images/playlists/1.png"
+                  loading="lazy"
+                  alt=""
+                />
+                <div>
+                  <div class="text-base font-semibold">Study song</div>
+                  <div class="flex items-center gap-1 text-14 text-grey-400">
+                    <img
+                      class="aspect-square w-4 rounded-lg object-cover"
+                      src="../../assets/svgs/music-grey.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                    18 songs
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </main>
