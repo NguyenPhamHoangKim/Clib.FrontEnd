@@ -3261,6 +3261,69 @@
           </div>
         </div>
       </div>
+      <div
+        id="modal-artwork-mb"
+        class="overlay modal-artwork-mb hidden md:hidden items-end"
+      >
+        <div
+          id="modal-artwork-mb--inner"
+          class="modal-artwork-mb--inner relative flex flex-col bg-white w-full rounded-t-3xl pt-2"
+        >
+          <div class="flex-1 px-3">
+            <div>
+              <button
+                class="close-modal-artwork-mb rounded-lg w-16 h-1 bg-grey-100 mx-auto block"
+              ></button>
+              <div
+                class="text-center my-3 text-18 font-semibold text-neutral-dark-500"
+              >
+                Change Artwork
+              </div>
+            </div>
+            <div class="mt-3">
+              <button
+                class="mx-auto w-[200px] max-w-full aspect-square flex-col bg-grey-200 rounded-xl flex justify-center items-center p-2"
+              >
+                <svg
+                  width="33"
+                  height="32"
+                  viewBox="0 0 33 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M24.4999 7.99935C23.6866 7.99935 22.9399 7.53268 22.5666 6.81268L21.6066 4.87935C20.9932 3.66602 19.3932 2.66602 18.0332 2.66602H14.9799C13.6066 2.66602 12.0066 3.66602 11.3932 4.87935L10.4332 6.81268C10.0599 7.53268 9.31323 7.99935 8.4999 7.99935C5.60656 7.99935 3.31323 10.4393 3.4999 13.3193L4.19323 24.3327C4.35323 27.0793 5.83323 29.3327 9.51323 29.3327H23.4866C27.1666 29.3327 28.6332 27.0793 28.8066 24.3327L29.4999 13.3193C29.6866 10.4393 27.3932 7.99935 24.4999 7.99935ZM14.4999 9.66602H18.4999C19.0466 9.66602 19.4999 10.1193 19.4999 10.666C19.4999 11.2127 19.0466 11.666 18.4999 11.666H14.4999C13.9532 11.666 13.4999 11.2127 13.4999 10.666C13.4999 10.1193 13.9532 9.66602 14.4999 9.66602ZM16.4999 24.1594C14.0199 24.1594 11.9932 22.146 11.9932 19.6527C11.9932 17.1593 14.0066 15.146 16.4999 15.146C18.9932 15.146 21.0066 17.1593 21.0066 19.6527C21.0066 22.146 18.9799 24.1594 16.4999 24.1594Z"
+                    fill="#A1ABB3"
+                  />
+                </svg>
+
+                <span class="text-center font-semibold text-grey-400 mt-2"
+                  >Upload new image</span
+                >
+              </button>
+            </div>
+          </div>
+          <div
+            class="sticky mt-10 bottom-0 left-0 right-0 px-3 py-4 bg-white shadow-[0px_-4px_60px_0px_rgba(0,0,0,0.06)]"
+          >
+            <div class="text-14 text-grey-400">
+              At least 800x800 pixels 2MB file-size limit.
+            </div>
+            <div class="grid grid-cols-2 items-end gap-x-4 mt-5">
+              <button
+                class="close-modal-artwork-mb text-base rounded-xl close-modal font-semibold text-grey-400 py-2.5 px-6 bg-grey-200"
+              >
+                Cancel
+              </button>
+              <button
+                class="text-base rounded-xl font-semibold text-white py-2.5 px-6 bg-branding"
+              >
+                Save
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
   <script
