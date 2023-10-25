@@ -749,7 +749,64 @@
               </div>
             </div>
           </div>
-          <!--  -->
+          <div class="overlay hidden modal-privacy">
+            <div class="w-[592px] abs-center p-6 rounded-xl bg-white">
+              <div class="mb-20">
+                <button class="close-modal absolute right-3 top-3">
+                  <img src="../../assets/svgs/close.svg" alt="" />
+                </button>
+                <h6
+                  class="text-24 text-neutral-dark-500 text-center font-semibold"
+                >
+                  Privacy and tags
+                </h6>
+                <div class="mt-6">
+                  <div class="flex flex-col gap-1">
+                    <label class="text-base font-semibold text-grey-400" for=""
+                      >Add new tags to selected tracks</label
+                    >
+                    <textarea
+                      placeholder="Add tags"
+                      class="border-none px-4 resize-none outline-none py-3 bg-grey-100 rounded-xl min-h-[96px] max-h-[96px]"
+                    ></textarea>
+                  </div>
+                  <div class="text-base mt-4 font-semibold text-grey-400 gap-4">
+                    Privacy
+                    <div class="flex items-center gap-4 mt-2">
+                      <div
+                        class="flex font-normal items-center text-neutral-dark-500 gap-1.5"
+                      >
+                        <input type="radio" />
+                        <label for="">Public</label>
+                      </div>
+                      <div
+                        class="flex font-normal text-neutral-dark-500 items-center gap-1.5"
+                      >
+                        <input type="radio" />
+                        <label for="">Private</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="fixed bottom-0 py-3 px-6 bg-white box-shadow rounded-bl-xl rounded-br-xl left-0 right-0 flex items-end gap-3 justify-end"
+              >
+                <div class="grid grid-cols-2 items-center gap-3 w-full">
+                  <button
+                    class="text-base w-full rounded-xl close-modal font-semibold text-grey-400 py-3 px-6 bg-grey-200"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    class="text-base w-full rounded-xl font-semibold text-white py-3 px-6 bg-[#1975ff]"
+                  >
+                    Save
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="overlay hidden artworkModal">
             <div class="w-[592px] relative abs-center p-6 rounded-xl bg-white">
               <div class="mb-20">

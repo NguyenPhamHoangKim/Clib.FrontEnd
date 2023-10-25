@@ -10,16 +10,6 @@ $(".open-modal-delete").each(function () {
   });
 });
 
-$(".close-modal").each(function () {
-  $(this).click(function () {
-    $(".modal-add").hide();
-    $(".modal-create").hide();
-    $(".modal-delete").hide();
-    $(".artworkModal").hide();
-    $(".modal-per").hide();
-  });
-});
-
 $(".create-btn").each(function () {
   $(this).click(function () {
     $(".modal-add").hide();
@@ -39,22 +29,43 @@ checkClickOutside(
   "create-btn",
 );
 
-let $dropdown = $(".dropdown");
-let $modal = $(".artworkModal");
+const $dropdown = $(".dropdown");
+const $modal = $(".artworkModal");
+const $privacyModal = $(".modal-privacy");
+let selectedOption = "";
+
+$(".close-modal").each(function () {
+  $(this).click(function () {
+    $(".modal-add").hide();
+    $(".modal-create").hide();
+    $(".modal-delete").hide();
+    $(".artworkModal").hide();
+    $(".modal-privacy").hide();
+    $(".modal-per").hide();
+  });
+});
 
 $dropdown.change(function () {
-  let selectedOption = $dropdown.val();
+  selectedOption = $(this).val();
 
   if (selectedOption === "Artwork") {
-    $modal.show(); // Hiển thị modal nếu tùy chọn là "Artwork"
+    $modal.show();
   } else {
-    $modal.hide(); // Ẩn modal nếu tùy chọn khác
+    $modal.hide();
   }
+
+  if (selectedOption === "Privacy and tag") {
+    $privacyModal.show();
+  } else {
+    $privacyModal.hide();
+  }
+
   if (selectedOption === "Permissions") {
     $(".modal-per").show();
   } else {
     $(".modal-per").hide();
   }
+  $(this).prop("selectedIndex", 0);
 });
 
 $("#show-modal-edit-mb").click(function () {
