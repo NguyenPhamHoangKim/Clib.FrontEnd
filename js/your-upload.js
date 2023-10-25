@@ -141,6 +141,21 @@ $(".close-modal-delete-mb").each(function () {
   });
 });
 
+$("#show-modal-privacy-mb").click(function () {
+  $("#modal-privacy-mb").addClass("flex");
+  $("#modal-privacy-mb").removeClass("hidden");
+
+  $("#modal-edit-mb").removeClass("flex");
+  $("#modal-edit-mb").addClass("hidden");
+});
+
+$(".close-modal-privacy-mb").each(function () {
+  $(this).click(function () {
+    $("#modal-privacy-mb").removeClass("flex");
+    $("#modal-privacy-mb").addClass("hidden");
+  });
+});
+
 checkClickOutside(
   "modal-delete-mb--inner",
   function () {
@@ -148,6 +163,15 @@ checkClickOutside(
     $("#modal-delete-mb").addClass("hidden");
   },
   "show-modal-delete-mb",
+);
+
+checkClickOutside(
+  "modal-privacy-mb--inner",
+  function () {
+    $("#modal-privacy-mb").removeClass("flex");
+    $("#modal-privacy-mb").addClass("hidden");
+  },
+  "show-modal-privacy-mb",
 );
 
 // checkClickOutside(
