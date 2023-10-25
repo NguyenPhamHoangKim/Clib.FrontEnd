@@ -664,7 +664,7 @@
             </div>
           </div>
           <div class="overlay hidden modal-per">
-            <div class="w-[592px] abs-center relative p-6 rounded-xl bg-white">
+            <div class="w-[592px] abs-center p-6 rounded-xl bg-white">
               <div class="mb-20">
                 <button class="close-modal absolute right-3 top-3">
                   <img src="../../assets/svgs/close.svg" alt="" />
@@ -675,88 +675,110 @@
                   Permissions
                 </h6>
                 <div class="mt-6 flex flex-col gap-4">
-                  <div class="flex flex-col gap-2">
-                    <div
-                      class="flex items-center text-base font-semibold text-grey-400 w-full justify-between"
-                    >
-                      Enable direct downloads
-                      <label
-                        class="relative inline-flex items-center cursor-pointer"
-                      >
-                        <input type="checkbox" value="" class="sr-only peer" />
-                        <div
-                          class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
-                        ></div>
-                      </label>
+                  <div
+                    class="flex items-start gap-2 text-base text-grey-400 w-full justify-between pb-4 border-b border-b-grey-200"
+                  >
+                    <div class="">
+                      <div class="font-semibold text-base">
+                        Enable direct downloads
+                      </div>
+                      <p class="text-base mt-2 text-grey-400">
+                        All songs will be available for direct download in the
+                        original format they were uploaded.
+                      </p>
                     </div>
-                    <p
-                      class="text-14 text-grey-400 pb-4 border-b border-b-grey-200"
+                    <label
+                      class="relative inline-flex items-center cursor-pointer"
                     >
-                      All songs will be available for direct download in the
-                      original format they were uploaded.
-                    </p>
+                      <input type="checkbox" value="" class="sr-only peer" />
+                      <div
+                        class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                      ></div>
+                    </label>
                   </div>
-                  <div class="flex flex-col gap-2">
-                    <div
-                      class="flex items-center text-base font-semibold text-grey-400 w-full justify-between"
-                    >
-                      Enable direct downloads
-                      <label
-                        class="relative inline-flex items-center cursor-pointer"
-                      >
-                        <input type="checkbox" value="" class="sr-only peer" />
-                        <div
-                          class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
-                        ></div>
-                      </label>
+                  <div
+                    class="flex items-start gap-2 text-base text-grey-400 w-full justify-between pb-4 border-b border-b-grey-200"
+                  >
+                    <div class="">
+                      <div class="font-semibold text-base">
+                        Enable direct downloads
+                      </div>
+                      <p class="text-base mt-2 text-grey-400">
+                        All songs will play on devices without an internet
+                        connection.
+                      </p>
                     </div>
-                    <p
-                      class="text-14 text-grey-400 pb-4 border-b border-b-grey-200"
+                    <label
+                      class="relative inline-flex items-center cursor-pointer"
                     >
-                      All songs will be available for direct download in the
-                    </p>
+                      <input type="checkbox" value="" class="sr-only peer" />
+                      <div
+                        class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                      ></div>
+                    </label>
                   </div>
-                  <div class="flex flex-col gap-2">
-                    <div
-                      class="flex items-center text-base font-semibold text-grey-400 w-full justify-between"
-                    >
-                      Enable direct downloads
-                      <label
-                        class="relative inline-flex items-center cursor-pointer"
-                      >
-                        <input type="checkbox" value="" class="sr-only peer" />
-                        <div
-                          class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
-                        ></div>
-                      </label>
+
+                  <div
+                    class="flex items-start gap-2 text-base text-grey-400 w-full justify-between pb-4 border-b border-b-grey-200"
+                  >
+                    <div class="">
+                      <div class="font-semibold text-base">
+                        Display embed code
+                      </div>
+                      <p class="text-base mt-2 text-grey-400">
+                        No songs will be included in your RSS feed.
+                      </p>
                     </div>
-                    <p
-                      class="text-14 text-grey-400 pb-4 border-b border-b-grey-200"
+                    <label
+                      class="relative inline-flex items-center cursor-pointer"
                     >
-                      All songs will be available for direct download in the
-                    </p>
+                      <input type="checkbox" value="" class="sr-only peer" />
+                      <div
+                        class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                      ></div>
+                    </label>
                   </div>
-                  <div class="flex flex-col gap-2">
-                    <div
-                      class="flex items-center text-base font-semibold text-grey-400 w-full justify-between"
-                    >
-                      Enable direct downloads
-                      <label
-                        class="relative inline-flex items-center cursor-pointer"
-                      >
-                        <input type="checkbox" value="" class="sr-only peer" />
-                        <div
-                          class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
-                        ></div>
-                      </label>
+                  <div
+                    class="flex items-start gap-2 text-base text-grey-400 w-full justify-between"
+                  >
+                    <div class="">
+                      <div class="font-semibold text-base">
+                        Enable app playback
+                      </div>
+                      <p class="text-base mt-2 text-grey-400">
+                        All songs will be playable outside of Clib and its apps.
+                      </p>
                     </div>
-                    <p
-                      class="text-14 text-grey-400 pb-4 border-b border-b-grey-200"
+                    <label
+                      class="relative inline-flex items-center cursor-pointer"
                     >
-                      All songs will be available for direct download in the
-                    </p>
+                      <input type="checkbox" value="" class="sr-only peer" />
+                      <div
+                        class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                      ></div>
+                    </label>
                   </div>
-                  <div class="px-4 py-3 bg-grey-100 rounded-xl">
+                  <div
+                    class="flex items-start gap-2 text-base text-grey-400 w-full justify-between"
+                  >
+                    <div class="">
+                      <div class="font-semibold text-base">
+                        Include in RSS feed
+                      </div>
+                      <p class="text-base mt-2 text-grey-400">
+                        No songs will be included in your RSS feed.
+                      </p>
+                    </div>
+                    <label
+                      class="relative inline-flex items-center cursor-pointer"
+                    >
+                      <input type="checkbox" value="" class="sr-only peer" />
+                      <div
+                        class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-[19px] peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[5px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#1975ff]"
+                      ></div>
+                    </label>
+                  </div>
+                  <div class="px-4 mt-3 py-3 bg-grey-100 rounded-xl">
                     <p class="text-base font-semibold text-grey-400">
                       Important:
                       <span class="font-normal text-14 text-grey-400">
