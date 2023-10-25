@@ -81,6 +81,10 @@ $("#close-modal-edit-mb").click(function () {
   $("#modal-edit-mb").removeClass("flex");
   $("#modal-edit-mb").addClass("hidden");
 });
+$("#close-modal-create-mb").click(function () {
+  $("#modal-create-mb").removeClass("flex");
+  $("#modal-create-mb").addClass("hidden");
+});
 
 checkClickOutside(
   "edit-modal-mb-inner",
@@ -101,11 +105,66 @@ $("#close-modal-add-mb").click(function () {
   $("#modal-add-mb").addClass("hidden");
 });
 
+$("#show-modal-create").click(function () {
+  $("#modal-add-mb").removeClass("flex");
+  $("#modal-add-mb").addClass("hidden");
+
+  $("#modal-create-mb").addClass("flex");
+  $("#modal-create-mb").removeClass("hidden");
+});
+
+$("#change-to-modal-create").click(function () {
+  $("#modal-add-mb").removeClass("hidden");
+  $("#modal-add-mb").addClass("flex");
+
+  $("#modal-create-mb").addClass("hidden");
+  $("#modal-create-mb").removeClass("flex");
+});
+
+$("#change-to-modal-add").click(function () {
+  $("#modal-add-mb").addClass("flex");
+  $("#modal-add-mb").removeClass("hidden");
+
+  $("#modal-create-mb").removeClass("flex");
+  $("#modal-create-mb").addClass("hidden");
+});
+
+$("#show-modal-delete-mb").click(function () {
+  $("#modal-delete-mb").addClass("flex");
+  $("#modal-delete-mb").removeClass("hidden");
+});
+
+$(".close-modal-delete-mb").each(function () {
+  $(this).click(function () {
+    $("#modal-delete-mb").removeClass("flex");
+    $("#modal-delete-mb").addClass("hidden");
+  });
+});
+
 checkClickOutside(
-  "modal-add-mb--inner",
+  "modal-delete-mb--inner",
   function () {
-    $("#modal-add-mb").removeClass("flex");
-    $("#modal-add-mb").addClass("hidden");
+    $("#modal-delete-mb").removeClass("flex");
+    $("#modal-delete-mb").addClass("hidden");
   },
-  "show-modal-add-mb",
+  "show-modal-delete-mb",
 );
+
+// checkClickOutside(
+//   "modal-create-mb--inner",
+//   function () {
+//     $("#modal-create-mb").removeClass("flex");
+//     $("#modal-create-mb").addClass("hidden");
+//   },
+//   "show-modal-create-mb",
+// );
+// checkClickOutside(
+//   "modal-add-mb--inner",
+//   function () {
+//     console.log(3);
+
+//     $("#modal-add-mb").removeClass("flex");
+//     $("#modal-add-mb").addClass("hidden");
+//   },
+//   "show-modal-add-mb",
+// );
