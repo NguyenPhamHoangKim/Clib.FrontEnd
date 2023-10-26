@@ -161,4 +161,10 @@ new Swiper(".new-video-swiper", {
   },
 });
 
-$("#show-upload-modal").click(() => {});
+$("#show-upload-modal").click(() => {
+  $("#modal-upload-mb").removeClass('hidden');
+});
+$("#close-modal-upload-mb").click(() => {
+  $("#modal-upload-mb").addClass('hidden');
+});
+
